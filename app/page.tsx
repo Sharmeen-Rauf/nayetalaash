@@ -9,12 +9,12 @@ const Page = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [showHeroContent, setShowHeroContent] = useState(false); 
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
-		const [splashVisible, setSplashVisible] = useState(true);
-		const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-		const [isScrollingNow, setIsScrollingNow] = useState(false);
+	const [splashVisible, setSplashVisible] = useState(true);
+	const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+	const [isScrollingNow, setIsScrollingNow] = useState(false);
 	const [activeTourIndex, setActiveTourIndex] = useState(0); 
 	// NEW STATE: To track which Exclusive Package is currently displayed/zoomed
-	const [activePackageIndex, setActivePackageIndex] = useState(0);
+	const [activePackageIndex, setActivePackageIndex] = useState(0); 
 
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
@@ -25,11 +25,14 @@ const Page = () => {
 	useEffect(() => {
 		// Small delay to ensure all CSS classes are recognized before transition starts
 		const timer = setTimeout(() => setShowHeroContent(true), 50); 
-			const splashTimer = setTimeout(() => setSplashVisible(false), 1400);
-		return () => clearTimeout(timer);
+		const splashTimer = setTimeout(() => setSplashVisible(false), 1400);
+		return () => {
+			clearTimeout(timer);
+			clearTimeout(splashTimer);
+		};
 	}, []);
 
-		// no-op removed scroll ruler
+	// no-op removed scroll ruler
 	// --- Theme Colors and Constants ---
 	const primaryOrange = '#f99621'; // Main accent color
 	const secondaryBlack = '#211f20'; // Main background/text color
@@ -648,11 +651,11 @@ const Page = () => {
 				{/* Background with dark overlay */}
 				<div 
 					className="absolute inset-0 bg-cover bg-center"
-					style={{
+						style={{ 
 						backgroundImage: "url('https://tourisme-sumene-artense.com/wp-content/uploads/2024/11/section_intro-e1733142641941.jpg')",
 						filter: "brightness(0.75)",
-					}}
-				></div>
+						}}
+					></div>
 
 				{/* Large transparent ring */}
 				<div className="absolute inset-0 flex items-center justify-center px-4">
@@ -676,17 +679,17 @@ const Page = () => {
 						<p className="text-white text-xs sm:text-sm tracking-wider uppercase mb-2">
 							Welcome to Nayi Talaash – Time to Meet the Culture!
 						</p>
-
+						
 						{/* Main Heading */}
 						<h1 className="text-[#f99621] text-3xl sm:text-4xl font-bold mb-4">
 							NAYE TALAASH
 						</h1>
-
+						
 						{/* Subtitle */}
 						<p className="text-white text-sm sm:text-base tracking-wide mb-6">
 							Discover the Beauty of Pakistan with Nayi Talaash
 						</p>
-						
+
 						{/* Contact Us Button */}
 						<button
 							onClick={handleWhatsAppClick}
@@ -829,7 +832,7 @@ const Page = () => {
 					</div>
 				</div>
 			</section>
-			
+
 			{/* --- 4. Special Section: Explore Pakistan (Map) --- */}
 			<section className="py-20 md:py-32 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
 				<div className="absolute inset-0 z-[1] opacity-40 pointer-events-none">
@@ -966,36 +969,36 @@ const Page = () => {
 						</div>
 						
 						{/* Right Column: Tour Selection Buttons */}
-					<div className="lg:col-span-1 space-y-4">
+						<div className="lg:col-span-1 space-y-4">
 							<h4 className="text-xl font-bold mb-4" style={{ color: secondaryBlack }}>
 								Upcoming Tours:
 							</h4>
-						{upcomingTours.map((tour, index) => (
-							<button
-								key={index}
-								onClick={() => setActiveTourIndex(index)}
-								className={`w-full text-left p-4 rounded-xl transition-all duration-300 flex items-center shadow-lg transform ${
-									activeTourIndex === index 
-										? 'bg-black text-white scale-[1.03] ring-4 ring-offset-2 ring-offset-white'
-										: 'bg-gray-100 text-black hover:bg-gray-200'
-								}`}
-								style={{
-									borderColor: primaryOrange,
-								}}
-							>
-								{/* Small Image Thumbnail for Visual Context */}
-								<img
-									src={tour.image}
-									alt={tour.listTitle}
-									className="w-12 h-12 object-cover rounded-md mr-4 border-2"
-									style={{ borderColor: activeTourIndex === index ? primaryOrange : 'transparent' }}
-									onError={(e) => e.currentTarget.src = 'https://placehold.co/50x50/9d8189/211f20?text=Pic'}
-								/>
-								<span className={`text-lg font-semibold ${activeTourIndex === index ? 'text-white' : 'text-gray-800'}`}>
-									{tour.listTitle}
-								</span>
-								<ArrowRight className={`w-5 h-5 ml-auto transition-transform duration-300 ${activeTourIndex === index ? 'text-white translate-x-1' : 'text-gray-500'}`} />
-							</button>
+							{upcomingTours.map((tour, index) => (
+								<button
+									key={index}
+									onClick={() => setActiveTourIndex(index)}
+									className={`w-full text-left p-4 rounded-xl transition-all duration-300 flex items-center shadow-lg transform ${
+										activeTourIndex === index 
+											? 'bg-black text-white scale-[1.03] ring-4 ring-offset-2 ring-offset-white'
+											: 'bg-gray-100 text-black hover:bg-gray-200'
+									}`}
+									style={{
+										borderColor: primaryOrange,
+									}}
+								>
+									{/* Small Image Thumbnail for Visual Context */}
+									<img
+										src={tour.image}
+										alt={tour.listTitle}
+										className="w-12 h-12 object-cover rounded-md mr-4 border-2"
+										style={{ borderColor: activeTourIndex === index ? primaryOrange : 'transparent' }}
+										onError={(e) => e.currentTarget.src = 'https://placehold.co/50x50/9d8189/211f20?text=Pic'}
+									/>
+									<span className={`text-lg font-semibold ${activeTourIndex === index ? 'text-white' : 'text-gray-800'}`}>
+										{tour.listTitle}
+									</span>
+									<ArrowRight className={`w-5 h-5 ml-auto transition-transform duration-300 ${activeTourIndex === index ? 'text-white translate-x-1' : 'text-gray-500'}`} />
+								</button>
 							))}
 							
 							{/* Contact Us Link */}
@@ -1203,7 +1206,7 @@ const Page = () => {
 				{/* Heritage background overlay */}
 				<div className="absolute inset-0 z-[1] opacity-20 pointer-events-none">
 					<MapRouteBackground />
-				</div>
+						</div>
 				
 				<div className="container mx-auto max-w-7xl text-gray-400 text-sm relative z-[2]">
 					{/* Main Footer Content */}
@@ -1278,7 +1281,7 @@ const Page = () => {
 									<a href="mailto:info@nayitalaash.com" className="hover:text-white transition-colors">
 										info@nayitalaash.com
 									</a>
-								</div>
+						</div>
 								<div className="flex items-center group">
 									<Phone className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" style={{ color: primaryOrange }} />
 									<a href="tel:+923311438251" className="hover:text-white transition-colors">
@@ -1308,7 +1311,7 @@ const Page = () => {
 								<button className="w-full py-3 rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
 									Subscribe Now
 								</button>
-							</div>
+					</div>
 						</div>
 					</div>
 
