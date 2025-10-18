@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark } from 'lucide-react';
 
 const Page = () => {
@@ -573,7 +574,7 @@ const Page = () => {
 					<div className="absolute inset-0 flex items-center justify-center">
 						<div className="flex flex-col items-center">
 							<div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full shadow-2xl flex items-center justify-center logo-float" style={{ backgroundColor: primaryOrange }}>
-								<img src={logoImage} alt="Nayi Talaash Logo" className="w-full h-full object-cover rounded-full" />
+								<Image src={logoImage} alt="Nayi Talaash Logo" width={144} height={144} className="w-full h-full object-cover rounded-full" />
 							</div>
 							<div className="mt-5 text-xs tracking-[0.35em] uppercase" style={{ color: isLight ? secondaryBlack : '#ffffff' }}>Nayi Talaash</div>
 						</div>
@@ -662,22 +663,12 @@ const Page = () => {
 					<div className="absolute w-[60vw] max-w-[400px] aspect-square rounded-full bg-black/40 flex flex-col items-center justify-center text-center px-6">
 						{/* Logo Image */}
 						<div className="mb-6">
-							<img 
+							<Image 
 								src={logoImage} 
 								alt="Nayi Talaash Logo" 
+								width={224}
+								height={80}
 								className="w-48 h-16 sm:w-56 sm:h-20 object-contain"
-								onError={(e) => {
-									e.currentTarget.style.display = 'none';
-									const parent = e.currentTarget.parentElement;
-									if (parent) {
-										parent.innerHTML = `
-											<div class="text-center">
-												<h1 class="text-3xl sm:text-4xl font-bold text-orange-500 mb-2">NAYI TALAASH</h1>
-												<p class="text-orange-500 text-sm font-semibold">TIME TO MEET CULTURES</p>
-											</div>
-										`;
-									}
-								}}
 							/>
 						</div>
 
@@ -803,7 +794,7 @@ const Page = () => {
 							<p className="text-gray-700 text-lg">Founded with a passion for exploration, Nayi Talaash – DITS & Travel Agency aims to inspire travelers to experience Pakistan like never before.</p>
 							<p className="text-gray-600 mt-3">Our mission is simple: to promote local tourism, connect people with culture, and create lifelong memories through shared adventures.</p>
 							<blockquote className="mt-6 p-5 rounded-xl border-l-4" style={{ borderColor: primaryOrange, background: '#fff7ed' }}>
-								<p className="text-gray-800 italic">"At Nayi Talaash, we don't just plan tours — we create experiences that stay with you forever."</p>
+								<p className="text-gray-800 italic">&ldquo;At Nayi Talaash, we don&apos;t just plan tours — we create experiences that stay with you forever.&rdquo;</p>
 							</blockquote>
 							<div className="mt-8 grid grid-cols-2 gap-4">
 								<div className="rounded-xl p-4 border shadow-sm" style={{ borderColor: primaryOrange }}>
@@ -858,7 +849,7 @@ const Page = () => {
 								</h2>
 								
 								<h3 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight" style={{ color: primaryOrange }}>
-									Pakistan's Hidden Gems
+									Pakistan&apos;s Hidden Gems
 								</h3>
 
 								{/* Main Text Content */}
@@ -1178,7 +1169,7 @@ const Page = () => {
 					{/* Section Header (In English) */}
 					<div className="text-center mb-12">
 						<h2 className="text-sm font-bold uppercase tracking-widest mb-2 text-white" style={{ color: primaryOrange }}>
-							What's New
+							What&apos;s New
 						</h2>
 						<h3 className="text-3xl md:text-4xl font-extrabold text-white">
 							Events and News
@@ -1307,7 +1298,7 @@ const Page = () => {
 						{/* Newsletter */}
 						<div>
 							<h4 className="text-lg font-bold mb-6" style={{ color: primaryOrange }}>Stay Updated</h4>
-							<p className="text-gray-300 mb-4">Get exclusive travel deals and Pakistan's hidden gems delivered to your inbox.</p>
+							<p className="text-gray-300 mb-4">Get exclusive travel deals and Pakistan&apos;s hidden gems delivered to your inbox.</p>
 							<div className="space-y-3">
 								<input 
 									type="email" 
