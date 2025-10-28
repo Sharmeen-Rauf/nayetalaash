@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark } from 'lucide-react';
+import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music } from 'lucide-react';
 
 const Page = () => {
 	// --- STATE AND HOOKS: MUST BE INSIDE THE COMPONENT FUNCTION ---
@@ -539,20 +539,57 @@ const Page = () => {
 
 					{/* Right: Social Media Icons & Customize Button */}
 					<div className="flex items-center gap-3">
-						{/* Social Media Icons */}
+						{/* Social Media Icons - Styled with Hover Effects */}
 						<div className="flex items-center gap-2">
-							<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#f99621] flex items-center justify-center hover:bg-[#e8851a] transition-colors">
-								<Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20]" />
+							{/* Facebook */}
+							<a 
+								href="https://www.facebook.com/nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer" 
+								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
+								aria-label="Facebook"
+							>
+								<Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" />
 							</a>
-							<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#f99621] flex items-center justify-center hover:bg-[#e8851a] transition-colors">
-								<Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20]" />
+							
+							{/* Instagram */}
+							<a 
+								href="https://www.instagram.com/nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer" 
+								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
+								aria-label="Instagram"
+							>
+								<Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" />
+							</a>
+							
+							{/* YouTube */}
+							<a 
+								href="https://www.youtube.com/@nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer" 
+								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
+								aria-label="YouTube"
+							>
+								<Youtube className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" />
+							</a>
+							
+							{/* TikTok */}
+							<a 
+								href="https://www.tiktok.com/@nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer" 
+								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
+								aria-label="TikTok"
+							>
+								<Music className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" />
 							</a>
 						</div>
 						
 						{/* Customize A Tour Button */}
 						<button
 							onClick={handleWhatsAppClick}
-							className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-bold text-[#211f20] rounded hover:bg-[#e8851a] transition-colors"
+							className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-bold text-[#211f20] rounded-lg hover:bg-[#e8851a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#f99621]/50"
 							style={{ backgroundColor: '#e8851a' }}
 						>
 							<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
@@ -563,8 +600,8 @@ const Page = () => {
 			</div>
 		</div>
 
-		{/* Main Navigation Bar - White Background */}
-		<header className="fixed top-[48px] sm:top-[50px] left-0 right-0 z-[100] bg-white shadow-md">
+		{/* Main Navigation Bar - Glassy Background */}
+		<header className="fixed top-[48px] sm:top-[50px] left-0 right-0 z-[100] backdrop-blur-lg bg-white/60 border-b border-white/30 shadow-lg">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between py-3 sm:py-4">
 					{/* Logo */}
@@ -602,7 +639,7 @@ const Page = () => {
 					{/* Mobile Menu Button */}
 					<button
 						onClick={() => setIsMenuOpen(true)}
-						className="lg:hidden p-2 rounded-md transition-colors hover:bg-gray-100"
+						className="lg:hidden p-2 rounded-md transition-colors hover:bg-white/20"
 						aria-label="Toggle navigation menu"
 					>
 						<Menu className="w-6 h-6 text-[#211f20]" />
@@ -703,23 +740,29 @@ const Page = () => {
 					</a>
 				</nav>
 
-				{/* Footer Info in Menu */}
-				<div className="mt-auto pt-6 border-t border-gray-300">
-					<div className="flex items-center gap-2 mb-3">
-						<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#f99621] flex items-center justify-center hover:bg-[#e8851a] transition-colors">
-							<Facebook className="w-5 h-5 text-white" />
-						</a>
-						<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#f99621] flex items-center justify-center hover:bg-[#e8851a] transition-colors">
-							<Instagram className="w-5 h-5 text-white" />
-						</a>
-					</div>
-					<p className="text-gray-600 text-sm">
-						Explore the unknown with us.
-					</p>
-					<p className="text-gray-500 text-xs mt-2">
-						© 2024 Nayi Talaash. All rights reserved.
-					</p>
+			{/* Footer Info in Menu */}
+			<div className="mt-auto pt-6 border-t border-gray-300">
+				<div className="flex items-center gap-3 mb-3">
+					<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+						<Facebook className="w-5 h-5 text-white" />
+					</a>
+					<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+						<Instagram className="w-5 h-5 text-white" />
+					</a>
+					<a href="https://www.youtube.com/@nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+						<Youtube className="w-5 h-5 text-white" />
+					</a>
+					<a href="https://www.tiktok.com/@nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+						<Music className="w-5 h-5 text-white" />
+					</a>
 				</div>
+				<p className="text-gray-600 text-sm">
+					Explore the unknown with us.
+				</p>
+				<p className="text-gray-500 text-xs mt-2">
+					© 2024 Nayi Talaash. All rights reserved.
+				</p>
+			</div>
 			</div>
 		</div>
 
