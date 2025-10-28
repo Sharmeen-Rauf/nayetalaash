@@ -524,7 +524,7 @@ const Page = () => {
 		{/* Top Bar - Dark Background with Contact & Social */}
 		<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20] border-b border-gray-800">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex items-center justify-between py-2 sm:py-3">
+				<div className="flex items-center justify-between py-1.5 sm:py-2">
 					{/* Left: Contact Info */}
 					<div className="flex items-center gap-4 sm:gap-6 text-white text-xs sm:text-sm">
 						<a href="tel:+92331438251" className="flex items-center gap-2 hover:text-[#f99621] transition-colors">
@@ -605,9 +605,9 @@ const Page = () => {
 		</div>
 
 		{/* Main Navigation Bar - Solid White Background */}
-		<header className="fixed top-[48px] sm:top-[50px] left-0 right-0 z-[100] bg-white border-b border-gray-200 shadow-md">
+		<header className="fixed top-[38px] sm:top-[40px] left-0 right-0 z-[100] bg-white border-b border-gray-200 shadow-md">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex items-center justify-between py-4 sm:py-5">
+				<div className="flex items-center justify-between py-2.5 sm:py-3">
 					{/* Logo */}
 					<div className="flex items-center">
 						<Image 
@@ -615,7 +615,7 @@ const Page = () => {
 							alt="Nayi Talaash Logo"
 							width={180}
 							height={60}
-							className="h-12 sm:h-14 w-auto object-contain"
+							className="h-10 sm:h-12 w-auto object-contain"
 						/>
 					</div>
 
@@ -902,7 +902,7 @@ const Page = () => {
 			</div>
 
 		{/* ====================== NAYI TALAASH HEADER SECTION ====================== */}
-		<section className="relative w-full h-screen overflow-hidden pt-[120px] sm:pt-[130px]">
+		<section className="relative w-full h-screen overflow-hidden pt-[95px] sm:pt-[100px]">
 			{/* Background with dark overlay */}
 			<div 
 				className="absolute inset-0 bg-cover bg-center"
