@@ -549,7 +549,7 @@ const Page = () => {
 								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
 								aria-label="Facebook"
 							>
-								<Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" />
+								<Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" fill="#211f20" />
 							</a>
 							
 							{/* Instagram */}
@@ -560,7 +560,7 @@ const Page = () => {
 								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
 								aria-label="Instagram"
 							>
-								<Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" />
+								<Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" fill="#211f20" />
 							</a>
 							
 							{/* YouTube */}
@@ -571,7 +571,7 @@ const Page = () => {
 								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
 								aria-label="YouTube"
 							>
-								<Youtube className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" />
+								<Youtube className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" fill="#211f20" />
 							</a>
 							
 							{/* TikTok */}
@@ -582,7 +582,9 @@ const Page = () => {
 								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
 								aria-label="TikTok"
 							>
-								<Music className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" />
+								<svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform fill-current" viewBox="0 0 24 24">
+									<path d="M19.321 5.281a7.286 7.286 0 0 1-.744 1.695 7.246 7.246 0 0 1-6.281 3.819v5.357A7.452 7.452 0 0 1 6 7.116V5.5a1 1 0 0 1 2 0v1.616A5.45 5.45 0 0 0 12.5 18.5a5.177 5.177 0 0 0 5.321-5.123v-7.01c0-.314.15-.587.386-.765a1.24 1.24 0 0 1 .814-.243 7.314 7.314 0 0 0 5.869-2.864 1 1 0 0 1 1.415-1.414A9.318 9.318 0 0 1 19.32 5.28z"/>
+								</svg>
 							</a>
 						</div>
 						
@@ -603,7 +605,7 @@ const Page = () => {
 		{/* Main Navigation Bar - Glassy Background */}
 		<header className="fixed top-[48px] sm:top-[50px] left-0 right-0 z-[100] backdrop-blur-lg bg-white/60 border-b border-white/30 shadow-lg">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex items-center justify-between py-3 sm:py-4">
+				<div className="flex items-center justify-between py-4 sm:py-5">
 					{/* Logo */}
 					<div className="flex items-center">
 						<Image 
@@ -611,7 +613,7 @@ const Page = () => {
 							alt="Nayi Talaash Logo"
 							width={180}
 							height={60}
-							className="h-10 sm:h-12 w-auto object-contain"
+							className="h-12 sm:h-14 w-auto object-contain"
 						/>
 					</div>
 
@@ -631,7 +633,44 @@ const Page = () => {
 							</span>
 						</a>
 						<a href="#group-tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">GROUP TOUR</a>
-						<a href="#blogs" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">BLOGS</a>
+						
+						{/* DESTINATION with Dropdown */}
+						<div className="relative group cursor-pointer">
+							<a href="#destination" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">
+								DESTINATION
+							</a>
+							
+							{/* Dropdown Menu */}
+							<div className="absolute top-full left-0 mt-2 w-[500px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
+								<div className="backdrop-blur-lg bg-white/90 border border-white/30 rounded-lg shadow-2xl overflow-hidden">
+									<div className="flex">
+										{/* Pakistan Map */}
+										<div className="w-1/2 p-6 flex items-center justify-center bg-gradient-to-br from-teal-100/50 to-teal-50/50">
+											<svg viewBox="0 0 200 300" className="w-full h-auto">
+												<path d="M60 40 L100 20 L140 25 L165 35 L175 45 L180 60 L175 75 L165 85 L150 95 L145 110 L150 125 L165 135 L180 145 L190 160 L185 175 L170 185 L155 195 L145 210 L150 225 L160 235 L170 245 L165 260 L145 270 L120 275 L95 270 L75 260 L65 250 L60 235 L65 220 L75 210 L85 200 L90 185 L85 170 L75 160 L65 150 L60 135 L55 120 L50 105 L50 90 L55 75 L55 60 Z" 
+													fill="#14b8a6" 
+													stroke="#0891b2" 
+													strokeWidth="1.5"
+												/>
+											</svg>
+										</div>
+										
+										{/* Regions List */}
+										<div className="w-1/2 p-6">
+											<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-4">Pakistani Regions</h3>
+											<ul className="space-y-3">
+												<li><a href="#gilgit" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">Gilgit Baltistan</a></li>
+												<li><a href="#kpk" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">KPK / Galyat</a></li>
+												<li><a href="#punjab" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">Punjab</a></li>
+												<li><a href="#sindh" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">Sindh</a></li>
+												<li><a href="#balochistan" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">Balochistan</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
 						<a href="#about" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">ABOUT US</a>
 						<a href="#contact" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">CONTACT US</a>
 					</nav>
@@ -729,8 +768,8 @@ const Page = () => {
 					<a href="#group-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 						GROUP TOUR
 					</a>
-					<a href="#blogs" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-						BLOGS
+					<a href="#destination" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						DESTINATION
 					</a>
 					<a href="#about" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 						ABOUT US
@@ -767,7 +806,7 @@ const Page = () => {
 		</div>
 
 		{/* ====================== NAYI TALAASH HEADER SECTION ====================== */}
-		<section className="relative w-full h-screen overflow-hidden pt-[110px] sm:pt-[120px]">
+		<section className="relative w-full h-screen overflow-hidden pt-[120px] sm:pt-[130px]">
 			{/* Background with dark overlay */}
 			<div 
 				className="absolute inset-0 bg-cover bg-center"
