@@ -549,7 +549,7 @@ const Page = () => {
 								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
 								aria-label="Facebook"
 							>
-								<Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" fill="#211f20" />
+								<Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 							</a>
 							
 							{/* Instagram */}
@@ -560,7 +560,7 @@ const Page = () => {
 								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
 								aria-label="Instagram"
 							>
-								<Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" fill="#211f20" />
+								<Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 							</a>
 							
 							{/* YouTube */}
@@ -571,7 +571,7 @@ const Page = () => {
 								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#f99621]/50"
 								aria-label="YouTube"
 							>
-								<Youtube className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform" fill="#211f20" />
+								<Youtube className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 							</a>
 							
 							{/* TikTok */}
@@ -602,8 +602,8 @@ const Page = () => {
 			</div>
 		</div>
 
-		{/* Main Navigation Bar - Glassy Background */}
-		<header className="fixed top-[48px] sm:top-[50px] left-0 right-0 z-[100] backdrop-blur-lg bg-white/60 border-b border-white/30 shadow-lg">
+		{/* Main Navigation Bar - Solid White Background */}
+		<header className="fixed top-[48px] sm:top-[50px] left-0 right-0 z-[100] bg-white border-b border-gray-200 shadow-md">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between py-4 sm:py-5">
 					{/* Logo */}
@@ -634,36 +634,89 @@ const Page = () => {
 						</a>
 						<a href="#group-tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">GROUP TOUR</a>
 						
-						{/* DESTINATION with Dropdown */}
+						{/* DESTINATION with Multi-Level Dropdown */}
 						<div className="relative group cursor-pointer">
 							<a href="#destination" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">
 								DESTINATION
 							</a>
 							
-							{/* Dropdown Menu */}
-							<div className="absolute top-full left-0 mt-2 w-[500px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 pointer-events-none group-hover:pointer-events-auto">
-								<div className="backdrop-blur-lg bg-white/90 border border-white/30 rounded-lg shadow-2xl overflow-hidden">
-									<div className="flex">
-										{/* Pakistan Map */}
-										<div className="w-1/2 p-6 flex items-center justify-center bg-gradient-to-br from-teal-100/50 to-teal-50/50">
-											<svg viewBox="0 0 200 300" className="w-full h-auto">
+							{/* Dropdown Menu - Full Width */}
+							<div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-screen max-w-6xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+								<div className="bg-white border border-gray-200 shadow-2xl overflow-hidden rounded-lg">
+									<div className="flex min-h-[400px]">
+										{/* Pakistan Map - Left Side */}
+										<div className="w-1/3 p-8 flex items-center justify-center bg-gradient-to-br from-teal-50 to-teal-100">
+											<svg viewBox="0 0 200 300" className="w-full h-auto max-h-[350px]">
 												<path d="M60 40 L100 20 L140 25 L165 35 L175 45 L180 60 L175 75 L165 85 L150 95 L145 110 L150 125 L165 135 L180 145 L190 160 L185 175 L170 185 L155 195 L145 210 L150 225 L160 235 L170 245 L165 260 L145 270 L120 275 L95 270 L75 260 L65 250 L60 235 L65 220 L75 210 L85 200 L90 185 L85 170 L75 160 L65 150 L60 135 L55 120 L50 105 L50 90 L55 75 L55 60 Z" 
 													fill="#14b8a6" 
 													stroke="#0891b2" 
-													strokeWidth="1.5"
+													strokeWidth="2"
 												/>
 											</svg>
 										</div>
 										
-										{/* Regions List */}
-										<div className="w-1/2 p-6">
-											<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-4">Pakistani Regions</h3>
-											<ul className="space-y-3">
-												<li><a href="#gilgit" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">Gilgit Baltistan</a></li>
-												<li><a href="#kpk" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">KPK / Galyat</a></li>
-												<li><a href="#punjab" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">Punjab</a></li>
-												<li><a href="#sindh" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">Sindh</a></li>
-												<li><a href="#balochistan" className="text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors block">Balochistan</a></li>
+										{/* Regions List - Middle */}
+										<div className="w-1/3 p-6 border-r border-gray-200">
+											<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-5">Pakistani Regions</h3>
+											<ul className="space-y-1">
+												<li className="group/item">
+													<a href="#gilgit" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">Gilgit Baltistan</a>
+													{/* Sub-items for Gilgit Baltistan */}
+													<div className="absolute left-full top-0 w-[250px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
+														<div className="space-y-2">
+															<a href="#hunza" className="block px-3 py-2 rounded hover:bg-white/10">Hunza Valley</a>
+															<a href="#skardu" className="block px-3 py-2 rounded hover:bg-white/10">Skardu</a>
+															<a href="#ghizar" className="block px-3 py-2 rounded hover:bg-white/10">Ghizar</a>
+														</div>
+													</div>
+												</li>
+												<li className="group/item">
+													<a href="#kpk" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">KPK / Galyat</a>
+													{/* Sub-items for KPK */}
+													<div className="absolute left-full top-0 w-[250px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
+														<div className="space-y-2">
+															<a href="#peshawar" className="block px-3 py-2 rounded hover:bg-white/10">Peshawar</a>
+															<a href="#malam-jabba" className="block px-3 py-2 rounded hover:bg-white/10">Malam Jabba</a>
+															<a href="#swat" className="block px-3 py-2 rounded hover:bg-white/10">Swat Valley</a>
+														</div>
+													</div>
+												</li>
+												<li className="group/item">
+													<a href="#punjab" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">Punjab</a>
+													{/* Sub-items for Punjab */}
+													<div className="absolute left-full top-0 w-[280px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
+														<div className="space-y-2">
+															<a href="#lahore" className="block px-3 py-2 rounded hover:bg-white/10">Lahore</a>
+															<a href="#multan" className="block px-3 py-2 rounded hover:bg-white/10">Multan</a>
+															<a href="#rawalpindi" className="block px-3 py-2 rounded hover:bg-white/10">Rawalpindi</a>
+															<a href="#islamabad" className="block px-3 py-2 rounded hover:bg-white/10">Islamabad</a>
+															<a href="#bahawalpur" className="block px-3 py-2 rounded hover:bg-white/10">Bahawalpur</a>
+															<a href="#chakwal" className="block px-3 py-2 rounded hover:bg-white/10">Chakwal</a>
+														</div>
+													</div>
+												</li>
+												<li className="group/item">
+													<a href="#sindh" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">Sindh</a>
+													{/* Sub-items for Sindh */}
+													<div className="absolute left-full top-0 w-[250px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
+														<div className="space-y-2">
+															<a href="#karachi" className="block px-3 py-2 rounded hover:bg-white/10">Karachi</a>
+															<a href="#hyderabad" className="block px-3 py-2 rounded hover:bg-white/10">Hyderabad</a>
+															<a href="#thatta" className="block px-3 py-2 rounded hover:bg-white/10">Thatta</a>
+														</div>
+													</div>
+												</li>
+												<li className="group/item">
+													<a href="#balochistan" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">Balochistan</a>
+													{/* Sub-items for Balochistan */}
+													<div className="absolute left-full top-0 w-[250px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
+														<div className="space-y-2">
+															<a href="#quetta" className="block px-3 py-2 rounded hover:bg-white/10">Quetta</a>
+															<a href="#gwadar" className="block px-3 py-2 rounded hover:bg-white/10">Gwadar</a>
+															<a href="#ziarat" className="block px-3 py-2 rounded hover:bg-white/10">Ziarat</a>
+														</div>
+													</div>
+												</li>
 											</ul>
 										</div>
 									</div>
@@ -783,16 +836,16 @@ const Page = () => {
 			<div className="mt-auto pt-6 border-t border-gray-300">
 				<div className="flex items-center gap-3 mb-3">
 					<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-						<Facebook className="w-5 h-5 text-white" fill="white" />
+						<Facebook className="w-5 h-5 text-white stroke-[white]" />
 					</a>
 					<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-						<Instagram className="w-5 h-5 text-white" fill="white" />
+						<Instagram className="w-5 h-5 text-white stroke-[white]" />
 					</a>
 					<a href="https://www.youtube.com/@nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-						<Youtube className="w-5 h-5 text-white" fill="white" />
+						<Youtube className="w-5 h-5 text-white stroke-[white]" />
 					</a>
 					<a href="https://www.tiktok.com/@nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-						<svg className="w-5 h-5 text-white" fill="white" viewBox="0 0 24 24">
+						<svg className="w-5 h-5 text-white stroke-[white]" fill="none" viewBox="0 0 24 24">
 							<path d="M19.321 5.281a7.286 7.286 0 0 1-.744 1.695 7.246 7.246 0 0 1-6.281 3.819v5.357A7.452 7.452 0 0 1 6 7.116V5.5a1 1 0 0 1 2 0v1.616A5.45 5.45 0 0 0 12.5 18.5a5.177 5.177 0 0 0 5.321-5.123v-7.01c0-.314.15-.587.386-.765a1.24 1.24 0 0 1 .814-.243 7.314 7.314 0 0 0 5.869-2.864 1 1 0 0 1 1.415-1.414A9.318 9.318 0 0 1 19.32 5.28z"/>
 						</svg>
 					</a>
