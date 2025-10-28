@@ -783,16 +783,18 @@ const Page = () => {
 			<div className="mt-auto pt-6 border-t border-gray-300">
 				<div className="flex items-center gap-3 mb-3">
 					<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-						<Facebook className="w-5 h-5 text-white" />
+						<Facebook className="w-5 h-5 text-white" fill="white" />
 					</a>
 					<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-						<Instagram className="w-5 h-5 text-white" />
+						<Instagram className="w-5 h-5 text-white" fill="white" />
 					</a>
 					<a href="https://www.youtube.com/@nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-						<Youtube className="w-5 h-5 text-white" />
+						<Youtube className="w-5 h-5 text-white" fill="white" />
 					</a>
 					<a href="https://www.tiktok.com/@nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-						<Music className="w-5 h-5 text-white" />
+						<svg className="w-5 h-5 text-white" fill="white" viewBox="0 0 24 24">
+							<path d="M19.321 5.281a7.286 7.286 0 0 1-.744 1.695 7.246 7.246 0 0 1-6.281 3.819v5.357A7.452 7.452 0 0 1 6 7.116V5.5a1 1 0 0 1 2 0v1.616A5.45 5.45 0 0 0 12.5 18.5a5.177 5.177 0 0 0 5.321-5.123v-7.01c0-.314.15-.587.386-.765a1.24 1.24 0 0 1 .814-.243 7.314 7.314 0 0 0 5.869-2.864 1 1 0 0 1 1.415-1.414A9.318 9.318 0 0 1 19.32 5.28z"/>
+						</svg>
 					</a>
 				</div>
 				<p className="text-gray-600 text-sm">
