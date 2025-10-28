@@ -663,27 +663,56 @@ const Page = () => {
 												<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-4">Pakistani Regions</h3>
 												<ul className="space-y-1">
 													<li className="group/item">
-														<a href="#gilgit" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Gilgit Baltistan</a>
+														<a 
+															href="#gilgit" 
+															onMouseEnter={() => setSelectedRegion('gilgit')}
+															className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+														>
+															Gilgit Baltistan
+														</a>
 													</li>
 													<li className="group/item">
-														<a href="#kpk" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">KPK / Galyat</a>
+														<a 
+															href="#kpk" 
+															onMouseEnter={() => setSelectedRegion('kpk')}
+															className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+														>
+															KPK / Galyat
+														</a>
 													</li>
 													<li className="group/item">
-														<a href="#punjab" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Punjab</a>
+														<a 
+															href="#punjab" 
+															onMouseEnter={() => setSelectedRegion('punjab')}
+															className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+														>
+															Punjab
+														</a>
 													</li>
 													<li className="group/item">
-														<a href="#sindh" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Sindh</a>
+														<a 
+															href="#sindh" 
+															onMouseEnter={() => setSelectedRegion('sindh')}
+															className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+														>
+															Sindh
+														</a>
 													</li>
 													<li className="group/item">
-														<a href="#balochistan" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Balochistan</a>
+														<a 
+															href="#balochistan" 
+															onMouseEnter={() => setSelectedRegion('balochistan')}
+															className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+														>
+															Balochistan
+														</a>
 													</li>
 												</ul>
 											</div>
 											
 											{/* Sub-regions List - Right Side (Third Column) */}
-											<div className="w-3/5 p-4 sm:p-6 bg-white/50">
-												{/* Gilgit Baltistan Sub-regions */}
-												<div className="group-item gilgit-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+											<div className="w-3/5 p-4 sm:p-6 relative">
+												{selectedRegion === 'gilgit' && (
 													<div className="space-y-1">
 														<a href="#hunza-valley" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Hunza Valley</a>
 														<a href="#skardu-valley" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Skardu Valley</a>
@@ -691,9 +720,8 @@ const Page = () => {
 														<a href="#astore" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Astore</a>
 														<a href="#nagar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Nagar</a>
 													</div>
-												</div>
-												{/* KPK Sub-regions */}
-												<div className="group-item kpk-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+												)}
+												{selectedRegion === 'kpk' && (
 													<div className="space-y-1">
 														<a href="#peshawar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Peshawar</a>
 														<a href="#malam-jabba" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Malam Jabba</a>
@@ -701,9 +729,8 @@ const Page = () => {
 														<a href="#chitral" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Chitral</a>
 														<a href="#abbottabad" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Abbottabad</a>
 													</div>
-												</div>
-												{/* Punjab Sub-regions */}
-												<div className="group-item punjab-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+												)}
+												{selectedRegion === 'punjab' && (
 													<div className="space-y-1">
 														<a href="#lahore-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Lahore District</a>
 														<a href="#multan-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Multan District</a>
@@ -712,9 +739,8 @@ const Page = () => {
 														<a href="#bahawalpur-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Bahawalpur District</a>
 														<a href="#chakwal-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Chakwal District</a>
 													</div>
-												</div>
-												{/* Sindh Sub-regions */}
-												<div className="group-item sindh-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+												)}
+												{selectedRegion === 'sindh' && (
 													<div className="space-y-1">
 														<a href="#karachi" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Karachi</a>
 														<a href="#hyderabad" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Hyderabad</a>
@@ -722,9 +748,8 @@ const Page = () => {
 														<a href="#sukkur" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Sukkur</a>
 														<a href="#mirpur-khas" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Mirpur Khas</a>
 													</div>
-												</div>
-												{/* Balochistan Sub-regions */}
-												<div className="group-item balochistan-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+												)}
+												{selectedRegion === 'balochistan' && (
 													<div className="space-y-1">
 														<a href="#quetta" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Quetta</a>
 														<a href="#gwadar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Gwadar</a>
@@ -732,7 +757,7 @@ const Page = () => {
 														<a href="#turbat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Turbat</a>
 														<a href="#lasbela" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Lasbela</a>
 													</div>
-												</div>
+												)}
 											</div>
 										</div>
 									</div>
