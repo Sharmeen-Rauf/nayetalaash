@@ -15,6 +15,8 @@ const Page = () => {
 	const [activeTourIndex, setActiveTourIndex] = useState(0); 
 	// NEW STATE: To track which Exclusive Package is currently displayed/zoomed
 	const [activePackageIndex, setActivePackageIndex] = useState(0); 
+	// State for selected destination region
+	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
@@ -586,8 +588,8 @@ const Page = () => {
 									<path d="M19.321 5.281a7.286 7.286 0 0 1-.744 1.695 7.246 7.246 0 0 1-6.281 3.819v5.357A7.452 7.452 0 0 1 6 7.116V5.5a1 1 0 0 1 2 0v1.616A5.45 5.45 0 0 0 12.5 18.5a5.177 5.177 0 0 0 5.321-5.123v-7.01c0-.314.15-.587.386-.765a1.24 1.24 0 0 1 .814-.243 7.314 7.314 0 0 0 5.869-2.864 1 1 0 0 1 1.415-1.414A9.318 9.318 0 0 1 19.32 5.28z"/>
 								</svg>
 							</a>
-						</div>
-						
+				</div>
+
 						{/* Customize A Tour Button */}
 						<button
 							onClick={handleWhatsAppClick}
@@ -596,7 +598,7 @@ const Page = () => {
 						>
 							<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
 							<span className="sm:hidden">CUSTOMIZE</span>
-						</button>
+				</button>
 					</div>
 				</div>
 			</div>
@@ -641,87 +643,97 @@ const Page = () => {
 							</a>
 							
 							{/* Dropdown Menu - Responsive Width */}
-							<div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[90vw] max-w-4xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+							<div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[90vw] max-w-3xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
 								<div className="backdrop-blur-lg bg-white/95 border border-gray-200 shadow-2xl overflow-hidden rounded-lg">
-									<div className="flex min-h-[350px]">
-										{/* Pakistan Map - Left Side */}
+									<div className="flex min-h-[400px]">
+										{/* Pakistan Map - Left Side (Reduced Size) */}
 										<div className="w-2/5 p-4 sm:p-6 flex items-center justify-center bg-gradient-to-br from-[#f99621]/10 to-[#f99621]/5">
 											<Image 
 												src="/images/map-2.png"
 												alt="Pakistan Map"
-												width={300}
-												height={400}
-												className="w-full h-auto max-h-[300px] object-contain"
+												width={250}
+												height={350}
+												className="w-full h-auto max-h-[250px] object-contain"
 											/>
 										</div>
 										
-										{/* Regions List - Right Side */}
-										<div className="w-3/5 p-4 sm:p-6">
-											<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-4">Pakistani Regions</h3>
-											<ul className="space-y-1">
-												<li className="group/item relative">
-													<a href="#gilgit" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Gilgit Baltistan</a>
-													{/* Sub-items for Gilgit Baltistan */}
-													<div className="absolute left-full top-0 w-[220px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
-														<div className="space-y-1">
-															<a href="#hunza" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Hunza Valley</a>
-															<a href="#skardu" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Skardu</a>
-															<a href="#ghizar" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Ghizar</a>
-															<a href="#astore" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Astore</a>
-														</div>
+										{/* Regions List - Middle */}
+										<div className="w-3/5 flex border-r border-gray-200">
+											<div className="w-2/5 p-4 sm:p-6 border-r border-gray-200">
+												<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-4">Pakistani Regions</h3>
+												<ul className="space-y-1">
+													<li className="group/item">
+														<a href="#gilgit" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Gilgit Baltistan</a>
+													</li>
+													<li className="group/item">
+														<a href="#kpk" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">KPK / Galyat</a>
+													</li>
+													<li className="group/item">
+														<a href="#punjab" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Punjab</a>
+													</li>
+													<li className="group/item">
+														<a href="#sindh" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Sindh</a>
+													</li>
+													<li className="group/item">
+														<a href="#balochistan" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Balochistan</a>
+													</li>
+												</ul>
+											</div>
+											
+											{/* Sub-regions List - Right Side (Third Column) */}
+											<div className="w-3/5 p-4 sm:p-6 bg-white/50">
+												{/* Gilgit Baltistan Sub-regions */}
+												<div className="group-item gilgit-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+													<div className="space-y-1">
+														<a href="#hunza-valley" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Hunza Valley</a>
+														<a href="#skardu-valley" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Skardu Valley</a>
+														<a href="#ghizer" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Ghizer</a>
+														<a href="#astore" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Astore</a>
+														<a href="#nagar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Nagar</a>
 													</div>
-												</li>
-												<li className="group/item relative">
-													<a href="#kpk" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">KPK / Galyat</a>
-													{/* Sub-items for KPK */}
-													<div className="absolute left-full top-0 w-[220px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
-														<div className="space-y-1">
-															<a href="#peshawar" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Peshawar</a>
-															<a href="#malam-jabba" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Malam Jabba</a>
-															<a href="#swat" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Swat Valley</a>
-															<a href="#chitral" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Chitral</a>
-														</div>
+												</div>
+												{/* KPK Sub-regions */}
+												<div className="group-item kpk-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+													<div className="space-y-1">
+														<a href="#peshawar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Peshawar</a>
+														<a href="#malam-jabba" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Malam Jabba</a>
+														<a href="#swat-valley" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Swat Valley</a>
+														<a href="#chitral" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Chitral</a>
+														<a href="#abbottabad" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Abbottabad</a>
 													</div>
-												</li>
-												<li className="group/item relative">
-													<a href="#punjab" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Punjab</a>
-													{/* Sub-items for Punjab */}
-													<div className="absolute left-full top-0 w-[240px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
-														<div className="space-y-1">
-															<a href="#lahore" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Lahore District</a>
-															<a href="#multan" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Multan District</a>
-															<a href="#rawalpindi" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Rawalpindi District</a>
-															<a href="#islamabad" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Islamabad District</a>
-															<a href="#bahawalpur" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Bahawalpur District</a>
-															<a href="#chakwal" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Chakwal District</a>
-														</div>
+												</div>
+												{/* Punjab Sub-regions */}
+												<div className="group-item punjab-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+													<div className="space-y-1">
+														<a href="#lahore-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Lahore District</a>
+														<a href="#multan-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Multan District</a>
+														<a href="#rawalpindi-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Rawalpindi District</a>
+														<a href="#islamabad-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Islamabad District</a>
+														<a href="#bahawalpur-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Bahawalpur District</a>
+														<a href="#chakwal-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Chakwal District</a>
 													</div>
-												</li>
-												<li className="group/item relative">
-													<a href="#sindh" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Sindh</a>
-													{/* Sub-items for Sindh */}
-													<div className="absolute left-full top-0 w-[220px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
-														<div className="space-y-1">
-															<a href="#karachi" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Karachi</a>
-															<a href="#hyderabad" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Hyderabad</a>
-															<a href="#thatta" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Thatta</a>
-															<a href="#sukkur" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Sukkur</a>
-														</div>
+												</div>
+												{/* Sindh Sub-regions */}
+												<div className="group-item sindh-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+													<div className="space-y-1">
+														<a href="#karachi" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Karachi</a>
+														<a href="#hyderabad" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Hyderabad</a>
+														<a href="#thatta" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Thatta</a>
+														<a href="#sukkur" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Sukkur</a>
+														<a href="#mirpur-khas" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Mirpur Khas</a>
 													</div>
-												</li>
-												<li className="group/item relative">
-													<a href="#balochistan" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Balochistan</a>
-													{/* Sub-items for Balochistan */}
-													<div className="absolute left-full top-0 w-[220px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
-														<div className="space-y-1">
-															<a href="#quetta" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Quetta</a>
-															<a href="#gwadar" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Gwadar</a>
-															<a href="#ziarat" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Ziarat</a>
-															<a href="#turbat" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Turbat</a>
-														</div>
+												</div>
+												{/* Balochistan Sub-regions */}
+												<div className="group-item balochistan-item opacity-0 invisible absolute group-hover:visible group-hover:opacity-100 transition-opacity duration-200">
+													<div className="space-y-1">
+														<a href="#quetta" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Quetta</a>
+														<a href="#gwadar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Gwadar</a>
+														<a href="#ziarat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Ziarat</a>
+														<a href="#turbat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Turbat</a>
+														<a href="#lasbela" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Lasbela</a>
 													</div>
-												</li>
-											</ul>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -733,16 +745,16 @@ const Page = () => {
 					</nav>
 
 					{/* Mobile Menu Button */}
-					<button
-						onClick={() => setIsMenuOpen(true)}
+				<button
+					onClick={() => setIsMenuOpen(true)}
 						className="lg:hidden p-2 rounded-md transition-colors hover:bg-white/20"
-						aria-label="Toggle navigation menu"
-					>
+					aria-label="Toggle navigation menu"
+				>
 						<Menu className="w-6 h-6 text-[#211f20]" />
-					</button>
+				</button>
 				</div>
 			</div>
-		</header>
+			</header>
 
 			{/* Splash Screen */}
 			{(splashVisible && (
@@ -780,25 +792,25 @@ const Page = () => {
 		<div
 			className={`fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
 			style={{ backgroundColor: '#f8f9fa' }}
-		>
-			{/* Clickable Overlay to close menu */}
-			{isMenuOpen && (
-				<div 
-					className="fixed inset-0 bg-black/50 z-[-1] backdrop-blur-sm" 
-					onClick={() => setIsMenuOpen(false)}
-					aria-hidden="true"
-				/>
-			)}
+			>
+				{/* Clickable Overlay to close menu */}
+				{isMenuOpen && (
+					<div 
+						className="fixed inset-0 bg-black/50 z-[-1] backdrop-blur-sm" 
+						onClick={() => setIsMenuOpen(false)}
+						aria-hidden="true"
+					/>
+				)}
 			<div className="p-6 sm:p-8 flex flex-col h-full">
-				{/* Close Button */}
-				<button
-					onClick={() => setIsMenuOpen(false)}
+					{/* Close Button */}
+					<button
+						onClick={() => setIsMenuOpen(false)}
 					className="absolute top-6 right-6 p-2 rounded-full text-white transition-colors hover:bg-[#e8851a]"
 					style={{ backgroundColor: '#f99621' }}
-					aria-label="Close navigation menu"
-				>
+						aria-label="Close navigation menu"
+					>
 					<X className="w-6 h-6" />
-				</button>
+					</button>
 
 				{/* Logo */}
 				<div className="mt-12 mb-8">
@@ -811,7 +823,7 @@ const Page = () => {
 					/>
 				</div>
 
-				{/* Nav Links */}
+					{/* Nav Links */}
 				<nav className="flex flex-col space-y-2 flex-grow">
 					<a href="#home" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 						HOME
@@ -834,9 +846,9 @@ const Page = () => {
 					<a href="#contact" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 						CONTACT US
 					</a>
-				</nav>
+					</nav>
 
-			{/* Footer Info in Menu */}
+					{/* Footer Info in Menu */}
 			<div className="mt-auto pt-6 border-t border-gray-300">
 				<div className="flex items-center gap-3 mb-3">
 					<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
@@ -855,25 +867,25 @@ const Page = () => {
 					</a>
 				</div>
 				<p className="text-gray-600 text-sm">
-					Explore the unknown with us.
-				</p>
-				<p className="text-gray-500 text-xs mt-2">
-					© 2024 Nayi Talaash. All rights reserved.
-				</p>
+							Explore the unknown with us.
+						</p>
+						<p className="text-gray-500 text-xs mt-2">
+							© 2024 Nayi Talaash. All rights reserved.
+						</p>
+					</div>
+				</div>
 			</div>
-			</div>
-		</div>
 
 		{/* ====================== NAYI TALAASH HEADER SECTION ====================== */}
 		<section className="relative w-full h-screen overflow-hidden pt-[120px] sm:pt-[130px]">
 			{/* Background with dark overlay */}
 			<div 
 				className="absolute inset-0 bg-cover bg-center"
-				style={{ 
+						style={{ 
 					backgroundImage: "url('https://tourisme-sumene-artense.com/wp-content/uploads/2024/11/section_intro-e1733142641941.jpg')",
 					filter: "brightness(0.75)",
-				}}
-			></div>
+						}}
+					></div>
 
 				{/* Large transparent ring */}
 				<div className="absolute inset-0 flex items-center justify-center px-4">
@@ -885,13 +897,13 @@ const Page = () => {
 						{/* Logo Image */}
 						<div className="mb-6">
 							<Image 
-								src={logoImage} 
-								alt="Nayi Talaash Logo" 
+						src={logoImage} 
+						alt="Nayi Talaash Logo" 
 								width={224}
 								height={80}
 								className="w-48 h-16 sm:w-56 sm:h-20 object-contain"
-							/>
-						</div>
+						/>
+					</div>
 
 						{/* Tagline */}
 						<p className="text-white text-xs sm:text-sm tracking-wider uppercase mb-2">
