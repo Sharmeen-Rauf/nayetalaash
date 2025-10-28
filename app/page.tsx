@@ -640,80 +640,84 @@ const Page = () => {
 								DESTINATION
 							</a>
 							
-							{/* Dropdown Menu - Full Width */}
-							<div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-screen max-w-6xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
-								<div className="bg-white border border-gray-200 shadow-2xl overflow-hidden rounded-lg">
-									<div className="flex min-h-[400px]">
+							{/* Dropdown Menu - Responsive Width */}
+							<div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[90vw] max-w-4xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto">
+								<div className="backdrop-blur-lg bg-white/95 border border-gray-200 shadow-2xl overflow-hidden rounded-lg">
+									<div className="flex min-h-[350px]">
 										{/* Pakistan Map - Left Side */}
-										<div className="w-1/3 p-8 flex items-center justify-center bg-gradient-to-br from-teal-50 to-teal-100">
-											<svg viewBox="0 0 200 300" className="w-full h-auto max-h-[350px]">
-												<path d="M60 40 L100 20 L140 25 L165 35 L175 45 L180 60 L175 75 L165 85 L150 95 L145 110 L150 125 L165 135 L180 145 L190 160 L185 175 L170 185 L155 195 L145 210 L150 225 L160 235 L170 245 L165 260 L145 270 L120 275 L95 270 L75 260 L65 250 L60 235 L65 220 L75 210 L85 200 L90 185 L85 170 L75 160 L65 150 L60 135 L55 120 L50 105 L50 90 L55 75 L55 60 Z" 
-													fill="#14b8a6" 
-													stroke="#0891b2" 
-													strokeWidth="2"
-												/>
-											</svg>
+										<div className="w-2/5 p-4 sm:p-6 flex items-center justify-center bg-gradient-to-br from-[#f99621]/10 to-[#f99621]/5">
+											<Image 
+												src="/images/map-2.png"
+												alt="Pakistan Map"
+												width={300}
+												height={400}
+												className="w-full h-auto max-h-[300px] object-contain"
+											/>
 										</div>
 										
-										{/* Regions List - Middle */}
-										<div className="w-1/3 p-6 border-r border-gray-200">
-											<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-5">Pakistani Regions</h3>
+										{/* Regions List - Right Side */}
+										<div className="w-3/5 p-4 sm:p-6">
+											<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-4">Pakistani Regions</h3>
 											<ul className="space-y-1">
-												<li className="group/item">
-													<a href="#gilgit" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">Gilgit Baltistan</a>
+												<li className="group/item relative">
+													<a href="#gilgit" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Gilgit Baltistan</a>
 													{/* Sub-items for Gilgit Baltistan */}
-													<div className="absolute left-full top-0 w-[250px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
-														<div className="space-y-2">
-															<a href="#hunza" className="block px-3 py-2 rounded hover:bg-white/10">Hunza Valley</a>
-															<a href="#skardu" className="block px-3 py-2 rounded hover:bg-white/10">Skardu</a>
-															<a href="#ghizar" className="block px-3 py-2 rounded hover:bg-white/10">Ghizar</a>
+													<div className="absolute left-full top-0 w-[220px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
+														<div className="space-y-1">
+															<a href="#hunza" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Hunza Valley</a>
+															<a href="#skardu" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Skardu</a>
+															<a href="#ghizar" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Ghizar</a>
+															<a href="#astore" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Astore</a>
 														</div>
 													</div>
 												</li>
-												<li className="group/item">
-													<a href="#kpk" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">KPK / Galyat</a>
+												<li className="group/item relative">
+													<a href="#kpk" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">KPK / Galyat</a>
 													{/* Sub-items for KPK */}
-													<div className="absolute left-full top-0 w-[250px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
-														<div className="space-y-2">
-															<a href="#peshawar" className="block px-3 py-2 rounded hover:bg-white/10">Peshawar</a>
-															<a href="#malam-jabba" className="block px-3 py-2 rounded hover:bg-white/10">Malam Jabba</a>
-															<a href="#swat" className="block px-3 py-2 rounded hover:bg-white/10">Swat Valley</a>
+													<div className="absolute left-full top-0 w-[220px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
+														<div className="space-y-1">
+															<a href="#peshawar" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Peshawar</a>
+															<a href="#malam-jabba" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Malam Jabba</a>
+															<a href="#swat" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Swat Valley</a>
+															<a href="#chitral" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Chitral</a>
 														</div>
 													</div>
 												</li>
-												<li className="group/item">
-													<a href="#punjab" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">Punjab</a>
+												<li className="group/item relative">
+													<a href="#punjab" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Punjab</a>
 													{/* Sub-items for Punjab */}
-													<div className="absolute left-full top-0 w-[280px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
-														<div className="space-y-2">
-															<a href="#lahore" className="block px-3 py-2 rounded hover:bg-white/10">Lahore</a>
-															<a href="#multan" className="block px-3 py-2 rounded hover:bg-white/10">Multan</a>
-															<a href="#rawalpindi" className="block px-3 py-2 rounded hover:bg-white/10">Rawalpindi</a>
-															<a href="#islamabad" className="block px-3 py-2 rounded hover:bg-white/10">Islamabad</a>
-															<a href="#bahawalpur" className="block px-3 py-2 rounded hover:bg-white/10">Bahawalpur</a>
-															<a href="#chakwal" className="block px-3 py-2 rounded hover:bg-white/10">Chakwal</a>
+													<div className="absolute left-full top-0 w-[240px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
+														<div className="space-y-1">
+															<a href="#lahore" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Lahore District</a>
+															<a href="#multan" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Multan District</a>
+															<a href="#rawalpindi" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Rawalpindi District</a>
+															<a href="#islamabad" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Islamabad District</a>
+															<a href="#bahawalpur" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Bahawalpur District</a>
+															<a href="#chakwal" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Chakwal District</a>
 														</div>
 													</div>
 												</li>
-												<li className="group/item">
-													<a href="#sindh" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">Sindh</a>
+												<li className="group/item relative">
+													<a href="#sindh" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Sindh</a>
 													{/* Sub-items for Sindh */}
-													<div className="absolute left-full top-0 w-[250px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
-														<div className="space-y-2">
-															<a href="#karachi" className="block px-3 py-2 rounded hover:bg-white/10">Karachi</a>
-															<a href="#hyderabad" className="block px-3 py-2 rounded hover:bg-white/10">Hyderabad</a>
-															<a href="#thatta" className="block px-3 py-2 rounded hover:bg-white/10">Thatta</a>
+													<div className="absolute left-full top-0 w-[220px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
+														<div className="space-y-1">
+															<a href="#karachi" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Karachi</a>
+															<a href="#hyderabad" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Hyderabad</a>
+															<a href="#thatta" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Thatta</a>
+															<a href="#sukkur" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Sukkur</a>
 														</div>
 													</div>
 												</li>
-												<li className="group/item">
-													<a href="#balochistan" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#0073e6] hover:text-white transition-colors rounded">Balochistan</a>
+												<li className="group/item relative">
+													<a href="#balochistan" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded">Balochistan</a>
 													{/* Sub-items for Balochistan */}
-													<div className="absolute left-full top-0 w-[250px] bg-[#0073e6] text-white p-4 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200">
-														<div className="space-y-2">
-															<a href="#quetta" className="block px-3 py-2 rounded hover:bg-white/10">Quetta</a>
-															<a href="#gwadar" className="block px-3 py-2 rounded hover:bg-white/10">Gwadar</a>
-															<a href="#ziarat" className="block px-3 py-2 rounded hover:bg-white/10">Ziarat</a>
+													<div className="absolute left-full top-0 w-[220px] bg-[#f99621] text-white p-3 rounded-r-lg opacity-0 invisible group-hover/item:opacity-100 group-hover/item:visible transition-opacity duration-200 z-10">
+														<div className="space-y-1">
+															<a href="#quetta" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Quetta</a>
+															<a href="#gwadar" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Gwadar</a>
+															<a href="#ziarat" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Ziarat</a>
+															<a href="#turbat" className="block px-3 py-2 rounded hover:bg-white/10 text-sm">Turbat</a>
 														</div>
 													</div>
 												</li>
