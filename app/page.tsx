@@ -518,47 +518,98 @@ const Page = () => {
 	return (
 		<div className="relative min-h-screen font-sans" style={{ cursor: 'none' }}>
 			
-			{/* --- 1. Fixed Header/Top Bar (Right Side) --- */}
-			<header 
-				className="fixed top-0 right-0 z-[100] p-4 md:p-6 flex items-center space-x-4 bg-black/30 backdrop-blur-sm rounded-bl-xl transition-all duration-300"
-			>
-				
-				{/* Theme Toggle (Black/White) */}
-				<button
-					onClick={() => setIsLight(v => !v)}
-					className={`hidden sm:flex items-center text-sm font-semibold tracking-wider p-2 rounded-full transition-colors`}
-					style={{ backgroundColor: isLight ? 'white' : secondaryBlack, color: isLight ? secondaryBlack : primaryOrange }}
-					aria-label="Toggle theme"
-				>
-					<Moon className="w-5 h-5" />
-					<span className="ml-2">{isLight ? 'Light' : 'Dark'}</span>
-				</button>
+		{/* --- 1. Two-Tier Navbar --- */}
+		{/* Top Bar - Dark Background with Contact & Social */}
+		<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20] border-b border-gray-800">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div className="flex items-center justify-between py-2 sm:py-3">
+					{/* Left: Contact Info */}
+					<div className="flex items-center gap-4 sm:gap-6 text-white text-xs sm:text-sm">
+						<a href="tel:+92331438251" className="flex items-center gap-2 hover:text-[#f99621] transition-colors">
+							<Phone className="w-4 h-4" style={{ color: '#f99621' }} />
+							<span className="hidden sm:inline">+92 331 438251</span>
+							<span className="sm:hidden">+92 331...</span>
+						</a>
+						<a href="mailto:info@nayetalash.com" className="flex items-center gap-2 hover:text-[#f99621] transition-colors">
+							<Mail className="w-4 h-4" style={{ color: '#f99621' }} />
+							<span className="hidden md:inline">info@nayetalash.com</span>
+							<span className="md:hidden text-xs">info@...</span>
+						</a>
+					</div>
 
-				{/* Search Icon */}
-				<button className="text-white hover:text-amber-400 transition-colors">
-					<Search className="w-5 h-5" />
-				</button>
+					{/* Right: Social Media Icons & Customize Button */}
+					<div className="flex items-center gap-3">
+						{/* Social Media Icons */}
+						<div className="flex items-center gap-2">
+							<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#f99621] flex items-center justify-center hover:bg-[#e8851a] transition-colors">
+								<Facebook className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20]" />
+							</a>
+							<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#f99621] flex items-center justify-center hover:bg-[#e8851a] transition-colors">
+								<Instagram className="w-4 h-4 sm:w-5 sm:h-5 text-[#211f20]" />
+							</a>
+						</div>
+						
+						{/* Customize A Tour Button */}
+						<button
+							onClick={handleWhatsAppClick}
+							className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-bold text-[#211f20] rounded hover:bg-[#e8851a] transition-colors"
+							style={{ backgroundColor: '#e8851a' }}
+						>
+							<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
+							<span className="sm:hidden">CUSTOMIZE</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
-				{/* Shopping Cart Icon */}
-				{/* <button className="text-white hover:text-amber-400 transition-colors relative">
-					<ShoppingCart className="w-5 h-5" />
-					<span className={`absolute -top-1 -right-1 w-4 h-4 text-xs flex items-center justify-center rounded-full text-white`} style={{ backgroundColor: primaryOrange }}>0</span>
-				</button> */}
+		{/* Main Navigation Bar - White Background */}
+		<header className="fixed top-[48px] sm:top-[50px] left-0 right-0 z-[100] bg-white shadow-md">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div className="flex items-center justify-between py-3 sm:py-4">
+					{/* Logo */}
+					<div className="flex items-center">
+						<Image 
+							src={logoImage}
+							alt="Nayi Talaash Logo"
+							width={180}
+							height={60}
+							className="h-10 sm:h-12 w-auto object-contain"
+						/>
+					</div>
 
-				{/* TOGGLE BUTTON */}
-				<button
-					onClick={() => setIsMenuOpen(true)}
-					className={`p-3 rounded-full transition-all duration-300 transform hover:scale-105`}
-					style={{ 
-						backgroundColor: secondaryBlack, 
-						color: primaryOrange,
-						boxShadow: `0 0 15px 5px ${primaryOrange}80` // Added glow effect
-					}}
-					aria-label="Toggle navigation menu"
-				>
-					<Menu className="w-6 h-6" />
-				</button>
-			</header>
+					{/* Desktop Navigation Links */}
+					<nav className="hidden lg:flex items-center gap-1">
+						<a href="#home" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">HOME</a>
+						<a href="#tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors relative group">
+							<span className="flex items-center gap-1">
+								PAKISTAN TOURS
+								<ChevronRight className="w-4 h-4 rotate-90" />
+							</span>
+						</a>
+						<a href="#city-tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors relative group">
+							<span className="flex items-center gap-1">
+								CITY TOURS
+								<ChevronRight className="w-4 h-4 rotate-90" />
+							</span>
+						</a>
+						<a href="#group-tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">GROUP TOUR</a>
+						<a href="#blogs" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">BLOGS</a>
+						<a href="#about" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">ABOUT US</a>
+						<a href="#contact" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">CONTACT US</a>
+					</nav>
+
+					{/* Mobile Menu Button */}
+					<button
+						onClick={() => setIsMenuOpen(true)}
+						className="lg:hidden p-2 rounded-md transition-colors hover:bg-gray-100"
+						aria-label="Toggle navigation menu"
+					>
+						<Menu className="w-6 h-6 text-[#211f20]" />
+					</button>
+				</div>
+			</div>
+		</header>
 
 			{/* Splash Screen */}
 			{(splashVisible && (
@@ -592,70 +643,96 @@ const Page = () => {
 				</div>
 			))}
 
-			{/* --- 2. Full-Screen Side Navigation Menu --- */}
-			<div
-				className={`fixed top-0 right-0 h-full w-full max-w-sm z-[101] shadow-2xl transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
-				style={{ backgroundColor: secondaryBlack }}
-			>
-				{/* Clickable Overlay to close menu */}
-				{isMenuOpen && (
-					<div 
-						className="fixed inset-0 bg-black/50 z-[-1] backdrop-blur-sm" 
-						onClick={() => setIsMenuOpen(false)}
-						aria-hidden="true"
+		{/* --- 2. Mobile Side Navigation Menu --- */}
+		<div
+			className={`fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+			style={{ backgroundColor: '#f8f9fa' }}
+		>
+			{/* Clickable Overlay to close menu */}
+			{isMenuOpen && (
+				<div 
+					className="fixed inset-0 bg-black/50 z-[-1] backdrop-blur-sm" 
+					onClick={() => setIsMenuOpen(false)}
+					aria-hidden="true"
+				/>
+			)}
+			<div className="p-6 sm:p-8 flex flex-col h-full">
+				{/* Close Button */}
+				<button
+					onClick={() => setIsMenuOpen(false)}
+					className="absolute top-6 right-6 p-2 rounded-full text-white transition-colors hover:bg-[#e8851a]"
+					style={{ backgroundColor: '#f99621' }}
+					aria-label="Close navigation menu"
+				>
+					<X className="w-6 h-6" />
+				</button>
+
+				{/* Logo */}
+				<div className="mt-12 mb-8">
+					<Image 
+						src={logoImage}
+						alt="Nayi Talaash Logo"
+						width={150}
+						height={50}
+						className="h-12 w-auto object-contain"
 					/>
-				)}
-				<div className="p-8 flex flex-col h-full">
-					{/* Close Button */}
-					<button
-						onClick={() => setIsMenuOpen(false)}
-						className="absolute top-6 right-6 p-2 rounded-full text-white hover:bg-white hover:text-red-600 transition-colors"
-						style={{ backgroundColor: primaryOrange }}
-						aria-label="Close navigation menu"
-					>
-						<X className="w-7 h-7" />
-					</button>
+				</div>
 
-					<h2 className="text-3xl font-extrabold mb-10 mt-16" style={{ color: primaryOrange }}>
-						Nayi Talaash
-					</h2>
+				{/* Nav Links */}
+				<nav className="flex flex-col space-y-2 flex-grow">
+					<a href="#home" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						HOME
+					</a>
+					<a href="#tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						PAKISTAN TOURS
+					</a>
+					<a href="#city-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						CITY TOURS
+					</a>
+					<a href="#group-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						GROUP TOUR
+					</a>
+					<a href="#blogs" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						BLOGS
+					</a>
+					<a href="#about" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						ABOUT US
+					</a>
+					<a href="#contact" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						CONTACT US
+					</a>
+				</nav>
 
-					{/* Nav Links */}
-					<nav className="flex flex-col space-y-6 flex-grow">
-						{navLinks.map((item) => (
-							<a 
-								key={item.name}
-								href={item.link}
-								className="flex items-center text-2xl font-light text-white hover:text-gray-300 border-b border-gray-700 pb-3 transition-all duration-300 group"
-							>
-								<item.icon className={`w-6 h-6 mr-4 transition-transform duration-300 group-hover:scale-110`} style={{ color: primaryOrange }}/>
-								{item.name}
-							</a>
-						))}
-					</nav>
-
-					{/* Footer Info in Menu */}
-					<div className="mt-auto pt-8 border-t border-gray-700">
-						<p className="text-gray-400 text-sm">
-							Explore the unknown with us.
-						</p>
-						<p className="text-gray-500 text-xs mt-2">
-							© 2024 Nayi Talaash. All rights reserved.
-						</p>
+				{/* Footer Info in Menu */}
+				<div className="mt-auto pt-6 border-t border-gray-300">
+					<div className="flex items-center gap-2 mb-3">
+						<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#f99621] flex items-center justify-center hover:bg-[#e8851a] transition-colors">
+							<Facebook className="w-5 h-5 text-white" />
+						</a>
+						<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#f99621] flex items-center justify-center hover:bg-[#e8851a] transition-colors">
+							<Instagram className="w-5 h-5 text-white" />
+						</a>
 					</div>
+					<p className="text-gray-600 text-sm">
+						Explore the unknown with us.
+					</p>
+					<p className="text-gray-500 text-xs mt-2">
+						© 2024 Nayi Talaash. All rights reserved.
+					</p>
 				</div>
 			</div>
+		</div>
 
-			{/* ====================== NAYI TALAASH HEADER SECTION ====================== */}
-			<section className="relative w-full h-screen overflow-hidden">
-				{/* Background with dark overlay */}
-				<div 
-					className="absolute inset-0 bg-cover bg-center"
-						style={{ 
-						backgroundImage: "url('https://tourisme-sumene-artense.com/wp-content/uploads/2024/11/section_intro-e1733142641941.jpg')",
-						filter: "brightness(0.75)",
-						}}
-					></div>
+		{/* ====================== NAYI TALAASH HEADER SECTION ====================== */}
+		<section className="relative w-full h-screen overflow-hidden pt-[110px] sm:pt-[120px]">
+			{/* Background with dark overlay */}
+			<div 
+				className="absolute inset-0 bg-cover bg-center"
+				style={{ 
+					backgroundImage: "url('https://tourisme-sumene-artense.com/wp-content/uploads/2024/11/section_intro-e1733142641941.jpg')",
+					filter: "brightness(0.75)",
+				}}
+			></div>
 
 				{/* Large transparent ring */}
 				<div className="absolute inset-0 flex items-center justify-center px-4">
