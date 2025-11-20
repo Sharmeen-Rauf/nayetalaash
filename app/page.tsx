@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music } from 'lucide-react';
+import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, ChevronDown, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music } from 'lucide-react';
 
 const Page = () => {
 	// --- STATE AND HOOKS: MUST BE INSIDE THE COMPONENT FUNCTION ---
@@ -901,60 +901,133 @@ const Page = () => {
 				</div>
 			</div>
 
-		{/* ====================== NAYI TALAASH HEADER SECTION ====================== */}
-		<section className="relative w-full h-screen overflow-hidden pt-[105px] sm:pt-[112px]">
-			{/* Background with dark overlay */}
+		{/* ====================== MODERN HERO SECTION ====================== */}
+		<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[105px] sm:pt-[112px]">
+			{/* Background Image with Parallax Effect */}
 			<div 
-				className="absolute inset-0 bg-cover bg-center"
-						style={{ 
-					backgroundImage: "url('https://tourisme-sumene-artense.com/wp-content/uploads/2024/11/section_intro-e1733142641941.jpg')",
-					filter: "brightness(0.75)",
-						}}
-					></div>
+				className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 ease-out"
+				style={{ 
+					backgroundImage: "url('https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=2070')",
+					transform: 'scale(1.1)',
+				}}
+			>
+				{/* Gradient Overlay */}
+				<div className="absolute inset-0 bg-gradient-to-b from-[#211f20]/80 via-[#211f20]/70 to-[#211f20]/90"></div>
+				<div className="absolute inset-0 bg-gradient-to-r from-[#211f20]/60 to-transparent"></div>
+			</div>
 
-				{/* Large transparent ring */}
-				<div className="absolute inset-0 flex items-center justify-center px-4">
-					{/* Outer ring - Animated */}
-					<div className="relative w-[80vw] max-w-[800px] aspect-square rounded-full border-[10vw] sm:border-[60px] md:border-[80px] border-white/10 animate-spin-slow"></div>
-					
-					{/* Inner circle - Stationary */}
-					<div className="absolute w-[60vw] max-w-[400px] aspect-square rounded-full bg-black/40 flex flex-col items-center justify-center text-center px-6">
-						{/* Logo Image */}
-						<div className="mb-6">
-							<Image 
-						src={logoImage} 
-						alt="Nayi Talaash Logo" 
-								width={224}
-								height={80}
-								className="w-48 h-16 sm:w-56 sm:h-20 object-contain"
-						/>
-					</div>
+			{/* Animated Background Elements */}
+			<div className="absolute inset-0 overflow-hidden pointer-events-none">
+				{/* Floating particles */}
+				<div className="absolute top-20 left-10 w-2 h-2 bg-[#f99621] rounded-full opacity-60 animate-float" style={{ animationDelay: '0s', animationDuration: '6s' }}></div>
+				<div className="absolute top-40 right-20 w-3 h-3 bg-[#f99621] rounded-full opacity-40 animate-float" style={{ animationDelay: '2s', animationDuration: '8s' }}></div>
+				<div className="absolute bottom-32 left-1/4 w-2 h-2 bg-[#f99621] rounded-full opacity-50 animate-float" style={{ animationDelay: '4s', animationDuration: '7s' }}></div>
+				<div className="absolute bottom-20 right-1/3 w-3 h-3 bg-[#f99621] rounded-full opacity-30 animate-float" style={{ animationDelay: '1s', animationDuration: '9s' }}></div>
+			</div>
 
-						{/* Tagline */}
-						<p className="text-white text-xs sm:text-sm tracking-wider uppercase mb-2">
-							Welcome to Nayi Talaash – Time to Meet the Culture!
-						</p>
-						
-						{/* Main Heading */}
-						<h1 className="text-[#f99621] text-3xl sm:text-4xl font-bold mb-4">
-							NAYE TALAASH
-						</h1>
-						
-						{/* Subtitle */}
-						<p className="text-white text-sm sm:text-base tracking-wide mb-6">
-							Discover the Beauty of Pakistan with Nayi Talaash
-						</p>
+			{/* Main Content Container */}
+			<div className="relative z-10 h-full flex items-center">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="max-w-3xl">
+						{/* Tagline - Animated Fade In */}
+						<div className="mb-4 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+							<p className="text-[#f99621] text-sm sm:text-base font-semibold uppercase tracking-[0.2em] mb-2">
+								Welcome to Nayi Talaash
+							</p>
+						</div>
 
-						{/* Contact Us Button */}
-						<button
-							onClick={handleWhatsAppClick}
-							className="px-8 py-3 bg-[#f99621] text-white font-bold rounded-full hover:bg-[#e8851a] transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-						>
-							Contact Us
-						</button>
+						{/* Main Heading - Animated Fade In */}
+						<div className="mb-6 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
+							<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
+								Time to Meet the{' '}
+								<span className="text-[#f99621] relative inline-block">
+									Culture
+									<svg className="absolute -bottom-2 left-0 w-full h-3 text-[#f99621]/30" viewBox="0 0 200 12" preserveAspectRatio="none">
+										<path d="M0,6 Q50,0 100,6 T200,6" stroke="currentColor" strokeWidth="2" fill="none" />
+									</svg>
+								</span>
+							</h1>
+						</div>
+
+						{/* Subtitle - Animated Fade In */}
+						<div className="mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
+							<p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed max-w-2xl">
+								Discover the Beauty of Pakistan with Nayi Talaash – Your Ultimate Travel Companion
+							</p>
+						</div>
+
+						{/* CTA Buttons - Animated Fade In */}
+						<div className="flex flex-col sm:flex-row gap-4 mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
+							<button
+								onClick={handleWhatsAppClick}
+								className="group px-8 py-4 bg-[#f99621] text-white font-bold text-base sm:text-lg rounded-full hover:bg-[#e8851a] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-[#f99621]/50 flex items-center justify-center gap-2"
+							>
+								<span>Explore Tours</span>
+								<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+							</button>
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold text-base sm:text-lg rounded-full hover:bg-white hover:text-[#211f20] transition-all duration-300 transform hover:scale-105 shadow-lg"
+							>
+								Contact Us
+							</button>
+						</div>
+
+						{/* Stats/Features - Animated Fade In */}
+						<div className="grid grid-cols-3 gap-4 sm:gap-6 mt-12 opacity-0 animate-fade-in-up" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
+							<div className="text-center">
+								<div className="text-2xl sm:text-3xl font-bold text-[#f99621] mb-1">500+</div>
+								<div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wide">Happy Travelers</div>
+							</div>
+							<div className="text-center">
+								<div className="text-2xl sm:text-3xl font-bold text-[#f99621] mb-1">50+</div>
+								<div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wide">Destinations</div>
+							</div>
+							<div className="text-center">
+								<div className="text-2xl sm:text-3xl font-bold text-[#f99621] mb-1">100%</div>
+								<div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wide">Satisfaction</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+
+			{/* Scroll Indicator */}
+			<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 opacity-0 animate-fade-in-up" style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}>
+				<div className="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors cursor-pointer">
+					<span className="text-xs uppercase tracking-wider">Scroll</span>
+					<ChevronDown className="w-5 h-5 animate-bounce" />
+				</div>
+			</div>
+
+			{/* CSS Animations */}
+			<style dangerouslySetInnerHTML={{__html: `
+				@keyframes fade-in-up {
+					from {
+						opacity: 0;
+						transform: translateY(30px);
+					}
+					to {
+						opacity: 1;
+						transform: translateY(0);
+					}
+				}
+				@keyframes float {
+					0%, 100% {
+						transform: translateY(0) translateX(0);
+					}
+					50% {
+						transform: translateY(-20px) translateX(10px);
+					}
+				}
+				.animate-fade-in-up {
+					animation: fade-in-up 0.8s ease-out;
+				}
+				.animate-float {
+					animation: float 6s ease-in-out infinite;
+				}
+			`}} />
+		</section>
 
 			{/* --- 3.1 Intro Section (Themed Content) --- */}
 			<section className="py-16 md:py-24 z-20 relative" style={{ backgroundColor: secondaryBlack }}>
