@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, ChevronDown, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music } from 'lucide-react';
+import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, ChevronDown, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music, Ship, Route, Droplets, Play, CheckCircle2 } from 'lucide-react';
 
 const Page = () => {
 	// --- STATE AND HOOKS: MUST BE INSIDE THE COMPONENT FUNCTION ---
@@ -901,810 +901,640 @@ const Page = () => {
 				</div>
 			</div>
 
-		{/* ====================== MODERN HERO SECTION ====================== */}
+		{/* ====================== HERO SECTION ====================== */}
 		<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[105px] sm:pt-[112px]">
-			{/* Background Image with Parallax Effect */}
+			{/* Background Image */}
 			<div 
-				className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 ease-out"
+				className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 				style={{ 
 					backgroundImage: "url('https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=2070')",
-					transform: 'scale(1.1)',
+					filter: "brightness(0.6)",
 				}}
-			>
-				{/* Gradient Overlay */}
-				<div className="absolute inset-0 bg-gradient-to-b from-[#211f20]/80 via-[#211f20]/70 to-[#211f20]/90"></div>
-				<div className="absolute inset-0 bg-gradient-to-r from-[#211f20]/60 to-transparent"></div>
+			></div>
+
+			{/* Floating Icons on Left Side */}
+			<div className="absolute left-4 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-4">
+				<a href="tel:+92331438251" className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+					<Phone className="w-6 h-6 text-white" />
+				</a>
+				<button 
+					onClick={handleWhatsAppClick}
+					className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+				>
+					<MessageCircle className="w-6 h-6 text-white" />
+				</button>
+				<button className="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+					<X className="w-6 h-6 text-white" />
+				</button>
 			</div>
 
-			{/* Animated Background Elements */}
-			<div className="absolute inset-0 overflow-hidden pointer-events-none">
-				{/* Floating particles */}
-				<div className="absolute top-20 left-10 w-2 h-2 bg-[#f99621] rounded-full opacity-60 animate-float" style={{ animationDelay: '0s', animationDuration: '6s' }}></div>
-				<div className="absolute top-40 right-20 w-3 h-3 bg-[#f99621] rounded-full opacity-40 animate-float" style={{ animationDelay: '2s', animationDuration: '8s' }}></div>
-				<div className="absolute bottom-32 left-1/4 w-2 h-2 bg-[#f99621] rounded-full opacity-50 animate-float" style={{ animationDelay: '4s', animationDuration: '7s' }}></div>
-				<div className="absolute bottom-20 right-1/3 w-3 h-3 bg-[#f99621] rounded-full opacity-30 animate-float" style={{ animationDelay: '1s', animationDuration: '9s' }}></div>
-			</div>
-
-			{/* Main Content Container */}
-			<div className="relative z-10 h-full flex items-center">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="max-w-3xl">
-						{/* Tagline - Animated Fade In */}
-						<div className="mb-4 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-							<p className="text-[#f99621] text-sm sm:text-base font-semibold uppercase tracking-[0.2em] mb-2">
-								Welcome to Nayi Talaash
-							</p>
-						</div>
-
-						{/* Main Heading - Animated Fade In */}
-						<div className="mb-6 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-							<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-4">
-								Time to Meet the{' '}
-								<span className="text-[#f99621] relative inline-block">
-									Culture
-									<svg className="absolute -bottom-2 left-0 w-full h-3 text-[#f99621]/30" viewBox="0 0 200 12" preserveAspectRatio="none">
-										<path d="M0,6 Q50,0 100,6 T200,6" stroke="currentColor" strokeWidth="2" fill="none" />
-									</svg>
-								</span>
-							</h1>
-						</div>
-
-						{/* Subtitle - Animated Fade In */}
-						<div className="mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
-							<p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed max-w-2xl">
-								Discover the Beauty of Pakistan with Nayi Talaash – Your Ultimate Travel Companion
-							</p>
-						</div>
-
-						{/* CTA Buttons - Animated Fade In */}
-						<div className="flex flex-col sm:flex-row gap-4 mb-8 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
-							<button
-								onClick={handleWhatsAppClick}
-								className="group px-8 py-4 bg-[#f99621] text-white font-bold text-base sm:text-lg rounded-full hover:bg-[#e8851a] transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-[#f99621]/50 flex items-center justify-center gap-2"
-							>
-								<span>Explore Tours</span>
-								<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-							</button>
-							<button
-								onClick={handleWhatsAppClick}
-								className="px-8 py-4 bg-transparent border-2 border-white text-white font-bold text-base sm:text-lg rounded-full hover:bg-white hover:text-[#211f20] transition-all duration-300 transform hover:scale-105 shadow-lg"
-							>
-								Contact Us
-							</button>
-						</div>
-
-						{/* Stats/Features - Animated Fade In */}
-						<div className="grid grid-cols-3 gap-4 sm:gap-6 mt-12 opacity-0 animate-fade-in-up" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
-							<div className="text-center">
-								<div className="text-2xl sm:text-3xl font-bold text-[#f99621] mb-1">500+</div>
-								<div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wide">Happy Travelers</div>
-							</div>
-							<div className="text-center">
-								<div className="text-2xl sm:text-3xl font-bold text-[#f99621] mb-1">50+</div>
-								<div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wide">Destinations</div>
-							</div>
-							<div className="text-center">
-								<div className="text-2xl sm:text-3xl font-bold text-[#f99621] mb-1">100%</div>
-								<div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wide">Satisfaction</div>
-							</div>
-						</div>
-					</div>
+			{/* Main Content */}
+			<div className="relative z-10 h-full flex items-center justify-center">
+				<div className="text-center px-4">
+					<h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4" style={{ color: '#dc2626' }}>
+						Hey travelers
+					</h1>
+					<p className="text-2xl sm:text-3xl md:text-4xl text-white mb-2 font-semibold">
+						Welcome to Nayi Talaash
+					</p>
+					<p className="text-xl sm:text-2xl md:text-3xl text-white font-medium">
+						Your One-Stop Travel Agency In Pakistan
+					</p>
 				</div>
 			</div>
-
-			{/* Scroll Indicator */}
-			<div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 opacity-0 animate-fade-in-up" style={{ animationDelay: '1.2s', animationFillMode: 'forwards' }}>
-				<div className="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors cursor-pointer">
-					<span className="text-xs uppercase tracking-wider">Scroll</span>
-					<ChevronDown className="w-5 h-5 animate-bounce" />
-				</div>
-			</div>
-
-			{/* CSS Animations */}
-			<style dangerouslySetInnerHTML={{__html: `
-				@keyframes fade-in-up {
-					from {
-						opacity: 0;
-						transform: translateY(30px);
-					}
-					to {
-						opacity: 1;
-						transform: translateY(0);
-					}
-				}
-				@keyframes float {
-					0%, 100% {
-						transform: translateY(0) translateX(0);
-					}
-					50% {
-						transform: translateY(-20px) translateX(10px);
-					}
-				}
-				.animate-fade-in-up {
-					animation: fade-in-up 0.8s ease-out;
-				}
-				.animate-float {
-					animation: float 6s ease-in-out infinite;
-				}
-			`}} />
 		</section>
 
-			{/* --- 3.1 Intro Section (Themed Content) --- */}
-			<section className="py-16 md:py-24 z-20 relative" style={{ backgroundColor: secondaryBlack }}>
-				{/* Route/map overlay for dark section */}
-				<div className="absolute inset-0 z-[1] opacity-50">
-					<MapRouteBackground />
-				</div>
-				{/* Animated Urdu glyphs CSS */}
-				<style>{`
-					@keyframes floatGlyph { 0% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-18px) rotate(6deg); } 100% { transform: translateY(0) rotate(0deg); } }
-					@keyframes swayGlyph { 0% { transform: translateX(0); } 50% { transform: translateX(10px); } 100% { transform: translateX(0); } }
-					.logo-float { animation: floatGlyph 5s ease-in-out infinite; }
-					.cultural-glyph { animation: floatGlyph 8s ease-in-out infinite; }
-				`}</style>
-				<div className="container mx-auto px-4 max-w-5xl text-center relative z-[2]">
-					<h2 className="text-sm font-bold uppercase tracking-widest mb-3" style={{ color: primaryOrange }}>
-						Welcome to Nayi Talaash – Time to Meet the Culture!
-					</h2>
-					<h3 className="text-3xl md:text-4xl font-extrabold text-white mb-6">
-						Discover the Beauty of Pakistan with Nayi Talaash
-					</h3>
-					<p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-6">
-						Travel beyond boundaries and explore the real essence of Pakistan with Nayi Talaash — your ultimate travel companion. We offer group tour packages that bring together people, places, and unforgettable memories.
-					</p>
-					<p className="text-gray-400 text-base md:text-lg leading-relaxed max-w-4xl mx-auto">
-						From the majestic mountains of Gilgit-Baltistan to the crystal-clear beaches of Balochistan, every journey with us is an experience worth remembering.
-					</p>
-				</div>
-			</section>
-			
-			{/* --- 3.2 Plan Your Next Adventure (Cards + CTAs) --- */}
-			<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
-				<div className="container mx-auto px-4 max-w-7xl">
-					<div className="text-center mb-12">
-						<h2 className="text-sm font-bold uppercase tracking-widest mb-2" style={{ color: primaryOrange }}>Plan Your Next Adventure</h2>
-						<p className="text-gray-300 text-lg md:text-xl">The world is waiting, and Pakistan is calling!</p>
-						<p className="text-gray-400 max-w-2xl mx-auto mt-2">Join us to explore, connect, and rediscover your passion for travel.</p>
-					</div>
-
-					{/* Cards Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-						{[
-							{ title: 'Autumn in Hunza', icon: Mountain, color: '#9a3412' },
-							{ title: 'Winter Wonderland – Malam Jabba', icon: CalendarDays, color: '#1e3a8a' },
-							{ title: 'Coastal Adventure – Gwadar', icon: Sailboat, color: '#0c4a6e' },
-							{ title: 'Historical Trails – Lahore & Multan', icon: Newspaper, color: '#14532d' },
-						].map((item, index) => {
-							const Icon = item.icon;
-							return (
-								<div
-									key={index}
-									className="relative rounded-2xl p-6 md:p-7 h-full bg-white/5 backdrop-blur-md border overflow-hidden group hover:shadow-2xl transition-all duration-500"
-									style={{ borderColor: primaryOrange }}
-								>
-									{/* Glow gradient */}
-									<div className="pointer-events-none absolute -inset-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ background: `radial-gradient(800px 200px at 20% -20%, ${primaryOrange}33, transparent 40%)` }} />
-									<div className="relative z-10 flex flex-col h-full">
-										<div className="flex items-center mb-4">
-											<div className="w-12 h-12 rounded-xl flex items-center justify-center shadow-lg" style={{ backgroundColor: primaryOrange }}>
-												<Icon className="w-6 h-6" style={{ color: secondaryBlack }} />
-											</div>
-											<h4 className="ml-3 text-lg font-bold text-white leading-snug">{item.title}</h4>
-										</div>
-										<p className="text-sm text-gray-300">Experience the magic of {item.title.split(' – ')[0]} with curated stays, safe travel, and community vibes.</p>
-										<a href="#" className="mt-5 inline-flex items-center text-sm font-semibold group/link" style={{ color: primaryOrange }}>
-											Explore Details
-											<ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover/link:translate-x-1" />
-										</a>
-									</div>
-								</div>
-							);
-						})}
-					</div>
-
-					{/* CTAs */}
-					<div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-						<a href="#" className="px-8 py-3 rounded-full font-bold uppercase transition-all duration-300 hover:scale-105 hover:bg-white" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>Explore Packages</a>
-						<a href="#" className="px-8 py-3 rounded-full font-bold uppercase border-2 hover:bg-white hover:text-black transition-all duration-300" style={{ borderColor: 'white', color: 'white' }}>Join a Tour</a>
-						<a href="#" className="px-8 py-3 rounded-full font-bold uppercase border-2 transition-all duration-300 hover:bg-black hover:text-white" style={{ borderColor: primaryOrange, color: primaryOrange }}>Contact Us</a>
-					</div>
-				</div>
-			</section>
-
-			{/* --- 3.3 About Nayi Talaash (Story + Quote + Mini Cards) --- */}
-			<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: 'white' }}>
-				<div className="absolute inset-0 z-[1] pointer-events-none">
-					<LightMapBackground />
-				</div>
-				<div className="container mx-auto px-4 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-[2]">
-						{/* Left: Content */}
-						<div>
-							<h2 className="text-sm font-bold uppercase tracking-widest mb-2" style={{ color: secondaryBlack }}>About Nayi Talaash</h2>
-							<h3 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: primaryOrange }}>Experiences That Stay With You</h3>
-							<p className="text-gray-700 text-lg">Founded with a passion for exploration, Nayi Talaash – DITS & Travel Agency aims to inspire travelers to experience Pakistan like never before.</p>
-							<p className="text-gray-600 mt-3">Our mission is simple: to promote local tourism, connect people with culture, and create lifelong memories through shared adventures.</p>
-							<blockquote className="mt-6 p-5 rounded-xl border-l-4" style={{ borderColor: primaryOrange, background: '#fff7ed' }}>
-								<p className="text-gray-800 italic">&ldquo;At Nayi Talaash, we don&apos;t just plan tours — we create experiences that stay with you forever.&rdquo;</p>
-							</blockquote>
-							<div className="mt-8 grid grid-cols-2 gap-4">
-								<div className="rounded-xl p-4 border shadow-sm" style={{ borderColor: primaryOrange }}>
-									<div className="text-3xl font-extrabold" style={{ color: secondaryBlack }}>50k+</div>
-									<p className="text-sm text-gray-600">Happy Travelers</p>
-								</div>
-								<div className="rounded-xl p-4 border shadow-sm" style={{ borderColor: primaryOrange }}>
-									<div className="text-3xl font-extrabold" style={{ color: secondaryBlack }}>150+</div>
-									<p className="text-sm text-gray-600">Curated Tours</p>
-								</div>
-							</div>
-						</div>
-
-						{/* Right: Mini Feature Cards */}
-						<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-							{[
-								{ title: 'Local Culture First', desc: 'Authentic routes, real connections.', icon: Globe },
-								{ title: 'Community & Safety', desc: 'Trained guides and safe logistics.', icon: ShieldCheck },
-								{ title: '24/7 Assistance', desc: 'We are with you end-to-end.', icon: Headset },
-								{ title: 'Premium Comfort', desc: 'Handpicked stays and transport.', icon: Star },
-							].map((f, i) => {
-								const Icon = f.icon;
-								return (
-									<div key={i} className="rounded-2xl p-6 bg-white border shadow-md hover:shadow-xl transition-shadow duration-300" style={{ borderColor: primaryOrange }}>
-										<Icon className="w-10 h-10 mb-3 p-2 rounded-lg" style={{ backgroundColor: secondaryBlack, color: primaryOrange }} />
-										<h4 className="text-lg font-bold mb-1" style={{ color: secondaryBlack }}>{f.title}</h4>
-										<p className="text-sm text-gray-600">{f.desc}</p>
-									</div>
-								);
-							})}
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* --- 4. Special Section: Explore Pakistan (Map) --- */}
-			<section className="py-20 md:py-32 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
-				<div className="absolute inset-0 z-[1] opacity-40 pointer-events-none">
-					<MapRouteBackground />
-				</div>
-				<div className="container mx-auto px-4 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-[2]">
-						
-						{/* Left Column: Text Card */}
-						<div className="lg:pr-10">
-							<div 
-								className="p-8 md:p-12 rounded-3xl shadow-2xl transition-all duration-500 hover:scale-[1.01]"
-								style={{ backgroundColor: 'white', border: `3px solid ${primaryOrange}` }}
-							>
-								<h2 className="text-sm font-bold uppercase tracking-widest mb-4" style={{ color: secondaryBlack }}>
-									The Land of Wonders
-								</h2>
-								
-								<h3 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight" style={{ color: primaryOrange }}>
-									Pakistan&apos;s Hidden Gems
-								</h3>
-
-								{/* Main Text Content */}
-								<p className="text-xl md:text-2xl font-light mb-8" style={{ color: secondaryBlack }}>
-									From the mighty peaks of **Hunza** to the golden shores of **Gwadar** — explore Pakistan's hidden gems through our exclusive group tour packages designed for comfort, adventure, and unforgettable memories.
-								</p>
-
-								{/* Call to Action Button */}
-								<button
-									className="group px-8 py-3 text-lg font-bold uppercase rounded-full transition-all duration-300 flex items-center justify-center hover:shadow-xl hover:bg-black"
-									style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-								>
-									Book Your Next Adventure 
-									<ArrowRight className="w-5 h-5 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
-								</button>
-							</div>
-						</div>
-
-						{/* Right Column: User's Custom Map Image Placeholder */}
-						<div className="flex justify-center items-center p-4">
-							{/* TODO: Yahan aap apni pasand ki map ki image laga sakte hain. */}
-							<img 
-								src="https://plus.unsplash.com/premium_vector-1729264578798-6c7f043e6425?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880" 
-								alt="Pakistan Map Placeholder. Please replace with your custom map image." 
-								className="w-full h-auto max-h-[70vh] rounded-xl shadow-2xl object-cover transition-transform duration-500 hover:scale-[1.01]" 
-								onError={(e) => e.currentTarget.src = 'https://placehold.co/800x600/211f20/f99621?text=Map+Load+Error'}
-							/>
-						</div>
-
-					</div>
-				</div>
-			</section>
-			
-			{/* --- 5. Upcoming Tours (Interactive Tour Slider) --- */}
-			<section className="py-16 md:py-24 bg-white z-20 relative overflow-hidden">
-				<div className="absolute inset-0 z-[1] pointer-events-none">
-					<LightMapBackground />
-				</div>
-				<div className="container mx-auto px-4 max-w-7xl">
-					
-					{/* Section Header */}
-					<div className="text-center mb-12">
-						<h2 className="text-sm font-bold uppercase tracking-widest mb-2" style={{ color: secondaryBlack }}>
-							The World Is Waiting
-						</h2>
-						<h3 className="text-3xl md:text-4xl font-extrabold" style={{ color: primaryOrange }}>
-							Plan Your Next Adventure
-						</h3>
-						<p className="text-gray-500 mt-3 max-w-2xl mx-auto text-lg">
-							Join us to explore, connect, and rediscover your passion for travel. Pakistan is calling!
-						</p>
-					</div>
-
-					<div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start relative z-[2]">
-						
-						{/* Left Column: Interactive Tour Card */}
-						<div className="lg:col-span-2 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-							
-							{/* Image Background (with transition for image change) */}
-							<div 
-								key={activeTourIndex} // Key forces re-render/transition on change
-								className="absolute inset-0 bg-cover bg-center transition-opacity duration-700 ease-in-out" 
-								style={{ 
-									backgroundImage: `url(${upcomingTours[activeTourIndex].image})`,
-									opacity: 1, // Start fully visible
-								}}
-							>
-								{/* Dark Overlay */}
-								<div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-							</div>
-							
-							{/* Card Content */}
-							<div className="relative z-10 p-8 flex flex-col justify-end h-full text-white">
-								<h4 className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: primaryOrange }}>
-									Upcoming Tour
-								</h4>
-								<h3 className="text-4xl font-extrabold mb-4 leading-tight">
-									{upcomingTours[activeTourIndex].title}
-								</h3>
-								<p className="text-lg font-light mb-6">
-									{upcomingTours[activeTourIndex].description}
-								</p>
-								
-								{/* Price and Duration Tags */}
-								<div className="flex space-x-4 mb-8">
-									<div className="flex items-center text-sm font-semibold p-2 rounded-lg" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
-										<Clock className="w-4 h-4 mr-2" />
-										{upcomingTours[activeTourIndex].duration}
-									</div>
-									<div className="flex items-center text-sm font-semibold p-2 rounded-lg" style={{ backgroundColor: secondaryBlack, color: primaryOrange }}>
-										<Tag className="w-4 h-4 mr-2" />
-										{upcomingTours[activeTourIndex].price}
-									</div>
-								</div>
-
-								{/* Main CTAs */}
-								<div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-									<a
-										href="#"
-										className="px-8 py-3 text-lg font-bold uppercase rounded-full transition-all duration-300 text-white hover:bg-white hover:text-black"
-										style={{ border: `2px solid ${primaryOrange}`, backgroundColor: primaryOrange, color: secondaryBlack }}
-									>
-										Explore Packages
-									</a>
-									<a
-										href="#"
-										className="px-8 py-3 text-lg font-bold uppercase rounded-full transition-all duration-300 hover:bg-white hover:text-black"
-										style={{ border: `2px solid white`, color: 'white' }}
-									>
-										Join a Tour
-									</a>
-								</div>
-							</div>
-						</div>
-						
-						{/* Right Column: Tour Selection Buttons */}
-						<div className="lg:col-span-1 space-y-4">
-							<h4 className="text-xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Upcoming Tours:
-							</h4>
-							{upcomingTours.map((tour, index) => (
-								<button
-									key={index}
-									onClick={() => setActiveTourIndex(index)}
-									className={`w-full text-left p-4 rounded-xl transition-all duration-300 flex items-center shadow-lg transform ${
-										activeTourIndex === index 
-											? 'bg-black text-white scale-[1.03] ring-4 ring-offset-2 ring-offset-white'
-											: 'bg-gray-100 text-black hover:bg-gray-200'
-									}`}
-									style={{
-										borderColor: primaryOrange,
-									}}
-								>
-									{/* Small Image Thumbnail for Visual Context */}
-									<img
-										src={tour.image}
-										alt={tour.listTitle}
-										className="w-12 h-12 object-cover rounded-md mr-4 border-2"
-										style={{ borderColor: activeTourIndex === index ? primaryOrange : 'transparent' }}
-										onError={(e) => e.currentTarget.src = 'https://placehold.co/50x50/9d8189/211f20?text=Pic'}
-									/>
-									<span className={`text-lg font-semibold ${activeTourIndex === index ? 'text-white' : 'text-gray-800'}`}>
-										{tour.listTitle}
-									</span>
-									<ArrowRight className={`w-5 h-5 ml-auto transition-transform duration-300 ${activeTourIndex === index ? 'text-white translate-x-1' : 'text-gray-500'}`} />
-								</button>
-							))}
-							
-							{/* Contact Us Link */}
-							<a
-								href="#"
-								className="block text-center mt-6 text-sm font-bold uppercase tracking-widest transition-colors duration-300 hover:underline"
-								style={{ color: primaryOrange }}
-							>
-								Contact Us
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-			{/* --- 6. NEW SECTION: Exclusive Group Tour Packages (Horizontal Slider) --- */}
-			<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
-				<div className="absolute inset-0 z-[1] opacity-40 pointer-events-none">
-					<MapRouteBackground />
-				</div>
-				<div className="max-w-7xl mx-auto px-4">
-					{/* Section Header */}
-					<div className="text-center mb-12">
-						<h2 className="text-sm font-bold uppercase tracking-widest mb-2 text-white" style={{ color: primaryOrange }}>
-							Our Core Offerings
-						</h2>
-						<h3 className="text-3xl md:text-4xl font-extrabold text-white">
-							Our Exclusive Group Tour Packages
-						</h3>
-						<p className="text-gray-400 mt-3 max-w-2xl mx-auto text-lg">
-							Join our vibrant travel community and make new memories on every journey.
-						</p>
-					</div>
-
-					{/* Horizontal Slider with Buttons */}
-					<div className="relative z-[2]">
-						<div id="packages-track" className="flex space-x-8 pb-4 overflow-x-auto snap-x snap-mandatory scroll-smooth lg:justify-center no-scrollbar">
-						{exclusivePackages.map((pkg, index) => (
-							<ExclusivePackageCard 
-								key={index}
-								index={index}
-								pkg={pkg}
-								activePackageIndex={activePackageIndex}
-								setActivePackageIndex={setActivePackageIndex}
-							/>
-						))}
-					</div>
-						{/* Prev/Next buttons */}
-						<div className="hidden md:block">
-							<button onClick={() => {
-								const el = document.getElementById('packages-track');
-								if (el) el.scrollBy({ left: -360, behavior: 'smooth' });
-							}} className="absolute left-0 top-1/2 -translate-y-1/2 p-3 rounded-full shadow-lg" style={{ backgroundColor: primaryOrange, color: secondaryBlack }} aria-label="Previous">
-								<ChevronLeft className="w-6 h-6" />
-							</button>
-							<button onClick={() => {
-								const el = document.getElementById('packages-track');
-								if (el) el.scrollBy({ left: 360, behavior: 'smooth' });
-							}} className="absolute right-0 top-1/2 -translate-y-1/2 p-3 rounded-full shadow-lg" style={{ backgroundColor: primaryOrange, color: secondaryBlack }} aria-label="Next">
-								<ChevronRight className="w-6 h-6" />
-							</button>
-						</div>
-					</div>
-
-					{/* Slider Navigation Dots/Buttons */}
-					<div className="flex justify-center space-x-3 mt-8">
-						{exclusivePackages.map((_, index) => (
-							<button
-								key={index}
-								onClick={() => setActivePackageIndex(index)}
-								className={`w-3 h-3 rounded-full transition-all duration-300 ${
-									activePackageIndex === index ? 'w-8' : 'opacity-50'
-								}`}
-								style={{ backgroundColor: activePackageIndex === index ? primaryOrange : 'white' }}
-								aria-label={`Go to slide ${index + 1}`}
-							/>
-						))}
-					</div>
-					
-					{/* Custom Tour CTA */}
-					<div className="text-center mt-12">
-						<h4 className="text-2xl font-bold text-white mb-4">
-							<Briefcase className="w-6 h-6 inline-block mr-2" style={{ color: primaryOrange }}/> Customized Corporate & Student Tours
-						</h4>
-						<a
-							href="#"
-							className="px-10 py-3 text-lg font-bold uppercase rounded-full transition-all duration-300 hover:scale-105 hover:bg-white"
-							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-						>
-							Request a Custom Tour Plan
-						</a>
-					</div>
-				</div>
-			</section>
-			
-
-			{/* --- 7. Section: Why Choose Us (Hamari Khususiyat) --- */}
-			<section className="py-16 md:py-24 bg-white z-20 relative overflow-hidden">
-				<div className="absolute inset-0 z-[1] pointer-events-none">
-					<LightMapBackground />
-				</div>
-				<div className="container mx-auto px-4 max-w-7xl">
-					{/* Section Header (In Hindi/Hinglish) */}
-					<div className="text-center mb-12">
-						<h2 className="text-sm font-bold uppercase tracking-widest mb-2" style={{ color: secondaryBlack }}>
-							Humein Chunein
-						</h2>
-						<h3 className="text-3xl md:text-4xl font-extrabold" style={{ color: primaryOrange }}>
-							Aap Humara Chunav Kyun Karen?
-						</h3>
-						<p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-							Humari khaas khoobiyan jo aapke safar ko behtareen aur yaadgaar banayengi.
-						</p>
-					</div>
-
-					{/* Features Grid */}
-					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative z-[2]">
-						{features.map((feature, index) => (
-							<FeatureCard key={index} {...feature} />
-						))}
-					</div>
-				</div>
-			</section>
-
-
-			{/* --- 8. Stay Ideas Section (Our Stay Ideas) --- */}
-			<section className="py-16 md:py-24 bg-white z-20 relative overflow-hidden">
-				<div className="absolute inset-0 z-[1] pointer-events-none">
-					<LightMapBackground />
-				</div>
-				<div className="container mx-auto px-4 max-w-7xl">
-					{/* Section Header (In English) */}
-					<div className="text-center mb-12">
-						<h2 className="text-sm font-bold uppercase tracking-widest mb-2" style={{ color: primaryOrange }}>
-							Our Ideas
-						</h2>
-						<h3 className="text-3xl md:text-4xl font-extrabold" style={{ color: secondaryBlack }}>
-							Our Stay Ideas
-						</h3>
-						<p className="text-gray-500 mt-3 max-w-2xl mx-auto">
-							Choose your perfect adventure from our curated selection of stay experiences and local activities.
-						</p>
-					</div>
-
-					{/* Cards Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-[2]">
-						{stayIdeas.map((idea, index) => (
-							<StayIdeaCard key={index} {...idea} />
-						))}
-					</div>
-					
-					{/* View All Button */}
-					<div className="text-center mt-12">
-						<button
-							className="px-10 py-3 text-base font-bold uppercase rounded-full transition-all duration-300 border-2 hover:bg-black hover:text-white"
-							style={{ borderColor: secondaryBlack, color: secondaryBlack }}
-						>
-							View All Offers
-						</button>
-					</div>
-				</div>
-			</section>
-			
-			{/* --- 9. Events and News Section (Events and News) --- */}
-			<section className="py-16 md:py-24 z-20 relative" style={{ backgroundColor: secondaryBlack }}>
-				<div className="absolute inset-0 z-[1] opacity-40 pointer-events-none">
-					<MapRouteBackground />
-				</div>
-				<div className="container mx-auto px-4 max-w-7xl">
-					{/* Section Header (In English) */}
-					<div className="text-center mb-12">
-						<h2 className="text-sm font-bold uppercase tracking-widest mb-2 text-white" style={{ color: primaryOrange }}>
-							What&apos;s New
-						</h2>
-						<h3 className="text-3xl md:text-4xl font-extrabold text-white">
-							Events and News
-						</h3>
-						<p className="text-gray-400 mt-3 max-w-2xl mx-auto">
-							Stay updated with our latest tour announcements, special deals, and travel stories.
-						</p>
-					</div>
-
-					{/* News Cards Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-[2]">
-						{newsItems.map((news, index) => (
-							<NewsCard key={index} {...news} />
-						))}
-					</div>
-					
-					{/* View All News Button */}
-					<div className="text-center mt-12">
-						<button
-							className="px-10 py-3 text-base font-bold uppercase rounded-full transition-all duration-300 border-2 hover:bg-white hover:text-black"
-							style={{ borderColor: primaryOrange, color: primaryOrange }}
-						>
-							View All News
-						</button>
-					</div>
-				</div>
-			</section>
-
-			{/* --- 10. Enhanced Footer --- */}
-			<footer className="py-16 px-8 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
-				{/* Heritage background overlay */}
-				<div className="absolute inset-0 z-[1] opacity-20 pointer-events-none">
-					<MapRouteBackground />
-						</div>
+		{/* ====================== FASCINATING FACTS ABOUT PAKISTAN ====================== */}
+		<section className="py-16 md:py-24 bg-white">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<h2 className="text-center text-3xl md:text-4xl font-bold mb-12">
+					<span className="text-[#211f20]">FASCINATING FACTS ABOUT </span>
+					<span className="bg-gray-200 px-3 py-1 rounded">PAKISTAN</span>
+				</h2>
 				
-				<div className="container mx-auto max-w-7xl text-gray-400 text-sm relative z-[2]">
-					{/* Main Footer Content */}
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-						{/* Company Info */}
-						<div className="lg:col-span-1">
-							<div className="flex items-center mb-6">
-								{/* Logo */}
-								<img 
-									src={logoImage} 
-									alt="Nayi Talaash Logo" 
-									className="w-32 h-10 sm:w-40 sm:h-12 object-contain"
-									onError={(e) => {
-										e.currentTarget.style.display = 'none';
-										const parent = e.currentTarget.parentElement;
-										if (parent) {
-											parent.innerHTML = `
-												<div class="text-center">
-													<h3 class="text-[#f99621] text-xl font-bold">NAYI TALAASH</h3>
-													<p class="text-[#f99621] text-xs font-semibold">TIME TO MEET CULTURES</p>
-												</div>
-											`;
-										}
-									}}
+				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+					{/* Card 1: World's Largest Deep Sea Port */}
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+						<div className="w-16 h-16 rounded-full bg-[#f99621]/10 flex items-center justify-center mb-4">
+							<Ship className="w-8 h-8" style={{ color: '#f99621' }} strokeWidth={1.5} />
+						</div>
+						<h3 className="text-xl font-bold text-[#211f20] mb-3">World&apos;s Largest Deep Sea Port</h3>
+						<p className="text-gray-600">
+							Pakistan&apos;s superior position in Asia makes it a center of trade in the region and that is to increase further in the coming years.
+						</p>
+					</div>
+
+					{/* Card 2: World's Highest Paved Road */}
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+						<div className="w-16 h-16 rounded-full bg-[#f99621]/10 flex items-center justify-center mb-4">
+							<Route className="w-8 h-8" style={{ color: '#f99621' }} strokeWidth={1.5} />
+						</div>
+						<h3 className="text-xl font-bold text-[#211f20] mb-3">World&apos;s Highest Paved Road</h3>
+						<p className="text-gray-600">
+							Also called the eighth wonder of the world or the China-Pakistan Friendship highway the Karakoram Highway is the highest road ever built.
+						</p>
+					</div>
+
+					{/* Card 3: Fourth Largest Irrigation System */}
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+						<div className="w-16 h-16 rounded-full bg-[#f99621]/10 flex items-center justify-center mb-4">
+							<Droplets className="w-8 h-8" style={{ color: '#f99621' }} strokeWidth={1.5} />
+						</div>
+						<h3 className="text-xl font-bold text-[#211f20] mb-3">Fourth Largest Irrigation System</h3>
+						<p className="text-gray-600">
+							As most of Pakistan&apos;s population depend on a livelihood in agriculture the country had to develop a complex and extensive system of irrigation.
+						</p>
+					</div>
+				</div>
+
+				{/* Pagination Dots */}
+				<div className="flex justify-center gap-2">
+					<div className="w-2 h-2 rounded-full bg-[#f99621]"></div>
+					<div className="w-2 h-2 rounded-full bg-gray-300"></div>
+					<div className="w-2 h-2 rounded-full bg-gray-300"></div>
+				</div>
+			</div>
+		</section>
+			
+		{/* ====================== DISCOVER PAKISTAN ====================== */}
+		<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#14b8a6' }}>
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+					{/* Left: Pakistan Map */}
+					<div className="relative">
+						<Image 
+							src="/images/map-2.png"
+							alt="Pakistan Map"
+							width={600}
+							height={800}
+							className="w-full h-auto object-contain"
+						/>
+						{/* Glowing dots on map */}
+						<div className="absolute top-1/4 left-1/3 w-3 h-3 bg-white rounded-full animate-pulse"></div>
+						<div className="absolute top-1/2 right-1/4 w-3 h-3 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+						<div className="absolute bottom-1/4 left-1/2 w-3 h-3 bg-white rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+					</div>
+
+					{/* Right: Content */}
+					<div className="text-white">
+						<h2 className="text-4xl md:text-5xl font-bold mb-6">DISCOVER PAKISTAN</h2>
+						<p className="text-lg md:text-xl leading-relaxed mb-6">
+							Pakistan is a land where heritage meets modernity, where snow-kissed peaks touch the sky, and where every corner tells a story. From the majestic mountains of the north to the golden beaches of the south, from ancient civilizations to bustling cities, Pakistan offers a blend of experiences that captivate the soul. Explore our diverse landscapes, savor our culinary brilliance, and immerse yourself in the warmth of our people. Discover Pakistan – where every journey is an adventure waiting to unfold.
+						</p>
+						<button className="px-8 py-3 bg-white text-[#14b8a6] font-bold rounded-lg border-2 border-white hover:bg-transparent hover:text-white transition-all">
+							EXPLORE MORE
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{/* ====================== WHERE TO NEXT? ====================== */}
+		<section className="py-16 md:py-24 bg-white">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="mb-8">
+					<h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: '#9333ea' }}>
+						Pakistan: &apos;Tourism&apos;s Next Big Thing&apos; - Lonely Planet
+					</h2>
+					<p className="text-lg text-gray-700">
+						Travel with us to experience the beauty, culture, and hospitality of Pakistan!
+					</p>
+					<div className="flex justify-end mt-4">
+						<button className="px-4 py-2 border-2 rounded-lg font-semibold" style={{ borderColor: '#9333ea', color: '#9333ea' }}>
+							See All
+						</button>
+					</div>
+				</div>
+
+				{/* Destination Cards Grid */}
+				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+					{[
+						{ name: 'Hunza', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+						{ name: 'Skardu', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+						{ name: 'Ghizer', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+						{ name: 'Lahore', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+						{ name: 'Bahawalpur', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+						{ name: 'Karachi', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+					].map((dest, idx) => (
+						<div key={idx} className="relative group cursor-pointer">
+							<div className="relative h-48 rounded-lg overflow-hidden">
+								<Image 
+									src={dest.image}
+									alt={dest.name}
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-300"
 								/>
-							</div>
-							<p className="text-gray-300 mb-4 leading-relaxed">
-								Discover the beauty of Pakistan with our curated travel experiences. From majestic mountains to historic cities, we bring you authentic cultural adventures.
-							</p>
-							<div className="flex space-x-4">
-								<a href="https://www.instagram.com/nayi.talaash?igsh=ODFxeWZvNnIyNmtk" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-gray-800 hover:bg-[#f99621] transition-colors group">
-									<Instagram className="w-5 h-5 text-gray-400 group-hover:text-white" />
-								</a>
-								<a href="https://www.facebook.com/share/15b53BTcdm/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-gray-800 hover:bg-[#f99621] transition-colors group">
-									<Facebook className="w-5 h-5 text-gray-400 group-hover:text-white" />
-								</a>
-								<a href="mailto:info@nayitalaash.com" className="p-2 rounded-full bg-gray-800 hover:bg-[#f99621] transition-colors group">
-									<Mail className="w-5 h-5 text-gray-400 group-hover:text-white" />
-								</a>
-							</div>
-						</div>
-
-						{/* Quick Links */}
-						<div>
-							<h4 className="text-lg font-bold mb-6" style={{ color: primaryOrange }}>Quick Links</h4>
-							<ul className="space-y-3">
-								<li><a href="#" className="hover:text-white transition-colors flex items-center group">
-									<ArrowRight className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-									About Us
-								</a></li>
-								<li><a href="#" className="hover:text-white transition-colors flex items-center group">
-									<ArrowRight className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-									Our Tours
-								</a></li>
-								<li><a href="#" className="hover:text-white transition-colors flex items-center group">
-									<ArrowRight className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-									Destinations
-								</a></li>
-								<li><a href="#" className="hover:text-white transition-colors flex items-center group">
-									<ArrowRight className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-									Gallery
-								</a></li>
-							</ul>
-						</div>
-
-						{/* Contact Info */}
-						<div>
-							<h4 className="text-lg font-bold mb-6" style={{ color: primaryOrange }}>Contact Us</h4>
-							<div className="space-y-4">
-								<div className="flex items-center group">
-									<Mail className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" style={{ color: primaryOrange }} />
-									<a href="mailto:info@nayitalaash.com" className="hover:text-white transition-colors">
-										info@nayitalaash.com
-									</a>
-						</div>
-								<div className="flex items-center group">
-									<Phone className="w-5 h-5 mr-3 group-hover:scale-110 transition-transform" style={{ color: primaryOrange }} />
-									<a href="tel:+923311438251" className="hover:text-white transition-colors">
-										+92 331 1438251
-									</a>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+								<div className="absolute bottom-4 left-4 text-white font-bold text-lg">
+									{dest.name}
 								</div>
-								<button 
-									onClick={handleWhatsAppClick}
-									className="flex items-center group bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105"
-								>
-									<MessageCircle className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-									WhatsApp Us
+							</div>
+						</div>
+					))}
+				</div>
+
+				{/* Floating WhatsApp Icon */}
+				<div className="fixed right-4 bottom-4 z-50">
+					<button 
+						onClick={handleWhatsAppClick}
+						className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+					>
+						<MessageCircle className="w-7 h-7 text-white" />
+					</button>
+				</div>
+			</div>
+		</section>
+
+		{/* ====================== DESTINATION LIST OF PAKISTAN TOUR PACKAGES ====================== */}
+		<section className="py-16 md:py-24 bg-white">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<h2 className="text-3xl md:text-4xl font-bold mb-8">
+					<span className="text-[#dc2626] font-serif italic">Destination List of </span>
+					<span className="text-[#211f20]">PAKISTAN TOUR PACKAGES</span>
+				</h2>
+
+				{/* Tour Packages Grid */}
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					{[
+						{ name: 'HUNZA', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+						{ name: 'SKARDU', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+						{ name: 'SWAT KALAM', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+						{ name: 'MURREE NATHIA GALI', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+						{ name: 'NARAN KAGHAN', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+						{ name: 'AZAD KASHMIR', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+					].map((tour, idx) => (
+						<div key={idx} className="relative group cursor-pointer">
+							<div className="relative h-64 rounded-lg overflow-hidden">
+								<Image 
+									src={tour.image}
+									alt={tour.name}
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-300"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+								<div className="absolute bottom-0 left-0 right-0 p-4">
+									<p className="text-[#f99621] font-serif text-sm mb-1">Tour Packages</p>
+									<p className="text-white font-bold text-xl">{tour.name}</p>
+								</div>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+			
+		{/* ====================== HONEYMOON TRIP & FAMILY TOUR PACKAGES ====================== */}
+		<section className="py-16 md:py-24 bg-white">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+					{/* Left: Honeymoon Trip */}
+					<div className="relative">
+						<div className="relative bg-white border-4 border-gray-300 p-4 shadow-2xl" style={{ transform: 'rotate(-2deg)' }}>
+							<Image 
+								src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
+								alt="Honeymoon Trip"
+								width={600}
+								height={400}
+								className="w-full h-auto object-cover"
+							/>
+							<div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
+								<Phone className="w-5 h-5" style={{ color: '#dc2626' }} />
+								<span className="font-bold text-sm">BOOK YOUR TOUR NOW +92 303 4364467</span>
+							</div>
+						</div>
+						<p className="mt-4 text-center text-2xl font-serif italic" style={{ color: '#211f20' }}>Honeymoon Trip</p>
+					</div>
+
+					{/* Right: Family Tour Packages */}
+					<div>
+						<h2 className="text-4xl font-bold mb-6">
+							<span className="text-[#dc2626]">FAMILY</span>
+							<span className="text-[#211f20]"> TOUR PACKAGES</span>
+						</h2>
+						<ul className="space-y-4 mb-8">
+							{[
+								'Quality Accommodations',
+								'Luxury Transport with Personal Driver',
+								'Flight Reservations',
+								'4x4 Jeep Safaris',
+								'Local and Traditional Meals',
+								'Bonfire Nights',
+							].map((item, idx) => (
+								<li key={idx} className="flex items-center gap-3">
+									<div className="w-2 h-2 rounded-full bg-[#dc2626]"></div>
+									<span className="text-lg text-gray-700">{item}</span>
+								</li>
+							))}
+						</ul>
+						<p className="text-2xl font-bold text-[#211f20]">GET YOUR FREE QUOTE NOW!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{/* ====================== WHY TRAVEL WITH US & VIDEO ====================== */}
+		<section className="py-16 md:py-24 bg-gray-100">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+					{/* Left: Why Travel With Us */}
+					<div>
+						<h2 className="text-3xl font-bold text-[#211f20] mb-4">Why Travel With Us?</h2>
+						<p className="text-gray-700 mb-6">
+							The Mad Hatters Pakistan is a cultural and experiential travel company.
+						</p>
+						<ul className="space-y-3 mb-6">
+							{[
+								'Focus on Experiential, Cultural, and Religious Tourism',
+								'Ethical and Responsible Tourism Philosophy',
+								'Expertise in working with International Tourists',
+								'Local Community Engagement',
+								'Women-friendly tours',
+							].map((item, idx) => (
+								<li key={idx} className="flex items-center gap-3">
+									<CheckCircle2 className="w-5 h-5" style={{ color: '#9333ea' }} />
+									<span className="text-gray-700">{item}</span>
+								</li>
+							))}
+						</ul>
+						<button className="px-6 py-3 border-2 rounded-lg font-semibold" style={{ borderColor: '#9333ea', color: '#9333ea' }}>
+							Learn More
+						</button>
+					</div>
+
+					{/* Right: Video Embed */}
+					<div>
+						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden">
+							<Image 
+								src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
+								alt="Video Thumbnail"
+								fill
+								className="object-cover"
+							/>
+							<div className="absolute inset-0 flex items-center justify-center">
+								<button className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center hover:scale-110 transition-transform">
+									<Play className="w-8 h-8 text-white ml-1" fill="white" />
 								</button>
 							</div>
 						</div>
+						<button className="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg text-sm">
+							Watch on Youtube
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
 
-						{/* Newsletter */}
-						<div>
-							<h4 className="text-lg font-bold mb-6" style={{ color: primaryOrange }}>Stay Updated</h4>
-							<p className="text-gray-300 mb-4">Get exclusive travel deals and Pakistan&apos;s hidden gems delivered to your inbox.</p>
-							<div className="space-y-3">
-								<input 
-									type="email" 
-									placeholder="Your Email Address" 
-									className="w-full p-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-orange-500 focus:outline-none transition-colors" 
+		{/* ====================== PUBLIC GROUP TOURS ====================== */}
+		<section className="py-16 md:py-24 bg-white">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="mb-8">
+					<p className="text-[#f99621] text-sm font-bold uppercase tracking-widest mb-2">OUR WEEKLY</p>
+					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20] mb-4">PUBLIC GROUP TOURS</h2>
+					<p className="text-gray-600 max-w-3xl">
+						A Public Group Tour is open to the general public and is usually offered on a set day and time. It is suitable for people who want to meet new people and travel at a lower cost than a private tour.
+					</p>
+				</div>
+
+				{/* Tour Cards */}
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+					{[
+						{ title: '2 DAYS MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 11,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+						{ title: '5 DAYS HUNZA, NALTAR, AND KHUNJERAB PUBLIC GROUP TOUR', price: 'From Rs 25,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+						{ title: '3 DAYS KALAM AND MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 16,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+					].map((tour, idx) => (
+						<div key={idx} className="relative group cursor-pointer">
+							<div className="relative h-64 rounded-lg overflow-hidden">
+								<Image 
+									src={tour.image}
+									alt={tour.title}
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-300"
 								/>
-								<button className="w-full py-3 rounded-lg font-semibold text-sm transition-all duration-300 transform hover:scale-105" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
-									Subscribe Now
-								</button>
-					</div>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+								<div className="absolute bottom-0 left-0 right-0 p-4">
+									<h3 className="text-white font-bold text-lg mb-2">{tour.title}</h3>
+									<p className="text-[#f99621] font-bold">{tour.price}</p>
+								</div>
+							</div>
 						</div>
-					</div>
+					))}
+				</div>
 
-					{/* Bottom Section */}
-					<div className="pt-8 border-t border-gray-700">
-						<div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-							<div className="flex items-center space-x-6">
-								<p className="text-gray-500 text-sm">
-									© 2024 Nayi Talaash. All rights reserved.
+				{/* Pagination Dots */}
+				<div className="flex justify-center gap-2">
+					<div className="w-2 h-2 rounded-full bg-[#f99621]"></div>
+					<div className="w-2 h-2 rounded-full bg-gray-300"></div>
+				</div>
+			</div>
+		</section>
+
+		{/* ====================== TESTIMONIALS ====================== */}
+		<section className="py-16 md:py-24 bg-white">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="mb-8">
+					<p className="text-[#f99621] text-sm font-serif italic mb-2">Testimonials</p>
+					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20]">WHAT OUR CLIENTS HAVE TO SAY?</h2>
+				</div>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+					{/* Testimonial 1 */}
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md">
+						<div className="flex items-center mb-4">
+							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4">
+								<Image 
+									src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
+									alt="Muhammad Nauraiz Mushtaq"
+									width={64}
+									height={64}
+									className="w-full h-full object-cover"
+								/>
+							</div>
+							<div>
+								<p className="text-gray-600 italic mb-2">
+									&ldquo;Outstanding services provided by NatureHikePakistan. Highly recommended!&rdquo;
 								</p>
-								<div className="flex items-center text-gray-500 text-sm">
-									<Heart className="w-4 h-4 mr-1 text-red-500" />
-									Made with love for Pakistan
-								</div>
+								<p className="font-bold text-[#211f20]">MUHAMMAD NAURAIZ MUSHTAQ</p>
 							</div>
-							<div className="flex space-x-6">
-								<a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">Privacy Policy</a>
-								<a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">Terms of Service</a>
-								<a href="#" className="text-gray-500 hover:text-white transition-colors text-sm">Cookie Policy</a>
+						</div>
+					</div>
+
+					{/* Testimonial 2 */}
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md">
+						<div className="flex items-center mb-4">
+							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4">
+								<Image 
+									src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
+									alt="Ali Rehman"
+									width={64}
+									height={64}
+									className="w-full h-full object-cover"
+								/>
+							</div>
+							<div>
+								<p className="text-gray-600 italic mb-2">
+									&ldquo;We chose Nature Hike Pakistan for our vacations. Beautiful views and excellent customer service.&rdquo;
+								</p>
+								<p className="font-bold text-[#211f20]">ALI REHMAN</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</footer>
+			</div>
+		</section>
 
-			{/* Custom Cursor */}
-			<div
-				className="fixed z-[130] pointer-events-none"
-				style={{
-					left: mousePos.x - 12,
-					top: mousePos.y - 12,
-					width: 24,
-					height: 24,
-					borderRadius: 9999,
-					border: `2px solid ${primaryOrange}`,
-					background: isScrollingNow ? `${primaryOrange}` : 'transparent',
-					mixBlendMode: 'difference',
-					transition: 'transform 120ms ease, background-color 150ms ease',
-					transform: isScrollingNow ? 'scale(0.6)' : 'scale(1)',
-				}}
-			/>
+		{/* ====================== WHERE ARE WE LOCATED? ====================== */}
+		<section className="py-16 md:py-24 bg-white">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="mb-8">
+					<p className="text-[#f99621] text-sm font-serif italic mb-2">Find us</p>
+					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20]">WHERE ARE WE LOCATED?</h2>
+				</div>
 
-			<style>{`
-				.no-scrollbar { scrollbar-width: none; }
-				.no-scrollbar::-webkit-scrollbar { display: none; }
-				.animate-spin-slow { animation: spin 20s linear infinite; }
-				.animate-city-pulse { animation: cityPulse 3s ease-in-out infinite; }
-				.animate-route-flow { animation: routeFlow 2s linear infinite; }
-				.animate-heritage-glow { animation: heritageGlow 4s ease-in-out infinite; }
-				@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-				@keyframes cityPulse {
-					0%, 100% { transform: scale(1); opacity: 0.8; }
-					50% { transform: scale(1.1); opacity: 1; }
-				}
-				@keyframes routeFlow {
-					0% { stroke-dashoffset: 0; }
-					100% { stroke-dashoffset: 20; }
-				}
-				@keyframes heritageGlow {
-					0%, 100% { filter: drop-shadow(0 0 5px rgba(249,150,33,0.3)); }
-					50% { filter: drop-shadow(0 0 15px rgba(249,150,33,0.6)); }
-				}
-			`}</style>
-		</div>
-	);
+				<div className="w-full h-96 rounded-lg overflow-hidden">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.123456789!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDMxJzEzLjQiTiA3NMKwMjEnMzEuMyJF!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+						width="100%"
+						height="100%"
+						style={{ border: 0 }}
+						allowFullScreen
+						loading="lazy"
+						referrerPolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+			</div>
+		</section>
+
+		{/* ====================== WORKED WITH / FEATURED ON ====================== */}
+		<section className="py-16 md:py-24 bg-white">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="flex justify-between items-center mb-8">
+					<h2 className="text-3xl font-bold text-[#211f20]">Worked With / Featured On</h2>
+					<button className="px-4 py-2 border-2 rounded-lg font-semibold" style={{ borderColor: '#211f20', color: '#211f20' }}>
+						See All
+					</button>
+				</div>
+
+				<div className="grid grid-cols-3 md:grid-cols-6 gap-8">
+					{['UNESCO', 'USAID', 'The World Bank', 'UN WOMEN', 'ALJAZEERA', 'FINANCIAL TIMES'].map((org, idx) => (
+						<div key={idx} className="flex items-center justify-center h-20 bg-gray-100 rounded-lg">
+							<span className="text-sm font-semibold text-gray-600">{org}</span>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		{/* ====================== READY FOR TOUR CTA ====================== */}
+		<section className="py-16 md:py-24 bg-[#211f20]">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="flex flex-col md:flex-row items-center justify-between">
+					<div>
+						<p className="text-white text-2xl font-serif italic mb-2">Ready for an unforgettable tour!</p>
+						<h2 className="text-4xl md:text-5xl font-bold text-[#f99621]">Plan your trips with us</h2>
+					</div>
+					<button
+						onClick={handleWhatsAppClick}
+						className="px-8 py-4 bg-green-400 text-[#211f20] font-bold rounded-lg hover:bg-green-500 transition-colors mt-6 md:mt-0"
+					>
+						Customize A Tour
+					</button>
+				</div>
+			</div>
+		</section>
+
+		{/* ====================== FOOTER ====================== */}
+		<footer className="py-16 bg-white border-t border-gray-200">
+			<div className="container mx-auto px-4 max-w-7xl">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+					{/* Logo and Brand */}
+					<div>
+						<Image 
+							src={logoImage}
+							alt="Nayi Talaash Logo"
+							width={150}
+							height={50}
+							className="h-12 w-auto object-contain mb-4"
+						/>
+						<p className="text-gray-600 text-sm mb-2">#SehriKushiiShamii</p>
+						<div className="space-y-1 text-sm text-gray-600">
+							<p>| NTS</p>
+							<p>| OTS License</p>
+							<p>| MTA Certification</p>
+						</div>
+					</div>
+
+					{/* Site Map */}
+					<div>
+						<h3 className="font-bold text-[#211f20] mb-4">Site Map</h3>
+						<ul className="space-y-2 text-sm text-gray-600">
+							<li><a href="#" className="hover:text-[#f99621]">About Us</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Contact Us</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Privacy Policy</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Terms and Condition</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Social Wall</a></li>
+						</ul>
+					</div>
+
+					{/* International Tours */}
+					<div>
+						<h3 className="font-bold text-[#211f20] mb-4">International</h3>
+						<ul className="space-y-2 text-sm text-gray-600">
+							<li><a href="#" className="hover:text-[#f99621]">Group Tours</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Private Tours</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Corporate Tours</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Umrah</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Hajj 2026</a></li>
+						</ul>
+					</div>
+
+					{/* Domestic Tours */}
+					<div>
+						<h3 className="font-bold text-[#211f20] mb-4">Domestic</h3>
+						<ul className="space-y-2 text-sm text-gray-600">
+							<li><a href="#" className="hover:text-[#f99621]">Group Tours</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Private Tours</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Corporate Tours</a></li>
+						</ul>
+					</div>
+
+					{/* Upcoming Tours */}
+					<div>
+						<h3 className="font-bold text-[#211f20] mb-4">Upcoming</h3>
+						<ul className="space-y-2 text-sm text-gray-600">
+							<li><a href="#" className="hover:text-[#f99621]">Winter Tours</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Malaysia</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Turkey</a></li>
+							<li><a href="#" className="hover:text-[#f99621]">Indonesia</a></li>
+						</ul>
+					</div>
+				</div>
+
+				{/* Copyright */}
+				<div className="text-center pt-8 border-t border-gray-200">
+					<p className="text-gray-600 text-sm">© 2025 Nayi Talaash - All Right reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		{/* Custom Cursor */}
+		<div
+			className="fixed z-[130] pointer-events-none"
+			style={{
+				left: mousePos.x - 12,
+				top: mousePos.y - 12,
+				width: 24,
+				height: 24,
+				borderRadius: 9999,
+				border: `2px solid ${primaryOrange}`,
+				background: isScrollingNow ? `${primaryOrange}` : 'transparent',
+				mixBlendMode: 'difference',
+				transition: 'transform 120ms ease, background-color 150ms ease',
+				transform: isScrollingNow ? 'scale(0.6)' : 'scale(1)',
+			}}
+		/>
+
+		<style>{`
+			.no-scrollbar { scrollbar-width: none; }
+			.no-scrollbar::-webkit-scrollbar { display: none; }
+			.animate-spin-slow { animation: spin 20s linear infinite; }
+			.animate-city-pulse { animation: cityPulse 3s ease-in-out infinite; }
+			.animate-route-flow { animation: routeFlow 2s linear infinite; }
+			.animate-heritage-glow { animation: heritageGlow 4s ease-in-out infinite; }
+			@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+			@keyframes cityPulse {
+				0%, 100% { transform: scale(1); opacity: 0.8; }
+				50% { transform: scale(1.1); opacity: 1; }
+			}
+			@keyframes routeFlow {
+				0% { stroke-dashoffset: 0; }
+				100% { stroke-dashoffset: 20; }
+			}
+			@keyframes heritageGlow {
+				0%, 100% { filter: drop-shadow(0 0 5px rgba(249,150,33,0.3)); }
+				50% { filter: drop-shadow(0 0 15px rgba(249,150,33,0.6)); }
+			}
+		`}</style>
+		{/* Custom Cursor */}
+		<div
+			className="fixed z-[130] pointer-events-none"
+			style={{
+				left: mousePos.x - 12,
+				top: mousePos.y - 12,
+				width: 24,
+				height: 24,
+				borderRadius: 9999,
+				border: `2px solid ${primaryOrange}`,
+				background: isScrollingNow ? `${primaryOrange}` : 'transparent',
+				mixBlendMode: 'difference',
+				transition: 'transform 120ms ease, background-color 150ms ease',
+				transform: isScrollingNow ? 'scale(0.6)' : 'scale(1)',
+			}}
+		/>
+
+		<style>{`
+			.no-scrollbar { scrollbar-width: none; }
+			.no-scrollbar::-webkit-scrollbar { display: none; }
+			.animate-spin-slow { animation: spin 20s linear infinite; }
+			.animate-city-pulse { animation: cityPulse 3s ease-in-out infinite; }
+			.animate-route-flow { animation: routeFlow 2s linear infinite; }
+			.animate-heritage-glow { animation: heritageGlow 4s ease-in-out infinite; }
+			@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+			@keyframes cityPulse {
+				0%, 100% { transform: scale(1); opacity: 0.8; }
+				50% { transform: scale(1.1); opacity: 1; }
+			}
+			@keyframes routeFlow {
+				0% { stroke-dashoffset: 0; }
+				100% { stroke-dashoffset: 20; }
+			}
+			@keyframes heritageGlow {
+				0%, 100% { filter: drop-shadow(0 0 5px rgba(249,150,33,0.3)); }
+				50% { filter: drop-shadow(0 0 15px rgba(249,150,33,0.6)); }
+			}
+		`}</style>
+	</div>
+);
 };
 
 export default Page;
