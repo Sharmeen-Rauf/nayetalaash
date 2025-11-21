@@ -3,6 +3,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, ChevronDown, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music, Ship, Route, Droplets, Play, CheckCircle2 } from 'lucide-react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Sphere, MeshDistortMaterial, Float, Text3D, Box, Torus, Cylinder } from '@react-three/drei';
+import Lottie from 'lottie-react';
+import * as THREE from 'three';
 
 const Page = () => {
 	// --- STATE AND HOOKS: MUST BE INSIDE THE COMPONENT FUNCTION ---
@@ -21,7 +27,154 @@ const Page = () => {
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
 		window.open('https://wa.me/923311438251', '_blank');
+	};
+
+	// Lottie Animation Data (Simple travel icon animation)
+	const travelAnimationData = {
+		"v": "5.7.4",
+		"fr": 30,
+		"ip": 0,
+		"op": 60,
+		"w": 100,
+		"h": 100,
+		"nm": "Travel Icon",
+		"ddd": 0,
+		"assets": [],
+		"layers": [
+			{
+				"ddd": 0,
+				"ind": 1,
+				"ty": 4,
+				"nm": "Plane",
+				"sr": 1,
+				"ks": {
+					"o": {"a": 0, "k": 100},
+					"r": {"a": 1, "k": [
+						{"i": {"x": [0.833], "y": [0.833]}, "o": {"x": [0.167], "y": [0.167]}, "t": 0, "s": [0]},
+						{"t": 60, "s": [360]}
+					]},
+					"p": {"a": 0, "k": [50, 50, 0]},
+					"a": {"a": 0, "k": [0, 0, 0]},
+					"s": {"a": 1, "k": [
+						{"i": {"x": [0.833, 0.833, 0.833], "y": [0.833, 0.833, 0.833]}, "o": {"x": [0.167, 0.167, 0.167], "y": [0.167, 0.167, 0.167]}, "t": 0, "s": [100, 100, 100]},
+						{"i": {"x": [0.833, 0.833, 0.833], "y": [0.833, 0.833, 0.833]}, "o": {"x": [0.167, 0.167, 0.167], "y": [0.167, 0.167, 0.167]}, "t": 30, "s": [120, 120, 100]},
+						{"t": 60, "s": [100, 100, 100]}
+					]}
+				},
+				"ao": 0,
+				"shapes": [
+					{
+						"ty": "gr",
+						"it": [
+							{
+								"ind": 0,
+								"ty": "sh",
+								"ks": {
+									"a": 0,
+									"k": {
+										"i": [[0, 0], [0, 0], [0, 0], [0, 0]],
+										"o": [[0, 0], [0, 0], [0, 0], [0, 0]],
+										"v": [[-15, -5], [15, 0], [-15, 5], [-5, 0]],
+										"c": true
+									}
+								}
+							},
+							{
+								"ty": "fl",
+								"c": {"a": 0, "k": [0.976, 0.588, 0.129, 1]},
+								"o": {"a": 0, "k": 100}
+							}
+						]
+					}
+				],
+				"ip": 0,
+				"op": 60,
+				"st": 0
+			}
+		]
+	};
+
+	const mountainAnimationData = {
+		"v": "5.7.4",
+		"fr": 30,
+		"ip": 0,
+		"op": 90,
+		"w": 100,
+		"h": 100,
+		"nm": "Mountain",
+		"ddd": 0,
+		"assets": [],
+		"layers": [
+			{
+				"ddd": 0,
+				"ind": 1,
+				"ty": 4,
+				"nm": "Mountain",
+				"sr": 1,
+				"ks": {
+					"o": {"a": 1, "k": [
+						{"i": {"x": [0.833], "y": [0.833]}, "o": {"x": [0.167], "y": [0.167]}, "t": 0, "s": [0]},
+						{"i": {"x": [0.833], "y": [0.833]}, "o": {"x": [0.167], "y": [0.167]}, "t": 15, "s": [100]},
+						{"i": {"x": [0.833], "y": [0.833]}, "o": {"x": [0.167], "y": [0.167]}, "t": 75, "s": [100]},
+						{"t": 90, "s": [0]}
+					]},
+					"r": {"a": 0, "k": 0},
+					"p": {"a": 0, "k": [50, 60, 0]},
+					"a": {"a": 0, "k": [0, 0, 0]},
+					"s": {"a": 1, "k": [
+						{"i": {"x": [0.833, 0.833, 0.833], "y": [0.833, 0.833, 0.833]}, "o": {"x": [0.167, 0.167, 0.167], "y": [0.167, 0.167, 0.167]}, "t": 0, "s": [0, 0, 100]},
+						{"i": {"x": [0.833, 0.833, 0.833], "y": [0.833, 0.833, 0.833]}, "o": {"x": [0.167, 0.167, 0.167], "y": [0.167, 0.167, 0.167]}, "t": 15, "s": [100, 100, 100]},
+						{"t": 75, "s": [100, 100, 100]}
+					]}
+				},
+				"ao": 0,
+				"shapes": [
+					{
+						"ty": "gr",
+						"it": [
+							{
+								"ind": 0,
+								"ty": "sh",
+								"ks": {
+									"a": 0,
+									"k": {
+										"i": [[0, 0], [0, 0], [0, 0]],
+										"o": [[0, 0], [0, 0], [0, 0]],
+										"v": [[0, -20], [-20, 20], [20, 20]],
+										"c": true
+									}
+								}
+							},
+							{
+								"ty": "fl",
+								"c": {"a": 0, "k": [0.129, 0.588, 0.976, 1]},
+								"o": {"a": 0, "k": 100}
+							}
+						]
+					}
+				],
+				"ip": 0,
+				"op": 90,
+				"st": 0
+			}
+		]
 	}; 
+
+	// Initialize AOS (Animate On Scroll) with performance optimizations
+	useEffect(() => {
+		AOS.init({
+			duration: 1200,
+			easing: 'ease-out-cubic',
+			once: true, // Animations happen only once for better performance
+			offset: 120,
+			mirror: false, // Disable mirror for better performance
+			anchorPlacement: 'top-bottom',
+			disable: 'mobile', // Disable on mobile for better performance
+		});
+		
+		// Refresh AOS on route changes
+		return () => AOS.refresh();
+	}, []);
 
 	// Effect to trigger hero animation on component mount
 	useEffect(() => {
@@ -38,6 +191,103 @@ const Page = () => {
 	// --- Theme Colors and Constants ---
 	const primaryOrange = '#f99621'; // Main accent color
 	const secondaryBlack = '#211f20'; // Main background/text color
+
+	// --- Enhanced 3D Components with Performance Optimizations ---
+	const AnimatedSphere = React.memo(() => {
+		return (
+			<Float speed={2} rotationIntensity={1} floatIntensity={2}>
+				<Sphere args={[1, 32, 64]} scale={2}> {/* Reduced geometry complexity */}
+					<MeshDistortMaterial
+						color={primaryOrange}
+						attach="material"
+						distort={0.3}
+						speed={1.5}
+						roughness={0.1}
+						metalness={0.8}
+					/>
+				</Sphere>
+			</Float>
+		);
+	});
+
+	const Floating3DShape = ({ position, color }: { position: [number, number, number], color: string }) => {
+		return (
+			<Float speed={1.5} rotationIntensity={0.5} floatIntensity={1.5}>
+				<Sphere args={[0.5, 32, 32]} position={position}>
+					<meshStandardMaterial color={color} metalness={0.7} roughness={0.2} />
+				</Sphere>
+			</Float>
+		);
+	};
+
+	const TravelIcon3D = ({ position, shape = 'sphere' }: { position: [number, number, number], shape?: 'sphere' | 'box' | 'torus' | 'cylinder' }) => {
+		const renderShape = () => {
+			switch (shape) {
+				case 'box':
+					return (
+						<Box args={[0.8, 0.8, 0.8]}>
+							<meshStandardMaterial color={primaryOrange} metalness={0.6} roughness={0.3} />
+						</Box>
+					);
+				case 'torus':
+					return (
+						<Torus args={[0.6, 0.2, 16, 100]}>
+							<meshStandardMaterial color="#ffffff" metalness={0.8} roughness={0.1} />
+						</Torus>
+					);
+				case 'cylinder':
+					return (
+						<Cylinder args={[0.3, 0.3, 1, 32]}>
+							<meshStandardMaterial color={primaryOrange} metalness={0.7} roughness={0.2} />
+						</Cylinder>
+					);
+				default:
+					return (
+						<Sphere args={[0.4, 32, 32]}>
+							<meshStandardMaterial color="#ffffff" metalness={0.5} roughness={0.4} />
+						</Sphere>
+					);
+			}
+		};
+
+		return (
+			<Float speed={1 + Math.random()} rotationIntensity={0.3 + Math.random() * 0.4} floatIntensity={1 + Math.random()}>
+				<group position={position}>
+					{renderShape()}
+				</group>
+			</Float>
+		);
+	};
+
+	const ParticleField = React.memo(() => {
+		const particleCount = 30; // Reduced for better performance
+		const particles = React.useMemo(() => {
+			const result = [];
+			for (let i = 0; i < particleCount; i++) {
+				result.push({
+					position: [
+						(Math.random() - 0.5) * 20,
+						(Math.random() - 0.5) * 20,
+						(Math.random() - 0.5) * 20
+					] as [number, number, number],
+					color: Math.random() > 0.5 ? primaryOrange : '#ffffff'
+				});
+			}
+			return result;
+		}, []);
+
+		return (
+			<>
+				{particles.map((particle, i) => (
+					<Float key={i} speed={0.5 + Math.random()} rotationIntensity={0.1} floatIntensity={0.5 + Math.random()}>
+						<Sphere args={[0.02, 6, 6]} position={particle.position}> {/* Reduced geometry complexity */}
+							<meshBasicMaterial color={particle.color} />
+						</Sphere>
+					</Float>
+				))}
+			</>
+		);
+	});
 	
 	// Image IDs (Using high-quality Pakistan tour images from Unsplash)
 	const newUploadedImageId = 'https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'; // Hunza Valley
@@ -912,34 +1162,67 @@ const Page = () => {
 				}}
 			></div>
 
-			{/* Floating Icons on Left Side */}
-			<div className="absolute left-4 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-4">
-				<a href="tel:+92331438251" className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-					<Phone className="w-6 h-6 text-white" />
+			{/* Enhanced 3D Background Elements */}
+			<div className="absolute inset-0 z-[5] opacity-40">
+				<Canvas camera={{ position: [0, 0, 8], fov: 75 }}>
+					<ambientLight intensity={0.6} />
+					<pointLight position={[10, 10, 10]} intensity={1} />
+					<pointLight position={[-10, -10, -10]} intensity={0.5} color={primaryOrange} />
+					<AnimatedSphere />
+					<TravelIcon3D position={[-4, 3, -2]} shape="box" />
+					<TravelIcon3D position={[4, -2, -1]} shape="torus" />
+					<TravelIcon3D position={[-2, -3, 1]} shape="cylinder" />
+					<TravelIcon3D position={[3, 2, -3]} shape="sphere" />
+					<ParticleField />
+					<OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.3} />
+				</Canvas>
+			</div>
+
+			{/* Floating Icons on Left Side with Lottie */}
+			<div className="absolute left-4 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-4" data-aos="fade-right" data-aos-delay="200">
+				<a href="tel:+92331438251" className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform relative overflow-hidden group">
+					<Phone className="w-6 h-6 text-white z-10" />
+					<div className="absolute inset-0 bg-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
 				</a>
 				<button 
 					onClick={handleWhatsAppClick}
-					className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+					className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform relative overflow-hidden group"
 				>
-					<MessageCircle className="w-6 h-6 text-white" />
+					<MessageCircle className="w-6 h-6 text-white z-10" />
+					<div className="absolute inset-0 bg-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
 				</button>
-				<button className="w-12 h-12 rounded-full bg-red-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
-					<X className="w-6 h-6 text-white" />
-				</button>
+				<div className="w-14 h-14 rounded-full bg-[#f99621] flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+					<Lottie 
+						animationData={travelAnimationData} 
+						loop={true}
+						style={{ width: 32, height: 32 }}
+					/>
+				</div>
 			</div>
 
 			{/* Main Content */}
 			<div className="relative z-10 h-full flex items-center justify-center">
 				<div className="text-center px-4">
-					<h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4" style={{ color: '#dc2626' }}>
+					<h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4" style={{ color: '#dc2626' }} data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1500">
 						Hey travelers
 					</h1>
-					<p className="text-2xl sm:text-3xl md:text-4xl text-white mb-2 font-semibold">
+					<p className="text-2xl sm:text-3xl md:text-4xl text-white mb-2 font-semibold" data-aos="slide-left" data-aos-delay="400" data-aos-duration="1200">
 						Welcome to Nayi Talaash
 					</p>
-					<p className="text-xl sm:text-2xl md:text-3xl text-white font-medium">
+					<p className="text-xl sm:text-2xl md:text-3xl text-white font-medium" data-aos="slide-right" data-aos-delay="700" data-aos-duration="1200">
 						Your One-Stop Travel Agency In Pakistan
 					</p>
+					<div className="mt-8 flex justify-center gap-4" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+						<button 
+							onClick={handleWhatsAppClick}
+							className="px-8 py-4 bg-[#f99621] text-white font-bold rounded-full hover:bg-[#e8851a] transition-all duration-300 transform hover:scale-110 hover:rotate-2 shadow-2xl"
+						>
+							Start Your Journey
+						</button>
+						<button className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-[#211f20] transition-all duration-300 transform hover:scale-110 hover:-rotate-2 shadow-2xl">
+							Explore Tours
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -947,43 +1230,61 @@ const Page = () => {
 		{/* ====================== FASCINATING FACTS ABOUT PAKISTAN ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
-				<h2 className="text-center text-3xl md:text-4xl font-bold mb-12">
+				<h2 className="text-center text-3xl md:text-4xl font-bold mb-12" data-aos="fade-down">
 					<span className="text-[#211f20]">FASCINATING FACTS ABOUT </span>
 					<span className="bg-gray-200 px-3 py-1 rounded">PAKISTAN</span>
 				</h2>
 				
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
 					{/* Card 1: World's Largest Deep Sea Port */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
-						<div className="w-16 h-16 rounded-full bg-[#f99621]/10 flex items-center justify-center mb-4">
-							<Ship className="w-8 h-8" style={{ color: '#f99621' }} strokeWidth={1.5} />
+					<div className="group bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 hover:border-[#f99621] relative overflow-hidden" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+						{/* 3D Background Effect */}
+						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
+							<div className="w-full h-full" style={{ background: 'linear-gradient(45deg, #f99621, transparent, #f99621)' }}></div>
 						</div>
-						<h3 className="text-xl font-bold text-[#211f20] mb-3">World&apos;s Largest Deep Sea Port</h3>
-						<p className="text-gray-600">
-							Pakistan&apos;s superior position in Asia makes it a center of trade in the region and that is to increase further in the coming years.
-						</p>
+						<div className="relative z-10">
+							<div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+								<Ship className="w-10 h-10 text-white" strokeWidth={1.5} />
+							</div>
+							<h3 className="text-2xl font-bold text-[#211f20] mb-4 group-hover:text-[#f99621] transition-colors duration-300">World&apos;s Largest Deep Sea Port</h3>
+							<p className="text-gray-600 leading-relaxed">
+								Pakistan&apos;s superior position in Asia makes it a center of trade in the region and that is to increase further in the coming years.
+							</p>
+						</div>
 					</div>
 
 					{/* Card 2: World's Highest Paved Road */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
-						<div className="w-16 h-16 rounded-full bg-[#f99621]/10 flex items-center justify-center mb-4">
-							<Route className="w-8 h-8" style={{ color: '#f99621' }} strokeWidth={1.5} />
+					<div className="group bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 hover:border-[#f99621] relative overflow-hidden" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
+						{/* 3D Background Effect */}
+						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
+							<div className="w-full h-full" style={{ background: 'linear-gradient(-45deg, #f99621, transparent, #f99621)' }}></div>
 						</div>
-						<h3 className="text-xl font-bold text-[#211f20] mb-3">World&apos;s Highest Paved Road</h3>
-						<p className="text-gray-600">
-							Also called the eighth wonder of the world or the China-Pakistan Friendship highway the Karakoram Highway is the highest road ever built.
-						</p>
+						<div className="relative z-10">
+							<div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+								<Route className="w-10 h-10 text-white" strokeWidth={1.5} />
+							</div>
+							<h3 className="text-2xl font-bold text-[#211f20] mb-4 group-hover:text-[#f99621] transition-colors duration-300">World&apos;s Highest Paved Road</h3>
+							<p className="text-gray-600 leading-relaxed">
+								Also called the eighth wonder of the world or the China-Pakistan Friendship highway the Karakoram Highway is the highest road ever built.
+							</p>
+						</div>
 					</div>
 
 					{/* Card 3: Fourth Largest Irrigation System */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
-						<div className="w-16 h-16 rounded-full bg-[#f99621]/10 flex items-center justify-center mb-4">
-							<Droplets className="w-8 h-8" style={{ color: '#f99621' }} strokeWidth={1.5} />
+					<div className="group bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 hover:border-[#f99621] relative overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1000">
+						{/* 3D Background Effect */}
+						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
+							<div className="w-full h-full" style={{ background: 'linear-gradient(135deg, #f99621, transparent, #f99621)' }}></div>
 						</div>
-						<h3 className="text-xl font-bold text-[#211f20] mb-3">Fourth Largest Irrigation System</h3>
-						<p className="text-gray-600">
-							As most of Pakistan&apos;s population depend on a livelihood in agriculture the country had to develop a complex and extensive system of irrigation.
-						</p>
+						<div className="relative z-10">
+							<div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+								<Droplets className="w-10 h-10 text-white" strokeWidth={1.5} />
+							</div>
+							<h3 className="text-2xl font-bold text-[#211f20] mb-4 group-hover:text-[#f99621] transition-colors duration-300">Fourth Largest Irrigation System</h3>
+							<p className="text-gray-600 leading-relaxed">
+								As most of Pakistan&apos;s population depend on a livelihood in agriculture the country had to develop a complex and extensive system of irrigation.
+							</p>
+						</div>
 					</div>
 				</div>
 
@@ -998,30 +1299,88 @@ const Page = () => {
 			
 		{/* ====================== DISCOVER PAKISTAN ====================== */}
 		<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#14b8a6' }}>
-			<div className="container mx-auto px-4 max-w-7xl">
+			{/* Enhanced 3D Background Elements */}
+			<div className="absolute inset-0 z-[1] opacity-30">
+				<Canvas camera={{ position: [0, 0, 8], fov: 75 }}>
+					<ambientLight intensity={0.4} />
+					<pointLight position={[10, 10, 10]} intensity={1} />
+					<pointLight position={[-10, -10, -10]} intensity={0.5} color="#ffffff" />
+					<TravelIcon3D position={[-3, 2, -1]} shape="torus" />
+					<TravelIcon3D position={[3, -2, 1]} shape="box" />
+					<TravelIcon3D position={[-1, -1, -2]} shape="cylinder" />
+					<TravelIcon3D position={[2, 3, 0]} shape="sphere" />
+					<TravelIcon3D position={[-4, 0, 2]} shape="torus" />
+					<ParticleField />
+					<OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.2} />
+				</Canvas>
+			</div>
+
+			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 					{/* Left: Pakistan Map */}
-					<div className="relative">
-						<Image 
-							src="/images/map-2.png"
-							alt="Pakistan Map"
-							width={600}
-							height={800}
-							className="w-full h-auto object-contain"
-						/>
-						{/* Glowing dots on map */}
-						<div className="absolute top-1/4 left-1/3 w-3 h-3 bg-white rounded-full animate-pulse"></div>
-						<div className="absolute top-1/2 right-1/4 w-3 h-3 bg-white rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-						<div className="absolute bottom-1/4 left-1/2 w-3 h-3 bg-white rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+					<div className="relative" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="1500">
+						<div className="relative group">
+							<Image 
+								src="/images/map-2.png"
+								alt="Pakistan Map"
+								width={600}
+								height={800}
+								className="w-full h-auto object-contain transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
+							/>
+							{/* Enhanced Glowing dots on map with travel destinations */}
+							<div className="absolute top-1/4 left-1/3 group">
+								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
+								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+									Hunza Valley
+								</div>
+							</div>
+							<div className="absolute top-1/2 right-1/4 group" style={{ animationDelay: '0.5s' }}>
+								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
+								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+									Lahore
+								</div>
+							</div>
+							<div className="absolute bottom-1/4 left-1/2 group" style={{ animationDelay: '1s' }}>
+								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
+								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+									Karachi
+								</div>
+							</div>
+							<div className="absolute top-1/3 left-1/4 group" style={{ animationDelay: '1.5s' }}>
+								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
+								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+									Islamabad
+								</div>
+							</div>
+							<div className="absolute bottom-1/3 right-1/3 group" style={{ animationDelay: '2s' }}>
+								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
+								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+									Gwadar
+								</div>
+							</div>
+							{/* Connecting lines between cities */}
+							<svg className="absolute inset-0 w-full h-full pointer-events-none">
+								<path d="M 33% 25%, 50% 50%, 50% 75%, 25% 33%, 66% 66%" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none" strokeDasharray="5,5" className="animate-pulse" />
+							</svg>
+						</div>
 					</div>
 
 					{/* Right: Content */}
-					<div className="text-white">
-						<h2 className="text-4xl md:text-5xl font-bold mb-6">DISCOVER PAKISTAN</h2>
-						<p className="text-lg md:text-xl leading-relaxed mb-6">
+					<div className="text-white" data-aos="fade-left" data-aos-delay="400">
+						<div className="flex items-center gap-4 mb-6">
+							<h2 className="text-4xl md:text-5xl font-bold" data-aos="fade-up">DISCOVER PAKISTAN</h2>
+							<div className="w-16 h-16" data-aos="zoom-in" data-aos-delay="600">
+								<Lottie 
+									animationData={mountainAnimationData} 
+									loop={true}
+									style={{ width: '100%', height: '100%' }}
+								/>
+							</div>
+						</div>
+						<p className="text-lg md:text-xl leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="200">
 							Pakistan is a land where heritage meets modernity, where snow-kissed peaks touch the sky, and where every corner tells a story. From the majestic mountains of the north to the golden beaches of the south, from ancient civilizations to bustling cities, Pakistan offers a blend of experiences that captivate the soul. Explore our diverse landscapes, savor our culinary brilliance, and immerse yourself in the warmth of our people. Discover Pakistan – where every journey is an adventure waiting to unfold.
 						</p>
-						<button className="px-8 py-3 bg-white text-[#14b8a6] font-bold rounded-lg border-2 border-white hover:bg-transparent hover:text-white transition-all">
+						<button className="px-8 py-3 bg-white text-[#14b8a6] font-bold rounded-lg border-2 border-white hover:bg-transparent hover:text-white transition-all transform hover:scale-105" data-aos="zoom-in" data-aos-delay="400">
 							EXPLORE MORE
 						</button>
 					</div>
@@ -1032,7 +1391,7 @@ const Page = () => {
 		{/* ====================== WHERE TO NEXT? ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8">
+				<div className="mb-8" data-aos="fade-down">
 					<h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: '#9333ea' }}>
 						Pakistan: &apos;Tourism&apos;s Next Big Thing&apos; - Lonely Planet
 					</h2>
@@ -1040,7 +1399,7 @@ const Page = () => {
 						Travel with us to experience the beauty, culture, and hospitality of Pakistan!
 					</p>
 					<div className="flex justify-end mt-4">
-						<button className="px-4 py-2 border-2 rounded-lg font-semibold" style={{ borderColor: '#9333ea', color: '#9333ea' }}>
+						<button className="px-4 py-2 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: '#9333ea', color: '#9333ea' }} data-aos="zoom-in" data-aos-delay="200">
 							See All
 						</button>
 					</div>
@@ -1056,16 +1415,16 @@ const Page = () => {
 						{ name: 'Bahawalpur', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
 						{ name: 'Karachi', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
 					].map((dest, idx) => (
-						<div key={idx} className="relative group cursor-pointer">
-							<div className="relative h-48 rounded-lg overflow-hidden">
+						<div key={idx} className="relative group cursor-pointer" data-aos="zoom-in" data-aos-delay={idx * 100}>
+							<div className="relative h-48 rounded-lg overflow-hidden transform hover:scale-105 hover:rotate-1 transition-all duration-500 shadow-lg hover:shadow-2xl">
 								<Image 
 									src={dest.image}
 									alt={dest.name}
 									fill
-									className="object-cover group-hover:scale-110 transition-transform duration-300"
+									className="object-cover group-hover:scale-110 transition-transform duration-500"
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-								<div className="absolute bottom-4 left-4 text-white font-bold text-lg">
+								<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent group-hover:from-black/80 transition-all"></div>
+								<div className="absolute bottom-4 left-4 text-white font-bold text-lg transform group-hover:translate-y-[-4px] transition-transform">
 									{dest.name}
 								</div>
 							</div>
@@ -1073,13 +1432,21 @@ const Page = () => {
 					))}
 				</div>
 
-				{/* Floating WhatsApp Icon */}
+				{/* Floating WhatsApp Icon with Lottie */}
 				<div className="fixed right-4 bottom-4 z-50">
 					<button 
 						onClick={handleWhatsAppClick}
-						className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+						className="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 pulse-glow relative overflow-hidden group"
 					>
-						<MessageCircle className="w-7 h-7 text-white" />
+						<MessageCircle className="w-8 h-8 text-white z-10" />
+						<div className="absolute inset-0 bg-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
+						<div className="absolute -top-1 -right-1 w-4 h-4">
+							<Lottie 
+								animationData={travelAnimationData} 
+								loop={true}
+								style={{ width: '100%', height: '100%' }}
+							/>
+						</div>
 					</button>
 				</div>
 			</div>
@@ -1088,34 +1455,63 @@ const Page = () => {
 		{/* ====================== DESTINATION LIST OF PAKISTAN TOUR PACKAGES ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
-				<h2 className="text-3xl md:text-4xl font-bold mb-8">
+				<h2 className="text-3xl md:text-4xl font-bold mb-8" data-aos="fade-down">
 					<span className="text-[#dc2626] font-serif italic">Destination List of </span>
 					<span className="text-[#211f20]">PAKISTAN TOUR PACKAGES</span>
 				</h2>
 
-				{/* Tour Packages Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+				{/* Enhanced Tour Packages Grid with 3D Effects */}
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{[
-						{ name: 'HUNZA', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ name: 'SKARDU', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'SWAT KALAM', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'MURREE NATHIA GALI', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ name: 'NARAN KAGHAN', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'AZAD KASHMIR', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+						{ name: 'HUNZA', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Majestic valleys and ancient culture' },
+						{ name: 'SKARDU', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Gateway to K2 and Baltoro Glacier' },
+						{ name: 'SWAT KALAM', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Switzerland of Pakistan' },
+						{ name: 'MURREE NATHIA GALI', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Colonial hill station charm' },
+						{ name: 'NARAN KAGHAN', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Alpine lakes and meadows' },
+						{ name: 'AZAD KASHMIR', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Paradise on earth' },
 					].map((tour, idx) => (
-						<div key={idx} className="relative group cursor-pointer">
-							<div className="relative h-64 rounded-lg overflow-hidden">
+						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos="flip-up" data-aos-delay={idx * 150} data-aos-duration="1000">
+							<div className="relative h-80 rounded-2xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-12 hover:rotate-x-5 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/20">
+								{/* 3D Card Background */}
+								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+								
 								<Image 
 									src={tour.image}
 									alt={tour.name}
 									fill
-									className="object-cover group-hover:scale-110 transition-transform duration-300"
+									className="object-cover group-hover:scale-125 transition-transform duration-700 filter group-hover:brightness-110"
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-								<div className="absolute bottom-0 left-0 right-0 p-4">
-									<p className="text-[#f99621] font-serif text-sm mb-1">Tour Packages</p>
-									<p className="text-white font-bold text-xl">{tour.name}</p>
+								
+								{/* Enhanced Gradient Overlay */}
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
+								
+								{/* Floating Elements */}
+								<div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-[#f99621]/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:rotate-180">
+									<Mountain className="w-6 h-6 text-white" />
 								</div>
+								
+								{/* Content */}
+								<div className="absolute bottom-0 left-0 right-0 p-6 transform group-hover:translate-y-[-12px] transition-all duration-500">
+									<div className="mb-3">
+										<div className="inline-block px-3 py-1 bg-[#f99621]/80 backdrop-blur-sm rounded-full text-white text-xs font-semibold uppercase tracking-wider transform group-hover:scale-110 transition-transform duration-300">
+											Tour Package
+										</div>
+									</div>
+									<h3 className="text-white font-bold text-2xl mb-2 transform group-hover:translate-x-2 transition-transform duration-300">
+										{tour.name}
+									</h3>
+									<p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+										{tour.description}
+									</p>
+									<div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+										<button className="px-4 py-2 bg-[#f99621] text-white rounded-lg text-sm font-semibold hover:bg-[#e8851a] transition-colors transform hover:scale-105">
+											Explore Now
+										</button>
+									</div>
+								</div>
+								
+								{/* 3D Border Effect */}
+								<div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#f99621]/30 transition-all duration-500"></div>
 							</div>
 						</div>
 					))}
@@ -1128,8 +1524,8 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Honeymoon Trip */}
-					<div className="relative">
-						<div className="relative bg-white border-4 border-gray-300 p-4 shadow-2xl" style={{ transform: 'rotate(-2deg)' }}>
+					<div className="relative" data-aos="fade-right" data-aos-delay="200">
+						<div className="relative bg-white border-4 border-gray-300 p-4 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105" style={{ transform: 'rotate(-2deg)' }}>
 							<Image 
 								src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
 								alt="Honeymoon Trip"
@@ -1137,17 +1533,17 @@ const Page = () => {
 								height={400}
 								className="w-full h-auto object-cover"
 							/>
-							<div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2">
+							<div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-lg shadow-lg flex items-center gap-2 transform hover:scale-110 transition-transform">
 								<Phone className="w-5 h-5" style={{ color: '#dc2626' }} />
 								<span className="font-bold text-sm">BOOK YOUR TOUR NOW +92 303 4364467</span>
 							</div>
 						</div>
-						<p className="mt-4 text-center text-2xl font-serif italic" style={{ color: '#211f20' }}>Honeymoon Trip</p>
+						<p className="mt-4 text-center text-2xl font-serif italic" style={{ color: '#211f20' }} data-aos="fade-up" data-aos-delay="400">Honeymoon Trip</p>
 					</div>
 
 					{/* Right: Family Tour Packages */}
-					<div>
-						<h2 className="text-4xl font-bold mb-6">
+					<div data-aos="fade-left" data-aos-delay="300">
+						<h2 className="text-4xl font-bold mb-6" data-aos="fade-up">
 							<span className="text-[#dc2626]">FAMILY</span>
 							<span className="text-[#211f20]"> TOUR PACKAGES</span>
 						</h2>
@@ -1160,13 +1556,13 @@ const Page = () => {
 								'Local and Traditional Meals',
 								'Bonfire Nights',
 							].map((item, idx) => (
-								<li key={idx} className="flex items-center gap-3">
-									<div className="w-2 h-2 rounded-full bg-[#dc2626]"></div>
-									<span className="text-lg text-gray-700">{item}</span>
+								<li key={idx} className="flex items-center gap-3" data-aos="fade-left" data-aos-delay={idx * 100 + 500}>
+									<div className="w-2 h-2 rounded-full bg-[#dc2626] transform hover:scale-150 transition-transform"></div>
+									<span className="text-lg text-gray-700 hover:text-[#dc2626] transition-colors">{item}</span>
 								</li>
 							))}
 						</ul>
-						<p className="text-2xl font-bold text-[#211f20]">GET YOUR FREE QUOTE NOW!</p>
+						<p className="text-2xl font-bold text-[#211f20] transform hover:scale-105 transition-transform inline-block" data-aos="zoom-in" data-aos-delay="1100">GET YOUR FREE QUOTE NOW!</p>
 					</div>
 				</div>
 			</div>
@@ -1177,9 +1573,9 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
-					<div>
-						<h2 className="text-3xl font-bold text-[#211f20] mb-4">Why Travel With Us?</h2>
-						<p className="text-gray-700 mb-6">
+					<div data-aos="fade-right" data-aos-delay="200">
+						<h2 className="text-3xl font-bold text-[#211f20] mb-4" data-aos="fade-up">Why Travel With Us?</h2>
+						<p className="text-gray-700 mb-6" data-aos="fade-up" data-aos-delay="100">
 							The Mad Hatters Pakistan is a cultural and experiential travel company.
 						</p>
 						<ul className="space-y-3 mb-6">
@@ -1190,20 +1586,20 @@ const Page = () => {
 								'Local Community Engagement',
 								'Women-friendly tours',
 							].map((item, idx) => (
-								<li key={idx} className="flex items-center gap-3">
-									<CheckCircle2 className="w-5 h-5" style={{ color: '#9333ea' }} />
-									<span className="text-gray-700">{item}</span>
+								<li key={idx} className="flex items-center gap-3" data-aos="fade-left" data-aos-delay={idx * 100 + 300}>
+									<CheckCircle2 className="w-5 h-5 transform hover:rotate-12 transition-transform" style={{ color: '#9333ea' }} />
+									<span className="text-gray-700 hover:text-[#9333ea] transition-colors">{item}</span>
 								</li>
 							))}
 						</ul>
-						<button className="px-6 py-3 border-2 rounded-lg font-semibold" style={{ borderColor: '#9333ea', color: '#9333ea' }}>
+						<button className="px-6 py-3 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: '#9333ea', color: '#9333ea' }} data-aos="zoom-in" data-aos-delay="800">
 							Learn More
 						</button>
 					</div>
 
 					{/* Right: Video Embed */}
-					<div>
-						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden">
+					<div data-aos="fade-left" data-aos-delay="400">
+						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl">
 							<Image 
 								src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
 								alt="Video Thumbnail"
@@ -1211,12 +1607,12 @@ const Page = () => {
 								className="object-cover"
 							/>
 							<div className="absolute inset-0 flex items-center justify-center">
-								<button className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center hover:scale-110 transition-transform">
+								<button className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center hover:scale-125 transition-transform shadow-lg">
 									<Play className="w-8 h-8 text-white ml-1" fill="white" />
 								</button>
 							</div>
 						</div>
-						<button className="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg text-sm">
+						<button className="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg text-sm hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="600">
 							Watch on Youtube
 						</button>
 					</div>
@@ -1227,7 +1623,7 @@ const Page = () => {
 		{/* ====================== PUBLIC GROUP TOURS ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8">
+				<div className="mb-8" data-aos="fade-down">
 					<p className="text-[#f99621] text-sm font-bold uppercase tracking-widest mb-2">OUR WEEKLY</p>
 					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20] mb-4">PUBLIC GROUP TOURS</h2>
 					<p className="text-gray-600 max-w-3xl">
@@ -1235,26 +1631,70 @@ const Page = () => {
 					</p>
 				</div>
 
-				{/* Tour Cards */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+				{/* Enhanced Tour Cards with 3D Effects */}
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
 					{[
-						{ title: '2 DAYS MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 11,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ title: '5 DAYS HUNZA, NALTAR, AND KHUNJERAB PUBLIC GROUP TOUR', price: 'From Rs 25,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ title: '3 DAYS KALAM AND MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 16,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+						{ title: '2 DAYS MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 11,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', duration: '2 Days' },
+						{ title: '5 DAYS HUNZA, NALTAR, AND KHUNJERAB PUBLIC GROUP TOUR', price: 'From Rs 25,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', duration: '5 Days' },
+						{ title: '3 DAYS KALAM AND MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 16,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', duration: '3 Days' },
+						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', duration: '3 Days' },
 					].map((tour, idx) => (
-						<div key={idx} className="relative group cursor-pointer">
-							<div className="relative h-64 rounded-lg overflow-hidden">
+						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos="zoom-in-up" data-aos-delay={idx * 150} data-aos-duration="1000">
+							<div className="relative h-80 rounded-2xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-8 hover:rotate-x-3 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/25">
+								{/* 3D Floating Badge */}
+								<div className="absolute top-4 left-4 z-20 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
+									<div className="px-3 py-1 bg-[#f99621] text-white text-xs font-bold rounded-full shadow-lg">
+										{tour.duration}
+									</div>
+								</div>
+								
+								{/* Price Badge */}
+								<div className="absolute top-4 right-4 z-20 transform group-hover:scale-110 group-hover:-rotate-12 transition-all duration-500">
+									<div className="px-3 py-1 bg-black/80 backdrop-blur-sm text-white text-xs font-bold rounded-full shadow-lg">
+										GROUP TOUR
+									</div>
+								</div>
+								
 								<Image 
 									src={tour.image}
 									alt={tour.title}
 									fill
-									className="object-cover group-hover:scale-110 transition-transform duration-300"
+									className="object-cover group-hover:scale-125 transition-transform duration-700 filter group-hover:brightness-110"
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-								<div className="absolute bottom-0 left-0 right-0 p-4">
-									<h3 className="text-white font-bold text-lg mb-2">{tour.title}</h3>
-									<p className="text-[#f99621] font-bold">{tour.price}</p>
+								
+								{/* Enhanced Gradient Overlay */}
+								<div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent group-hover:from-black/98 transition-all duration-500"></div>
+								
+								{/* Floating Icon */}
+								<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10">
+									<div className="w-16 h-16 rounded-full bg-[#f99621]/20 backdrop-blur-sm flex items-center justify-center transform group-hover:rotate-180 transition-transform duration-700">
+										<Users className="w-8 h-8 text-white" />
+									</div>
+								</div>
+								
+								{/* Content */}
+								<div className="absolute bottom-0 left-0 right-0 p-6 transform group-hover:translate-y-[-16px] transition-all duration-500">
+									<h3 className="text-white font-bold text-lg mb-3 leading-tight transform group-hover:translate-x-2 transition-transform duration-300">
+										{tour.title}
+									</h3>
+									<div className="flex items-center justify-between">
+										<p className="text-[#f99621] font-bold text-xl transform group-hover:scale-110 transition-transform duration-300">
+											{tour.price}
+										</p>
+										<div className="opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0">
+											<button className="px-4 py-2 bg-[#f99621] text-white rounded-lg text-sm font-semibold hover:bg-[#e8851a] transition-colors transform hover:scale-105">
+												Book Now
+											</button>
+										</div>
+									</div>
+								</div>
+								
+								{/* 3D Border Effect */}
+								<div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#f99621]/40 transition-all duration-500"></div>
+								
+								{/* Shine Effect */}
+								<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+									<div className="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform group-hover:translate-x-[200%] transition-transform duration-1000"></div>
 								</div>
 							</div>
 						</div>
@@ -1272,16 +1712,16 @@ const Page = () => {
 		{/* ====================== TESTIMONIALS ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8">
+				<div className="mb-8" data-aos="fade-down">
 					<p className="text-[#f99621] text-sm font-serif italic mb-2">Testimonials</p>
 					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20]">WHAT OUR CLIENTS HAVE TO SAY?</h2>
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 					{/* Testimonial 1 */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md">
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105" data-aos="flip-right" data-aos-delay="200">
 						<div className="flex items-center mb-4">
-							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4">
+							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4 transform hover:rotate-12 transition-transform">
 								<Image 
 									src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
 									alt="Muhammad Nauraiz Mushtaq"
@@ -1300,9 +1740,9 @@ const Page = () => {
 					</div>
 
 					{/* Testimonial 2 */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md">
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105" data-aos="flip-left" data-aos-delay="400">
 						<div className="flex items-center mb-4">
-							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4">
+							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4 transform hover:rotate-12 transition-transform">
 								<Image 
 									src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
 									alt="Ali Rehman"
@@ -1326,12 +1766,12 @@ const Page = () => {
 		{/* ====================== WHERE ARE WE LOCATED? ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8">
+				<div className="mb-8" data-aos="fade-down">
 					<p className="text-[#f99621] text-sm font-serif italic mb-2">Find us</p>
 					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20]">WHERE ARE WE LOCATED?</h2>
 				</div>
 
-				<div className="w-full h-96 rounded-lg overflow-hidden">
+				<div className="w-full h-96 rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500" data-aos="zoom-in" data-aos-delay="200">
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.123456789!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDMxJzEzLjQiTiA3NMKwMjEnMzEuMyJF!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
 						width="100%"
@@ -1348,17 +1788,17 @@ const Page = () => {
 		{/* ====================== WORKED WITH / FEATURED ON ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
-				<div className="flex justify-between items-center mb-8">
+				<div className="flex justify-between items-center mb-8" data-aos="fade-down">
 					<h2 className="text-3xl font-bold text-[#211f20]">Worked With / Featured On</h2>
-					<button className="px-4 py-2 border-2 rounded-lg font-semibold" style={{ borderColor: '#211f20', color: '#211f20' }}>
+					<button className="px-4 py-2 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: '#211f20', color: '#211f20' }} data-aos="zoom-in" data-aos-delay="200">
 						See All
 					</button>
 				</div>
 
 				<div className="grid grid-cols-3 md:grid-cols-6 gap-8">
 					{['UNESCO', 'USAID', 'The World Bank', 'UN WOMEN', 'ALJAZEERA', 'FINANCIAL TIMES'].map((org, idx) => (
-						<div key={idx} className="flex items-center justify-center h-20 bg-gray-100 rounded-lg">
-							<span className="text-sm font-semibold text-gray-600">{org}</span>
+						<div key={idx} className="flex items-center justify-center h-20 bg-gray-100 rounded-lg hover:bg-[#f99621]/10 hover:scale-110 transition-all duration-300 transform hover:rotate-2" data-aos="zoom-in" data-aos-delay={idx * 100}>
+							<span className="text-sm font-semibold text-gray-600 hover:text-[#f99621] transition-colors">{org}</span>
 						</div>
 					))}
 				</div>
@@ -1366,16 +1806,32 @@ const Page = () => {
 		</section>
 
 		{/* ====================== READY FOR TOUR CTA ====================== */}
-		<section className="py-16 md:py-24 bg-[#211f20]">
-			<div className="container mx-auto px-4 max-w-7xl">
-				<div className="flex flex-col md:flex-row items-center justify-between">
-					<div>
+		<section className="py-16 md:py-24 bg-[#211f20] relative overflow-hidden">
+			{/* Enhanced 3D Background Elements */}
+			<div className="absolute inset-0 z-[1] opacity-25">
+				<Canvas camera={{ position: [0, 0, 8], fov: 75 }}>
+					<ambientLight intensity={0.6} />
+					<pointLight position={[10, 10, 10]} intensity={1} />
+					<pointLight position={[-10, -10, -10]} intensity={0.5} color={primaryOrange} />
+					<TravelIcon3D position={[-3, 2, -1]} shape="torus" />
+					<TravelIcon3D position={[3, -2, 1]} shape="box" />
+					<TravelIcon3D position={[-1, -1, -2]} shape="cylinder" />
+					<TravelIcon3D position={[2, 3, 0]} shape="sphere" />
+					<ParticleField />
+					<OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
+				</Canvas>
+			</div>
+
+			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
+				<div className="flex flex-col md:flex-row items-center justify-between" data-aos="fade-up">
+					<div data-aos="fade-right" data-aos-delay="200">
 						<p className="text-white text-2xl font-serif italic mb-2">Ready for an unforgettable tour!</p>
 						<h2 className="text-4xl md:text-5xl font-bold text-[#f99621]">Plan your trips with us</h2>
 					</div>
 					<button
 						onClick={handleWhatsAppClick}
-						className="px-8 py-4 bg-green-400 text-[#211f20] font-bold rounded-lg hover:bg-green-500 transition-colors mt-6 md:mt-0"
+						className="px-8 py-4 bg-green-400 text-[#211f20] font-bold rounded-lg hover:bg-green-500 transition-all transform hover:scale-110 shadow-lg hover:shadow-xl mt-6 md:mt-0"
+						data-aos="zoom-in" data-aos-delay="400"
 					>
 						Customize A Tour
 					</button>
@@ -1474,6 +1930,7 @@ const Page = () => {
 			}}
 		/>
 
+		{/* Enhanced CSS Animations and 3D Effects */}
 		<style>{`
 			.no-scrollbar { scrollbar-width: none; }
 			.no-scrollbar::-webkit-scrollbar { display: none; }
@@ -1481,44 +1938,82 @@ const Page = () => {
 			.animate-city-pulse { animation: cityPulse 3s ease-in-out infinite; }
 			.animate-route-flow { animation: routeFlow 2s linear infinite; }
 			.animate-heritage-glow { animation: heritageGlow 4s ease-in-out infinite; }
-			@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-			@keyframes cityPulse {
-				0%, 100% { transform: scale(1); opacity: 0.8; }
-				50% { transform: scale(1.1); opacity: 1; }
+			
+			/* 3D Perspective and Transform Effects */
+			.perspective-1000 {
+				perspective: 1000px;
 			}
-			@keyframes routeFlow {
-				0% { stroke-dashoffset: 0; }
-				100% { stroke-dashoffset: 20; }
+			.transform-gpu {
+				transform-style: preserve-3d;
 			}
-			@keyframes heritageGlow {
-				0%, 100% { filter: drop-shadow(0 0 5px rgba(249,150,33,0.3)); }
-				50% { filter: drop-shadow(0 0 15px rgba(249,150,33,0.6)); }
+			.rotate-y-12:hover {
+				transform: rotateY(12deg);
 			}
-		`}</style>
-		{/* Custom Cursor */}
-		<div
-			className="fixed z-[130] pointer-events-none"
-			style={{
-				left: mousePos.x - 12,
-				top: mousePos.y - 12,
-				width: 24,
-				height: 24,
-				borderRadius: 9999,
-				border: `2px solid ${primaryOrange}`,
-				background: isScrollingNow ? `${primaryOrange}` : 'transparent',
-				mixBlendMode: 'difference',
-				transition: 'transform 120ms ease, background-color 150ms ease',
-				transform: isScrollingNow ? 'scale(0.6)' : 'scale(1)',
-			}}
-		/>
-
-		<style>{`
-			.no-scrollbar { scrollbar-width: none; }
-			.no-scrollbar::-webkit-scrollbar { display: none; }
-			.animate-spin-slow { animation: spin 20s linear infinite; }
-			.animate-city-pulse { animation: cityPulse 3s ease-in-out infinite; }
-			.animate-route-flow { animation: routeFlow 2s linear infinite; }
-			.animate-heritage-glow { animation: heritageGlow 4s ease-in-out infinite; }
+			.rotate-y-8:hover {
+				transform: rotateY(8deg);
+			}
+			.rotate-x-5:hover {
+				transform: rotateX(5deg);
+			}
+			.rotate-x-3:hover {
+				transform: rotateX(3deg);
+			}
+			
+			/* Enhanced Shadow Effects */
+			.shadow-3xl {
+				box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.05);
+			}
+			
+			/* Floating Animation for 3D Elements */
+			@keyframes float3d {
+				0%, 100% {
+					transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+				}
+				50% {
+					transform: translateY(-20px) rotateX(10deg) rotateY(5deg);
+				}
+			}
+			.float-3d {
+				animation: float3d 6s ease-in-out infinite;
+			}
+			
+			/* Pulse Glow Effect */
+			@keyframes pulseGlow {
+				0%, 100% {
+					box-shadow: 0 0 20px rgba(249, 150, 33, 0.3);
+				}
+				50% {
+					box-shadow: 0 0 40px rgba(249, 150, 33, 0.6);
+				}
+			}
+			.pulse-glow {
+				animation: pulseGlow 2s ease-in-out infinite;
+			}
+			
+			/* Shimmer Effect */
+			@keyframes shimmer {
+				0% {
+					transform: translateX(-100%);
+				}
+				100% {
+					transform: translateX(100%);
+				}
+			}
+			.shimmer {
+				position: relative;
+				overflow: hidden;
+			}
+			.shimmer::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+				animation: shimmer 2s infinite;
+			}
+			
 			@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 			@keyframes cityPulse {
 				0%, 100% { transform: scale(1); opacity: 0.8; }
