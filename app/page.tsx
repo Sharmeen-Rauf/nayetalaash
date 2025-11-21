@@ -159,18 +159,21 @@ const Page = () => {
 
 	// Initialize AOS (Animate On Scroll) with performance optimizations
 	useEffect(() => {
-		AOS.init({
-			duration: 1200,
-			easing: 'ease-out-cubic',
-			once: true, // Animations happen only once for better performance
-			offset: 120,
-			mirror: false, // Disable mirror for better performance
-			anchorPlacement: 'top-bottom',
-			disable: 'mobile', // Disable on mobile for better performance
-		});
-		
-		// Refresh AOS on route changes
-		return () => AOS.refresh();
+		// Only initialize AOS on client side
+		if (typeof window !== 'undefined') {
+			AOS.init({
+				duration: 1200,
+				easing: 'ease-out-cubic',
+				once: true, // Animations happen only once for better performance
+				offset: 120,
+				mirror: false, // Disable mirror for better performance
+				anchorPlacement: 'top-bottom',
+				disable: 'mobile', // Disable on mobile for better performance
+			});
+			
+			// Refresh AOS on route changes
+			return () => AOS.refresh();
+		}
 	}, []);
 
 	// Effect to trigger hero animation on component mount
@@ -345,9 +348,11 @@ const Page = () => {
 
 	// Custom cursor tracking
 	useEffect(() => {
-		const onMove = (e: MouseEvent) => setMousePos({ x: e.clientX, y: e.clientY });
-		window.addEventListener('mousemove', onMove, { passive: true });
-		return () => window.removeEventListener('mousemove', onMove);
+		if (typeof window !== 'undefined') {
+			const onMove = (e: MouseEvent) => setMousePos({ x: e.clientX, y: e.clientY });
+			window.addEventListener('mousemove', onMove, { passive: true });
+			return () => window.removeEventListener('mousemove', onMove);
+		}
 	}, []);
 	
 	// --- UPCOMING TOUR DATA (Section 5) ---
