@@ -192,7 +192,57 @@ const Page = () => {
 	const primaryOrange = '#f99621'; // Main accent color
 	const secondaryBlack = '#211f20'; // Main background/text color
 
-	// Placeholder for 3D components (temporarily disabled for build compatibility)
+	// --- Animated Background Components ---
+	const AnimatedBackground = ({ variant = 'default' }: { variant?: 'default' | 'orange' | 'dark' | 'light' }) => {
+		const getBackgroundStyle = () => {
+			switch (variant) {
+				case 'orange':
+					return {
+						background: `linear-gradient(135deg, ${primaryOrange}15 0%, transparent 50%, ${primaryOrange}10 100%)`,
+					};
+				case 'dark':
+					return {
+						background: `linear-gradient(45deg, ${secondaryBlack}20 0%, transparent 50%, ${secondaryBlack}15 100%)`,
+					};
+				case 'light':
+					return {
+						background: `linear-gradient(-45deg, #ffffff10 0%, transparent 50%, #ffffff05 100%)`,
+					};
+				default:
+					return {
+						background: `linear-gradient(135deg, ${primaryOrange}08 0%, transparent 30%, ${secondaryBlack}08 70%, transparent 100%)`,
+					};
+			}
+		};
+
+		return (
+			<div className="absolute inset-0 overflow-hidden pointer-events-none">
+				{/* Animated gradient background */}
+				<div 
+					className="absolute inset-0 animate-pulse" 
+					style={getBackgroundStyle()}
+				/>
+				
+				{/* Floating geometric shapes */}
+				<div className="absolute top-10 left-10 w-20 h-20 rounded-full opacity-10 animate-bounce" 
+					 style={{ backgroundColor: primaryOrange, animationDelay: '0s', animationDuration: '3s' }} />
+				<div className="absolute top-32 right-20 w-16 h-16 rounded-full opacity-10 animate-bounce" 
+					 style={{ backgroundColor: secondaryBlack, animationDelay: '1s', animationDuration: '4s' }} />
+				<div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full opacity-10 animate-bounce" 
+					 style={{ backgroundColor: primaryOrange, animationDelay: '2s', animationDuration: '5s' }} />
+				<div className="absolute bottom-40 right-1/3 w-24 h-24 rounded-full opacity-10 animate-bounce" 
+					 style={{ backgroundColor: secondaryBlack, animationDelay: '0.5s', animationDuration: '3.5s' }} />
+				
+				{/* Moving lines */}
+				<div className="absolute inset-0">
+					<div className="absolute top-1/4 left-0 w-full h-px opacity-20 animate-pulse" 
+						 style={{ backgroundColor: primaryOrange, animationDuration: '2s' }} />
+					<div className="absolute bottom-1/4 left-0 w-full h-px opacity-20 animate-pulse" 
+						 style={{ backgroundColor: secondaryBlack, animationDelay: '1s', animationDuration: '2s' }} />
+				</div>
+			</div>
+		);
+	};
 	
 	// Image IDs (Using high-quality Pakistan tour images from Unsplash)
 	const newUploadedImageId = 'https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'; // Hunza Valley
@@ -1059,35 +1109,39 @@ const Page = () => {
 			</div>
 
 		{/* ====================== HERO SECTION ====================== */}
-		<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[108px] sm:pt-[116px]">
+		<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[108px] sm:pt-[116px]" style={{ backgroundColor: secondaryBlack }}>
 			{/* Background Image */}
 			<div 
 				className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 				style={{ 
 					backgroundImage: "url('https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=2070')",
-					filter: "brightness(0.6)",
+					filter: "brightness(0.4)",
 				}}
 			></div>
 
-			{/* Enhanced Background Elements */}
-			<div className="absolute inset-0 z-[5] opacity-40">
-				<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 via-transparent to-[#211f20]/10"></div>
+			{/* Theme Color Overlay */}
+			<div className="absolute inset-0 z-[2]" style={{ background: `linear-gradient(135deg, ${secondaryBlack}80 0%, transparent 50%, ${primaryOrange}20 100%)` }}></div>
+
+			{/* Animated Background Elements */}
+			<div className="absolute inset-0 z-[3]">
+				<AnimatedBackground variant="dark" />
 			</div>
 
-			{/* Floating Icons on Left Side with Lottie */}
+			{/* Floating Icons on Left Side with Theme Colors */}
 			<div className="absolute left-4 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-4" data-aos="fade-right" data-aos-delay="200">
-				<a href="tel:+92331438251" className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform relative overflow-hidden group">
-					<Phone className="w-6 h-6 text-white z-10" />
-					<div className="absolute inset-0 bg-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
+				<a href="tel:+92331438251" className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform relative overflow-hidden group" style={{ backgroundColor: primaryOrange }}>
+					<Phone className="w-6 h-6 z-10" style={{ color: secondaryBlack }} />
+					<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ backgroundColor: secondaryBlack }}></div>
 				</a>
 				<button 
 					onClick={handleWhatsAppClick}
-					className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg hover:scale-110 transition-transform relative overflow-hidden group"
+					className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform relative overflow-hidden group"
+					style={{ backgroundColor: primaryOrange }}
 				>
-					<MessageCircle className="w-6 h-6 text-white z-10" />
-					<div className="absolute inset-0 bg-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
+					<MessageCircle className="w-6 h-6 z-10" style={{ color: secondaryBlack }} />
+					<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ backgroundColor: secondaryBlack }}></div>
 				</button>
-				<div className="w-14 h-14 rounded-full bg-[#f99621] flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+				<div className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" style={{ backgroundColor: secondaryBlack }}>
 					<Lottie 
 						animationData={travelAnimationData} 
 						loop={true}
@@ -1099,10 +1153,10 @@ const Page = () => {
 			{/* Main Content */}
 			<div className="relative z-10 h-full flex items-center justify-center">
 				<div className="text-center px-4">
-					<h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4" style={{ color: '#dc2626' }} data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1500">
+					<h1 className="text-6xl sm:text-7xl md:text-8xl font-bold mb-4 text-white" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1500">
 						Hey travelers
 					</h1>
-					<p className="text-2xl sm:text-3xl md:text-4xl text-white mb-2 font-semibold" data-aos="slide-left" data-aos-delay="400" data-aos-duration="1200">
+					<p className="text-2xl sm:text-3xl md:text-4xl mb-2 font-semibold" style={{ color: primaryOrange }} data-aos="slide-left" data-aos-delay="400" data-aos-duration="1200">
 						Welcome to Nayi Talaash
 					</p>
 					<p className="text-xl sm:text-2xl md:text-3xl text-white font-medium" data-aos="slide-right" data-aos-delay="700" data-aos-duration="1200">
@@ -1111,11 +1165,15 @@ const Page = () => {
 					<div className="mt-8 flex justify-center gap-4" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
 						<button 
 							onClick={handleWhatsAppClick}
-							className="px-8 py-4 bg-[#f99621] text-white font-bold rounded-full hover:bg-[#e8851a] transition-all duration-300 transform hover:scale-110 hover:rotate-2 shadow-2xl"
+							className="px-8 py-4 font-bold rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-2 shadow-2xl"
+							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
 							Start Your Journey
 						</button>
-						<button className="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-[#211f20] transition-all duration-300 transform hover:scale-110 hover:-rotate-2 shadow-2xl">
+						<button className="px-8 py-4 border-2 text-white font-bold rounded-full hover:bg-white transition-all duration-300 transform hover:scale-110 hover:-rotate-2 shadow-2xl" 
+								style={{ borderColor: primaryOrange, color: 'white' }}
+								onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
+								onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = 'white'; }}>
 							Explore Tours
 						</button>
 					</div>
@@ -1124,60 +1182,75 @@ const Page = () => {
 		</section>
 
 		{/* ====================== FASCINATING FACTS ABOUT PAKISTAN ====================== */}
-		<section className="py-16 md:py-24 bg-white">
-			<div className="container mx-auto px-4 max-w-7xl">
+		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+			{/* Animated Background */}
+			<AnimatedBackground variant="light" />
+			
+			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<h2 className="text-center text-3xl md:text-4xl font-bold mb-12" data-aos="fade-down">
-					<span className="text-[#211f20]">FASCINATING FACTS ABOUT </span>
-					<span className="bg-gray-200 px-3 py-1 rounded">PAKISTAN</span>
+					<span style={{ color: secondaryBlack }}>FASCINATING FACTS ABOUT </span>
+					<span className="px-3 py-1 rounded" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>PAKISTAN</span>
 				</h2>
 				
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
 					{/* Card 1: World's Largest Deep Sea Port */}
-					<div className="group bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 hover:border-[#f99621] relative overflow-hidden" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
-						{/* 3D Background Effect */}
+					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
+						 style={{ borderColor: `${primaryOrange}30` }}
+						 data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
-							<div className="w-full h-full" style={{ background: 'linear-gradient(45deg, #f99621, transparent, #f99621)' }}></div>
+							<div className="w-full h-full" style={{ background: `linear-gradient(45deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
 						</div>
 						<div className="relative z-10">
-							<div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
-								<Ship className="w-10 h-10 text-white" strokeWidth={1.5} />
+							<div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
+								 style={{ backgroundColor: primaryOrange }}>
+								<Ship className="w-10 h-10" style={{ color: secondaryBlack }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-2xl font-bold text-[#211f20] mb-4 group-hover:text-[#f99621] transition-colors duration-300">World&apos;s Largest Deep Sea Port</h3>
-							<p className="text-gray-600 leading-relaxed">
+							<h3 className="text-2xl font-bold mb-4 transition-colors duration-300" 
+								style={{ color: secondaryBlack }}>World&apos;s Largest Deep Sea Port</h3>
+							<p className="leading-relaxed" style={{ color: `${secondaryBlack}80` }}>
 								Pakistan&apos;s superior position in Asia makes it a center of trade in the region and that is to increase further in the coming years.
 							</p>
 						</div>
 					</div>
 
 					{/* Card 2: World's Highest Paved Road */}
-					<div className="group bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 hover:border-[#f99621] relative overflow-hidden" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
-						{/* 3D Background Effect */}
+					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
+						 style={{ borderColor: `${primaryOrange}30` }}
+						 data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
+						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
-							<div className="w-full h-full" style={{ background: 'linear-gradient(-45deg, #f99621, transparent, #f99621)' }}></div>
+							<div className="w-full h-full" style={{ background: `linear-gradient(-45deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
 						</div>
 						<div className="relative z-10">
-							<div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
-								<Route className="w-10 h-10 text-white" strokeWidth={1.5} />
+							<div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
+								 style={{ backgroundColor: secondaryBlack }}>
+								<Route className="w-10 h-10" style={{ color: primaryOrange }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-2xl font-bold text-[#211f20] mb-4 group-hover:text-[#f99621] transition-colors duration-300">World&apos;s Highest Paved Road</h3>
-							<p className="text-gray-600 leading-relaxed">
+							<h3 className="text-2xl font-bold mb-4 transition-colors duration-300" 
+								style={{ color: secondaryBlack }}>World&apos;s Highest Paved Road</h3>
+							<p className="leading-relaxed" style={{ color: `${secondaryBlack}80` }}>
 								Also called the eighth wonder of the world or the China-Pakistan Friendship highway the Karakoram Highway is the highest road ever built.
 							</p>
 						</div>
 					</div>
 
 					{/* Card 3: Fourth Largest Irrigation System */}
-					<div className="group bg-white border-2 border-gray-200 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 hover:border-[#f99621] relative overflow-hidden" data-aos="flip-right" data-aos-delay="500" data-aos-duration="1000">
-						{/* 3D Background Effect */}
+					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
+						 style={{ borderColor: `${primaryOrange}30` }}
+						 data-aos="flip-right" data-aos-delay="500" data-aos-duration="1000">
+						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
-							<div className="w-full h-full" style={{ background: 'linear-gradient(135deg, #f99621, transparent, #f99621)' }}></div>
+							<div className="w-full h-full" style={{ background: `linear-gradient(135deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
 						</div>
 						<div className="relative z-10">
-							<div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
-								<Droplets className="w-10 h-10 text-white" strokeWidth={1.5} />
+							<div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
+								 style={{ backgroundColor: primaryOrange }}>
+								<Droplets className="w-10 h-10" style={{ color: secondaryBlack }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-2xl font-bold text-[#211f20] mb-4 group-hover:text-[#f99621] transition-colors duration-300">Fourth Largest Irrigation System</h3>
-							<p className="text-gray-600 leading-relaxed">
+							<h3 className="text-2xl font-bold mb-4 transition-colors duration-300" 
+								style={{ color: secondaryBlack }}>Fourth Largest Irrigation System</h3>
+							<p className="leading-relaxed" style={{ color: `${secondaryBlack}80` }}>
 								As most of Pakistan&apos;s population depend on a livelihood in agriculture the country had to develop a complex and extensive system of irrigation.
 							</p>
 						</div>
@@ -1194,10 +1267,10 @@ const Page = () => {
 		</section>
 			
 		{/* ====================== DISCOVER PAKISTAN ====================== */}
-		<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#14b8a6' }}>
-			{/* Enhanced Background Elements */}
-			<div className="absolute inset-0 z-[1] opacity-30">
-				<div className="absolute inset-0 bg-gradient-to-tr from-[#14b8a6]/20 via-transparent to-[#f99621]/20"></div>
+		<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
+			{/* Animated Background Elements */}
+			<div className="absolute inset-0 z-[1]">
+				<AnimatedBackground variant="orange" />
 			</div>
 
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
@@ -1262,10 +1335,14 @@ const Page = () => {
 								/>
 							</div>
 						</div>
-						<p className="text-lg md:text-xl leading-relaxed mb-6" data-aos="fade-up" data-aos-delay="200">
+						<p className="text-lg md:text-xl leading-relaxed mb-6 text-white" data-aos="fade-up" data-aos-delay="200">
 							Pakistan is a land where heritage meets modernity, where snow-kissed peaks touch the sky, and where every corner tells a story. From the majestic mountains of the north to the golden beaches of the south, from ancient civilizations to bustling cities, Pakistan offers a blend of experiences that captivate the soul. Explore our diverse landscapes, savor our culinary brilliance, and immerse yourself in the warmth of our people. Discover Pakistan – where every journey is an adventure waiting to unfold.
 						</p>
-						<button className="px-8 py-3 bg-white text-[#14b8a6] font-bold rounded-lg border-2 border-white hover:bg-transparent hover:text-white transition-all transform hover:scale-105" data-aos="zoom-in" data-aos-delay="400">
+						<button className="px-8 py-3 font-bold rounded-lg border-2 transition-all transform hover:scale-105" 
+								style={{ backgroundColor: primaryOrange, color: secondaryBlack, borderColor: primaryOrange }}
+								onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
+								onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
+								data-aos="zoom-in" data-aos-delay="400">
 							EXPLORE MORE
 						</button>
 					</div>
@@ -1274,17 +1351,22 @@ const Page = () => {
 		</section>
 
 		{/* ====================== WHERE TO NEXT? ====================== */}
-		<section className="py-16 md:py-24 bg-white">
-			<div className="container mx-auto px-4 max-w-7xl">
+		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+			{/* Animated Background */}
+			<AnimatedBackground variant="default" />
+			
+			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="mb-8" data-aos="fade-down">
-					<h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: '#9333ea' }}>
+					<h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: primaryOrange }}>
 						Pakistan: &apos;Tourism&apos;s Next Big Thing&apos; - Lonely Planet
 					</h2>
-					<p className="text-lg text-gray-700">
+					<p className="text-lg" style={{ color: secondaryBlack }}>
 						Travel with us to experience the beauty, culture, and hospitality of Pakistan!
 					</p>
 					<div className="flex justify-end mt-4">
-						<button className="px-4 py-2 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: '#9333ea', color: '#9333ea' }} data-aos="zoom-in" data-aos-delay="200">
+						<button className="px-4 py-2 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" 
+								style={{ borderColor: primaryOrange, color: primaryOrange }} 
+								data-aos="zoom-in" data-aos-delay="200">
 							See All
 						</button>
 					</div>
@@ -1317,14 +1399,15 @@ const Page = () => {
 					))}
 				</div>
 
-				{/* Floating WhatsApp Icon with Lottie */}
+				{/* Floating WhatsApp Icon with Theme Colors */}
 				<div className="fixed right-4 bottom-4 z-50">
 					<button 
 						onClick={handleWhatsAppClick}
-						className="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 pulse-glow relative overflow-hidden group"
+						className="w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 pulse-glow relative overflow-hidden group"
+						style={{ backgroundColor: primaryOrange }}
 					>
-						<MessageCircle className="w-8 h-8 text-white z-10" />
-						<div className="absolute inset-0 bg-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse"></div>
+						<MessageCircle className="w-8 h-8 z-10" style={{ color: secondaryBlack }} />
+						<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ backgroundColor: secondaryBlack }}></div>
 						<div className="absolute -top-1 -right-1 w-4 h-4">
 							<Lottie 
 								animationData={travelAnimationData} 
@@ -1671,19 +1754,31 @@ const Page = () => {
 		</section>
 
 		{/* ====================== WORKED WITH / FEATURED ON ====================== */}
-		<section className="py-16 md:py-24 bg-white">
-			<div className="container mx-auto px-4 max-w-7xl">
+		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+			{/* Animated Background */}
+			<AnimatedBackground variant="light" />
+			
+			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="flex justify-between items-center mb-8" data-aos="fade-down">
-					<h2 className="text-3xl font-bold text-[#211f20]">Worked With / Featured On</h2>
-					<button className="px-4 py-2 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: '#211f20', color: '#211f20' }} data-aos="zoom-in" data-aos-delay="200">
+					<h2 className="text-3xl font-bold" style={{ color: secondaryBlack }}>Worked With / Featured On</h2>
+					<button className="px-4 py-2 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" 
+							style={{ borderColor: primaryOrange, color: primaryOrange }} 
+							data-aos="zoom-in" data-aos-delay="200">
 						See All
 					</button>
 				</div>
 
 				<div className="grid grid-cols-3 md:grid-cols-6 gap-8">
 					{['UNESCO', 'USAID', 'The World Bank', 'UN WOMEN', 'ALJAZEERA', 'FINANCIAL TIMES'].map((org, idx) => (
-						<div key={idx} className="flex items-center justify-center h-20 bg-gray-100 rounded-lg hover:bg-[#f99621]/10 hover:scale-110 transition-all duration-300 transform hover:rotate-2" data-aos="zoom-in" data-aos-delay={idx * 100}>
-							<span className="text-sm font-semibold text-gray-600 hover:text-[#f99621] transition-colors">{org}</span>
+						<div key={idx} className="flex items-center justify-center h-20 rounded-lg hover:scale-110 transition-all duration-300 transform hover:rotate-2 border-2" 
+							 style={{ backgroundColor: `${primaryOrange}05`, borderColor: `${primaryOrange}20` }}
+							 data-aos="zoom-in" data-aos-delay={idx * 100}>
+							<span className="text-sm font-semibold transition-colors" 
+								  style={{ color: secondaryBlack }}
+								  onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange}
+								  onMouseLeave={(e) => e.currentTarget.style.color = secondaryBlack}>
+								{org}
+							</span>
 						</div>
 					))}
 				</div>
@@ -1691,21 +1786,22 @@ const Page = () => {
 		</section>
 
 		{/* ====================== READY FOR TOUR CTA ====================== */}
-		<section className="py-16 md:py-24 bg-[#211f20] relative overflow-hidden">
-			{/* Enhanced Background Elements */}
-			<div className="absolute inset-0 z-[1] opacity-25">
-				<div className="absolute inset-0 bg-gradient-to-bl from-[#211f20]/30 via-transparent to-[#f99621]/30"></div>
+		<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
+			{/* Animated Background Elements */}
+			<div className="absolute inset-0 z-[1]">
+				<AnimatedBackground variant="orange" />
 			</div>
 
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
 				<div className="flex flex-col md:flex-row items-center justify-between" data-aos="fade-up">
 					<div data-aos="fade-right" data-aos-delay="200">
 						<p className="text-white text-2xl font-serif italic mb-2">Ready for an unforgettable tour!</p>
-						<h2 className="text-4xl md:text-5xl font-bold text-[#f99621]">Plan your trips with us</h2>
+						<h2 className="text-4xl md:text-5xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 					</div>
 					<button
 						onClick={handleWhatsAppClick}
-						className="px-8 py-4 bg-green-400 text-[#211f20] font-bold rounded-lg hover:bg-green-500 transition-all transform hover:scale-110 shadow-lg hover:shadow-xl mt-6 md:mt-0"
+						className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl mt-6 md:mt-0"
+						style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						data-aos="zoom-in" data-aos-delay="400"
 					>
 						Customize A Tour
@@ -1715,8 +1811,11 @@ const Page = () => {
 		</section>
 
 		{/* ====================== FOOTER ====================== */}
-		<footer className="py-16 bg-white border-t border-gray-200">
-			<div className="container mx-auto px-4 max-w-7xl">
+		<footer className="py-16 bg-white border-t relative overflow-hidden" style={{ borderColor: `${primaryOrange}30` }}>
+			{/* Animated Background */}
+			<AnimatedBackground variant="light" />
+			
+			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
 					{/* Logo and Brand */}
 					<div>
@@ -1727,8 +1826,8 @@ const Page = () => {
 							height={50}
 							className="h-12 w-auto object-contain mb-4"
 						/>
-						<p className="text-gray-600 text-sm mb-2">#SehriKushiiShamii</p>
-						<div className="space-y-1 text-sm text-gray-600">
+						<p className="text-sm mb-2" style={{ color: primaryOrange }}>#SehriKushiiShamii</p>
+						<div className="space-y-1 text-sm" style={{ color: `${secondaryBlack}80` }}>
 							<p>| NTS</p>
 							<p>| OTS License</p>
 							<p>| MTA Certification</p>
@@ -1737,53 +1836,53 @@ const Page = () => {
 
 					{/* Site Map */}
 					<div>
-						<h3 className="font-bold text-[#211f20] mb-4">Site Map</h3>
-						<ul className="space-y-2 text-sm text-gray-600">
-							<li><a href="#" className="hover:text-[#f99621]">About Us</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Contact Us</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Privacy Policy</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Terms and Condition</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Social Wall</a></li>
+						<h3 className="font-bold mb-4" style={{ color: secondaryBlack }}>Site Map</h3>
+						<ul className="space-y-2 text-sm" style={{ color: `${secondaryBlack}70` }}>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>About Us</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Contact Us</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Privacy Policy</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Terms and Condition</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Social Wall</a></li>
 						</ul>
 					</div>
 
 					{/* International Tours */}
 					<div>
-						<h3 className="font-bold text-[#211f20] mb-4">International</h3>
-						<ul className="space-y-2 text-sm text-gray-600">
-							<li><a href="#" className="hover:text-[#f99621]">Group Tours</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Private Tours</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Corporate Tours</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Umrah</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Hajj 2026</a></li>
+						<h3 className="font-bold mb-4" style={{ color: secondaryBlack }}>International</h3>
+						<ul className="space-y-2 text-sm" style={{ color: `${secondaryBlack}70` }}>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Group Tours</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Private Tours</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Corporate Tours</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Umrah</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Hajj 2026</a></li>
 						</ul>
 					</div>
 
 					{/* Domestic Tours */}
 					<div>
-						<h3 className="font-bold text-[#211f20] mb-4">Domestic</h3>
-						<ul className="space-y-2 text-sm text-gray-600">
-							<li><a href="#" className="hover:text-[#f99621]">Group Tours</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Private Tours</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Corporate Tours</a></li>
+						<h3 className="font-bold mb-4" style={{ color: secondaryBlack }}>Domestic</h3>
+						<ul className="space-y-2 text-sm" style={{ color: `${secondaryBlack}70` }}>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Group Tours</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Private Tours</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Corporate Tours</a></li>
 						</ul>
 					</div>
 
 					{/* Upcoming Tours */}
 					<div>
-						<h3 className="font-bold text-[#211f20] mb-4">Upcoming</h3>
-						<ul className="space-y-2 text-sm text-gray-600">
-							<li><a href="#" className="hover:text-[#f99621]">Winter Tours</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Malaysia</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Turkey</a></li>
-							<li><a href="#" className="hover:text-[#f99621]">Indonesia</a></li>
+						<h3 className="font-bold mb-4" style={{ color: secondaryBlack }}>Upcoming</h3>
+						<ul className="space-y-2 text-sm" style={{ color: `${secondaryBlack}70` }}>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Winter Tours</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Malaysia</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Turkey</a></li>
+							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Indonesia</a></li>
 						</ul>
 					</div>
 				</div>
 
 				{/* Copyright */}
-				<div className="text-center pt-8 border-t border-gray-200">
-					<p className="text-gray-600 text-sm">© 2025 Nayi Talaash - All Right reserved.</p>
+				<div className="text-center pt-8 border-t" style={{ borderColor: `${primaryOrange}30` }}>
+					<p className="text-sm" style={{ color: `${secondaryBlack}70` }}>© 2025 Nayi Talaash - All Right reserved.</p>
 				</div>
 			</div>
 		</footer>
