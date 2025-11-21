@@ -1197,13 +1197,13 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="text-center mb-16" data-aos="fade-down">
-					<h2 className="text-4xl md:text-5xl font-bold mb-6 transform -rotate-1" 
-						style={{ color: primaryOrange, fontFamily: 'serif', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.3)' }}>
+					<h2 className="text-2xl md:text-3xl font-bold mb-6 transform -rotate-1" 
+						style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.3)' }}>
 						Pakistan's Enchanting 
 						<span className="block transform rotate-2 mt-2" style={{ color: secondaryBlack }}>
 							Natural Wonders
 						</span>
-								</h2>
+					</h2>
 					<p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
 						Pakistan is home to one of the richest natural landscapes in the world from majestic mountain ranges to vibrant cultural heritage spread across every region.
 					</p>
@@ -1223,8 +1223,8 @@ const Page = () => {
 								 style={{ backgroundColor: primaryOrange }}>
 								<Mountain className="w-10 h-10" style={{ color: secondaryBlack }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-xl font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'serif' }}>World&apos;s Highest Mountain Ranges</h3>
+							<h3 className="text-lg font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
+								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>World&apos;s Highest Mountain Ranges</h3>
 							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
 								Pakistan hosts 5 of the world&apos;s 14 highest peaks, including K2 a paradise for adventure seekers and nature lovers.
 							</p>
@@ -1244,8 +1244,8 @@ const Page = () => {
 								 style={{ backgroundColor: secondaryBlack }}>
 								<Ship className="w-10 h-10" style={{ color: primaryOrange }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-xl font-bold mb-4 transition-colors duration-300 transform rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'serif' }}>World&apos;s Largest Deep-Sea Port</h3>
+							<h3 className="text-lg font-bold mb-4 transition-colors duration-300 transform rotate-1" 
+								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>World&apos;s Largest Deep-Sea Port</h3>
 							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
 								Gwadar stands as one of the deepest sea ports globally, reshaping trade routes and offering travelers pristine beaches and breathtaking coastal drives.
 							</p>
@@ -1265,8 +1265,8 @@ const Page = () => {
 								 style={{ backgroundColor: primaryOrange }}>
 								<Route className="w-10 h-10" style={{ color: secondaryBlack }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-xl font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'serif' }}>World&apos;s Highest Paved Road</h3>
+							<h3 className="text-lg font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
+								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>World&apos;s Highest Paved Road</h3>
 							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
 								The legendary Karakoram Highway is the highest paved international road on Earth a once-in-a-lifetime driving experience through mountains, rivers, and glaciers.
 							</p>
@@ -1286,8 +1286,8 @@ const Page = () => {
 								 style={{ backgroundColor: secondaryBlack }}>
 								<Landmark className="w-10 h-10" style={{ color: primaryOrange }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-xl font-bold mb-4 transition-colors duration-300 transform rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'serif' }}>Cultural Heritage Like Nowhere Else</h3>
+							<h3 className="text-lg font-bold mb-4 transition-colors duration-300 transform rotate-1" 
+								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>Cultural Heritage Like Nowhere Else</h3>
 							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
 								From ancient civilizations like Mohenjo Daro to Mughal masterpieces, Pakistan&apos;s history spans thousands of years of art, culture, and innovation.
 							</p>
@@ -1364,8 +1364,8 @@ const Page = () => {
 					{/* Right: Content */}
 					<div className="text-white" data-aos="fade-left" data-aos-delay="400">
 						<div className="mb-8">
-							<h2 className="text-4xl md:text-5xl font-bold mb-6 transform -rotate-2" 
-								style={{ color: primaryOrange, fontFamily: 'serif', textShadow: '3px 3px 0px rgba(255, 255, 255, 0.2)' }}
+							<h2 className="text-2xl md:text-3xl font-bold mb-6 transform -rotate-2" 
+								style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '3px 3px 0px rgba(255, 255, 255, 0.2)' }}
 								data-aos="fade-up">
 								DISCOVER 
 								<span className="block transform rotate-1 mt-2 text-white">
@@ -1406,8 +1406,8 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="mb-12" data-aos="fade-down">
 					<div className="text-center mb-8">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4 transform rotate-1" 
-							style={{ color: primaryOrange, fontFamily: 'serif', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
+						<h2 className="text-2xl md:text-3xl font-bold mb-4 transform rotate-1" 
+							style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
 							Pakistan: The Traveler&apos;s 
 							<span className="block transform -rotate-2 mt-2" style={{ color: secondaryBlack }}>
 								Hidden Gem
@@ -1419,10 +1419,10 @@ const Page = () => {
 					</div>
 					
 					<div className="flex flex-col sm:flex-row justify-between items-center">
-						<h3 className="text-2xl md:text-3xl font-bold transform -rotate-1 mb-4 sm:mb-0" 
-							style={{ color: secondaryBlack, fontFamily: 'serif' }}>
-							Where to next?
-						</h3>
+					<h3 className="text-xl md:text-2xl font-bold transform -rotate-1 mb-4 sm:mb-0" 
+						style={{ color: secondaryBlack, fontFamily: 'cursive' }}>
+						Where to next?
+					</h3>
 						<p className="text-lg" style={{ color: `${secondaryBlack}80` }}>
 							Explore top destinations across Pakistan and plan your next adventure.
 						</p>
@@ -1505,12 +1505,12 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="text-center mb-12" data-aos="fade-down">
-					<h2 className="text-4xl md:text-5xl font-bold mb-6 transform rotate-1" 
-						style={{ color: primaryOrange, fontFamily: 'serif', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
+					<h2 className="text-2xl md:text-3xl font-bold mb-6 transform rotate-1" 
+						style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
 						Pakistan Tour Packages
 					</h2>
-					<h3 className="text-2xl md:text-3xl font-bold transform -rotate-1" 
-						style={{ color: secondaryBlack, fontFamily: 'serif' }}>
+					<h3 className="text-xl md:text-2xl font-bold transform -rotate-1" 
+						style={{ color: secondaryBlack, fontFamily: 'cursive' }}>
 						Discover Pakistan With Nayi Talaash
 					</h3>
 				</div>
@@ -1599,8 +1599,8 @@ const Page = () => {
 					{/* Left: Family Tour Packages */}
 					<div data-aos="fade-right" data-aos-delay="200">
 						<div className="mb-8">
-							<h2 className="text-4xl md:text-5xl font-bold mb-4 transform -rotate-1" 
-								style={{ color: primaryOrange, fontFamily: 'serif', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
+							<h2 className="text-2xl md:text-3xl font-bold mb-4 transform -rotate-1" 
+								style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
 								Family Tour Packages
 							</h2>
 							<p className="text-lg" style={{ color: secondaryBlack }}>
@@ -1609,8 +1609,8 @@ const Page = () => {
 						</div>
 						
 						<div className="mb-8">
-							<h3 className="text-xl font-bold mb-4 transform rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'serif' }}>
+							<h3 className="text-lg md:text-xl font-bold mb-4 transform rotate-1" 
+								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>
 								What&apos;s Included:
 							</h3>
 							<ul className="space-y-3">
@@ -1646,8 +1646,8 @@ const Page = () => {
 					{/* Right: Honeymoon Trips */}
 					<div className="relative" data-aos="fade-left" data-aos-delay="400">
 						<div className="mb-8">
-							<h2 className="text-4xl md:text-5xl font-bold mb-4 transform rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'serif', textShadow: '2px 2px 0px rgba(249, 150, 33, 0.2)' }}>
+							<h2 className="text-2xl md:text-3xl font-bold mb-4 transform rotate-1" 
+								style={{ color: secondaryBlack, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(249, 150, 33, 0.2)' }}>
 								Honeymoon Trips
 							</h2>
 							<p className="text-lg" style={{ color: `${secondaryBlack}90` }}>
@@ -1691,7 +1691,9 @@ const Page = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
 					<div data-aos="fade-right" data-aos-delay="200">
-						<h2 className="text-3xl font-bold text-[#211f20] mb-4" data-aos="fade-up">Why Travel With Us?</h2>
+						<h2 className="text-2xl md:text-3xl font-bold mb-4 transform -rotate-1" 
+							style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}
+							data-aos="fade-up">Why Travel With Us?</h2>
 						<p className="text-gray-700 mb-6" data-aos="fade-up" data-aos-delay="100">
 							The Mad Hatters Pakistan is a cultural and experiential travel company.
 						</p>
