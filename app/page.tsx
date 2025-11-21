@@ -5,10 +5,7 @@ import Image from 'next/image';
 import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, ChevronDown, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music, Ship, Route, Droplets, Play, CheckCircle2 } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Sphere, MeshDistortMaterial, Float, Text3D, Box, Torus, Cylinder } from '@react-three/drei';
 import Lottie from 'lottie-react';
-import * as THREE from 'three';
 
 const Page = () => {
 	// --- STATE AND HOOKS: MUST BE INSIDE THE COMPONENT FUNCTION ---
@@ -192,102 +189,7 @@ const Page = () => {
 	const primaryOrange = '#f99621'; // Main accent color
 	const secondaryBlack = '#211f20'; // Main background/text color
 
-	// --- Enhanced 3D Components with Performance Optimizations ---
-	const AnimatedSphere = React.memo(() => {
-		return (
-			<Float speed={2} rotationIntensity={1} floatIntensity={2}>
-				<Sphere args={[1, 32, 64]} scale={2}> {/* Reduced geometry complexity */}
-					<MeshDistortMaterial
-						color={primaryOrange}
-						attach="material"
-						distort={0.3}
-						speed={1.5}
-						roughness={0.1}
-						metalness={0.8}
-					/>
-				</Sphere>
-			</Float>
-		);
-	});
-
-	const Floating3DShape = ({ position, color }: { position: [number, number, number], color: string }) => {
-		return (
-			<Float speed={1.5} rotationIntensity={0.5} floatIntensity={1.5}>
-				<Sphere args={[0.5, 32, 32]} position={position}>
-					<meshStandardMaterial color={color} metalness={0.7} roughness={0.2} />
-				</Sphere>
-			</Float>
-		);
-	};
-
-	const TravelIcon3D = ({ position, shape = 'sphere' }: { position: [number, number, number], shape?: 'sphere' | 'box' | 'torus' | 'cylinder' }) => {
-		const renderShape = () => {
-			switch (shape) {
-				case 'box':
-					return (
-						<Box args={[0.8, 0.8, 0.8]}>
-							<meshStandardMaterial color={primaryOrange} metalness={0.6} roughness={0.3} />
-						</Box>
-					);
-				case 'torus':
-					return (
-						<Torus args={[0.6, 0.2, 16, 100]}>
-							<meshStandardMaterial color="#ffffff" metalness={0.8} roughness={0.1} />
-						</Torus>
-					);
-				case 'cylinder':
-					return (
-						<Cylinder args={[0.3, 0.3, 1, 32]}>
-							<meshStandardMaterial color={primaryOrange} metalness={0.7} roughness={0.2} />
-						</Cylinder>
-					);
-				default:
-					return (
-						<Sphere args={[0.4, 32, 32]}>
-							<meshStandardMaterial color="#ffffff" metalness={0.5} roughness={0.4} />
-						</Sphere>
-					);
-			}
-		};
-
-		return (
-			<Float speed={1 + Math.random()} rotationIntensity={0.3 + Math.random() * 0.4} floatIntensity={1 + Math.random()}>
-				<group position={position}>
-					{renderShape()}
-				</group>
-			</Float>
-		);
-	};
-
-	const ParticleField = React.memo(() => {
-		const particleCount = 30; // Reduced for better performance
-		const particles = React.useMemo(() => {
-			const result = [];
-			for (let i = 0; i < particleCount; i++) {
-				result.push({
-					position: [
-						(Math.random() - 0.5) * 20,
-						(Math.random() - 0.5) * 20,
-						(Math.random() - 0.5) * 20
-					] as [number, number, number],
-					color: Math.random() > 0.5 ? primaryOrange : '#ffffff'
-				});
-			}
-			return result;
-		}, []);
-
-		return (
-			<>
-				{particles.map((particle, i) => (
-					<Float key={i} speed={0.5 + Math.random()} rotationIntensity={0.1} floatIntensity={0.5 + Math.random()}>
-						<Sphere args={[0.02, 6, 6]} position={particle.position}> {/* Reduced geometry complexity */}
-							<meshBasicMaterial color={particle.color} />
-						</Sphere>
-					</Float>
-				))}
-			</>
-		);
-	});
+	// Placeholder for 3D components (temporarily disabled for build compatibility)
 	
 	// Image IDs (Using high-quality Pakistan tour images from Unsplash)
 	const newUploadedImageId = 'https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'; // Hunza Valley
@@ -1162,20 +1064,9 @@ const Page = () => {
 				}}
 			></div>
 
-			{/* Enhanced 3D Background Elements */}
+			{/* Enhanced Background Elements */}
 			<div className="absolute inset-0 z-[5] opacity-40">
-				<Canvas camera={{ position: [0, 0, 8], fov: 75 }}>
-					<ambientLight intensity={0.6} />
-					<pointLight position={[10, 10, 10]} intensity={1} />
-					<pointLight position={[-10, -10, -10]} intensity={0.5} color={primaryOrange} />
-					<AnimatedSphere />
-					<TravelIcon3D position={[-4, 3, -2]} shape="box" />
-					<TravelIcon3D position={[4, -2, -1]} shape="torus" />
-					<TravelIcon3D position={[-2, -3, 1]} shape="cylinder" />
-					<TravelIcon3D position={[3, 2, -3]} shape="sphere" />
-					<ParticleField />
-					<OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.3} />
-				</Canvas>
+				<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 via-transparent to-[#211f20]/10"></div>
 			</div>
 
 			{/* Floating Icons on Left Side with Lottie */}
@@ -1299,20 +1190,9 @@ const Page = () => {
 			
 		{/* ====================== DISCOVER PAKISTAN ====================== */}
 		<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: '#14b8a6' }}>
-			{/* Enhanced 3D Background Elements */}
+			{/* Enhanced Background Elements */}
 			<div className="absolute inset-0 z-[1] opacity-30">
-				<Canvas camera={{ position: [0, 0, 8], fov: 75 }}>
-					<ambientLight intensity={0.4} />
-					<pointLight position={[10, 10, 10]} intensity={1} />
-					<pointLight position={[-10, -10, -10]} intensity={0.5} color="#ffffff" />
-					<TravelIcon3D position={[-3, 2, -1]} shape="torus" />
-					<TravelIcon3D position={[3, -2, 1]} shape="box" />
-					<TravelIcon3D position={[-1, -1, -2]} shape="cylinder" />
-					<TravelIcon3D position={[2, 3, 0]} shape="sphere" />
-					<TravelIcon3D position={[-4, 0, 2]} shape="torus" />
-					<ParticleField />
-					<OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.2} />
-				</Canvas>
+				<div className="absolute inset-0 bg-gradient-to-tr from-[#14b8a6]/20 via-transparent to-[#f99621]/20"></div>
 			</div>
 
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
@@ -1807,19 +1687,9 @@ const Page = () => {
 
 		{/* ====================== READY FOR TOUR CTA ====================== */}
 		<section className="py-16 md:py-24 bg-[#211f20] relative overflow-hidden">
-			{/* Enhanced 3D Background Elements */}
+			{/* Enhanced Background Elements */}
 			<div className="absolute inset-0 z-[1] opacity-25">
-				<Canvas camera={{ position: [0, 0, 8], fov: 75 }}>
-					<ambientLight intensity={0.6} />
-					<pointLight position={[10, 10, 10]} intensity={1} />
-					<pointLight position={[-10, -10, -10]} intensity={0.5} color={primaryOrange} />
-					<TravelIcon3D position={[-3, 2, -1]} shape="torus" />
-					<TravelIcon3D position={[3, -2, 1]} shape="box" />
-					<TravelIcon3D position={[-1, -1, -2]} shape="cylinder" />
-					<TravelIcon3D position={[2, 3, 0]} shape="sphere" />
-					<ParticleField />
-					<OrbitControls enableZoom={false} enablePan={false} autoRotate autoRotateSpeed={0.5} />
-				</Canvas>
+				<div className="absolute inset-0 bg-gradient-to-bl from-[#211f20]/30 via-transparent to-[#f99621]/30"></div>
 			</div>
 
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
