@@ -811,18 +811,18 @@ const Page = () => {
 			</div>
 		</div>
 
-		{/* Main Navigation Bar - Solid White Background */}
+		{/* Main Navigation Bar - Reduced Height */}
 		<header className="fixed top-[44px] sm:top-[48px] left-0 right-0 z-[100] bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex items-center justify-between py-3 sm:py-4">
+				<div className="flex items-center justify-between py-2 sm:py-2.5">
 					{/* Logo */}
 					<div className="flex items-center">
 						<Image 
 							src={logoImage}
 							alt="Nayi Talaash Logo"
-							width={180}
-							height={60}
-							className="h-12 sm:h-14 w-auto object-contain"
+							width={160}
+							height={50}
+							className="h-10 sm:h-12 w-auto object-contain"
 						/>
 					</div>
 
@@ -1109,66 +1109,79 @@ const Page = () => {
 			</div>
 
 		{/* ====================== HERO SECTION ====================== */}
-		<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[108px] sm:pt-[116px]" style={{ backgroundColor: secondaryBlack }}>
+		<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[100px] sm:pt-[104px]" style={{ backgroundColor: secondaryBlack }}>
 			{/* Background Image */}
 			<div 
 				className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-						style={{ 
-					backgroundImage: "url('https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=2070')",
-					filter: "brightness(0.4)",
-						}}
-					></div>
+				style={{ 
+					backgroundImage: "url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
+					filter: "brightness(0.3)",
+				}}
+			></div>
 
 			{/* Theme Color Overlay */}
-			<div className="absolute inset-0 z-[2]" style={{ background: `linear-gradient(135deg, ${secondaryBlack}80 0%, transparent 50%, ${primaryOrange}20 100%)` }}></div>
+			<div className="absolute inset-0 z-[2]" style={{ background: `linear-gradient(135deg, ${secondaryBlack}90 0%, transparent 50%, ${primaryOrange}30 100%)` }}></div>
 
 			{/* Animated Background Elements */}
 			<div className="absolute inset-0 z-[3]">
 				<AnimatedBackground variant="dark" />
 			</div>
 
-			{/* Floating Icons on Left Side with Theme Colors */}
-			<div className="absolute left-4 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-4" data-aos="fade-right" data-aos-delay="200">
-				<a href="tel:+92331438251" className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform relative overflow-hidden group" style={{ backgroundColor: primaryOrange }}>
-					<Phone className="w-6 h-6 z-10" style={{ color: secondaryBlack }} />
-					<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ backgroundColor: secondaryBlack }}></div>
-				</a>
-				<button 
-					onClick={handleWhatsAppClick}
-					className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform relative overflow-hidden group"
-						style={{ backgroundColor: primaryOrange }}
-					>
-					<MessageCircle className="w-6 h-6 z-10" style={{ color: secondaryBlack }} />
-					<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ backgroundColor: secondaryBlack }}></div>
-				</button>
-				<div className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform" style={{ backgroundColor: secondaryBlack }}>
-					<Lottie 
-						animationData={travelAnimationData} 
-						loop={true}
-						style={{ width: 32, height: 32 }}
-						/>
-					</div>
-			</div>
 
 			{/* Main Content */}
 			<div className="relative z-10 h-full flex items-center justify-center">
 				<div className="text-center px-4">
-					<h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-white transform -rotate-2" 
-						style={{ fontFamily: 'serif', textShadow: '3px 3px 0px rgba(249, 150, 33, 0.5)' }}
+					<h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 text-white transform -rotate-1 animate-float-text" 
+						style={{ 
+							fontFamily: 'cursive', 
+							textShadow: '4px 4px 0px rgba(249, 150, 33, 0.6), 8px 8px 0px rgba(0, 0, 0, 0.3)',
+							animation: 'floatText 3s ease-in-out infinite, colorShift 4s ease-in-out infinite'
+						}}
 						data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1500">
-						Discover the Unseen. 
-						<span className="block transform rotate-1 mt-2" style={{ color: primaryOrange }}>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0s' }}>D</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.1s' }}>i</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.2s' }}>s</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.3s' }}>c</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.4s' }}>o</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.5s' }}>v</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.6s' }}>e</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.7s' }}>r</span>
+						<span className="mx-2"></span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.8s' }}>t</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.9s' }}>h</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1s' }}>e</span>
+						<span className="mx-2"></span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.1s' }}>U</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.2s' }}>n</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.3s' }}>s</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.4s' }}>e</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.5s' }}>e</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.6s' }}>n</span>
+						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.7s' }}>.</span>
+						<br />
+						<span className="block transform rotate-1 mt-4 animate-wiggle" 
+							  style={{ 
+								  color: primaryOrange, 
+								  fontFamily: 'cursive',
+								  animation: 'wiggle 2s ease-in-out infinite, glow 3s ease-in-out infinite'
+							  }}>
 							Explore With Nayi Talaash.
 						</span>
-						</h1>
-					<p className="text-lg sm:text-xl md:text-2xl text-white font-medium max-w-4xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
+					</h1>
+					<p className="text-base sm:text-lg md:text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed animate-fade-slide" 
+					   style={{ animation: 'fadeSlide 2s ease-out 0.5s both' }}
+					   data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
 						Your one-stop travel partner for unforgettable cultural, historical, and scenic journeys across Pakistan.
 					</p>
-					<div className="mt-10" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
-						<button
+					<div className="mt-8" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+						<button 
 							onClick={handleWhatsAppClick}
-							className="px-10 py-4 font-bold rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-2 shadow-2xl text-lg"
-							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+							className="px-8 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-2 shadow-2xl text-base animate-pulse-button"
+							style={{ 
+								backgroundColor: primaryOrange, 
+								color: secondaryBlack,
+								animation: 'pulseButton 2s ease-in-out infinite'
+							}}
 						>
 							Customize Your Tour
 						</button>
@@ -2048,6 +2061,90 @@ const Page = () => {
 			.animate-city-pulse { animation: cityPulse 3s ease-in-out infinite; }
 			.animate-route-flow { animation: routeFlow 2s linear infinite; }
 			.animate-heritage-glow { animation: heritageGlow 4s ease-in-out infinite; }
+			
+			/* Unique Font Animations */
+			@keyframes floatText {
+				0%, 100% {
+					transform: translateY(0px) rotate(-1deg);
+				}
+				50% {
+					transform: translateY(-10px) rotate(1deg);
+				}
+			}
+			
+			@keyframes colorShift {
+				0%, 100% {
+					filter: hue-rotate(0deg) brightness(1);
+				}
+				25% {
+					filter: hue-rotate(10deg) brightness(1.1);
+				}
+				50% {
+					filter: hue-rotate(-10deg) brightness(0.9);
+				}
+				75% {
+					filter: hue-rotate(5deg) brightness(1.05);
+				}
+			}
+			
+			@keyframes bounceLetters {
+				0%, 100% {
+					transform: translateY(0px) scale(1);
+				}
+				50% {
+					transform: translateY(-8px) scale(1.1);
+				}
+			}
+			
+			.animate-bounce-letter {
+				animation: bounceLetters 2s ease-in-out infinite;
+			}
+			
+			@keyframes wiggle {
+				0%, 100% {
+					transform: rotate(1deg) translateX(0px);
+				}
+				25% {
+					transform: rotate(-1deg) translateX(-2px);
+				}
+				50% {
+					transform: rotate(1deg) translateX(2px);
+				}
+				75% {
+					transform: rotate(-1deg) translateX(-1px);
+				}
+			}
+			
+			@keyframes glow {
+				0%, 100% {
+					text-shadow: 0 0 10px rgba(249, 150, 33, 0.5), 0 0 20px rgba(249, 150, 33, 0.3);
+				}
+				50% {
+					text-shadow: 0 0 20px rgba(249, 150, 33, 0.8), 0 0 30px rgba(249, 150, 33, 0.5), 0 0 40px rgba(249, 150, 33, 0.3);
+				}
+			}
+			
+			@keyframes fadeSlide {
+				0% {
+					opacity: 0;
+					transform: translateY(30px);
+				}
+				100% {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+			}
+			
+			@keyframes pulseButton {
+				0%, 100% {
+					transform: scale(1);
+					box-shadow: 0 0 0 0 rgba(249, 150, 33, 0.7);
+				}
+				50% {
+					transform: scale(1.05);
+					box-shadow: 0 0 0 10px rgba(249, 150, 33, 0);
+				}
+			}
 			
 			/* 3D Perspective and Transform Effects */
 			.perspective-1000 {
