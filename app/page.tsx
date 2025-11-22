@@ -1125,7 +1125,7 @@ const Page = () => {
 							Explore With Nayi Talaash.
 						</span>
 					</h1>
-					<p className="text-base sm:text-lg md:text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed">
+					<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed">
 						Your one-stop travel partner for unforgettable cultural, historical, and scenic journeys across Pakistan.
 					</p>
 					<div className="mt-8">
