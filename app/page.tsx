@@ -1151,14 +1151,14 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="text-center mb-16">
-					<h2 className="font-bold mb-6 transform -rotate-1">
+					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange, 
 							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
 						}}>
 							Pakistan's Enchanting 
 						</span>
-						<span className="block transform rotate-2 mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
 							color: secondaryBlack
 						}}>
 							Natural Wonders
@@ -1372,10 +1372,10 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="mb-12">
 					<div className="text-center mb-8">
-						<h2 className="text-xl md:text-2xl font-bold mb-4 transform rotate-1" 
+						<h2 className="text-xl md:text-2xl font-bold mb-4" 
 							style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
 							Pakistan: The Traveler&apos;s 
-							<span className="block transform -rotate-2 mt-2" style={{ color: secondaryBlack }}>
+							<span className="block mt-2" style={{ color: secondaryBlack }}>
 								Hidden Gem
 							</span>
 						</h2>
@@ -1471,12 +1471,12 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="text-center mb-12">
-					<h2 className="text-2xl md:text-3xl font-bold mb-6 transform rotate-1" 
+					<h2 className="text-2xl md:text-3xl font-bold mb-6" 
 						style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
 						Pakistan Tour Packages
 					</h2>
-					<h3 className="text-xl md:text-2xl font-bold transform -rotate-1" 
-						style={{ color: secondaryBlack,  }}>
+					<h3 className="text-xl md:text-2xl font-bold" 
+						style={{ color: secondaryBlack }}>
 						Discover Pakistan With Nayi Talaash
 					</h3>
 				</div>
