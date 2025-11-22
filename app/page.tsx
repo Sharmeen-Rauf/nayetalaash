@@ -1153,8 +1153,7 @@ const Page = () => {
 				<div className="text-center mb-16">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-							color: primaryOrange, 
-							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+							color: primaryOrange
 						}}>
 							Pakistan's Enchanting 
 						</span>
@@ -1326,8 +1325,7 @@ const Page = () => {
 						<div className="mb-8">
 							<h2 className="font-bold mb-6">
 								<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-									color: 'white',
-									textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+									color: primaryOrange
 								}}>
 									Discover
 								</span>
@@ -1373,8 +1371,7 @@ const Page = () => {
 					<div className="text-center mb-8">
 						<h2 className="font-bold mb-4">
 							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: primaryOrange, 
-								textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+								color: primaryOrange
 							}}>
 								Pakistan: The Traveler&apos;s 
 							</span>
@@ -1478,8 +1475,7 @@ const Page = () => {
 				<div className="text-center mb-12">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-							color: primaryOrange, 
-							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+							color: primaryOrange
 						}}>
 							Pakistan Tour Packages
 						</span>
@@ -1670,8 +1666,7 @@ const Page = () => {
 					<div>
 						<h2 className="font-bold mb-4">
 							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: secondaryBlack, 
-								textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+								color: primaryOrange
 							}}>
 								Why Travel With Us?
 							</span>
@@ -1721,8 +1716,7 @@ const Page = () => {
 				<div className="mb-8">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-							color: primaryOrange, 
-							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+							color: primaryOrange
 						}}>
 							Our Weekly
 						</span>
@@ -1821,8 +1815,7 @@ const Page = () => {
 				<div className="mb-8">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-							color: primaryOrange, 
-							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+							color: primaryOrange
 						}}>
 							Testimonials
 						</span>
@@ -1886,8 +1879,7 @@ const Page = () => {
 				<div className="mb-8">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-							color: primaryOrange, 
-							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+							color: primaryOrange
 						}}>
 							Find us
 						</span>
