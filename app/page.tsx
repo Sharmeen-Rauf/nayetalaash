@@ -1326,10 +1326,17 @@ const Page = () => {
 					{/* Right: Content */}
 					<div className="text-white">
 						<div className="mb-8">
-							<h2 className="text-xl md:text-2xl font-bold mb-6 transform -rotate-2" 
-								style={{ color: primaryOrange, textShadow: '3px 3px 0px rgba(255, 255, 255, 0.2)' }}>
-								DISCOVER 
-								<span className="block transform rotate-1 mt-2 text-white">
+							<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
+								<span className="font-autography" style={{ 
+									display: 'inline-block',
+									textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)',
+									marginRight: '0.5rem'
+								}}>
+									DISCOVER
+								</span>
+								<span className="inline-block" style={{ 
+									color: primaryOrange
+								}}>
 									PAKISTAN
 								</span>
 							</h2>
@@ -1341,10 +1348,10 @@ const Page = () => {
 								/>
 							</div>
 						</div>
-						<p className="text-lg md:text-xl leading-relaxed mb-8 text-white">
+						<p className="text-sm md:text-base leading-snug mb-6 text-white">
 							Pakistan is a land of unmatched beauty, culture, and hospitality. With its mix of vibrant cities, serene valleys, vast deserts, and unspoiled coastlines, the country invites travelers to experience its rich traditions, diverse cuisines, and breathtaking landscapes.
 						</p>
-						<p className="text-lg md:text-xl leading-relaxed mb-8 text-white opacity-90">
+						<p className="text-sm md:text-base leading-snug mb-8 text-white opacity-90">
 							Whether you dream of standing before snow capped peaks, exploring historic landmarks, or immersing yourself in the warmth of local communities Nayi Talaash is here to make your journey smooth, affordable, and memorable.
 						</p>
 						<button className="px-10 py-4 font-bold rounded-full border-2 transition-all transform hover:scale-105 text-lg" 
