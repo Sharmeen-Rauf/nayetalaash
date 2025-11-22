@@ -1476,13 +1476,19 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="text-center mb-12">
-					<h2 className="text-2xl md:text-3xl font-bold mb-6" 
-						style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
-						Pakistan Tour Packages
+					<h2 className="font-bold mb-6">
+						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+							color: primaryOrange, 
+							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+						}}>
+							Pakistan Tour Packages
+						</span>
 					</h2>
-					<h3 className="text-xl md:text-2xl font-bold" 
+					<h3 className="font-bold" 
 						style={{ color: secondaryBlack }}>
-						Discover Pakistan With Nayi Talaash
+						<span className="block text-3xl sm:text-4xl md:text-5xl">
+							Discover Pakistan With Nayi Talaash
+						</span>
 					</h3>
 				</div>
 
