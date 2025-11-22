@@ -1719,11 +1719,22 @@ const Page = () => {
 		<section className="py-16 md:py-24 bg-white">
 				<div className="container mx-auto px-4 max-w-7xl">
 				<div className="mb-8">
-					<p className="text-[#f99621] text-sm font-bold uppercase tracking-widest mb-2">OUR WEEKLY</p>
-					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20] mb-4">PUBLIC GROUP TOURS</h2>
+					<h2 className="font-bold mb-6">
+						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+							color: primaryOrange, 
+							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+						}}>
+							OUR WEEKLY
+						</span>
+						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+							color: secondaryBlack
+						}}>
+							PUBLIC GROUP TOURS
+						</span>
+					</h2>
 					<p className="text-gray-600 max-w-3xl">
 						A Public Group Tour is open to the general public and is usually offered on a set day and time. It is suitable for people who want to meet new people and travel at a lower cost than a private tour.
-						</p>
+					</p>
 					</div>
 
 				{/* Enhanced Tour Cards with 3D Effects */}
