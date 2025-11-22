@@ -1724,12 +1724,12 @@ const Page = () => {
 							color: primaryOrange, 
 							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
 						}}>
-							OUR WEEKLY
+							Our Weekly
 						</span>
 						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
 							color: secondaryBlack
 						}}>
-							PUBLIC GROUP TOURS
+							Public Group Tours
 						</span>
 					</h2>
 					<p className="text-gray-600 max-w-3xl">
@@ -1829,7 +1829,7 @@ const Page = () => {
 						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
 							color: secondaryBlack
 						}}>
-							WHAT OUR CLIENTS HAVE TO SAY?
+							What Our Clients Have To Say?
 						</span>
 					</h2>
 				</div>
@@ -1894,7 +1894,7 @@ const Page = () => {
 						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
 							color: secondaryBlack
 						}}>
-							WHERE ARE WE LOCATED?
+							Where Are We Located?
 						</span>
 					</h2>
 				</div>
