@@ -1819,8 +1819,19 @@ const Page = () => {
 		<section className="py-16 md:py-24 bg-white">
 				<div className="container mx-auto px-4 max-w-7xl">
 				<div className="mb-8">
-					<p className="text-[#f99621] text-sm font-serif italic mb-2">Testimonials</p>
-					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20]">WHAT OUR CLIENTS HAVE TO SAY?</h2>
+					<h2 className="font-bold mb-6">
+						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+							color: primaryOrange, 
+							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+						}}>
+							Testimonials
+						</span>
+						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+							color: secondaryBlack
+						}}>
+							WHAT OUR CLIENTS HAVE TO SAY?
+						</span>
+					</h2>
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -1873,8 +1884,19 @@ const Page = () => {
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
 				<div className="mb-8">
-					<p className="text-[#f99621] text-sm font-serif italic mb-2">Find us</p>
-					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20]">WHERE ARE WE LOCATED?</h2>
+					<h2 className="font-bold mb-6">
+						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+							color: primaryOrange, 
+							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+						}}>
+							Find us
+						</span>
+						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+							color: secondaryBlack
+						}}>
+							WHERE ARE WE LOCATED?
+						</span>
+					</h2>
 				</div>
 
 				<div className="w-full h-96 rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
