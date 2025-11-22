@@ -1324,7 +1324,7 @@ const Page = () => {
 					{/* Right: Content */}
 					<div className="text-white">
 						<div className="mb-8">
-							<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
+							<h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-white">
 								<span className="font-autography" style={{ 
 									display: 'inline-block',
 									textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)',
