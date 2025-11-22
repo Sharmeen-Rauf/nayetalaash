@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
-/* Import Autography font - Using Dancing Script as elegant script alternative */
-/* Note: If you have Autography font files, you can add @font-face here */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+/* Autography font - Add font files to /public/fonts/ directory */
+@font-face {
+  font-family: 'Autography';
+  src: url('/fonts/Autography.woff2') format('woff2'),
+       url('/fonts/Autography.woff') format('woff'),
+       url('/fonts/Autography.ttf') format('truetype'),
+       url('/fonts/Autography.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --background: #ffffff;
@@ -13,7 +21,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-poppins);
-  --font-autography: 'Dancing Script', 'Playfair Display', cursive;
+  --font-autography: 'Autography', 'Dancing Script', cursive;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,10 +52,10 @@ p {
   font-family: var(--font-poppins), 'Poppins', sans-serif !important;
 }
 
-/* Autography font class for "Discover the Unseen" - using elegant script font */
+/* Autography font class for "Discover the Unseen" */
 .font-autography {
-  font-family: 'Dancing Script', 'Playfair Display', cursive !important;
-  font-weight: 700;
+  font-family: 'Autography', 'Dancing Script', cursive !important;
+  font-weight: normal;
   letter-spacing: 0.02em;
 }
 
