@@ -1576,7 +1576,7 @@ const Page = () => {
 					{/* Left: Family Tour Packages */}
 					<div>
 						<div className="mb-8">
-							<h2 className="text-2xl md:text-3xl font-bold mb-4 transform -rotate-1" 
+							<h2 className="text-3xl md:text-4xl font-bold mb-4" 
 								style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
 								Family Tour Packages
 							</h2>
@@ -1623,7 +1623,7 @@ const Page = () => {
 					{/* Right: Honeymoon Trips */}
 					<div className="relative">
 						<div className="mb-8">
-							<h2 className="text-2xl md:text-3xl font-bold mb-4 transform rotate-1" 
+							<h2 className="text-3xl md:text-4xl font-bold mb-4" 
 								style={{ color: secondaryBlack, textShadow: '2px 2px 0px rgba(249, 150, 33, 0.2)' }}>
 								Honeymoon Trips
 							</h2>
@@ -1668,9 +1668,14 @@ const Page = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
 					<div>
-						<h2 className="text-2xl md:text-3xl font-bold mb-4 transform -rotate-1" 
-							style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}
->Why Travel With Us?</h2>
+						<h2 className="font-bold mb-4">
+							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+								color: secondaryBlack, 
+								textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+							}}>
+								Why Travel With Us?
+							</span>
+						</h2>
 						<p className="text-gray-700 mb-6">
 							The Mad Hatters Pakistan is a cultural and experiential travel company.
 						</p>
@@ -1683,34 +1688,28 @@ const Page = () => {
 								'Women-friendly tours',
 							].map((item, idx) => (
 								<li key={idx} className="flex items-center gap-3" data-aos-delay={idx * 100 + 300}>
-									<CheckCircle2 className="w-5 h-5 transform hover:rotate-12 transition-transform" style={{ color: '#9333ea' }} />
-									<span className="text-gray-700 hover:text-[#9333ea] transition-colors">{item}</span>
+									<CheckCircle2 className="w-5 h-5 transform hover:rotate-12 transition-transform" style={{ color: primaryOrange }} />
+									<span className="text-gray-700 hover:text-[#f99621] transition-colors">{item}</span>
 								</li>
 							))}
 						</ul>
-						<button className="px-6 py-3 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: '#9333ea', color: '#9333ea' }}>
+						<button className="px-6 py-3 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: primaryOrange, color: primaryOrange }}>
 							Learn More
 						</button>
 					</div>
 
-					{/* Right: Video Embed */}
+					{/* Right: Video Embed - Replace YOUR_VIDEO_ID with your YouTube video ID */}
 					<div>
 						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl">
-							<Image 
-								src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
-								alt="Video Thumbnail"
-								fill
-								className="object-cover"
-							/>
-							<div className="absolute inset-0 flex items-center justify-center">
-								<button className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center hover:scale-125 transition-transform shadow-lg">
-									<Play className="w-8 h-8 text-white ml-1" fill="white" />
-								</button>
-					</div>
+							<iframe 
+								src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_VIDEO_ID&controls=0&modestbranding=1&rel=0"
+								title="Video"
+								className="absolute inset-0 w-full h-full"
+								allow="autoplay; encrypted-media; picture-in-picture"
+								allowFullScreen
+								frameBorder="0"
+							></iframe>
 						</div>
-						<button className="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg text-sm hover:scale-110 transition-transform">
-							Watch on Youtube
-						</button>
 					</div>
 					</div>
 				</div>
