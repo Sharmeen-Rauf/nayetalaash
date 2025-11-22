@@ -1113,7 +1113,7 @@ const Page = () => {
 			<div className="relative z-10 h-full flex items-center justify-center">
 				<div className="text-center px-4">
 					<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
-						<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
+						<span className="font-autography hero-text-reveal" style={{ display: 'inline-block', textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)' }}>
 							Discover the Unseen.
 						</span>
 						<br />
@@ -1151,10 +1151,18 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="text-center mb-16">
-					<h2 className="text-xl md:text-2xl font-bold mb-6 transform -rotate-1" 
-						style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.3)' }}>
-						Pakistan's Enchanting 
-						<span className="block transform rotate-2 mt-2" style={{ color: secondaryBlack }}>
+					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 transform -rotate-1">
+						<span className="font-autography" style={{ 
+							color: primaryOrange, 
+							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)',
+							display: 'inline-block'
+						}}>
+							Pakistan's Enchanting 
+						</span>
+						<span className="block transform rotate-2 mt-2" style={{ 
+							color: primaryOrange,
+							display: 'inline-block'
+						}}>
 							Natural Wonders
 						</span>
 					</h2>
