@@ -3,8 +3,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, ChevronDown, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music, Ship, Route, Droplets, Play, CheckCircle2 } from 'lucide-react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import Lottie from 'lottie-react';
 
 const Page = () => {
@@ -157,24 +155,7 @@ const Page = () => {
 		]
 	}; 
 
-	// Initialize AOS (Animate On Scroll) with performance optimizations
-	useEffect(() => {
-		// Only initialize AOS on client side
-		if (typeof window !== 'undefined') {
-			AOS.init({
-				duration: 1200,
-				easing: 'ease-out-cubic',
-				once: true, // Animations happen only once for better performance
-				offset: 120,
-				mirror: false, // Disable mirror for better performance
-				anchorPlacement: 'top-bottom',
-				disable: 'mobile', // Disable on mobile for better performance
-			});
-			
-			// Refresh AOS on route changes
-			return () => AOS.refresh();
-		}
-	}, []);
+	// AOS initialization removed - animations removed for better performance
 
 	// Effect to trigger hero animation on component mount
 	useEffect(() => {
@@ -1131,56 +1112,29 @@ const Page = () => {
 			{/* Main Content */}
 			<div className="relative z-10 h-full flex items-center justify-center">
 				<div className="text-center px-4">
-					<h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 text-white transform -rotate-1 animate-float-text" 
+					<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white" 
 						style={{ 
-							fontFamily: 'cursive', 
-							textShadow: '4px 4px 0px rgba(249, 150, 33, 0.6), 8px 8px 0px rgba(0, 0, 0, 0.3)',
-							animation: 'floatText 3s ease-in-out infinite, colorShift 4s ease-in-out infinite'
-						}}
-						data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1500">
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0s' }}>D</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.1s' }}>i</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.2s' }}>s</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.3s' }}>c</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.4s' }}>o</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.5s' }}>v</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.6s' }}>e</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.7s' }}>r</span>
-						<span className="mx-2"></span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.8s' }}>t</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '0.9s' }}>h</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1s' }}>e</span>
-						<span className="mx-2"></span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.1s' }}>U</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.2s' }}>n</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.3s' }}>s</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.4s' }}>e</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.5s' }}>e</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.6s' }}>n</span>
-						<span className="inline-block animate-bounce-letter" style={{ animationDelay: '1.7s' }}>.</span>
+							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+						}}>
+						<span className="font-autography">Discover the Unseen.</span>
 						<br />
-						<span className="block transform rotate-1 mt-4 animate-wiggle" 
+						<span className="block mt-4" 
 							  style={{ 
-								  color: primaryOrange, 
-								  fontFamily: 'cursive',
-								  animation: 'wiggle 2s ease-in-out infinite, glow 3s ease-in-out infinite'
+								  color: primaryOrange
 							  }}>
 							Explore With Nayi Talaash.
 						</span>
 					</h1>
-					<p className="text-base sm:text-lg md:text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed animate-fade-slide" 
-					   style={{ animation: 'fadeSlide 2s ease-out 0.5s both' }}
-					   data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
+					<p className="text-base sm:text-lg md:text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed">
 						Your one-stop travel partner for unforgettable cultural, historical, and scenic journeys across Pakistan.
 					</p>
-					<div className="mt-8" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+					<div className="mt-8">
 						<button 
 							onClick={handleWhatsAppClick}
-							className="px-8 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-110 hover:rotate-2 shadow-2xl text-base animate-pulse-button"
+							className="px-8 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl text-base"
 							style={{ 
 								backgroundColor: primaryOrange, 
-								color: secondaryBlack,
-								animation: 'pulseButton 2s ease-in-out infinite'
+								color: secondaryBlack
 							}}
 						>
 							Customize Your Tour
@@ -1196,9 +1150,9 @@ const Page = () => {
 			<AnimatedBackground variant="light" />
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
-				<div className="text-center mb-16" data-aos="fade-down">
-					<h2 className="text-2xl md:text-3xl font-bold mb-6 transform -rotate-1" 
-						style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.3)' }}>
+				<div className="text-center mb-16">
+					<h2 className="text-xl md:text-2xl font-bold mb-6 transform -rotate-1" 
+						style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.3)' }}>
 						Pakistan's Enchanting 
 						<span className="block transform rotate-2 mt-2" style={{ color: secondaryBlack }}>
 							Natural Wonders
@@ -1213,7 +1167,7 @@ const Page = () => {
 					{/* Card 1: World's Highest Mountain Ranges */}
 					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
 						 style={{ borderColor: `${primaryOrange}30` }}
-						 data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+					>
 						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
 							<div className="w-full h-full" style={{ background: `linear-gradient(45deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
@@ -1223,8 +1177,8 @@ const Page = () => {
 								 style={{ backgroundColor: primaryOrange }}>
 								<Mountain className="w-10 h-10" style={{ color: secondaryBlack }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-lg font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>World&apos;s Highest Mountain Ranges</h3>
+							<h3 className="text-base font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
+								style={{ color: secondaryBlack }}>World&apos;s Highest Mountain Ranges</h3>
 							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
 								Pakistan hosts 5 of the world&apos;s 14 highest peaks, including K2 a paradise for adventure seekers and nature lovers.
 							</p>
@@ -1234,7 +1188,7 @@ const Page = () => {
 					{/* Card 2: World's Largest Deep-Sea Port */}
 					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
 						 style={{ borderColor: `${primaryOrange}30` }}
-						 data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000">
+>
 						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
 							<div className="w-full h-full" style={{ background: `linear-gradient(-45deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
@@ -1244,8 +1198,8 @@ const Page = () => {
 								 style={{ backgroundColor: secondaryBlack }}>
 								<Ship className="w-10 h-10" style={{ color: primaryOrange }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-lg font-bold mb-4 transition-colors duration-300 transform rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>World&apos;s Largest Deep-Sea Port</h3>
+							<h3 className="text-base font-bold mb-4 transition-colors duration-300 transform rotate-1" 
+								style={{ color: secondaryBlack }}>World&apos;s Largest Deep-Sea Port</h3>
 							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
 								Gwadar stands as one of the deepest sea ports globally, reshaping trade routes and offering travelers pristine beaches and breathtaking coastal drives.
 							</p>
@@ -1255,7 +1209,7 @@ const Page = () => {
 					{/* Card 3: World's Highest Paved Road */}
 					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
 						 style={{ borderColor: `${primaryOrange}30` }}
-						 data-aos="flip-right" data-aos-delay="500" data-aos-duration="1000">
+>
 						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
 							<div className="w-full h-full" style={{ background: `linear-gradient(135deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
@@ -1265,8 +1219,8 @@ const Page = () => {
 								 style={{ backgroundColor: primaryOrange }}>
 								<Route className="w-10 h-10" style={{ color: secondaryBlack }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-lg font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>World&apos;s Highest Paved Road</h3>
+							<h3 className="text-base font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
+								style={{ color: secondaryBlack }}>World&apos;s Highest Paved Road</h3>
 							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
 								The legendary Karakoram Highway is the highest paved international road on Earth a once-in-a-lifetime driving experience through mountains, rivers, and glaciers.
 							</p>
@@ -1276,7 +1230,7 @@ const Page = () => {
 					{/* Card 4: Cultural Heritage */}
 					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
 						 style={{ borderColor: `${primaryOrange}30` }}
-						 data-aos="flip-left" data-aos-delay="700" data-aos-duration="1000">
+>
 						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
 							<div className="w-full h-full" style={{ background: `linear-gradient(225deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
@@ -1286,8 +1240,8 @@ const Page = () => {
 								 style={{ backgroundColor: secondaryBlack }}>
 								<Landmark className="w-10 h-10" style={{ color: primaryOrange }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-lg font-bold mb-4 transition-colors duration-300 transform rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>Cultural Heritage Like Nowhere Else</h3>
+							<h3 className="text-base font-bold mb-4 transition-colors duration-300 transform rotate-1" 
+								style={{ color: secondaryBlack }}>Cultural Heritage Like Nowhere Else</h3>
 							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
 								From ancient civilizations like Mohenjo Daro to Mughal masterpieces, Pakistan&apos;s history spans thousands of years of art, culture, and innovation.
 							</p>
@@ -1314,7 +1268,7 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 					{/* Left: Pakistan Map */}
-					<div className="relative" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="1500">
+					<div className="relative">
 						<div className="relative group">
 							<Image 
 								src="/images/map-2.png"
@@ -1362,17 +1316,16 @@ const Page = () => {
 						</div>
 
 					{/* Right: Content */}
-					<div className="text-white" data-aos="fade-left" data-aos-delay="400">
+					<div className="text-white">
 						<div className="mb-8">
-							<h2 className="text-2xl md:text-3xl font-bold mb-6 transform -rotate-2" 
-								style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '3px 3px 0px rgba(255, 255, 255, 0.2)' }}
-								data-aos="fade-up">
+							<h2 className="text-xl md:text-2xl font-bold mb-6 transform -rotate-2" 
+								style={{ color: primaryOrange, textShadow: '3px 3px 0px rgba(255, 255, 255, 0.2)' }}>
 								DISCOVER 
 								<span className="block transform rotate-1 mt-2 text-white">
 									PAKISTAN
 								</span>
 							</h2>
-							<div className="w-16 h-16 mx-auto md:mx-0" data-aos="zoom-in" data-aos-delay="600">
+							<div className="w-16 h-16 mx-auto md:mx-0">
 								<Lottie 
 									animationData={mountainAnimationData} 
 									loop={true}
@@ -1380,17 +1333,17 @@ const Page = () => {
 								/>
 							</div>
 						</div>
-						<p className="text-lg md:text-xl leading-relaxed mb-8 text-white" data-aos="fade-up" data-aos-delay="200">
+						<p className="text-lg md:text-xl leading-relaxed mb-8 text-white">
 							Pakistan is a land of unmatched beauty, culture, and hospitality. With its mix of vibrant cities, serene valleys, vast deserts, and unspoiled coastlines, the country invites travelers to experience its rich traditions, diverse cuisines, and breathtaking landscapes.
 						</p>
-						<p className="text-lg md:text-xl leading-relaxed mb-8 text-white opacity-90" data-aos="fade-up" data-aos-delay="400">
+						<p className="text-lg md:text-xl leading-relaxed mb-8 text-white opacity-90">
 							Whether you dream of standing before snow capped peaks, exploring historic landmarks, or immersing yourself in the warmth of local communities Nayi Talaash is here to make your journey smooth, affordable, and memorable.
 						</p>
 						<button className="px-10 py-4 font-bold rounded-full border-2 transition-all transform hover:scale-105 text-lg" 
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack, borderColor: primaryOrange }}
 								onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
 								onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
-								data-aos="zoom-in" data-aos-delay="600">
+>
 							Explore More
 						</button>
 					</div>
@@ -1404,10 +1357,10 @@ const Page = () => {
 			<AnimatedBackground variant="default" />
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
-				<div className="mb-12" data-aos="fade-down">
+				<div className="mb-12">
 					<div className="text-center mb-8">
-						<h2 className="text-2xl md:text-3xl font-bold mb-4 transform rotate-1" 
-							style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
+						<h2 className="text-xl md:text-2xl font-bold mb-4 transform rotate-1" 
+							style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
 							Pakistan: The Traveler&apos;s 
 							<span className="block transform -rotate-2 mt-2" style={{ color: secondaryBlack }}>
 								Hidden Gem
@@ -1419,8 +1372,8 @@ const Page = () => {
 					</div>
 					
 					<div className="flex flex-col sm:flex-row justify-between items-center">
-					<h3 className="text-xl md:text-2xl font-bold transform -rotate-1 mb-4 sm:mb-0" 
-						style={{ color: secondaryBlack, fontFamily: 'cursive' }}>
+					<h3 className="text-lg md:text-xl font-bold transform -rotate-1 mb-4 sm:mb-0" 
+						style={{ color: secondaryBlack }}>
 						Where to next?
 					</h3>
 						<p className="text-lg" style={{ color: `${secondaryBlack}80` }}>
@@ -1448,7 +1401,7 @@ const Page = () => {
 						{ name: 'Murree', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
 						{ name: 'Khaplu', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
 					].map((dest, idx) => (
-						<div key={idx} className="relative group cursor-pointer" data-aos="zoom-in" data-aos-delay={idx * 50}>
+						<div key={idx} className="relative group cursor-pointer" data-aos-delay={idx * 50}>
 							<div className="relative h-48 rounded-xl overflow-hidden transform hover:scale-105 hover:rotate-1 transition-all duration-500 shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-orange-200" 
 								 style={{ borderColor: `${primaryOrange}20` }}>
 								<Image 
@@ -1472,7 +1425,7 @@ const Page = () => {
 							style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
 							onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
 							onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
-							data-aos="zoom-in" data-aos-delay="200">
+>
 						Explore Tours
 					</button>
 				</div>
@@ -1504,13 +1457,13 @@ const Page = () => {
 			<AnimatedBackground variant="light" />
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
-				<div className="text-center mb-12" data-aos="fade-down">
+				<div className="text-center mb-12">
 					<h2 className="text-2xl md:text-3xl font-bold mb-6 transform rotate-1" 
-						style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
+						style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
 						Pakistan Tour Packages
 					</h2>
 					<h3 className="text-xl md:text-2xl font-bold transform -rotate-1" 
-						style={{ color: secondaryBlack, fontFamily: 'cursive' }}>
+						style={{ color: secondaryBlack,  }}>
 						Discover Pakistan With Nayi Talaash
 					</h3>
 				</div>
@@ -1528,7 +1481,7 @@ const Page = () => {
 						{ name: 'Chitral & Kalash – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Ancient culture and traditions' },
 						{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
 					].map((tour, idx) => (
-						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos="flip-up" data-aos-delay={idx * 150} data-aos-duration="1000">
+						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos-delay={idx * 150}>
 							<div className="relative h-80 rounded-2xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-12 hover:rotate-x-5 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/20">
 								{/* 3D Card Background */}
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
@@ -1582,7 +1535,7 @@ const Page = () => {
 							style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
 							onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
 							onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
-							data-aos="zoom-in" data-aos-delay="200">
+>
 						View All Packages
 					</button>
 				</div>
@@ -1597,10 +1550,10 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 					{/* Left: Family Tour Packages */}
-					<div data-aos="fade-right" data-aos-delay="200">
+					<div>
 						<div className="mb-8">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4 transform -rotate-1" 
-								style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
+								style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
 								Family Tour Packages
 							</h2>
 							<p className="text-lg" style={{ color: secondaryBlack }}>
@@ -1610,7 +1563,7 @@ const Page = () => {
 						
 						<div className="mb-8">
 							<h3 className="text-lg md:text-xl font-bold mb-4 transform rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'cursive' }}>
+								style={{ color: secondaryBlack,  }}>
 								What&apos;s Included:
 							</h3>
 							<ul className="space-y-3">
@@ -1622,7 +1575,7 @@ const Page = () => {
 									'Photography and drone shots (optional)',
 									'24/7 customer support',
 								].map((item, idx) => (
-									<li key={idx} className="flex items-center gap-3" data-aos="fade-left" data-aos-delay={idx * 100 + 300}>
+									<li key={idx} className="flex items-center gap-3" data-aos-delay={idx * 100 + 300}>
 										<div className="w-3 h-3 rounded-full transform hover:scale-150 transition-transform" 
 											 style={{ backgroundColor: primaryOrange }}></div>
 										<span className="text-lg transition-colors" 
@@ -1638,16 +1591,16 @@ const Page = () => {
 						
 						<button className="px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 hover:rotate-1 text-lg shadow-lg" 
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-								data-aos="zoom-in" data-aos-delay="800">
+>
 							Plan Your Family Trip
 						</button>
 					</div>
 
 					{/* Right: Honeymoon Trips */}
-					<div className="relative" data-aos="fade-left" data-aos-delay="400">
+					<div className="relative">
 						<div className="mb-8">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4 transform rotate-1" 
-								style={{ color: secondaryBlack, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(249, 150, 33, 0.2)' }}>
+								style={{ color: secondaryBlack, textShadow: '2px 2px 0px rgba(249, 150, 33, 0.2)' }}>
 								Honeymoon Trips
 							</h2>
 							<p className="text-lg" style={{ color: `${secondaryBlack}90` }}>
@@ -1676,7 +1629,7 @@ const Page = () => {
 									style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
 									onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
 									onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
-									data-aos="zoom-in" data-aos-delay="600">
+>
 								Customize Your Trip Now
 							</button>
 						</div>
@@ -1690,11 +1643,11 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
-					<div data-aos="fade-right" data-aos-delay="200">
+					<div>
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 transform -rotate-1" 
-							style={{ color: primaryOrange, fontFamily: 'cursive', textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}
-							data-aos="fade-up">Why Travel With Us?</h2>
-						<p className="text-gray-700 mb-6" data-aos="fade-up" data-aos-delay="100">
+							style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}
+>Why Travel With Us?</h2>
+						<p className="text-gray-700 mb-6">
 							The Mad Hatters Pakistan is a cultural and experiential travel company.
 						</p>
 						<ul className="space-y-3 mb-6">
@@ -1705,19 +1658,19 @@ const Page = () => {
 								'Local Community Engagement',
 								'Women-friendly tours',
 							].map((item, idx) => (
-								<li key={idx} className="flex items-center gap-3" data-aos="fade-left" data-aos-delay={idx * 100 + 300}>
+								<li key={idx} className="flex items-center gap-3" data-aos-delay={idx * 100 + 300}>
 									<CheckCircle2 className="w-5 h-5 transform hover:rotate-12 transition-transform" style={{ color: '#9333ea' }} />
 									<span className="text-gray-700 hover:text-[#9333ea] transition-colors">{item}</span>
 								</li>
 							))}
 						</ul>
-						<button className="px-6 py-3 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: '#9333ea', color: '#9333ea' }} data-aos="zoom-in" data-aos-delay="800">
+						<button className="px-6 py-3 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: '#9333ea', color: '#9333ea' }}>
 							Learn More
 						</button>
 					</div>
 
 					{/* Right: Video Embed */}
-					<div data-aos="fade-left" data-aos-delay="400">
+					<div>
 						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl">
 							<Image 
 								src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
@@ -1731,7 +1684,7 @@ const Page = () => {
 								</button>
 					</div>
 						</div>
-						<button className="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg text-sm hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="600">
+						<button className="mt-4 px-4 py-2 bg-red-600 text-white rounded-lg text-sm hover:scale-110 transition-transform">
 							Watch on Youtube
 						</button>
 					</div>
@@ -1742,7 +1695,7 @@ const Page = () => {
 		{/* ====================== PUBLIC GROUP TOURS ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 				<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8" data-aos="fade-down">
+				<div className="mb-8">
 					<p className="text-[#f99621] text-sm font-bold uppercase tracking-widest mb-2">OUR WEEKLY</p>
 					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20] mb-4">PUBLIC GROUP TOURS</h2>
 					<p className="text-gray-600 max-w-3xl">
@@ -1758,7 +1711,7 @@ const Page = () => {
 						{ title: '3 DAYS KALAM AND MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 16,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', duration: '3 Days' },
 						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', duration: '3 Days' },
 					].map((tour, idx) => (
-						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos="zoom-in-up" data-aos-delay={idx * 150} data-aos-duration="1000">
+						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos-delay={idx * 150}>
 							<div className="relative h-80 rounded-2xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-8 hover:rotate-x-3 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/25">
 								{/* 3D Floating Badge */}
 								<div className="absolute top-4 left-4 z-20 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
@@ -1831,14 +1784,14 @@ const Page = () => {
 		{/* ====================== TESTIMONIALS ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 				<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8" data-aos="fade-down">
+				<div className="mb-8">
 					<p className="text-[#f99621] text-sm font-serif italic mb-2">Testimonials</p>
 					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20]">WHAT OUR CLIENTS HAVE TO SAY?</h2>
 				</div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 					{/* Testimonial 1 */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105" data-aos="flip-right" data-aos-delay="200">
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105">
 						<div className="flex items-center mb-4">
 							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4 transform hover:rotate-12 transition-transform">
 								<Image 
@@ -1859,7 +1812,7 @@ const Page = () => {
 					</div>
 
 					{/* Testimonial 2 */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105" data-aos="flip-left" data-aos-delay="400">
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105">
 						<div className="flex items-center mb-4">
 							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4 transform hover:rotate-12 transition-transform">
 								<Image 
@@ -1885,12 +1838,12 @@ const Page = () => {
 		{/* ====================== WHERE ARE WE LOCATED? ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8" data-aos="fade-down">
+				<div className="mb-8">
 					<p className="text-[#f99621] text-sm font-serif italic mb-2">Find us</p>
 					<h2 className="text-4xl md:text-5xl font-bold text-[#211f20]">WHERE ARE WE LOCATED?</h2>
 				</div>
 
-				<div className="w-full h-96 rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500" data-aos="zoom-in" data-aos-delay="200">
+				<div className="w-full h-96 rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.123456789!2d74.3587!3d31.5204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDMxJzEzLjQiTiA3NMKwMjEnMzEuMyJF!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
 						width="100%"
@@ -1910,11 +1863,11 @@ const Page = () => {
 			<AnimatedBackground variant="light" />
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
-				<div className="flex justify-between items-center mb-8" data-aos="fade-down">
+				<div className="flex justify-between items-center mb-8">
 					<h2 className="text-3xl font-bold" style={{ color: secondaryBlack }}>Worked With / Featured On</h2>
 					<button className="px-4 py-2 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" 
 							style={{ borderColor: primaryOrange, color: primaryOrange }} 
-							data-aos="zoom-in" data-aos-delay="200">
+>
 						See All
 					</button>
 				</div>
@@ -1923,7 +1876,7 @@ const Page = () => {
 					{['UNESCO', 'USAID', 'The World Bank', 'UN WOMEN', 'ALJAZEERA', 'FINANCIAL TIMES'].map((org, idx) => (
 						<div key={idx} className="flex items-center justify-center h-20 rounded-lg hover:scale-110 transition-all duration-300 transform hover:rotate-2 border-2" 
 							 style={{ backgroundColor: `${primaryOrange}05`, borderColor: `${primaryOrange}20` }}
-							 data-aos="zoom-in" data-aos-delay={idx * 100}>
+ data-aos-delay={idx * 100}>
 							<span className="text-sm font-semibold transition-colors" 
 								  style={{ color: secondaryBlack }}
 								  onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange}
@@ -1944,8 +1897,8 @@ const Page = () => {
 			</div>
 
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
-				<div className="flex flex-col md:flex-row items-center justify-between" data-aos="fade-up">
-					<div data-aos="fade-right" data-aos-delay="200">
+				<div className="flex flex-col md:flex-row items-center justify-between">
+					<div>
 						<p className="text-white text-2xl font-serif italic mb-2">Ready for an unforgettable tour!</p>
 						<h2 className="text-4xl md:text-5xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 					</div>
@@ -1953,7 +1906,7 @@ const Page = () => {
 						onClick={handleWhatsAppClick}
 						className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl mt-6 md:mt-0"
 						style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-						data-aos="zoom-in" data-aos-delay="400"
+
 					>
 						Customize A Tour
 						</button>
@@ -2242,4 +2195,5 @@ const Page = () => {
 };
 
 export default Page;
+
 
