@@ -1151,17 +1151,15 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="text-center mb-16">
-					<h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 transform -rotate-1">
-						<span className="font-autography" style={{ 
+					<h2 className="font-bold mb-6 transform -rotate-1">
+						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange, 
-							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)',
-							display: 'inline-block'
+							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
 						}}>
 							Pakistan's Enchanting 
 						</span>
-						<span className="block transform rotate-2 mt-2" style={{ 
-							color: primaryOrange,
-							display: 'inline-block'
+						<span className="block transform rotate-2 mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+							color: secondaryBlack
 						}}>
 							Natural Wonders
 						</span>
