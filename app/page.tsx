@@ -1329,12 +1329,12 @@ const Page = () => {
 									color: 'white',
 									textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
 								}}>
-									DISCOVER
+									Discover
 								</span>
 								<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
 									color: primaryOrange
 								}}>
-									PAKISTAN
+									Pakistan
 								</span>
 							</h2>
 							<div className="w-16 h-16 mx-auto md:mx-0">
@@ -1371,10 +1371,16 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="mb-12">
 					<div className="text-center mb-8">
-						<h2 className="text-xl md:text-2xl font-bold mb-4" 
-							style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
-							Pakistan: The Traveler&apos;s 
-							<span className="block mt-2" style={{ color: secondaryBlack }}>
+						<h2 className="font-bold mb-4">
+							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+								color: primaryOrange, 
+								textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+							}}>
+								Pakistan: The Traveler&apos;s 
+							</span>
+							<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+								color: secondaryBlack
+							}}>
 								Hidden Gem
 							</span>
 						</h2>
