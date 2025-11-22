@@ -1112,23 +1112,23 @@ const Page = () => {
 			{/* Main Content */}
 			<div className="relative z-10 h-full flex items-center justify-center">
 				<div className="text-center px-4">
-					<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white" 
-						style={{ 
-							textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
-						}}>
-						<span className="font-autography">Discover the Unseen.</span>
+					<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
+						<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
+							Discover the Unseen.
+						</span>
 						<br />
-						<span className="block mt-4" 
+						<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
 							  style={{ 
-								  color: primaryOrange
+								  color: primaryOrange,
+								  display: 'inline-block'
 							  }}>
 							Explore With Nayi Talaash.
 						</span>
 					</h1>
-					<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed">
-						Your one-stop travel partner for unforgettable cultural, historical, and scenic journeys across Pakistan.
+					<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
+						Your one stop travel partner for unforgettable cultural, historical, and scenic journeys across Pakistan.
 					</p>
-					<div className="mt-8">
+					<div className="mt-8 hero-text-reveal hero-text-delay-3">
 						<button 
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl text-base"
