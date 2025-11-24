@@ -1105,19 +1105,19 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="text-center mb-16 scroll-reveal-fade-up">
-					<h2 className="font-bold mb-6">
+					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
 						}}>
 							Pakistan's Enchanting 
 						</span>
-						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+						<span className="block mt-2" style={{ 
 							color: secondaryBlack
 						}}>
 							Natural Wonders
 						</span>
 					</h2>
-					<p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+					<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
 						Pakistan is home to one of the richest natural landscapes in the world from majestic mountain ranges to vibrant cultural heritage spread across every region.
 					</p>
 				</div>
@@ -1270,14 +1270,14 @@ const Page = () => {
 					{/* Right: Content */}
 					<div className="text-white scroll-reveal-slide-right">
 						<div className="mb-4">
-							<h2 className="font-bold mb-3">
+							<h2 className="text-3xl md:text-4xl font-bold mb-3">
 								<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 									color: 'white',
 									textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
 								}}>
 									Discover
 								</span>
-								<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+								<span className="block mt-2" style={{ 
 									color: primaryOrange
 								}}>
 									Pakistan
@@ -1317,13 +1317,13 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="mb-12">
 					<div className="text-center mb-8 scroll-reveal-fade-up">
-						<h2 className="font-bold mb-4">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4">
 							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 								color: primaryOrange
 							}}>
 								Pakistan: The Traveler&apos;s 
 							</span>
-							<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+							<span className="block mt-2" style={{ 
 								color: secondaryBlack
 							}}>
 								Hidden Gem
@@ -1408,16 +1408,16 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="text-center mb-12 scroll-reveal-fade-up">
-					<h2 className="font-bold mb-6">
+					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
 						}}>
 							Pakistan Tour Packages
 						</span>
 					</h2>
-					<h3 className="font-bold" 
+					<h3 className="text-3xl md:text-4xl font-bold" 
 						style={{ color: secondaryBlack }}>
-						<span className="block text-3xl sm:text-4xl md:text-5xl">
+						<span className="block">
 							Discover Pakistan With Nayi Talaash
 						</span>
 					</h3>
@@ -1511,7 +1511,7 @@ const Page = () => {
 								style={{ color: primaryOrange }}>
 								Family Tour Packages
 							</h2>
-							<p className="text-lg" style={{ color: '#6b7280' }}>
+							<p className="text-base" style={{ color: '#6b7280' }}>
 								Experience comfort, safety, and unforgettable moments with your loved ones.
 							</p>
 						</div>
@@ -1558,7 +1558,7 @@ const Page = () => {
 								style={{ color: secondaryBlack }}>
 								Honeymoon Trips
 							</h2>
-							<p className="text-lg" style={{ color: '#6b7280' }}>
+							<p className="text-base" style={{ color: '#6b7280' }}>
 								Create beautiful memories with romantic getaways to Pakistan&apos;s most scenic destinations.
 							</p>
 						</div>
@@ -1599,15 +1599,10 @@ const Page = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
 					<div className="scroll-reveal-slide-left">
-						<h2 className="font-bold mb-4">
-							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: primaryOrange,
-								textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
-							}}>
-								Why Travel With Us?
-							</span>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: primaryOrange }}>
+							Why Travel With Us?
 						</h2>
-						<p className="mb-6" style={{ color: '#6b7280' }}>
+						<p className="mb-6 text-base" style={{ color: '#6b7280' }}>
 							The Mad Hatters Pakistan is a cultural and experiential travel company.
 						</p>
 						<ul className="space-y-3 mb-6">
@@ -1650,19 +1645,19 @@ const Page = () => {
 		<section className="py-16 md:py-24 bg-white">
 				<div className="container mx-auto px-4 max-w-7xl">
 				<div className="mb-8 scroll-reveal-fade-up text-center">
-					<h2 className="font-bold mb-6">
+					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
 						}}>
 							Our Weekly
 						</span>
-						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+						<span className="block mt-2" style={{ 
 							color: secondaryBlack
 						}}>
 							Public Group Tours
 						</span>
 					</h2>
-					<p className="text-gray-600 max-w-3xl mx-auto">
+					<p className="text-base max-w-3xl mx-auto" style={{ color: '#6b7280' }}>
 						A Public Group Tour is open to the general public and is usually offered on a set day and time. It is suitable for people who want to meet new people and travel at a lower cost than a private tour.
 					</p>
 					</div>
@@ -1749,13 +1744,13 @@ const Page = () => {
 		<section className="py-16 md:py-24 bg-white">
 				<div className="container mx-auto px-4 max-w-7xl">
 				<div className="mb-8 scroll-reveal-fade-up text-center">
-					<h2 className="font-bold mb-6">
+					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
 						}}>
 							Testimonials
 						</span>
-						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+						<span className="block mt-2" style={{ 
 							color: secondaryBlack
 						}}>
 							What Our Clients Have To Say?
@@ -1813,13 +1808,13 @@ const Page = () => {
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
 				<div className="mb-8 scroll-reveal-fade-up text-center">
-					<h2 className="font-bold mb-6">
+					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
 						}}>
 							Find us
 						</span>
-						<span className="block mt-2 text-3xl sm:text-4xl md:text-5xl" style={{ 
+						<span className="block mt-2" style={{ 
 							color: secondaryBlack
 						}}>
 							Where Are We Located?
