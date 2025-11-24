@@ -1233,23 +1233,23 @@ const Page = () => {
 		</section>
 			
 		{/* ====================== DISCOVER PAKISTAN ====================== */}
-		<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
+		<section className="py-12 md:py-16 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
 			{/* Animated Background Elements */}
 			<div className="absolute inset-0 z-[1]">
 				<AnimatedBackground variant="orange" />
 			</div>
 
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 					{/* Left: Pakistan Map */}
 					<div className="relative scroll-reveal-slide-left">
-						<div className="relative group">
+						<div className="relative group max-w-md mx-auto lg:max-w-full">
 							<Image 
 								src="/images/map-2.png"
 								alt="Pakistan Map"
-								width={600}
-								height={800}
-								className="w-full h-auto object-contain transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
+								width={450}
+								height={600}
+								className="w-full h-auto object-contain max-w-full transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
 							/>
 							{/* Enhanced Glowing dots on map with travel destinations */}
 							<div className="absolute top-1/4 left-1/3 group">
