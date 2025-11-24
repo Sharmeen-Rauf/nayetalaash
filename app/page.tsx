@@ -666,34 +666,34 @@ const Page = () => {
 		{/* Top Bar - Dark Background with Contact & Social */}
 		<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20]">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div className="flex items-center justify-between py-1.5 sm:py-2">
+				<div className="flex items-center justify-between py-1 sm:py-1.5">
 					{/* Left: Contact Info */}
-					<div className="flex items-center gap-3 sm:gap-5 text-white text-[11px] sm:text-xs">
-						<a href="tel:+92331438251" className="flex items-center gap-1.5 hover:text-[#f99621] transition-colors">
-							<Phone className="w-3.5 h-3.5" style={{ color: '#f99621' }} />
+					<div className="flex items-center gap-2 sm:gap-4 text-white text-[10px] sm:text-xs">
+						<a href="tel:+92331438251" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
+							<Phone className="w-3 h-3" style={{ color: '#f99621' }} />
 							<span className="hidden sm:inline">+92 331 438251</span>
 							<span className="sm:hidden">+92 331...</span>
 						</a>
-						<a href="mailto:info@nayetalash.com" className="flex items-center gap-1.5 hover:text-[#f99621] transition-colors">
-							<Mail className="w-3.5 h-3.5" style={{ color: '#f99621' }} />
+						<a href="mailto:info@nayetalash.com" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
+							<Mail className="w-3 h-3" style={{ color: '#f99621' }} />
 							<span className="hidden md:inline">info@nayetalash.com</span>
-							<span className="md:hidden text-[10px]">info@...</span>
+							<span className="md:hidden text-[9px]">info@...</span>
 						</a>
 					</div>
 
 					{/* Right: Social Media Icons & Customize Button */}
-					<div className="flex items-center gap-2">
+					<div className="flex items-center gap-1.5">
 						{/* Social Media Icons - Round with Hover Effects */}
-						<div className="flex items-center gap-1">
+						<div className="flex items-center gap-0.5">
 							{/* Facebook */}
 							<a 
 								href="https://www.facebook.com/nayetalash" 
 								target="_blank" 
 								rel="noopener noreferrer" 
-								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
+								className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
 								aria-label="Facebook"
 							>
-								<Facebook className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
+								<Facebook className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 							</a>
 							
 							{/* Instagram */}
@@ -701,10 +701,10 @@ const Page = () => {
 								href="https://www.instagram.com/nayetalash" 
 								target="_blank" 
 								rel="noopener noreferrer" 
-								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
+								className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
 								aria-label="Instagram"
 							>
-								<Instagram className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
+								<Instagram className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 							</a>
 							
 							{/* YouTube */}
@@ -712,10 +712,10 @@ const Page = () => {
 								href="https://www.youtube.com/@nayetalash" 
 								target="_blank" 
 								rel="noopener noreferrer" 
-								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
+								className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
 								aria-label="YouTube"
 							>
-								<Youtube className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
+								<Youtube className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 							</a>
 							
 							{/* TikTok */}
@@ -723,10 +723,10 @@ const Page = () => {
 								href="https://www.tiktok.com/@nayetalash" 
 								target="_blank" 
 								rel="noopener noreferrer" 
-								className="group w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
+								className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
 								aria-label="TikTok"
 							>
-								<svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#211f20] group-hover:scale-110 transition-transform fill-current" viewBox="0 0 24 24">
+								<svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform fill-current" viewBox="0 0 24 24">
 									<path d="M19.321 5.281a7.286 7.286 0 0 1-.744 1.695 7.246 7.246 0 0 1-6.281 3.819v5.357A7.452 7.452 0 0 1 6 7.116V5.5a1 1 0 0 1 2 0v1.616A5.45 5.45 0 0 0 12.5 18.5a5.177 5.177 0 0 0 5.321-5.123v-7.01c0-.314.15-.587.386-.765a1.24 1.24 0 0 1 .814-.243 7.314 7.314 0 0 0 5.869-2.864 1 1 0 0 1 1.415-1.414A9.318 9.318 0 0 1 19.32 5.28z"/>
 								</svg>
 							</a>
@@ -735,7 +735,7 @@ const Page = () => {
 						{/* Customize A Tour Button - Round */}
 						<button
 							onClick={handleWhatsAppClick}
-							className="px-3 py-1.5 sm:px-4 sm:py-2 text-[10px] sm:text-xs font-bold text-[#211f20] rounded-full hover:bg-[#e8851a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#f99621]/50 ml-1"
+							className="px-2 py-1 sm:px-3 sm:py-1 text-[9px] sm:text-[10px] font-bold text-[#211f20] rounded-full hover:bg-[#e8851a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#f99621]/50 ml-0.5"
 							style={{ backgroundColor: '#f99621' }}
 						>
 							<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
@@ -747,7 +747,7 @@ const Page = () => {
 		</div>
 
 		{/* Main Navigation Bar - Reduced Height */}
-		<header className="fixed top-[44px] sm:top-[48px] left-0 right-0 z-[100] bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)] transition-all duration-300">
+		<header className="fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)] transition-all duration-300">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between py-2 sm:py-2.5">
 					{/* Logo */}
