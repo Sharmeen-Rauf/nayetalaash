@@ -1269,10 +1269,11 @@ const Page = () => {
 
 					{/* Right: Content */}
 					<div className="text-white scroll-reveal-slide-right">
-						<div className="mb-8">
-							<h2 className="font-bold mb-6">
+						<div className="mb-4">
+							<h2 className="font-bold mb-3">
 								<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-									color: primaryOrange
+									color: 'white',
+									textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
 								}}>
 									Discover
 								</span>
