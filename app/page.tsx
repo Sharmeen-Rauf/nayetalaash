@@ -1649,7 +1649,7 @@ const Page = () => {
 		{/* ====================== PUBLIC GROUP TOURS ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 				<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8 scroll-reveal-fade-up">
+				<div className="mb-8 scroll-reveal-fade-up text-center">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
@@ -1662,7 +1662,7 @@ const Page = () => {
 							Public Group Tours
 						</span>
 					</h2>
-					<p className="text-gray-600 max-w-3xl">
+					<p className="text-gray-600 max-w-3xl mx-auto">
 						A Public Group Tour is open to the general public and is usually offered on a set day and time. It is suitable for people who want to meet new people and travel at a lower cost than a private tour.
 					</p>
 					</div>
