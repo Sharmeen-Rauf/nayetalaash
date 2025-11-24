@@ -175,54 +175,8 @@ const Page = () => {
 	
 	// --- Animated Background Components ---
 	const AnimatedBackground = ({ variant = 'default' }: { variant?: 'default' | 'orange' | 'dark' | 'light' }) => {
-		const getBackgroundStyle = () => {
-			switch (variant) {
-				case 'orange':
-					return {
-						background: `linear-gradient(135deg, ${primaryOrange}15 0%, transparent 50%, ${primaryOrange}10 100%)`,
-					};
-				case 'dark':
-					return {
-						background: `linear-gradient(45deg, ${secondaryBlack}20 0%, transparent 50%, ${secondaryBlack}15 100%)`,
-					};
-				case 'light':
-					return {
-						background: `linear-gradient(-45deg, #ffffff10 0%, transparent 50%, #ffffff05 100%)`,
-					};
-				default:
-					return {
-						background: `linear-gradient(135deg, ${primaryOrange}08 0%, transparent 30%, ${secondaryBlack}08 70%, transparent 100%)`,
-					};
-			}
-		};
-
-		return (
-			<div className="absolute inset-0 overflow-hidden pointer-events-none">
-				{/* Animated gradient background */}
-				<div 
-					className="absolute inset-0 animate-pulse" 
-					style={getBackgroundStyle()}
-				/>
-				
-				{/* Floating geometric shapes */}
-				<div className="absolute top-10 left-10 w-20 h-20 rounded-full opacity-10 animate-bounce" 
-					 style={{ backgroundColor: primaryOrange, animationDelay: '0s', animationDuration: '3s' }} />
-				<div className="absolute top-32 right-20 w-16 h-16 rounded-full opacity-10 animate-bounce" 
-					 style={{ backgroundColor: secondaryBlack, animationDelay: '1s', animationDuration: '4s' }} />
-				<div className="absolute bottom-20 left-1/4 w-12 h-12 rounded-full opacity-10 animate-bounce" 
-					 style={{ backgroundColor: primaryOrange, animationDelay: '2s', animationDuration: '5s' }} />
-				<div className="absolute bottom-40 right-1/3 w-24 h-24 rounded-full opacity-10 animate-bounce" 
-					 style={{ backgroundColor: secondaryBlack, animationDelay: '0.5s', animationDuration: '3.5s' }} />
-				
-				{/* Moving lines */}
-				<div className="absolute inset-0">
-					<div className="absolute top-1/4 left-0 w-full h-px opacity-20 animate-pulse" 
-						 style={{ backgroundColor: primaryOrange, animationDuration: '2s' }} />
-					<div className="absolute bottom-1/4 left-0 w-full h-px opacity-20 animate-pulse" 
-						 style={{ backgroundColor: secondaryBlack, animationDelay: '1s', animationDuration: '2s' }} />
-				</div>
-			</div>
-		);
+		// All background animations removed (yellow lines and grey circles)
+		return null;
 	};
 	
 	// Image IDs (Using high-quality Pakistan tour images from Unsplash)
@@ -314,42 +268,16 @@ const Page = () => {
 		);
 	};
 
-	// Simple animated route background for dark sections
+	// Simple animated route background for dark sections - Removed lines and circles
 	const MapRouteBackground = () => {
-		const routeColor = isLight ? '#0f172a' : `${primaryOrange}AA`;
-		const dotColor = isLight ? '#0f172a' : '#ffffff';
-		return (
-			<svg className="pointer-events-none absolute inset-0 z-0" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-				<g fill="none" stroke={routeColor} strokeWidth="2" className="route-dash">
-					<path d="M50,800 C200,650 400,700 550,550 C700,400 900,450 1100,300" />
-					<path d="M100,200 C250,350 450,300 650,480 C820,630 1050,620 1280,760" />
-					<path d="M20,500 C240,420 380,560 740,520 C980,490 1120,420 1420,480" />
-				</g>
-				<g>
-					<circle r="5" fill={dotColor} className="route-dot" >
-						<animateMotion dur="8s" repeatCount="indefinite" path="M50,800 C200,650 400,700 550,550 C700,400 900,450 1100,300" />
-					</circle>
-					<circle r="5" fill={dotColor} className="route-dot" >
-						<animateMotion dur="10s" repeatCount="indefinite" path="M100,200 C250,350 450,300 650,480 C820,630 1050,620 1280,760" />
-					</circle>
-					<circle r="5" fill={dotColor} className="route-dot" >
-						<animateMotion dur="9s" repeatCount="indefinite" path="M20,500 C240,420 380,560 740,520 C980,490 1120,420 1420,480" />
-					</circle>
-				</g>
-			</svg>
-		);
+		// Route lines and circles removed
+		return null;
 	};
 
-	// Simple light background for white sections
+	// Simple light background for white sections - Removed background shapes
 	const LightMapBackground = () => {
-		return (
-			<svg className="absolute inset-0 w-full h-full" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-				<g fill="#000" opacity="0.02">
-					{/* Simple abstract shape */}
-					<path d="M190,120 C220,140 230,200 270,210 C300,220 330,200 360,210 C410,230 420,290 460,310 C500,330 560,320 590,350 C610,370 600,410 580,430 C560,450 520,450 500,470 C480,490 490,520 470,540 C450,560 420,570 390,560 C350,550 350,500 320,490 C290,480 250,490 220,470 C200,460 200,440 190,420 C170,380 120,360 120,320 C120,280 170,250 170,220 C170,170 160,140 190,120 Z"/>
-				</g>
-			</svg>
-		);
+		// Background shapes removed
+		return null;
 	};
 
 	// Hero Parallax: update background position on scroll
