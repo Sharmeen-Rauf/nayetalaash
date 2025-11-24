@@ -1601,12 +1601,13 @@ const Page = () => {
 					<div className="scroll-reveal-slide-left">
 						<h2 className="font-bold mb-4">
 							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: primaryOrange
+								color: primaryOrange,
+								textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
 							}}>
 								Why Travel With Us?
 							</span>
 						</h2>
-						<p className="text-gray-700 mb-6">
+						<p className="mb-6" style={{ color: '#6b7280' }}>
 							The Mad Hatters Pakistan is a cultural and experiential travel company.
 						</p>
 						<ul className="space-y-3 mb-6">
@@ -1619,7 +1620,7 @@ const Page = () => {
 							].map((item, idx) => (
 								<li key={idx} className="flex items-center gap-3" data-aos-delay={idx * 100 + 300}>
 									<CheckCircle2 className="w-5 h-5 transform hover:rotate-12 transition-transform" style={{ color: primaryOrange }} />
-									<span className="text-gray-700 hover:text-[#f99621] transition-colors">{item}</span>
+									<span className="hover:text-[#f99621] transition-colors" style={{ color: '#6b7280' }}>{item}</span>
 								</li>
 							))}
 						</ul>
