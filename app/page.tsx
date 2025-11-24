@@ -20,6 +20,11 @@ const Page = () => {
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 	const [showAllDestinations, setShowAllDestinations] = useState(false);
 	const [showAllPackages, setShowAllPackages] = useState(false);
+	const [searchForm, setSearchForm] = useState({
+		whenToGo: '',
+		whatToDo: '',
+		whereToGo: ''
+	});
 
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
@@ -1104,7 +1109,87 @@ const Page = () => {
 					<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
 						Your one stop travel partner for unforgettable cultural, historical, and scenic journeys across Pakistan.
 					</p>
-					<div className="mt-8 hero-text-reveal hero-text-delay-3">
+					
+					{/* Search Form */}
+					<div className="mt-8 hero-text-reveal hero-text-delay-3 max-w-4xl mx-auto">
+						<div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
+							{/* When to go */}
+							<div className="relative flex-1 w-full sm:w-auto min-w-[200px]">
+								<select
+									value={searchForm.whenToGo}
+									onChange={(e) => setSearchForm({...searchForm, whenToGo: e.target.value})}
+									className="w-full px-4 py-3 rounded-lg text-sm font-medium appearance-none bg-white border-2 border-transparent focus:border-[#f99621] focus:outline-none transition-all cursor-pointer shadow-lg"
+									style={{ color: secondaryBlack }}
+								>
+									<option value="">When to go?</option>
+									<option value="spring">Spring (March - May)</option>
+									<option value="summer">Summer (June - August)</option>
+									<option value="autumn">Autumn (September - November)</option>
+									<option value="winter">Winter (December - February)</option>
+								</select>
+								<ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none" style={{ color: `${secondaryBlack}60` }} />
+							</div>
+
+							{/* What to do */}
+							<div className="relative flex-1 w-full sm:w-auto min-w-[200px]">
+								<select
+									value={searchForm.whatToDo}
+									onChange={(e) => setSearchForm({...searchForm, whatToDo: e.target.value})}
+									className="w-full px-4 py-3 rounded-lg text-sm font-medium appearance-none bg-white border-2 border-transparent focus:border-[#f99621] focus:outline-none transition-all cursor-pointer shadow-lg"
+									style={{ color: secondaryBlack }}
+								>
+									<option value="">What to do?</option>
+									<option value="culture">Cultural Tours</option>
+									<option value="adventure">Adventure Tours</option>
+									<option value="family">Family Tours</option>
+									<option value="honeymoon">Honeymoon Trips</option>
+									<option value="group">Group Tours</option>
+									<option value="religious">Religious Tours</option>
+								</select>
+								<ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none" style={{ color: `${secondaryBlack}60` }} />
+							</div>
+
+							{/* Where to go */}
+							<div className="relative flex-1 w-full sm:w-auto min-w-[200px]">
+								<select
+									value={searchForm.whereToGo}
+									onChange={(e) => setSearchForm({...searchForm, whereToGo: e.target.value})}
+									className="w-full px-4 py-3 rounded-lg text-sm font-medium appearance-none bg-white border-2 border-transparent focus:border-[#f99621] focus:outline-none transition-all cursor-pointer shadow-lg"
+									style={{ color: secondaryBlack }}
+								>
+									<option value="">Where to go?</option>
+									<option value="hunza">Hunza Valley</option>
+									<option value="skardu">Skardu</option>
+									<option value="swat">Swat</option>
+									<option value="lahore">Lahore</option>
+									<option value="karachi">Karachi</option>
+									<option value="islamabad">Islamabad</option>
+									<option value="gilgit">Gilgit</option>
+									<option value="naran">Naran Kaghan</option>
+								</select>
+								<ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none" style={{ color: `${secondaryBlack}60` }} />
+							</div>
+
+							{/* Search Button */}
+							<button
+								onClick={() => {
+									// Handle search functionality
+									console.log('Search:', searchForm);
+									handleWhatsAppClick();
+								}}
+								className="px-6 py-3 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 text-base"
+								style={{ 
+									backgroundColor: primaryOrange, 
+									color: secondaryBlack
+								}}
+							>
+								<Search className="w-5 h-5" />
+								<span>Search</span>
+							</button>
+						</div>
+					</div>
+
+					<div className="mt-6 hero-text-reveal hero-text-delay-3">
 						<button 
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl text-base btn-ripple"
