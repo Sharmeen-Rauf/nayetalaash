@@ -1908,77 +1908,141 @@ const Page = () => {
 			{/* Animated Background */}
 			<AnimatedBackground variant="light" />
 			
-			<div className="container mx-auto px-4 max-w-7xl relative z-10">
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
-					{/* Logo and Brand */}
-						<div>
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+					{/* Column 1: Company Information */}
+					<div>
 						<Image 
-							src={logoImage}
+							src="/images/Final....png"
 							alt="Nayi Talaash Logo"
 							width={150}
-							height={50}
+							height={60}
 							className="h-12 w-auto object-contain mb-4"
 						/>
-						<p className="text-sm mb-2" style={{ color: primaryOrange }}>#SehriKushiiShamii</p>
-						<div className="space-y-1 text-sm" style={{ color: `${secondaryBlack}80` }}>
-							<p>| NTS</p>
-							<p>| OTS License</p>
-							<p>| MTA Certification</p>
+						<p className="text-sm mb-4 leading-relaxed" style={{ color: `${secondaryBlack}80` }}>
+							Nayi Talaash helps travelers discover the beauty, culture, and hospitality of Pakistan through unforgettable journeys, expert tour guidance, and personalized travel experiences.
+						</p>
+						<div className="space-y-3">
+							<div className="flex items-start gap-2">
+								<span className="text-lg">🇵🇰</span>
+								<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>F-36 PECHS BLOCK 6,<br />Karachi, Pakistan</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<Mail className="w-4 h-4" style={{ color: primaryOrange }} />
+								<a href="mailto:info@nayetalash.com" className="text-sm transition-colors" style={{ color: `${secondaryBlack}80` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}80`}>
+									info@nayetalash.com
+								</a>
+							</div>
 						</div>
 					</div>
 
-					{/* Site Map */}
+					{/* Column 2: Quick Links */}
 					<div>
-						<h3 className="font-bold mb-4" style={{ color: secondaryBlack }}>Site Map</h3>
-						<ul className="space-y-2 text-sm" style={{ color: `${secondaryBlack}70` }}>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>About Us</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Contact Us</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Privacy Policy</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Terms and Condition</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Social Wall</a></li>
-							</ul>
-						</div>
-
-					{/* International Tours */}
-						<div>
-						<h3 className="font-bold mb-4" style={{ color: secondaryBlack }}>International</h3>
-						<ul className="space-y-2 text-sm" style={{ color: `${secondaryBlack}70` }}>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Group Tours</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Private Tours</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Corporate Tours</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Umrah</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Hajj 2026</a></li>
-							</ul>
-						</div>
-
-					{/* Domestic Tours */}
-						<div>
-						<h3 className="font-bold mb-4" style={{ color: secondaryBlack }}>Domestic</h3>
-						<ul className="space-y-2 text-sm" style={{ color: `${secondaryBlack}70` }}>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Group Tours</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Private Tours</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Corporate Tours</a></li>
-							</ul>
-						</div>
-
-					{/* Upcoming Tours */}
-					<div>
-						<h3 className="font-bold mb-4" style={{ color: secondaryBlack }}>Upcoming</h3>
-						<ul className="space-y-2 text-sm" style={{ color: `${secondaryBlack}70` }}>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Winter Tours</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Malaysia</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Turkey</a></li>
-							<li><a href="#" className="transition-colors" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Indonesia</a></li>
+						<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>Quick Links</h3>
+						<ul className="space-y-2">
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#home" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Home</a>
+							</li>
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Pakistan Tours</a>
+							</li>
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#city-tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>City Tours</a>
+							</li>
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#group-tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Group Tour</a>
+							</li>
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#destination" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Destination</a>
+							</li>
+							<li className="pb-2">
+								<a href="#about" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>About Us</a>
+							</li>
+							<li className="pb-2">
+								<a href="#contact" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Contact Us</a>
+							</li>
 						</ul>
-							</div>
+					</div>
+
+					{/* Column 3: What We Do */}
+					<div>
+						<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>What We Do</h3>
+						<ul className="space-y-2">
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Custom Tour Packages</a>
+							</li>
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Family Tour Packages</a>
+							</li>
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Honeymoon Trips</a>
+							</li>
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Group Tours</a>
+							</li>
+							<li className="border-b border-gray-200 pb-2">
+								<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Adventure Tours</a>
+							</li>
+							<li className="pb-2">
+								<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Cultural Experiences</a>
+							</li>
+						</ul>
+					</div>
+
+					{/* Column 4: Connect */}
+					<div>
+						<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>Connect</h3>
+						<div className="flex gap-3 mb-6">
+							<a 
+								href="https://www.facebook.com/nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer"
+								className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
+							>
+								<Facebook className="w-5 h-5 text-white" />
+							</a>
+							<a 
+								href="https://www.instagram.com/nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer"
+								className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
+							>
+								<Instagram className="w-5 h-5 text-white" />
+							</a>
+							<a 
+								href="https://www.youtube.com/@nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer"
+								className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
+							>
+								<Youtube className="w-5 h-5 text-white" />
+							</a>
 						</div>
+						<p className="text-sm mb-4 leading-relaxed" style={{ color: `${secondaryBlack}80` }}>
+							Keep up to date with latest news and updates about Nayi Talaash, simply subscribe with your email address.
+						</p>
+						<div className="flex gap-2">
+							<input 
+								type="email" 
+								placeholder="Email address" 
+								className="flex-1 px-4 py-2 text-sm border border-gray-300 rounded focus:outline-none focus:border-[#f99621]"
+								style={{ color: secondaryBlack }}
+							/>
+							<button 
+								className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
+							>
+								<ArrowRight className="w-5 h-5" />
+							</button>
+						</div>
+					</div>
+				</div>
 
 				{/* Copyright */}
 				<div className="text-center pt-8 border-t" style={{ borderColor: `${primaryOrange}30` }}>
-					<p className="text-sm" style={{ color: `${secondaryBlack}70` }}>© 2025 Nayi Talaash - All Right reserved.</p>
-					</div>
+					<p className="text-sm" style={{ color: `${secondaryBlack}70` }}>© 2025 Nayi Talaash. All rights reserved.</p>
 				</div>
-			</footer>
+			</div>
+		</footer>
 
 		{/* Custom Cursor */}
 		<div
