@@ -1318,8 +1318,8 @@ const Page = () => {
 							<Image 
 								src="/images/map-2.png"
 								alt="Pakistan Map"
-								width={450}
-								height={600}
+								width={300}
+								height={400}
 								className="w-full h-auto object-contain max-w-full transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
 							/>
 							{/* Enhanced Glowing dots on map with travel destinations */}
