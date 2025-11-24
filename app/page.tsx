@@ -19,6 +19,7 @@ const Page = () => {
 	// State for selected destination region
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 	const [showAllDestinations, setShowAllDestinations] = useState(false);
+	const [showAllPackages, setShowAllPackages] = useState(false);
 
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
@@ -1442,7 +1443,7 @@ const Page = () => {
 						{ name: 'Fairy Meadows – 3 Days Trek Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Base camp to Nanga Parbat' },
 						{ name: 'Chitral & Kalash – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Ancient culture and traditions' },
 						{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
-					].map((tour, idx) => (
+					].slice(0, showAllPackages ? 9 : 6).map((tour, idx) => (
 						<div key={idx} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								{/* 3D Card Background */}
@@ -1493,12 +1494,14 @@ const Page = () => {
 				</div>
 				
 				<div className="text-center">
-					<button className="px-10 py-4 border-2 rounded-full font-bold hover:scale-110 transition-all duration-300 transform hover:rotate-1 text-lg" 
-							style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
-							onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
-							onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
->
-						View All Packages
+					<button 
+						onClick={() => setShowAllPackages(!showAllPackages)}
+						className="px-10 py-4 border-2 rounded-full font-bold hover:scale-110 transition-all duration-300 transform hover:rotate-1 text-lg" 
+						style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
+						onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
+						onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
+					>
+						{showAllPackages ? 'Show Less' : 'View All Packages'}
 					</button>
 				</div>
 			</div>
