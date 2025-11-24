@@ -1508,10 +1508,10 @@ const Page = () => {
 					<div className="scroll-reveal-slide-left">
 						<div className="mb-8">
 							<h2 className="text-3xl md:text-4xl font-bold mb-4" 
-								style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
+								style={{ color: primaryOrange }}>
 								Family Tour Packages
 							</h2>
-							<p className="text-lg" style={{ color: secondaryBlack }}>
+							<p className="text-lg" style={{ color: '#6b7280' }}>
 								Experience comfort, safety, and unforgettable moments with your loved ones.
 							</p>
 						</div>
@@ -1555,10 +1555,10 @@ const Page = () => {
 					<div className="relative scroll-reveal-slide-right">
 						<div className="mb-8">
 							<h2 className="text-3xl md:text-4xl font-bold mb-4" 
-								style={{ color: secondaryBlack, textShadow: '2px 2px 0px rgba(249, 150, 33, 0.2)' }}>
+								style={{ color: secondaryBlack }}>
 								Honeymoon Trips
 							</h2>
-							<p className="text-lg" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-lg" style={{ color: '#6b7280' }}>
 								Create beautiful memories with romantic getaways to Pakistan&apos;s most scenic destinations.
 							</p>
 						</div>
