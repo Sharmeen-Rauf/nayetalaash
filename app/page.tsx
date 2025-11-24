@@ -11,8 +11,6 @@ const Page = () => {
 	const [showHeroContent, setShowHeroContent] = useState(false); 
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [splashVisible, setSplashVisible] = useState(true);
-	const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-	const [isScrollingNow, setIsScrollingNow] = useState(false);
 	const [activeTourIndex, setActiveTourIndex] = useState(0); 
 	// NEW STATE: To track which Exclusive Package is currently displayed/zoomed
 	const [activePackageIndex, setActivePackageIndex] = useState(0); 
