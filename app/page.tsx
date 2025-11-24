@@ -348,21 +348,9 @@ const Page = () => {
 				});
 				ticking = true;
 			}
-			setIsScrollingNow(true);
-			window.clearTimeout((handleScroll as any)._t);
-			(handleScroll as any)._t = window.setTimeout(() => setIsScrollingNow(false), 150);
 		};
 		window.addEventListener('scroll', handleScroll, { passive: true });
 		return () => window.removeEventListener('scroll', handleScroll);
-	}, []);
-
-	// Custom cursor tracking
-	useEffect(() => {
-		if (typeof window !== 'undefined') {
-			const onMove = (e: MouseEvent) => setMousePos({ x: e.clientX, y: e.clientY });
-			window.addEventListener('mousemove', onMove, { passive: true });
-			return () => window.removeEventListener('mousemove', onMove);
-		}
 	}, []);
 	
 	// --- UPCOMING TOUR DATA (Section 5) ---
@@ -1788,13 +1776,6 @@ const Page = () => {
 								
 								{/* Enhanced Gradient Overlay */}
 								<div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent group-hover:from-black/98 transition-all duration-500"></div>
-								
-								{/* Floating Icon */}
-								<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500 z-10">
-									<div className="w-16 h-16 rounded-full bg-[#f99621]/20 backdrop-blur-sm flex items-center justify-center transform group-hover:rotate-180 transition-transform duration-700">
-										<Users className="w-8 h-8 text-white" />
-									</div>
-								</div>
 								
 								{/* Content */}
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-16px] transition-all duration-500">
