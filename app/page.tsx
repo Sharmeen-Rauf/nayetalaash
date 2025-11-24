@@ -682,7 +682,7 @@ const Page = () => {
 
 
 	return (
-		<div className="relative min-h-screen font-sans" style={{ cursor: 'none' }}>
+		<div className="relative min-h-screen font-sans overflow-x-hidden" style={{ cursor: 'none' }}>
 			
 		{/* --- 1. Two-Tier Navbar --- */}
 		{/* Top Bar - Dark Background with Contact & Social */}
@@ -1121,11 +1121,11 @@ const Page = () => {
 		</section>
 
 		{/* ====================== FASCINATING FACTS ABOUT PAKISTAN ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+		<section className="py-16 md:py-24 bg-white relative overflow-x-hidden">
 			{/* Animated Background */}
 			<AnimatedBackground variant="light" />
 			
-			<div className="container mx-auto px-4 max-w-7xl relative z-10">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
 				<div className="text-center mb-16 scroll-reveal-fade-up">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
@@ -1332,11 +1332,11 @@ const Page = () => {
 			</section>
 			
 		{/* ====================== WHERE TO NEXT? ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+		<section className="py-16 md:py-24 bg-white relative overflow-x-hidden">
 			{/* Animated Background */}
 			<AnimatedBackground variant="default" />
 			
-			<div className="container mx-auto px-4 max-w-7xl relative z-10">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
 				<div className="mb-12">
 					<div className="text-center mb-8 scroll-reveal-fade-up">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -1410,11 +1410,11 @@ const Page = () => {
 		</section>
 
 		{/* ====================== PAKISTAN TOUR PACKAGES ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+		<section className="py-16 md:py-24 bg-white relative overflow-x-hidden">
 			{/* Animated Background */}
 			<AnimatedBackground variant="light" />
 			
-			<div className="container mx-auto px-4 max-w-7xl relative z-10">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
 				<div className="text-center mb-12 scroll-reveal-fade-up">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
@@ -1604,8 +1604,8 @@ const Page = () => {
 		</section>
 
 		{/* ====================== WHY TRAVEL WITH US & VIDEO ====================== */}
-		<section className="py-16 md:py-24 bg-gray-100">
-			<div className="container mx-auto px-4 max-w-7xl">
+		<section className="py-16 md:py-24 bg-gray-100 overflow-x-hidden">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
 					<div className="scroll-reveal-slide-left">
@@ -1652,8 +1652,8 @@ const Page = () => {
 			</section>
 			
 		{/* ====================== PUBLIC GROUP TOURS ====================== */}
-		<section className="py-16 md:py-24 bg-white">
-				<div className="container mx-auto px-4 max-w-7xl">
+		<section className="py-16 md:py-24 bg-white overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
 				<div className="mb-8 scroll-reveal-fade-up text-center">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
@@ -1751,8 +1751,8 @@ const Page = () => {
 			</section>
 			
 		{/* ====================== TESTIMONIALS ====================== */}
-		<section className="py-16 md:py-24 bg-white">
-				<div className="container mx-auto px-4 max-w-7xl">
+		<section className="py-16 md:py-24 bg-white overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
 				<div className="mb-8 scroll-reveal-fade-up text-center">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
@@ -1815,8 +1815,8 @@ const Page = () => {
 		</section>
 
 		{/* ====================== WHERE ARE WE LOCATED? ====================== */}
-		<section className="py-16 md:py-24 bg-white">
-			<div className="container mx-auto px-4 max-w-7xl">
+		<section className="py-16 md:py-24 bg-white overflow-x-hidden">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
 				<div className="mb-8 scroll-reveal-fade-up text-center">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
