@@ -1609,10 +1609,10 @@ const Page = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
 					<div className="scroll-reveal-slide-left">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack, fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
 							Why Travel With Us?
 						</h2>
-						<p className="mb-6 text-base" style={{ color: '#6b7280' }}>
+						<p className="mb-6 text-base" style={{ color: '#6b7280', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
 							The Mad Hatters Pakistan is a cultural and experiential travel company.
 						</p>
 						<ul className="space-y-3 mb-6">
@@ -1625,11 +1625,11 @@ const Page = () => {
 							].map((item, idx) => (
 								<li key={idx} className="flex items-center gap-3" data-aos-delay={idx * 100 + 300}>
 									<CheckCircle2 className="w-5 h-5 transform hover:rotate-12 transition-transform" style={{ color: primaryOrange }} />
-									<span className="hover:text-[#f99621] transition-colors" style={{ color: '#6b7280' }}>{item}</span>
+									<span className="hover:text-[#f99621] transition-colors" style={{ color: '#6b7280', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>{item}</span>
 								</li>
 							))}
 						</ul>
-						<button className="px-6 py-3 border-2 rounded-lg font-semibold hover:scale-110 transition-transform btn-ripple" style={{ borderColor: primaryOrange, color: primaryOrange }}>
+						<button className="px-6 py-3 border-2 rounded-lg font-semibold hover:scale-110 transition-transform btn-ripple" style={{ borderColor: primaryOrange, color: primaryOrange, fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
 							Learn More
 						</button>
 					</div>
