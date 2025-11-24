@@ -168,6 +168,32 @@ const Page = () => {
 		};
 	}, []);
 
+	// Professional scroll reveal animations using Intersection Observer
+	useEffect(() => {
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -100px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('revealed');
+					// Optionally unobserve after animation
+					// observer.unobserve(entry.target);
+				}
+			});
+		}, observerOptions);
+
+		// Observe all scroll-reveal elements
+		const revealElements = document.querySelectorAll('.scroll-reveal, .scroll-reveal-fade-up, .scroll-reveal-fade-in, .scroll-reveal-slide-left, .scroll-reveal-slide-right, .scroll-reveal-scale');
+		revealElements.forEach((el) => observer.observe(el));
+
+		return () => {
+			revealElements.forEach((el) => observer.unobserve(el));
+		};
+	}, []);
+
 	// no-op removed scroll ruler
 	// --- Theme Colors and Constants ---
 	const primaryOrange = '#f99621'; // Main accent color
@@ -721,7 +747,7 @@ const Page = () => {
 		</div>
 
 		{/* Main Navigation Bar - Reduced Height */}
-		<header className="fixed top-[44px] sm:top-[48px] left-0 right-0 z-[100] bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]">
+		<header className="fixed top-[44px] sm:top-[48px] left-0 right-0 z-[100] bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)] transition-all duration-300">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between py-2 sm:py-2.5">
 					{/* Logo */}
@@ -1059,7 +1085,7 @@ const Page = () => {
 					<div className="mt-8 hero-text-reveal hero-text-delay-3">
 						<button 
 							onClick={handleWhatsAppClick}
-							className="px-8 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl text-base"
+							className="px-8 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl text-base btn-ripple"
 							style={{ 
 								backgroundColor: primaryOrange, 
 								color: secondaryBlack
@@ -1078,7 +1104,7 @@ const Page = () => {
 			<AnimatedBackground variant="light" />
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
-				<div className="text-center mb-16">
+				<div className="text-center mb-16 scroll-reveal-fade-up">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
@@ -1098,7 +1124,7 @@ const Page = () => {
 				
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
 					{/* Card 1: World's Highest Mountain Ranges */}
-					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
+					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-1" 
 						 style={{ borderColor: `${primaryOrange}30` }}
 					>
 						{/* Theme Background Effect */}
@@ -1119,9 +1145,9 @@ const Page = () => {
 					</div>
 
 					{/* Card 2: World's Largest Deep-Sea Port */}
-					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
+					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-2" 
 						 style={{ borderColor: `${primaryOrange}30` }}
->
+					>
 						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
 							<div className="w-full h-full" style={{ background: `linear-gradient(-45deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
@@ -1140,9 +1166,9 @@ const Page = () => {
 					</div>
 
 					{/* Card 3: World's Highest Paved Road */}
-					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
+					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-3" 
 						 style={{ borderColor: `${primaryOrange}30` }}
->
+					>
 						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
 							<div className="w-full h-full" style={{ background: `linear-gradient(135deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
@@ -1161,9 +1187,9 @@ const Page = () => {
 					</div>
 
 					{/* Card 4: Cultural Heritage */}
-					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-700 hover:scale-110 hover:rotate-2 relative overflow-hidden" 
+					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-4" 
 						 style={{ borderColor: `${primaryOrange}30` }}
->
+					>
 						{/* Theme Background Effect */}
 						<div className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-500">
 							<div className="w-full h-full" style={{ background: `linear-gradient(225deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
@@ -1201,7 +1227,7 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 					{/* Left: Pakistan Map */}
-					<div className="relative">
+					<div className="relative scroll-reveal-slide-left">
 						<div className="relative group">
 							<Image 
 								src="/images/map-2.png"
@@ -1249,7 +1275,7 @@ const Page = () => {
 						</div>
 
 					{/* Right: Content */}
-					<div className="text-white">
+					<div className="text-white scroll-reveal-slide-right">
 						<div className="mb-8">
 							<h2 className="font-bold mb-6">
 								<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
@@ -1296,7 +1322,7 @@ const Page = () => {
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="mb-12">
-					<div className="text-center mb-8">
+					<div className="text-center mb-8 scroll-reveal-fade-up">
 						<h2 className="font-bold mb-4">
 							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 								color: primaryOrange
@@ -1400,7 +1426,7 @@ const Page = () => {
 			<AnimatedBackground variant="light" />
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
-				<div className="text-center mb-12">
+				<div className="text-center mb-12 scroll-reveal-fade-up">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
@@ -1429,8 +1455,8 @@ const Page = () => {
 						{ name: 'Chitral & Kalash – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Ancient culture and traditions' },
 						{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
 					].map((tour, idx) => (
-						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos-delay={idx * 150}>
-							<div className="relative h-80 rounded-2xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-12 hover:rotate-x-5 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/20">
+						<div key={idx} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
+							<div className="relative h-80 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								{/* 3D Card Background */}
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								
@@ -1438,7 +1464,7 @@ const Page = () => {
 										src={tour.image}
 									alt={tour.name}
 									fill
-									className="object-cover group-hover:scale-125 transition-transform duration-700 filter group-hover:brightness-110"
+									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110 img-hover-scale"
 								/>
 								
 								{/* Enhanced Gradient Overlay */}
@@ -1498,7 +1524,7 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 					{/* Left: Family Tour Packages */}
-					<div>
+					<div className="scroll-reveal-slide-left">
 						<div className="mb-8">
 							<h2 className="text-3xl md:text-4xl font-bold mb-4" 
 								style={{ color: primaryOrange, textShadow: '2px 2px 0px rgba(33, 31, 32, 0.2)' }}>
@@ -1545,7 +1571,7 @@ const Page = () => {
 					</div>
 
 					{/* Right: Honeymoon Trips */}
-					<div className="relative">
+					<div className="relative scroll-reveal-slide-right">
 						<div className="mb-8">
 							<h2 className="text-3xl md:text-4xl font-bold mb-4" 
 								style={{ color: secondaryBlack, textShadow: '2px 2px 0px rgba(249, 150, 33, 0.2)' }}>
@@ -1563,7 +1589,7 @@ const Page = () => {
 								alt="Honeymoon Trip"
 								width={600}
 								height={400}
-								className="w-full h-auto object-cover rounded"
+								className="w-full h-auto object-cover rounded img-hover-scale"
 							/>
 							<div className="absolute bottom-6 left-6 px-4 py-2 rounded-lg shadow-lg flex items-center gap-2 transform hover:scale-110 transition-transform" 
 								 style={{ backgroundColor: primaryOrange }}>
@@ -1591,7 +1617,7 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
-					<div>
+					<div className="scroll-reveal-slide-left">
 						<h2 className="font-bold mb-4">
 							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 								color: primaryOrange
@@ -1616,14 +1642,14 @@ const Page = () => {
 								</li>
 							))}
 						</ul>
-						<button className="px-6 py-3 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" style={{ borderColor: primaryOrange, color: primaryOrange }}>
+						<button className="px-6 py-3 border-2 rounded-lg font-semibold hover:scale-110 transition-transform btn-ripple" style={{ borderColor: primaryOrange, color: primaryOrange }}>
 							Learn More
 						</button>
 					</div>
 
 					{/* Right: Video Embed - Replace YOUR_VIDEO_ID with your YouTube video ID */}
-					<div>
-						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl">
+					<div className="scroll-reveal-slide-right">
+						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl img-hover-scale">
 							<iframe 
 								src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_VIDEO_ID&controls=0&modestbranding=1&rel=0"
 								title="Video"
@@ -1641,7 +1667,7 @@ const Page = () => {
 		{/* ====================== PUBLIC GROUP TOURS ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 				<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8">
+				<div className="mb-8 scroll-reveal-fade-up">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
@@ -1740,7 +1766,7 @@ const Page = () => {
 		{/* ====================== TESTIMONIALS ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 				<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8">
+				<div className="mb-8 scroll-reveal-fade-up">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
@@ -1757,7 +1783,7 @@ const Page = () => {
 
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 					{/* Testimonial 1 */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105">
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105 card-hover scroll-reveal-scale stagger-delay-1">
 						<div className="flex items-center mb-4">
 							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4 transform hover:rotate-12 transition-transform">
 								<Image 
@@ -1804,7 +1830,7 @@ const Page = () => {
 		{/* ====================== WHERE ARE WE LOCATED? ====================== */}
 		<section className="py-16 md:py-24 bg-white">
 			<div className="container mx-auto px-4 max-w-7xl">
-				<div className="mb-8">
+				<div className="mb-8 scroll-reveal-fade-up">
 					<h2 className="font-bold mb-6">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
