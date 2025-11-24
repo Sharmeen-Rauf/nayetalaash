@@ -1207,13 +1207,6 @@ const Page = () => {
 						</div>
 					</div>
 				</div>
-
-				{/* Pagination Dots */}
-				<div className="flex justify-center gap-2">
-					<div className="w-2 h-2 rounded-full bg-[#f99621]"></div>
-					<div className="w-2 h-2 rounded-full bg-gray-300"></div>
-					<div className="w-2 h-2 rounded-full bg-gray-300"></div>
-				</div>
 			</div>
 		</section>
 			
