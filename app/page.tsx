@@ -2000,9 +2000,9 @@ const Page = () => {
 						<Image 
 							src="/images/Final....png"
 							alt="Nayi Talaash Logo"
-							width={150}
-							height={60}
-							className="h-12 w-auto object-contain mb-4"
+							width={200}
+							height={80}
+							className="h-16 sm:h-20 w-auto object-contain mb-4"
 						/>
 						<p className="text-sm mb-4 leading-relaxed" style={{ color: `${secondaryBlack}80` }}>
 							Nayi Talaash helps travelers discover the beauty, culture, and hospitality of Pakistan through unforgettable journeys, expert tour guidance, and personalized travel experiences.
