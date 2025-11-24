@@ -1508,11 +1508,11 @@ const Page = () => {
 		</section>
 
 		{/* ====================== FAMILY TOUR & HONEYMOON PACKAGES ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+		<section className="py-16 md:py-24 bg-white relative overflow-x-hidden">
 			{/* Animated Background */}
 			<AnimatedBackground variant="default" />
 			
-			<div className="container mx-auto px-4 max-w-7xl relative z-10">
+			<div className="container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl relative z-10 overflow-x-hidden">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 					{/* Left: Family Tour Packages */}
 					<div className="scroll-reveal-slide-left">
