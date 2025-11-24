@@ -1543,7 +1543,7 @@ const Page = () => {
 									<li key={idx} className="flex items-center gap-3" data-aos-delay={idx * 100 + 300}>
 										<div className="w-3 h-3 rounded-full transform hover:scale-150 transition-transform" 
 											 style={{ backgroundColor: primaryOrange }}></div>
-										<span className="text-lg transition-colors" 
+										<span className="text-base transition-colors" 
 											  style={{ color: `${secondaryBlack}90` }}
 											  onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange}
 											  onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}90`}>
