@@ -1888,7 +1888,7 @@ const Page = () => {
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
 				<div className="flex flex-col md:flex-row items-center justify-between">
 					<div>
-						<p className="text-white text-2xl font-serif italic mb-2">Ready for an unforgettable tour!</p>
+						<p className="text-white text-2xl font-autography mb-2">Ready for an unforgettable tour!</p>
 						<h2 className="text-4xl md:text-5xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 					</div>
 						<button
