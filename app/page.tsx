@@ -1122,9 +1122,9 @@ const Page = () => {
 					</p>
 				</div>
 				
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 					{/* Card 1: World's Highest Mountain Ranges */}
-					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-1" 
+					<div className="group bg-white border-2 rounded-xl p-5 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-1" 
 						 style={{ borderColor: `${primaryOrange}30` }}
 					>
 						{/* Theme Background Effect */}
@@ -1132,20 +1132,20 @@ const Page = () => {
 							<div className="w-full h-full" style={{ background: `linear-gradient(45deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
 						</div>
 						<div className="relative z-10">
-							<div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
+							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
 								 style={{ backgroundColor: primaryOrange }}>
-								<Mountain className="w-10 h-10" style={{ color: secondaryBlack }} strokeWidth={1.5} />
+								<Mountain className="w-7 h-7" style={{ color: secondaryBlack }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-base font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
+							<h3 className="text-sm font-bold mb-3 transition-colors duration-300 transform -rotate-1" 
 								style={{ color: secondaryBlack }}>World&apos;s Highest Mountain Ranges</h3>
-							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
+							<p className="leading-relaxed text-xs" style={{ color: `${secondaryBlack}80` }}>
 								Pakistan hosts 5 of the world&apos;s 14 highest peaks, including K2 a paradise for adventure seekers and nature lovers.
 							</p>
 						</div>
 					</div>
 
 					{/* Card 2: World's Largest Deep-Sea Port */}
-					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-2" 
+					<div className="group bg-white border-2 rounded-xl p-5 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-2" 
 						 style={{ borderColor: `${primaryOrange}30` }}
 					>
 						{/* Theme Background Effect */}
@@ -1153,20 +1153,20 @@ const Page = () => {
 							<div className="w-full h-full" style={{ background: `linear-gradient(-45deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
 						</div>
 						<div className="relative z-10">
-							<div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
+							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
 								 style={{ backgroundColor: secondaryBlack }}>
-								<Ship className="w-10 h-10" style={{ color: primaryOrange }} strokeWidth={1.5} />
+								<Ship className="w-7 h-7" style={{ color: primaryOrange }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-base font-bold mb-4 transition-colors duration-300 transform rotate-1" 
+							<h3 className="text-sm font-bold mb-3 transition-colors duration-300 transform rotate-1" 
 								style={{ color: secondaryBlack }}>World&apos;s Largest Deep-Sea Port</h3>
-							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
+							<p className="leading-relaxed text-xs" style={{ color: `${secondaryBlack}80` }}>
 								Gwadar stands as one of the deepest sea ports globally, reshaping trade routes and offering travelers pristine beaches and breathtaking coastal drives.
 							</p>
 						</div>
 					</div>
 
 					{/* Card 3: World's Highest Paved Road */}
-					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-3" 
+					<div className="group bg-white border-2 rounded-xl p-5 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-3" 
 						 style={{ borderColor: `${primaryOrange}30` }}
 					>
 						{/* Theme Background Effect */}
@@ -1174,20 +1174,20 @@ const Page = () => {
 							<div className="w-full h-full" style={{ background: `linear-gradient(135deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
 						</div>
 						<div className="relative z-10">
-							<div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
+							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
 								 style={{ backgroundColor: primaryOrange }}>
-								<Route className="w-10 h-10" style={{ color: secondaryBlack }} strokeWidth={1.5} />
+								<Route className="w-7 h-7" style={{ color: secondaryBlack }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-base font-bold mb-4 transition-colors duration-300 transform -rotate-1" 
+							<h3 className="text-sm font-bold mb-3 transition-colors duration-300 transform -rotate-1" 
 								style={{ color: secondaryBlack }}>World&apos;s Highest Paved Road</h3>
-							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
+							<p className="leading-relaxed text-xs" style={{ color: `${secondaryBlack}80` }}>
 								The legendary Karakoram Highway is the highest paved international road on Earth a once-in-a-lifetime driving experience through mountains, rivers, and glaciers.
 							</p>
 						</div>
 					</div>
 
 					{/* Card 4: Cultural Heritage */}
-					<div className="group bg-white border-2 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-4" 
+					<div className="group bg-white border-2 rounded-xl p-5 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] card-hover relative overflow-hidden scroll-reveal-scale stagger-delay-4" 
 						 style={{ borderColor: `${primaryOrange}30` }}
 					>
 						{/* Theme Background Effect */}
@@ -1195,13 +1195,13 @@ const Page = () => {
 							<div className="w-full h-full" style={{ background: `linear-gradient(225deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
 						</div>
 						<div className="relative z-10">
-							<div className="w-20 h-20 rounded-full flex items-center justify-center mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
+							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
 								 style={{ backgroundColor: secondaryBlack }}>
-								<Landmark className="w-10 h-10" style={{ color: primaryOrange }} strokeWidth={1.5} />
+								<Landmark className="w-7 h-7" style={{ color: primaryOrange }} strokeWidth={1.5} />
 							</div>
-							<h3 className="text-base font-bold mb-4 transition-colors duration-300 transform rotate-1" 
+							<h3 className="text-sm font-bold mb-3 transition-colors duration-300 transform rotate-1" 
 								style={{ color: secondaryBlack }}>Cultural Heritage Like Nowhere Else</h3>
-							<p className="leading-relaxed text-sm" style={{ color: `${secondaryBlack}80` }}>
+							<p className="leading-relaxed text-xs" style={{ color: `${secondaryBlack}80` }}>
 								From ancient civilizations like Mohenjo Daro to Mughal masterpieces, Pakistan&apos;s history spans thousands of years of art, culture, and innovation.
 							</p>
 						</div>
@@ -1352,7 +1352,7 @@ const Page = () => {
 						{ name: 'Khaplu', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
 					].map((dest, idx) => (
 						<div key={idx} className="relative group cursor-pointer" data-aos-delay={idx * 50}>
-							<div className="relative h-48 rounded-xl overflow-hidden transform hover:scale-105 hover:rotate-1 transition-all duration-500 shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-orange-200" 
+							<div className="relative h-40 rounded-xl overflow-hidden transform hover:scale-105 hover:rotate-1 transition-all duration-500 shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-orange-200" 
 								 style={{ borderColor: `${primaryOrange}20` }}>
 								<Image 
 									src={dest.image}
@@ -1361,7 +1361,7 @@ const Page = () => {
 									className="object-cover group-hover:scale-110 transition-transform duration-500"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent group-hover:from-black/85 transition-all"></div>
-								<div className="absolute bottom-4 left-4 text-white font-bold text-lg transform group-hover:translate-y-[-4px] transition-transform"
+								<div className="absolute bottom-3 left-3 text-white font-bold text-sm transform group-hover:translate-y-[-4px] transition-transform"
 									 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
 									{dest.name}
 								</div>
@@ -1424,7 +1424,7 @@ const Page = () => {
 				</div>
 
 				{/* Enhanced Tour Packages Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
 					{[
 						{ name: 'Hunza – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Majestic valleys and ancient culture' },
 						{ name: 'Skardu – 6 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Gateway to K2 and Baltoro Glacier' },
@@ -1437,7 +1437,7 @@ const Page = () => {
 						{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
 					].map((tour, idx) => (
 						<div key={idx} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
-							<div className="relative h-80 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
+							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								{/* 3D Card Background */}
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								
@@ -1457,16 +1457,16 @@ const Page = () => {
 								</div>
 								
 								{/* Content */}
-								<div className="absolute bottom-0 left-0 right-0 p-6 transform group-hover:translate-y-[-12px] transition-all duration-500">
-									<div className="mb-3">
-										<div className="inline-block px-3 py-1 bg-[#f99621]/80 backdrop-blur-sm rounded-full text-white text-xs font-semibold uppercase tracking-wider transform group-hover:scale-110 transition-transform duration-300">
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
+									<div className="mb-2">
+										<div className="inline-block px-2 py-0.5 bg-[#f99621]/80 backdrop-blur-sm rounded-full text-white text-[10px] font-semibold uppercase tracking-wider transform group-hover:scale-110 transition-transform duration-300">
 											Tour Package
 										</div>
 									</div>
-									<h3 className="text-white font-bold text-2xl mb-2 transform group-hover:translate-x-2 transition-transform duration-300">
+									<h3 className="text-white font-bold text-lg mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
 										{tour.name}
 									</h3>
-									<p className="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+									<p className="text-gray-200 text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
 										{tour.description}
 									</p>
 									<div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
@@ -1663,7 +1663,7 @@ const Page = () => {
 					</div>
 
 				{/* Enhanced Tour Cards with 3D Effects */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 					{[
 						{ title: '2 DAYS MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 11,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', duration: '2 Days' },
 						{ title: '5 DAYS HUNZA, NALTAR, AND KHUNJERAB PUBLIC GROUP TOUR', price: 'From Rs 25,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', duration: '5 Days' },
@@ -1671,7 +1671,7 @@ const Page = () => {
 						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', duration: '3 Days' },
 					].map((tour, idx) => (
 						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos-delay={idx * 150}>
-							<div className="relative h-80 rounded-2xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-8 hover:rotate-x-3 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/25">
+							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-8 hover:rotate-x-3 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/25">
 								{/* 3D Floating Badge */}
 								<div className="absolute top-4 left-4 z-20 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
 									<div className="px-3 py-1 bg-[#f99621] text-white text-xs font-bold rounded-full shadow-lg">
@@ -1704,12 +1704,12 @@ const Page = () => {
 								</div>
 								
 								{/* Content */}
-								<div className="absolute bottom-0 left-0 right-0 p-6 transform group-hover:translate-y-[-16px] transition-all duration-500">
-									<h3 className="text-white font-bold text-lg mb-3 leading-tight transform group-hover:translate-x-2 transition-transform duration-300">
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-16px] transition-all duration-500">
+									<h3 className="text-white font-bold text-base mb-2 leading-tight transform group-hover:translate-x-2 transition-transform duration-300">
 										{tour.title}
 						</h3>
 									<div className="flex items-center justify-between">
-										<p className="text-[#f99621] font-bold text-xl transform group-hover:scale-110 transition-transform duration-300">
+										<p className="text-[#f99621] font-bold text-base transform group-hover:scale-110 transition-transform duration-300">
 											{tour.price}
 										</p>
 										<div className="opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0">
@@ -1758,45 +1758,45 @@ const Page = () => {
 					</h2>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 					{/* Testimonial 1 */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105 card-hover scroll-reveal-scale stagger-delay-1">
-						<div className="flex items-center mb-4">
-							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4 transform hover:rotate-12 transition-transform">
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-5 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105 card-hover scroll-reveal-scale stagger-delay-1">
+						<div className="flex items-center mb-3">
+							<div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-3 transform hover:rotate-12 transition-transform">
 								<Image 
 									src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
 									alt="Muhammad Nauraiz Mushtaq"
-									width={64}
-									height={64}
+									width={48}
+									height={48}
 									className="w-full h-full object-cover"
 								/>
 							</div>
 							<div>
-								<p className="text-gray-600 italic mb-2">
+								<p className="text-gray-600 italic mb-2 text-sm">
 									&ldquo;Outstanding services provided by NatureHikePakistan. Highly recommended!&rdquo;
 								</p>
-								<p className="font-bold text-[#211f20]">MUHAMMAD NAURAIZ MUSHTAQ</p>
+								<p className="font-bold text-[#211f20] text-sm">MUHAMMAD NAURAIZ MUSHTAQ</p>
 							</div>
 						</div>
 					</div>
 
 					{/* Testimonial 2 */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-6 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105">
-						<div className="flex items-center mb-4">
-							<div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden mr-4 transform hover:rotate-12 transition-transform">
+					<div className="bg-white border-2 border-gray-200 rounded-lg p-5 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105">
+						<div className="flex items-center mb-3">
+							<div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-3 transform hover:rotate-12 transition-transform">
 								<Image 
 									src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
 									alt="Ali Rehman"
-									width={64}
-									height={64}
+									width={48}
+									height={48}
 									className="w-full h-full object-cover"
 								/>
 							</div>
 							<div>
-								<p className="text-gray-600 italic mb-2">
+								<p className="text-gray-600 italic mb-2 text-sm">
 									&ldquo;We chose Nature Hike Pakistan for our vacations. Beautiful views and excellent customer service.&rdquo;
 								</p>
-								<p className="font-bold text-[#211f20]">ALI REHMAN</p>
+								<p className="font-bold text-[#211f20] text-sm">ALI REHMAN</p>
 							</div>
 						</div>
 					</div>
