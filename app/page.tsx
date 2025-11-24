@@ -1609,7 +1609,7 @@ const Page = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
 					<div className="scroll-reveal-slide-left">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: primaryOrange }}>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							Why Travel With Us?
 						</h2>
 						<p className="mb-6 text-base" style={{ color: '#6b7280' }}>
