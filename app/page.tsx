@@ -687,7 +687,7 @@ const Page = () => {
 
 
 	return (
-		<div className="relative min-h-screen font-sans overflow-x-hidden" style={{ cursor: 'none' }}>
+		<div className="relative min-h-screen font-sans overflow-x-hidden">
 			
 		{/* --- 1. Two-Tier Navbar --- */}
 		{/* Top Bar - Dark Background with Contact & Social */}
@@ -2129,22 +2129,6 @@ const Page = () => {
 			</div>
 		</footer>
 
-		{/* Custom Cursor */}
-		<div
-			className="fixed z-[130] pointer-events-none"
-			style={{
-				left: mousePos.x - 12,
-				top: mousePos.y - 12,
-				width: 24,
-				height: 24,
-				borderRadius: 9999,
-				border: `2px solid ${primaryOrange}`,
-				background: isScrollingNow ? `${primaryOrange}` : 'transparent',
-				mixBlendMode: 'difference',
-				transition: 'transform 120ms ease, background-color 150ms ease',
-				transform: isScrollingNow ? 'scale(0.6)' : 'scale(1)',
-			}}
-		/>
 
 		{/* Enhanced CSS Animations and 3D Effects */}
 		<style>{`
