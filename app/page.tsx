@@ -1329,19 +1329,6 @@ const Page = () => {
 								Hidden Gem
 							</span>
 						</h2>
-						<p className="text-lg md:text-xl max-w-3xl mx-auto" style={{ color: secondaryBlack }}>
-							Travel with us to experience the beauty, culture, and hospitality of Pakistan.
-						</p>
-					</div>
-					
-					<div className="flex flex-col sm:flex-row justify-between items-center">
-					<h3 className="text-lg md:text-xl font-bold transform -rotate-1 mb-4 sm:mb-0" 
-						style={{ color: secondaryBlack }}>
-						Where to next?
-					</h3>
-						<p className="text-lg" style={{ color: `${secondaryBlack}80` }}>
-							Explore top destinations across Pakistan and plan your next adventure.
-						</p>
 					</div>
 				</div>
 							
@@ -1375,7 +1362,7 @@ const Page = () => {
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent group-hover:from-black/85 transition-all"></div>
 								<div className="absolute bottom-4 left-4 text-white font-bold text-lg transform group-hover:translate-y-[-4px] transition-transform"
-									 style={{ fontFamily: 'serif', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
+									 style={{ fontFamily: 'var(--font-poppins), Poppins, sans-serif', textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
 									{dest.name}
 								</div>
 							</div>
@@ -1389,7 +1376,7 @@ const Page = () => {
 							onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
 							onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
 >
-						Explore Tours
+						See More
 					</button>
 				</div>
 
