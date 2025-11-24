@@ -18,6 +18,7 @@ const Page = () => {
 	const [activePackageIndex, setActivePackageIndex] = useState(0); 
 	// State for selected destination region
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+	const [showAllDestinations, setShowAllDestinations] = useState(false);
 
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
@@ -88,6 +89,26 @@ const Page = () => {
 			}
 		]
 	};
+
+	const destinationData = [
+		{ name: 'Hunza', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+		{ name: 'Skardu', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+		{ name: 'Gilgit', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+		{ name: 'Lahore', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+		{ name: 'Islamabad', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+		{ name: 'Karachi', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+		{ name: 'Swat', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+		{ name: 'Naran Kaghan', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+		{ name: 'Gwadar', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+		{ name: 'Neelum Valley', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+		{ name: 'Fairy Meadows', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+		{ name: 'Chitral', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+		{ name: 'Bahawalpur', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+		{ name: 'Murree', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
+		{ name: 'Khaplu', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+	];
+
+	const visibleDestinations = showAllDestinations ? destinationData : destinationData.slice(0, 10);
 
 	const mountainAnimationData = {
 		"v": "5.7.4",
@@ -1334,23 +1355,7 @@ const Page = () => {
 							
 				{/* Destination Cards Grid */}
 				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
-					{[
-						{ name: 'Hunza', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ name: 'Skardu', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'Gilgit', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'Lahore', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ name: 'Islamabad', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'Karachi', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ name: 'Swat', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'Naran Kaghan', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ name: 'Gwadar', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'Neelum Valley', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ name: 'Fairy Meadows', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'Chitral', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ name: 'Bahawalpur', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-						{ name: 'Murree', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-						{ name: 'Khaplu', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-					].map((dest, idx) => (
+					{visibleDestinations.map((dest, idx) => (
 						<div key={idx} className="relative group cursor-pointer" data-aos-delay={idx * 50}>
 							<div className="relative h-40 rounded-xl overflow-hidden transform hover:scale-105 hover:rotate-1 transition-all duration-500 shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-orange-200" 
 								 style={{ borderColor: `${primaryOrange}20` }}>
@@ -1371,12 +1376,14 @@ const Page = () => {
 				</div>
 				
 				<div className="text-center">
-					<button className="px-8 py-3 border-2 rounded-full font-semibold hover:scale-110 transition-all duration-300 transform hover:rotate-1" 
-							style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
-							onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
-							onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
->
-						See More
+					<button
+						className="px-8 py-3 border-2 rounded-full font-semibold hover:scale-110 transition-all duration-300 transform hover:rotate-1" 
+						style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
+						onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
+						onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
+						onClick={() => setShowAllDestinations((prev) => !prev)}
+					>
+						{showAllDestinations ? 'See Less' : 'See More'}
 					</button>
 				</div>
 
