@@ -687,9 +687,9 @@ const Page = () => {
 							<span className="hidden sm:inline">+92 331 438251</span>
 							<span className="sm:hidden">+92 331...</span>
 						</a>
-						<a href="mailto:info@nayetalash.com" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
+						<a href="mailto:info@nayitalaash.com" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
 							<Mail className="w-3 h-3" style={{ color: '#f99621' }} />
-							<span className="hidden md:inline">info@nayetalash.com</span>
+							<span className="hidden md:inline">info@nayitalaash.com</span>
 							<span className="md:hidden text-[9px]">info@...</span>
 						</a>
 					</div>
@@ -1993,8 +1993,8 @@ const Page = () => {
 							</div>
 							<div className="flex items-center gap-2">
 								<Mail className="w-4 h-4" style={{ color: primaryOrange }} />
-								<a href="mailto:info@nayetalash.com" className="text-sm transition-colors" style={{ color: `${secondaryBlack}80` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}80`}>
-									info@nayetalash.com
+								<a href="mailto:info@nayitalaash.com" className="text-sm transition-colors" style={{ color: `${secondaryBlack}80` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}80`}>
+									info@nayitalaash.com
 								</a>
 							</div>
 						</div>
