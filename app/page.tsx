@@ -1495,8 +1495,8 @@ const Page = () => {
 
 				{/* Enhanced Tour Packages Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-					{visibleTourPackages.map((tour, idx) => (
-							<div key={`${tour.name}-${idx}`} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
+					{(showAllPackages ? allTourPackages : allTourPackages.slice(0, 6)).map((tour, idx) => (
+							<div key={`tour-package-${idx}-${tour.name.replace(/\s+/g, '-')}`} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
 								<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 									{/* 3D Card Background */}
 									<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
@@ -1548,7 +1548,9 @@ const Page = () => {
 				<div className="text-center">
 					<button 
 						type="button"
-						onClick={() => setShowAllPackages(!showAllPackages)}
+						onClick={() => {
+							setShowAllPackages(!showAllPackages);
+						}}
 						className="px-10 py-4 border-2 rounded-full font-bold hover:scale-110 transition-all duration-300 transform hover:rotate-1 text-lg" 
 						style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
 						onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
