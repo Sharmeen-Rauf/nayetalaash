@@ -1898,29 +1898,25 @@ const Page = () => {
 		</section>
 
 		{/* ====================== READY FOR TOUR CTA ====================== */}
-		<section className="py-16 md:py-24 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
-			{/* Animated Background Elements */}
-			<div className="absolute inset-0 z-[1]">
-				<AnimatedBackground variant="orange" />
-			</div>
-
-			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
-				<div className="flex flex-col md:flex-row items-center justify-between">
-					<div>
+		<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
+			<div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-[2]">
+				<div className="flex flex-col md:flex-row items-center justify-between gap-4">
+					<div className="px-4 md:px-6">
 						<p className="text-white text-2xl font-autography mb-2">Ready for an unforgettable tour!</p>
 						<h2 className="text-4xl md:text-5xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 					</div>
+					<div className="px-4 md:px-6">
 						<button
-						onClick={handleWhatsAppClick}
-						className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl mt-6 md:mt-0"
-						style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-
-					>
-						Customize A Tour
+							onClick={handleWhatsAppClick}
+							className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
+							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+						>
+							Customize A Tour
 						</button>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
 		{/* ====================== FOOTER ====================== */}
 		<footer className="py-16 bg-white border-t relative overflow-hidden" style={{ borderColor: `${primaryOrange}30` }}>
