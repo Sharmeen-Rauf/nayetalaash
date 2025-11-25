@@ -1327,7 +1327,7 @@ const Page = () => {
 									className="absolute top-0 left-0 w-full h-full object-contain transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
 								/>
 								{/* Enhanced Glowing dots on map with travel destinations */}
-								<div className="absolute top-[16%] left-[46%] group z-10" style={{ transform: 'translate(-50%, -50%)' }}>
+								<div className="absolute top-[10%] left-[48%] group z-10" style={{ transform: 'translate(-50%, -50%)' }}>
 									<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg ring-2 ring-white/50"></div>
 									<div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
 										Hunza Valley
@@ -1351,7 +1351,7 @@ const Page = () => {
 										Karachi
 									</div>
 								</div>
-								<div className="absolute top-[80%] left-[35%] group z-10" style={{ animationDelay: '2s', transform: 'translate(-50%, -50%)' }}>
+								<div className="absolute top-[85%] left-[25%] group z-10" style={{ animationDelay: '2s', transform: 'translate(-50%, -50%)' }}>
 									<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg ring-2 ring-white/50"></div>
 									<div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
 										Gwadar
