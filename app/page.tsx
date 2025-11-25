@@ -1,10 +1,23 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, ChevronDown, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music, Ship, Route, Droplets, Play, CheckCircle2 } from 'lucide-react';
 import Lottie from 'lottie-react';
+
+// Tour Packages Data - moved outside component to avoid recreation
+const allTourPackages = [
+	{ name: 'Hunza – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Majestic valleys and ancient culture' },
+	{ name: 'Skardu – 6 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Gateway to K2 and Baltoro Glacier' },
+	{ name: 'Swat & Kalam – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Switzerland of Pakistan' },
+	{ name: 'Murree & Nathia Gali – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Colonial hill station charm' },
+	{ name: 'Naran Kaghan – 3 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Alpine lakes and meadows' },
+	{ name: 'Azad Kashmir – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Paradise on earth' },
+	{ name: 'Fairy Meadows – 3 Days Trek Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Base camp to Nanga Parbat' },
+	{ name: 'Chitral & Kalash – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Ancient culture and traditions' },
+	{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
+];
 
 const Page = () => {
 	// --- STATE AND HOOKS: MUST BE INSIDE THE COMPONENT FUNCTION ---
@@ -24,19 +37,6 @@ const Page = () => {
 		whatToDo: '',
 		whereToGo: ''
 	});
-
-	// Tour Packages Data
-	const allTourPackages = [
-		{ name: 'Hunza – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Majestic valleys and ancient culture' },
-		{ name: 'Skardu – 6 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Gateway to K2 and Baltoro Glacier' },
-		{ name: 'Swat & Kalam – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Switzerland of Pakistan' },
-		{ name: 'Murree & Nathia Gali – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Colonial hill station charm' },
-		{ name: 'Naran Kaghan – 3 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Alpine lakes and meadows' },
-		{ name: 'Azad Kashmir – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Paradise on earth' },
-		{ name: 'Fairy Meadows – 3 Days Trek Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Base camp to Nanga Parbat' },
-		{ name: 'Chitral & Kalash – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Ancient culture and traditions' },
-		{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
-	];
 
 	// Get visible packages based on state
 	const visibleTourPackages = showAllPackages ? allTourPackages : allTourPackages.slice(0, 6);
@@ -1482,9 +1482,9 @@ const Page = () => {
 				</div>
 
 				{/* Enhanced Tour Packages Grid */}
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-					{(showAllPackages ? allTourPackages : allTourPackages.slice(0, 6)).map((tour, idx) => (
-							<div key={`tour-package-${idx}-${tour.name.replace(/\s+/g, '-')}`} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
+				<div key={`packages-grid-${showAllPackages}`} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+					{visibleTourPackages.map((tour, idx) => (
+							<div key={`tour-${tour.name}-${idx}`} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
 								<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 									{/* 3D Card Background */}
 									<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
@@ -1537,7 +1537,7 @@ const Page = () => {
 					<button 
 						type="button"
 						onClick={() => {
-							setShowAllPackages(!showAllPackages);
+							setShowAllPackages(prev => !prev);
 						}}
 						className="px-10 py-4 border-2 rounded-full font-bold hover:scale-110 transition-all duration-300 transform hover:rotate-1 text-lg" 
 						style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
