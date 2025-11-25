@@ -25,6 +25,22 @@ const Page = () => {
 		whereToGo: ''
 	});
 
+	// Tour Packages Data
+	const allTourPackages = [
+		{ name: 'Hunza – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Majestic valleys and ancient culture' },
+		{ name: 'Skardu – 6 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Gateway to K2 and Baltoro Glacier' },
+		{ name: 'Swat & Kalam – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Switzerland of Pakistan' },
+		{ name: 'Murree & Nathia Gali – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Colonial hill station charm' },
+		{ name: 'Naran Kaghan – 3 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Alpine lakes and meadows' },
+		{ name: 'Azad Kashmir – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Paradise on earth' },
+		{ name: 'Fairy Meadows – 3 Days Trek Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Base camp to Nanga Parbat' },
+		{ name: 'Chitral & Kalash – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Ancient culture and traditions' },
+		{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
+	];
+
+	// Get visible packages based on state
+	const visibleTourPackages = showAllPackages ? allTourPackages : allTourPackages.slice(0, 6);
+
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
 		window.open('https://wa.me/923311438251', '_blank');
@@ -1503,63 +1519,53 @@ const Page = () => {
 
 				{/* Enhanced Tour Packages Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-					{[
-						{ name: 'Hunza – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Majestic valleys and ancient culture' },
-						{ name: 'Skardu – 6 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Gateway to K2 and Baltoro Glacier' },
-						{ name: 'Swat & Kalam – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Switzerland of Pakistan' },
-						{ name: 'Murree & Nathia Gali – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Colonial hill station charm' },
-						{ name: 'Naran Kaghan – 3 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Alpine lakes and meadows' },
-						{ name: 'Azad Kashmir – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Paradise on earth' },
-						{ name: 'Fairy Meadows – 3 Days Trek Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Base camp to Nanga Parbat' },
-						{ name: 'Chitral & Kalash – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Ancient culture and traditions' },
-						{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
-					].filter((_, idx) => showAllPackages || idx < 6).map((tour, idx) => (
-						<div key={`${tour.name}-${idx}`} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
-							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
-								{/* 3D Card Background */}
-								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-								
-								<Image 
+					{visibleTourPackages.map((tour, idx) => (
+							<div key={`${tour.name}-${idx}`} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
+								<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
+									{/* 3D Card Background */}
+									<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+									
+									<Image 
 										src={tour.image}
-									alt={tour.name}
-									fill
-									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110 img-hover-scale"
-								/>
-								
-								{/* Enhanced Gradient Overlay */}
-								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
-								
-								{/* Floating Elements */}
-								<div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-[#f99621]/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:rotate-180">
-									<Mountain className="w-6 h-6 text-white" />
-								</div>
-								
-								{/* Content */}
-								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
-									<div className="mb-2">
-										<div className="inline-block px-2 py-0.5 bg-[#f99621]/80 backdrop-blur-sm rounded-full text-white text-[10px] font-semibold uppercase tracking-wider transform group-hover:scale-110 transition-transform duration-300">
-											Tour Package
+										alt={tour.name}
+										fill
+										className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110 img-hover-scale"
+									/>
+									
+									{/* Enhanced Gradient Overlay */}
+									<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
+									
+									{/* Floating Elements */}
+									<div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-[#f99621]/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:rotate-180">
+										<Mountain className="w-6 h-6 text-white" />
+									</div>
+									
+									{/* Content */}
+									<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
+										<div className="mb-2">
+											<div className="inline-block px-2 py-0.5 bg-[#f99621]/80 backdrop-blur-sm rounded-full text-white text-[10px] font-semibold uppercase tracking-wider transform group-hover:scale-110 transition-transform duration-300">
+												Tour Package
+											</div>
+										</div>
+										<h3 className="text-white font-bold text-lg mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+											{tour.name}
+										</h3>
+										<p className="text-gray-200 text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+											{tour.description}
+										</p>
+										<div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+											<button className="px-4 py-2 rounded-lg text-sm font-semibold transition-colors transform hover:scale-105"
+													style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
+												Explore Now
+											</button>
 										</div>
 									</div>
-									<h3 className="text-white font-bold text-lg mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
-										{tour.name}
-									</h3>
-									<p className="text-gray-200 text-xs opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-										{tour.description}
-									</p>
-									<div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-										<button className="px-4 py-2 rounded-lg text-sm font-semibold transition-colors transform hover:scale-105"
-												style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
-											Explore Now
-										</button>
-									</div>
+									
+									{/* 3D Border Effect */}
+									<div className="absolute inset-0 rounded-2xl border-2 border-transparent transition-all duration-500" 
+										 style={{ borderColor: `${primaryOrange}30` }}></div>
 								</div>
-								
-								{/* 3D Border Effect */}
-								<div className="absolute inset-0 rounded-2xl border-2 border-transparent transition-all duration-500" 
-									 style={{ borderColor: `${primaryOrange}30` }}></div>
-						</div>
-						</div>
+							</div>
 					))}
 				</div>
 				
