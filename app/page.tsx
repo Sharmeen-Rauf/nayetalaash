@@ -1582,91 +1582,63 @@ const Page = () => {
 			<AnimatedBackground variant="default" />
 			
 			<div className="container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl relative z-10 overflow-x-hidden">
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-					{/* Left: Family Tour Packages */}
-					<div className="scroll-reveal-slide-left">
-						<div className="mb-8">
-							<h2 className="text-3xl md:text-4xl font-bold mb-4" 
-								style={{ color: primaryOrange }}>
-								Family Tour Packages
-							</h2>
-							<p className="text-base" style={{ color: '#6b7280' }}>
-								Experience comfort, safety, and unforgettable moments with your loved ones.
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+					{/* Left: Honeymoon Trips - Polaroid Style */}
+					<div className="relative scroll-reveal-slide-left">
+						<div className="relative" style={{ transform: 'rotate(-2deg)' }}>
+							{/* Polaroid Frame */}
+							<div className="bg-white p-4 shadow-2xl" style={{ border: '8px solid white', boxShadow: '0 10px 40px rgba(0,0,0,0.2)' }}>
+								<Image 
+									src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
+									alt="Honeymoon Trip"
+									width={600}
+									height={450}
+									className="w-full h-auto object-cover"
+								/>
+							</div>
+							{/* "Honeymoon Trip" text below polaroid */}
+							<p className="font-autography text-2xl text-center mt-4" style={{ color: secondaryBlack, transform: 'rotate(2deg)' }}>
+								Honeymoon Trip
 							</p>
-						</div>
-						
-						<div className="mb-8">
-							<h3 className="text-lg md:text-xl font-bold mb-4 transform rotate-1" 
-								style={{ color: secondaryBlack,  }}>
-								What&apos;s Included:
-							</h3>
-							<ul className="space-y-3">
-								{[
-									'Premium accommodation',
-									'Hygienic meals',
-									'Comfortable transportation',
-									'Dedicated tour guide',
-									'Photography and drone shots (optional)',
-									'24/7 customer support',
-								].map((item, idx) => (
-									<li key={idx} className="flex items-center gap-3" data-aos-delay={idx * 100 + 300}>
-										<div className="w-3 h-3 rounded-full transform hover:scale-150 transition-transform" 
-											 style={{ backgroundColor: primaryOrange }}></div>
-										<span className="text-base transition-colors" 
-											  style={{ color: `${secondaryBlack}90` }}
-											  onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange}
-											  onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}90`}>
-											{item}
-										</span>
-									</li>
-								))}
-							</ul>
-						</div>
-						
-						<button className="px-8 py-4 rounded-full font-bold transition-all transform hover:scale-105 hover:rotate-1 text-lg shadow-lg" 
-								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
->
-							Plan Your Family Trip
-						</button>
-					</div>
-
-					{/* Right: Honeymoon Trips */}
-					<div className="relative scroll-reveal-slide-right">
-						<div className="mb-8">
-							<h2 className="text-3xl md:text-4xl font-bold mb-4" 
-								style={{ color: secondaryBlack }}>
-								Honeymoon Trips
-							</h2>
-							<p className="text-base" style={{ color: '#6b7280' }}>
-								Create beautiful memories with romantic getaways to Pakistan&apos;s most scenic destinations.
-							</p>
-						</div>
-						
-						<div className="relative bg-white border-4 p-4 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105 rounded-lg" 
-							 style={{ transform: 'rotate(-2deg)', borderColor: `${primaryOrange}50` }}>
-							<Image 
-								src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
-								alt="Honeymoon Trip"
-								width={600}
-								height={400}
-								className="w-full h-auto object-cover rounded img-hover-scale"
-							/>
-							<div className="absolute bottom-6 left-6 px-4 py-2 rounded-lg shadow-lg flex items-center gap-2 transform hover:scale-110 transition-transform" 
-								 style={{ backgroundColor: primaryOrange }}>
-								<Phone className="w-5 h-5" style={{ color: secondaryBlack }} />
-								<span className="font-bold text-sm" style={{ color: secondaryBlack }}>BOOK YOUR TOUR NOW +92 331 438251</span>
+							{/* Phone booking bubble overlay */}
+							<div className="absolute bottom-8 left-4 bg-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 z-10" style={{ transform: 'rotate(2deg)' }}>
+								<Phone className="w-5 h-5" style={{ color: primaryOrange }} />
+								<div className="flex flex-col">
+									<span className="text-xs font-semibold" style={{ color: secondaryBlack }}>BOOK YOUR TOURS NOW</span>
+									<span className="text-base font-bold" style={{ color: secondaryBlack }}>+92 331 438251</span>
+								</div>
 							</div>
 						</div>
+					</div>
+
+					{/* Right: Family Tour Packages */}
+					<div className="scroll-reveal-slide-right">
+						<h2 className="text-3xl md:text-4xl font-bold mb-8"> 
+							<span style={{ color: primaryOrange }}>FAMILY</span>{' '}
+							<span style={{ color: secondaryBlack }}>TOUR PACKAGES</span>
+						</h2>
 						
-						<div className="mt-8 text-center">
-							<button className="px-8 py-4 border-2 rounded-full font-bold transition-all transform hover:scale-105 hover:-rotate-1 text-lg" 
-									style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
-									onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
-									onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
->
-								Customize Your Trip Now
-							</button>
-						</div>
+						<ul className="space-y-4 mb-8">
+							{[
+								'Quality Accommodations',
+								'Luxury Transport with Personal Driver',
+								'Flight Reservations',
+								'4x4 Jeep Safaris',
+								'Local and Traditional Meals',
+								'Bonfire Nights',
+							].map((item, idx) => (
+								<li key={idx} className="flex items-center gap-3">
+									<CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: primaryOrange }} />
+									<span className="text-base" style={{ color: secondaryBlack }}>
+										{item}
+									</span>
+								</li>
+							))}
+						</ul>
+						
+						<button className="text-lg font-bold uppercase tracking-wide" style={{ color: secondaryBlack }}>
+							GET YOUR FREE QUOTE NOW!
+						</button>
 					</div>
 				</div>
 			</div>
