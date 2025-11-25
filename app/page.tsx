@@ -1307,7 +1307,7 @@ const Page = () => {
 		</section>
 			
 		{/* ====================== DISCOVER PAKISTAN ====================== */}
-		<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
+		<section className="py-5 md:py-6 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
 			{/* Animated Background Elements */}
 			<div className="absolute inset-0 z-[1]">
 				<AnimatedBackground variant="orange" />
