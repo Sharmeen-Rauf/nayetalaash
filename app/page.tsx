@@ -1196,11 +1196,14 @@ const Page = () => {
 			{/* Animated Background */}
 			<AnimatedBackground variant="light" />
 			
-			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
-				<div className="text-center mb-16 scroll-reveal-fade-up">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+				<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-							color: primaryOrange
+							color: primaryOrange,
+							paddingLeft: '8px',
+							paddingRight: '8px',
+							display: 'inline-block'
 						}}>
 							Pakistan's Enchanting 
 						</span>
