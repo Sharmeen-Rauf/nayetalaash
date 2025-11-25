@@ -1317,43 +1317,45 @@ const Page = () => {
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
 					{/* Left: Pakistan Map */}
 					<div className="relative scroll-reveal-slide-left">
-						<div className="relative group max-w-xs mx-auto lg:max-w-sm">
-							<Image 
-								src="/images/map-2.png"
-								alt="Pakistan Map"
-								width={250}
-								height={330}
-								className="w-full h-auto object-contain max-w-full transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
-							/>
-							{/* Enhanced Glowing dots on map with travel destinations */}
-							<div className="absolute top-[20%] left-[38%] group">
-								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
-								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-									Hunza Valley
+						<div className="relative group max-w-xs mx-auto lg:max-w-sm w-full">
+							<div className="relative w-full" style={{ paddingBottom: '132%' }}>
+								<Image 
+									src="/images/map-2.png"
+									alt="Pakistan Map"
+									width={250}
+									height={330}
+									className="absolute top-0 left-0 w-full h-full object-contain transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
+								/>
+								{/* Enhanced Glowing dots on map with travel destinations */}
+								<div className="absolute top-[18%] left-[48%] group z-10">
+									<div className="w-3 h-3 bg-white rounded-full animate-pulse shadow-lg"></div>
+									<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+										Hunza Valley
+									</div>
 								</div>
-							</div>
-							<div className="absolute top-[50%] right-[30%] group" style={{ animationDelay: '0.5s' }}>
-								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
-								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-									Lahore
+								<div className="absolute top-[58%] left-[68%] group z-10" style={{ animationDelay: '0.5s' }}>
+									<div className="w-3 h-3 bg-white rounded-full animate-pulse shadow-lg"></div>
+									<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+										Lahore
+									</div>
 								</div>
-							</div>
-							<div className="absolute bottom-[28%] left-[50%] group" style={{ animationDelay: '1s' }}>
-								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
-								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-									Karachi
+								<div className="absolute top-[78%] left-[55%] group z-10" style={{ animationDelay: '1s' }}>
+									<div className="w-3 h-3 bg-white rounded-full animate-pulse shadow-lg"></div>
+									<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+										Karachi
+									</div>
 								</div>
-							</div>
-							<div className="absolute top-[35%] left-[42%] group" style={{ animationDelay: '1.5s' }}>
-								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
-								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-									Islamabad
+								<div className="absolute top-[40%] left-[50%] group z-10" style={{ animationDelay: '1.5s' }}>
+									<div className="w-3 h-3 bg-white rounded-full animate-pulse shadow-lg"></div>
+									<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+										Islamabad
+									</div>
 								</div>
-							</div>
-							<div className="absolute bottom-[38%] right-[28%] group" style={{ animationDelay: '2s' }}>
-								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
-								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-									Gwadar
+								<div className="absolute top-[70%] left-[32%] group z-10" style={{ animationDelay: '2s' }}>
+									<div className="w-3 h-3 bg-white rounded-full animate-pulse shadow-lg"></div>
+									<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+										Gwadar
+									</div>
 								</div>
 							</div>
 							{/* Connecting lines between cities */}
@@ -1365,35 +1367,28 @@ const Page = () => {
 
 					{/* Right: Content */}
 					<div className="text-white scroll-reveal-slide-right">
-						<div className="mb-2">
-							<h2 className="text-3xl md:text-4xl font-bold mb-2">
+						<div className="mb-1">
+							<h2 className="text-3xl md:text-4xl font-bold mb-1">
 								<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 									color: 'white',
 									textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
 								}}>
 									Discover
 								</span>
-								<span className="block mt-1" style={{ 
+								<span className="block mt-0.5" style={{ 
 									color: primaryOrange
 								}}>
 									Pakistan
 								</span>
 							</h2>
-							<div className="w-12 h-12 mx-auto md:mx-0 mb-2">
-								<Lottie 
-									animationData={mountainAnimationData} 
-									loop={true}
-									style={{ width: '100%', height: '100%' }}
-								/>
-							</div>
 						</div>
-						<p className="text-sm md:text-base leading-snug mb-4 text-white">
+						<p className="text-sm md:text-base leading-snug mb-3 text-white">
 							Pakistan is a land of unmatched beauty, culture, and hospitality. With its mix of vibrant cities, serene valleys, vast deserts, and unspoiled coastlines, the country invites travelers to experience its rich traditions, diverse cuisines, and breathtaking landscapes.
 						</p>
-						<p className="text-sm md:text-base leading-snug mb-6 text-white opacity-90">
+						<p className="text-sm md:text-base leading-snug mb-4 text-white opacity-90">
 							Whether you dream of standing before snow capped peaks, exploring historic landmarks, or immersing yourself in the warmth of local communities Nayi Talaash is here to make your journey smooth, affordable, and memorable.
 						</p>
-						<button className="px-10 py-4 font-bold rounded-full border-2 transition-all transform hover:scale-105 text-lg" 
+						<button className="px-6 py-2.5 font-bold rounded-full border-2 transition-all transform hover:scale-105 text-sm" 
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack, borderColor: primaryOrange }}
 								onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
 								onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
