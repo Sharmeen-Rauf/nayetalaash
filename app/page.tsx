@@ -1418,11 +1418,8 @@ const Page = () => {
 			</section>
 			
 		{/* ====================== WHERE TO NEXT? ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-x-hidden">
-			{/* Animated Background */}
-			<AnimatedBackground variant="default" />
-			
-			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
+		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 				<div className="mb-12">
 					<div className="text-center mb-8 scroll-reveal-fade-up">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -1441,7 +1438,7 @@ const Page = () => {
 				</div>
 							
 				{/* Destination Cards Grid */}
-				<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
+				<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
 					{visibleDestinations.map((dest, idx) => (
 						<div key={idx} className="relative group cursor-pointer" data-aos-delay={idx * 50}>
 							<div className="relative h-40 rounded-xl overflow-hidden transform hover:scale-105 hover:rotate-1 transition-all duration-500 shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-orange-200" 
@@ -1469,31 +1466,12 @@ const Page = () => {
 						style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
 						onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
 						onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
-						onClick={(e) => { e.preventDefault(); setShowAllDestinations((prev) => !prev); }}
+						onClick={() => setShowAllDestinations((prev) => !prev)}
 					>
 						{showAllDestinations ? 'See Less' : 'See More'}
 					</button>
 				</div>
-
-				{/* Floating WhatsApp Icon with Theme Colors */}
-				<div className="fixed right-4 bottom-4 z-50">
-					<button 
-						onClick={handleWhatsAppClick}
-						className="w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 pulse-glow relative overflow-hidden group"
-						style={{ backgroundColor: primaryOrange }}
-					>
-						<MessageCircle className="w-8 h-8 z-10" style={{ color: secondaryBlack }} />
-						<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ backgroundColor: secondaryBlack }}></div>
-						<div className="absolute -top-1 -right-1 w-4 h-4">
-							<Lottie 
-								animationData={travelAnimationData} 
-								loop={true}
-								style={{ width: '100%', height: '100%' }}
-							/>
-								</div>
-					</button>
-							</div>
-						</div>
+			</div>
 		</section>
 
 		{/* ====================== PAKISTAN TOUR PACKAGES ====================== */}
