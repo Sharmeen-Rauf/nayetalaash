@@ -1602,8 +1602,8 @@ const Page = () => {
 									height={300}
 									className="w-full h-auto object-cover"
 								/>
-								{/* Phone booking bubble overlay - Centered in middle of image */}
-								<div className="absolute top-1/2 left-1/2 bg-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 z-10" style={{ transform: 'translate(-50%, -50%) rotate(2deg)' }}>
+								{/* Phone booking bubble overlay - Left mid corner */}
+								<div className="absolute top-1/2 left-4 bg-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 z-10" style={{ transform: 'translateY(-50%) rotate(2deg)' }}>
 									<Phone className="w-5 h-5" style={{ color: primaryOrange }} />
 									<div className="flex flex-col">
 										<span className="text-xs font-semibold" style={{ color: secondaryBlack }}>BOOK YOUR TOURS NOW</span>
