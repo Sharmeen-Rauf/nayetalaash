@@ -218,9 +218,9 @@ p {
 .stagger-delay-5 { transition-delay: 0.5s; }
 .stagger-delay-6 { transition-delay: 0.6s; }
 
-/* Smooth scroll behavior */
+/* Smooth scroll behavior - Disabled to prevent unwanted scrolling */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 /* Professional hover effects */

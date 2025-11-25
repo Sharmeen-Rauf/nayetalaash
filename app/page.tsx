@@ -1022,19 +1022,19 @@ const Page = () => {
 
 					{/* Nav Links */}
 				<nav className="flex flex-col space-y-2 flex-grow">
-					<a href="#home" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+					<a href="#home" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 						HOME
 					</a>
-					<a href="#tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+					<a href="#tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 						PAKISTAN TOURS
 					</a>
-					<a href="#city-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+					<a href="#city-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 						CITY TOURS
 					</a>
-					<a href="#group-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+					<a href="#group-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 						GROUP TOUR
 					</a>
-					<a href="#destination" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+					<a href="#destination" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 						DESTINATION
 					</a>
 					<a href="/about" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
@@ -1464,11 +1464,12 @@ const Page = () => {
 				
 				<div className="text-center">
 					<button
+						type="button"
 						className="px-8 py-3 border-2 rounded-full font-semibold hover:scale-110 transition-all duration-300 transform hover:rotate-1" 
 						style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
 						onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
 						onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
-						onClick={() => setShowAllDestinations((prev) => !prev)}
+						onClick={(e) => { e.preventDefault(); setShowAllDestinations((prev) => !prev); }}
 					>
 						{showAllDestinations ? 'See Less' : 'See More'}
 					</button>
@@ -1571,7 +1572,8 @@ const Page = () => {
 				
 				<div className="text-center">
 					<button 
-						onClick={() => setShowAllPackages(!showAllPackages)}
+						type="button"
+						onClick={(e) => { e.preventDefault(); setShowAllPackages(!showAllPackages); }}
 						className="px-10 py-4 border-2 rounded-full font-bold hover:scale-110 transition-all duration-300 transform hover:rotate-1 text-lg" 
 						style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
 						onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
