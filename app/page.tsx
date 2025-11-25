@@ -1497,11 +1497,8 @@ const Page = () => {
 		</section>
 
 		{/* ====================== PAKISTAN TOUR PACKAGES ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-x-hidden">
-			{/* Animated Background */}
-			<AnimatedBackground variant="light" />
-			
-			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
+		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 				<div className="text-center mb-12 scroll-reveal-fade-up">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
@@ -1573,7 +1570,7 @@ const Page = () => {
 				<div className="text-center">
 					<button 
 						type="button"
-						onClick={(e) => { e.preventDefault(); setShowAllPackages(!showAllPackages); }}
+						onClick={() => setShowAllPackages(!showAllPackages)}
 						className="px-10 py-4 border-2 rounded-full font-bold hover:scale-110 transition-all duration-300 transform hover:rotate-1 text-lg" 
 						style={{ borderColor: primaryOrange, color: primaryOrange, backgroundColor: 'transparent' }}
 						onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
