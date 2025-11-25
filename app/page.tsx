@@ -1463,9 +1463,9 @@ const Page = () => {
 		</section>
 
 		{/* ====================== PAKISTAN TOUR PACKAGES ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+		<section className="py-16 md:py-24 bg-white relative">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-				<div className="text-center mb-12 scroll-reveal-fade-up">
+				<div className="text-center mb-12">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
@@ -1482,9 +1482,9 @@ const Page = () => {
 				</div>
 
 				{/* Enhanced Tour Packages Grid */}
-				<div key={`packages-grid-${showAllPackages}`} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
 					{visibleTourPackages.map((tour, idx) => (
-							<div key={`tour-${tour.name}-${idx}`} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
+							<div key={`tour-${tour.name}-${idx}`} className="relative group cursor-pointer">
 								<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 									{/* 3D Card Background */}
 									<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
