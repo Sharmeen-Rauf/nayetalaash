@@ -1080,7 +1080,7 @@ const Page = () => {
 			<div className="relative z-10 h-full flex items-center justify-center">
 				<div className="text-center px-4">
 					<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
-						<span className="font-autography hero-text-reveal" style={{ display: 'inline-block', textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)' }}>
+						<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
 							Discover the Unseen.
 						</span>
 						<br />
@@ -1175,7 +1175,7 @@ const Page = () => {
 						</div>
 					</div>
 
-					<div className="mt-6 hero-text-reveal hero-text-delay-3">
+					{/* <div className="mt-6 hero-text-reveal hero-text-delay-3">
 						<button 
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-full transition-all duration-300 transform hover:scale-105 shadow-2xl text-base btn-ripple"
@@ -1186,7 +1186,7 @@ const Page = () => {
 						>
 							Customize Your Tour
 						</button>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>
