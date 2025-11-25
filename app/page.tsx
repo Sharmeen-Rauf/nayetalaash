@@ -1561,7 +1561,7 @@ const Page = () => {
 					<div className="relative flex justify-center">
 						<div className="relative max-w-sm" style={{ transform: 'rotate(-2deg)' }}>
 							{/* Polaroid Frame */}
-							<div className="bg-white p-3 shadow-2xl relative" style={{ border: '8px solid white', boxShadow: '0 10px 40px rgba(0,0,0,0.2)' }}>
+							<div className="bg-white p-3 shadow-2xl relative overflow-visible" style={{ border: '8px solid white', boxShadow: '0 10px 40px rgba(0,0,0,0.2)' }}>
 								<Image 
 									src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
 									alt="Honeymoon Trip"
@@ -1569,8 +1569,8 @@ const Page = () => {
 									height={300}
 									className="w-full h-auto object-cover"
 								/>
-								{/* Phone booking bubble overlay - Bottom left, half in half out */}
-								<div className="absolute bottom-3 left-3 bg-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 z-10 border-2" style={{ transform: 'translate(-16px, 16px) rotate(2deg)', borderColor: primaryOrange }}>
+								{/* Phone booking bubble overlay - Middle left, half in half out */}
+								<div className="absolute top-1/2 left-0 bg-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 z-10 border-2" style={{ transform: 'translate(-50%, -50%) rotate(2deg)', borderColor: primaryOrange }}>
 									<Phone className="w-5 h-5" style={{ color: primaryOrange }} />
 									<div className="flex flex-col">
 										<span className="text-xs font-semibold" style={{ color: secondaryBlack }}>BOOK YOUR TOURS NOW</span>
