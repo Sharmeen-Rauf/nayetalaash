@@ -1512,8 +1512,8 @@ const Page = () => {
 						{ name: 'Fairy Meadows – 3 Days Trek Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Base camp to Nanga Parbat' },
 						{ name: 'Chitral & Kalash – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Ancient culture and traditions' },
 						{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
-					].slice(0, showAllPackages ? 9 : 6).map((tour, idx) => (
-						<div key={idx} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
+					].filter((_, idx) => showAllPackages || idx < 6).map((tour, idx) => (
+						<div key={`${tour.name}-${idx}`} className="relative group cursor-pointer perspective-1000 scroll-reveal-scale" style={{ transitionDelay: `${idx * 0.1}s` }}>
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								{/* 3D Card Background */}
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
