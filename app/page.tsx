@@ -1585,30 +1585,30 @@ const Page = () => {
 			<div className="container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl relative z-10 overflow-x-hidden">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 					{/* Left: Honeymoon Trips - Polaroid Style */}
-					<div className="relative">
-						<div className="relative" style={{ transform: 'rotate(-2deg)' }}>
+					<div className="relative flex justify-center">
+						<div className="relative max-w-sm" style={{ transform: 'rotate(-2deg)' }}>
 							{/* Polaroid Frame */}
-							<div className="bg-white p-4 shadow-2xl" style={{ border: '8px solid white', boxShadow: '0 10px 40px rgba(0,0,0,0.2)' }}>
+							<div className="bg-white p-3 shadow-2xl relative" style={{ border: '8px solid white', boxShadow: '0 10px 40px rgba(0,0,0,0.2)' }}>
 								<Image 
 									src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800"
 									alt="Honeymoon Trip"
-									width={600}
-									height={450}
+									width={350}
+									height={300}
 									className="w-full h-auto object-cover"
 								/>
-							</div>
-							{/* "Honeymoon Trip" text below polaroid */}
-							<p className="font-autography text-2xl text-center mt-4" style={{ color: secondaryBlack, transform: 'rotate(2deg)' }}>
-								Honeymoon Trip
-							</p>
-							{/* Phone booking bubble overlay */}
-							<div className="absolute bottom-8 left-4 bg-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 z-10" style={{ transform: 'rotate(2deg)' }}>
-								<Phone className="w-5 h-5" style={{ color: primaryOrange }} />
-								<div className="flex flex-col">
-									<span className="text-xs font-semibold" style={{ color: secondaryBlack }}>BOOK YOUR TOURS NOW</span>
-									<span className="text-base font-bold" style={{ color: secondaryBlack }}>+92 331 438251</span>
+								{/* Phone booking bubble overlay - Centered in middle of image */}
+								<div className="absolute top-1/2 left-1/2 bg-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 z-10" style={{ transform: 'translate(-50%, -50%) rotate(2deg)' }}>
+									<Phone className="w-5 h-5" style={{ color: primaryOrange }} />
+									<div className="flex flex-col">
+										<span className="text-xs font-semibold" style={{ color: secondaryBlack }}>BOOK YOUR TOURS NOW</span>
+										<span className="text-base font-bold" style={{ color: secondaryBlack }}>+92 331 438251</span>
+									</div>
 								</div>
 							</div>
+							{/* "Honeymoon Trip" text below polaroid */}
+							<p className="font-autography text-xl text-center mt-3" style={{ color: secondaryBlack, transform: 'rotate(2deg)' }}>
+								Honeymoon Trip
+							</p>
 						</div>
 					</div>
 
