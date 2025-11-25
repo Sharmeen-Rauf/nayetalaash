@@ -1307,50 +1307,50 @@ const Page = () => {
 		</section>
 			
 		{/* ====================== DISCOVER PAKISTAN ====================== */}
-		<section className="py-12 md:py-16 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
+		<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
 			{/* Animated Background Elements */}
 			<div className="absolute inset-0 z-[1]">
 				<AnimatedBackground variant="orange" />
 			</div>
 
 			<div className="container mx-auto px-4 max-w-7xl relative z-[2]">
-				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+				<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
 					{/* Left: Pakistan Map */}
 					<div className="relative scroll-reveal-slide-left">
-						<div className="relative group max-w-md mx-auto lg:max-w-full">
+						<div className="relative group max-w-xs mx-auto lg:max-w-sm">
 							<Image 
 								src="/images/map-2.png"
 								alt="Pakistan Map"
-								width={300}
-								height={400}
+								width={250}
+								height={330}
 								className="w-full h-auto object-contain max-w-full transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
 							/>
 							{/* Enhanced Glowing dots on map with travel destinations */}
-							<div className="absolute top-1/4 left-1/3 group">
+							<div className="absolute top-[20%] left-[38%] group">
 								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
 								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
 									Hunza Valley
 								</div>
 							</div>
-							<div className="absolute top-1/2 right-1/4 group" style={{ animationDelay: '0.5s' }}>
+							<div className="absolute top-[50%] right-[30%] group" style={{ animationDelay: '0.5s' }}>
 								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
 								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
 									Lahore
 								</div>
 							</div>
-							<div className="absolute bottom-1/4 left-1/2 group" style={{ animationDelay: '1s' }}>
+							<div className="absolute bottom-[28%] left-[50%] group" style={{ animationDelay: '1s' }}>
 								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
 								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
 									Karachi
 								</div>
 							</div>
-							<div className="absolute top-1/3 left-1/4 group" style={{ animationDelay: '1.5s' }}>
+							<div className="absolute top-[35%] left-[42%] group" style={{ animationDelay: '1.5s' }}>
 								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
 								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
 									Islamabad
 								</div>
 							</div>
-							<div className="absolute bottom-1/3 right-1/3 group" style={{ animationDelay: '2s' }}>
+							<div className="absolute bottom-[38%] right-[28%] group" style={{ animationDelay: '2s' }}>
 								<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg"></div>
 								<div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
 									Gwadar
@@ -1365,21 +1365,21 @@ const Page = () => {
 
 					{/* Right: Content */}
 					<div className="text-white scroll-reveal-slide-right">
-						<div className="mb-4">
-							<h2 className="text-3xl md:text-4xl font-bold mb-3">
+						<div className="mb-2">
+							<h2 className="text-3xl md:text-4xl font-bold mb-2">
 								<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 									color: 'white',
 									textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
 								}}>
 									Discover
 								</span>
-								<span className="block mt-2" style={{ 
+								<span className="block mt-1" style={{ 
 									color: primaryOrange
 								}}>
 									Pakistan
 								</span>
 							</h2>
-							<div className="w-16 h-16 mx-auto md:mx-0">
+							<div className="w-12 h-12 mx-auto md:mx-0 mb-2">
 								<Lottie 
 									animationData={mountainAnimationData} 
 									loop={true}
@@ -1387,10 +1387,10 @@ const Page = () => {
 								/>
 							</div>
 						</div>
-						<p className="text-sm md:text-base leading-snug mb-6 text-white">
+						<p className="text-sm md:text-base leading-snug mb-4 text-white">
 							Pakistan is a land of unmatched beauty, culture, and hospitality. With its mix of vibrant cities, serene valleys, vast deserts, and unspoiled coastlines, the country invites travelers to experience its rich traditions, diverse cuisines, and breathtaking landscapes.
 						</p>
-						<p className="text-sm md:text-base leading-snug mb-8 text-white opacity-90">
+						<p className="text-sm md:text-base leading-snug mb-6 text-white opacity-90">
 							Whether you dream of standing before snow capped peaks, exploring historic landmarks, or immersing yourself in the warmth of local communities Nayi Talaash is here to make your journey smooth, affordable, and memorable.
 						</p>
 						<button className="px-10 py-4 font-bold rounded-full border-2 transition-all transform hover:scale-105 text-lg" 
