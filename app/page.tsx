@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Menu, X, Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, ChevronDown, Instagram, Facebook, Mail, Phone, MessageCircle, Heart, Award, Building2, Landmark, Youtube, Music, Ship, Route, Droplets, Play, CheckCircle2 } from 'lucide-react';
 import Lottie from 'lottie-react';
 
@@ -1577,14 +1578,14 @@ const Page = () => {
 		</section>
 
 		{/* ====================== FAMILY TOUR & HONEYMOON PACKAGES ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-x-hidden">
+		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
 			{/* Animated Background */}
 			<AnimatedBackground variant="default" />
 			
 			<div className="container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl relative z-10 overflow-x-hidden">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 					{/* Left: Honeymoon Trips - Polaroid Style */}
-					<div className="relative scroll-reveal-slide-left">
+					<div className="relative">
 						<div className="relative" style={{ transform: 'rotate(-2deg)' }}>
 							{/* Polaroid Frame */}
 							<div className="bg-white p-4 shadow-2xl" style={{ border: '8px solid white', boxShadow: '0 10px 40px rgba(0,0,0,0.2)' }}>
@@ -1612,10 +1613,10 @@ const Page = () => {
 					</div>
 
 					{/* Right: Family Tour Packages */}
-					<div className="scroll-reveal-slide-right">
+					<div>
 						<h2 className="text-3xl md:text-4xl font-bold mb-8"> 
-							<span style={{ color: primaryOrange }}>FAMILY</span>{' '}
-							<span style={{ color: secondaryBlack }}>TOUR PACKAGES</span>
+							<span style={{ color: primaryOrange }}>Family</span>{' '}
+							<span style={{ color: secondaryBlack }}>Tour Packages</span>
 						</h2>
 						
 						<ul className="space-y-4 mb-8">
@@ -1629,16 +1630,20 @@ const Page = () => {
 							].map((item, idx) => (
 								<li key={idx} className="flex items-center gap-3">
 									<CheckCircle2 className="w-5 h-5 flex-shrink-0" style={{ color: primaryOrange }} />
-									<span className="text-base" style={{ color: secondaryBlack }}>
+									<span className="text-base" style={{ color: '#6b7280' }}>
 										{item}
 									</span>
 								</li>
 							))}
 						</ul>
 						
-						<button className="text-lg font-bold uppercase tracking-wide" style={{ color: secondaryBlack }}>
+						<Link 
+							href="/contact"
+							className="inline-block text-lg font-bold uppercase tracking-wide transition-colors hover:text-[#f99621]" 
+							style={{ color: secondaryBlack }}
+						>
 							GET YOUR FREE QUOTE NOW!
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>
@@ -1694,7 +1699,7 @@ const Page = () => {
 			
 		{/* ====================== PUBLIC GROUP TOURS ====================== */}
 		<section className="py-16 md:py-24 bg-white overflow-x-hidden">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
 				<div className="mb-8 scroll-reveal-fade-up text-center">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
@@ -1727,8 +1732,8 @@ const Page = () => {
 								<div className="absolute top-4 left-4 z-20 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
 									<div className="px-3 py-1 bg-[#f99621] text-white text-xs font-bold rounded-full shadow-lg">
 										{tour.duration}
-					</div>
-				</div>
+									</div>
+								</div>
 								
 								{/* Price Badge */}
 								<div className="absolute top-4 right-4 z-20 transform group-hover:scale-110 group-hover:-rotate-12 transition-all duration-500">
@@ -1751,7 +1756,7 @@ const Page = () => {
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-16px] transition-all duration-500">
 									<h3 className="text-white font-bold text-base mb-2 leading-tight transform group-hover:translate-x-2 transition-transform duration-300">
 										{tour.title}
-						</h3>
+									</h3>
 									<div className="flex items-center justify-between">
 										<p className="text-[#f99621] font-bold text-base transform group-hover:scale-110 transition-transform duration-300">
 											{tour.price}
@@ -1762,7 +1767,7 @@ const Page = () => {
 											</button>
 										</div>
 									</div>
-					</div>
+								</div>
 
 								{/* 3D Border Effect */}
 								<div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#f99621]/40 transition-all duration-500"></div>
@@ -1776,13 +1781,8 @@ const Page = () => {
 						))}
 					</div>
 					
-				{/* Pagination Dots */}
-				<div className="flex justify-center gap-2">
-					<div className="w-2 h-2 rounded-full bg-[#f99621]"></div>
-					<div className="w-2 h-2 rounded-full bg-gray-300"></div>
-					</div>
-				</div>
-			</section>
+			</div>
+		</section>
 			
 		{/* ====================== TESTIMONIALS ====================== */}
 		<section className="py-16 md:py-24 bg-white overflow-x-hidden">
