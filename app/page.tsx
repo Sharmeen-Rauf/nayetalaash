@@ -748,18 +748,6 @@ const Page = () => {
 								<Youtube className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 							</a>
 							
-							{/* TikTok */}
-							<a 
-								href="https://www.tiktok.com/@nayetalash" 
-								target="_blank" 
-								rel="noopener noreferrer" 
-								className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
-								aria-label="TikTok"
-							>
-								<svg className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor">
-									<path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.35 2.78-1.03 3.93-.95 1.65-2.78 2.63-4.66 2.86-1.5.2-3.07.05-4.54-.47-1.5-.54-2.74-1.5-3.6-2.82-1.12-1.77-1.38-3.93-.9-5.96.5-2.1 1.9-3.88 3.83-4.99 1.9-1.08 4.15-1.4 6.35-1.02.01-1.48-.04-2.96-.04-4.44-.79-.01-1.58-.01-2.37 0-.01 1.54-.01 3.08-.01 4.62-.84.01-1.68.01-2.52.01v-3.15c.99-.01 1.98-.01 2.97-.01.01-.66.01-1.32.01-1.98z"/>
-								</svg>
-							</a>
 				</div>
 
 						{/* Customize A Tour Button - Round */}
