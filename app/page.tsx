@@ -1770,9 +1770,9 @@ const Page = () => {
 		</section>
 			
 		{/* ====================== TESTIMONIALS ====================== */}
-		<section className="py-16 md:py-24 bg-white overflow-x-hidden">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
-				<div className="mb-8 scroll-reveal-fade-up text-center">
+		<section className="py-16 md:py-24 bg-white overflow-hidden">
+			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+				<div className="mb-12 text-center">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
 							color: primaryOrange
@@ -1782,50 +1782,62 @@ const Page = () => {
 						<span className="block mt-2" style={{ 
 							color: secondaryBlack
 						}}>
-							What Our Clients Have To Say?
+							WHAT OUR CLIENTS HAVE TO SAY?
 						</span>
 					</h2>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 					{/* Testimonial 1 */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-5 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105 card-hover scroll-reveal-scale stagger-delay-1">
-						<div className="flex items-center mb-3">
-							<div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-3 transform hover:rotate-12 transition-transform">
-								<Image 
-									src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
-									alt="Muhammad Nauraiz Mushtaq"
-									width={48}
-									height={48}
-									className="w-full h-full object-cover"
-								/>
+					<div className="bg-white rounded-lg p-6 shadow-lg overflow-hidden">
+						<div className="flex gap-4">
+							{/* Profile Picture */}
+							<div className="flex-shrink-0">
+								<div className="w-20 h-20 rounded-full overflow-hidden">
+									<Image 
+										src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
+										alt="Muhammad Nauraiz Mushtaq"
+										width={80}
+										height={80}
+										className="w-full h-full object-cover"
+									/>
+								</div>
 							</div>
-							<div>
-								<p className="text-gray-600 italic mb-2 text-sm">
-									&ldquo;Outstanding services provided by NatureHikePakistan. Highly recommended!&rdquo;
+							
+							{/* Review Text */}
+							<div className="flex-1 relative">
+								<p className="text-sm leading-relaxed mb-4" style={{ color: `${secondaryBlack}CC` }}>
+									Our trip to Swat, Malam Jabba, and Kalam was phenomenal. Great thanks to the outstanding services provided by NatureHikePakistan and our guide, Neha. From transport to food and organization, every detail was handled meticulously. The stunning landscapes and warm hospitality, combined with excellent services, made our tour an unforgettable adventure. Highly recommend NatureHikePakistan to explore the beauty of Pakistan!
 								</p>
-								<p className="font-bold text-[#211f20] text-sm">MUHAMMAD NAURAIZ MUSHTAQ</p>
+								<p className="font-bold text-sm" style={{ color: secondaryBlack }}>MUHAMMAD NAURAIZ MUSHTAQ,</p>
+								<div className="absolute bottom-0 right-0 text-7xl opacity-15 font-serif" style={{ color: `${secondaryBlack}80`, lineHeight: '1', transform: 'translateY(10px)' }}>&rdquo;</div>
 							</div>
 						</div>
 					</div>
 
 					{/* Testimonial 2 */}
-					<div className="bg-white border-2 border-gray-200 rounded-lg p-5 shadow-md hover:shadow-xl transition-all duration-500 hover:scale-105">
-						<div className="flex items-center mb-3">
-							<div className="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-3 transform hover:rotate-12 transition-transform">
-								<Image 
-									src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
-									alt="Ali Rehman"
-									width={48}
-									height={48}
-									className="w-full h-full object-cover"
-								/>
+					<div className="bg-white rounded-lg p-6 shadow-lg overflow-hidden">
+						<div className="flex gap-4">
+							{/* Profile Picture */}
+							<div className="flex-shrink-0">
+								<div className="w-20 h-20 rounded-full overflow-hidden">
+									<Image 
+										src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
+										alt="Ali Rehman"
+										width={80}
+										height={80}
+										className="w-full h-full object-cover"
+									/>
+								</div>
 							</div>
-							<div>
-								<p className="text-gray-600 italic mb-2 text-sm">
-									&ldquo;We chose Nature Hike Pakistan for our vacations. Beautiful views and excellent customer service.&rdquo;
+							
+							{/* Review Text */}
+							<div className="flex-1 relative">
+								<p className="text-sm leading-relaxed mb-4" style={{ color: `${secondaryBlack}CC` }}>
+									The best decision I ever made by myself by choosing Nature Hike Pakistan for my vacation, I&apos;m glad that Neha took care of everything personally. From pick up from my home to the best hotels in town, confident rider and a comfortable car, beautiful view and variety of shopping options. And a relaxing journey. 5 hotels, 21 viewpoints, the most beautiful ever. There are pre-planned packages and customized Options. Haste-free and exceptional customer service. I had really enjoyed my time. Contact Neha and choose your package.
 								</p>
-								<p className="font-bold text-[#211f20] text-sm">ALI REHMAN</p>
+								<p className="font-bold text-sm" style={{ color: secondaryBlack }}>ALI REHMAN,</p>
+								<div className="absolute top-0 left-0 text-7xl opacity-15 font-serif" style={{ color: `${secondaryBlack}80`, lineHeight: '1', transform: 'translateY(-10px)' }}>&ldquo;</div>
 							</div>
 						</div>
 					</div>
