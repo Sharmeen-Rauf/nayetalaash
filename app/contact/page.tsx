@@ -445,7 +445,7 @@ const ContactPage = () => {
 						{/* Right: Content */}
 						<div className="order-1 lg:order-2">
 							<h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Karachi, Pakistan<br />— Head Office
+								Karachi, Pakistan<br />Head Office
 							</h3>
 							<p className="text-base mb-4 leading-relaxed" style={{ color: '#6b7280' }}>
 								Located in the heart of the city, our head office in PECHS Block 6 serves as the center of all operations at Nayi Talaash. This is where our travel experts plan routes, design tour experiences and assist travelers from all across Pakistan.
