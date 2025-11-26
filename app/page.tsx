@@ -711,7 +711,7 @@ const Page = () => {
 			
 		{/* --- 1. Two-Tier Navbar --- */}
 		{/* Top Bar - Dark Background with Contact & Social */}
-		<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20]">
+		<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20] relative">
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between py-1 sm:py-1.5">
 					{/* Left: Contact Info */}
@@ -767,10 +767,10 @@ const Page = () => {
 							
 				</div>
 
-						{/* Customize A Tour Button - Round */}
+						{/* Customize A Tour Button - Full Height, No Rounded Corners */}
 						<button
 							onClick={handleWhatsAppClick}
-							className="px-2 py-1 sm:px-3 sm:py-1 text-[9px] sm:text-[10px] font-bold text-[#211f20] rounded-full hover:bg-[#e8851a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#f99621]/50 ml-0.5"
+							className="px-2 sm:px-3 text-[9px] sm:text-[10px] font-bold text-[#211f20] hover:bg-[#e8851a] transition-all duration-300 ml-0.5 absolute right-4 sm:right-6 lg:right-8 top-0 bottom-0 flex items-center"
 							style={{ backgroundColor: '#f99621' }}
 						>
 							<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
