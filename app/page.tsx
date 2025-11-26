@@ -1365,13 +1365,6 @@ const Page = () => {
 									className="absolute top-0 left-0 w-full h-full object-contain transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
 								/>
 								{/* Enhanced Glowing dots on map with travel destinations - Properly positioned inside map boundaries */}
-								{/* Hunza Valley - Far north-west region (Gilgit-Baltistan) */}
-								<div className="absolute top-[12%] left-[38%] group z-10" style={{ transform: 'translate(-50%, -50%)' }}>
-									<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg ring-2 ring-white/50"></div>
-									<div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-										Hunza Valley
-									</div>
-								</div>
 								{/* Islamabad - Upper-central region */}
 								<div className="absolute top-[42%] left-[52%] group z-10" style={{ animationDelay: '0.5s', transform: 'translate(-50%, -50%)' }}>
 									<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg ring-2 ring-white/50"></div>
@@ -1391,13 +1384,6 @@ const Page = () => {
 									<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg ring-2 ring-white/50"></div>
 									<div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
 										Karachi
-									</div>
-								</div>
-								{/* Gwadar - Near southern coastline (west) */}
-								<div className="absolute top-[84%] left-[32%] group z-10" style={{ animationDelay: '2s', transform: 'translate(-50%, -50%)' }}>
-									<div className="w-4 h-4 bg-white rounded-full animate-pulse shadow-lg ring-2 ring-white/50"></div>
-									<div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-black/80 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-										Gwadar
 									</div>
 								</div>
 								{/* Quetta - Central-southwestern region */}
