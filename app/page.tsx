@@ -1597,11 +1597,11 @@ const Page = () => {
 										className="w-full h-auto object-cover"
 									/>
 									{/* Phone booking bubble overlay - Middle left, half in half out */}
-									<div className="absolute top-1/2 left-0 bg-white px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 z-10 border-2" style={{ transform: 'translate(-50%, -50%) rotate(2deg)', borderColor: primaryOrange }}>
-										<Phone className="w-5 h-5" style={{ color: primaryOrange }} />
-										<div className="flex flex-col">
-											<span className="text-xs font-semibold" style={{ color: secondaryBlack }}>BOOK YOUR TOURS NOW</span>
-											<span className="text-base font-bold" style={{ color: secondaryBlack }}>+92 331 438251</span>
+									<div className="absolute top-1/2 left-0 bg-white px-3 py-2 rounded-lg shadow-xl flex items-center gap-2 z-10 border-2" style={{ transform: 'translate(-50%, -50%) rotate(2deg)', borderColor: primaryOrange }}>
+										<Phone className="w-4 h-4" style={{ color: primaryOrange }} />
+										<div className="flex flex-col gap-0.5">
+											<span className="text-[10px] font-semibold leading-tight" style={{ color: secondaryBlack }}>BOOK YOUR TOURS NOW</span>
+											<span className="text-sm font-bold leading-tight" style={{ color: secondaryBlack }}>+92 331 438251</span>
 										</div>
 									</div>
 								</div>
