@@ -46,6 +46,22 @@ const Page = () => {
 		window.open('https://wa.me/923311438251', '_blank');
 	};
 
+	// Scroll detection for navbar transparency
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollY = window.scrollY || window.pageYOffset;
+			const heroHeight = window.innerHeight;
+			// Set isLight to true when scrolled past hero section
+			setIsLight(scrollY > heroHeight * 0.8);
+		};
+
+		// Set initial state
+		handleScroll();
+		
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
 	// Lottie Animation Data (Simple travel icon animation)
 	const travelAnimationData = {
 		"v": "5.7.4",
@@ -249,7 +265,8 @@ const Page = () => {
 	
 	// Image IDs (Using high-quality Pakistan tour images from Unsplash)
 	const newUploadedImageId = 'https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'; // Hunza Valley
-	const logoImage = '/images/logo landscape(white).png';
+	// Logo image based on navbar state (transparent on hero = white logo, white background = colored logo)
+	const logoImage = isLight ? '/images/Final....png' : '/images/logo landscape(white).png';
 	const heroImage = 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'; // Pakistan mountains 
 	const heroBgRef = useRef<HTMLDivElement | null>(null);
 	// Enhanced Cultural background with Pakistan heritage elements
@@ -765,7 +782,11 @@ const Page = () => {
 		</div>
 
 		{/* Main Navigation Bar - Reduced Height */}
-		<header className="fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)] transition-all duration-300">
+		<header className={`fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] backdrop-blur-sm transition-all duration-300 ${
+			isLight 
+				? 'bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]' 
+				: 'bg-transparent border-b border-transparent shadow-none'
+		}`}>
 			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between py-2 sm:py-2.5">
 					{/* Logo */}
@@ -781,24 +802,24 @@ const Page = () => {
 
 					{/* Desktop Navigation Links */}
 					<nav className="hidden lg:flex items-center gap-1">
-						<a href="#home" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">HOME</a>
-						<a href="#tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors relative group">
+						<a href="#home" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>HOME</a>
+						<a href="#tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative group ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
 							<span className="flex items-center gap-1">
 								PAKISTAN TOURS
 								<ChevronRight className="w-4 h-4 rotate-90" />
 							</span>
 						</a>
-						<a href="#city-tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors relative group">
+						<a href="#city-tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative group ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
 							<span className="flex items-center gap-1">
 								CITY TOURS
 								<ChevronRight className="w-4 h-4 rotate-90" />
 							</span>
 						</a>
-						<a href="#group-tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">GROUP TOUR</a>
+						<a href="#group-tours" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>GROUP TOUR</a>
 						
 						{/* DESTINATION with Multi-Level Dropdown */}
 						<div className="relative group cursor-pointer">
-							<a href="#destination" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">
+							<a href="#destination" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
 								DESTINATION
 							</a>
 							
@@ -925,8 +946,8 @@ const Page = () => {
 							</div>
 						</div>
 						
-						<a href="/about" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">ABOUT US</a>
-						<a href="/contact" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">CONTACT US</a>
+						<a href="/about" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>ABOUT US</a>
+						<a href="/contact" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>CONTACT US</a>
 					</nav>
 
 					{/* Mobile Menu Button */}
@@ -935,7 +956,7 @@ const Page = () => {
 						className="lg:hidden p-2 rounded-md transition-colors hover:bg-white/20"
 					aria-label="Toggle navigation menu"
 				>
-						<Menu className="w-6 h-6 text-[#211f20]" />
+						<Menu className={`w-6 h-6 ${isLight ? 'text-[#211f20]' : 'text-white'}`} />
 				</button>
 				</div>
 			</div>
