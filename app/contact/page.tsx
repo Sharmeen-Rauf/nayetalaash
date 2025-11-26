@@ -218,6 +218,10 @@ const ContactPage = () => {
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
+							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
+								Get Your Perfect Travel Plan
+							</span>
+							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
 								style={{ 
 									color: primaryOrange, 
