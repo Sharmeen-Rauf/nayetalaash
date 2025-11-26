@@ -1700,10 +1700,10 @@ const Page = () => {
 				{/* Enhanced Tour Cards with 3D Effects */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 					{[
-						{ title: '2 DAYS MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 11,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', duration: '2 Days' },
-						{ title: '5 DAYS HUNZA, NALTAR, AND KHUNJERAB PUBLIC GROUP TOUR', price: 'From Rs 25,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', duration: '5 Days' },
-						{ title: '3 DAYS KALAM AND MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 16,000', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', duration: '3 Days' },
-						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', duration: '3 Days' },
+						{ title: '2 DAYS MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 11,000', image: '/images/malam jabba.jpg', duration: '2 Days' },
+						{ title: '5 DAYS HUNZA, NALTAR, AND KHUNJERAB PUBLIC GROUP TOUR', price: 'From Rs 25,000', image: '/images/naltar valley.jpg', duration: '5 Days' },
+						{ title: '3 DAYS KALAM AND MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 16,000', image: '/images/malam jabba.jpg', duration: '3 Days' },
+						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: '/images/Arangkel.jpg', duration: '3 Days' },
 					].map((tour, idx) => (
 						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos-delay={idx * 150}>
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-8 hover:rotate-x-3 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/25">
