@@ -1886,7 +1886,7 @@ const Page = () => {
 					</h2>
 				</div>
 
-				<div className="w-full h-96 rounded-lg overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+				<div className="w-full h-96 rounded-lg overflow-hidden shadow-2xl">
 					<iframe
 						src="https://www.google.com/maps?q=F-36+PECHS+BLOCK+6,+Karachi,+Pakistan&output=embed"
 						width="100%"
