@@ -1218,7 +1218,7 @@ const Page = () => {
 		</section>
 
 		{/* ====================== FASCINATING FACTS ABOUT PAKISTAN ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-x-hidden">
+		<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
 			{/* Animated Background */}
 			<AnimatedBackground variant="light" />
 			
@@ -1438,7 +1438,7 @@ const Page = () => {
 			</section>
 			
 		{/* ====================== WHERE TO NEXT? ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+		<section className="py-8 md:py-12 bg-white relative overflow-hidden">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 				<div className="mb-12">
 					<div className="text-center mb-8 scroll-reveal-fade-up">
@@ -1495,7 +1495,7 @@ const Page = () => {
 		</section>
 
 		{/* ====================== PAKISTAN TOUR PACKAGES ====================== */}
-		<section className="py-16 md:py-24 bg-white relative">
+		<section className="py-8 md:py-12 bg-white relative">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 				<div className="text-center mb-12">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -1578,7 +1578,7 @@ const Page = () => {
 		</section>
 
 		{/* ====================== FAMILY TOUR & HONEYMOON PACKAGES ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+		<section className="py-8 md:py-12 bg-white relative overflow-hidden">
 			{/* Animated Background */}
 			<AnimatedBackground variant="default" />
 			
@@ -1650,7 +1650,7 @@ const Page = () => {
 		</section>
 
 		{/* ====================== WHY TRAVEL WITH US & VIDEO ====================== */}
-		<section className="py-16 md:py-24 bg-gray-100 overflow-x-hidden">
+		<section className="py-8 md:py-12 bg-gray-100 overflow-x-hidden">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 					{/* Left: Why Travel With Us */}
@@ -1701,7 +1701,7 @@ const Page = () => {
 			</section>
 			
 		{/* ====================== PUBLIC GROUP TOURS ====================== */}
-		<section className="py-16 md:py-24 bg-white overflow-x-hidden">
+		<section className="py-8 md:py-12 bg-white overflow-x-hidden">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
 				<div className="mb-8 scroll-reveal-fade-up text-center">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -1788,7 +1788,7 @@ const Page = () => {
 		</section>
 			
 		{/* ====================== TESTIMONIALS ====================== */}
-		<section className="py-16 md:py-24 bg-white overflow-hidden">
+		<section className="py-8 md:py-12 bg-white overflow-hidden">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 				<div className="mb-12 text-center">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -1864,7 +1864,7 @@ const Page = () => {
 		</section>
 
 		{/* ====================== WHERE ARE WE LOCATED? ====================== */}
-		<section className="py-16 md:py-24 bg-white overflow-x-hidden">
+		<section className="py-8 md:py-12 bg-white overflow-x-hidden">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
 				<div className="mb-8 scroll-reveal-fade-up text-center">
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -1896,7 +1896,7 @@ const Page = () => {
 		</section>
 
 		{/* ====================== WORKED WITH / FEATURED ON ====================== */}
-		<section className="py-16 md:py-24 bg-white relative overflow-hidden">
+		<section className="py-8 md:py-12 bg-white relative overflow-hidden">
 			{/* Animated Background */}
 			<AnimatedBackground variant="light" />
 			
@@ -1949,7 +1949,7 @@ const Page = () => {
 		</section>
 
 		{/* ====================== FOOTER ====================== */}
-		<footer className="py-16 bg-white border-t relative overflow-hidden" style={{ borderColor: `${primaryOrange}30` }}>
+		<footer className="py-8 md:py-12 bg-white border-t relative overflow-hidden" style={{ borderColor: `${primaryOrange}30` }}>
 			{/* Animated Background */}
 			<AnimatedBackground variant="light" />
 			
