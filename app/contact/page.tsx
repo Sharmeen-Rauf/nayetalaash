@@ -514,6 +514,38 @@ const ContactPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== WHERE ARE WE LOCATED? ====================== */}
+			<section className="py-8 md:py-12 bg-white overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
+					<div className="mb-8 scroll-reveal-fade-up text-center">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4">
+							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+								color: primaryOrange
+							}}>
+								Find us
+							</span>
+							<span className="block mt-2" style={{ 
+								color: secondaryBlack
+							}}>
+								Where Are We Located?
+							</span>
+						</h2>
+					</div>
+
+					<div className="w-full h-96 rounded-lg overflow-hidden shadow-2xl">
+						<iframe
+							src="https://www.google.com/maps?q=F-36+PECHS+BLOCK+6,+Karachi,+Pakistan&output=embed"
+							width="100%"
+							height="100%"
+							style={{ border: 0 }}
+							allowFullScreen
+							loading="lazy"
+							referrerPolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
+			</section>
+
 			{/* Footer */}
 			<footer className="py-16 bg-white border-t relative overflow-hidden" style={{ borderColor: `${primaryOrange}30` }}>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
