@@ -1687,7 +1687,7 @@ const Page = () => {
 
 					{/* Right: Video Player */}
 					<div className="scroll-reveal-slide-right">
-						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-2xl">
+						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden">
 							<video 
 								src="/images/1126(1).mp4"
 								controls
