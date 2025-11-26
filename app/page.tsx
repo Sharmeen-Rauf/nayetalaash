@@ -1900,35 +1900,68 @@ const Page = () => {
 			</div>
 		</section>
 
-		{/* ====================== WORKED WITH / FEATURED ON ====================== */}
+		{/* ====================== WORKED WITH ====================== */}
 		<section className="py-8 md:py-12 bg-white relative overflow-hidden">
 			{/* Animated Background */}
 			<AnimatedBackground variant="light" />
 			
 			<div className="container mx-auto px-4 max-w-7xl relative z-10">
-				<div className="flex justify-between items-center mb-8">
-					<h2 className="text-3xl font-bold" style={{ color: secondaryBlack }}>Worked With / Featured On</h2>
-					<button className="px-4 py-2 border-2 rounded-lg font-semibold hover:scale-110 transition-transform" 
-							style={{ borderColor: primaryOrange, color: primaryOrange }} 
->
-						See All
-					</button>
+				{/* Centered Heading */}
+				<div className="text-center mb-8">
+					<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Worked With</h2>
 				</div>
 
-				<div className="grid grid-cols-3 md:grid-cols-6 gap-8">
-					{['UNESCO', 'USAID', 'The World Bank', 'UN WOMEN', 'ALJAZEERA', 'FINANCIAL TIMES'].map((org, idx) => (
-						<div key={idx} className="flex items-center justify-center h-20 rounded-lg hover:scale-110 transition-all duration-300 transform hover:rotate-2 border-2" 
-							 style={{ backgroundColor: `${primaryOrange}05`, borderColor: `${primaryOrange}20` }}
- data-aos-delay={idx * 100}>
-							<span className="text-sm font-semibold transition-colors" 
-								  style={{ color: secondaryBlack }}
-								  onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange}
-								  onMouseLeave={(e) => e.currentTarget.style.color = secondaryBlack}>
-								{org}
-							</span>
-						</div>
+				{/* Logo Slider */}
+				<div className="relative w-full overflow-hidden">
+					<div className="flex animate-scroll gap-8">
+						{/* Logo image paths - accounting for slider-2-logo (3).jpg */}
+						{[
+							'/images/slider-1-logo.jpg',
+							'/images/slider-2-logo (3).jpg',
+							'/images/slider-3-logo.jpg',
+							'/images/slider-4-logo.jpg',
+							'/images/slider-5-logo.jpg',
+							'/images/slider-6-logo.jpg',
+							'/images/slider-7-logo.jpg',
+							'/images/slider-8-logo.jpg',
+							'/images/slider-9-logo.jpg'
+						].map((logoPath, idx) => (
+							<div key={`logo-${idx}`} className="flex-shrink-0 flex items-center justify-center h-24 w-32 rounded-lg border-2" 
+								 style={{ backgroundColor: `${primaryOrange}05`, borderColor: `${primaryOrange}20` }}>
+								<Image 
+									src={logoPath}
+									alt={`Logo ${idx + 1}`}
+									width={120}
+									height={80}
+									className="w-full h-full object-contain p-2"
+								/>
+							</div>
+						))}
+						{/* Duplicate set for seamless loop */}
+						{[
+							'/images/slider-1-logo.jpg',
+							'/images/slider-2-logo (3).jpg',
+							'/images/slider-3-logo.jpg',
+							'/images/slider-4-logo.jpg',
+							'/images/slider-5-logo.jpg',
+							'/images/slider-6-logo.jpg',
+							'/images/slider-7-logo.jpg',
+							'/images/slider-8-logo.jpg',
+							'/images/slider-9-logo.jpg'
+						].map((logoPath, idx) => (
+							<div key={`logo-dup-${idx}`} className="flex-shrink-0 flex items-center justify-center h-24 w-32 rounded-lg border-2" 
+								 style={{ backgroundColor: `${primaryOrange}05`, borderColor: `${primaryOrange}20` }}>
+								<Image 
+									src={logoPath}
+									alt={`Logo ${idx + 1}`}
+									width={120}
+									height={80}
+									className="w-full h-full object-contain p-2"
+								/>
+							</div>
 						))}
 					</div>
+				</div>
 			</div>
 		</section>
 
@@ -1937,7 +1970,7 @@ const Page = () => {
 			<div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-[2]">
 				<div className="flex flex-col md:flex-row items-center justify-between gap-4">
 					<div className="px-4 md:px-6">
-						<p className="text-white text-2xl font-autography mb-2">Ready for an unforgettable tour!</p>
+						<p className="text-white text-3xl font-autography mb-2">Ready for an unforgettable tour!</p>
 						<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 					</div>
 					<div className="px-4 md:px-6">
