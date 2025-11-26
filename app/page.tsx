@@ -1805,7 +1805,7 @@ const Page = () => {
 						<span className="block mt-2" style={{ 
 							color: secondaryBlack
 						}}>
-							WHAT OUR CLIENTS HAVE TO SAY?
+							What Our Clients Have To Say?
 						</span>
 					</h2>
 				</div>
@@ -1845,7 +1845,7 @@ const Page = () => {
 							<div className="flex-shrink-0">
 								<div className="w-20 h-20 rounded-full overflow-hidden">
 									<Image 
-										src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
+										src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200"
 										alt="Ali Rehman"
 										width={80}
 										height={80}
@@ -1860,7 +1860,7 @@ const Page = () => {
 									The best decision I ever made by myself by choosing Nature Hike Pakistan for my vacation, I&apos;m glad that Neha took care of everything personally. From pick up from my home to the best hotels in town, confident rider and a comfortable car, beautiful view and variety of shopping options. And a relaxing journey. 5 hotels, 21 viewpoints, the most beautiful ever. There are pre-planned packages and customized Options. Haste-free and exceptional customer service. I had really enjoyed my time. Contact Neha and choose your package.
 								</p>
 								<p className="font-bold text-sm" style={{ color: secondaryBlack }}>ALI REHMAN,</p>
-								<div className="absolute top-0 left-0 text-7xl opacity-15 font-serif" style={{ color: `${secondaryBlack}80`, lineHeight: '1', transform: 'translateY(-10px)' }}>&ldquo;</div>
+								<div className="absolute bottom-0 right-0 text-7xl opacity-15 font-serif" style={{ color: `${secondaryBlack}80`, lineHeight: '1', transform: 'translateY(10px)' }}>&rdquo;</div>
 							</div>
 						</div>
 					</div>
