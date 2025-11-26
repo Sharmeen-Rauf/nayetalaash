@@ -10,6 +10,10 @@ const ContactPage = () => {
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 	const [formData, setFormData] = useState({
+		fullName: '',
+		email: '',
+		phone: '',
+		company: '',
 		service: '',
 		source: '',
 		message: ''
@@ -42,7 +46,7 @@ const ContactPage = () => {
 		window.open('https://wa.me/923311438251', '_blank');
 	};
 
-	const handleFormChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLTextAreaElement>) => {
+	const handleFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
 		const { name, value } = e.target;
 		setFormData(prev => ({ ...prev, [name]: value }));
 	};
@@ -230,53 +234,130 @@ const ContactPage = () => {
 			</section>
 
 			{/* Contact Form Section */}
-			<section className="py-16 md:py-24 bg-white">
+			<section className="py-16 md:py-24" style={{ backgroundColor: '#f5f5f5' }}>
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-						{/* Left: Form */}
-						<div>
-							<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
-								Let&apos;s explore where we can take you next
-							</h2>
-							<p className="text-base mb-8 leading-relaxed" style={{ color: '#6b7280' }}>
-								We help travelers and companies design structured, smooth and memorable travel experiences.
-							</p>
-							<p className="text-base mb-10 leading-relaxed" style={{ color: '#6b7280' }}>
-								From tour planning to bookings get full support without any hassle.
-							</p>
+					{/* Header Section */}
+					<div className="text-center mb-12">
+						<div className="w-16 h-1 mx-auto mb-6" style={{ backgroundColor: primaryOrange }}></div>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							Let&apos;s explore where we can take you next
+						</h2>
+						<p className="text-base md:text-lg mb-2 max-w-3xl mx-auto leading-relaxed" style={{ color: '#6b7280' }}>
+							We help travelers and companies design structured, smooth and memorable travel experiences.
+						</p>
+						<p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed" style={{ color: '#6b7280' }}>
+							From tour planning to bookings get full support without any hassle.
+						</p>
+					</div>
 
-							<form onSubmit={handleFormSubmit} className="space-y-6">
-								<div>
-									<label htmlFor="service" className="block text-sm font-semibold mb-2" style={{ color: secondaryBlack }}>
-										Service of interest
-									</label>
-									<div className="relative">
-										<select
-											id="service"
-											name="service"
-											value={formData.service}
-											onChange={handleFormChange}
-											className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent appearance-none bg-white text-[#211f20]"
-											required
-										>
-											<option value="">Select a service</option>
-											<option value="custom-tours">Custom Tour Packages</option>
-											<option value="family-tours">Family Tour Packages</option>
-											<option value="honeymoon">Honeymoon Trips</option>
-											<option value="group-tours">Group Tours</option>
-											<option value="adventure">Adventure Tours</option>
-											<option value="cultural">Cultural Experiences</option>
-											<option value="city-tours">City Tours</option>
-											<option value="other">Other</option>
-										</select>
-										<ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none" />
-									</div>
+					{/* Main Content Card */}
+					<div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+						<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+							{/* Left: Why Talk To Us? */}
+							<div>
+								<h3 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: secondaryBlack }}>
+									Why talk to us?
+								</h3>
+								<ul className="space-y-6">
+									{[
+										'Free, no obligation consultation with a travel specialist',
+										'Customized routes, stays and experiences',
+										'Clear guidance on budget, itinerary and booking',
+										'Trusted travel support across Pakistan'
+									].map((item, idx) => (
+										<li key={idx} className="flex items-start gap-3">
+											<div className="w-6 h-6 rounded-full flex-shrink-0 mt-0.5 flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
+												<CheckCircle2 className="w-5 h-5" style={{ color: primaryOrange }} />
+											</div>
+											<span className="text-base leading-relaxed" style={{ color: '#6b7280' }}>{item}</span>
+										</li>
+									))}
+								</ul>
+							</div>
+
+							{/* Right: Contact Form */}
+							<div>
+								<div className="mb-6">
+									<span className="inline-block px-4 py-1 rounded-full text-xs font-bold text-white mb-4" style={{ backgroundColor: primaryOrange }}>
+										CONTACT
+									</span>
+									<h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
+										Tell Us About Your Project
+									</h3>
 								</div>
 
-								<div>
-									<label htmlFor="source" className="block text-sm font-semibold mb-2" style={{ color: secondaryBlack }}>
-										How did you find us?
-									</label>
+								<form onSubmit={handleFormSubmit} className="space-y-4">
+									{/* Row 1: Full Name and Email */}
+									<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+										<div>
+											<input
+												type="text"
+												id="fullName"
+												name="fullName"
+												placeholder="Your full name"
+												className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent bg-white text-[#211f20] placeholder-gray-400"
+												required
+											/>
+										</div>
+										<div>
+											<input
+												type="email"
+												id="email"
+												name="email"
+												placeholder="you@example.com"
+												className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent bg-white text-[#211f20] placeholder-gray-400"
+												required
+											/>
+										</div>
+									</div>
+
+									{/* Row 2: Phone and Service of Interest */}
+									<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+										<div>
+											<input
+												type="tel"
+												id="phone"
+												name="phone"
+												placeholder="Phone number"
+												className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent bg-white text-[#211f20] placeholder-gray-400"
+												required
+											/>
+										</div>
+										<div className="relative">
+											<select
+												id="service"
+												name="service"
+												value={formData.service}
+												onChange={handleFormChange}
+												className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent appearance-none bg-white text-[#211f20]"
+												required
+											>
+												<option value="">Service of interest</option>
+												<option value="custom-tours">Custom Tour Packages</option>
+												<option value="family-tours">Family Tour Packages</option>
+												<option value="honeymoon">Honeymoon Trips</option>
+												<option value="group-tours">Group Tours</option>
+												<option value="adventure">Adventure Tours</option>
+												<option value="cultural">Cultural Experiences</option>
+												<option value="city-tours">City Tours</option>
+												<option value="other">Other</option>
+											</select>
+											<ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none" />
+										</div>
+									</div>
+
+									{/* Row 3: Company Name (optional) */}
+									<div>
+										<input
+											type="text"
+											id="company"
+											name="company"
+											placeholder="Company name (optional)"
+											className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent bg-white text-[#211f20] placeholder-gray-400"
+										/>
+									</div>
+
+									{/* Row 4: How did you find us? */}
 									<div className="relative">
 										<select
 											id="source"
@@ -286,7 +367,7 @@ const ContactPage = () => {
 											className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent appearance-none bg-white text-[#211f20]"
 											required
 										>
-											<option value="">Select an option</option>
+											<option value="">How did you find us?</option>
 											<option value="search">Search Engine</option>
 											<option value="social">Social Media</option>
 											<option value="referral">Referral</option>
@@ -295,67 +376,48 @@ const ContactPage = () => {
 										</select>
 										<ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none" />
 									</div>
-								</div>
 
-								<div>
-									<label htmlFor="message" className="block text-sm font-semibold mb-2" style={{ color: secondaryBlack }}>
-										Tell us about your project
-									</label>
-									<textarea
-										id="message"
-										name="message"
-										value={formData.message}
-										onChange={handleFormChange}
-										rows={6}
-										className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent resize-none text-[#211f20]"
-										placeholder="Describe your travel plans, destinations, dates, group size, and any specific requirements..."
-										required
-									/>
-								</div>
+									{/* Row 5: Message Textarea */}
+									<div>
+										<textarea
+											id="message"
+											name="message"
+											value={formData.message}
+											onChange={handleFormChange}
+											rows={6}
+											className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent resize-y text-[#211f20] placeholder-gray-400"
+											placeholder="Tell us a bit about your goals"
+											required
+										/>
+									</div>
 
-								<div className="flex items-start gap-2">
-									<input
-										type="checkbox"
-										id="consent"
-										className="mt-1 w-4 h-4 rounded border-gray-300 focus:ring-[#f99621]"
-										required
-									/>
-									<label htmlFor="consent" className="text-sm" style={{ color: '#6b7280' }}>
-										I consent to receive marketing communications from Nayi Talaash, and understand I can opt out at any time.
-									</label>
-								</div>
+									{/* Consent Checkbox */}
+									<div className="flex items-start gap-2">
+										<input
+											type="checkbox"
+											id="consent"
+											className="mt-1 w-4 h-4 rounded border-gray-300 focus:ring-[#f99621]"
+											required
+										/>
+										<label htmlFor="consent" className="text-sm leading-relaxed" style={{ color: '#6b7280' }}>
+											I consent to receive marketing communications from Nayi Talaash, and understand I can opt out at any time.
+										</label>
+									</div>
 
-								<button
-									type="submit"
-									className="w-full px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
-									style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-								>
-									Send Message
-								</button>
-							</form>
-						</div>
-
-						{/* Right: Side Content */}
-						<div className="space-y-10">
-							{/* Why talk to us? */}
-							<div>
-								<h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-									Why talk to us?
-								</h3>
-								<ul className="space-y-4">
-									{[
-										'Free, no obligation consultation with a travel specialist',
-										'Customized routes, stays and experiences',
-										'Clear guidance on budget, itinerary and booking',
-										'Trusted travel support across Pakistan'
-									].map((item, idx) => (
-										<li key={idx} className="flex items-start gap-3">
-											<CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: primaryOrange }} />
-											<span className="text-base leading-relaxed" style={{ color: '#6b7280' }}>{item}</span>
-										</li>
-									))}
-								</ul>
+									{/* Submit Button */}
+									<button
+										type="submit"
+										className="w-full px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
+										style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+									>
+										Send Message
+									</button>
+								</form>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 							{/* Our Presence */}
 							<div>
