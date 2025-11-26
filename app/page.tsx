@@ -1510,11 +1510,6 @@ const Page = () => {
 									{/* Enhanced Gradient Overlay */}
 									<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 									
-									{/* Floating Elements */}
-									<div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-[#f99621]/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:rotate-180">
-										<Mountain className="w-6 h-6 text-white" />
-									</div>
-									
 									{/* Content */}
 									<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
 										<div className="mb-2">
