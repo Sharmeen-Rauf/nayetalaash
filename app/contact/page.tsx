@@ -432,7 +432,7 @@ const ContactPage = () => {
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 						{/* Left: Image */}
 						<div className="order-2 lg:order-1">
-							<div className="relative w-full h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
+							<div className="relative w-full h-[300px] lg:h-[350px] rounded-lg overflow-hidden shadow-xl">
 								<Image
 									src="/images/hd-mazarequaid-karachi.jpg"
 									alt="Mazar-e-Quaid Karachi"
@@ -445,7 +445,7 @@ const ContactPage = () => {
 						{/* Right: Content */}
 						<div className="order-1 lg:order-2">
 							<h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Karachi, Pakistan — Head Office
+								Karachi, Pakistan<br />— Head Office
 							</h3>
 							<p className="text-base mb-4 leading-relaxed" style={{ color: '#6b7280' }}>
 								Located in the heart of the city, our head office in PECHS Block 6 serves as the center of all operations at Nayi Talaash. This is where our travel experts plan routes, design tour experiences and assist travelers from all across Pakistan.
