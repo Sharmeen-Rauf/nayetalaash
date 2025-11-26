@@ -711,8 +711,8 @@ const Page = () => {
 			
 		{/* --- 1. Two-Tier Navbar --- */}
 		{/* Top Bar - Dark Background with Contact & Social */}
-		<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20] relative">
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+		<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20]">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between py-1 sm:py-1.5">
 					{/* Left: Contact Info */}
 					<div className="flex items-center gap-2 sm:gap-4 text-white text-[10px] sm:text-xs">
@@ -728,7 +728,7 @@ const Page = () => {
 						</a>
 					</div>
 
-					{/* Right: Social Media Icons */}
+					{/* Right: Social Media Icons & Customize Button */}
 					<div className="flex items-center gap-1.5">
 						{/* Social Media Icons - Round with Hover Effects */}
 						<div className="flex items-center gap-0.5">
@@ -764,20 +764,21 @@ const Page = () => {
 							>
 								<Youtube className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 							</a>
-						</div>
+							
+				</div>
+
+						{/* Customize A Tour Button - Round */}
+						<button
+							onClick={handleWhatsAppClick}
+							className="px-2 py-1 sm:px-3 sm:py-1 text-[9px] sm:text-[10px] font-bold text-[#211f20] rounded-full hover:bg-[#e8851a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#f99621]/50 ml-0.5"
+							style={{ backgroundColor: '#f99621' }}
+						>
+							<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
+							<span className="sm:hidden">CUSTOMIZE</span>
+				</button>
 					</div>
 				</div>
 			</div>
-			
-			{/* Customize A Tour Button - Full Height, Positioned at Right Edge */}
-			<button
-				onClick={handleWhatsAppClick}
-				className="absolute right-0 top-0 bottom-0 px-3 sm:px-4 text-[9px] sm:text-[10px] font-bold text-[#211f20] hover:bg-[#e8851a] transition-all duration-300 flex items-center"
-				style={{ backgroundColor: '#f99621' }}
-			>
-				<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
-				<span className="sm:hidden">CUSTOMIZE</span>
-			</button>
 		</div>
 
 		{/* Main Navigation Bar - Reduced Height */}
