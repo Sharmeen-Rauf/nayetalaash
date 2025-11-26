@@ -767,10 +767,10 @@ const Page = () => {
 							
 				</div>
 
-						{/* Customize A Tour Button - Round */}
+						{/* Customize A Tour Button */}
 						<button
 							onClick={handleWhatsAppClick}
-							className="px-2 py-1 sm:px-3 sm:py-1 text-[9px] sm:text-[10px] font-bold text-[#211f20] rounded-full hover:bg-[#e8851a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#f99621]/50 ml-0.5"
+							className="px-2 py-1 sm:px-3 sm:py-1 text-[9px] sm:text-[10px] font-bold text-[#211f20] hover:bg-[#e8851a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#f99621]/50 ml-0.5"
 							style={{ backgroundColor: '#f99621' }}
 						>
 							<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
