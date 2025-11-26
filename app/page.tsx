@@ -8,15 +8,15 @@ import Lottie from 'lottie-react';
 
 // Tour Packages Data - moved outside component to avoid recreation
 const allTourPackages = [
-	{ name: 'Hunza – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Majestic valleys and ancient culture' },
-	{ name: 'Skardu – 6 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Gateway to K2 and Baltoro Glacier' },
-	{ name: 'Swat & Kalam – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Switzerland of Pakistan' },
-	{ name: 'Murree & Nathia Gali – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Colonial hill station charm' },
-	{ name: 'Naran Kaghan – 3 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Alpine lakes and meadows' },
-	{ name: 'Azad Kashmir – 4 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Paradise on earth' },
-	{ name: 'Fairy Meadows – 3 Days Trek Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Base camp to Nanga Parbat' },
-	{ name: 'Chitral & Kalash – 5 Days Tour Package', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800', description: 'Ancient culture and traditions' },
-	{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800', description: 'Coastal beauty and beaches' },
+	{ name: 'Hunza – 5 Days Tour Package', image: '/images/Hunza.jpg', description: 'Majestic valleys and ancient culture' },
+	{ name: 'Skardu – 6 Days Tour Package', image: '/images/skardu 2.jpg', description: 'Gateway to K2 and Baltoro Glacier' },
+	{ name: 'Swat & Kalam – 4 Days Tour Package', image: '/images/kalam and swat.jpeg', description: 'Switzerland of Pakistan' },
+	{ name: 'Murree & Nathia Gali – 2 Days Tour Package', image: '/images/murree and nathia gali.jpg', description: 'Colonial hill station charm' },
+	{ name: 'Naran Kaghan – 3 Days Tour Package', image: '/images/naran and kaghan.jpg', description: 'Alpine lakes and meadows' },
+	{ name: 'Azad Kashmir – 4 Days Tour Package', image: '/images/azad kashmir.jpg', description: 'Paradise on earth' },
+	{ name: 'Fairy Meadows – 3 Days Trek Package', image: '/images/fairy meadows 2.jpg', description: 'Base camp to Nanga Parbat' },
+	{ name: 'Chitral & Kalash – 5 Days Tour Package', image: '/images/chitral.jpg', description: 'Ancient culture and traditions' },
+	{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: '/images/Kund Malir.jpg', description: 'Coastal beauty and beaches' },
 ];
 
 const Page = () => {
@@ -112,21 +112,21 @@ const Page = () => {
 	};
 
 	const destinationData = [
-		{ name: 'Hunza', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-		{ name: 'Skardu', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-		{ name: 'Gilgit', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-		{ name: 'Lahore', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-		{ name: 'Islamabad', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-		{ name: 'Karachi', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-		{ name: 'Swat', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-		{ name: 'Naran Kaghan', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-		{ name: 'Gwadar', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-		{ name: 'Neelum Valley', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-		{ name: 'Fairy Meadows', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-		{ name: 'Chitral', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-		{ name: 'Bahawalpur', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
-		{ name: 'Murree', image: 'https://images.unsplash.com/photo-1588416389013-78c69e4e52d8?q=80&w=800' },
-		{ name: 'Khaplu', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800' },
+		{ name: 'Hunza', image: '/images/Hunza.jpg' },
+		{ name: 'Skardu', image: '/images/skardu 2.jpg' },
+		{ name: 'Gilgit', image: '/images/gilgit.jpg' },
+		{ name: 'Lahore', image: '/images/lahore.jpg' },
+		{ name: 'Islamabad', image: '/images/islamabad.jpg' },
+		{ name: 'Karachi', image: '/images/karachi.avif' },
+		{ name: 'Swat', image: '/images/swat.jpg' },
+		{ name: 'Naran Kaghan', image: '/images/naran and kaghan.jpg' },
+		{ name: 'Gwadar', image: '/images/gwadar.jpg' },
+		{ name: 'Neelum Valley', image: '/images/neelum valley.jpg' },
+		{ name: 'Fairy Meadows', image: '/images/fairy meadows 2.jpg' },
+		{ name: 'Chitral', image: '/images/chitral.jpg' },
+		{ name: 'Bahawalpur', image: '/images/Bahawalpur.jpg' },
+		{ name: 'Murree', image: '/images/murree.jpg' },
+		{ name: 'Khaplu', image: '/images/Khaplu.jpg' },
 	];
 
 	const visibleDestinations = showAllDestinations ? destinationData : destinationData.slice(0, 10);
