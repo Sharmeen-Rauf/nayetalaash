@@ -1233,9 +1233,15 @@ const Page = () => {
 							<div className="w-full h-full" style={{ background: `linear-gradient(45deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
 						</div>
 						<div className="relative z-10">
-							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
+							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg overflow-hidden"
 								 style={{ backgroundColor: primaryOrange }}>
-								<Mountain className="w-7 h-7" style={{ color: secondaryBlack }} strokeWidth={1.5} />
+								<Image 
+									src="/images/mountains.png"
+									alt="Mountains"
+									width={28}
+									height={28}
+									className="object-contain"
+								/>
 							</div>
 							<h3 className="text-sm font-bold mb-3 transition-colors duration-300 transform -rotate-1" 
 								style={{ color: secondaryBlack }}>World&apos;s Highest Mountain Ranges</h3>
@@ -1275,9 +1281,15 @@ const Page = () => {
 							<div className="w-full h-full" style={{ background: `linear-gradient(135deg, ${primaryOrange}, transparent, ${primaryOrange})` }}></div>
 						</div>
 						<div className="relative z-10">
-							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg"
+							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg overflow-hidden"
 								 style={{ backgroundColor: primaryOrange }}>
-								<Route className="w-7 h-7" style={{ color: secondaryBlack }} strokeWidth={1.5} />
+								<Image 
+									src="/images/mountain-road.png"
+									alt="Mountain Road"
+									width={28}
+									height={28}
+									className="object-contain"
+								/>
 							</div>
 							<h3 className="text-sm font-bold mb-3 transition-colors duration-300 transform -rotate-1" 
 								style={{ color: secondaryBlack }}>World&apos;s Highest Paved Road</h3>
