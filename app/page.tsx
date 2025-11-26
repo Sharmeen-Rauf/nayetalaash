@@ -1659,17 +1659,20 @@ const Page = () => {
 						</button>
 					</div>
 
-					{/* Right: Video Embed - Replace YOUR_VIDEO_ID with your YouTube video ID */}
+					{/* Right: Video Player */}
 					<div className="scroll-reveal-slide-right">
 						<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-500 shadow-2xl img-hover-scale">
-							<iframe 
-								src="https://www.youtube.com/embed/YOUR_VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=YOUR_VIDEO_ID&controls=0&modestbranding=1&rel=0"
-								title="Video"
-								className="absolute inset-0 w-full h-full"
-								allow="autoplay; encrypted-media; picture-in-picture"
-								allowFullScreen
-								frameBorder="0"
-							></iframe>
+							<video 
+								src="/images/1126(1).mp4"
+								controls
+								autoPlay
+								muted
+								loop
+								playsInline
+								className="absolute inset-0 w-full h-full object-cover"
+							>
+								Your browser does not support the video tag.
+							</video>
 						</div>
 					</div>
 					</div>
