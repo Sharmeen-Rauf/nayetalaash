@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ArrowRight, ChevronDown, MapPin, MessageCircle, CheckCircle2 } from 'lucide-react';
 
 const ContactPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 	const [formData, setFormData] = useState({
 		service: '',
@@ -17,7 +18,24 @@ const ContactPage = () => {
 	// Theme Colors
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
-	const logoImage = '/images/logo landscape(white).png';
+	
+	// Dynamic logo based on scroll position
+	const logoImage = isLight ? '/images/Final....png' : '/images/logo landscape(white).png';
+	
+	// Scroll detection for navbar transparency
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollY = window.scrollY || window.pageYOffset;
+			const heroHeight = window.innerHeight;
+			// Set isLight to true when scrolled past hero section
+			setIsLight(scrollY > heroHeight * 0.8);
+		};
+
+		// Set initial state
+		handleScroll();
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
 
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
@@ -104,8 +122,12 @@ const ContactPage = () => {
 				</div>
 			</div>
 
-			{/* Main Navigation Bar */}
-			<header className="fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)] transition-all duration-300">
+			{/* Main Navigation Bar - Dynamic */}
+			<header className={`fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] backdrop-blur-sm transition-all duration-300 ${
+				isLight 
+					? 'bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]' 
+					: 'bg-transparent border-b border-transparent shadow-none'
+			}`}>
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex items-center justify-between py-2 sm:py-2.5">
 						{/* Logo */}
@@ -123,23 +145,23 @@ const ContactPage = () => {
 
 						{/* Desktop Navigation Links */}
 						<nav className="hidden lg:flex items-center gap-1">
-							<Link href="/#home" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">HOME</Link>
-							<Link href="/#tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors relative group">
+							<Link href="/#home" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>HOME</Link>
+							<Link href="/#tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative group ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
 								<span className="flex items-center gap-1">
 									PAKISTAN TOURS
 									<ChevronRight className="w-4 h-4 rotate-90" />
 								</span>
 							</Link>
-							<Link href="/#city-tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors relative group">
+							<Link href="/#city-tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative group ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
 								<span className="flex items-center gap-1">
 									CITY TOURS
 									<ChevronRight className="w-4 h-4 rotate-90" />
 								</span>
 							</Link>
-							<Link href="/#group-tours" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">GROUP TOUR</Link>
-							<Link href="/#destination" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">DESTINATION</Link>
-							<Link href="/#about" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">ABOUT US</Link>
-							<Link href="/contact" className="px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621] transition-colors">CONTACT US</Link>
+							<Link href="/#group-tours" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>GROUP TOUR</Link>
+							<Link href="/#destination" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>DESTINATION</Link>
+							<Link href="/#about" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>ABOUT US</Link>
+							<Link href="/contact" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>CONTACT US</Link>
 						</nav>
 
 						{/* Mobile Menu Button */}
@@ -148,7 +170,7 @@ const ContactPage = () => {
 							className="lg:hidden p-2 rounded-md transition-colors hover:bg-white/20"
 							aria-label="Toggle navigation menu"
 						>
-							<Menu className="w-6 h-6 text-[#211f20]" />
+							<Menu className={`w-6 h-6 ${isLight ? 'text-[#211f20]' : 'text-white'}`} />
 						</button>
 					</div>
 				</div>
@@ -175,25 +197,30 @@ const ContactPage = () => {
 			)}
 
 			{/* Hero Section */}
-			<section className="pt-[100px] sm:pt-[120px] pb-16 md:pb-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: secondaryBlack }}>
-				<div className="max-w-7xl mx-auto">
-					<div className="text-center max-w-4xl mx-auto">
-						<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-							We&apos;re your complete travel partner.
+			<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[100px] sm:pt-[104px]" style={{ backgroundColor: secondaryBlack }}>
+				{/* Background Image */}
+				<div 
+					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+					style={{ 
+						backgroundImage: "url('/images/Home Banner - Idea.jpg')",
+						filter: "brightness(0.3)",
+					}}
+				></div>
+
+				{/* Theme Color Overlay */}
+				<div className="absolute inset-0 z-[2]" style={{ background: `linear-gradient(135deg, ${secondaryBlack}90 0%, transparent 50%, ${primaryOrange}30 100%)` }}></div>
+
+				{/* Main Content */}
+				<div className="relative z-10 h-full flex items-center justify-center">
+					<div className="text-center px-4">
+						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
+							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
+								We&apos;re your complete travel partner.
+							</span>
 						</h1>
-						<p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
 							From discovering hidden cultures to planning stress free trips, we help you travel smarter, safer and more comfortably starting today.
 						</p>
-						<p className="text-base md:text-lg text-white/80 mb-10 font-medium">
-							Don&apos;t wait. Your next unforgettable journey is just one message away.
-						</p>
-						<button
-							onClick={handleWhatsAppClick}
-							className="px-8 py-4 font-bold rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl text-lg"
-							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-						>
-							Get Your Perfect Travel Plan
-						</button>
 					</div>
 				</div>
 			</section>
