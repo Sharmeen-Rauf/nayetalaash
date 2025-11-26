@@ -476,6 +476,46 @@ const ContactPage = () => {
 				</div>
 			</section>
 
+			{/* Connect With Us Section */}
+			<section className="py-16 md:py-24 bg-white">
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div className="text-center">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							Connect With Us
+						</h2>
+						<p className="text-base md:text-lg mb-8 max-w-2xl mx-auto leading-relaxed" style={{ color: '#6b7280' }}>
+							Stay updated with travel tips, new packages and cultural experiences.
+						</p>
+						<div className="flex justify-center gap-6">
+							<a 
+								href="https://www.facebook.com/nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer"
+								className="w-14 h-14 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center hover:border-[#f99621] transition-all"
+							>
+								<Facebook className="w-6 h-6" style={{ color: secondaryBlack }} />
+							</a>
+							<a 
+								href="https://www.instagram.com/nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer"
+								className="w-14 h-14 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center hover:border-[#f99621] transition-all"
+							>
+								<Instagram className="w-6 h-6" style={{ color: secondaryBlack }} />
+							</a>
+							<a 
+								href="https://www.youtube.com/@nayetalash" 
+								target="_blank" 
+								rel="noopener noreferrer"
+								className="w-14 h-14 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center hover:border-[#f99621] transition-all"
+							>
+								<Youtube className="w-6 h-6" style={{ color: secondaryBlack }} />
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* Footer */}
 			<footer className="py-16 bg-white border-t relative overflow-hidden" style={{ borderColor: `${primaryOrange}30` }}>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
