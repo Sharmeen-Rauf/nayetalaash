@@ -1387,8 +1387,7 @@ const Page = () => {
 						<div className="mb-3">
 							<h2 className="text-3xl md:text-4xl font-bold">
 								<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-									color: 'white',
-									textShadow: '2px 2px 0px rgba(249, 150, 33, 0.5), 4px 4px 0px rgba(0, 0, 0, 0.3)'
+									color: 'white'
 								}}>
 									Discover
 								</span>
