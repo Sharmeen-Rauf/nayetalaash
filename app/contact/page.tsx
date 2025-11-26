@@ -419,68 +419,55 @@ const ContactPage = () => {
 				</div>
 			</section>
 
-							{/* Our Presence */}
-							<div>
-								<h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-									Our Presence
-								</h3>
-								<div className="bg-gray-50 rounded-lg p-6 border border-gray-200">
-									<h4 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
-										Karachi, Pakistan — Head Office
-									</h4>
-									<p className="text-sm mb-4 leading-relaxed" style={{ color: '#6b7280' }}>
-										Located in the heart of the city, our head office in PECHS Block 6 serves as the center of all operations at Nayi Talaash. This is where our travel experts plan routes, design tour experiences and assist travelers from all across Pakistan.
-									</p>
-									<p className="text-sm mb-6 leading-relaxed" style={{ color: '#6b7280' }}>
-										Whether you want guidance, bookings or a fully customized trip, our Karachi team is always ready to help you explore the beauty of Pakistan with comfort and confidence.
-									</p>
-									<div className="space-y-3">
-										<div className="flex items-start gap-3">
-											<MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: primaryOrange }} />
-											<p className="text-sm" style={{ color: '#6b7280' }}>F-36 PECHS Block 6, Karachi, Pakistan</p>
-										</div>
-										<div className="flex items-center gap-3">
-											<Mail className="w-5 h-5 flex-shrink-0" style={{ color: primaryOrange }} />
-											<a href="mailto:info@nayitalaash.com" className="text-sm transition-colors" style={{ color: '#6b7280' }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = '#6b7280'}>
-												info@nayitalaash.com
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-							{/* Connect With Us */}
-							<div>
-								<h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-									Connect With Us
-								</h3>
-								<p className="text-base mb-4 leading-relaxed" style={{ color: '#6b7280' }}>
-									Stay updated with travel tips, new packages and cultural experiences.
-								</p>
-								<div className="flex gap-3">
-									<a 
-										href="https://www.facebook.com/nayetalash" 
-										target="_blank" 
-										rel="noopener noreferrer"
-										className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
-									>
-										<Facebook className="w-6 h-6 text-white" />
-									</a>
-									<a 
-										href="https://www.instagram.com/nayetalash" 
-										target="_blank" 
-										rel="noopener noreferrer"
-										className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
-									>
-										<Instagram className="w-6 h-6 text-white" />
-									</a>
-									<a 
-										href="https://www.youtube.com/@nayetalash" 
-										target="_blank" 
-										rel="noopener noreferrer"
-										className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
-									>
-										<Youtube className="w-6 h-6 text-white" />
+			{/* Our Presence Section */}
+			<section className="py-16 md:py-24 bg-white">
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					{/* Centered Heading */}
+					<div className="text-center mb-12">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							Our Presence
+						</h2>
+					</div>
+
+					{/* Image Left, Content Right */}
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+						{/* Left: Image */}
+						<div className="order-2 lg:order-1">
+							<div className="relative w-full h-[400px] lg:h-[500px] rounded-lg overflow-hidden shadow-xl">
+								<Image
+									src="/images/hd-mazarequaid-karachi.jpg"
+									alt="Mazar-e-Quaid Karachi"
+									fill
+									className="object-cover"
+								/>
+							</div>
+						</div>
+
+						{/* Right: Content */}
+						<div className="order-1 lg:order-2">
+							<h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
+								Karachi, Pakistan — Head Office
+							</h3>
+							<p className="text-base mb-4 leading-relaxed" style={{ color: '#6b7280' }}>
+								Located in the heart of the city, our head office in PECHS Block 6 serves as the center of all operations at Nayi Talaash. This is where our travel experts plan routes, design tour experiences and assist travelers from all across Pakistan.
+							</p>
+							<p className="text-base mb-6 leading-relaxed" style={{ color: '#6b7280' }}>
+								Whether you want guidance, bookings or a fully customized trip, our Karachi team is always ready to help you explore the beauty of Pakistan with comfort and confidence.
+							</p>
+							<div className="space-y-4">
+								<div className="flex items-start gap-3">
+									<MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: primaryOrange }} />
+									<p className="text-base" style={{ color: '#6b7280' }}>F-36 PECHS Block 6, Karachi, Pakistan</p>
+								</div>
+								<div className="flex items-center gap-3">
+									<Mail className="w-5 h-5 flex-shrink-0" style={{ color: primaryOrange }} />
+									<a href="mailto:info@nayitalaash.com" className="text-base transition-colors" style={{ color: '#6b7280' }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = '#6b7280'}>
+										info@nayitalaash.com
 									</a>
 								</div>
 							</div>
