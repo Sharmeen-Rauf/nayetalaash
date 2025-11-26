@@ -218,7 +218,7 @@ const ContactPage = () => {
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
-							<span className="font-autography hero-text-reveal hero-text-delay-1" 
+							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
 								style={{ 
 									color: primaryOrange, 
 									display: 'inline-block'
@@ -243,22 +243,21 @@ const ContactPage = () => {
 							Let&apos;s explore where we can take you next
 						</h2>
 						<p className="text-base md:text-lg mb-2 max-w-3xl mx-auto leading-relaxed" style={{ color: '#6b7280' }}>
-							We help travelers and companies design structured, smooth and memorable travel experiences.
+							We help travelers and companies design structured, smooth and memorable travel experiences. From tour planning to bookings get full support without any hassle.
+
 						</p>
-						<p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed" style={{ color: '#6b7280' }}>
-							From tour planning to bookings get full support without any hassle.
-						</p>
+						
 					</div>
 
 					{/* Main Content Card */}
 					<div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
-						<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+						<div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 lg:gap-10">
 							{/* Left: Why Talk To Us? */}
 							<div>
 								<h3 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: secondaryBlack }}>
 									Why talk to us?
 								</h3>
-								<ul className="space-y-6">
+								<ul className="space-y-4">
 									{[
 										'Free, no obligation consultation with a travel specialist',
 										'Customized routes, stays and experiences',
