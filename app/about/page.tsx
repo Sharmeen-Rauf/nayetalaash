@@ -753,10 +753,9 @@ const AboutPage = () => {
 
 			{/* ====================== HOTELS & ACCOMMODATION SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					{/* Main Banner Slider */}
-					<div className="relative mb-4">
-						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
+				{/* Main Banner Slider - Full Width */}
+				<div className="relative mb-4 w-full">
+					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
 							<Image 
 								src={hotelsMainImages[hotelsSlide]}
 								alt="Hotels & Accommodation"
@@ -795,7 +794,8 @@ const AboutPage = () => {
 						</div>
 					</div>
 
-					{/* Auto-sliding Thumbnail Carousel */}
+				{/* Auto-sliding Thumbnail Carousel - Centered */}
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					<div className="relative overflow-hidden mt-4">
 						<div className="flex gap-2 justify-center flex-wrap">
 							{hotelsThumbnails.map((thumb, idx) => (
@@ -950,10 +950,9 @@ const AboutPage = () => {
 
 			{/* ====================== CONVEYANCE SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					{/* Main Banner Slider */}
-					<div className="relative mb-4">
-						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
+				{/* Main Banner Slider - Full Width */}
+				<div className="relative mb-4 w-full">
+					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
 							<Image 
 								src={conveyanceMainImages[conveyanceSlide]}
 								alt="Conveyance"
@@ -992,7 +991,8 @@ const AboutPage = () => {
 						</div>
 					</div>
 
-					{/* Auto-sliding Thumbnail Carousel */}
+				{/* Auto-sliding Thumbnail Carousel - Centered */}
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					<div className="relative overflow-hidden mt-4">
 						<div className="flex gap-2 justify-center flex-wrap">
 							{conveyanceThumbnails.map((thumb, idx) => (
@@ -1131,49 +1131,49 @@ const AboutPage = () => {
 
 			{/* ====================== CURATED TRIP EXPERIENCES SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					{/* Main Banner Slider */}
-					<div className="relative mb-4">
-						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
-							<Image 
-								src={experiencesMainImages[experiencesSlide]}
-								alt="Curated Trip Experiences"
-								fill
-								className="object-cover transition-opacity duration-500"
-							/>
-							{/* Dark overlay for text readability */}
-							<div className="absolute inset-0 bg-black/30"></div>
-							
-							{/* Text Overlay */}
-							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">CURATED TRIP EXPERIENCES</h2>
-								<p className="text-lg md:text-xl mb-4">MATCHING YOUR TASTE</p>
-								<button
-									onClick={handleWhatsAppClick}
-									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-									style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-								>
-									Enquire now
-								</button>
-							</div>
-
-							{/* Navigation Arrows with padding to avoid button overlap */}
+				{/* Main Banner Slider - Full Width */}
+				<div className="relative mb-4 w-full">
+					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
+						<Image 
+							src={experiencesMainImages[experiencesSlide]}
+							alt="Curated Trip Experiences"
+							fill
+							className="object-cover transition-opacity duration-500"
+						/>
+						{/* Dark overlay for text readability */}
+						<div className="absolute inset-0 bg-black/30"></div>
+						
+						{/* Text Overlay */}
+						<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+							<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Curated Trip Experiences</h2>
+							<p className="text-lg md:text-xl mb-4 capitalize">Matching Your Taste</p>
 							<button
-								onClick={() => setExperiencesSlide(prev => (prev - 1 + experiencesMainImages.length) % experiencesMainImages.length)}
-								className="absolute left-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+								onClick={handleWhatsAppClick}
+								className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 							>
-								<ChevronLeft className="w-6 h-6" style={{ color: primaryOrange }} />
-							</button>
-							<button
-								onClick={() => setExperiencesSlide(prev => (prev + 1) % experiencesMainImages.length)}
-								className="absolute right-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
-							>
-								<ChevronRight className="w-6 h-6" style={{ color: primaryOrange }} />
+								Enquire now
 							</button>
 						</div>
-					</div>
 
-					{/* Auto-sliding Thumbnail Carousel */}
+						{/* Navigation Arrows with padding to avoid button overlap */}
+						<button
+							onClick={() => setExperiencesSlide(prev => (prev - 1 + experiencesMainImages.length) % experiencesMainImages.length)}
+							className="absolute left-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+						>
+							<ChevronLeft className="w-6 h-6" style={{ color: primaryOrange }} />
+						</button>
+						<button
+							onClick={() => setExperiencesSlide(prev => (prev + 1) % experiencesMainImages.length)}
+							className="absolute right-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+						>
+							<ChevronRight className="w-6 h-6" style={{ color: primaryOrange }} />
+						</button>
+					</div>
+				</div>
+
+				{/* Auto-sliding Thumbnail Carousel - Centered */}
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					<div className="relative overflow-hidden mt-4">
 						<div className="flex gap-2 justify-center flex-wrap">
 							{experiencesThumbnails.map((thumb, idx) => (
@@ -1289,49 +1289,49 @@ const AboutPage = () => {
 
 			{/* ====================== BEST CREW SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					{/* Main Banner Slider */}
-					<div className="relative mb-4">
-						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
-							<Image 
-								src={crewMainImages[crewSlide]}
-								alt="Best Crew"
-								fill
-								className="object-cover transition-opacity duration-500"
-							/>
-							{/* Dark overlay for text readability */}
-							<div className="absolute inset-0 bg-black/30"></div>
-							
-							{/* Text Overlay */}
-							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Best Crew</h2>
-								<p className="text-lg md:text-xl mb-4">Handpicked Tour Managers</p>
-								<button
-									onClick={handleWhatsAppClick}
-									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-									style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-								>
-									Enquire now
-								</button>
-							</div>
-
-							{/* Navigation Arrows with padding to avoid button overlap */}
+				{/* Main Banner Slider - Full Width */}
+				<div className="relative mb-4 w-full">
+					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
+						<Image 
+							src={crewMainImages[crewSlide]}
+							alt="Best Crew"
+							fill
+							className="object-cover transition-opacity duration-500"
+						/>
+						{/* Dark overlay for text readability */}
+						<div className="absolute inset-0 bg-black/30"></div>
+						
+						{/* Text Overlay */}
+						<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+							<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Best Crew</h2>
+							<p className="text-lg md:text-xl mb-4">Handpicked Tour Managers</p>
 							<button
-								onClick={() => setCrewSlide(prev => (prev - 1 + crewMainImages.length) % crewMainImages.length)}
-								className="absolute left-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+								onClick={handleWhatsAppClick}
+								className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 							>
-								<ChevronLeft className="w-6 h-6" style={{ color: primaryOrange }} />
-							</button>
-							<button
-								onClick={() => setCrewSlide(prev => (prev + 1) % crewMainImages.length)}
-								className="absolute right-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
-							>
-								<ChevronRight className="w-6 h-6" style={{ color: primaryOrange }} />
+								Enquire now
 							</button>
 						</div>
-					</div>
 
-					{/* Auto-sliding Thumbnail Carousel */}
+						{/* Navigation Arrows with padding to avoid button overlap */}
+						<button
+							onClick={() => setCrewSlide(prev => (prev - 1 + crewMainImages.length) % crewMainImages.length)}
+							className="absolute left-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+						>
+							<ChevronLeft className="w-6 h-6" style={{ color: primaryOrange }} />
+						</button>
+						<button
+							onClick={() => setCrewSlide(prev => (prev + 1) % crewMainImages.length)}
+							className="absolute right-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+						>
+							<ChevronRight className="w-6 h-6" style={{ color: primaryOrange }} />
+						</button>
+					</div>
+				</div>
+
+				{/* Auto-sliding Thumbnail Carousel - Centered */}
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					<div className="relative overflow-hidden mt-4">
 						<div className="flex gap-2 justify-center flex-wrap">
 							{crewThumbnails.map((thumb, idx) => (
