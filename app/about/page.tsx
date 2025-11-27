@@ -1611,60 +1611,30 @@ const AboutPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== TRAVEL VISA SLIDER ====================== */}
-			<section className="py-8 md:py-12 bg-gray-50">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-						{/* Left: Content */}
-						<div>
-							<div className="flex items-center gap-2 mb-4">
-								<FileText className="w-8 h-8" style={{ color: primaryOrange }} />
-								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Travel Visa</h2>
-							</div>
-							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Hassle-free process</p>
-							<p className="text-base text-gray-600 mb-4 leading-relaxed">
-								We provide you a safe gateway to apply for your tourist, business and visit visa to Pakistan. Our services include visa consultation services, assembling your visa application papers, application letter from our side to the concerned department as we are a registered tour company, applying and liaising for your visa with the concerned public department, and resubmitting any further documents.
-							</p>
-							<p className="text-base text-gray-600 mb-6 leading-relaxed">
-								We do not provide guarantees on visa issuance; however, our team of experts keeps you informed throughout the process and sets your expectations accordingly.
-							</p>
-							<button
-								onClick={handleWhatsAppClick}
-								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
-								style={{ backgroundColor: primaryOrange, color: 'white' }}
-							>
-								Enquire now
-							</button>
-						</div>
-
-						{/* Right: Image Slider */}
-						<div className="relative">
-							<div className="relative h-96 rounded-lg overflow-hidden">
-								<Image 
-									src="/images/azad kashmir.jpg"
-									alt="Travel Visa"
-									fill
-									className="object-cover"
-								/>
-							</div>
-							<div className="flex items-center justify-center gap-2 mt-4">
-								<button
-									onClick={() => setVisaSlide(prev => Math.max(0, prev - 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={visaSlide === 0}
-								>
-									<ChevronLeft className="w-5 h-5" style={{ color: visaSlide === 0 ? '#ccc' : primaryOrange }} />
-								</button>
-								<span className="text-sm text-gray-600">{visaSlide + 1} / 5</span>
-								<button
-									onClick={() => setVisaSlide(prev => Math.min(4, prev + 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={visaSlide === 4}
-								>
-									<ChevronRight className="w-5 h-5" style={{ color: visaSlide === 4 ? '#ccc' : primaryOrange }} />
-								</button>
-							</div>
-						</div>
+			{/* ====================== TRAVEL VISA BANNER ====================== */}
+			<section className="w-full overflow-hidden">
+				{/* Full Width Banner with Text Overlay */}
+				<div className="relative w-full h-[500px] md:h-[600px]">
+					<Image 
+						src="/images/azad kashmir.jpg"
+						alt="Travel Visa"
+						fill
+						className="object-cover"
+					/>
+					{/* Dark overlay for text readability */}
+					<div className="absolute inset-0 bg-black/30"></div>
+					
+					{/* Text Overlay */}
+					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">TRAVEL VISA</h2>
+						<p className="text-lg md:text-xl mb-6">Hassle-free process</p>
+						<button
+							onClick={handleWhatsAppClick}
+							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+						>
+							Enquire now
+						</button>
 					</div>
 				</div>
 			</section>
