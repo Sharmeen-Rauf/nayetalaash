@@ -1818,11 +1818,9 @@ const AboutPage = () => {
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Discover</h3>
 							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-								Visit our website and discover our 30 curated products. The products are divided into 6 specialized tour themes covering the best of Pakistan's tourism.
+								Visit our website and discover our 30 curated products. The products are divided into 6 specialized tour themes covering the best of Pakistan&apos;s tourism.
 							</p>
-							<Link href="/#tours" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
-								Find out more
-							</Link>
+							<p className="text-sm text-gray-500">Find out more</p>
 						</div>
 
 						{/* Step 2: Customize */}
@@ -1834,9 +1832,7 @@ const AboutPage = () => {
 							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 								Share your travel details and request for customization through our interactive online forms. We have included the accommodation, transportation and activities to the best thematic design, but you may request to add more days, or destinations, or activities.
 							</p>
-							<Link href="/contact" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
-								Find out more
-							</Link>
+							<p className="text-sm text-gray-500">Find out more</p>
 						</div>
 
 						{/* Step 3: Travel */}
@@ -1848,9 +1844,7 @@ const AboutPage = () => {
 							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 								Read through our website for further destination guide and apply for your visa through our assisted service. Secure your itinerary and accommodation by paying through our online platform and get ready to be welcomed at the airport.
 							</p>
-							<Link href="/#destination" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
-								Find out more
-							</Link>
+							<p className="text-sm text-gray-500">Find out more</p>
 						</div>
 
 						{/* Step 4: Share your experience */}
@@ -1862,9 +1856,7 @@ const AboutPage = () => {
 							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 								We produce a complimentary video for all our guests showcasing your 60 sec destination story. Share the video with your friends, and share your experience with us through our easy-to-fill online customer review form.
 							</p>
-							<Link href="/contact" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
-								Find out more
-							</Link>
+							<p className="text-sm text-gray-500">Find out more</p>
 						</div>
 					</div>
 					
