@@ -797,11 +797,11 @@ const AboutPage = () => {
 
 					{/* Auto-sliding Thumbnail Carousel */}
 					<div className="relative overflow-hidden mt-4">
-						<div className="flex gap-2">
+						<div className="flex gap-2 justify-center flex-wrap">
 							{hotelsThumbnails.map((thumb, idx) => (
 								<div 
 									key={idx}
-									className="flex-shrink-0 w-full sm:w-1/3 md:w-1/6 cursor-pointer transition-all duration-300"
+									className="flex-shrink-0 w-[calc(20%-0.5rem)] max-w-[180px] cursor-pointer transition-all duration-300"
 									onClick={() => setHotelsSlide(idx)}
 								>
 									<div className="relative h-24 md:h-32 rounded overflow-hidden">
@@ -994,11 +994,11 @@ const AboutPage = () => {
 
 					{/* Auto-sliding Thumbnail Carousel */}
 					<div className="relative overflow-hidden mt-4">
-						<div className="flex gap-2">
+						<div className="flex gap-2 justify-center flex-wrap">
 							{conveyanceThumbnails.map((thumb, idx) => (
 								<div 
 									key={idx}
-									className="flex-shrink-0 w-full sm:w-1/3 md:w-1/6 cursor-pointer transition-all duration-300"
+									className="flex-shrink-0 w-[calc(20%-0.5rem)] max-w-[180px] cursor-pointer transition-all duration-300"
 									onClick={() => setConveyanceSlide(idx)}
 								>
 									<div className="relative h-24 md:h-32 rounded overflow-hidden">
@@ -1175,11 +1175,11 @@ const AboutPage = () => {
 
 					{/* Auto-sliding Thumbnail Carousel */}
 					<div className="relative overflow-hidden mt-4">
-						<div className="flex gap-2">
+						<div className="flex gap-2 justify-center flex-wrap">
 							{experiencesThumbnails.map((thumb, idx) => (
 								<div 
 									key={idx}
-									className="flex-shrink-0 w-full sm:w-1/3 md:w-1/6 cursor-pointer transition-all duration-300"
+									className="flex-shrink-0 w-[calc(20%-0.5rem)] max-w-[180px] cursor-pointer transition-all duration-300"
 									onClick={() => setExperiencesSlide(idx)}
 								>
 									<div className="relative h-24 md:h-32 rounded overflow-hidden">
@@ -1333,11 +1333,11 @@ const AboutPage = () => {
 
 					{/* Auto-sliding Thumbnail Carousel */}
 					<div className="relative overflow-hidden mt-4">
-						<div className="flex gap-2">
+						<div className="flex gap-2 justify-center flex-wrap">
 							{crewThumbnails.map((thumb, idx) => (
 								<div 
 									key={idx}
-									className="flex-shrink-0 w-full sm:w-1/3 md:w-1/6 cursor-pointer transition-all duration-300"
+									className="flex-shrink-0 w-[calc(25%-0.5rem)] max-w-[220px] cursor-pointer transition-all duration-300"
 									onClick={() => setCrewSlide(idx)}
 								>
 									<div className="relative h-24 md:h-32 rounded overflow-hidden">

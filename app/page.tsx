@@ -1828,7 +1828,7 @@ const Page = () => {
 							{/* Review Text */}
 							<div className="flex-1 relative">
 								<p className="text-sm leading-relaxed mb-4" style={{ color: `${secondaryBlack}CC` }}>
-									Our trip to Swat, Malam Jabba, and Kalam was phenomenal. Great thanks to the outstanding services provided by NatureHikePakistan and our guide, Neha. From transport to food and organization, every detail was handled meticulously. The stunning landscapes and warm hospitality, combined with excellent services, made our tour an unforgettable adventure. Highly recommend NatureHikePakistan to explore the beauty of Pakistan!
+									Our trip to Swat, Malam Jabba, and Kalam was phenomenal. Great thanks to the outstandOur trip to Swat, Malam Jabba and Kalam was truly phenomenal, thanks to Nayi Talaash and our guide, Umar. Every detail, from transport and food to organization, was handled meticulously. The stunning landscapes combined with their excellent services made our tour an unforgettable adventure. I highly recommend Nayi Talaash to explore the beautiful side of Pakistan!
 								</p>
 								<p className="font-bold text-sm" style={{ color: secondaryBlack }}>MUHAMMAD NAURAIZ MUSHTAQ,</p>
 								<div className="absolute bottom-0 right-0 text-7xl opacity-15 font-serif" style={{ color: `${secondaryBlack}80`, lineHeight: '1', transform: 'translateY(10px)' }}>&rdquo;</div>
@@ -1855,8 +1855,7 @@ const Page = () => {
 							{/* Review Text */}
 							<div className="flex-1 relative">
 								<p className="text-sm leading-relaxed mb-4" style={{ color: `${secondaryBlack}CC` }}>
-									The best decision I ever made by myself by choosing Nature Hike Pakistan for my vacation, I&apos;m glad that Neha took care of everything personally. From pick up from my home to the best hotels in town, confident rider and a comfortable car, beautiful view and variety of shopping options. And a relaxing journey. 5 hotels, 21 viewpoints, the most beautiful ever. There are pre-planned packages and customized Options. Haste-free and exceptional customer service. I had really enjoyed my time. Contact Neha and choose your package.
-								</p>
+								Choosing Nayi Talaash was the best decision for my vacation. I am so glad that Hassan personally managed everything. From comfortable transport and the best hotels to amazing views and shopping, the journey was relaxing. We visited five hotels and twenty one viewpoints. Their customer service is exceptional and hassle free, offering both pre planned and customized options. I really enjoyed my time. Contact Hassan and choose your package.</p>
 								<p className="font-bold text-sm" style={{ color: secondaryBlack }}>ALI REHMAN,</p>
 								<div className="absolute bottom-0 right-0 text-7xl opacity-15 font-serif" style={{ color: `${secondaryBlack}80`, lineHeight: '1', transform: 'translateY(10px)' }}>&rdquo;</div>
 							</div>
