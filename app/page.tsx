@@ -1727,7 +1727,7 @@ const Page = () => {
 				{/* Enhanced Tour Cards with 3D Effects */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 					{[
-						{ title: '2 DAYS MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 11,000', image: '/images/malam jabba.jpg', duration: '2 Days' },
+						{ title: '2 DAYS MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 11,000', image: '/images/swat.jpg', duration: '2 Days' },
 						{ title: '5 DAYS HUNZA, NALTAR, AND KHUNJERAB PUBLIC GROUP TOUR', price: 'From Rs 25,000', image: '/images/naltar valley.jpg', duration: '5 Days' },
 						{ title: '3 DAYS KALAM AND MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 16,000', image: '/images/malam jabba.jpg', duration: '3 Days' },
 						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: '/images/Arangkel.jpg', duration: '3 Days' },
