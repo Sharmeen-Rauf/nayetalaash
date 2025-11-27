@@ -1363,6 +1363,87 @@ const AboutPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== BEST CREW CONTENT SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					{/* Four Red Stars */}
+					<div className="flex items-center justify-center gap-2 mb-8">
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+					</div>
+
+					{/* Text Content */}
+					<div className="max-w-4xl mx-auto mb-12 space-y-6">
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							Our people bring a cumulative 200 years of experience in local and international tourism operations. From sales call handling to our drivers and the service crew, everyone is driven to provide you with the best trip experience.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							<strong className="font-semibold">Travel Designers –</strong> Our travel consultants help you in uncovering your own travel needs and then match them with the hundreds of places to visit, and experiences to enjoy and accommodation and conveyance to choose.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							<strong className="font-semibold">Tour Managers –</strong> We have a selective pool of licensed and experienced guides in each region. The tour manager remains with you throughout your journey and is always available to assist you with your needs. Our tour managers speak English, Chinese, Arabic, and Russian besides Urdu and local languages which help them communicate easily between you and the local community.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							<strong className="font-semibold">Ground Handling –</strong> The tour managers coordinate with the tour designer about your trip status and any change of plans to make sure all your needs are covered. The tour manager also works as a team with the tour driver to plan routes, maps, and any itinerary changes.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							From receiving you at the airport to helping you check in to hotels, covering your cash needs, and capturing your professional video log, our tour managers have been handpicked to give you the comfort and the space to enjoy your trip completely hassle-free.
+						</p>
+					</div>
+
+					{/* Two Image Cards */}
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+						{/* Card 1 */}
+						<div className="relative group">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image
+									src="/images/Hunza.jpg"
+									alt="Kirthar Trophy Hunting"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-105"
+								/>
+							</div>
+							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
+								<h3 className="text-xl md:text-2xl font-bold mb-2">KIRTHAR TROPHY HUNTING</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">HUNT WITH A PROFESSIONAL AND TRAINED CREW</p>
+								<button
+									onClick={handleWhatsAppClick}
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+								>
+									<span>→</span>
+									<span>BOOK NOW</span>
+								</button>
+							</div>
+						</div>
+
+						{/* Card 2 */}
+						<div className="relative group">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image
+									src="/images/chitral.jpg"
+									alt="Contact Our Design Team"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-105"
+								/>
+							</div>
+							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
+								<h3 className="text-xl md:text-2xl font-bold mb-2">CONTACT OUR DESIGN TEAM TODAY</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">SHARE YOUR DETAILS FOR A CUSTOM ITINERARY</p>
+								<button
+									onClick={handleWhatsAppClick}
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+								>
+									<span>→</span>
+									<span>ENQUIRE NOW</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== COVID-19 PREPARED SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
