@@ -1178,6 +1178,89 @@ const AboutPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== CURATED TRIP EXPERIENCES CONTENT SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					{/* Four Red Stars */}
+					<div className="flex items-center justify-center gap-2 mb-8">
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+					</div>
+
+					{/* Text Content */}
+					<div className="max-w-4xl mx-auto mb-12">
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							Every journey with Nayi Talaash is carefully designed to match your preferences, interests, and travel style. We understand that no two travelers are the same, which is why we offer fully customizable itineraries that can be tailored to your specific needs and personality.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							From thrilling adventure activities like hiking, trekking, cycling, skiing, fishing, trophy hunting, national park safaris, camping, marine adventures, and helicopter tours to exploring natural wonders such as glaciers, canyons, ravines, waterfalls, nature valleys, deserts, beaches, and islands – we curate every experience to match your passion.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							Immerse yourself in Pakistan&apos;s rich culinary and cultural heritage with traditional food experiences, fine-dining, BBQ bonfires, roadside food adventures, local bazaars, meetups with indigenous tribes, homestays in villages, and local lifestyle tours that give you an authentic taste of Pakistani hospitality.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							Discover world heritage sites, museums, and spiritual sites, and delve into ethnic art, poetry, literature, Sufi music, local fashion, and ethno-tourism. Each experience is carefully crafted to provide you with deep cultural insights and lasting memories.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							Contact our travel designers for personalized advice and book a consultation to create the perfect itinerary that matches your travel dreams and aspirations.
+						</p>
+					</div>
+
+					{/* Two Image Cards Grid */}
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+						{/* Card 1: PUNJAB */}
+						<div className="relative group">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/lahore.jpg"
+									alt="Punjab: The Land of 5 Rivers"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-110"
+								/>
+							</div>
+							{/* Black Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
+								<h3 className="text-xl md:text-2xl font-bold mb-2">PUNJAB: THE LAND OF 5 RIVERS</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">EXPERIENCE THE TRUE ESSENCE OF THE PUNJAB</p>
+								<button
+									onClick={handleWhatsAppClick}
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+								>
+									<span>→</span>
+									<span>BOOK NOW</span>
+								</button>
+							</div>
+						</div>
+
+						{/* Card 2: BALOCHISTAN */}
+						<div className="relative group">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/gwadar.jpg"
+									alt="Balochistan Hospitality & Horseback"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-110"
+								/>
+							</div>
+							{/* Black Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
+								<h3 className="text-xl md:text-2xl font-bold mb-2">BALOCHISTAN HOSPITALITY & HORSEBACK</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">DISCOVER THE AUTHENTIC BALOCH HERITAGE</p>
+								<button
+									onClick={handleWhatsAppClick}
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+								>
+									<span>→</span>
+									<span>BOOK NOW</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== BEST CREW SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
