@@ -25,6 +25,33 @@ const AboutPage = () => {
 	const [visaSlide, setVisaSlide] = useState(0);
 	const [managementSlide, setManagementSlide] = useState(0);
 
+	// Hotels & Accommodation slider images
+	const hotelsMainImages = [
+		'/images/Hunza.jpg',
+		'/images/skardu 2.jpg',
+		'/images/naran and kaghan.jpg',
+		'/images/chitral.jpg',
+		'/images/fairy meadows 2.jpg',
+		'/images/Kund Malir.jpg',
+	];
+
+	const hotelsThumbnails = [
+		'/images/Hunza.jpg',
+		'/images/skardu 2.jpg',
+		'/images/naran and kaghan.jpg',
+		'/images/chitral.jpg',
+		'/images/fairy meadows 2.jpg',
+		'/images/Kund Malir.jpg',
+	];
+
+	// Auto-slide effect for Hotels banner and thumbnail carousel
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setHotelsSlide((prev) => (prev + 1) % hotelsMainImages.length);
+		}, 4000); // Change slide every 4 seconds
+		return () => clearInterval(interval);
+	}, [hotelsMainImages.length]);
+
 	// Theme Colors
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
@@ -656,56 +683,73 @@ const AboutPage = () => {
 			{/* ====================== HOTELS & ACCOMMODATION SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-						{/* Left: Content */}
-						<div>
-							<div className="flex items-center gap-2 mb-4">
-								<Building2 className="w-8 h-8" style={{ color: primaryOrange }} />
-								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Hotels & Accommodation</h2>
+					{/* Main Banner Slider */}
+					<div className="relative mb-6">
+						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
+							<Image 
+								src={hotelsMainImages[hotelsSlide]}
+								alt="Hotels & Accommodation"
+								fill
+								className="object-cover transition-opacity duration-500"
+							/>
+							{/* Dark overlay for text readability */}
+							<div className="absolute inset-0 bg-black/30"></div>
+							
+							{/* Text Overlay */}
+							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">HOTELS & ACCOMMODATION</h2>
+								<p className="text-lg md:text-xl mb-6">Best deals on premium stays</p>
+								<button
+									onClick={handleWhatsAppClick}
+									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+									style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+								>
+									Enquire now
+								</button>
 							</div>
-							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Best deals on premium stays</p>
-							<p className="text-base text-gray-600 mb-4 leading-relaxed">
-								We have partnered with 5-star hotel groups and accommodation services to bring you variety in lodging all over Pakistan without compromising on the quality you deserve. Book with us and prepare to be spoilt in premium suites and serene resorts, luxurious residential villas for families, boutique hotels and private chalets, and serviced campsites in the mountains and the wild – all at the best price match!
-							</p>
-							<p className="text-base text-gray-600 mb-6 leading-relaxed">
-								Wherever we go together we ensure that your hotel and room preferences are always noted and delivered by our team. Our excellent partner network and experienced team check you into deluxe rooms and executive suites replete with indulgent amenities such as complimentary access to executive lounges, inclusive spa, and wellness center passes, and majestic room views.
-							</p>
+
+							{/* Navigation Arrows */}
 							<button
-								onClick={handleWhatsAppClick}
-								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
-								style={{ backgroundColor: primaryOrange, color: 'white' }}
+								onClick={() => setHotelsSlide(prev => (prev - 1 + hotelsMainImages.length) % hotelsMainImages.length)}
+								className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
 							>
-								Enquire now
+								<ChevronLeft className="w-6 h-6" style={{ color: primaryOrange }} />
+							</button>
+							<button
+								onClick={() => setHotelsSlide(prev => (prev + 1) % hotelsMainImages.length)}
+								className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+							>
+								<ChevronRight className="w-6 h-6" style={{ color: primaryOrange }} />
 							</button>
 						</div>
+					</div>
 
-						{/* Right: Image Slider */}
-						<div className="relative">
-							<div className="relative h-96 rounded-lg overflow-hidden">
-								<Image 
-									src="/images/Hunza.jpg"
-									alt="Hotels & Accommodation"
-									fill
-									className="object-cover"
-								/>
-							</div>
-							<div className="flex items-center justify-center gap-2 mt-4">
-								<button
-									onClick={() => setHotelsSlide(prev => Math.max(0, prev - 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={hotelsSlide === 0}
+					{/* Auto-sliding Thumbnail Carousel */}
+					<div className="relative overflow-hidden mt-4">
+						<div className="flex gap-2">
+							{hotelsThumbnails.map((thumb, idx) => (
+								<div 
+									key={idx}
+									className="flex-shrink-0 w-full sm:w-1/3 md:w-1/6 cursor-pointer transition-all duration-300"
+									onClick={() => setHotelsSlide(idx)}
 								>
-									<ChevronLeft className="w-5 h-5" style={{ color: hotelsSlide === 0 ? '#ccc' : primaryOrange }} />
-								</button>
-								<span className="text-sm text-gray-600">{hotelsSlide + 1} / 5</span>
-								<button
-									onClick={() => setHotelsSlide(prev => Math.min(4, prev + 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={hotelsSlide === 4}
-								>
-									<ChevronRight className="w-5 h-5" style={{ color: hotelsSlide === 4 ? '#ccc' : primaryOrange }} />
-								</button>
-							</div>
+									<div className="relative h-24 md:h-32 rounded overflow-hidden">
+										<Image 
+											src={thumb}
+											alt={`Thumbnail ${idx + 1}`}
+											fill
+											className="object-cover transition-all duration-300"
+										/>
+										{/* Black opacity overlay for non-active thumbnails */}
+										{idx !== hotelsSlide && (
+											<div className="absolute inset-0 bg-black/60 transition-opacity duration-300"></div>
+										)}
+										{idx === hotelsSlide && (
+											<div className="absolute inset-0 border-2 transition-all duration-300" style={{ borderColor: primaryOrange }}></div>
+										)}
+									</div>
+								</div>
+							))}
 						</div>
 					</div>
 				</div>
