@@ -1550,6 +1550,67 @@ const AboutPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== TRUST & SECURITY CONTENT SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					{/* Three Red Stars */}
+					<div className="flex items-center justify-center gap-2 mb-8">
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+					</div>
+
+					{/* Text Content */}
+					<div className="max-w-4xl mx-auto mb-12">
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							We are a registered and licensed tourism company with the state department, provincial and federal tax and revenue authorities, and administrative tourism bodies. We work closely with the state tourism body before your arrival to make sure your safety is well covered by local law enforcement wherever you travel within Pakistan.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							We offer you multiple modes of secure online payments. We try to minimize cash transactions throughout our operations. For our foreign travelers visiting Pakistan, you can book your travel package through a safe and secure wire and telegraphic transfer. You can also use your MasterCard and Visa credit cards via our online website.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							We are the 1st ones to introduce cash-less travel in Pakistan. Most vendors in Pakistan still do not accept credit, and ATMs can be difficult to locate in the remote areas. We save you from the trouble of currency conversion once you are in Pakistan. We instead take it on us to finance all your cash needs during your travel such as food, shopping, tickets at local venues, and any other purchase or expense.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: `${secondaryBlack}90` }}>
+							We ask you to deposit a fixed USD amount with us based on our estimation of the cash needs during your trip. This amount can be deposited in cash or blocked on a credit card like any other auto-rental booking. After your trip, we deduct from this any cash that you borrowed during your trip and return the balance in USD. This saves you from the hassle of carrying any cash with you during your trip and provides you with complete financial security.
+						</p>
+					</div>
+
+					{/* Organization Logos */}
+					<div className="max-w-4xl mx-auto">
+						<div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+							{/* SECP Logo */}
+							<div className="flex flex-col items-center">
+								<div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-2">
+									<span className="text-xs font-bold text-gray-600">SECP</span>
+								</div>
+							</div>
+
+							{/* FBR Logo */}
+							<div className="flex flex-col items-center">
+								<div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-2">
+									<span className="text-xs font-bold text-gray-600">FBR</span>
+								</div>
+							</div>
+
+							{/* PTDC Logo */}
+							<div className="flex flex-col items-center">
+								<div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-2">
+									<span className="text-xs font-bold text-gray-600">PTDC</span>
+								</div>
+							</div>
+
+							{/* EFU Logo */}
+							<div className="flex flex-col items-center">
+								<div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-2">
+									<span className="text-xs font-bold text-gray-600">EFU</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== TRAVEL VISA SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
