@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, Search, Building2, Car, Sparkles, Users, ShieldCheck, FileText, Briefcase, CheckCircle2, MapPin, Globe, Award, Clock, Download, MessageSquare, Map, Plane, ImagePlus } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, Search, Building2, Car, Sparkles, Users, ShieldCheck, FileText, Briefcase, CheckCircle2, MapPin, Globe, Award, Clock, Download, MessageSquare, Map, Plane, ImagePlus, Gem, Luggage } from 'lucide-react';
 
 const AboutPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -1882,29 +1882,52 @@ const AboutPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== ADDITIONAL FEATURES SECTION ====================== */}
+			{/* ====================== FEATURES SECTION ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-						<div className="bg-white p-6 rounded-lg shadow-md text-center">
-							<Clock className="w-12 h-12 mx-auto mb-4" style={{ color: primaryOrange }} />
-							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>Affordable Journeys</h3>
-							<p className="text-sm text-gray-600">Premium travel experience at the most affordable rates to provide you with the best value for your trip cost.</p>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+						{/* Affordable Journeys */}
+						<div className="text-center">
+							<div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+								<Plane className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
+							</div>
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Affordable Journeys</h3>
+							<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								Premium travel experience at the most affordable rates to provide you with the best value for your trip cost.
+							</p>
 						</div>
-						<div className="bg-white p-6 rounded-lg shadow-md text-center">
-							<Users className="w-12 h-12 mx-auto mb-4" style={{ color: primaryOrange }} />
-							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>Guided Experiences</h3>
-							<p className="text-sm text-gray-600">Embrace our travel guide resources and know about the history and traditions of the areas you're traveling in.</p>
+
+						{/* Guided Experiences */}
+						<div className="text-center">
+							<div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+								<Users className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
+							</div>
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guided Experiences</h3>
+							<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								Embrace our travel guide resources and know about the history and traditions of the areas you're traveling in.
+							</p>
 						</div>
-						<div className="bg-white p-6 rounded-lg shadow-md text-center">
-							<CheckCircle2 className="w-12 h-12 mx-auto mb-4" style={{ color: primaryOrange }} />
-							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>All Inclusive</h3>
-							<p className="text-sm text-gray-600">Nayi Talaash is taking provision of all your travel needs and comforts within your package cost, leaving you with lasting trip memories.</p>
+
+						{/* All Inclusive */}
+						<div className="text-center">
+							<div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+								<Gem className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
+							</div>
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>All Inclusive</h3>
+							<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								Nayi Talaash is taking provision of all your travel needs and comforts within your package cost, leaving you with lasting trip memories.
+							</p>
 						</div>
-						<div className="bg-white p-6 rounded-lg shadow-md text-center">
-							<Phone className="w-12 h-12 mx-auto mb-4" style={{ color: primaryOrange }} />
-							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>Guest Support</h3>
-							<p className="text-sm text-gray-600">We are happy to help you! Call us at +92 331 438251 or write to us at info@nayitalaash.com</p>
+
+						{/* Guest Support */}
+						<div className="text-center">
+							<div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+								<Luggage className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
+							</div>
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guest Support</h3>
+							<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								We are happy to help you! Call us at <a href="tel:+92331438251" className="hover:opacity-80 transition-opacity" style={{ color: primaryOrange }}>+92 331 438251</a> or write to us at <a href="mailto:info@nayitalaash.com" className="hover:opacity-80 transition-opacity" style={{ color: primaryOrange }}>info@nayitalaash.com</a>
+							</p>
 						</div>
 					</div>
 				</div>
