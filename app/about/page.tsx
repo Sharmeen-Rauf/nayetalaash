@@ -970,6 +970,112 @@ const AboutPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== CONVEYANCE CONTENT SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					{/* Three Red Stars */}
+					<div className="flex items-center justify-center gap-2 mb-8">
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+					</div>
+
+					{/* Text Content */}
+					<div className="max-w-4xl mx-auto mb-12">
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							There are no bumps on this road trip! Our fleet of premium SUV and SUT vehicles, helicopters and private jets are available to ensure a smooth journey across Pakistan and its remote areas at the best price possible.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							We have arranged round-the-clock, experienced drivers who have the expertise to conquer all terrains so that you can relax and enjoy the ride. Terrains in Pakistan can be perilous, but you are never out of options or backup plans when you book with us. Our network of standby replacement vehicles will reach you within 2-6 hours wherever you are in the country and emergency evacuations due to unforeseen weather conditions can be swiftly arranged to ensure maximum security for our guests.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							Helicopter journeys have been added into some of our premium tour packages to offer you unique experiences of Pakistan&apos;s terrains. These helicopter journeys and private jet charters are designed to help our guests cut down on long inter-state road travel times and the dependency on domestic commercial flights. Commercial flights can often have unannounced disruptions and cancellations and do not cover the remote locations in Pakistan. While our private jets and helicopters can help you take off and land in style on airstrips and rough terrains and carry on with your designed tour plan.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							Stay online in the remotest of areas with free Wi-Fi. Go live or call a friend and travel with them virtually because all our Nayi Talaash vehicles come with 24/7 Wi-Fi on-board.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							For each of the provinces in Pakistan, we have carefully selected a fleet of high-performance, premium vehicles that match the terrain so that you never have to turn around from reaching an exquisite view in the mountains, valleys, desert, or at the coast. Our vehicles are stationed in major cities including Karachi, Quetta, Islamabad, and Peshawar, ready to serve you wherever your journey takes you.
+						</p>
+					</div>
+
+					{/* Three Image Cards Grid */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+						{/* Card 1: MAKRAN COASTAL HIGHWAY */}
+						<div className="relative group">
+							<div className="relative h-80 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/Kund Malir.jpg"
+									alt="Makran Coastal Highway"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-110"
+								/>
+							</div>
+							{/* Black Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-black p-4 text-white">
+								<h3 className="text-lg md:text-xl font-bold mb-2">MAKRAN COASTAL HIGHWAY</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">DRIVE 1300KM THROUGH SEA AND DESERT</p>
+								<button
+									onClick={handleWhatsAppClick}
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+								>
+									<span>→</span>
+									<span>BOOK NOW</span>
+								</button>
+							</div>
+						</div>
+
+						{/* Card 2: KALASH VALLEY */}
+						<div className="relative group">
+							<div className="relative h-80 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/chitral.jpg"
+									alt="Kalash Valley"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-110"
+								/>
+							</div>
+							{/* Black Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-black p-4 text-white">
+								<h3 className="text-lg md:text-xl font-bold mb-2">KALASH VALLEY</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">HELICOPTER JOURNEY TO THE HIDDEN VALLEY</p>
+								<button
+									onClick={handleWhatsAppClick}
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+								>
+									<span>→</span>
+									<span>BOOK NOW</span>
+								</button>
+							</div>
+						</div>
+
+						{/* Card 3: CONQUER THE WILD SINDH */}
+						<div className="relative group">
+							<div className="relative h-80 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/gwadar.jpg"
+									alt="Conquer the Wild Sindh"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-110"
+								/>
+							</div>
+							{/* Black Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-black p-4 text-white">
+								<h3 className="text-lg md:text-xl font-bold mb-2">CONQUER THE WILD SINDH</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">DUNE BASHING AND HELI RIDES TO REACH YOUR DESTINATION</p>
+								<button
+									onClick={handleWhatsAppClick}
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+								>
+									<span>→</span>
+									<span>BOOK NOW</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== CURATED TRIP EXPERIENCES SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
