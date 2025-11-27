@@ -1716,52 +1716,88 @@ const AboutPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							The Advantages of Booking with Nayi Talaash
+							THE ADVANTAGES OF BOOKING WITH NAYI TALAASH
 						</h2>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-						{/* Advantage 1 */}
-						<div className="bg-white p-6 rounded-lg shadow-md text-center">
-							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
-								<ShieldCheck className="w-8 h-8" style={{ color: primaryOrange }} />
+						{/* Card 1: Guaranteed for Peace of Mind */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md">
+							<div className="relative w-full h-48">
+								<Image 
+									src="/images/murree and nathia gali.jpg"
+									alt="Guaranteed for Peace of Mind"
+									fill
+									className="object-cover"
+								/>
 							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guaranteed for peace of mind</h3>
-							<p className="text-sm text-gray-600 leading-relaxed">
-								We are a destination management company. Our network offices are spread across the country ensuring the timely and professional delivery of all your destination needs.
-							</p>
+							<div className="p-6">
+								<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
+									GUARANTEED FOR PEACE OF MIND
+								</h3>
+								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									We are a destination management company. Our network offices are spread across the country ensuring the timely and professional delivery of all your destination needs.
+								</p>
+							</div>
 						</div>
 
-						{/* Advantage 2 */}
-						<div className="bg-white p-6 rounded-lg shadow-md text-center">
-							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
-								<Award className="w-8 h-8" style={{ color: primaryOrange }} />
+						{/* Card 2: Best Price and Value */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md">
+							<div className="relative w-full h-48">
+								<Image 
+									src="/images/islamabad.jpg"
+									alt="Best Price and Value"
+									fill
+									className="object-cover"
+								/>
 							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>BEST PRICE AND VALUE</h3>
-							<p className="text-sm text-gray-600 leading-relaxed">
-								Our corporate partnership with the hotels, venues, and transport businesses help us secure unmatched price and unquestionable value.
-							</p>
+							<div className="p-6">
+								<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
+									BEST PRICE AND VALUE
+								</h3>
+								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									Our corporate partnership with the hotels, venues, and transport businesses help us secure unmatched price and unquestionable value.
+								</p>
+							</div>
 						</div>
 
-						{/* Advantage 3 */}
-						<div className="bg-white p-6 rounded-lg shadow-md text-center">
-							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
-								<MapPin className="w-8 h-8" style={{ color: primaryOrange }} />
+						{/* Card 3: Quality of Itinerary */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md">
+							<div className="relative w-full h-48">
+								<Image 
+									src="/images/Kund Malir.jpg"
+									alt="Quality of Itinerary"
+									fill
+									className="object-cover"
+								/>
 							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>QUALITY OF ITINERARY</h3>
-							<p className="text-sm text-gray-600 leading-relaxed">
-								We cater to foreign inbound tourists, and have shaped our tours to match the needs of the international traveler. We have perfected multiple trip designs and allow further options to customize to your needs.
-							</p>
+							<div className="p-6">
+								<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
+									QUALITY OF ITINERARY
+								</h3>
+								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									We cater to foreign inbound tourists, and have shaped our tours to match the needs of the international traveler. We have perfected 30 trip designs and allow further options to customize to your needs.
+								</p>
+							</div>
 						</div>
 
-						{/* Advantage 4 */}
-						<div className="bg-white p-6 rounded-lg shadow-md text-center">
-							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
-								<Globe className="w-8 h-8" style={{ color: primaryOrange }} />
+						{/* Card 4: Access to Local Expertise */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md">
+							<div className="relative w-full h-48">
+								<Image 
+									src="/images/Hunza.jpg"
+									alt="Access to Local Expertise"
+									fill
+									className="object-cover"
+								/>
 							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Access to local expertise</h3>
-							<p className="text-sm text-gray-600 leading-relaxed">
-								All our local agents have been chosen based on rigorous selection criteria, including English-speaking ability, fairness of prices, and knowledge of their destination.
-							</p>
+							<div className="p-6">
+								<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
+									ACCESS TO LOCAL EXPERTISE
+								</h3>
+								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									All our local agents have been chosen based on rigorous selection criteria, including English-speaking ability, fairness of prices, and knowledge of their destination.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
