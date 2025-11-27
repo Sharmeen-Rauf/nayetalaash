@@ -79,6 +79,33 @@ const AboutPage = () => {
 		return () => clearInterval(interval);
 	}, [conveyanceMainImages.length]);
 
+	// Curated Trip Experiences slider images
+	const experiencesMainImages = [
+		'/images/naran and kaghan.jpg',
+		'/images/Hunza.jpg',
+		'/images/skardu 2.jpg',
+		'/images/chitral.jpg',
+		'/images/fairy meadows 2.jpg',
+		'/images/Kund Malir.jpg',
+	];
+
+	const experiencesThumbnails = [
+		'/images/naran and kaghan.jpg',
+		'/images/Hunza.jpg',
+		'/images/skardu 2.jpg',
+		'/images/chitral.jpg',
+		'/images/fairy meadows 2.jpg',
+		'/images/Kund Malir.jpg',
+	];
+
+	// Auto-slide effect for Experiences banner and thumbnail carousel
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setExperiencesSlide((prev) => (prev + 1) % experiencesMainImages.length);
+		}, 4000); // Change slide every 4 seconds
+		return () => clearInterval(interval);
+	}, [experiencesMainImages.length]);
+
 	// Theme Colors
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
@@ -1079,56 +1106,73 @@ const AboutPage = () => {
 			{/* ====================== CURATED TRIP EXPERIENCES SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-						{/* Left: Content */}
-						<div>
-							<div className="flex items-center gap-2 mb-4">
-								<Sparkles className="w-8 h-8" style={{ color: primaryOrange }} />
-								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Curated Trip Experiences</h2>
+					{/* Main Banner Slider */}
+					<div className="relative mb-6">
+						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
+							<Image 
+								src={experiencesMainImages[experiencesSlide]}
+								alt="Curated Trip Experiences"
+								fill
+								className="object-cover transition-opacity duration-500"
+							/>
+							{/* Dark overlay for text readability */}
+							<div className="absolute inset-0 bg-black/30"></div>
+							
+							{/* Text Overlay */}
+							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">CURATED TRIP EXPERIENCES</h2>
+								<p className="text-lg md:text-xl mb-6">MATCHING YOUR TASTE</p>
+								<button
+									onClick={handleWhatsAppClick}
+									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+									style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+								>
+									Enquire now
+								</button>
 							</div>
-							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>MATCHING YOUR TASTE</p>
-							<p className="text-base text-gray-600 mb-4 leading-relaxed">
-								Every journey with Nayi Talaash is carefully designed to match your preferences, interests, and travel style. We understand that no two travelers are the same, which is why we offer fully customizable itineraries that can be tailored to your specific needs.
-							</p>
-							<p className="text-base text-gray-600 mb-6 leading-relaxed">
-								Whether you're seeking adventure, cultural immersion, relaxation, or a combination of all, our expert travel designers work with you to create the perfect itinerary. From off-the-beaten-path experiences to luxury accommodations, we curate every detail to ensure your trip exceeds expectations.
-							</p>
+
+							{/* Navigation Arrows with padding to avoid button overlap */}
 							<button
-								onClick={handleWhatsAppClick}
-								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
-								style={{ backgroundColor: primaryOrange, color: 'white' }}
+								onClick={() => setExperiencesSlide(prev => (prev - 1 + experiencesMainImages.length) % experiencesMainImages.length)}
+								className="absolute left-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
 							>
-								Enquire now
+								<ChevronLeft className="w-6 h-6" style={{ color: primaryOrange }} />
+							</button>
+							<button
+								onClick={() => setExperiencesSlide(prev => (prev + 1) % experiencesMainImages.length)}
+								className="absolute right-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+							>
+								<ChevronRight className="w-6 h-6" style={{ color: primaryOrange }} />
 							</button>
 						</div>
+					</div>
 
-						{/* Right: Image Slider */}
-						<div className="relative">
-							<div className="relative h-96 rounded-lg overflow-hidden">
-								<Image 
-									src="/images/naran and kaghan.jpg"
-									alt="Curated Trip Experiences"
-									fill
-									className="object-cover"
-								/>
-							</div>
-							<div className="flex items-center justify-center gap-2 mt-4">
-								<button
-									onClick={() => setExperiencesSlide(prev => Math.max(0, prev - 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={experiencesSlide === 0}
+					{/* Auto-sliding Thumbnail Carousel */}
+					<div className="relative overflow-hidden mt-4">
+						<div className="flex gap-2">
+							{experiencesThumbnails.map((thumb, idx) => (
+								<div 
+									key={idx}
+									className="flex-shrink-0 w-full sm:w-1/3 md:w-1/6 cursor-pointer transition-all duration-300"
+									onClick={() => setExperiencesSlide(idx)}
 								>
-									<ChevronLeft className="w-5 h-5" style={{ color: experiencesSlide === 0 ? '#ccc' : primaryOrange }} />
-								</button>
-								<span className="text-sm text-gray-600">{experiencesSlide + 1} / 5</span>
-								<button
-									onClick={() => setExperiencesSlide(prev => Math.min(4, prev + 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={experiencesSlide === 4}
-								>
-									<ChevronRight className="w-5 h-5" style={{ color: experiencesSlide === 4 ? '#ccc' : primaryOrange }} />
-								</button>
-							</div>
+									<div className="relative h-24 md:h-32 rounded overflow-hidden">
+										<Image 
+											src={thumb}
+											alt={`Thumbnail ${idx + 1}`}
+											fill
+											className="object-cover transition-all duration-300"
+										/>
+										{/* Black opacity overlay for non-active thumbnails */}
+										{idx !== experiencesSlide && (
+											<div className="absolute inset-0 bg-black/60 transition-opacity duration-300"></div>
+										)}
+										{idx === experiencesSlide && (
+											<div className="absolute inset-0 border-2 transition-all duration-300" style={{ borderColor: primaryOrange }}></div>
+										)}
+									</div>
+								</div>
+							))}
 						</div>
 					</div>
 				</div>
