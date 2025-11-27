@@ -496,18 +496,6 @@ const AboutPage = () => {
 				</div>
 			</section>
 
-			{/* Content sections will go here */}
-			<section className="py-8 md:py-12 bg-white">
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-						About Us
-					</h2>
-					<p className="text-base leading-relaxed" style={{ color: '#6b7280' }}>
-						Content will be added here...
-					</p>
-				</div>
-			</section>
-
 			{/* ====================== FOOTER ====================== */}
 			<footer className="py-8 md:py-12 bg-white border-t relative overflow-hidden" style={{ borderColor: `${primaryOrange}30` }}>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
