@@ -1518,59 +1518,33 @@ const AboutPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== TRUST & SECURITY SLIDER ====================== */}
+			{/* ====================== TRUST & SECURITY BANNER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-						{/* Left: Image Slider */}
-						<div className="relative order-2 lg:order-1">
-							<div className="relative h-96 rounded-lg overflow-hidden">
-								<Image 
-									src="/images/Kund Malir.jpg"
-									alt="Trust & Security"
-									fill
-									className="object-cover"
-								/>
-							</div>
-							<div className="flex items-center justify-center gap-2 mt-4">
+					{/* Banner with Text Overlay */}
+					<div className="relative mb-6">
+						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
+							<Image 
+								src="/images/Kund Malir.jpg"
+								alt="Trust & Security"
+								fill
+								className="object-cover"
+							/>
+							{/* Dark overlay for text readability */}
+							<div className="absolute inset-0 bg-black/30"></div>
+							
+							{/* Text Overlay */}
+							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">TRUST & SECURITY</h2>
+								<p className="text-lg md:text-xl mb-6">Travel with freedom</p>
 								<button
-									onClick={() => setTrustSlide(prev => Math.max(0, prev - 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={trustSlide === 0}
+									onClick={handleWhatsAppClick}
+									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+									style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 								>
-									<ChevronLeft className="w-5 h-5" style={{ color: trustSlide === 0 ? '#ccc' : primaryOrange }} />
-								</button>
-								<span className="text-sm text-gray-600">{trustSlide + 1} / 5</span>
-								<button
-									onClick={() => setTrustSlide(prev => Math.min(4, prev + 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={trustSlide === 4}
-								>
-									<ChevronRight className="w-5 h-5" style={{ color: trustSlide === 4 ? '#ccc' : primaryOrange }} />
+									Ask us more
 								</button>
 							</div>
-						</div>
-
-						{/* Right: Content */}
-						<div className="order-1 lg:order-2">
-							<div className="flex items-center gap-2 mb-4">
-								<ShieldCheck className="w-8 h-8" style={{ color: primaryOrange }} />
-								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Trust & Security</h2>
-							</div>
-							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Travel with freedom</p>
-							<p className="text-base text-gray-600 mb-4 leading-relaxed">
-								We are a registered and licensed tourism company with the state department, provincial and federal tax and revenue authorities, and administrative tourism bodies. We work closely with the state tourism body before your arrival to make sure your safety is well covered by local law enforcement wherever you travel within Pakistan.
-							</p>
-							<p className="text-base text-gray-600 mb-6 leading-relaxed">
-								We offer you multiple modes of secure online payments. We try to minimize cash transactions throughout our operations. For our foreign travelers visiting Pakistan, you can book your travel package through a safe and secure wire and telegraphic transfer.
-							</p>
-							<button
-								onClick={handleWhatsAppClick}
-								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
-								style={{ backgroundColor: primaryOrange, color: 'white' }}
-							>
-								Ask us more
-							</button>
 						</div>
 					</div>
 				</div>
