@@ -1828,8 +1828,7 @@ const Page = () => {
 							{/* Review Text */}
 							<div className="flex-1 relative">
 								<p className="text-sm leading-relaxed mb-4" style={{ color: `${secondaryBlack}CC` }}>
-									Our trip to Swat, Malam Jabba, and Kalam was phenomenal. Great thanks to the outstandOur trip to Swat, Malam Jabba and Kalam was truly phenomenal, thanks to Nayi Talaash and our guide, Umar. Every detail, from transport and food to organization, was handled meticulously. The stunning landscapes combined with their excellent services made our tour an unforgettable adventure. I highly recommend Nayi Talaash to explore the beautiful side of Pakistan!
-								</p>
+								Our trip to Swat, Malam Jabba and Kalam was truly phenomenal, thanks to Nayi Talaash and our guide, Umar. Every detail, from transport and food to organization, was handled meticulously. The stunning landscapes combined with their excellent services made our tour an unforgettable adventure. I highly recommend Nayi Talaash to explore the beautiful side of Pakistan!								</p>
 								<p className="font-bold text-sm" style={{ color: secondaryBlack }}>MUHAMMAD NAURAIZ MUSHTAQ,</p>
 								<div className="absolute bottom-0 right-0 text-7xl opacity-15 font-serif" style={{ color: `${secondaryBlack}80`, lineHeight: '1', transform: 'translateY(10px)' }}>&rdquo;</div>
 							</div>
