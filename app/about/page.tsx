@@ -1476,6 +1476,48 @@ const AboutPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== COVID-19 PREPARED CONTENT SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					{/* Four Red Stars */}
+					<div className="flex items-center justify-center gap-2 mb-8">
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+					</div>
+
+					{/* Text Content */}
+					<div className="max-w-4xl mx-auto mb-8">
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							The tourism sector in Pakistan is fully committed to putting the visiting people and their well-being first. Nayi Talaash strongly believes that cooperation and understanding is vital for ensuring the safe guarding and implementation of all measures been recommended by the international bodies like UNWTO and WHO the World Tourism and Health Organizations. These and more are adapted in the country, where the tourism destinations are rated of its own class and expected to have a huge footfall of international tourists sooner than later.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: `${secondaryBlack}90` }}>
+							The SOP&apos;s been formulated under the supervision of the relevant Government Ministry are detailed in the link herewith. They not only includes the internationally recommended practices but also measured steps consistent in proportionate to the public health threats and based on local risk assessments also. These steps been implemented involves, and not limited to, every part of the tourism value chain - public bodies, private companies and tourists, in line with the the international bodies overall guidance and recommendations.
+						</p>
+					</div>
+
+					{/* Download Link Section */}
+					<div className="max-w-4xl mx-auto text-center">
+						<p className="text-base md:text-lg mb-4" style={{ color: `${secondaryBlack}90` }}>
+							For more information, download PDF file.
+						</p>
+						<a
+							href="#"
+							onClick={(e) => {
+								e.preventDefault();
+								// Handle PDF download
+							}}
+							className="inline-flex items-center gap-2 text-base md:text-lg font-semibold underline hover:opacity-80 transition-opacity"
+							style={{ color: '#2563eb' }}
+						>
+							<Download className="w-5 h-5" />
+							<span>Download</span>
+						</a>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== TRUST & SECURITY SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
