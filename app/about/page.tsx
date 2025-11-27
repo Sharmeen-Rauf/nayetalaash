@@ -431,7 +431,7 @@ const AboutPage = () => {
 					</button>
 
 					{/* Logo */}
-					<div className="mt-12 mb-8">
+					<div className="mt-12 mb-4">
 						<Image 
 							src={logoImage}
 							alt="Nayi Talaash Logo"
@@ -442,7 +442,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Nav Links */}
-					<nav className="flex flex-col space-y-2 flex-grow">
+					<nav className="flex flex-col space-y-1 flex-grow">
 						<Link href="/#home" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 							HOME
 						</Link>
@@ -506,7 +506,7 @@ const AboutPage = () => {
 				{/* Main Content */}
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<div className="text-center px-4">
-						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
+						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
 								Discover the Unseen.
 							</span>
@@ -519,7 +519,7 @@ const AboutPage = () => {
 								Explore With Nayi Talaash.
 							</span>
 						</h1>
-						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
+						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2">
 							Your one stop travel partner for unforgettable cultural, historical, and scenic journeys across Pakistan.
 						</p>
 						
@@ -608,15 +608,15 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Top Section: Button, Stars, and Heading */}
-					<div className="text-center mb-12">
+					<div className="text-center mb-6">
 						<button
 							onClick={handleWhatsAppClick}
-							className="px-8 py-3 mb-6 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+							className="px-8 py-3 mb-4 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
 							Get in Touch
 						</button>
-						<div className="flex items-center justify-center gap-2 mb-6">
+						<div className="flex items-center justify-center gap-2 mb-4">
 							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
@@ -755,7 +755,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Main Banner Slider */}
-					<div className="relative mb-6">
+					<div className="relative mb-4">
 						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
 							<Image 
 								src={hotelsMainImages[hotelsSlide]}
@@ -769,7 +769,7 @@ const AboutPage = () => {
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
 								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Hotels & Accommodation</h2>
-								<p className="text-lg md:text-xl mb-6">Best Deals On Premium Stays</p>
+								<p className="text-lg md:text-xl mb-4">Best Deals On Premium Stays</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -830,7 +830,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
-					<div className="flex items-center justify-center gap-2 mb-8">
+					<div className="flex items-center justify-center gap-2 mb-4">
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
@@ -838,23 +838,23 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-12">
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+					<div className="max-w-4xl mx-auto mb-6">
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							We partner with the best hotels, guest houses, resorts, and campsites across Pakistan to bring you a comfortable and safe stay at the best possible prices. From the luxury of Hunza river view hotels, the calm of Skardu boutique lodges, to beachside resorts in Gwadar & Kund Malir, we ensure comfort meets quality every time.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							Whether you prefer a private room, a family suite or a mountain campsite, our team ensures your preferences are noted, matched and delivered.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							With Nayi Talaash, you enjoy:
 						</p>
-						<ul className="list-disc list-inside mb-6 space-y-2 text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 							<li>Smooth check-ins with your preferred room type</li>
 							<li>Premium suites with scenic views</li>
 							<li>Campsites with security & trained crew</li>
 							<li>Easy reservation changes (no stress on flight delays or plan shifts)</li>
 						</ul>
-						<p className="text-base md:text-lg leading-relaxed font-semibold" style={{ color: secondaryBlack }}>
+						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
 							Your comfort is our priority always.
 						</p>
 					</div>
@@ -952,7 +952,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Main Banner Slider */}
-					<div className="relative mb-6">
+					<div className="relative mb-4">
 						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
 							<Image 
 								src={conveyanceMainImages[conveyanceSlide]}
@@ -966,7 +966,7 @@ const AboutPage = () => {
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
 								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Conveyance</h2>
-								<p className="text-lg md:text-xl mb-6">Travel In Style & Comfort</p>
+								<p className="text-lg md:text-xl mb-4">Travel In Style & Comfort</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1027,27 +1027,27 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Three Red Stars */}
-					<div className="flex items-center justify-center gap-2 mb-8">
+					<div className="flex items-center justify-center gap-2 mb-4">
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-12">
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+					<div className="max-w-4xl mx-auto mb-6">
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							From the winding roads of Karakoram Highway to the sandy tracks of Balochistan&apos;s Makran region, Nayi Talaash offers comfortable, terrain ready transportation:
 						</p>
-						<ul className="list-disc list-inside mb-6 space-y-2 text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 							<li>Spacious AC Coasters & Hiace for group tours</li>
 							<li>4×4 Jeeps for rugged northern terrains</li>
 							<li>Smooth, safe, well maintained vehicles</li>
 							<li>Experienced drivers trained for every route</li>
 						</ul>
-						<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							Whatever the destination, our backup support ensures no breakdown ruins your journey.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed font-semibold" style={{ color: secondaryBlack }}>
+						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
 							Just sit back, enjoy the music, the mountains and the moment.
 						</p>
 					</div>
@@ -1133,7 +1133,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Main Banner Slider */}
-					<div className="relative mb-6">
+					<div className="relative mb-4">
 						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
 							<Image 
 								src={experiencesMainImages[experiencesSlide]}
@@ -1147,7 +1147,7 @@ const AboutPage = () => {
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
 								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">CURATED TRIP EXPERIENCES</h2>
-								<p className="text-lg md:text-xl mb-6">MATCHING YOUR TASTE</p>
+								<p className="text-lg md:text-xl mb-4">MATCHING YOUR TASTE</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1208,7 +1208,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
-					<div className="flex items-center justify-center gap-2 mb-8">
+					<div className="flex items-center justify-center gap-2 mb-4">
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
@@ -1216,20 +1216,20 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-12">
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+					<div className="max-w-4xl mx-auto mb-6">
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							Every journey with Nayi Talaash is carefully designed to match your preferences, interests, and travel style. We understand that no two travelers are the same, which is why we offer fully customizable itineraries that can be tailored to your specific needs and personality.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							From thrilling adventure activities like hiking, trekking, cycling, skiing, fishing, trophy hunting, national park safaris, camping, marine adventures, and helicopter tours to exploring natural wonders such as glaciers, canyons, ravines, waterfalls, nature valleys, deserts, beaches, and islands – we curate every experience to match your passion.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							Immerse yourself in Pakistan&apos;s rich culinary and cultural heritage with traditional food experiences, fine-dining, BBQ bonfires, roadside food adventures, local bazaars, meetups with indigenous tribes, homestays in villages, and local lifestyle tours that give you an authentic taste of Pakistani hospitality.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							Discover world heritage sites, museums, and spiritual sites, and delve into ethnic art, poetry, literature, Sufi music, local fashion, and ethno-tourism. Each experience is carefully crafted to provide you with deep cultural insights and lasting memories.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 							Contact our travel designers for personalized advice and book a consultation to create the perfect itinerary that matches your travel dreams and aspirations.
 						</p>
 					</div>
@@ -1291,7 +1291,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Main Banner Slider */}
-					<div className="relative mb-6">
+					<div className="relative mb-4">
 						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
 							<Image 
 								src={crewMainImages[crewSlide]}
@@ -1305,7 +1305,7 @@ const AboutPage = () => {
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
 								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Best Crew</h2>
-								<p className="text-lg md:text-xl mb-6">Handpicked Tour Managers</p>
+								<p className="text-lg md:text-xl mb-4">Handpicked Tour Managers</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1366,7 +1366,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
-					<div className="flex items-center justify-center gap-2 mb-8">
+					<div className="flex items-center justify-center gap-2 mb-4">
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
@@ -1374,20 +1374,20 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-12 space-y-6">
-						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+					<div className="max-w-4xl mx-auto mb-6 space-y-3">
+						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 							Our people bring a cumulative 200 years of experience in local and international tourism operations. From sales call handling to our drivers and the service crew, everyone is driven to provide you with the best trip experience.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 							<strong className="font-semibold">Travel Designers –</strong> Our travel consultants help you in uncovering your own travel needs and then match them with the hundreds of places to visit, and experiences to enjoy and accommodation and conveyance to choose.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 							<strong className="font-semibold">Tour Managers –</strong> We have a selective pool of licensed and experienced guides in each region. The tour manager remains with you throughout your journey and is always available to assist you with your needs. Our tour managers speak English, Chinese, Arabic, and Russian besides Urdu and local languages which help them communicate easily between you and the local community.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 							<strong className="font-semibold">Ground Handling –</strong> The tour managers coordinate with the tour designer about your trip status and any change of plans to make sure all your needs are covered. The tour manager also works as a team with the tour driver to plan routes, maps, and any itinerary changes.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 							From receiving you at the airport to helping you check in to hotels, covering your cash needs, and capturing your professional video log, our tour managers have been handpicked to give you the comfort and the space to enjoy your trip completely hassle-free.
 						</p>
 					</div>
@@ -1447,7 +1447,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Banner with Text Overlay */}
-					<div className="relative mb-6">
+					<div className="relative mb-4">
 						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
 							<Image 
 								src="/images/fairy meadows 2.jpg"
@@ -1461,7 +1461,7 @@ const AboutPage = () => {
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
 								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Covid-19 Prepared</h2>
-								<p className="text-lg md:text-xl mb-6">The new traveling paradigm</p>
+								<p className="text-lg md:text-xl mb-4">The new traveling paradigm</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1479,7 +1479,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
-					<div className="flex items-center justify-center gap-2 mb-8">
+					<div className="flex items-center justify-center gap-2 mb-4">
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
@@ -1487,11 +1487,11 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-8">
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+					<div className="max-w-4xl mx-auto mb-4">
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							The tourism sector in Pakistan is fully committed to putting the visiting people and their well-being first. Nayi Talaash strongly believes that cooperation and understanding is vital for ensuring the safe guarding and implementation of all measures been recommended by the international bodies like UNWTO and WHO the World Tourism and Health Organizations. These and more are adapted in the country, where the tourism destinations are rated of its own class and expected to have a huge footfall of international tourists sooner than later.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							The SOP&apos;s been formulated under the supervision of the relevant Government Ministry are detailed in the link herewith. They not only includes the internationally recommended practices but also measured steps consistent in proportionate to the public health threats and based on local risk assessments also. These steps been implemented involves, and not limited to, every part of the tourism value chain - public bodies, private companies and tourists, in line with the the international bodies overall guidance and recommendations.
 						</p>
 					</div>
@@ -1521,7 +1521,7 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Banner with Text Overlay */}
-					<div className="relative mb-6">
+					<div className="relative mb-4">
 						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
 							<Image 
 								src="/images/Kund Malir.jpg"
@@ -1535,7 +1535,7 @@ const AboutPage = () => {
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
 								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Trust & Security</h2>
-								<p className="text-lg md:text-xl mb-6">Travel with freedom</p>
+								<p className="text-lg md:text-xl mb-4">Travel with freedom</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1553,24 +1553,24 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Three Red Stars */}
-					<div className="flex items-center justify-center gap-2 mb-8">
+					<div className="flex items-center justify-center gap-2 mb-4">
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-12">
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+					<div className="max-w-4xl mx-auto mb-6">
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							We are a registered and licensed tourism company with the state department, provincial and federal tax and revenue authorities, and administrative tourism bodies. We work closely with the state tourism body before your arrival to make sure your safety is well covered by local law enforcement wherever you travel within Pakistan.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							We offer you multiple modes of secure online payments. We try to minimize cash transactions throughout our operations. For our foreign travelers visiting Pakistan, you can book your travel package through a safe and secure wire and telegraphic transfer. You can also use your MasterCard and Visa credit cards via our online website.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							We are the 1st ones to introduce cash-less travel in Pakistan. Most vendors in Pakistan still do not accept credit, and ATMs can be difficult to locate in the remote areas. We save you from the trouble of currency conversion once you are in Pakistan. We instead take it on us to finance all your cash needs during your travel such as food, shopping, tickets at local venues, and any other purchase or expense.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							We ask you to deposit a fixed USD amount with us based on our estimation of the cash needs during your trip. This amount can be deposited in cash or blocked on a credit card like any other auto-rental booking. After your trip, we deduct from this any cash that you borrowed during your trip and return the balance in USD. This saves you from the hassle of carrying any cash with you during your trip and provides you with complete financial security.
 						</p>
 					</div>
@@ -1626,7 +1626,7 @@ const AboutPage = () => {
 					{/* Text Overlay */}
 					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
 						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Travel Visa</h2>
-						<p className="text-lg md:text-xl mb-6">Hassle-free process</p>
+						<p className="text-lg md:text-xl mb-4">Hassle-free process</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1642,18 +1642,18 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Three Red Stars */}
-					<div className="flex items-center justify-center gap-2 mb-8">
+					<div className="flex items-center justify-center gap-2 mb-4">
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-12">
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+					<div className="max-w-4xl mx-auto mb-6">
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							We provide you a safe gateway to apply for your tourist, business and visit visa to Pakistan. Our services include visa consultation services, assembling your visa application papers, application letter from our side to the concerned department as we are a registered tour company, applying and liaising for your visa with the concerned public department, and resubmitting any further documents.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							We do not provide guarantees on visa issuance; however, our team of experts keeps you informed throughout the process and sets your expectations accordingly.
 						</p>
 					</div>
@@ -1698,7 +1698,7 @@ const AboutPage = () => {
 					{/* Text Overlay */}
 					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
 						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Comprehensive Tour Management</h2>
-						<p className="text-lg md:text-xl mb-6">Expert Ground Handling</p>
+						<p className="text-lg md:text-xl mb-4">Expert Ground Handling</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-white"
@@ -1713,7 +1713,7 @@ const AboutPage = () => {
 			{/* ====================== THE ADVANTAGES OF BOOKING WITH NAYI TALAASH ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="text-center mb-12">
+					<div className="text-center mb-6">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
 							The Advantages Of Booking With Nayi Talaash
 						</h2>
@@ -1733,7 +1733,7 @@ const AboutPage = () => {
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 									Guaranteed For Peace Of Mind
 								</h3>
-								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 									We are a destination management company. Our network offices are spread across the country ensuring the timely and professional delivery of all your destination needs.
 								</p>
 							</div>
@@ -1753,7 +1753,7 @@ const AboutPage = () => {
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 									Best Price And Value
 								</h3>
-								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 									Our corporate partnership with the hotels, venues, and transport businesses help us secure unmatched price and unquestionable value.
 								</p>
 							</div>
@@ -1773,7 +1773,7 @@ const AboutPage = () => {
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 									Quality Of Itinerary
 								</h3>
-								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 									We cater to foreign inbound tourists, and have shaped our tours to match the needs of the international traveler. We have perfected 30 trip designs and allow further options to customize to your needs.
 								</p>
 							</div>
@@ -1793,7 +1793,7 @@ const AboutPage = () => {
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 									Access To Local Expertise
 								</h3>
-								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 									All our local agents have been chosen based on rigorous selection criteria, including English-speaking ability, fairness of prices, and knowledge of their destination.
 								</p>
 							</div>
@@ -1805,19 +1805,19 @@ const AboutPage = () => {
 			{/* ====================== HOW DO LOCALLY-MADE TRIPS WORK? ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="text-center mb-12">
+					<div className="text-center mb-6">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
 							How Do Locally-Made Trips Work?
 						</h2>
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
 						{/* Step 1: Discover */}
 						<div className="text-center">
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
 								<MessageSquare className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Discover</h3>
-							<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 								Visit our website and discover our 30 curated products. The products are divided into 6 specialized tour themes covering the best of Pakistan's tourism.
 							</p>
 							<Link href="/#tours" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
@@ -1831,7 +1831,7 @@ const AboutPage = () => {
 								<Map className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Customize</h3>
-							<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 								Share your travel details and request for customization through our interactive online forms. We have included the accommodation, transportation and activities to the best thematic design, but you may request to add more days, or destinations, or activities.
 							</p>
 							<Link href="/contact" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
@@ -1845,7 +1845,7 @@ const AboutPage = () => {
 								<Plane className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Travel</h3>
-							<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 								Read through our website for further destination guide and apply for your visa through our assisted service. Secure your itinerary and accommodation by paying through our online platform and get ready to be welcomed at the airport.
 							</p>
 							<Link href="/#destination" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
@@ -1859,7 +1859,7 @@ const AboutPage = () => {
 								<ImagePlus className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Share your experience</h3>
-							<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 								We produce a complimentary video for all our guests showcasing your 60 sec destination story. Share the video with your friends, and share your experience with us through our easy-to-fill online customer review form.
 							</p>
 							<Link href="/contact" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
@@ -1891,7 +1891,7 @@ const AboutPage = () => {
 								<Plane className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Affordable Journeys</h3>
-							<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 								Premium travel experience at the most affordable rates to provide you with the best value for your trip cost.
 							</p>
 						</div>
@@ -1902,7 +1902,7 @@ const AboutPage = () => {
 								<Users className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guided Experiences</h3>
-							<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 								Embrace our travel guide resources and know about the history and traditions of the areas you're traveling in.
 							</p>
 						</div>
@@ -1913,7 +1913,7 @@ const AboutPage = () => {
 								<Gem className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>All Inclusive</h3>
-							<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 								Nayi Talaash is taking provision of all your travel needs and comforts within your package cost, leaving you with lasting trip memories.
 							</p>
 						</div>
@@ -1924,7 +1924,7 @@ const AboutPage = () => {
 								<Luggage className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guest Support</h3>
-							<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
 								We are happy to help you! Call us at <a href="tel:+92331438251" className="hover:opacity-80 transition-opacity" style={{ color: primaryOrange }}>+92 331 438251</a> or write to us at <a href="mailto:info@nayitalaash.com" className="hover:opacity-80 transition-opacity" style={{ color: primaryOrange }}>info@nayitalaash.com</a>
 							</p>
 						</div>
@@ -1935,7 +1935,7 @@ const AboutPage = () => {
 			{/* ====================== FOOTER ====================== */}
 			<footer className="py-8 md:py-12 bg-white border-t relative overflow-hidden" style={{ borderColor: `${primaryOrange}30` }}>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10 overflow-x-hidden">
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4">
 						{/* Column 1: Company Information */}
 						<div>
 							<Image 
@@ -1945,7 +1945,7 @@ const AboutPage = () => {
 								height={80}
 								className="h-16 sm:h-20 w-auto object-contain mb-4"
 							/>
-							<p className="text-sm mb-4 leading-relaxed" style={{ color: `${secondaryBlack}80` }}>
+							<p className="text-sm mb-4 leading-normal" style={{ color: `${secondaryBlack}80` }}>
 								Nayi Talaash helps travelers discover the beauty, culture, and hospitality of Pakistan through unforgettable journeys, expert tour guidance, and personalized travel experiences.
 							</p>
 							<div className="space-y-3">
@@ -1971,7 +1971,7 @@ const AboutPage = () => {
 						{/* Column 2: Quick Links */}
 						<div>
 							<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>Quick Links</h3>
-							<ul className="space-y-2">
+							<ul className="space-y-1">
 								<li className="border-b border-gray-200 pb-2">
 									<Link href="/#home" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Home</Link>
 								</li>
@@ -1999,7 +1999,7 @@ const AboutPage = () => {
 						{/* Column 3: What We Do */}
 						<div>
 							<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>What We Do</h3>
-							<ul className="space-y-2">
+							<ul className="space-y-1">
 								<li className="border-b border-gray-200 pb-2">
 									<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Custom Tour Packages</a>
 								</li>
@@ -2024,7 +2024,7 @@ const AboutPage = () => {
 						{/* Column 4: Connect */}
 						<div>
 							<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>Connect</h3>
-							<div className="flex gap-3 mb-6">
+							<div className="flex gap-3 mb-4">
 								<a 
 									href="https://www.facebook.com/nayetalash" 
 									target="_blank" 
@@ -2050,7 +2050,7 @@ const AboutPage = () => {
 									<Youtube className="w-5 h-5 text-white" />
 								</a>
 							</div>
-							<p className="text-sm mb-4 leading-relaxed" style={{ color: `${secondaryBlack}80` }}>
+							<p className="text-sm mb-4 leading-normal" style={{ color: `${secondaryBlack}80` }}>
 								Keep up to date with latest news and updates about Nayi Talaash, simply subscribe with your email address.
 							</p>
 							<div className="flex gap-2">
