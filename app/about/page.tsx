@@ -106,6 +106,33 @@ const AboutPage = () => {
 		return () => clearInterval(interval);
 	}, [experiencesMainImages.length]);
 
+	// Best Crew slider images
+	const crewMainImages = [
+		'/images/chitral.jpg',
+		'/images/Hunza.jpg',
+		'/images/skardu 2.jpg',
+		'/images/naran and kaghan.jpg',
+		'/images/fairy meadows 2.jpg',
+		'/images/Kund Malir.jpg',
+	];
+
+	const crewThumbnails = [
+		'/images/chitral.jpg',
+		'/images/Hunza.jpg',
+		'/images/skardu 2.jpg',
+		'/images/naran and kaghan.jpg',
+		'/images/fairy meadows 2.jpg',
+		'/images/Kund Malir.jpg',
+	];
+
+	// Auto-slide effect for Best Crew banner and thumbnail carousel
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCrewSlide((prev) => (prev + 1) % crewMainImages.length);
+		}, 4000); // Change slide every 4 seconds
+		return () => clearInterval(interval);
+	}, [crewMainImages.length]);
+
 	// Theme Colors
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
@@ -1264,56 +1291,73 @@ const AboutPage = () => {
 			{/* ====================== BEST CREW SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-						{/* Left: Image Slider */}
-						<div className="relative order-2 lg:order-1">
-							<div className="relative h-96 rounded-lg overflow-hidden">
-								<Image 
-									src="/images/chitral.jpg"
-									alt="Best Crew"
-									fill
-									className="object-cover"
-								/>
-							</div>
-							<div className="flex items-center justify-center gap-2 mt-4">
+					{/* Main Banner Slider */}
+					<div className="relative mb-6">
+						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
+							<Image 
+								src={crewMainImages[crewSlide]}
+								alt="Best Crew"
+								fill
+								className="object-cover transition-opacity duration-500"
+							/>
+							{/* Dark overlay for text readability */}
+							<div className="absolute inset-0 bg-black/30"></div>
+							
+							{/* Text Overlay */}
+							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">BEST CREW</h2>
+								<p className="text-lg md:text-xl mb-6">Handpicked Tour Managers</p>
 								<button
-									onClick={() => setCrewSlide(prev => Math.max(0, prev - 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={crewSlide === 0}
+									onClick={handleWhatsAppClick}
+									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+									style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 								>
-									<ChevronLeft className="w-5 h-5" style={{ color: crewSlide === 0 ? '#ccc' : primaryOrange }} />
-								</button>
-								<span className="text-sm text-gray-600">{crewSlide + 1} / 5</span>
-								<button
-									onClick={() => setCrewSlide(prev => Math.min(4, prev + 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={crewSlide === 4}
-								>
-									<ChevronRight className="w-5 h-5" style={{ color: crewSlide === 4 ? '#ccc' : primaryOrange }} />
+									Enquire now
 								</button>
 							</div>
-						</div>
 
-						{/* Right: Content */}
-						<div className="order-1 lg:order-2">
-							<div className="flex items-center gap-2 mb-4">
-								<Users className="w-8 h-8" style={{ color: primaryOrange }} />
-								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Best Crew</h2>
-							</div>
-							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Handpicked Tour Managers</p>
-							<p className="text-base text-gray-600 mb-4 leading-relaxed">
-								Our tour managers are more than just guides – they are your local experts, cultural ambassadors, and travel companions rolled into one. Each member of our crew is handpicked based on their extensive knowledge, professionalism, and passion for showcasing Pakistan's beauty.
-							</p>
-							<p className="text-base text-gray-600 mb-6 leading-relaxed">
-								From receiving you at the airport to helping you check in to hotels, covering your cash needs, and capturing your professional video log. Our tour managers have been handpicked to give you the comfort and the space to enjoy your trip completely hassle-free.
-							</p>
+							{/* Navigation Arrows with padding to avoid button overlap */}
 							<button
-								onClick={handleWhatsAppClick}
-								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
-								style={{ backgroundColor: primaryOrange, color: 'white' }}
+								onClick={() => setCrewSlide(prev => (prev - 1 + crewMainImages.length) % crewMainImages.length)}
+								className="absolute left-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
 							>
-								Enquire now
+								<ChevronLeft className="w-6 h-6" style={{ color: primaryOrange }} />
 							</button>
+							<button
+								onClick={() => setCrewSlide(prev => (prev + 1) % crewMainImages.length)}
+								className="absolute right-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+							>
+								<ChevronRight className="w-6 h-6" style={{ color: primaryOrange }} />
+							</button>
+						</div>
+					</div>
+
+					{/* Auto-sliding Thumbnail Carousel */}
+					<div className="relative overflow-hidden mt-4">
+						<div className="flex gap-2">
+							{crewThumbnails.map((thumb, idx) => (
+								<div 
+									key={idx}
+									className="flex-shrink-0 w-full sm:w-1/3 md:w-1/6 cursor-pointer transition-all duration-300"
+									onClick={() => setCrewSlide(idx)}
+								>
+									<div className="relative h-24 md:h-32 rounded overflow-hidden">
+										<Image 
+											src={thumb}
+											alt={`Thumbnail ${idx + 1}`}
+											fill
+											className="object-cover transition-all duration-300"
+										/>
+										{/* Black opacity overlay for non-active thumbnails */}
+										{idx !== crewSlide && (
+											<div className="absolute inset-0 bg-black/60 transition-opacity duration-300"></div>
+										)}
+										{idx === crewSlide && (
+											<div className="absolute inset-0 border-2 transition-all duration-300" style={{ borderColor: primaryOrange }}></div>
+										)}
+									</div>
+								</div>
+							))}
 						</div>
 					</div>
 				</div>
