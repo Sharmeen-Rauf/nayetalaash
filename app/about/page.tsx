@@ -1683,60 +1683,30 @@ const AboutPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== COMPREHENSIVE TOUR MANAGEMENT SLIDER ====================== */}
-			<section className="py-8 md:py-12 bg-white">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-						{/* Left: Image Slider */}
-						<div className="relative order-2 lg:order-1">
-							<div className="relative h-96 rounded-lg overflow-hidden">
-								<Image 
-									src="/images/murree and nathia gali.jpg"
-									alt="Comprehensive Tour Management"
-									fill
-									className="object-cover"
-								/>
-							</div>
-							<div className="flex items-center justify-center gap-2 mt-4">
-								<button
-									onClick={() => setManagementSlide(prev => Math.max(0, prev - 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={managementSlide === 0}
-								>
-									<ChevronLeft className="w-5 h-5" style={{ color: managementSlide === 0 ? '#ccc' : primaryOrange }} />
-								</button>
-								<span className="text-sm text-gray-600">{managementSlide + 1} / 5</span>
-								<button
-									onClick={() => setManagementSlide(prev => Math.min(4, prev + 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={managementSlide === 4}
-								>
-									<ChevronRight className="w-5 h-5" style={{ color: managementSlide === 4 ? '#ccc' : primaryOrange }} />
-								</button>
-							</div>
-						</div>
-
-						{/* Right: Content */}
-						<div className="order-1 lg:order-2">
-							<div className="flex items-center gap-2 mb-4">
-								<Briefcase className="w-8 h-8" style={{ color: primaryOrange }} />
-								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Comprehensive Tour Management</h2>
-							</div>
-							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Expert Ground Handling</p>
-							<p className="text-base text-gray-600 mb-4 leading-relaxed">
-								If you are an international tourist visiting Pakistan, you will need more than a visit visa to roam freely in the country. Most places in Pakistan require access permits and approval documentation for foreign travelers and the process to acquire them is not always clear.
-							</p>
-							<p className="text-base text-gray-600 mb-6 leading-relaxed">
-								Our network team has good knowledge and experience in expediting these documents from state authorities and local bodies. Our travel designer will advise you on these permits ahead of time and make you aware of the timelines needed to procure these documents.
-							</p>
-							<button
-								onClick={handleWhatsAppClick}
-								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
-								style={{ backgroundColor: primaryOrange, color: 'white' }}
-							>
-								Enquire now
-							</button>
-						</div>
+			{/* ====================== COMPREHENSIVE TOUR MANAGEMENT BANNER ====================== */}
+			<section className="w-full overflow-hidden">
+				{/* Full Width Banner with Text Overlay */}
+				<div className="relative w-full h-[500px] md:h-[600px]">
+					<Image 
+						src="/images/gwadar.jpg"
+						alt="Comprehensive Tour Management"
+						fill
+						className="object-cover"
+					/>
+					{/* Dark overlay for text readability */}
+					<div className="absolute inset-0 bg-black/30"></div>
+					
+					{/* Text Overlay */}
+					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">COMPREHENSIVE TOUR MANAGEMENT</h2>
+						<p className="text-lg md:text-xl mb-6">Expert Ground Handling</p>
+						<button
+							onClick={handleWhatsAppClick}
+							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-white"
+							style={{ backgroundColor: primaryOrange }}
+						>
+							Enquire now
+						</button>
 					</div>
 				</div>
 			</section>
