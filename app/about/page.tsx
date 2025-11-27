@@ -1810,9 +1810,9 @@ const AboutPage = () => {
 							How Do Locally-Made Trips Work?
 						</h2>
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 max-w-6xl mx-auto">
 						{/* Step 1: Discover */}
-						<div className="text-center">
+						<div className="text-center max-w-xs mx-auto">
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
 								<MessageSquare className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
@@ -1824,7 +1824,7 @@ const AboutPage = () => {
 						</div>
 
 						{/* Step 2: Customize */}
-						<div className="text-center">
+						<div className="text-center max-w-xs mx-auto">
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
 								<Map className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
@@ -1836,7 +1836,7 @@ const AboutPage = () => {
 						</div>
 
 						{/* Step 3: Travel */}
-						<div className="text-center">
+						<div className="text-center max-w-xs mx-auto">
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
 								<Plane className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
@@ -1848,7 +1848,7 @@ const AboutPage = () => {
 						</div>
 
 						{/* Step 4: Share your experience */}
-						<div className="text-center">
+						<div className="text-center max-w-xs mx-auto">
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
 								<ImagePlus className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
