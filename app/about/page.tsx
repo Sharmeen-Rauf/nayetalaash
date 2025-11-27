@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, Search } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, Search, Building2, Car, Sparkles, Users, ShieldCheck, FileText, Briefcase, CheckCircle2, MapPin, Globe, Award, Clock, Download } from 'lucide-react';
 
 const AboutPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +14,16 @@ const AboutPage = () => {
 		whatToDo: '',
 		whereToGo: ''
 	});
+
+	// Slider states for each section
+	const [hotelsSlide, setHotelsSlide] = useState(0);
+	const [conveyanceSlide, setConveyanceSlide] = useState(0);
+	const [experiencesSlide, setExperiencesSlide] = useState(0);
+	const [crewSlide, setCrewSlide] = useState(0);
+	const [covidSlide, setCovidSlide] = useState(0);
+	const [trustSlide, setTrustSlide] = useState(0);
+	const [visaSlide, setVisaSlide] = useState(0);
+	const [managementSlide, setManagementSlide] = useState(0);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -491,6 +501,636 @@ const AboutPage = () => {
 									<span>Search</span>
 								</button>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== MAIN HEADING SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="text-center mb-8">
+						<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							WHY TRAVEL WITH <span style={{ color: primaryOrange }}>#NAYI TALAASH</span>
+						</h1>
+						<p className="text-lg md:text-xl text-gray-600 mb-6">
+							Do you want to know what makes us your perfect travel companion?
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== HOTELS & ACCOMMODATION SLIDER ====================== */}
+			<section className="py-8 md:py-12 bg-gray-50">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						{/* Left: Content */}
+						<div>
+							<div className="flex items-center gap-2 mb-4">
+								<Building2 className="w-8 h-8" style={{ color: primaryOrange }} />
+								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Hotels & Accommodation</h2>
+							</div>
+							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Best deals on premium stays</p>
+							<p className="text-base text-gray-600 mb-4 leading-relaxed">
+								We have partnered with 5-star hotel groups and accommodation services to bring you variety in lodging all over Pakistan without compromising on the quality you deserve. Book with us and prepare to be spoilt in premium suites and serene resorts, luxurious residential villas for families, boutique hotels and private chalets, and serviced campsites in the mountains and the wild – all at the best price match!
+							</p>
+							<p className="text-base text-gray-600 mb-6 leading-relaxed">
+								Wherever we go together we ensure that your hotel and room preferences are always noted and delivered by our team. Our excellent partner network and experienced team check you into deluxe rooms and executive suites replete with indulgent amenities such as complimentary access to executive lounges, inclusive spa, and wellness center passes, and majestic room views.
+							</p>
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+								style={{ backgroundColor: primaryOrange, color: 'white' }}
+							>
+								Enquire now
+							</button>
+						</div>
+
+						{/* Right: Image Slider */}
+						<div className="relative">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/Hunza.jpg"
+									alt="Hotels & Accommodation"
+									fill
+									className="object-cover"
+								/>
+							</div>
+							<div className="flex items-center justify-center gap-2 mt-4">
+								<button
+									onClick={() => setHotelsSlide(prev => Math.max(0, prev - 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={hotelsSlide === 0}
+								>
+									<ChevronLeft className="w-5 h-5" style={{ color: hotelsSlide === 0 ? '#ccc' : primaryOrange }} />
+								</button>
+								<span className="text-sm text-gray-600">{hotelsSlide + 1} / 5</span>
+								<button
+									onClick={() => setHotelsSlide(prev => Math.min(4, prev + 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={hotelsSlide === 4}
+								>
+									<ChevronRight className="w-5 h-5" style={{ color: hotelsSlide === 4 ? '#ccc' : primaryOrange }} />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== CONVEYANCE SLIDER ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						{/* Left: Image Slider */}
+						<div className="relative order-2 lg:order-1">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/skardu 2.jpg"
+									alt="Conveyance"
+									fill
+									className="object-cover"
+								/>
+							</div>
+							<div className="flex items-center justify-center gap-2 mt-4">
+								<button
+									onClick={() => setConveyanceSlide(prev => Math.max(0, prev - 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={conveyanceSlide === 0}
+								>
+									<ChevronLeft className="w-5 h-5" style={{ color: conveyanceSlide === 0 ? '#ccc' : primaryOrange }} />
+								</button>
+								<span className="text-sm text-gray-600">{conveyanceSlide + 1} / 5</span>
+								<button
+									onClick={() => setConveyanceSlide(prev => Math.min(4, prev + 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={conveyanceSlide === 4}
+								>
+									<ChevronRight className="w-5 h-5" style={{ color: conveyanceSlide === 4 ? '#ccc' : primaryOrange }} />
+								</button>
+							</div>
+						</div>
+
+						{/* Right: Content */}
+						<div className="order-1 lg:order-2">
+							<div className="flex items-center gap-2 mb-4">
+								<Car className="w-8 h-8" style={{ color: primaryOrange }} />
+								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Conveyance</h2>
+							</div>
+							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Travel in style and comfort</p>
+							<p className="text-base text-gray-600 mb-4 leading-relaxed">
+								There are no bumps on this road trip! Our fleet of premium SUV and SUT vehicles, helicopters and private jets are available to ensure a smooth journey across Pakistan and its remote areas at the best price possible.
+							</p>
+							<p className="text-base text-gray-600 mb-6 leading-relaxed">
+								We have arranged round-the-clock, experienced drivers who have the expertise to conquer all terrains so that you can relax and enjoy the ride. Terrains in Pakistan can be perilous, but you are never out of options or backup plans when you book with us. Our network of standby replacement vehicles will reach you within 2-6 hours wherever you are in the country.
+							</p>
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+								style={{ backgroundColor: primaryOrange, color: 'white' }}
+							>
+								Enquire now
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== CURATED TRIP EXPERIENCES SLIDER ====================== */}
+			<section className="py-8 md:py-12 bg-gray-50">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						{/* Left: Content */}
+						<div>
+							<div className="flex items-center gap-2 mb-4">
+								<Sparkles className="w-8 h-8" style={{ color: primaryOrange }} />
+								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Curated Trip Experiences</h2>
+							</div>
+							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>MATCHING YOUR TASTE</p>
+							<p className="text-base text-gray-600 mb-4 leading-relaxed">
+								Every journey with Nayi Talaash is carefully designed to match your preferences, interests, and travel style. We understand that no two travelers are the same, which is why we offer fully customizable itineraries that can be tailored to your specific needs.
+							</p>
+							<p className="text-base text-gray-600 mb-6 leading-relaxed">
+								Whether you're seeking adventure, cultural immersion, relaxation, or a combination of all, our expert travel designers work with you to create the perfect itinerary. From off-the-beaten-path experiences to luxury accommodations, we curate every detail to ensure your trip exceeds expectations.
+							</p>
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+								style={{ backgroundColor: primaryOrange, color: 'white' }}
+							>
+								Enquire now
+							</button>
+						</div>
+
+						{/* Right: Image Slider */}
+						<div className="relative">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/naran and kaghan.jpg"
+									alt="Curated Trip Experiences"
+									fill
+									className="object-cover"
+								/>
+							</div>
+							<div className="flex items-center justify-center gap-2 mt-4">
+								<button
+									onClick={() => setExperiencesSlide(prev => Math.max(0, prev - 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={experiencesSlide === 0}
+								>
+									<ChevronLeft className="w-5 h-5" style={{ color: experiencesSlide === 0 ? '#ccc' : primaryOrange }} />
+								</button>
+								<span className="text-sm text-gray-600">{experiencesSlide + 1} / 5</span>
+								<button
+									onClick={() => setExperiencesSlide(prev => Math.min(4, prev + 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={experiencesSlide === 4}
+								>
+									<ChevronRight className="w-5 h-5" style={{ color: experiencesSlide === 4 ? '#ccc' : primaryOrange }} />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== BEST CREW SLIDER ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						{/* Left: Image Slider */}
+						<div className="relative order-2 lg:order-1">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/chitral.jpg"
+									alt="Best Crew"
+									fill
+									className="object-cover"
+								/>
+							</div>
+							<div className="flex items-center justify-center gap-2 mt-4">
+								<button
+									onClick={() => setCrewSlide(prev => Math.max(0, prev - 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={crewSlide === 0}
+								>
+									<ChevronLeft className="w-5 h-5" style={{ color: crewSlide === 0 ? '#ccc' : primaryOrange }} />
+								</button>
+								<span className="text-sm text-gray-600">{crewSlide + 1} / 5</span>
+								<button
+									onClick={() => setCrewSlide(prev => Math.min(4, prev + 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={crewSlide === 4}
+								>
+									<ChevronRight className="w-5 h-5" style={{ color: crewSlide === 4 ? '#ccc' : primaryOrange }} />
+								</button>
+							</div>
+						</div>
+
+						{/* Right: Content */}
+						<div className="order-1 lg:order-2">
+							<div className="flex items-center gap-2 mb-4">
+								<Users className="w-8 h-8" style={{ color: primaryOrange }} />
+								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Best Crew</h2>
+							</div>
+							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Handpicked Tour Managers</p>
+							<p className="text-base text-gray-600 mb-4 leading-relaxed">
+								Our tour managers are more than just guides – they are your local experts, cultural ambassadors, and travel companions rolled into one. Each member of our crew is handpicked based on their extensive knowledge, professionalism, and passion for showcasing Pakistan's beauty.
+							</p>
+							<p className="text-base text-gray-600 mb-6 leading-relaxed">
+								From receiving you at the airport to helping you check in to hotels, covering your cash needs, and capturing your professional video log. Our tour managers have been handpicked to give you the comfort and the space to enjoy your trip completely hassle-free.
+							</p>
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+								style={{ backgroundColor: primaryOrange, color: 'white' }}
+							>
+								Enquire now
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== COVID-19 PREPARED SLIDER ====================== */}
+			<section className="py-8 md:py-12 bg-gray-50">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						{/* Left: Content */}
+						<div>
+							<div className="flex items-center gap-2 mb-4">
+								<ShieldCheck className="w-8 h-8" style={{ color: primaryOrange }} />
+								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Covid-19 Prepared</h2>
+							</div>
+							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>The new traveling paradigm</p>
+							<p className="text-base text-gray-600 mb-4 leading-relaxed">
+								The tourism sector in Pakistan is fully committed to putting the visiting people and their well-being first. Nayi Talaash strongly believes that cooperation and understanding is vital for ensuring the safe guarding and implementation of all measures been recommended by the international bodies like UNWTO and WHO the World Tourism and Health Organizations.
+							</p>
+							<p className="text-base text-gray-600 mb-6 leading-relaxed">
+								These and more are adapted in the country, where the tourism destinations are rated of its own class and expected to have a huge footfall of international tourists sooner than later. We have implemented comprehensive health and safety protocols to ensure your peace of mind during your travels.
+							</p>
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+								style={{ backgroundColor: primaryOrange, color: 'white' }}
+							>
+								Ask us more
+							</button>
+						</div>
+
+						{/* Right: Image Slider */}
+						<div className="relative">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/fairy meadows 2.jpg"
+									alt="Covid-19 Prepared"
+									fill
+									className="object-cover"
+								/>
+							</div>
+							<div className="flex items-center justify-center gap-2 mt-4">
+								<button
+									onClick={() => setCovidSlide(prev => Math.max(0, prev - 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={covidSlide === 0}
+								>
+									<ChevronLeft className="w-5 h-5" style={{ color: covidSlide === 0 ? '#ccc' : primaryOrange }} />
+								</button>
+								<span className="text-sm text-gray-600">{covidSlide + 1} / 5</span>
+								<button
+									onClick={() => setCovidSlide(prev => Math.min(4, prev + 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={covidSlide === 4}
+								>
+									<ChevronRight className="w-5 h-5" style={{ color: covidSlide === 4 ? '#ccc' : primaryOrange }} />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== TRUST & SECURITY SLIDER ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						{/* Left: Image Slider */}
+						<div className="relative order-2 lg:order-1">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/Kund Malir.jpg"
+									alt="Trust & Security"
+									fill
+									className="object-cover"
+								/>
+							</div>
+							<div className="flex items-center justify-center gap-2 mt-4">
+								<button
+									onClick={() => setTrustSlide(prev => Math.max(0, prev - 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={trustSlide === 0}
+								>
+									<ChevronLeft className="w-5 h-5" style={{ color: trustSlide === 0 ? '#ccc' : primaryOrange }} />
+								</button>
+								<span className="text-sm text-gray-600">{trustSlide + 1} / 5</span>
+								<button
+									onClick={() => setTrustSlide(prev => Math.min(4, prev + 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={trustSlide === 4}
+								>
+									<ChevronRight className="w-5 h-5" style={{ color: trustSlide === 4 ? '#ccc' : primaryOrange }} />
+								</button>
+							</div>
+						</div>
+
+						{/* Right: Content */}
+						<div className="order-1 lg:order-2">
+							<div className="flex items-center gap-2 mb-4">
+								<ShieldCheck className="w-8 h-8" style={{ color: primaryOrange }} />
+								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Trust & Security</h2>
+							</div>
+							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Travel with freedom</p>
+							<p className="text-base text-gray-600 mb-4 leading-relaxed">
+								We are a registered and licensed tourism company with the state department, provincial and federal tax and revenue authorities, and administrative tourism bodies. We work closely with the state tourism body before your arrival to make sure your safety is well covered by local law enforcement wherever you travel within Pakistan.
+							</p>
+							<p className="text-base text-gray-600 mb-6 leading-relaxed">
+								We offer you multiple modes of secure online payments. We try to minimize cash transactions throughout our operations. For our foreign travelers visiting Pakistan, you can book your travel package through a safe and secure wire and telegraphic transfer.
+							</p>
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+								style={{ backgroundColor: primaryOrange, color: 'white' }}
+							>
+								Ask us more
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== TRAVEL VISA SLIDER ====================== */}
+			<section className="py-8 md:py-12 bg-gray-50">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						{/* Left: Content */}
+						<div>
+							<div className="flex items-center gap-2 mb-4">
+								<FileText className="w-8 h-8" style={{ color: primaryOrange }} />
+								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Travel Visa</h2>
+							</div>
+							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Hassle-free process</p>
+							<p className="text-base text-gray-600 mb-4 leading-relaxed">
+								We provide you a safe gateway to apply for your tourist, business and visit visa to Pakistan. Our services include visa consultation services, assembling your visa application papers, application letter from our side to the concerned department as we are a registered tour company, applying and liaising for your visa with the concerned public department, and resubmitting any further documents.
+							</p>
+							<p className="text-base text-gray-600 mb-6 leading-relaxed">
+								We do not provide guarantees on visa issuance; however, our team of experts keeps you informed throughout the process and sets your expectations accordingly.
+							</p>
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+								style={{ backgroundColor: primaryOrange, color: 'white' }}
+							>
+								Enquire now
+							</button>
+						</div>
+
+						{/* Right: Image Slider */}
+						<div className="relative">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/azad kashmir.jpg"
+									alt="Travel Visa"
+									fill
+									className="object-cover"
+								/>
+							</div>
+							<div className="flex items-center justify-center gap-2 mt-4">
+								<button
+									onClick={() => setVisaSlide(prev => Math.max(0, prev - 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={visaSlide === 0}
+								>
+									<ChevronLeft className="w-5 h-5" style={{ color: visaSlide === 0 ? '#ccc' : primaryOrange }} />
+								</button>
+								<span className="text-sm text-gray-600">{visaSlide + 1} / 5</span>
+								<button
+									onClick={() => setVisaSlide(prev => Math.min(4, prev + 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={visaSlide === 4}
+								>
+									<ChevronRight className="w-5 h-5" style={{ color: visaSlide === 4 ? '#ccc' : primaryOrange }} />
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== COMPREHENSIVE TOUR MANAGEMENT SLIDER ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						{/* Left: Image Slider */}
+						<div className="relative order-2 lg:order-1">
+							<div className="relative h-96 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/murree and nathia gali.jpg"
+									alt="Comprehensive Tour Management"
+									fill
+									className="object-cover"
+								/>
+							</div>
+							<div className="flex items-center justify-center gap-2 mt-4">
+								<button
+									onClick={() => setManagementSlide(prev => Math.max(0, prev - 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={managementSlide === 0}
+								>
+									<ChevronLeft className="w-5 h-5" style={{ color: managementSlide === 0 ? '#ccc' : primaryOrange }} />
+								</button>
+								<span className="text-sm text-gray-600">{managementSlide + 1} / 5</span>
+								<button
+									onClick={() => setManagementSlide(prev => Math.min(4, prev + 1))}
+									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+									disabled={managementSlide === 4}
+								>
+									<ChevronRight className="w-5 h-5" style={{ color: managementSlide === 4 ? '#ccc' : primaryOrange }} />
+								</button>
+							</div>
+						</div>
+
+						{/* Right: Content */}
+						<div className="order-1 lg:order-2">
+							<div className="flex items-center gap-2 mb-4">
+								<Briefcase className="w-8 h-8" style={{ color: primaryOrange }} />
+								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Comprehensive Tour Management</h2>
+							</div>
+							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Expert Ground Handling</p>
+							<p className="text-base text-gray-600 mb-4 leading-relaxed">
+								If you are an international tourist visiting Pakistan, you will need more than a visit visa to roam freely in the country. Most places in Pakistan require access permits and approval documentation for foreign travelers and the process to acquire them is not always clear.
+							</p>
+							<p className="text-base text-gray-600 mb-6 leading-relaxed">
+								Our network team has good knowledge and experience in expediting these documents from state authorities and local bodies. Our travel designer will advise you on these permits ahead of time and make you aware of the timelines needed to procure these documents.
+							</p>
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
+								style={{ backgroundColor: primaryOrange, color: 'white' }}
+							>
+								Enquire now
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== THE ADVANTAGES OF BOOKING WITH NAYI TALAASH ====================== */}
+			<section className="py-8 md:py-12 bg-gray-50">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="text-center mb-12">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							The Advantages of Booking with Nayi Talaash
+						</h2>
+					</div>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+						{/* Advantage 1 */}
+						<div className="bg-white p-6 rounded-lg shadow-md text-center">
+							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
+								<ShieldCheck className="w-8 h-8" style={{ color: primaryOrange }} />
+							</div>
+							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guaranteed for peace of mind</h3>
+							<p className="text-sm text-gray-600 leading-relaxed">
+								We are a destination management company. Our network offices are spread across the country ensuring the timely and professional delivery of all your destination needs.
+							</p>
+						</div>
+
+						{/* Advantage 2 */}
+						<div className="bg-white p-6 rounded-lg shadow-md text-center">
+							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
+								<Award className="w-8 h-8" style={{ color: primaryOrange }} />
+							</div>
+							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>BEST PRICE AND VALUE</h3>
+							<p className="text-sm text-gray-600 leading-relaxed">
+								Our corporate partnership with the hotels, venues, and transport businesses help us secure unmatched price and unquestionable value.
+							</p>
+						</div>
+
+						{/* Advantage 3 */}
+						<div className="bg-white p-6 rounded-lg shadow-md text-center">
+							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
+								<MapPin className="w-8 h-8" style={{ color: primaryOrange }} />
+							</div>
+							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>QUALITY OF ITINERARY</h3>
+							<p className="text-sm text-gray-600 leading-relaxed">
+								We cater to foreign inbound tourists, and have shaped our tours to match the needs of the international traveler. We have perfected multiple trip designs and allow further options to customize to your needs.
+							</p>
+						</div>
+
+						{/* Advantage 4 */}
+						<div className="bg-white p-6 rounded-lg shadow-md text-center">
+							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
+								<Globe className="w-8 h-8" style={{ color: primaryOrange }} />
+							</div>
+							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Access to local expertise</h3>
+							<p className="text-sm text-gray-600 leading-relaxed">
+								All our local agents have been chosen based on rigorous selection criteria, including English-speaking ability, fairness of prices, and knowledge of their destination.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== HOW DO LOCALLY-MADE TRIPS WORK? ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="text-center mb-12">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							How do locally-made trips work?
+						</h2>
+					</div>
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+						{/* Step 1: Discover */}
+						<div className="text-center">
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: primaryOrange }}>
+								1
+							</div>
+							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Discover</h3>
+							<p className="text-sm text-gray-600 leading-relaxed mb-4">
+								Visit our website and discover our curated products. The products are divided into specialized tour themes covering the best of Pakistan's tourism.
+							</p>
+							<Link href="/#tours" className="text-sm font-semibold" style={{ color: primaryOrange }}>
+								Find out more →
+							</Link>
+						</div>
+
+						{/* Step 2: Customize */}
+						<div className="text-center">
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: primaryOrange }}>
+								2
+							</div>
+							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Customize</h3>
+							<p className="text-sm text-gray-600 leading-relaxed mb-4">
+								Share your travel details and request for customization through our interactive online forms. We have included the accommodation, transportation and activities to the best thematic design, but you may request to add more days, or destinations, or activities.
+							</p>
+							<Link href="/contact" className="text-sm font-semibold" style={{ color: primaryOrange }}>
+								Find out more →
+							</Link>
+						</div>
+
+						{/* Step 3: Travel */}
+						<div className="text-center">
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: primaryOrange }}>
+								3
+							</div>
+							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Travel</h3>
+							<p className="text-sm text-gray-600 leading-relaxed mb-4">
+								Read through our website for further destination guide and apply for your visa through our assisted service. Secure your itinerary and accommodation by paying through our online platform and get ready to be welcomed at the airport.
+							</p>
+							<Link href="/#destination" className="text-sm font-semibold" style={{ color: primaryOrange }}>
+								Find out more →
+							</Link>
+						</div>
+
+						{/* Step 4: Share your experience */}
+						<div className="text-center">
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: primaryOrange }}>
+								4
+							</div>
+							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Share your experience</h3>
+							<p className="text-sm text-gray-600 leading-relaxed mb-4">
+								We produce a complimentary video for all our guests showcasing your 60 sec destination story. Share the video with your friends, and share your experience with us through our easy-to-fill online customer review form.
+							</p>
+							<Link href="/contact" className="text-sm font-semibold" style={{ color: primaryOrange }}>
+								Find out more →
+							</Link>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== ADDITIONAL FEATURES SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-gray-50">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+						<div className="bg-white p-6 rounded-lg shadow-md text-center">
+							<Clock className="w-12 h-12 mx-auto mb-4" style={{ color: primaryOrange }} />
+							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>Affordable Journeys</h3>
+							<p className="text-sm text-gray-600">Premium travel experience at the most affordable rates to provide you with the best value for your trip cost.</p>
+						</div>
+						<div className="bg-white p-6 rounded-lg shadow-md text-center">
+							<Users className="w-12 h-12 mx-auto mb-4" style={{ color: primaryOrange }} />
+							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>Guided Experiences</h3>
+							<p className="text-sm text-gray-600">Embrace our travel guide resources and know about the history and traditions of the areas you're traveling in.</p>
+						</div>
+						<div className="bg-white p-6 rounded-lg shadow-md text-center">
+							<CheckCircle2 className="w-12 h-12 mx-auto mb-4" style={{ color: primaryOrange }} />
+							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>All Inclusive</h3>
+							<p className="text-sm text-gray-600">Nayi Talaash is taking provision of all your travel needs and comforts within your package cost, leaving you with lasting trip memories.</p>
+						</div>
+						<div className="bg-white p-6 rounded-lg shadow-md text-center">
+							<Phone className="w-12 h-12 mx-auto mb-4" style={{ color: primaryOrange }} />
+							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>Guest Support</h3>
+							<p className="text-sm text-gray-600">We are happy to help you! Call us at +92 331 438251 or write to us at info@nayitalaash.com</p>
 						</div>
 					</div>
 				</div>
