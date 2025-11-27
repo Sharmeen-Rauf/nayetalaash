@@ -1449,7 +1449,7 @@ const Page = () => {
 							<span className="block mt-2" style={{ 
 								color: secondaryBlack
 							}}>
-								Hidden Gem
+								Hidden Gem's
 							</span>
 						</h2>
 					</div>
