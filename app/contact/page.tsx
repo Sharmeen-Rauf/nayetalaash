@@ -238,7 +238,7 @@ const ContactPage = () => {
 			</section>
 
 			{/* Contact Form Section */}
-			<section className="py-16 md:py-24" style={{ backgroundColor: '#f5f5f5' }}>
+			<section className="py-8 md:py-12" style={{ backgroundColor: '#f5f5f5' }}>
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					{/* Header Section */}
 					<div className="text-center mb-12">
@@ -423,7 +423,7 @@ const ContactPage = () => {
 			</section>
 
 			{/* Our Presence Section */}
-			<section className="py-16 md:py-24 bg-white">
+			<section className="py-8 md:py-12 bg-white">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					{/* Centered Heading */}
 					<div className="text-center mb-12">
@@ -475,7 +475,7 @@ const ContactPage = () => {
 			</section>
 
 			{/* Connect With Us Section */}
-			<section className="py-16 md:py-24 bg-white">
+			<section className="py-8 md:py-12 bg-white">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="text-center">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
@@ -515,7 +515,7 @@ const ContactPage = () => {
 			</section>
 
 			{/* ====================== WHERE ARE WE LOCATED? ====================== */}
-			<section className="py-8 md:py-12 bg-white overflow-x-hidden">
+			<section className="pt-0 pb-8 md:pb-12 bg-white overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl overflow-x-hidden">
 					<div className="mb-8 scroll-reveal-fade-up text-center">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -669,9 +669,12 @@ const ContactPage = () => {
 									style={{ color: secondaryBlack }}
 								/>
 								<button 
-									className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
+									className="px-4 py-2 rounded transition-colors"
+									style={{ backgroundColor: primaryOrange, color: 'white' }}
+									onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; }}
 								>
-									<ArrowRight className="w-5 h-5" />
+									<ArrowRight className="w-5 h-5" style={{ color: 'white' }} />
 								</button>
 							</div>
 						</div>
