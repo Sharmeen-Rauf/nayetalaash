@@ -1248,14 +1248,14 @@ const AboutPage = () => {
 							</div>
 							{/* Black Footer with Title, Description, and Button */}
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
-								<h3 className="text-xl md:text-2xl font-bold mb-2">PUNJAB: THE LAND OF 5 RIVERS</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90">EXPERIENCE THE TRUE ESSENCE OF THE PUNJAB</p>
+								<h3 className="text-xl md:text-2xl font-bold mb-2 capitalize">Punjab: The Land Of 5 Rivers</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Experience The True Essence Of The Punjab</p>
 								<button
 									onClick={handleWhatsAppClick}
-									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity capitalize"
 								>
 									<span>→</span>
-									<span>BOOK NOW</span>
+									<span>Book Now</span>
 								</button>
 							</div>
 						</div>
@@ -1272,14 +1272,14 @@ const AboutPage = () => {
 							</div>
 							{/* Black Footer with Title, Description, and Button */}
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
-								<h3 className="text-xl md:text-2xl font-bold mb-2">BALOCHISTAN HOSPITALITY & HORSEBACK</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90">DISCOVER THE AUTHENTIC BALOCH HERITAGE</p>
+								<h3 className="text-xl md:text-2xl font-bold mb-2 capitalize">Balochistan Hospitality & Horseback</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Discover The Authentic Baloch Heritage</p>
 								<button
 									onClick={handleWhatsAppClick}
-									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity capitalize"
 								>
 									<span>→</span>
-									<span>BOOK NOW</span>
+									<span>Book Now</span>
 								</button>
 							</div>
 						</div>
@@ -1304,7 +1304,7 @@ const AboutPage = () => {
 							
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">BEST CREW</h2>
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Best Crew</h2>
 								<p className="text-lg md:text-xl mb-6">Handpicked Tour Managers</p>
 								<button
 									onClick={handleWhatsAppClick}
@@ -1405,14 +1405,14 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
-								<h3 className="text-xl md:text-2xl font-bold mb-2">KIRTHAR TROPHY HUNTING</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90">HUNT WITH A PROFESSIONAL AND TRAINED CREW</p>
+								<h3 className="text-xl md:text-2xl font-bold mb-2 capitalize">Kirthar Trophy Hunting</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Hunt With A Professional And Trained Crew</p>
 								<button
 									onClick={handleWhatsAppClick}
-									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity capitalize"
 								>
 									<span>→</span>
-									<span>BOOK NOW</span>
+									<span>Book Now</span>
 								</button>
 							</div>
 						</div>
@@ -1428,14 +1428,14 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
-								<h3 className="text-xl md:text-2xl font-bold mb-2">CONTACT OUR DESIGN TEAM TODAY</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90">SHARE YOUR DETAILS FOR A CUSTOM ITINERARY</p>
+								<h3 className="text-xl md:text-2xl font-bold mb-2 capitalize">Contact Our Design Team Today</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Share Your Details For A Custom Itinerary</p>
 								<button
 									onClick={handleWhatsAppClick}
-									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity capitalize"
 								>
 									<span>→</span>
-									<span>ENQUIRE NOW</span>
+									<span>Enquire Now</span>
 								</button>
 							</div>
 						</div>
@@ -1460,7 +1460,7 @@ const AboutPage = () => {
 							
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">COVID-19 PREPARED</h2>
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Covid-19 Prepared</h2>
 								<p className="text-lg md:text-xl mb-6">The new traveling paradigm</p>
 								<button
 									onClick={handleWhatsAppClick}
@@ -1534,7 +1534,7 @@ const AboutPage = () => {
 							
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">TRUST & SECURITY</h2>
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Trust & Security</h2>
 								<p className="text-lg md:text-xl mb-6">Travel with freedom</p>
 								<button
 									onClick={handleWhatsAppClick}
@@ -1625,7 +1625,7 @@ const AboutPage = () => {
 					
 					{/* Text Overlay */}
 					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">TRAVEL VISA</h2>
+						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Travel Visa</h2>
 						<p className="text-lg md:text-xl mb-6">Hassle-free process</p>
 						<button
 							onClick={handleWhatsAppClick}
@@ -1668,8 +1668,8 @@ const AboutPage = () => {
 						/>
 						{/* Black Banner Overlay at Bottom */}
 						<div className="absolute bottom-0 left-0 right-0 bg-black/90 p-6 md:p-8 text-white">
-							<h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">HAVE YOUR TRAVEL VISA ARRANGED BY NAYI TALAASH</h3>
-							<p className="text-sm md:text-base mb-4 opacity-90">DROP US YOUR QUICK DETAILS AND WE WILL REVERT BACK</p>
+							<h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 capitalize">Have Your Travel Visa Arranged By Nayi Talaash</h3>
+							<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Drop Us Your Quick Details And We Will Revert Back</p>
 							<button
 								onClick={handleWhatsAppClick}
 								className="flex items-center gap-2 text-base md:text-lg font-semibold hover:opacity-80 transition-opacity"
@@ -1714,8 +1714,8 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					<div className="text-center mb-12">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							THE ADVANTAGES OF BOOKING WITH NAYI TALAASH
+						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
+							The Advantages Of Booking With Nayi Talaash
 						</h2>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1730,8 +1730,8 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="p-6">
-								<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
-									GUARANTEED FOR PEACE OF MIND
+								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
+									Guaranteed For Peace Of Mind
 								</h3>
 								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
 									We are a destination management company. Our network offices are spread across the country ensuring the timely and professional delivery of all your destination needs.
@@ -1750,8 +1750,8 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="p-6">
-								<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
-									BEST PRICE AND VALUE
+								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
+									Best Price And Value
 								</h3>
 								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
 									Our corporate partnership with the hotels, venues, and transport businesses help us secure unmatched price and unquestionable value.
@@ -1770,8 +1770,8 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="p-6">
-								<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
-									QUALITY OF ITINERARY
+								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
+									Quality Of Itinerary
 								</h3>
 								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
 									We cater to foreign inbound tourists, and have shaped our tours to match the needs of the international traveler. We have perfected 30 trip designs and allow further options to customize to your needs.
@@ -1790,8 +1790,8 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="p-6">
-								<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
-									ACCESS TO LOCAL EXPERTISE
+								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
+									Access To Local Expertise
 								</h3>
 								<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
 									All our local agents have been chosen based on rigorous selection criteria, including English-speaking ability, fairness of prices, and knowledge of their destination.
@@ -1806,8 +1806,8 @@ const AboutPage = () => {
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					<div className="text-center mb-12">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							HOW DO LOCALLY-MADE TRIPS WORK?
+						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
+							How Do Locally-Made Trips Work?
 						</h2>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
