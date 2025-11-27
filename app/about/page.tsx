@@ -44,6 +44,25 @@ const AboutPage = () => {
 		'/images/Kund Malir.jpg',
 	];
 
+	// Conveyance slider images
+	const conveyanceMainImages = [
+		'/images/skardu 2.jpg',
+		'/images/Hunza.jpg',
+		'/images/naran and kaghan.jpg',
+		'/images/chitral.jpg',
+		'/images/fairy meadows 2.jpg',
+		'/images/Kund Malir.jpg',
+	];
+
+	const conveyanceThumbnails = [
+		'/images/skardu 2.jpg',
+		'/images/Hunza.jpg',
+		'/images/naran and kaghan.jpg',
+		'/images/chitral.jpg',
+		'/images/fairy meadows 2.jpg',
+		'/images/Kund Malir.jpg',
+	];
+
 	// Auto-slide effect for Hotels banner and thumbnail carousel
 	useEffect(() => {
 		const interval = setInterval(() => {
@@ -51,6 +70,14 @@ const AboutPage = () => {
 		}, 4000); // Change slide every 4 seconds
 		return () => clearInterval(interval);
 	}, [hotelsMainImages.length]);
+
+	// Auto-slide effect for Conveyance banner and thumbnail carousel
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setConveyanceSlide((prev) => (prev + 1) % conveyanceMainImages.length);
+		}, 4000); // Change slide every 4 seconds
+		return () => clearInterval(interval);
+	}, [conveyanceMainImages.length]);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -708,16 +735,16 @@ const AboutPage = () => {
 								</button>
 							</div>
 
-							{/* Navigation Arrows */}
+							{/* Navigation Arrows with padding to avoid button overlap */}
 							<button
 								onClick={() => setHotelsSlide(prev => (prev - 1 + hotelsMainImages.length) % hotelsMainImages.length)}
-								className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+								className="absolute left-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
 							>
 								<ChevronLeft className="w-6 h-6" style={{ color: primaryOrange }} />
 							</button>
 							<button
 								onClick={() => setHotelsSlide(prev => (prev + 1) % hotelsMainImages.length)}
-								className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+								className="absolute right-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
 							>
 								<ChevronRight className="w-6 h-6" style={{ color: primaryOrange }} />
 							</button>
@@ -871,56 +898,73 @@ const AboutPage = () => {
 			{/* ====================== CONVEYANCE SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-						{/* Left: Image Slider */}
-						<div className="relative order-2 lg:order-1">
-							<div className="relative h-96 rounded-lg overflow-hidden">
-								<Image 
-									src="/images/skardu 2.jpg"
-									alt="Conveyance"
-									fill
-									className="object-cover"
-								/>
-							</div>
-							<div className="flex items-center justify-center gap-2 mt-4">
+					{/* Main Banner Slider */}
+					<div className="relative mb-6">
+						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
+							<Image 
+								src={conveyanceMainImages[conveyanceSlide]}
+								alt="Conveyance"
+								fill
+								className="object-cover transition-opacity duration-500"
+							/>
+							{/* Dark overlay for text readability */}
+							<div className="absolute inset-0 bg-black/30"></div>
+							
+							{/* Text Overlay */}
+							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">CONVEYANCE</h2>
+								<p className="text-lg md:text-xl mb-6">Travel in style and comfort</p>
 								<button
-									onClick={() => setConveyanceSlide(prev => Math.max(0, prev - 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={conveyanceSlide === 0}
+									onClick={handleWhatsAppClick}
+									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+									style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 								>
-									<ChevronLeft className="w-5 h-5" style={{ color: conveyanceSlide === 0 ? '#ccc' : primaryOrange }} />
-								</button>
-								<span className="text-sm text-gray-600">{conveyanceSlide + 1} / 5</span>
-								<button
-									onClick={() => setConveyanceSlide(prev => Math.min(4, prev + 1))}
-									className="p-2 rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
-									disabled={conveyanceSlide === 4}
-								>
-									<ChevronRight className="w-5 h-5" style={{ color: conveyanceSlide === 4 ? '#ccc' : primaryOrange }} />
+									Enquire now
 								</button>
 							</div>
-						</div>
 
-						{/* Right: Content */}
-						<div className="order-1 lg:order-2">
-							<div className="flex items-center gap-2 mb-4">
-								<Car className="w-8 h-8" style={{ color: primaryOrange }} />
-								<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>Conveyance</h2>
-							</div>
-							<p className="text-xl font-semibold mb-4" style={{ color: primaryOrange }}>Travel in style and comfort</p>
-							<p className="text-base text-gray-600 mb-4 leading-relaxed">
-								There are no bumps on this road trip! Our fleet of premium SUV and SUT vehicles, helicopters and private jets are available to ensure a smooth journey across Pakistan and its remote areas at the best price possible.
-							</p>
-							<p className="text-base text-gray-600 mb-6 leading-relaxed">
-								We have arranged round-the-clock, experienced drivers who have the expertise to conquer all terrains so that you can relax and enjoy the ride. Terrains in Pakistan can be perilous, but you are never out of options or backup plans when you book with us. Our network of standby replacement vehicles will reach you within 2-6 hours wherever you are in the country.
-							</p>
+							{/* Navigation Arrows with padding to avoid button overlap */}
 							<button
-								onClick={handleWhatsAppClick}
-								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105"
-								style={{ backgroundColor: primaryOrange, color: 'white' }}
+								onClick={() => setConveyanceSlide(prev => (prev - 1 + conveyanceMainImages.length) % conveyanceMainImages.length)}
+								className="absolute left-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
 							>
-								Enquire now
+								<ChevronLeft className="w-6 h-6" style={{ color: primaryOrange }} />
 							</button>
+							<button
+								onClick={() => setConveyanceSlide(prev => (prev + 1) % conveyanceMainImages.length)}
+								className="absolute right-4 bottom-24 md:bottom-28 w-12 h-12 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all z-10"
+							>
+								<ChevronRight className="w-6 h-6" style={{ color: primaryOrange }} />
+							</button>
+						</div>
+					</div>
+
+					{/* Auto-sliding Thumbnail Carousel */}
+					<div className="relative overflow-hidden mt-4">
+						<div className="flex gap-2">
+							{conveyanceThumbnails.map((thumb, idx) => (
+								<div 
+									key={idx}
+									className="flex-shrink-0 w-full sm:w-1/3 md:w-1/6 cursor-pointer transition-all duration-300"
+									onClick={() => setConveyanceSlide(idx)}
+								>
+									<div className="relative h-24 md:h-32 rounded overflow-hidden">
+										<Image 
+											src={thumb}
+											alt={`Thumbnail ${idx + 1}`}
+											fill
+											className="object-cover transition-all duration-300"
+										/>
+										{/* Black opacity overlay for non-active thumbnails */}
+										{idx !== conveyanceSlide && (
+											<div className="absolute inset-0 bg-black/60 transition-opacity duration-300"></div>
+										)}
+										{idx === conveyanceSlide && (
+											<div className="absolute inset-0 border-2 transition-all duration-300" style={{ borderColor: primaryOrange }}></div>
+										)}
+									</div>
+								</div>
+							))}
 						</div>
 					</div>
 				</div>
