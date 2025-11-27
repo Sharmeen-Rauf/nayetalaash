@@ -755,6 +755,119 @@ const AboutPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== HOTELS & ACCOMMODATION CONTENT SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					{/* Four Red Stars */}
+					<div className="flex items-center justify-center gap-2 mb-8">
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+					</div>
+
+					{/* Text Content */}
+					<div className="max-w-4xl mx-auto mb-12">
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							We have partnered with 5-star hotel groups and accommodation services to bring you variety in lodging all over Pakistan without compromising on the quality you deserve. Book with us and prepare to be spoilt in premium suites and serene resorts, luxurious residential villas for families, boutique hotels and private chalets, and serviced campsites in the mountains and the wild – all at the best price match!
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							Wherever we go together we ensure that your hotel and room preferences are always noted and delivered by our team. Our excellent partner network and experienced team check you into deluxe rooms and executive suites replete with indulgent amenities such as complimentary access to executive lounges, inclusive spa, and wellness center passes, and majestic room views. Whether it is a half board or checking in for the night, we make sure that you never have to compromise on quality and comfort.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							Book with us to enjoy hassle-free hotel reservations and cancellations because we have it all covered in our packages. No need to stress about a change in flight timing or your vacation plans. Just give us a call and we will rebook or cancel hotel bookings according to your preference. It&apos;s that easy!
+						</p>
+					</div>
+
+					{/* Three Images Grid */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+						{/* Image 1: Coastal Retreat */}
+						<div className="relative group">
+							<div className="relative h-80 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/Kund Malir.jpg"
+									alt="Coastal Retreat"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+							</div>
+							<div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
+								<div className="relative flex items-center justify-center">
+									{/* Decorative green swirl - left */}
+									<svg className="absolute -left-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+										<path d="M20 5C12 5 5 12 5 20s7 15 15 15c3 0 6-1 8-3" stroke="none" fill="currentColor" opacity="0.8"/>
+										<path d="M25 10C30 12 32 18 30 23c-2 5-8 7-13 5" stroke="none" fill="currentColor" opacity="0.6"/>
+									</svg>
+									<h3 className="text-xl md:text-2xl font-autography relative z-10 px-4">Coastal Retreat</h3>
+									{/* Decorative green swirl - right */}
+									<svg className="absolute -right-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+										<path d="M20 35C28 35 35 28 35 20s-7-15-15-15c-3 0-6 1-8 3" stroke="none" fill="currentColor" opacity="0.8"/>
+										<path d="M15 30C10 28 8 22 10 17c2-5 8-7 13-5" stroke="none" fill="currentColor" opacity="0.6"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						{/* Image 2: Dream Journeys of North */}
+						<div className="relative group">
+							<div className="relative h-80 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/Hunza.jpg"
+									alt="Dream Journeys of North"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+							</div>
+							<div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
+								<div className="relative flex items-center justify-center">
+									{/* Decorative green swirl - left */}
+									<svg className="absolute -left-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+										<path d="M20 5C12 5 5 12 5 20s7 15 15 15c3 0 6-1 8-3" stroke="none" fill="currentColor" opacity="0.8"/>
+										<path d="M25 10C30 12 32 18 30 23c-2 5-8 7-13 5" stroke="none" fill="currentColor" opacity="0.6"/>
+									</svg>
+									<h3 className="text-xl md:text-2xl font-autography relative z-10 px-4">Dream Journeys of North</h3>
+									{/* Decorative green swirl - right */}
+									<svg className="absolute -right-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+										<path d="M20 35C28 35 35 28 35 20s-7-15-15-15c-3 0-6 1-8 3" stroke="none" fill="currentColor" opacity="0.8"/>
+										<path d="M15 30C10 28 8 22 10 17c2-5 8-7 13-5" stroke="none" fill="currentColor" opacity="0.6"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						{/* Image 3: Baloch Richness */}
+						<div className="relative group">
+							<div className="relative h-80 rounded-lg overflow-hidden">
+								<Image 
+									src="/images/gwadar.jpg"
+									alt="Baloch Richness"
+									fill
+									className="object-cover transition-transform duration-300 group-hover:scale-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+							</div>
+							<div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
+								<div className="relative flex items-center justify-center">
+									{/* Decorative green swirl - left */}
+									<svg className="absolute -left-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+										<path d="M20 5C12 5 5 12 5 20s7 15 15 15c3 0 6-1 8-3" stroke="none" fill="currentColor" opacity="0.8"/>
+										<path d="M25 10C30 12 32 18 30 23c-2 5-8 7-13 5" stroke="none" fill="currentColor" opacity="0.6"/>
+									</svg>
+									<h3 className="text-xl md:text-2xl font-autography relative z-10 px-4">Baloch Richness</h3>
+									{/* Decorative green swirl - right */}
+									<svg className="absolute -right-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+										<path d="M20 35C28 35 35 28 35 20s-7-15-15-15c-3 0-6 1-8 3" stroke="none" fill="currentColor" opacity="0.8"/>
+										<path d="M15 30C10 28 8 22 10 17c2-5 8-7 13-5" stroke="none" fill="currentColor" opacity="0.6"/>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== CONVEYANCE SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
