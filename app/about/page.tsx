@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, Search, Building2, Car, Sparkles, Users, ShieldCheck, FileText, Briefcase, CheckCircle2, MapPin, Globe, Award, Clock, Download } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronLeft, ChevronDown, ArrowRight, Search, Building2, Car, Sparkles, Users, ShieldCheck, FileText, Briefcase, CheckCircle2, MapPin, Globe, Award, Clock, Download, MessageSquare, Map, Plane, ImagePlus } from 'lucide-react';
 
 const AboutPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -1808,65 +1808,76 @@ const AboutPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							How do locally-made trips work?
+							HOW DO LOCALLY-MADE TRIPS WORK?
 						</h2>
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
 						{/* Step 1: Discover */}
 						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: primaryOrange }}>
-								1
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
+								<MessageSquare className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Discover</h3>
-							<p className="text-sm text-gray-600 leading-relaxed mb-4">
-								Visit our website and discover our curated products. The products are divided into specialized tour themes covering the best of Pakistan's tourism.
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Discover</h3>
+							<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
+								Visit our website and discover our 30 curated products. The products are divided into 6 specialized tour themes covering the best of Pakistan's tourism.
 							</p>
-							<Link href="/#tours" className="text-sm font-semibold" style={{ color: primaryOrange }}>
-								Find out more →
+							<Link href="/#tours" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
+								Find out more
 							</Link>
 						</div>
 
 						{/* Step 2: Customize */}
 						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: primaryOrange }}>
-								2
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
+								<Map className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Customize</h3>
-							<p className="text-sm text-gray-600 leading-relaxed mb-4">
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Customize</h3>
+							<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
 								Share your travel details and request for customization through our interactive online forms. We have included the accommodation, transportation and activities to the best thematic design, but you may request to add more days, or destinations, or activities.
 							</p>
-							<Link href="/contact" className="text-sm font-semibold" style={{ color: primaryOrange }}>
-								Find out more →
+							<Link href="/contact" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
+								Find out more
 							</Link>
 						</div>
 
 						{/* Step 3: Travel */}
 						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: primaryOrange }}>
-								3
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
+								<Plane className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Travel</h3>
-							<p className="text-sm text-gray-600 leading-relaxed mb-4">
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Travel</h3>
+							<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
 								Read through our website for further destination guide and apply for your visa through our assisted service. Secure your itinerary and accommodation by paying through our online platform and get ready to be welcomed at the airport.
 							</p>
-							<Link href="/#destination" className="text-sm font-semibold" style={{ color: primaryOrange }}>
-								Find out more →
+							<Link href="/#destination" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
+								Find out more
 							</Link>
 						</div>
 
 						{/* Step 4: Share your experience */}
 						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center text-2xl font-bold text-white" style={{ backgroundColor: primaryOrange }}>
-								4
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
+								<ImagePlus className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Share your experience</h3>
-							<p className="text-sm text-gray-600 leading-relaxed mb-4">
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Share your experience</h3>
+							<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
 								We produce a complimentary video for all our guests showcasing your 60 sec destination story. Share the video with your friends, and share your experience with us through our easy-to-fill online customer review form.
 							</p>
-							<Link href="/contact" className="text-sm font-semibold" style={{ color: primaryOrange }}>
-								Find out more →
+							<Link href="/contact" className="text-base md:text-lg font-semibold hover:opacity-80 transition-opacity" style={{ color: '#6b7280' }}>
+								Find out more
 							</Link>
 						</div>
+					</div>
+					
+					{/* Call-to-Action Button */}
+					<div className="text-center">
+						<Link 
+							href="/#tours"
+							className="inline-block px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-white"
+							style={{ backgroundColor: primaryOrange }}
+						>
+							Discover Our Destinations
+						</Link>
 					</div>
 				</div>
 			</section>
