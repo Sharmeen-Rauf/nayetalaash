@@ -103,12 +103,16 @@ const AboutPage = () => {
 	// Best Crew slider images
 	const crewMainImages = [
 		'/images/crew.jpg',
+		'/images/crew1.jpeg',
 		'/images/crew2.jpg',
+		'/images/crew3.jpeg',
 	];
 
 	const crewThumbnails = [
 		'/images/crew.jpg',
+		'/images/crew1.jpeg',
 		'/images/crew2.jpg',
+		'/images/crew3.jpeg',
 	];
 
 	// Auto-slide effect for Best Crew banner and thumbnail carousel
