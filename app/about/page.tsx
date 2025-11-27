@@ -1639,6 +1639,50 @@ const AboutPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== TRAVEL VISA CONTENT SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-white">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					{/* Three Red Stars */}
+					<div className="flex items-center justify-center gap-2 mb-8">
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+					</div>
+
+					{/* Text Content */}
+					<div className="max-w-4xl mx-auto mb-12">
+						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							We provide you a safe gateway to apply for your tourist, business and visit visa to Pakistan. Our services include visa consultation services, assembling your visa application papers, application letter from our side to the concerned department as we are a registered tour company, applying and liaising for your visa with the concerned public department, and resubmitting any further documents.
+						</p>
+						<p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: `${secondaryBlack}90` }}>
+							We do not provide guarantees on visa issuance; however, our team of experts keeps you informed throughout the process and sets your expectations accordingly.
+						</p>
+					</div>
+
+					{/* Image with Banner Overlay */}
+					<div className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden">
+						<Image 
+							src="/images/azad kashmir.jpg"
+							alt="Travel Visa Services"
+							fill
+							className="object-cover"
+						/>
+						{/* Black Banner Overlay at Bottom */}
+						<div className="absolute bottom-0 left-0 right-0 bg-black/90 p-6 md:p-8 text-white">
+							<h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">HAVE YOUR TRAVEL VISA ARRANGED BY NAYI TALAASH</h3>
+							<p className="text-sm md:text-base mb-4 opacity-90">DROP US YOUR QUICK DETAILS AND WE WILL REVERT BACK</p>
+							<button
+								onClick={handleWhatsAppClick}
+								className="flex items-center gap-2 text-base md:text-lg font-semibold hover:opacity-80 transition-opacity"
+							>
+								<span>→</span>
+								<span>ENQUIRE NOW</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== COMPREHENSIVE TOUR MANAGEMENT SLIDER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
