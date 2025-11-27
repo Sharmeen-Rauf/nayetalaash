@@ -27,40 +27,36 @@ const AboutPage = () => {
 
 	// Hotels & Accommodation slider images
 	const hotelsMainImages = [
-		'/images/Hunza.jpg',
-		'/images/skardu 2.jpg',
-		'/images/naran and kaghan.jpg',
-		'/images/chitral.jpg',
-		'/images/fairy meadows 2.jpg',
-		'/images/Kund Malir.jpg',
+		'/images/hotels and accomodation.jpg',
+		'/images/hotel 1.jpg',
+		'/images/hotel 2.jpg',
+		'/images/hotel 3.jpg',
+		'/images/hotel 4.jpg',
 	];
 
 	const hotelsThumbnails = [
-		'/images/Hunza.jpg',
-		'/images/skardu 2.jpg',
-		'/images/naran and kaghan.jpg',
-		'/images/chitral.jpg',
-		'/images/fairy meadows 2.jpg',
-		'/images/Kund Malir.jpg',
+		'/images/hotels and accomodation.jpg',
+		'/images/hotel 1.jpg',
+		'/images/hotel 2.jpg',
+		'/images/hotel 3.jpg',
+		'/images/hotel 4.jpg',
 	];
 
 	// Conveyance slider images
 	const conveyanceMainImages = [
-		'/images/skardu 2.jpg',
-		'/images/Hunza.jpg',
-		'/images/naran and kaghan.jpg',
-		'/images/chitral.jpg',
-		'/images/fairy meadows 2.jpg',
-		'/images/Kund Malir.jpg',
+		'/images/conveyanance.jpg',
+		'/images/Conveyance 2.jpg',
+		'/images/Conveyance 3.webp',
+		'/images/Conveyance 4.jpg',
+		'/images/conyenance 6.jpg',
 	];
 
 	const conveyanceThumbnails = [
-		'/images/skardu 2.jpg',
-		'/images/Hunza.jpg',
-		'/images/naran and kaghan.jpg',
-		'/images/chitral.jpg',
-		'/images/fairy meadows 2.jpg',
-		'/images/Kund Malir.jpg',
+		'/images/conveyanance.jpg',
+		'/images/Conveyance 2.jpg',
+		'/images/Conveyance 3.webp',
+		'/images/Conveyance 4.jpg',
+		'/images/conyenance 6.jpg',
 	];
 
 	// Auto-slide effect for Hotels banner and thumbnail carousel
@@ -81,21 +77,19 @@ const AboutPage = () => {
 
 	// Curated Trip Experiences slider images
 	const experiencesMainImages = [
-		'/images/naran and kaghan.jpg',
-		'/images/Hunza.jpg',
-		'/images/skardu 2.jpg',
-		'/images/chitral.jpg',
-		'/images/fairy meadows 2.jpg',
-		'/images/Kund Malir.jpg',
+		'/images/Curated Trip Experiences.jpg',
+		'/images/Curated Trip Experiences2.jpg',
+		'/images/Curated Trip Experiences3.jpg',
+		'/images/Curated Trip Experiences4.jpg',
+		'/images/Curated Trip Experiences 5.jpg',
 	];
 
 	const experiencesThumbnails = [
-		'/images/naran and kaghan.jpg',
-		'/images/Hunza.jpg',
-		'/images/skardu 2.jpg',
-		'/images/chitral.jpg',
-		'/images/fairy meadows 2.jpg',
-		'/images/Kund Malir.jpg',
+		'/images/Curated Trip Experiences.jpg',
+		'/images/Curated Trip Experiences2.jpg',
+		'/images/Curated Trip Experiences3.jpg',
+		'/images/Curated Trip Experiences4.jpg',
+		'/images/Curated Trip Experiences 5.jpg',
 	];
 
 	// Auto-slide effect for Experiences banner and thumbnail carousel
@@ -108,21 +102,13 @@ const AboutPage = () => {
 
 	// Best Crew slider images
 	const crewMainImages = [
-		'/images/chitral.jpg',
-		'/images/Hunza.jpg',
-		'/images/skardu 2.jpg',
-		'/images/naran and kaghan.jpg',
-		'/images/fairy meadows 2.jpg',
-		'/images/Kund Malir.jpg',
+		'/images/crew.jpg',
+		'/images/crew2.jpg',
 	];
 
 	const crewThumbnails = [
-		'/images/chitral.jpg',
-		'/images/Hunza.jpg',
-		'/images/skardu 2.jpg',
-		'/images/naran and kaghan.jpg',
-		'/images/fairy meadows 2.jpg',
-		'/images/Kund Malir.jpg',
+		'/images/crew.jpg',
+		'/images/crew2.jpg',
 	];
 
 	// Auto-slide effect for Best Crew banner and thumbnail carousel
@@ -641,7 +627,7 @@ const AboutPage = () => {
 						{/* Card 1: Hotels & Accommodation */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/Hunza.jpg"
+								src="/images/hotels and accomodation.jpg"
 								alt="Hotels & Accommodation"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -656,7 +642,7 @@ const AboutPage = () => {
 						{/* Card 2: Conveyance */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/skardu 2.jpg"
+								src="/images/travel in style.jpg"
 								alt="Conveyance"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -671,7 +657,7 @@ const AboutPage = () => {
 						{/* Card 3: Curated Trip Experiences */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/naran and kaghan.jpg"
+								src="/images/Curated Trip Experiences.jpg"
 								alt="Curated Trip Experiences"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -686,7 +672,7 @@ const AboutPage = () => {
 						{/* Card 4: Best Crew */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/chitral.jpg"
+								src="/images/crew.jpg"
 								alt="Best Crew"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -701,7 +687,7 @@ const AboutPage = () => {
 						{/* Card 5: Safe & Secure Travel */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/fairy meadows 2.jpg"
+								src="/images/SAFE & SECURE TRAVEL.jpg"
 								alt="Safe & Secure Travel"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -716,7 +702,7 @@ const AboutPage = () => {
 						{/* Card 6: Trust & Security */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/Kund Malir.jpg"
+								src="/images/TRUST & SECURITY.jpg"
 								alt="Trust & Security"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -731,7 +717,7 @@ const AboutPage = () => {
 						{/* Card 7: Travel Support */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/azad kashmir.jpg"
+								src="/images/TRAVEL SUPPORT.jpg"
 								alt="Travel Support"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -746,7 +732,7 @@ const AboutPage = () => {
 						{/* Card 8: Tour Management */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/murree and nathia gali.jpg"
+								src="/images/comprehensive tour management.jpg"
 								alt="Tour Management"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -1697,7 +1683,7 @@ const AboutPage = () => {
 				{/* Full Width Banner with Text Overlay */}
 				<div className="relative w-full h-[500px] md:h-[600px]">
 					<Image 
-						src="/images/gwadar.jpg"
+						src="/images/comprehensive tour management.jpg"
 						alt="Comprehensive Tour Management"
 						fill
 						className="object-cover"
@@ -1707,7 +1693,7 @@ const AboutPage = () => {
 					
 					{/* Text Overlay */}
 					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">COMPREHENSIVE TOUR MANAGEMENT</h2>
+						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Comprehensive Tour Management</h2>
 						<p className="text-lg md:text-xl mb-6">Expert Ground Handling</p>
 						<button
 							onClick={handleWhatsAppClick}
