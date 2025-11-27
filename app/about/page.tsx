@@ -648,8 +648,8 @@ const AboutPage = () => {
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-								<p className="text-xs mb-2 font-medium">BEST DEALS ON PREMIUM STAYS</p>
-								<h3 className="text-base md:text-lg font-bold leading-tight">HOTELS & ACCOMMODATION</h3>
+								<p className="text-xs mb-2 font-medium opacity-90">Premium Stays, Cozy Rooms, And Scenic Camps</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Hotels & Accommodation</h3>
 							</div>
 						</div>
 
@@ -663,8 +663,8 @@ const AboutPage = () => {
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-								<p className="text-xs mb-2 font-medium">TRAVEL IN STYLE AND COMFORT</p>
-								<h3 className="text-base md:text-lg font-bold leading-tight">CONVEYANCE</h3>
+								<p className="text-xs mb-2 font-medium opacity-90">Travel Smoothly With Clean, Safe And Comfortable Transport</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Conveyance</h3>
 							</div>
 						</div>
 
@@ -678,8 +678,8 @@ const AboutPage = () => {
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-								<p className="text-xs mb-2 font-medium">MATCHING YOUR TASTE</p>
-								<h3 className="text-base md:text-lg font-bold leading-tight">CURATED TRIP EXPERIENCES</h3>
+								<p className="text-xs mb-2 font-medium opacity-90">Adventure, Culture, Food, Nature Experiences Crafted For Your Style</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Curated Trip Experiences</h3>
 							</div>
 						</div>
 
@@ -693,23 +693,23 @@ const AboutPage = () => {
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-								<p className="text-xs mb-2 font-medium">HANDPICKED TOUR MANAGERS</p>
-								<h3 className="text-base md:text-lg font-bold leading-tight">BEST CREW</h3>
+								<p className="text-xs mb-2 font-medium opacity-90">Friendly, Trained Tour Managers Who Make Your Journey Easy</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Best Crew</h3>
 							</div>
 						</div>
 
-						{/* Card 5: Covid-19 Prepared */}
+						{/* Card 5: Safe & Secure Travel */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
 								src="/images/fairy meadows 2.jpg"
-								alt="Covid-19 Prepared"
+								alt="Safe & Secure Travel"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-								<p className="text-xs mb-2 font-medium">THE NEW TRAVELING PARADIGM</p>
-								<h3 className="text-base md:text-lg font-bold leading-tight">COVID-19 PREPARED</h3>
+								<p className="text-xs mb-2 font-medium opacity-90">Verified Routes, Trusted Partners And Complete Peace Of Mind</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Safe & Secure Travel</h3>
 							</div>
 						</div>
 
@@ -723,38 +723,38 @@ const AboutPage = () => {
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-								<p className="text-xs mb-2 font-medium">TRAVEL WITH FREEDOM</p>
-								<h3 className="text-base md:text-lg font-bold leading-tight">TRUST & SECURITY</h3>
+								<p className="text-xs mb-2 font-medium opacity-90">Registered Company, Transparent Booking And Reliable Support</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Trust & Security</h3>
 							</div>
 						</div>
 
-						{/* Card 7: Travel Visa */}
+						{/* Card 7: Travel Support */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
 								src="/images/azad kashmir.jpg"
-								alt="Travel Visa"
+								alt="Travel Support"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-								<p className="text-xs mb-2 font-medium">HASSLE-FREE PROCESS</p>
-								<h3 className="text-base md:text-lg font-bold leading-tight">TRAVEL VISA</h3>
+								<p className="text-xs mb-2 font-medium opacity-90">We Handle Permits, Bookings And Planning Zero Hassle For You</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Travel Support</h3>
 							</div>
 						</div>
 
-						{/* Card 8: Comprehensive Tour Management */}
+						{/* Card 8: Tour Management */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
 								src="/images/murree and nathia gali.jpg"
-								alt="Comprehensive Tour Management"
+								alt="Tour Management"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
 							/>
 							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-								<p className="text-xs mb-2 font-medium">EXPERT GROUND HANDLING</p>
-								<h3 className="text-base md:text-lg font-bold leading-tight">COMPREHENSIVE TOUR MANAGEMENT</h3>
+								<p className="text-xs mb-2 font-medium opacity-90">Smooth Coordination From Start To Finish Just Enjoy The Journey</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Tour Management</h3>
 							</div>
 						</div>
 					</div>
@@ -778,8 +778,8 @@ const AboutPage = () => {
 							
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">HOTELS & ACCOMMODATION</h2>
-								<p className="text-lg md:text-xl mb-6">Best deals on premium stays</p>
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Hotels & Accommodation</h2>
+								<p className="text-lg md:text-xl mb-6">Best Deals On Premium Stays</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -850,13 +850,22 @@ const AboutPage = () => {
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-12">
 						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
-							We have partnered with 5-star hotel groups and accommodation services to bring you variety in lodging all over Pakistan without compromising on the quality you deserve. Book with us and prepare to be spoilt in premium suites and serene resorts, luxurious residential villas for families, boutique hotels and private chalets, and serviced campsites in the mountains and the wild – all at the best price match!
+							We partner with the best hotels, guest houses, resorts, and campsites across Pakistan to bring you a comfortable and safe stay at the best possible prices. From the luxury of Hunza river view hotels, the calm of Skardu boutique lodges, to beachside resorts in Gwadar & Kund Malir, we ensure comfort meets quality every time.
 						</p>
 						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
-							Wherever we go together we ensure that your hotel and room preferences are always noted and delivered by our team. Our excellent partner network and experienced team check you into deluxe rooms and executive suites replete with indulgent amenities such as complimentary access to executive lounges, inclusive spa, and wellness center passes, and majestic room views. Whether it is a half board or checking in for the night, we make sure that you never have to compromise on quality and comfort.
+							Whether you prefer a private room, a family suite or a mountain campsite, our team ensures your preferences are noted, matched and delivered.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
-							Book with us to enjoy hassle-free hotel reservations and cancellations because we have it all covered in our packages. No need to stress about a change in flight timing or your vacation plans. Just give us a call and we will rebook or cancel hotel bookings according to your preference. It&apos;s that easy!
+						<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
+							With Nayi Talaash, you enjoy:
+						</p>
+						<ul className="list-disc list-inside mb-6 space-y-2 text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							<li>Smooth check-ins with your preferred room type</li>
+							<li>Premium suites with scenic views</li>
+							<li>Campsites with security & trained crew</li>
+							<li>Easy reservation changes (no stress on flight delays or plan shifts)</li>
+						</ul>
+						<p className="text-base md:text-lg leading-relaxed font-semibold" style={{ color: secondaryBlack }}>
+							Your comfort is our priority always.
 						</p>
 					</div>
 
@@ -966,8 +975,8 @@ const AboutPage = () => {
 							
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">CONVEYANCE</h2>
-								<p className="text-lg md:text-xl mb-6">Travel in style and comfort</p>
+								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Conveyance</h2>
+								<p className="text-lg md:text-xl mb-6">Travel In Style & Comfort</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1037,19 +1046,19 @@ const AboutPage = () => {
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-12">
 						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
-							There are no bumps on this road trip! Our fleet of premium SUV and SUT vehicles, helicopters and private jets are available to ensure a smooth journey across Pakistan and its remote areas at the best price possible.
+							From the winding roads of Karakoram Highway to the sandy tracks of Balochistan&apos;s Makran region, Nayi Talaash offers comfortable, terrain ready transportation:
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
-							We have arranged round-the-clock, experienced drivers who have the expertise to conquer all terrains so that you can relax and enjoy the ride. Terrains in Pakistan can be perilous, but you are never out of options or backup plans when you book with us. Our network of standby replacement vehicles will reach you within 2-6 hours wherever you are in the country and emergency evacuations due to unforeseen weather conditions can be swiftly arranged to ensure maximum security for our guests.
+						<ul className="list-disc list-inside mb-6 space-y-2 text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							<li>Spacious AC Coasters & Hiace for group tours</li>
+							<li>4×4 Jeeps for rugged northern terrains</li>
+							<li>Smooth, safe, well maintained vehicles</li>
+							<li>Experienced drivers trained for every route</li>
+						</ul>
+						<p className="text-base md:text-lg leading-relaxed mb-4" style={{ color: `${secondaryBlack}90` }}>
+							Whatever the destination, our backup support ensures no breakdown ruins your journey.
 						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
-							Helicopter journeys have been added into some of our premium tour packages to offer you unique experiences of Pakistan&apos;s terrains. These helicopter journeys and private jet charters are designed to help our guests cut down on long inter-state road travel times and the dependency on domestic commercial flights. Commercial flights can often have unannounced disruptions and cancellations and do not cover the remote locations in Pakistan. While our private jets and helicopters can help you take off and land in style on airstrips and rough terrains and carry on with your designed tour plan.
-						</p>
-						<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
-							Stay online in the remotest of areas with free Wi-Fi. Go live or call a friend and travel with them virtually because all our Nayi Talaash vehicles come with 24/7 Wi-Fi on-board.
-						</p>
-						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
-							For each of the provinces in Pakistan, we have carefully selected a fleet of high-performance, premium vehicles that match the terrain so that you never have to turn around from reaching an exquisite view in the mountains, valleys, desert, or at the coast. Our vehicles are stationed in major cities including Karachi, Quetta, Islamabad, and Peshawar, ready to serve you wherever your journey takes you.
+						<p className="text-base md:text-lg leading-relaxed font-semibold" style={{ color: secondaryBlack }}>
+							Just sit back, enjoy the music, the mountains and the moment.
 						</p>
 					</div>
 
