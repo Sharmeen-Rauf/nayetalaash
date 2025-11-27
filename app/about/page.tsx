@@ -506,16 +506,149 @@ const AboutPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== MAIN HEADING SECTION ====================== */}
+			{/* ====================== WHY TRAVEL WITH NAYI TALAASH - CARD GRID SECTION ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="text-center mb-8">
-						<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							WHY TRAVEL WITH <span style={{ color: primaryOrange }}>#NAYI TALAASH</span>
-						</h1>
-						<p className="text-lg md:text-xl text-gray-600 mb-6">
+					{/* Top Section: Button, Stars, and Heading */}
+					<div className="text-center mb-12">
+						<button
+							onClick={handleWhatsAppClick}
+							className="px-8 py-3 mb-6 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+						>
+							Get in Touch
+						</button>
+						<div className="flex items-center justify-center gap-2 mb-6">
+							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						</div>
+						<h2 className="text-2xl md:text-3xl font-bold" style={{ color: secondaryBlack }}>
 							Do you want to know what makes us your perfect travel companion?
-						</p>
+						</h2>
+					</div>
+
+					{/* 8-Card Grid */}
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+						{/* Card 1: Hotels & Accommodation */}
+						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
+							<Image 
+								src="/images/Hunza.jpg"
+								alt="Hotels & Accommodation"
+								fill
+								className="object-cover transition-transform duration-300 group-hover:scale-110"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
+							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+								<p className="text-xs mb-2 font-medium">BEST DEALS ON PREMIUM STAYS</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight">HOTELS & ACCOMMODATION</h3>
+							</div>
+						</div>
+
+						{/* Card 2: Conveyance */}
+						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
+							<Image 
+								src="/images/skardu 2.jpg"
+								alt="Conveyance"
+								fill
+								className="object-cover transition-transform duration-300 group-hover:scale-110"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
+							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+								<p className="text-xs mb-2 font-medium">TRAVEL IN STYLE AND COMFORT</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight">CONVEYANCE</h3>
+							</div>
+						</div>
+
+						{/* Card 3: Curated Trip Experiences */}
+						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
+							<Image 
+								src="/images/naran and kaghan.jpg"
+								alt="Curated Trip Experiences"
+								fill
+								className="object-cover transition-transform duration-300 group-hover:scale-110"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
+							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+								<p className="text-xs mb-2 font-medium">MATCHING YOUR TASTE</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight">CURATED TRIP EXPERIENCES</h3>
+							</div>
+						</div>
+
+						{/* Card 4: Best Crew */}
+						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
+							<Image 
+								src="/images/chitral.jpg"
+								alt="Best Crew"
+								fill
+								className="object-cover transition-transform duration-300 group-hover:scale-110"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
+							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+								<p className="text-xs mb-2 font-medium">HANDPICKED TOUR MANAGERS</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight">BEST CREW</h3>
+							</div>
+						</div>
+
+						{/* Card 5: Covid-19 Prepared */}
+						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
+							<Image 
+								src="/images/fairy meadows 2.jpg"
+								alt="Covid-19 Prepared"
+								fill
+								className="object-cover transition-transform duration-300 group-hover:scale-110"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
+							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+								<p className="text-xs mb-2 font-medium">THE NEW TRAVELING PARADIGM</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight">COVID-19 PREPARED</h3>
+							</div>
+						</div>
+
+						{/* Card 6: Trust & Security */}
+						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
+							<Image 
+								src="/images/Kund Malir.jpg"
+								alt="Trust & Security"
+								fill
+								className="object-cover transition-transform duration-300 group-hover:scale-110"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
+							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+								<p className="text-xs mb-2 font-medium">TRAVEL WITH FREEDOM</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight">TRUST & SECURITY</h3>
+							</div>
+						</div>
+
+						{/* Card 7: Travel Visa */}
+						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
+							<Image 
+								src="/images/azad kashmir.jpg"
+								alt="Travel Visa"
+								fill
+								className="object-cover transition-transform duration-300 group-hover:scale-110"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
+							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+								<p className="text-xs mb-2 font-medium">HASSLE-FREE PROCESS</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight">TRAVEL VISA</h3>
+							</div>
+						</div>
+
+						{/* Card 8: Comprehensive Tour Management */}
+						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
+							<Image 
+								src="/images/murree and nathia gali.jpg"
+								alt="Comprehensive Tour Management"
+								fill
+								className="object-cover transition-transform duration-300 group-hover:scale-110"
+							/>
+							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
+							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+								<p className="text-xs mb-2 font-medium">EXPERT GROUND HANDLING</p>
+								<h3 className="text-base md:text-lg font-bold leading-tight">COMPREHENSIVE TOUR MANAGEMENT</h3>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
