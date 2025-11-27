@@ -1733,7 +1733,7 @@ const Page = () => {
 						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: '/images/Arangkel.jpg', duration: '3 Days' },
 					].map((tour, idx) => (
 						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos-delay={idx * 150}>
-							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-8 hover:rotate-x-3 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/25">
+							<div className="relative h-64 rounded-3xl overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-8 hover:rotate-x-3 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/25">
 								{/* 3D Floating Badge */}
 								<div className="absolute top-4 left-4 z-20 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
 									<div className="px-3 py-1 bg-[#f99621] text-white text-xs font-bold rounded-full shadow-lg">
@@ -1776,7 +1776,7 @@ const Page = () => {
 					</div>
 
 								{/* 3D Border Effect */}
-								<div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-[#f99621]/40 transition-all duration-500"></div>
+								<div className="absolute inset-0 rounded-3xl border-2 border-transparent group-hover:border-[#f99621]/40 transition-all duration-500"></div>
 								
 								{/* Shine Effect */}
 								<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
