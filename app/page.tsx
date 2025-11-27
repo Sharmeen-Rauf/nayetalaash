@@ -1586,7 +1586,7 @@ const Page = () => {
 					<div className="relative flex justify-center">
 						<div className="relative max-w-sm" style={{ transform: 'rotate(-2deg)' }}>
 							{/* Polaroid Frame */}
-							<div className="bg-white shadow-2xl relative overflow-visible flex flex-col" style={{ border: '8px solid white', boxShadow: '0 10px 40px rgba(0,0,0,0.2)' }}>
+							<div className="bg-white relative overflow-visible flex flex-col" style={{ border: '8px solid white' }}>
 								{/* Image area */}
 								<div className="relative">
 									<Image 
