@@ -1649,10 +1649,20 @@ const AboutPage = () => {
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-6">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							We provide you a safe gateway to apply for your tourist, business and visit visa to Pakistan. Our services include visa consultation services, assembling your visa application papers, application letter from our side to the concerned department as we are a registered tour company, applying and liaising for your visa with the concerned public department, and resubmitting any further documents.
+							Some locations in Pakistan require approvals, permits and special handling.
 						</p>
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							We do not provide guarantees on visa issuance; however, our team of experts keeps you informed throughout the process and sets your expectations accordingly.
+							Don&apos;t worry we take care of everything:
+						</p>
+						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+							<li>Entry permits for restricted zones</li>
+							<li>Trekking permissions</li>
+							<li>Marine & island access</li>
+							<li>Transport arrangements</li>
+							<li>Custom itinerary planning</li>
+						</ul>
+						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+							Whether it&apos;s Deosai, Ormara, Kumrat, Hingol or Ratti Gali, our ground team ensures you travel without complications.
 						</p>
 					</div>
 
