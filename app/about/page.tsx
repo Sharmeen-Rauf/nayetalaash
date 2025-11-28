@@ -1114,8 +1114,8 @@ const AboutPage = () => {
 							</div>
 							{/* Black Footer with Title, Description, and Button */}
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-4 text-white">
-								<h3 className="text-lg md:text-xl font-bold mb-2">CONQUER THE WILD SINDH</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90">DUNE BASHING AND HELI RIDES TO REACH YOUR DESTINATION</p>
+								<h3 className="text-lg md:text-xl font-bold mb-2">Conquer The Wild Sindh</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">Reach your destination through thrilling dune bashing</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
