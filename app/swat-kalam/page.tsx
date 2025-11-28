@@ -404,17 +404,285 @@ const SwatKalamPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== TOUR PACKAGES CONTENT SECTION ====================== */}
-			{/* This section will be populated with tour packages content */}
-			<section className="py-16 md:py-24 bg-white relative overflow-x-hidden">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="text-center">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Swat Kalam Tour Packages
+			{/* ====================== A GLIMPSE INTO THE UNSEEN REALM ====================== */}
+			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-8">
+						<h2 className="text-sm md:text-base font-semibold mb-6" style={{ color: `${secondaryBlack}80` }}>
+							A GLIMPSE INTO THE UNSEEN REALM
 						</h2>
-						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
-							Explore our carefully crafted tour packages for Swat and Kalam. Content will be added here.
+					</div>
+					
+					{/* 3x3 Grid of Thumbnails */}
+					<div className="grid grid-cols-3 gap-4 max-w-5xl mx-auto">
+						{[
+							{ title: 'ATTABAD LAKE', image: '/images/attabad lake.jpg' },
+							{ title: 'HUNZA VALLEY', image: '/images/Hunza.jpg' },
+							{ title: 'NEELUM VALLEY', image: '/images/neelum valley.jpg' },
+							{ title: 'KALASH VALLEY', image: '/images/chitral.jpg' },
+							{ title: 'MAKRAN COASTAL HIGHWAY', image: '/images/Kund Malir.jpg' },
+							{ title: 'SWAT VALLEY', image: '/images/swat.jpg' },
+							{ title: 'SKARDU VALLEY', image: '/images/skardu 2.jpg' },
+							{ title: 'NARAN KAGHAN', image: '/images/naran and kaghan.jpg' },
+							{ title: 'MURREE & NATHIA GALI', image: '/images/murree and nathia gali.jpg' },
+						].map((item, idx) => (
+							<div key={idx} className="relative group cursor-pointer">
+								<div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+									<Image 
+										src={item.image}
+										alt={item.title}
+										fill
+										className="object-cover group-hover:scale-110 transition-transform duration-500"
+									/>
+									<div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all"></div>
+									<div className="absolute bottom-0 left-0 right-0 p-2">
+										<p className="text-white text-xs font-bold text-center" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+											{item.title}
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== DISCOVER PAKISTAN ====================== */}
+			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<div className="text-center mb-8">
+							<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+								DISCOVER PAKISTAN
+							</h2>
+						</div>
+						
+						<p className="text-base md:text-lg leading-relaxed mb-6 text-center" style={{ color: `${secondaryBlack}90` }}>
+							Pakistan is a land of unmatched beauty, culture, and hospitality. With its mix of vibrant cities, serene valleys, vast deserts, and unspoiled coastlines, the country invites travelers to experience its rich traditions, diverse cuisines, and breathtaking landscapes.
 						</p>
+						
+						<ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 max-w-2xl mx-auto">
+							{[
+								'Trekking & Hiking',
+								'Camping & Bonfire',
+								'Marine Adventures',
+								'Desert Safaris',
+								'Food Tours',
+								'Tribal Experiences',
+							].map((item, idx) => (
+								<li key={idx} className="flex items-center gap-2">
+									<div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: primaryOrange }}></div>
+									<span className="text-base" style={{ color: `${secondaryBlack}90` }}>
+										{item}
+									</span>
+								</li>
+							))}
+						</ul>
+						
+						<div className="text-center">
+							<button 
+								className="px-8 py-3 font-bold rounded-lg border-2 transition-all transform hover:scale-105" 
+								style={{ 
+									backgroundColor: 'white', 
+									color: secondaryBlack, 
+									borderColor: secondaryBlack 
+								}}
+								onMouseEnter={(e) => { 
+									e.currentTarget.style.backgroundColor = secondaryBlack; 
+									e.currentTarget.style.color = 'white'; 
+								}}
+								onMouseLeave={(e) => { 
+									e.currentTarget.style.backgroundColor = 'white'; 
+									e.currentTarget.style.color = secondaryBlack; 
+								}}
+							>
+								READ MORE
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== PAKISTAN'S ENCHANTING NATURAL WONDERS ====================== */}
+			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-12">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							PAKISTAN&apos;S ENCHANTING NATURAL WONDERS
+						</h2>
+					</div>
+					
+					{/* Alternating Image/Text Layout */}
+					<div className="space-y-12">
+						{[
+							{ 
+								title: 'CONQUER THE WILD SINDH', 
+								image: '/images/Kund Malir.jpg',
+								description: 'Explore the rugged and wild beauty of Sindh with its vast deserts, ancient archaeological sites, and vibrant culture that dates back thousands of years.',
+								imageLeft: true
+							},
+							{ 
+								title: 'ATTABAD LAKE', 
+								image: '/images/attabad lake.jpg',
+								description: 'Marvel at the stunning turquoise waters of Attabad Lake, one of the most beautiful lakes in Pakistan, surrounded by majestic mountains.',
+								imageLeft: false
+							},
+							{ 
+								title: 'MAKRAN COASTAL HIGHWAY', 
+								image: '/images/Kund Malir.jpg',
+								description: 'Journey along the breathtaking Makran Coastal Highway with its pristine beaches, dramatic cliffs, and stunning ocean views.',
+								imageLeft: true
+							},
+							{ 
+								title: 'KALASH VALLEY', 
+								image: '/images/chitral.jpg',
+								description: 'Discover the unique culture and traditions of the Kalash people in their beautiful mountain valley, a UNESCO World Heritage candidate.',
+								imageLeft: false
+							},
+							{ 
+								title: 'NEELUM VALLEY', 
+								image: '/images/neelum valley.jpg',
+								description: 'Experience the pristine beauty of Neelum Valley with its crystal-clear rivers, lush green meadows, and snow-capped peaks.',
+								imageLeft: true
+							},
+							{ 
+								title: 'SWAT VALLEY', 
+								image: '/images/swat.jpg',
+								description: 'Explore the Switzerland of Pakistan, known for its beautiful valleys, green meadows, and rich cultural heritage.',
+								imageLeft: false
+							},
+							{ 
+								title: 'SKARDU VALLEY', 
+								image: '/images/skardu 2.jpg',
+								description: 'Visit the gateway to K2 and home to some of the world\'s highest peaks, glacial lakes, and breathtaking landscapes.',
+								imageLeft: true
+							},
+							{ 
+								title: 'NARAN KAGHAN', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Discover the alpine beauty of Naran and Kaghan with their stunning lakes, waterfalls, and mountain vistas.',
+								imageLeft: false
+							},
+							{ 
+								title: 'MURREE & NATHIA GALI', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Escape to these charming hill stations offering cool weather, scenic views, and colonial-era architecture.',
+								imageLeft: true
+							},
+						].map((wonder, idx) => (
+							<div key={idx} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${idx % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}>
+								{/* Image */}
+								<div className={`${wonder.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+									<div className="relative h-64 lg:h-96 rounded-lg overflow-hidden">
+										<Image 
+											src={wonder.image}
+											alt={wonder.title}
+											fill
+											className="object-cover hover:scale-110 transition-transform duration-500"
+										/>
+									</div>
+								</div>
+								
+								{/* Text Content */}
+								<div className={`${wonder.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+									<h3 className="text-2xl md:text-3xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
+										{wonder.title}
+									</h3>
+									<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+										{wonder.description}
+									</p>
+									<button 
+										className="px-8 py-3 font-bold rounded-lg border-2 transition-all transform hover:scale-105" 
+										style={{ 
+											backgroundColor: 'white', 
+											color: secondaryBlack, 
+											borderColor: secondaryBlack 
+										}}
+										onMouseEnter={(e) => { 
+											e.currentTarget.style.backgroundColor = secondaryBlack; 
+											e.currentTarget.style.color = 'white'; 
+										}}
+										onMouseLeave={(e) => { 
+											e.currentTarget.style.backgroundColor = 'white'; 
+											e.currentTarget.style.color = secondaryBlack; 
+										}}
+									>
+										READ MORE
+									</button>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== WHY TRAVEL WITH US? ====================== */}
+			<section className="py-8 md:py-12 bg-gray-100 relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+						{/* Left: Text Content */}
+						<div>
+							<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+								WHY TRAVEL WITH US?
+							</h2>
+							<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+								Our people are our strength. We know the mountains, the roads, the people and we help you feel the soul of every destination.
+							</p>
+							<ul className="space-y-4 mb-8">
+								{[
+									'Experienced Tour Leaders',
+									'Local Guides & Cultural Experts',
+									'Safety & Trek Specialists',
+									'Professional Drivers',
+									'Travel Designers',
+								].map((item, idx) => (
+									<li key={idx} className="flex items-center gap-3">
+										<div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+										<span className="text-base" style={{ color: `${secondaryBlack}90` }}>
+											{item}
+										</span>
+									</li>
+								))}
+							</ul>
+						</div>
+
+						{/* Right: Image/Video */}
+						<div>
+							<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden">
+								<video 
+									src="/images/1126(1).mp4"
+									controls
+									autoPlay
+									muted
+									loop
+									playsInline
+									className="absolute inset-0 w-full h-full object-cover"
+								>
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== READY FOR AN UNFORGETTABLE TOUR! ====================== */}
+			<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
+				<div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-[2]">
+					<div className="flex flex-col md:flex-row items-center justify-between gap-4">
+						<div className="px-4 md:px-6">
+							<p className="text-white text-3xl font-autography mb-2">Ready for an unforgettable tour!</p>
+							<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
+						</div>
+						<div className="px-4 md:px-6">
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
+								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+							>
+								GET YOUR FREE QUOTE NOW!
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
