@@ -1667,7 +1667,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Image with Banner Overlay */}
-					<div className="relative w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden">
+					<div className="relative w-full max-w-4xl mx-auto h-[400px] md:h-[500px] rounded-lg overflow-hidden">
 						<Image 
 							src="/images/azad kashmir.jpg"
 							alt="Travel Visa Services"
