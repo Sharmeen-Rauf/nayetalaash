@@ -1665,28 +1665,6 @@ const AboutPage = () => {
 							Whether it&apos;s Deosai, Ormara, Kumrat, Hingol or Ratti Gali, our ground team ensures you travel without complications.
 						</p>
 					</div>
-
-					{/* Image with Banner Overlay */}
-					<div className="relative w-full max-w-4xl mx-auto h-[400px] md:h-[500px] rounded-lg overflow-hidden">
-						<Image 
-							src="/images/azad kashmir.jpg"
-							alt="Travel Visa Services"
-							fill
-							className="object-cover"
-						/>
-						{/* Black Banner Overlay at Bottom */}
-						<div className="absolute bottom-0 left-0 right-0 bg-black/90 p-6 md:p-8 text-white">
-							<h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2 capitalize">Have Your Travel Visa Arranged By Nayi Talaash</h3>
-							<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Drop Us Your Quick Details And We Will Revert Back</p>
-							<button
-								onClick={handleWhatsAppClick}
-								className="flex items-center gap-2 text-base md:text-lg font-semibold hover:opacity-80 transition-opacity"
-							>
-								<span>→</span>
-								<span>ENQUIRE NOW</span>
-							</button>
-						</div>
-					</div>
 				</div>
 			</section>
 
