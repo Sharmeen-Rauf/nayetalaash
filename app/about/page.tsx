@@ -1454,23 +1454,22 @@ const AboutPage = () => {
 
 			{/* ====================== COVID-19 PREPARED BANNER ====================== */}
 			<section className="py-8 md:py-12 bg-gray-50">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					{/* Banner with Text Overlay */}
-					<div className="relative mb-4">
-						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
-							<Image 
-								src="/images/fairy meadows 2.jpg"
-								alt="Covid-19 Prepared"
-								fill
-								className="object-cover"
-							/>
-							{/* Dark overlay for text readability */}
-							<div className="absolute inset-0 bg-black/30"></div>
-							
-							{/* Text Overlay */}
-							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Covid-19 Prepared</h2>
-								<p className="text-lg md:text-xl mb-4">The new traveling paradigm</p>
+				{/* Banner with Text Overlay - Full Width */}
+				<div className="relative mb-4 w-full">
+					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
+						<Image 
+							src="/images/fairy meadows 2.jpg"
+							alt="Safe Travel Standards"
+							fill
+							className="object-cover"
+						/>
+						{/* Dark overlay for text readability */}
+						<div className="absolute inset-0 bg-black/30"></div>
+						
+						{/* Text Overlay */}
+						<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
+							<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Safe Travel Standards</h2>
+							<p className="text-lg md:text-xl mb-4 capitalize">The New Travel Paradigm</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1481,7 +1480,6 @@ const AboutPage = () => {
 							</div>
 						</div>
 					</div>
-				</div>
 			</section>
 
 			{/* ====================== COVID-19 PREPARED CONTENT SECTION ====================== */}
