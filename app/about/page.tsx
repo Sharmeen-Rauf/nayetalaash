@@ -1496,32 +1496,23 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-4">
+					<div className="max-w-4xl mx-auto mb-6">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							The tourism sector in Pakistan is fully committed to putting the visiting people and their well-being first. Nayi Talaash strongly believes that cooperation and understanding is vital for ensuring the safe guarding and implementation of all measures been recommended by the international bodies like UNWTO and WHO the World Tourism and Health Organizations. These and more are adapted in the country, where the tourism destinations are rated of its own class and expected to have a huge footfall of international tourists sooner than later.
+							Your safety matters.
 						</p>
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							The SOP&apos;s been formulated under the supervision of the relevant Government Ministry are detailed in the link herewith. They not only includes the internationally recommended practices but also measured steps consistent in proportionate to the public health threats and based on local risk assessments also. These steps been implemented involves, and not limited to, every part of the tourism value chain - public bodies, private companies and tourists, in line with the the international bodies overall guidance and recommendations.
+							We operate under responsible tourism guidelines aligned with national standards and local authorities.
 						</p>
-					</div>
-
-					{/* Download Link Section */}
-					<div className="max-w-4xl mx-auto text-center">
-						<p className="text-base md:text-lg mb-4" style={{ color: `${secondaryBlack}90` }}>
-							For more information, download PDF file.
+						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+							<li>Hygienic stops</li>
+							<li>Verified accommodations</li>
+							<li>Trained medical aware crew</li>
+							<li>Secure travel routes</li>
+							<li>Emergency handling protocols</li>
+						</ul>
+						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+							Wherever you go with us, you&apos;re safe, supported and cared for.
 						</p>
-						<a
-							href="#"
-							onClick={(e) => {
-								e.preventDefault();
-								// Handle PDF download
-							}}
-							className="inline-flex items-center gap-2 text-base md:text-lg font-semibold underline hover:opacity-80 transition-opacity"
-							style={{ color: '#2563eb' }}
-						>
-							<Download className="w-5 h-5" />
-							<span>Download</span>
-						</a>
 					</div>
 				</div>
 			</section>
