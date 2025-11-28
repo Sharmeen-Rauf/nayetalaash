@@ -261,7 +261,7 @@ const AboutPage = () => {
 									<div className="backdrop-blur-lg bg-white/95 border border-gray-200 shadow-2xl rounded-lg overflow-hidden mt-2">
 										<ul className="py-2">
 											<li className="border-b border-gray-200">
-												<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/swat-kalam" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Swat Kalam Tour Packages
 												</Link>
 											</li>

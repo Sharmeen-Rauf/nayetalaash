@@ -803,12 +803,58 @@ const Page = () => {
 					{/* Desktop Navigation Links */}
 					<nav className="hidden lg:flex items-center gap-1">
 						<a href="#home" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>HOME</a>
-						<a href="#tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative group ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
-							<span className="flex items-center gap-1">
-								PAKISTAN TOURS
-								<ChevronRight className="w-4 h-4 rotate-90" />
-							</span>
-						</a>
+						{/* PAKISTAN TOURS with Dropdown */}
+						<div className="relative group cursor-pointer">
+							<a href="#tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
+								<span className="flex items-center gap-1">
+									PAKISTAN TOURS
+									<ChevronRight className="w-4 h-4 rotate-90" />
+								</span>
+							</a>
+							
+							{/* Dropdown Menu */}
+							<div className="absolute top-full left-0 mt-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+								<div className="backdrop-blur-lg bg-white/95 border border-gray-200 shadow-2xl rounded-lg overflow-hidden mt-2">
+									<ul className="py-2">
+										<li className="border-b border-gray-200">
+											<Link href="/swat-kalam" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												Swat Kalam Tour Packages
+											</Link>
+										</li>
+										<li className="border-b border-gray-200">
+											<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												Hunza Tour Packages
+											</Link>
+										</li>
+										<li className="border-b border-gray-200">
+											<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												Skardu Tour Packages
+											</Link>
+										</li>
+										<li className="border-b border-gray-200">
+											<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												Nathia Gali And Murree Tour Packages
+											</Link>
+										</li>
+										<li className="border-b border-gray-200">
+											<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												Neelum Valley Azad Kashmir Tour Packages
+											</Link>
+										</li>
+										<li className="border-b border-gray-200">
+											<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												Kumrat Valley Tour Packages
+											</Link>
+										</li>
+										<li>
+											<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												Naran Kaghan Tour Packages
+											</Link>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 						<a href="#city-tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative group ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
 							<span className="flex items-center gap-1">
 								CITY TOURS
