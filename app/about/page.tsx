@@ -1528,16 +1528,15 @@ const AboutPage = () => {
 
 			{/* ====================== TRUST & SECURITY BANNER ====================== */}
 			<section className="py-8 md:py-12 bg-white">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					{/* Banner with Text Overlay */}
-					<div className="relative mb-4">
-						<div className="relative h-[500px] md:h-[600px] rounded-lg overflow-hidden">
-							<Image 
-								src="/images/Kund Malir.jpg"
-								alt="Trust & Security"
-								fill
-								className="object-cover"
-							/>
+				{/* Banner with Text Overlay - Full Width */}
+				<div className="relative mb-4 w-full">
+					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
+						<Image 
+							src="/images/TRUST & SECURITY.jpg"
+							alt="Trust & Security"
+							fill
+							className="object-cover"
+						/>
 							{/* Dark overlay for text readability */}
 							<div className="absolute inset-0 bg-black/30"></div>
 							
@@ -1555,7 +1554,6 @@ const AboutPage = () => {
 							</div>
 						</div>
 					</div>
-				</div>
 			</section>
 
 			{/* ====================== TRUST & SECURITY CONTENT SECTION ====================== */}
