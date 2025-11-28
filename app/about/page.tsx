@@ -1810,12 +1810,12 @@ const AboutPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== HOW DO LOCALLY-MADE TRIPS WORK? ====================== */}
+			{/* ====================== HOW IT WORKS ====================== */}
 			<section className="py-8 md:py-12 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					<div className="text-center mb-6">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
-							How Do Locally-Made Trips Work?
+							How It Works
 						</h2>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 max-w-6xl mx-auto">
@@ -1824,11 +1824,10 @@ const AboutPage = () => {
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
 								<MessageSquare className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Discover</h3>
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>1. Discover</h3>
 							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-								Visit our website and discover our 30 curated products. The products are divided into 6 specialized tour themes covering the best of Pakistan&apos;s tourism.
+								Explore our travel packages, all designed to highlight the best of Pakistan.
 							</p>
-							<p className="text-sm text-gray-500">Find out more</p>
 						</div>
 
 						{/* Step 2: Customize */}
@@ -1836,11 +1835,10 @@ const AboutPage = () => {
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
 								<Map className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Customize</h3>
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>2. Customize</h3>
 							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-								Share your travel details and request for customization through our interactive online forms. We have included the accommodation, transportation and activities to the best thematic design, but you may request to add more days, or destinations, or activities.
+								Share your preferences we tailor your tour to match your taste and vibe.
 							</p>
-							<p className="text-sm text-gray-500">Find out more</p>
 						</div>
 
 						{/* Step 3: Travel */}
@@ -1848,23 +1846,21 @@ const AboutPage = () => {
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
 								<Plane className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Travel</h3>
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>3. Travel</h3>
 							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-								Read through our website for further destination guide and apply for your visa through our assisted service. Secure your itinerary and accommodation by paying through our online platform and get ready to be welcomed at the airport.
+								Get your itinerary, pack your bags and begin the journey.
 							</p>
-							<p className="text-sm text-gray-500">Find out more</p>
 						</div>
 
-						{/* Step 4: Share your experience */}
+						{/* Step 4: Cherish */}
 						<div className="text-center max-w-xs mx-auto">
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
 								<ImagePlus className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Share your experience</h3>
+							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>4. Cherish</h3>
 							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-								We produce a complimentary video for all our guests showcasing your 60 sec destination story. Share the video with your friends, and share your experience with us through our easy-to-fill online customer review form.
+								Live moments, record memories and relive your trip through our free highlight video.
 							</p>
-							<p className="text-sm text-gray-500">Find out more</p>
 						</div>
 					</div>
 					
