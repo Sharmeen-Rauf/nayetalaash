@@ -1558,20 +1558,18 @@ const AboutPage = () => {
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-6">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							Your safety matters.
-						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							We operate under responsible tourism guidelines aligned with national standards and local authorities.
+							Nayi Talaash is a registered tour company, working with local tourism bodies and law enforcement to ensure:
 						</p>
 						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-							<li>Hygienic stops</li>
-							<li>Verified accommodations</li>
-							<li>Trained medical aware crew</li>
+							<li>Verified hotels</li>
 							<li>Secure travel routes</li>
-							<li>Emergency handling protocols</li>
+							<li>Safe payment methods</li>
+							<li>Zero cash travel options for foreigners</li>
+							<li>Transparent pricing</li>
+							<li>No hidden charges</li>
 						</ul>
 						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
-							Wherever you go with us, you&apos;re safe, supported and cared for.
+							Travel with confidence, comfort and complete freedom.
 						</p>
 					</div>
 
