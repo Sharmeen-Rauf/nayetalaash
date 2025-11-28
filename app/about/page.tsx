@@ -1066,8 +1066,8 @@ const AboutPage = () => {
 							</div>
 							{/* Black Footer with Title, Description, and Button */}
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-4 text-white">
-								<h3 className="text-lg md:text-xl font-bold mb-2">MAKRAN COASTAL HIGHWAY</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90">DRIVE 1300KM THROUGH SEA AND DESERT</p>
+								<h3 className="text-lg md:text-xl font-bold mb-2">Makran Coastal Highway</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">Drive 1300KM Through Sea And Desert</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
@@ -1090,8 +1090,8 @@ const AboutPage = () => {
 							</div>
 							{/* Black Footer with Title, Description, and Button */}
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-4 text-white">
-								<h3 className="text-lg md:text-xl font-bold mb-2">KALASH VALLEY</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90">HELICOPTER JOURNEY TO THE HIDDEN VALLEY</p>
+								<h3 className="text-lg md:text-xl font-bold mb-2">Kalash Valley</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90">Helicopter Journey To The Hidden Valley</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
