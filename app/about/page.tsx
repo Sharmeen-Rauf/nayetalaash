@@ -1379,21 +1379,25 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-6 space-y-3">
-						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-							Our people bring a cumulative 200 years of experience in local and international tourism operations. From sales call handling to our drivers and the service crew, everyone is driven to provide you with the best trip experience.
+					<div className="max-w-4xl mx-auto mb-6">
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+							Our people are our strength.
 						</p>
-						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-							<strong className="font-semibold">Travel Designers –</strong> Our travel consultants help you in uncovering your own travel needs and then match them with the hundreds of places to visit, and experiences to enjoy and accommodation and conveyance to choose.
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+							Nayi Talaash&apos;s team includes:
 						</p>
-						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-							<strong className="font-semibold">Tour Managers –</strong> We have a selective pool of licensed and experienced guides in each region. The tour manager remains with you throughout your journey and is always available to assist you with your needs. Our tour managers speak English, Chinese, Arabic, and Russian besides Urdu and local languages which help them communicate easily between you and the local community.
+						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+							<li>Experienced Tour Leaders</li>
+							<li>Local Guides & Cultural Experts</li>
+							<li>Safety & Trek Specialists</li>
+							<li>Professional Drivers</li>
+							<li>Travel Designers</li>
+						</ul>
+						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+							Each member is trained to offer you comfort, guidance and memorable storytelling throughout the journey.
 						</p>
-						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-							<strong className="font-semibold">Ground Handling –</strong> The tour managers coordinate with the tour designer about your trip status and any change of plans to make sure all your needs are covered. The tour manager also works as a team with the tour driver to plan routes, maps, and any itinerary changes.
-						</p>
-						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-							From receiving you at the airport to helping you check in to hotels, covering your cash needs, and capturing your professional video log, our tour managers have been handpicked to give you the comfort and the space to enjoy your trip completely hassle-free.
+						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+							We know the mountains, the roads, the people and we help you feel the soul of every destination.
 						</p>
 					</div>
 
