@@ -1218,19 +1218,24 @@ const AboutPage = () => {
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-6">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							Every journey with Nayi Talaash is carefully designed to match your preferences, interests, and travel style. We understand that no two travelers are the same, which is why we offer fully customizable itineraries that can be tailored to your specific needs and personality.
+							We design every tour with one mission:
+						</p>
+						<p className="text-base md:text-lg leading-normal mb-4 font-semibold" style={{ color: secondaryBlack }}>
+							To make you fall in love with Pakistan.
 						</p>
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							From thrilling adventure activities like hiking, trekking, cycling, skiing, fishing, trophy hunting, national park safaris, camping, marine adventures, and helicopter tours to exploring natural wonders such as glaciers, canyons, ravines, waterfalls, nature valleys, deserts, beaches, and islands – we curate every experience to match your passion.
+							Our itineraries are crafted after deep research into each province and its hidden gems.
 						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							Immerse yourself in Pakistan&apos;s rich culinary and cultural heritage with traditional food experiences, fine-dining, BBQ bonfires, roadside food adventures, local bazaars, meetups with indigenous tribes, homestays in villages, and local lifestyle tours that give you an authentic taste of Pakistani hospitality.
-						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							Discover world heritage sites, museums, and spiritual sites, and delve into ethnic art, poetry, literature, Sufi music, local fashion, and ethno-tourism. Each experience is carefully crafted to provide you with deep cultural insights and lasting memories.
-						</p>
-						<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-							Contact our travel designers for personalized advice and book a consultation to create the perfect itinerary that matches your travel dreams and aspirations.
+						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+							<li>Trekking, hiking & adventure tours</li>
+							<li>Camping, bonfire & jamming nights</li>
+							<li>Marine adventures & island visits</li>
+							<li>Desert safaris & cultural festivals</li>
+							<li>Food tours, heritage walks & bazaars</li>
+							<li>Tribal experiences & village lifestyle tours</li>
+						</ul>
+						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+							From snowfall in Naran, sunrise in Gwadar, autumn in Gilgit, to canyon views in Balochistan we give you experiences that stay in your heart forever.
 						</p>
 					</div>
 
