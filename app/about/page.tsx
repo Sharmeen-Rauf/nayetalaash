@@ -44,19 +44,19 @@ const AboutPage = () => {
 
 	// Conveyance slider images
 	const conveyanceMainImages = [
-		'/images/conveyanance.jpg',
+		'/images/conveyance 1.jpg',
 		'/images/Conveyance 2.jpg',
 		'/images/Conveyance 3.webp',
-		'/images/Conveyance 4.jpg',
-		'/images/conyenance 6.jpg',
+		'/images/conveyance 2.jpg',
+		'/images/conveyance 3.jpg',
 	];
 
 	const conveyanceThumbnails = [
-		'/images/conveyanance.jpg',
+		'/images/conveyance 1.jpg',
 		'/images/Conveyance 2.jpg',
 		'/images/Conveyance 3.webp',
-		'/images/Conveyance 4.jpg',
-		'/images/conyenance 6.jpg',
+		'/images/conveyance 2.jpg',
+		'/images/conveyance 3.jpg',
 	];
 
 	// Auto-slide effect for Hotels banner and thumbnail carousel
