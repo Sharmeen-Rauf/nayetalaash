@@ -1571,16 +1571,20 @@ const AboutPage = () => {
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-6">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							We are a registered and licensed tourism company with the state department, provincial and federal tax and revenue authorities, and administrative tourism bodies. We work closely with the state tourism body before your arrival to make sure your safety is well covered by local law enforcement wherever you travel within Pakistan.
+							Your safety matters.
 						</p>
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							We offer you multiple modes of secure online payments. We try to minimize cash transactions throughout our operations. For our foreign travelers visiting Pakistan, you can book your travel package through a safe and secure wire and telegraphic transfer. You can also use your MasterCard and Visa credit cards via our online website.
+							We operate under responsible tourism guidelines aligned with national standards and local authorities.
 						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							We are the 1st ones to introduce cash-less travel in Pakistan. Most vendors in Pakistan still do not accept credit, and ATMs can be difficult to locate in the remote areas. We save you from the trouble of currency conversion once you are in Pakistan. We instead take it on us to finance all your cash needs during your travel such as food, shopping, tickets at local venues, and any other purchase or expense.
-						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
-							We ask you to deposit a fixed USD amount with us based on our estimation of the cash needs during your trip. This amount can be deposited in cash or blocked on a credit card like any other auto-rental booking. After your trip, we deduct from this any cash that you borrowed during your trip and return the balance in USD. This saves you from the hassle of carrying any cash with you during your trip and provides you with complete financial security.
+						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+							<li>Hygienic stops</li>
+							<li>Verified accommodations</li>
+							<li>Trained medical aware crew</li>
+							<li>Secure travel routes</li>
+							<li>Emergency handling protocols</li>
+						</ul>
+						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+							Wherever you go with us, you&apos;re safe, supported and cared for.
 						</p>
 					</div>
 
