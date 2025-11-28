@@ -1727,62 +1727,62 @@ const AboutPage = () => {
 						</h2>
 					</div>
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-						{/* Card 1: Guaranteed for Peace of Mind */}
+						{/* Card 1: Guaranteed Peace of Mind */}
 						<div className="bg-white rounded-lg overflow-hidden shadow-md">
 							<div className="relative w-full h-48">
 								<Image 
 									src="/images/murree and nathia gali.jpg"
-									alt="Guaranteed for Peace of Mind"
+									alt="Guaranteed Peace of Mind"
 									fill
 									className="object-cover"
 								/>
 							</div>
 							<div className="p-6">
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
-									Guaranteed For Peace Of Mind
+									Guaranteed Peace Of Mind
 								</h3>
 								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-									We are a destination management company. Our network offices are spread across the country ensuring the timely and professional delivery of all your destination needs.
+									Our presence across Pakistan ensures smooth, professional delivery of all travel needs.
 								</p>
 							</div>
 						</div>
 
-						{/* Card 2: Best Price and Value */}
+						{/* Card 2: Best Price & Value */}
 						<div className="bg-white rounded-lg overflow-hidden shadow-md">
 							<div className="relative w-full h-48">
 								<Image 
 									src="/images/islamabad.jpg"
-									alt="Best Price and Value"
+									alt="Best Price & Value"
 									fill
 									className="object-cover"
 								/>
 							</div>
 							<div className="p-6">
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
-									Best Price And Value
+									Best Price & Value
 								</h3>
 								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-									Our corporate partnership with the hotels, venues, and transport businesses help us secure unmatched price and unquestionable value.
+									We work with trusted partners to offer unmatched affordability.
 								</p>
 							</div>
 						</div>
 
-						{/* Card 3: Quality of Itinerary */}
+						{/* Card 3: Quality Itineraries */}
 						<div className="bg-white rounded-lg overflow-hidden shadow-md">
 							<div className="relative w-full h-48">
 								<Image 
 									src="/images/Kund Malir.jpg"
-									alt="Quality of Itinerary"
+									alt="Quality Itineraries"
 									fill
 									className="object-cover"
 								/>
 							</div>
 							<div className="p-6">
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
-									Quality Of Itinerary
+									Quality Itineraries
 								</h3>
 								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-									We cater to foreign inbound tourists, and have shaped our tours to match the needs of the international traveler. We have perfected 30 trip designs and allow further options to customize to your needs.
+									Designed for travelers who want comfort, culture and adventure in one experience.
 								</p>
 							</div>
 						</div>
@@ -1802,7 +1802,7 @@ const AboutPage = () => {
 									Access To Local Expertise
 								</h3>
 								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
-									All our local agents have been chosen based on rigorous selection criteria, including English-speaking ability, fairness of prices, and knowledge of their destination.
+									Local guides, storytellers and experts bring every destination to life.
 								</p>
 							</div>
 						</div>
