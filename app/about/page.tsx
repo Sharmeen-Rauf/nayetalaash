@@ -585,7 +585,7 @@ const AboutPage = () => {
 							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						</div>
-						<h2 className="font-bold" style={{ color: secondaryBlack, fontSize: '18px' }}>
+						<h2 className="text-3xl font-bold" style={{ color: secondaryBlack, fontSize: '34px' }}>
 							Do you want to know what makes us your perfect travel companion?
 						</h2>
 					</div>
