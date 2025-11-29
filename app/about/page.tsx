@@ -547,8 +547,8 @@ const AboutPage = () => {
 				{/* Main Content */}
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<div className="text-center px-4">
-						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
-							<span className="font-autography hero-text-reveal block mb-4" style={{ display: 'inline-block' }}>
+						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
+							<span className="font-autography hero-text-reveal block mb-2" style={{ display: 'inline-block' }}>
 								Who We Are
 							</span>
 							<span className="block hero-text-reveal hero-text-delay-1" 
@@ -567,10 +567,10 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== WHY TRAVEL WITH NAYI TALAASH - CARD GRID SECTION ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Top Section: Button, Stars, and Heading */}
-					<div className="text-center mb-6">
+					<div className="text-center mb-4">
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 mb-4 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -583,7 +583,7 @@ const AboutPage = () => {
 							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						</div>
-						<h2 className="text-2xl md:text-3xl font-bold" style={{ color: secondaryBlack }}>
+						<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>
 							Do you want to know what makes us your perfect travel companion?
 						</h2>
 					</div>
@@ -714,7 +714,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== HOTELS & ACCOMMODATION SLIDER ====================== */}
-			<section className="py-8 md:py-12 bg-gray-50">
+			<section className="py-6 md:py-8 bg-gray-50">
 				{/* Main Banner Slider - Full Width */}
 				<div className="relative mb-4 w-full">
 					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
@@ -729,8 +729,8 @@ const AboutPage = () => {
 							
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Hotels & Accommodation</h2>
-								<p className="text-lg md:text-xl mb-4">Best Deals On Premium Stays</p>
+								<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Hotels & Accommodation</h2>
+								<p className="text-base md:text-lg mb-4">Best Deals On Premium Stays</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -789,7 +789,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== HOTELS & ACCOMMODATION CONTENT SECTION ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
@@ -800,7 +800,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-6">
+					<div className="max-w-4xl mx-auto mb-4">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							We partner with the best hotels, guest houses, resorts, and campsites across Pakistan to bring you a comfortable and safe stay at the best possible prices. From the luxury of Hunza river view hotels, the calm of Skardu boutique lodges, to beachside resorts in Gwadar & Kund Malir, we ensure comfort meets quality every time.
 						</p>
@@ -822,7 +822,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Three Images Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
 						{/* Image 1: Coastal Retreat */}
 						<div className="relative group">
 							<div className="relative h-80 rounded-lg overflow-hidden">
@@ -841,7 +841,7 @@ const AboutPage = () => {
 										<path d="M20 5C12 5 5 12 5 20s7 15 15 15c3 0 6-1 8-3" stroke="none" fill="currentColor" opacity="0.8"/>
 										<path d="M25 10C30 12 32 18 30 23c-2 5-8 7-13 5" stroke="none" fill="currentColor" opacity="0.6"/>
 									</svg>
-									<h3 className="text-xl md:text-2xl font-autography relative z-10 px-4">Coastal Retreat</h3>
+									<h3 className="text-lg md:text-xl font-autography relative z-10 px-4">Coastal Retreat</h3>
 									{/* Decorative green swirl - right */}
 									<svg className="absolute -right-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
 										<path d="M20 35C28 35 35 28 35 20s-7-15-15-15c-3 0-6 1-8 3" stroke="none" fill="currentColor" opacity="0.8"/>
@@ -869,7 +869,7 @@ const AboutPage = () => {
 										<path d="M20 5C12 5 5 12 5 20s7 15 15 15c3 0 6-1 8-3" stroke="none" fill="currentColor" opacity="0.8"/>
 										<path d="M25 10C30 12 32 18 30 23c-2 5-8 7-13 5" stroke="none" fill="currentColor" opacity="0.6"/>
 									</svg>
-									<h3 className="text-xl md:text-2xl font-autography relative z-10 px-4">Dream Journeys of North</h3>
+									<h3 className="text-lg md:text-xl font-autography relative z-10 px-4">Dream Journeys of North</h3>
 									{/* Decorative green swirl - right */}
 									<svg className="absolute -right-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
 										<path d="M20 35C28 35 35 28 35 20s-7-15-15-15c-3 0-6 1-8 3" stroke="none" fill="currentColor" opacity="0.8"/>
@@ -897,7 +897,7 @@ const AboutPage = () => {
 										<path d="M20 5C12 5 5 12 5 20s7 15 15 15c3 0 6-1 8-3" stroke="none" fill="currentColor" opacity="0.8"/>
 										<path d="M25 10C30 12 32 18 30 23c-2 5-8 7-13 5" stroke="none" fill="currentColor" opacity="0.6"/>
 									</svg>
-									<h3 className="text-xl md:text-2xl font-autography relative z-10 px-4">Baloch Richness</h3>
+									<h3 className="text-lg md:text-xl font-autography relative z-10 px-4">Baloch Richness</h3>
 									{/* Decorative green swirl - right */}
 									<svg className="absolute -right-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
 										<path d="M20 35C28 35 35 28 35 20s-7-15-15-15c-3 0-6 1-8 3" stroke="none" fill="currentColor" opacity="0.8"/>
@@ -911,7 +911,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== CONVEYANCE SLIDER ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				{/* Main Banner Slider - Full Width */}
 				<div className="relative mb-4 w-full">
 					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
@@ -926,8 +926,8 @@ const AboutPage = () => {
 							
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Conveyance</h2>
-								<p className="text-lg md:text-xl mb-4">Travel In Style & Comfort</p>
+								<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Conveyance</h2>
+								<p className="text-base md:text-lg mb-4">Travel In Style & Comfort</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -986,7 +986,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== CONVEYANCE CONTENT SECTION ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Three Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
@@ -996,7 +996,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-6">
+					<div className="max-w-4xl mx-auto mb-4">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							From the winding roads of Karakoram Highway to the sandy tracks of Balochistan&apos;s Makran region, Nayi Talaash offers comfortable, terrain ready transportation:
 						</p>
@@ -1015,7 +1015,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Three Image Cards Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
 						{/* Card 1: MAKRAN COASTAL HIGHWAY */}
 						<div className="relative group">
 							<div className="relative h-80 rounded-lg overflow-hidden">
@@ -1092,7 +1092,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== CURATED TRIP EXPERIENCES SLIDER ====================== */}
-			<section className="py-8 md:py-12 bg-gray-50">
+			<section className="py-6 md:py-8 bg-gray-50">
 				{/* Main Banner Slider - Full Width */}
 				<div className="relative mb-4 w-full">
 					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
@@ -1107,8 +1107,8 @@ const AboutPage = () => {
 						
 						{/* Text Overlay */}
 						<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-							<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Curated Trip Experiences</h2>
-							<p className="text-lg md:text-xl mb-4 capitalize">Matching Your Taste</p>
+							<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Curated Trip Experiences</h2>
+							<p className="text-base md:text-lg mb-4 capitalize">Matching Your Taste</p>
 							<button
 								onClick={handleWhatsAppClick}
 								className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1167,7 +1167,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== CURATED TRIP EXPERIENCES CONTENT SECTION ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
@@ -1178,7 +1178,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-6">
+					<div className="max-w-4xl mx-auto mb-4">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							We design every tour with one mission:
 						</p>
@@ -1202,7 +1202,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Two Image Cards Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
 						{/* Card 1: PUNJAB */}
 						<div className="relative group">
 							<div className="relative h-96 rounded-lg overflow-hidden">
@@ -1215,7 +1215,7 @@ const AboutPage = () => {
 							</div>
 							{/* Black Footer with Title, Description, and Button */}
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
-								<h3 className="text-xl md:text-2xl font-bold mb-2 capitalize">Punjab: The Land Of 5 Rivers</h3>
+								<h3 className="text-lg md:text-xl font-bold mb-2 capitalize">Punjab: The Land Of 5 Rivers</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Experience The True Essence Of The Punjab</p>
 								<button
 									onClick={handleWhatsAppClick}
@@ -1239,7 +1239,7 @@ const AboutPage = () => {
 							</div>
 							{/* Black Footer with Title, Description, and Button */}
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
-								<h3 className="text-xl md:text-2xl font-bold mb-2 capitalize">Balochistan Hospitality & Horseback</h3>
+								<h3 className="text-lg md:text-xl font-bold mb-2 capitalize">Balochistan Hospitality & Horseback</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Discover The Authentic Baloch Heritage</p>
 								<button
 									onClick={handleWhatsAppClick}
@@ -1255,7 +1255,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== BEST CREW SLIDER ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				{/* Main Banner Slider - Full Width */}
 				<div className="relative mb-4 w-full">
 					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
@@ -1270,8 +1270,8 @@ const AboutPage = () => {
 						
 						{/* Text Overlay */}
 						<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-							<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Best Crew</h2>
-							<p className="text-lg md:text-xl mb-4">Handpicked Tour Managers</p>
+							<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Best Crew</h2>
+							<p className="text-base md:text-lg mb-4">Handpicked Tour Managers</p>
 							<button
 								onClick={handleWhatsAppClick}
 								className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1330,7 +1330,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== BEST CREW CONTENT SECTION ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
@@ -1341,7 +1341,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-6">
+					<div className="max-w-4xl mx-auto mb-4">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							Our people are our strength.
 						</p>
@@ -1364,7 +1364,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Two Image Cards */}
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
 						{/* Card 1 */}
 						<div className="relative group">
 							<div className="relative h-96 rounded-lg overflow-hidden">
@@ -1376,7 +1376,7 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
-								<h3 className="text-xl md:text-2xl font-bold mb-2 capitalize">Kirthar Trophy Hunting</h3>
+								<h3 className="text-lg md:text-xl font-bold mb-2 capitalize">Kirthar Trophy Hunting</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Hunt With A Professional And Trained Crew</p>
 								<button
 									onClick={handleWhatsAppClick}
@@ -1399,7 +1399,7 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="absolute bottom-0 left-0 right-0 bg-black p-6 text-white">
-								<h3 className="text-xl md:text-2xl font-bold mb-2 capitalize">Contact Our Design Team Today</h3>
+								<h3 className="text-lg md:text-xl font-bold mb-2 capitalize">Contact Our Design Team Today</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90 capitalize">Share Your Details For A Custom Itinerary</p>
 								<button
 									onClick={handleWhatsAppClick}
@@ -1415,7 +1415,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== COVID-19 PREPARED BANNER ====================== */}
-			<section className="py-8 md:py-12 bg-gray-50">
+			<section className="py-6 md:py-8 bg-gray-50">
 				{/* Banner with Text Overlay - Full Width */}
 				<div className="relative mb-4 w-full">
 					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
@@ -1430,8 +1430,8 @@ const AboutPage = () => {
 						
 						{/* Text Overlay */}
 						<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-							<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Safe Travel Standards</h2>
-							<p className="text-lg md:text-xl mb-4 capitalize">The New Travel Paradigm</p>
+							<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Safe Travel Standards</h2>
+							<p className="text-base md:text-lg mb-4 capitalize">The New Travel Paradigm</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1445,7 +1445,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== COVID-19 PREPARED CONTENT SECTION ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
@@ -1456,7 +1456,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-6">
+					<div className="max-w-4xl mx-auto mb-4">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							Your safety matters.
 						</p>
@@ -1478,7 +1478,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== TRUST & SECURITY BANNER ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				{/* Banner with Text Overlay - Full Width */}
 				<div className="relative mb-4 w-full">
 					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
@@ -1493,8 +1493,8 @@ const AboutPage = () => {
 							
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Trust & Security</h2>
-								<p className="text-lg md:text-xl mb-4">Travel with freedom</p>
+								<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Trust & Security</h2>
+								<p className="text-base md:text-lg mb-4">Travel with freedom</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1508,7 +1508,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== TRUST & SECURITY CONTENT SECTION ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Three Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
@@ -1518,7 +1518,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-6">
+					<div className="max-w-4xl mx-auto mb-4">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							Nayi Talaash is a registered tour company, working with local tourism bodies and law enforcement to ensure:
 						</p>
@@ -1585,8 +1585,8 @@ const AboutPage = () => {
 					
 					{/* Text Overlay */}
 					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Travel Visa</h2>
-						<p className="text-lg md:text-xl mb-4">Hassle-free process</p>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Travel Visa</h2>
+						<p className="text-base md:text-lg mb-4">Hassle-free process</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -1599,7 +1599,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== TRAVEL VISA CONTENT SECTION ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Three Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
@@ -1609,7 +1609,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Text Content */}
-					<div className="max-w-4xl mx-auto mb-6">
+					<div className="max-w-4xl mx-auto mb-4">
 						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
 							Some locations in Pakistan require approvals, permits and special handling.
 						</p>
@@ -1645,8 +1645,8 @@ const AboutPage = () => {
 					
 					{/* Text Overlay */}
 					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-						<h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 capitalize">Comprehensive Tour Management</h2>
-						<p className="text-lg md:text-xl mb-4">Expert Ground Handling</p>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Comprehensive Tour Management</h2>
+						<p className="text-base md:text-lg mb-4">Expert Ground Handling</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-white"
@@ -1659,9 +1659,9 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== THE ADVANTAGES OF BOOKING WITH NAYI TALAASH ====================== */}
-			<section className="py-8 md:py-12 bg-gray-50">
+			<section className="py-6 md:py-8 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="text-center mb-6">
+					<div className="text-center mb-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
 							The Advantages Of Booking With Nayi Talaash
 						</h2>
@@ -1751,14 +1751,14 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== HOW IT WORKS ====================== */}
-			<section className="py-8 md:py-12 bg-white">
+			<section className="py-6 md:py-8 bg-white">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="text-center mb-6">
+					<div className="text-center mb-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
 							How It Works
 						</h2>
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 max-w-6xl mx-auto">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4 max-w-6xl mx-auto">
 						{/* Step 1: Discover */}
 						<div className="text-center max-w-xs mx-auto">
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
@@ -1818,9 +1818,9 @@ const AboutPage = () => {
 			</section>
 
 			{/* ====================== FEATURES SECTION ====================== */}
-			<section className="py-8 md:py-12 bg-gray-50">
+			<section className="py-6 md:py-8 bg-gray-50">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 						{/* Affordable Journeys */}
 						<div className="text-center">
 							<div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
