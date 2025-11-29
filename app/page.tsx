@@ -1153,7 +1153,7 @@ const Page = () => {
 				<div className="text-center px-4">
 					<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 						<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-							Discover the Unseen.
+							Discover the Unseen
 						</span>
 						<br />
 						<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -1161,7 +1161,7 @@ const Page = () => {
 								  color: primaryOrange, 
 								  display: 'inline-block'
 							  }}>
-							Explore With Nayi Talaash.
+							Explore With Nayi Talaash
 						</span>
 					</h1>
 					<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
