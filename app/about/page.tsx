@@ -1680,10 +1680,10 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="p-6">
-								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
+								<h3 className="font-bold mb-3 capitalize" style={{ color: secondaryBlack, fontSize: '14px' }}>
 									Guaranteed Peace Of Mind
 								</h3>
-								<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-relaxed" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 									Our presence across Pakistan ensures smooth, professional delivery of all travel needs.
 								</p>
 							</div>
@@ -1700,10 +1700,10 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="p-6">
-								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
+								<h3 className="font-bold mb-3 capitalize" style={{ color: secondaryBlack, fontSize: '14px' }}>
 									Best Price & Value
 								</h3>
-								<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-relaxed" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 									We work with trusted partners to offer unmatched affordability.
 								</p>
 							</div>
@@ -1720,10 +1720,10 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="p-6">
-								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
+								<h3 className="font-bold mb-3 capitalize" style={{ color: secondaryBlack, fontSize: '14px' }}>
 									Quality Itineraries
 								</h3>
-								<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-relaxed" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 									Designed for travelers who want comfort, culture and adventure in one experience.
 								</p>
 							</div>
@@ -1740,10 +1740,10 @@ const AboutPage = () => {
 								/>
 							</div>
 							<div className="p-6">
-								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
+								<h3 className="font-bold mb-3 capitalize" style={{ color: secondaryBlack, fontSize: '14px' }}>
 									Access To Local Expertise
 								</h3>
-								<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-relaxed" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 									Local guides, storytellers and experts bring every destination to life.
 								</p>
 							</div>
@@ -1763,44 +1763,44 @@ const AboutPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-4 max-w-6xl mx-auto">
 						{/* Step 1: Discover */}
 						<div className="text-center max-w-xs mx-auto">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
-								<MessageSquare className="w-10 h-10" style={{ color: '#1f2937' }} />
+							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
+								<MessageSquare className="w-6 h-6" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>1. Discover</h3>
-							<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							<h3 className="text-sm font-bold mb-3" style={{ color: secondaryBlack, fontSize: '14px' }}>1. Discover</h3>
+							<p className="leading-relaxed mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 								Explore our travel packages, all designed to highlight the best of Pakistan.
 							</p>
 						</div>
 
 						{/* Step 2: Customize */}
 						<div className="text-center max-w-xs mx-auto">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
-								<Map className="w-10 h-10" style={{ color: '#1f2937' }} />
+							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
+								<Map className="w-6 h-6" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>2. Customize</h3>
-							<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							<h3 className="text-sm font-bold mb-3" style={{ color: secondaryBlack, fontSize: '14px' }}>2. Customize</h3>
+							<p className="leading-relaxed mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 								Share your preferences we tailor your tour to match your taste and vibe.
 							</p>
 						</div>
 
 						{/* Step 3: Travel */}
 						<div className="text-center max-w-xs mx-auto">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
-								<Plane className="w-10 h-10" style={{ color: '#1f2937' }} />
+							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
+								<Plane className="w-6 h-6" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>3. Travel</h3>
-							<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							<h3 className="text-sm font-bold mb-3" style={{ color: secondaryBlack, fontSize: '14px' }}>3. Travel</h3>
+							<p className="leading-relaxed mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 								Get your itinerary, pack your bags and begin the journey.
 							</p>
 						</div>
 
 						{/* Step 4: Cherish */}
 						<div className="text-center max-w-xs mx-auto">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
-								<ImagePlus className="w-10 h-10" style={{ color: '#1f2937' }} />
+							<div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center border-2 border-gray-300" style={{ borderColor: '#d1d5db' }}>
+								<ImagePlus className="w-6 h-6" style={{ color: '#1f2937' }} />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>4. Cherish</h3>
-							<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							<h3 className="text-sm font-bold mb-3" style={{ color: secondaryBlack, fontSize: '14px' }}>4. Cherish</h3>
+							<p className="leading-relaxed mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 								Live moments, record memories and relive your trip through our free highlight video.
 							</p>
 						</div>
@@ -1825,44 +1825,44 @@ const AboutPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 						{/* Affordable Journeys */}
 						<div className="text-center">
-							<div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-								<Plane className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
+							<div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+								<Plane className="w-12 h-12" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Affordable Journeys</h3>
-							<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							<h3 className="text-sm font-bold mb-3" style={{ color: secondaryBlack, fontSize: '14px' }}>Affordable Journeys</h3>
+							<p className="leading-relaxed" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 								Premium travel experience at the most affordable rates to provide you with the best value for your trip cost.
 							</p>
 						</div>
 
 						{/* Guided Experiences */}
 						<div className="text-center">
-							<div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-								<Users className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
+							<div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+								<Users className="w-12 h-12" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guided Experiences</h3>
-							<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							<h3 className="text-sm font-bold mb-3" style={{ color: secondaryBlack, fontSize: '14px' }}>Guided Experiences</h3>
+							<p className="leading-relaxed" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 								Embrace our travel guide resources and know about the history and traditions of the areas you're traveling in.
 							</p>
 						</div>
 
 						{/* All Inclusive */}
 						<div className="text-center">
-							<div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-								<Gem className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
+							<div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+								<Gem className="w-12 h-12" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>All Inclusive</h3>
-							<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							<h3 className="text-sm font-bold mb-3" style={{ color: secondaryBlack, fontSize: '14px' }}>All Inclusive</h3>
+							<p className="leading-relaxed" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 								Nayi Talaash is taking provision of all your travel needs and comforts within your package cost, leaving you with lasting trip memories.
 							</p>
 						</div>
 
 						{/* Guest Support */}
 						<div className="text-center">
-							<div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-								<Luggage className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
+							<div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+								<Luggage className="w-12 h-12" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
-							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guest Support</h3>
-							<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							<h3 className="text-sm font-bold mb-3" style={{ color: secondaryBlack, fontSize: '14px' }}>Guest Support</h3>
+							<p className="leading-relaxed" style={{ color: `${secondaryBlack}90`, fontSize: '13px' }}>
 								We are happy to help you! Call us at <a href="tel:+92331438251" className="hover:opacity-80 transition-opacity" style={{ color: primaryOrange }}>+92 331 438251</a> or write to us at <a href="mailto:info@nayitalaash.com" className="hover:opacity-80 transition-opacity" style={{ color: primaryOrange }}>info@nayitalaash.com</a>
 							</p>
 						</div>
