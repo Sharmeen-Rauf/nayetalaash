@@ -585,7 +585,7 @@ const AboutPage = () => {
 							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
 						</div>
-						<h2 className="text-3xl md:text-4xl font-bold" style={{ color: secondaryBlack }}>
+						<h2 className="font-bold" style={{ color: secondaryBlack, fontSize: '18px' }}>
 							Do you want to know what makes us your perfect travel companion?
 						</h2>
 					</div>
@@ -803,22 +803,22 @@ const AboutPage = () => {
 
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-4">
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							We partner with the best hotels, guest houses, resorts, and campsites across Pakistan to bring you a comfortable and safe stay at the best possible prices. From the luxury of Hunza river view hotels, the calm of Skardu boutique lodges, to beachside resorts in Gwadar & Kund Malir, we ensure comfort meets quality every time.
 						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Whether you prefer a private room, a family suite or a mountain campsite, our team ensures your preferences are noted, matched and delivered.
 						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							With Nayi Talaash, you enjoy:
 						</p>
-						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+						<ul className="list-disc list-inside mb-4 space-y-1" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							<li>Smooth check-ins with your preferred room type</li>
 							<li>Premium suites with scenic views</li>
 							<li>Campsites with security & trained crew</li>
 							<li>Easy reservation changes (no stress on flight delays or plan shifts)</li>
 						</ul>
-						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+						<p className="font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 							Your comfort is our priority always.
 						</p>
 					</div>
@@ -999,19 +999,19 @@ const AboutPage = () => {
 
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-4">
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							From the winding roads of Karakoram Highway to the sandy tracks of Balochistan&apos;s Makran region, Nayi Talaash offers comfortable, terrain ready transportation:
 						</p>
-						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+						<ul className="list-disc list-inside mb-4 space-y-1" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							<li>Spacious AC Coasters & Hiace for group tours</li>
 							<li>4×4 Jeeps for rugged northern terrains</li>
 							<li>Smooth, safe, well maintained vehicles</li>
 							<li>Experienced drivers trained for every route</li>
 						</ul>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Whatever the destination, our backup support ensures no breakdown ruins your journey.
 						</p>
-						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+						<p className="font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 							Just sit back, enjoy the music, the mountains and the moment.
 						</p>
 					</div>
@@ -1181,16 +1181,16 @@ const AboutPage = () => {
 
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-4">
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							We design every tour with one mission:
 						</p>
-						<p className="text-base md:text-lg leading-normal mb-4 font-semibold" style={{ color: secondaryBlack }}>
+						<p className="mb-4 font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 							To make you fall in love with Pakistan.
 						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Our itineraries are crafted after deep research into each province and its hidden gems.
 						</p>
-						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+						<ul className="list-disc list-inside mb-4 space-y-1" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							<li>Trekking, hiking & adventure tours</li>
 							<li>Camping, bonfire & jamming nights</li>
 							<li>Marine adventures & island visits</li>
@@ -1198,7 +1198,7 @@ const AboutPage = () => {
 							<li>Food tours, heritage walks & bazaars</li>
 							<li>Tribal experiences & village lifestyle tours</li>
 						</ul>
-						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+						<p className="font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 							From snowfall in Naran, sunrise in Gwadar, autumn in Gilgit, to canyon views in Balochistan we give you experiences that stay in your heart forever.
 						</p>
 					</div>
@@ -1344,23 +1344,23 @@ const AboutPage = () => {
 
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-4">
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Our people are our strength.
 						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Nayi Talaash&apos;s team includes:
 						</p>
-						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+						<ul className="list-disc list-inside mb-4 space-y-1" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							<li>Experienced Tour Leaders</li>
 							<li>Local Guides & Cultural Experts</li>
 							<li>Safety & Trek Specialists</li>
 							<li>Professional Drivers</li>
 							<li>Travel Designers</li>
 						</ul>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Each member is trained to offer you comfort, guidance and memorable storytelling throughout the journey.
 						</p>
-						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+						<p className="font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 							We know the mountains, the roads, the people and we help you feel the soul of every destination.
 						</p>
 					</div>
@@ -1459,20 +1459,20 @@ const AboutPage = () => {
 
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-4">
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Your safety matters.
 						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							We operate under responsible tourism guidelines aligned with national standards and local authorities.
 						</p>
-						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+						<ul className="list-disc list-inside mb-4 space-y-1" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							<li>Hygienic stops</li>
 							<li>Verified accommodations</li>
 							<li>Trained medical aware crew</li>
 							<li>Secure travel routes</li>
 							<li>Emergency handling protocols</li>
 						</ul>
-						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+						<p className="font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 							Wherever you go with us, you&apos;re safe, supported and cared for.
 						</p>
 					</div>
@@ -1521,10 +1521,10 @@ const AboutPage = () => {
 
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-4">
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Nayi Talaash is a registered tour company, working with local tourism bodies and law enforcement to ensure:
 						</p>
-						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+						<ul className="list-disc list-inside mb-4 space-y-1" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							<li>Verified hotels</li>
 							<li>Secure travel routes</li>
 							<li>Safe payment methods</li>
@@ -1532,7 +1532,7 @@ const AboutPage = () => {
 							<li>Transparent pricing</li>
 							<li>No hidden charges</li>
 						</ul>
-						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+						<p className="font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 							Travel with confidence, comfort and complete freedom.
 						</p>
 					</div>
@@ -1612,20 +1612,20 @@ const AboutPage = () => {
 
 					{/* Text Content */}
 					<div className="max-w-4xl mx-auto mb-4">
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Some locations in Pakistan require approvals, permits and special handling.
 						</p>
-						<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+						<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Don&apos;t worry we take care of everything:
 						</p>
-						<ul className="list-disc list-inside mb-4 space-y-1 text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+						<ul className="list-disc list-inside mb-4 space-y-1" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							<li>Entry permits for restricted zones</li>
 							<li>Trekking permissions</li>
 							<li>Marine & island access</li>
 							<li>Transport arrangements</li>
 							<li>Custom itinerary planning</li>
 						</ul>
-						<p className="text-base md:text-lg leading-normal font-semibold" style={{ color: secondaryBlack }}>
+						<p className="font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 							Whether it&apos;s Deosai, Ormara, Kumrat, Hingol or Ratti Gali, our ground team ensures you travel without complications.
 						</p>
 					</div>
@@ -1683,7 +1683,7 @@ const AboutPage = () => {
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 									Guaranteed Peace Of Mind
 								</h3>
-								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+								<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Our presence across Pakistan ensures smooth, professional delivery of all travel needs.
 								</p>
 							</div>
@@ -1703,7 +1703,7 @@ const AboutPage = () => {
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 									Best Price & Value
 								</h3>
-								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+								<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									We work with trusted partners to offer unmatched affordability.
 								</p>
 							</div>
@@ -1723,7 +1723,7 @@ const AboutPage = () => {
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 									Quality Itineraries
 								</h3>
-								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+								<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Designed for travelers who want comfort, culture and adventure in one experience.
 								</p>
 							</div>
@@ -1743,7 +1743,7 @@ const AboutPage = () => {
 								<h3 className="text-lg md:text-xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 									Access To Local Expertise
 								</h3>
-								<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+								<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Local guides, storytellers and experts bring every destination to life.
 								</p>
 							</div>
@@ -1767,7 +1767,7 @@ const AboutPage = () => {
 								<MessageSquare className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>1. Discover</h3>
-							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+							<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								Explore our travel packages, all designed to highlight the best of Pakistan.
 							</p>
 						</div>
@@ -1778,7 +1778,7 @@ const AboutPage = () => {
 								<Map className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>2. Customize</h3>
-							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+							<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								Share your preferences we tailor your tour to match your taste and vibe.
 							</p>
 						</div>
@@ -1789,7 +1789,7 @@ const AboutPage = () => {
 								<Plane className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>3. Travel</h3>
-							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+							<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								Get your itinerary, pack your bags and begin the journey.
 							</p>
 						</div>
@@ -1800,7 +1800,7 @@ const AboutPage = () => {
 								<ImagePlus className="w-10 h-10" style={{ color: '#1f2937' }} />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>4. Cherish</h3>
-							<p className="text-base md:text-lg leading-normal mb-4" style={{ color: `${secondaryBlack}90` }}>
+							<p className="mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								Live moments, record memories and relive your trip through our free highlight video.
 							</p>
 						</div>
@@ -1829,7 +1829,7 @@ const AboutPage = () => {
 								<Plane className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Affordable Journeys</h3>
-							<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+							<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								Premium travel experience at the most affordable rates to provide you with the best value for your trip cost.
 							</p>
 						</div>
@@ -1840,7 +1840,7 @@ const AboutPage = () => {
 								<Users className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guided Experiences</h3>
-							<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+							<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								Embrace our travel guide resources and know about the history and traditions of the areas you're traveling in.
 							</p>
 						</div>
@@ -1851,7 +1851,7 @@ const AboutPage = () => {
 								<Gem className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>All Inclusive</h3>
-							<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+							<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								Nayi Talaash is taking provision of all your travel needs and comforts within your package cost, leaving you with lasting trip memories.
 							</p>
 						</div>
@@ -1862,7 +1862,7 @@ const AboutPage = () => {
 								<Luggage className="w-16 h-16" strokeWidth={1.5} style={{ color: primaryOrange, stroke: primaryOrange }} fill="none" />
 							</div>
 							<h3 className="text-lg md:text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Guest Support</h3>
-							<p className="text-base md:text-lg leading-normal" style={{ color: `${secondaryBlack}90` }}>
+							<p className="" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								We are happy to help you! Call us at <a href="tel:+92331438251" className="hover:opacity-80 transition-opacity" style={{ color: primaryOrange }}>+92 331 438251</a> or write to us at <a href="mailto:info@nayitalaash.com" className="hover:opacity-80 transition-opacity" style={{ color: primaryOrange }}>info@nayitalaash.com</a>
 							</p>
 						</div>
