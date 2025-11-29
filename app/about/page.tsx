@@ -547,19 +547,21 @@ const AboutPage = () => {
 				{/* Main Content */}
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<div className="text-center px-4">
-						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
-							<span className="font-autography hero-text-reveal block mb-2" style={{ display: 'inline-block' }}>
+						<h1 className="font-bold mb-6 text-white">
+							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block', fontSize: '48px' }}>
 								Who We Are
 							</span>
-							<span className="block hero-text-reveal hero-text-delay-1" 
+							<br />
+							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
 								  style={{ 
 									  color: primaryOrange, 
-									  display: 'inline-block'
+									  display: 'inline-block',
+									  fontSize: '48px'
 								  }}>
 								Discover Pakistan. Discover Yourself.
 							</span>
 						</h1>
-						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2">
+						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
 							Nayi Talaash offers meaningful group tours across Pakistan, turning every journey into stories, culture, and connection.
 						</p>
 					</div>
