@@ -312,7 +312,7 @@ const SwatKalamPage = () => {
 				{/* Main Content */}
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<div className="text-center px-4">
-						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+						<h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
 							<span className="hero-text-reveal hero-text-delay-1" 
 								style={{ 
 									color: primaryOrange, 
@@ -321,7 +321,7 @@ const SwatKalamPage = () => {
 								Swat Kalam Tour Packages
 							</span>
 						</h1>
-						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
+						<p className="text-sm sm:text-xs md:text-base text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
 							Discover the breathtaking beauty of Swat Valley and Kalam - Switzerland of Pakistan with our carefully crafted tour packages.
 						</p>
 					</div>
@@ -332,10 +332,10 @@ const SwatKalamPage = () => {
 			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
+						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
 							Customized Swat Tour Packages 2025
 						</h2>
-						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							These Kalam Swat Tour Packages can be custom-built for you to have the experience you expect from us as professional Tour Operators in Pakistan. You can choose from the list below or customize your Swat Kalam Tours according to your requirements.
 						</p>
 					</div>
@@ -401,10 +401,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
+						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
 							Public Swat Kalam Tour Packages 2025
 						</h2>
-						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Nayi Talaash offers these swat tour packages to Swat Kalam Valley throughout the year. You can join them as per your schedule, individually or with your group. Here are the Swat Kalam Valley Tours that you can choose from.
 						</p>
 					</div>
@@ -446,31 +446,31 @@ const SwatKalamPage = () => {
 
 					{/* Client Category Section */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Client Category of Customized Swat Tours:
 						</h3>
 						<ul className="space-y-3">
 							<li className="flex items-start gap-3">
 								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Swat Tour Packages / Couple Tours / Honeymoon Tour are designed to help the newlyweds cherish the new life together with all the luxury and solitude, surrounded by the beautiful nature.
 								</p>
 							</li>
 							<li className="flex items-start gap-3">
 								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Swat Family Tour Packages are designed to create a fun, luxurious, and secure environment for your loved ones to intensify the blood bond and acquire memories for a lifetime.
 								</p>
 							</li>
 							<li className="flex items-start gap-3">
 								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Swat Students Tours / Friends Group Tour Packages are designed to have all the fun engaging activities and games for laughing together, dancing together, and more importantly exploring the adventurous destinations together without the hassle of planning all the bits of the tour. You only have to decide what to pack for that memorable tour with your besties.
 								</p>
 							</li>
 							<li className="flex items-start gap-3">
 								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Swat Corporate Groups Tour Packages are designed to create an environment for the employees to develop a closer connection with each other, enhance their potential for team building, and entertain themselves with nature outside their usual office environment.
 								</p>
 							</li>
@@ -479,30 +479,30 @@ const SwatKalamPage = () => {
 
 					{/* Departure Cities Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							We have
 						</h3>
 						<ul className="space-y-2 mb-4">
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Swat Tour Packages from Lahore
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Swat Tour Packages from Karachi
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Swat Tour Packages from Islamabad
 								</p>
 							</li>
 						</ul>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							You can also customize these tours from other cities in Pakistan.
 						</p>
 					</div>
@@ -513,10 +513,10 @@ const SwatKalamPage = () => {
 			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							Most Popular Destinations and Attractions to Visit in Swat Valley:
 						</h2>
-						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Swat Valley is blessed with beautiful valleys, waterfalls, and lakes. We have created a list of some famous tourist places to visit in Swat Kalam and a little Swat Kalam Valley travel guide.
 						</p>
 					</div>
@@ -648,10 +648,10 @@ const SwatKalamPage = () => {
 								
 								{/* Text Content */}
 								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
-									<h3 className="text-2xl md:text-3xl font-bold mb-3 capitalize ml-4" style={{ color: secondaryBlack }}>
+									<h3 className="text-xl md:text-2xl font-bold mb-3 capitalize ml-4" style={{ color: secondaryBlack }}>
 										{destination.title}
 									</h3>
-									<p className="leading-normal ml-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="leading-normal ml-4" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 										{destination.description}
 									</p>
 								</div>
@@ -665,11 +665,11 @@ const SwatKalamPage = () => {
 			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<p className="leading-normal mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Alongside natural beauty, Swat also has many historical sites. It has attracted many archeologists worldwide due to its historical importance. There are around 400 Buddhist historical sites in the valley, including Buddhist stupas and rock carvings of Buddha.
 						</p>
 
-						<h3 className="text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Some other historical and archeological sites in Swat Valley are as follows:
 						</h3>
 
@@ -693,7 +693,7 @@ const SwatKalamPage = () => {
 							].map((item, idx) => (
 								<li key={idx} className="flex items-start gap-3">
 									<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 										{item}
 									</p>
 								</li>
@@ -707,10 +707,10 @@ const SwatKalamPage = () => {
 			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Culture of Swat Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The people of Kalam Swat Valley are known for their rich culture. Both men and women take part in the making of their hand-woven fabrics, embroidery, and carpets. These people are also blessed with wood carving talent; their furniture and strong wood are famous worldwide. They also specialize in producing uniquely designed ornamental jewelry.
 						</p>
 					</div>
@@ -721,10 +721,10 @@ const SwatKalamPage = () => {
 			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Economy of Kalam Swat Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The economy of Kalam Swat Valley is primarily based on agriculture, tourism, and small-scale industries. The valley produces yummy apples, apricots, and potatoes.
 						</p>
 					</div>
@@ -735,10 +735,10 @@ const SwatKalamPage = () => {
 			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Educational in Kalam Swat Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Several educational institutions in Kalam Swat Valley include primary and secondary schools, colleges, and universities. The University of Swat, located in the nearby city of Mingora, also serves the students of Kalam Swat Valley.
 						</p>
 					</div>
@@ -749,7 +749,7 @@ const SwatKalamPage = () => {
 			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
-						<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
 							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Kalam Swat</span>
 						</h2>
 					</div>
@@ -792,7 +792,7 @@ const SwatKalamPage = () => {
 			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
 					<div className="text-center mb-6">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							Frequently Asked Question
 						</h2>
 					</div>
@@ -830,14 +830,14 @@ const SwatKalamPage = () => {
 											className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${openFAQIndex === idx ? 'rotate-180' : ''}`}
 											style={{ color: secondaryBlack }}
 										/>
-										<span className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+										<span className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.4' }}>
 											{faq.question}
 										</span>
 									</span>
 								</button>
 								{openFAQIndex === idx && (
 									<div className="pb-3 pl-7">
-										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 											{faq.answer}
 										</p>
 									</div>
