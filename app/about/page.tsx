@@ -1587,7 +1587,7 @@ const AboutPage = () => {
 					
 					{/* Text Overlay */}
 					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Travel Visa</h2>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Approved to Explore</h2>
 						<p className="text-base md:text-lg mb-4">Hassle-free process</p>
 						<button
 							onClick={handleWhatsAppClick}
@@ -1647,7 +1647,7 @@ const AboutPage = () => {
 					
 					{/* Text Overlay */}
 					<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Comprehensive Tour Management</h2>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">All in One Tour Management</h2>
 						<p className="text-base md:text-lg mb-4">Expert Ground Handling</p>
 						<button
 							onClick={handleWhatsAppClick}
