@@ -761,7 +761,7 @@ const SwatKalamPage = () => {
 							'/images/swat.jpg',
 							'/images/swat.jpg',
 						].map((image, idx) => (
-							<div key={idx} className="relative flex-1 h-[500px] md:h-[600px] overflow-hidden">
+							<div key={idx} className="relative flex-1 h-[400px] md:h-[500px] overflow-hidden">
 								<Image 
 									src={image}
 									alt={`Activity ${idx + 1} in Kalam Swat`}
