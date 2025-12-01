@@ -3,16 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, Search } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
 
 const SwatKalamPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
-	const [searchForm, setSearchForm] = useState({
-		whenToGo: '',
-		whatToDo: '',
-		whereToGo: ''
-	});
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -139,50 +134,48 @@ const SwatKalamPage = () => {
 						<nav className="hidden lg:flex items-center gap-1">
 							<Link href="/" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>HOME</Link>
 							{/* PAKISTAN TOURS with Dropdown */}
-							<div className="relative group cursor-pointer">
-								<Link href="/#tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
-									<span className="flex items-center gap-1">
-										PAKISTAN TOURS
-										<ChevronRight className="w-4 h-4 rotate-90" />
-									</span>
+							<div className="relative group">
+								<Link href="/#tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
+									PAKISTAN TOURS
+									<ChevronRight className="w-4 h-4 rotate-90" />
 								</Link>
 								
 								{/* Dropdown Menu */}
-								<div className="absolute top-full left-0 mt-0 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
-									<div className="backdrop-blur-lg bg-white/95 border border-gray-200 shadow-2xl rounded-lg overflow-hidden mt-2">
-										<ul className="py-2">
-											<li className="border-b border-gray-200">
-												<Link href="/swat-kalam" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+								<div className="absolute top-full left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+									<div className="bg-white border border-gray-200 shadow-xl rounded-md overflow-hidden">
+										<ul className="py-1">
+											<li>
+												<Link href="/swat-kalam" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Swat Kalam Tour Packages
 												</Link>
 											</li>
-											<li className="border-b border-gray-200">
-												<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<li>
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Hunza Tour Packages
 												</Link>
 											</li>
-											<li className="border-b border-gray-200">
-												<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<li>
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Skardu Tour Packages
 												</Link>
 											</li>
-											<li className="border-b border-gray-200">
-												<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<li>
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Nathia Gali And Murree Tour Packages
 												</Link>
 											</li>
-											<li className="border-b border-gray-200">
-												<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<li>
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Neelum Valley Azad Kashmir Tour Packages
 												</Link>
 											</li>
-											<li className="border-b border-gray-200">
-												<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<li>
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Kumrat Valley Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/#tours" className="block px-4 py-3 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Naran Kaghan Tour Packages
 												</Link>
 											</li>
@@ -317,89 +310,18 @@ const SwatKalamPage = () => {
 				{/* Main Content */}
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<div className="text-center px-4">
-						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
-							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
+						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+							<span className="hero-text-reveal hero-text-delay-1" 
+								style={{ 
+									color: primaryOrange, 
+									display: 'inline-block'
+								}}>
 								Swat Kalam Tour Packages
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
 							Discover the breathtaking beauty of Swat Valley and Kalam - Switzerland of Pakistan with our carefully crafted tour packages.
 						</p>
-						
-						{/* Search Form */}
-						<div className="mt-8 hero-text-reveal hero-text-delay-3 max-w-4xl mx-auto">
-							<div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
-								{/* When to go */}
-								<div className="relative flex-1 w-full sm:w-auto min-w-[200px]">
-									<select
-										value={searchForm.whenToGo}
-										onChange={(e) => setSearchForm({...searchForm, whenToGo: e.target.value})}
-										className="w-full px-4 py-3 rounded-lg text-sm font-medium appearance-none bg-white border-2 border-transparent focus:border-[#f99621] focus:outline-none transition-all cursor-pointer shadow-lg"
-										style={{ color: secondaryBlack }}
-									>
-										<option value="">When to go?</option>
-										<option value="spring">Spring (March - May)</option>
-										<option value="summer">Summer (June - August)</option>
-										<option value="autumn">Autumn (September - November)</option>
-										<option value="winter">Winter (December - February)</option>
-									</select>
-									<ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none" style={{ color: `${secondaryBlack}60` }} />
-								</div>
-
-								{/* What to do */}
-								<div className="relative flex-1 w-full sm:w-auto min-w-[200px]">
-									<select
-										value={searchForm.whatToDo}
-										onChange={(e) => setSearchForm({...searchForm, whatToDo: e.target.value})}
-										className="w-full px-4 py-3 rounded-lg text-sm font-medium appearance-none bg-white border-2 border-transparent focus:border-[#f99621] focus:outline-none transition-all cursor-pointer shadow-lg"
-										style={{ color: secondaryBlack }}
-									>
-										<option value="">What to do?</option>
-										<option value="culture">Cultural Tours</option>
-										<option value="adventure">Adventure Tours</option>
-										<option value="family">Family Tours</option>
-										<option value="honeymoon">Honeymoon Trips</option>
-										<option value="group">Group Tours</option>
-										<option value="religious">Religious Tours</option>
-									</select>
-									<ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none" style={{ color: `${secondaryBlack}60` }} />
-								</div>
-
-								{/* Where to go */}
-								<div className="relative flex-1 w-full sm:w-auto min-w-[200px]">
-									<select
-										value={searchForm.whereToGo}
-										onChange={(e) => setSearchForm({...searchForm, whereToGo: e.target.value})}
-										className="w-full px-4 py-3 rounded-lg text-sm font-medium appearance-none bg-white border-2 border-transparent focus:border-[#f99621] focus:outline-none transition-all cursor-pointer shadow-lg"
-										style={{ color: secondaryBlack }}
-									>
-										<option value="">Where to go?</option>
-										<option value="swat">Swat Valley</option>
-										<option value="kalam">Kalam</option>
-										<option value="malam-jabba">Malam Jabba</option>
-										<option value="madyan">Madyan</option>
-										<option value="bahrain">Bahrain</option>
-									</select>
-									<ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 pointer-events-none" style={{ color: `${secondaryBlack}60` }} />
-								</div>
-
-								{/* Search Button */}
-								<button
-									onClick={() => {
-										console.log('Search:', searchForm);
-										handleWhatsAppClick();
-									}}
-									className="px-6 py-3 rounded-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center gap-2 text-base"
-									style={{ 
-										backgroundColor: primaryOrange, 
-										color: secondaryBlack
-									}}
-								>
-									<Search className="w-5 h-5" />
-									<span>Search</span>
-								</button>
-							</div>
-						</div>
 					</div>
 				</div>
 			</section>
