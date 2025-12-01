@@ -326,42 +326,67 @@ const SwatKalamPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== A GLIMPSE INTO THE UNSEEN REALM ====================== */}
+			{/* ====================== CUSTOMIZED SWAT TOUR PACKAGES 2025 ====================== */}
 			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-8">
-						<h2 className="text-sm md:text-base font-semibold mb-6" style={{ color: `${secondaryBlack}80` }}>
-							A GLIMPSE INTO THE UNSEEN REALM
+					<div className="max-w-4xl mx-auto mb-12">
+						<h2 className="text-3xl md:text-4xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
+							Customized Swat Tour Packages 2025
 						</h2>
+						<p className="text-base md:text-lg leading-relaxed text-center" style={{ color: `${secondaryBlack}90` }}>
+							These Kalam Swat Tour Packages can be custom-built for you to have the experience you expect from us as professional Tour Operators in Pakistan. You can choose from the list below or customize your Swat Kalam Tours according to your requirements.
+						</p>
 					</div>
 					
-					{/* 3x3 Grid of Thumbnails */}
-					<div className="grid grid-cols-3 gap-4 max-w-5xl mx-auto">
+					{/* 8 Tour Packages Grid */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
 						{[
-							{ title: 'ATTABAD LAKE', image: '/images/attabad lake.jpg' },
-							{ title: 'HUNZA VALLEY', image: '/images/Hunza.jpg' },
-							{ title: 'NEELUM VALLEY', image: '/images/neelum valley.jpg' },
-							{ title: 'KALASH VALLEY', image: '/images/chitral.jpg' },
-							{ title: 'MAKRAN COASTAL HIGHWAY', image: '/images/Kund Malir.jpg' },
-							{ title: 'SWAT VALLEY', image: '/images/swat.jpg' },
-							{ title: 'SKARDU VALLEY', image: '/images/skardu 2.jpg' },
-							{ title: 'NARAN KAGHAN', image: '/images/naran and kaghan.jpg' },
-							{ title: 'MURREE & NATHIA GALI', image: '/images/murree and nathia gali.jpg' },
+							{ 
+								title: '4 Days Kalam, Mahodand Lake, Malam Jabba, and Green Top Tour',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '3 Days Kalam, Mahudand Lake, and Malam Jabba Tour',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '5 Days Relaxed Kalam, Mahodand Lake, Malam Jabba, Green Top, and Blue Water Tour',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '5 Days Kalam, Mahudand Lake, Malam Jabba, and Desan Top Tour',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '7 Days Malam Jabba, Kalam, and Nathia Gali Tour',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '7 Days Malam Jabba, Kalam, Swat to Kumrat Valley Tour',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '10 Days Malam Jabba, Kalam, and Hunza Valley Gilgit Tour',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '2 Days Malam Jabba Swat Tour',
+								image: '/images/swat.jpg'
+							},
 						].map((item, idx) => (
-							<div key={idx} className="relative group cursor-pointer">
-								<div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+							<div key={idx} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+								<div className="relative w-full aspect-[4/3] overflow-hidden">
 									<Image 
 										src={item.image}
 										alt={item.title}
 										fill
-										className="object-cover group-hover:scale-110 transition-transform duration-500"
+										className="object-cover hover:scale-110 transition-transform duration-500"
 									/>
-									<div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-all"></div>
-									<div className="absolute bottom-0 left-0 right-0 p-2">
-										<p className="text-white text-xs font-bold text-center" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
-											{item.title}
-										</p>
-									</div>
+								</div>
+								<div className="p-4">
+									<p className="text-sm font-medium leading-relaxed" style={{ color: secondaryBlack }}>
+										{item.title}
+									</p>
 								</div>
 							</div>
 						))}
