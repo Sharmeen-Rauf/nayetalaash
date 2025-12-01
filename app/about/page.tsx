@@ -72,18 +72,18 @@ const AboutPage = () => {
 
 	// Curated Trip Experiences slider images
 	const experiencesMainImages = [
-		'/images/Curated Trip Experiences.jpg',
+		'/images/curatedfirst.jpg',
 		'/images/Curated Trip Experiences2.jpg',
-		'/images/Curated Trip Experiences3.jpg',
-		'/images/Curated Trip Experiences4.jpg',
+		'/images/curatedthird.jpg',
+		'/images/curatddforth.jpg',
 		'/images/Curated Trip Experiences 5.jpg',
 	];
 
 	const experiencesThumbnails = [
-		'/images/Curated Trip Experiences.jpg',
+		'/images/curatedfirst.jpg',
 		'/images/Curated Trip Experiences2.jpg',
-		'/images/Curated Trip Experiences3.jpg',
-		'/images/Curated Trip Experiences4.jpg',
+		'/images/curatedthird.jpg',
+		'/images/curatddforth.jpg',
 		'/images/Curated Trip Experiences 5.jpg',
 	];
 
