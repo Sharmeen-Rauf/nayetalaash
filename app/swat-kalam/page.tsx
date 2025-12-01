@@ -341,7 +341,7 @@ const SwatKalamPage = () => {
 					</div>
 					
 					{/* 8 Tour Packages Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-4 md:px-8">
 						{[
 							{ 
 								title: '4 Days Kalam, Mahodand Lake, Malam Jabba, and Green Top Tour',
@@ -377,7 +377,7 @@ const SwatKalamPage = () => {
 							},
 						].map((item, idx) => (
 							<div key={idx} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-								<div className="relative w-full aspect-[16/9] overflow-hidden">
+								<div className="relative w-full aspect-[2/1] overflow-hidden">
 									<Image 
 										src={item.image}
 										alt={item.title}
@@ -385,7 +385,7 @@ const SwatKalamPage = () => {
 										className="object-cover hover:scale-110 transition-transform duration-500"
 									/>
 								</div>
-								<div className="p-4">
+								<div className="p-3">
 									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 										{item.title}
 									</p>
