@@ -381,7 +381,7 @@ const ContactPage = () => {
 												className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#f99621] focus:border-transparent appearance-none bg-white text-[#211f20]"
 												required
 											>
-												<option value="">Service of interest</option>
+												<option value="">Tour Categories</option>
 												<option value="custom-tours">Custom Tour Packages</option>
 												<option value="family-tours">Family Tour Packages</option>
 												<option value="honeymoon">Honeymoon Trips</option>
