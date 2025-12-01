@@ -507,112 +507,151 @@ const SwatKalamPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== PAKISTAN'S ENCHANTING NATURAL WONDERS ====================== */}
+			{/* ====================== MOST POPULAR DESTINATIONS AND ATTRACTIONS IN SWAT VALLEY ====================== */}
 			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-12">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							PAKISTAN&apos;S ENCHANTING NATURAL WONDERS
+						<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							Most Popular Destinations and Attractions to Visit in Swat Valley:
 						</h2>
+						<p className="text-base md:text-lg leading-relaxed max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90` }}>
+							Swat Valley is blessed with beautiful valleys, waterfalls, and lakes. We have created a list of some famous tourist places to visit in Swat Kalam and a little Swat Kalam Valley travel guide.
+						</p>
 					</div>
 					
-					{/* Alternating Image/Text Layout */}
+					{/* 18 Destinations with Alternating Layout */}
 					<div className="space-y-12">
 						{[
 							{ 
-								title: 'CONQUER THE WILD SINDH', 
-								image: '/images/Kund Malir.jpg',
-								description: 'Explore the rugged and wild beauty of Sindh with its vast deserts, ancient archaeological sites, and vibrant culture that dates back thousands of years.',
-								imageLeft: true
-							},
-							{ 
-								title: 'ATTABAD LAKE', 
-								image: '/images/attabad lake.jpg',
-								description: 'Marvel at the stunning turquoise waters of Attabad Lake, one of the most beautiful lakes in Pakistan, surrounded by majestic mountains.',
-								imageLeft: false
-							},
-							{ 
-								title: 'MAKRAN COASTAL HIGHWAY', 
-								image: '/images/Kund Malir.jpg',
-								description: 'Journey along the breathtaking Makran Coastal Highway with its pristine beaches, dramatic cliffs, and stunning ocean views.',
-								imageLeft: true
-							},
-							{ 
-								title: 'KALASH VALLEY', 
-								image: '/images/chitral.jpg',
-								description: 'Discover the unique culture and traditions of the Kalash people in their beautiful mountain valley, a UNESCO World Heritage candidate.',
-								imageLeft: false
-							},
-							{ 
-								title: 'NEELUM VALLEY', 
-								image: '/images/neelum valley.jpg',
-								description: 'Experience the pristine beauty of Neelum Valley with its crystal-clear rivers, lush green meadows, and snow-capped peaks.',
-								imageLeft: true
-							},
-							{ 
-								title: 'SWAT VALLEY', 
+								title: 'Kalam Valley', 
 								image: '/images/swat.jpg',
-								description: 'Explore the Switzerland of Pakistan, known for its beautiful valleys, green meadows, and rich cultural heritage.',
-								imageLeft: false
-							},
-							{ 
-								title: 'SKARDU VALLEY', 
-								image: '/images/skardu 2.jpg',
-								description: 'Visit the gateway to K2 and home to some of the world\'s highest peaks, glacial lakes, and breathtaking landscapes.',
+								description: 'Kalam Valley, meaning "Blue Water" in Pashto, is located in the Hindukush mountain range. It serves as the gateway to the upper valleys of Swat and Dir, offering excellent views of Falaksar Peak. The valley provides comfortable accommodations, delicious food, and welcomes tourists in both summer and winter.',
 								imageLeft: true
 							},
 							{ 
-								title: 'NARAN KAGHAN', 
-								image: '/images/naran and kaghan.jpg',
-								description: 'Discover the alpine beauty of Naran and Kaghan with their stunning lakes, waterfalls, and mountain vistas.',
+								title: 'Malam Jabba', 
+								image: '/images/swat.jpg',
+								description: 'Malam Jabba is located northwest of Mingora City, about 1-2 hours journey from Mingora. It is a hilltop skiing resort that offers winter adventure sports including skiing, chair lift, and zip lining when the slope is snow-covered. Hotels are available for accommodation.',
 								imageLeft: false
 							},
 							{ 
-								title: 'MURREE & NATHIA GALI', 
-								image: '/images/murree and nathia gali.jpg',
-								description: 'Escape to these charming hill stations offering cool weather, scenic views, and colonial-era architecture.',
+								title: 'Ushu Forest (Ushu Valley)', 
+								image: '/images/swat.jpg',
+								description: 'Ushu Forest is located 8 km northeast of Kalam. It features a dense Deodar forest and is easily accessible without a vehicle. Along the way, you can find tuck shops, hotels, campsites, and restaurants.',
 								imageLeft: true
 							},
-						].map((wonder, idx) => (
-							<div key={idx} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${idx % 2 === 0 ? '' : 'lg:flex-row-reverse'}`}>
+							{ 
+								title: 'Matiltan Waterfall and Chashma-e-Shifa', 
+								image: '/images/swat.jpg',
+								description: 'The Ushu road leads to Matiltan Village at 9,000 ft. The main attractions include Matiltan Waterfall and Kalam Glacier (seasonal). Hotels and restaurants are available. Chashma-e-Shifa, meaning "Healing Fountain," is believed to have healing properties due to minerals or local stories.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Mahudand Lake', 
+								image: '/images/swat.jpg',
+								description: 'Mahudand Lake is a glacial lake formed by melting waters from the Hindukush Range. It appears broader, denser, and calmer than a river. The lake is popular for summer tourism but closes in winter due to heavy snowfall and the Kalam Glacier blocking the road. Tuck shops, restaurants, and meadows for camping are available.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Saifullah Lake', 
+								image: '/images/swat.jpg',
+								description: 'Saifullah Lake is further into Ushu Valley, approximately 30-45 minutes from Mahudand. It is accessible by foot or 4x4 vehicle.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Desan Meadows', 
+								image: '/images/swat.jpg',
+								description: 'Desan Meadows is located near Kalam Valley and is accessible by jeep from Kalam or Utror Valley. It features lush green meadows and heavenly views of surrounding valleys and lakes such as Godar Lake, Dararo Lake, and Zahro Lake.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Green Top', 
+								image: '/images/swat.jpg',
+								description: 'Green Top, also known as "Kalam View Point," is popular for mesmerizing views. It is accessible by jeeps or hiking. A small village called Boyun Village is located at the top, known for its lush green surroundings in summer.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Utror Valley', 
+								image: '/images/swat.jpg',
+								description: 'Utror Valley (also Utror or Aror) serves as a center point or base camp for exploring various less-explored valleys like Swat KPK, Gabral Valley, Kumrat Valley, Dhan Valley, and Kalam Valley. Nearby lakes include Kundol Lake, Spinkhwar (Spinkhor) Lake, and the twin lakes of Pari and Paristan.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Gabral Valley', 
+								image: '/images/swat.jpg',
+								description: 'Gabral Valley is located northwest of Swat Valley and Utror Valley, touching the foothills of the Himalayas. Going deep into the valley leads to Chota Banda Meadows and Shahi Bagh. Gabral Valley is another heaven for tourists.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Blue Water Kalam Swat', 
+								image: '/images/swat.jpg',
+								description: 'Blue Water is approximately 10-15 km from Kalam-Bazaar, accessible by jeep, taking about 2 hours from Kalam. It is a summer destination that gained fame after the former Prime Minister of Pakistan, Mr. Imran Khan, visited the place.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Badgoi Pass', 
+								image: '/images/swat.jpg',
+								description: 'Badgoi is a mountain pass between Kalam and Upper Dir District, leading to Thal in Upper Dir, located on the Utror-Dir road. Hawa ka Darra and Dasht-e-Lalla top are "heavenly places" on this road, accessible by jeep from Kalam, Kumrat, or Thal, taking 4-5 hours.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Shangla Top', 
+								image: '/images/swat.jpg',
+								description: 'Shangla Top is a breathtaking hilltop destination in Swat Valley, approximately 20 kilometers from Khwazakhela City. It is located on the N90 Highway, which connects Kohistan with Swat Valley. Economical and luxury hotels are available. Spring and Summer are the best time to visit.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Khwazakhela to Besham Route', 
+								image: '/images/swat.jpg',
+								description: 'The N90 Highway connects Swat with Kohistan, starting from Khwazakhela City in Swat and ending at Besham City in Kohistan. The highway is approximately 65-70 km long and is mostly used by traders and tourists.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Bahrain', 
+								image: '/images/swat.jpg',
+								description: 'Bahrain is located on the Chakdara Kalam highway at the confluence of the Daral and Swat Rivers. It was a beautiful tourist destination with hotels and a market, but was severely affected by floods in 2022. Daral and Saidgai Lakes can be reached from Bahrain.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Swat River', 
+								image: '/images/swat.jpg',
+								description: 'The biggest tributaries of the Swat River are the Gabral, Utror, and Ushu Rivers, which are formed by glacial waters of the Hindukush Mountains. The river travels throughout the Swat Valley, joins the Panjkora River, and finally flows into Peshawar.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Swat Expressway', 
+								image: '/images/swat.jpg',
+								description: 'The Swat Highway (also known as N95 Highway or Chakdara-Kalam Highway) begins at Chakdara City of Swat and ends at Kalam. It was completed in 2019 and has played a significant role in boosting tourism.',
+								imageLeft: true
+							},
+							{ 
+								title: 'White Palace Swat', 
+								image: '/images/swat.jpg',
+								description: 'The White Palace was built in 1940 by the ruler (Wali) of Swat Valley at Marghazar, about 13 kilometers from Saidu Sharif (the capital of Swat). The palace is now a hotel that welcomes guests annually.',
+								imageLeft: false
+							},
+						].map((destination, idx) => (
+							<div key={idx} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center`}>
 								{/* Image */}
-								<div className={`${wonder.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
-									<div className="relative h-64 lg:h-96 rounded-lg overflow-hidden">
+								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+									<div className="relative h-64 lg:h-96 overflow-hidden">
 										<Image 
-											src={wonder.image}
-											alt={wonder.title}
+											src={destination.image}
+											alt={destination.title}
 											fill
-											className="object-cover hover:scale-110 transition-transform duration-500"
+											className="object-cover"
 										/>
 									</div>
 								</div>
 								
 								{/* Text Content */}
-								<div className={`${wonder.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<h3 className="text-2xl md:text-3xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
-										{wonder.title}
+										{destination.title}
 									</h3>
-									<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
-										{wonder.description}
+									<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+										{destination.description}
 									</p>
-									<button 
-										className="px-8 py-3 font-bold rounded-lg border-2 transition-all transform hover:scale-105" 
-										style={{ 
-											backgroundColor: 'white', 
-											color: secondaryBlack, 
-											borderColor: secondaryBlack 
-										}}
-										onMouseEnter={(e) => { 
-											e.currentTarget.style.backgroundColor = secondaryBlack; 
-											e.currentTarget.style.color = 'white'; 
-										}}
-										onMouseLeave={(e) => { 
-											e.currentTarget.style.backgroundColor = 'white'; 
-											e.currentTarget.style.color = secondaryBlack; 
-										}}
-									>
-										READ MORE
-									</button>
 								</div>
 							</div>
 						))}
