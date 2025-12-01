@@ -8,6 +8,7 @@ import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, Chevr
 const SwatKalamPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
+	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -768,6 +769,68 @@ const SwatKalamPage = () => {
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
+			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
+					<div className="text-center mb-6">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							Frequently Asked Question
+						</h2>
+					</div>
+					
+					<div className="space-y-0">
+						{[
+							{
+								question: 'What is the best time to visit Swat and Kalam?',
+								answer: 'The best time to visit Swat and Kalam is from April to October. Summer months (May-September) offer pleasant weather, lush green valleys, and accessible tourist spots. Winter (December-February) is ideal for snowfall and skiing at Malam Jabba.'
+							},
+							{
+								question: 'How do I book a Swat Kalam tour package?',
+								answer: 'You can book a Swat Kalam tour package by contacting us via WhatsApp (+92 331 438251), email (info@nayitalaash.com), or by filling out the contact form on our website. We offer both customized and public group tour packages.'
+							},
+							{
+								question: 'What should I pack for a trip to Swat Kalam?',
+								answer: 'Pack warm clothes (especially for evenings), comfortable hiking shoes, rain gear, sunscreen, sunglasses, and a camera. For winter visits, bring heavy jackets, gloves, and winter boots. Also carry basic medicines and personal toiletries.'
+							},
+							{
+								question: 'Are hotels and accommodations available in Swat and Kalam?',
+								answer: 'Yes, there are various hotels, guest houses, and resorts available in Swat and Kalam ranging from budget to luxury options. We help arrange accommodation based on your preferences and budget. Advance booking is recommended during peak season.'
+							},
+							{
+								question: 'Is it safe to travel to Swat and Kalam?',
+								answer: 'Yes, Swat and Kalam are safe destinations for tourists. The region has seen significant improvements in security. We ensure safe travel routes, verified accommodations, and experienced local guides. We also provide 24/7 support during your trip.'
+							},
+						].map((faq, idx) => (
+							<div key={idx} className="border-b border-gray-300">
+								<button
+									onClick={() => setOpenFAQIndex(openFAQIndex === idx ? null : idx)}
+									className="w-full flex items-center justify-between py-3 text-left"
+								>
+									<span className="flex items-center gap-3 flex-1">
+										<ChevronDown 
+											className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${openFAQIndex === idx ? 'rotate-180' : ''}`}
+											style={{ color: secondaryBlack }}
+										/>
+										<span className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+											{faq.question}
+										</span>
+									</span>
+								</button>
+								{openFAQIndex === idx && (
+									<div className="pb-3 pl-7">
+										<div className="bg-gray-100 border border-gray-300 rounded p-3">
+											<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+												{faq.answer}
+											</p>
+										</div>
+									</div>
+								)}
 							</div>
 						))}
 					</div>
