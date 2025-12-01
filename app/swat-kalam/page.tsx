@@ -743,52 +743,33 @@ const SwatKalamPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== WHY TRAVEL WITH US? ====================== */}
-			<section className="py-6 md:py-8 bg-gray-100 relative overflow-x-hidden">
+			{/* ====================== THINGS TO DO IN KALAM SWAT ====================== */}
+			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-						{/* Left: Text Content */}
-						<div>
-							<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								WHY TRAVEL WITH US?
-							</h2>
-							<p className="leading-normal mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Our people are our strength. We know the mountains, the roads, the people and we help you feel the soul of every destination.
-							</p>
-							<ul className="space-y-2 mb-6">
-								{[
-									'Experienced Tour Leaders',
-									'Local Guides & Cultural Experts',
-									'Safety & Trek Specialists',
-									'Professional Drivers',
-									'Travel Designers',
-								].map((item, idx) => (
-									<li key={idx} className="flex items-center gap-3">
-										<div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-										<span className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-											{item}
-										</span>
-									</li>
-								))}
-							</ul>
-						</div>
-
-						{/* Right: Image/Video */}
-						<div>
-							<div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden">
-								<video 
-									src="/images/1126(1).mp4"
-									controls
-									autoPlay
-									muted
-									loop
-									playsInline
-									className="absolute inset-0 w-full h-full object-cover"
-								>
-									Your browser does not support the video tag.
-								</video>
+					<div className="text-center mb-8">
+						<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Kalam Swat</span>
+						</h2>
+					</div>
+					
+					{/* 5 Images Horizontal Collage */}
+					<div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-7xl mx-auto">
+						{[
+							'/images/swat.jpg',
+							'/images/swat.jpg',
+							'/images/swat.jpg',
+							'/images/swat.jpg',
+							'/images/swat.jpg',
+						].map((image, idx) => (
+							<div key={idx} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+								<Image 
+									src={image}
+									alt={`Activity ${idx + 1} in Kalam Swat`}
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-500"
+								/>
 							</div>
-						</div>
+						))}
 					</div>
 				</div>
 			</section>
