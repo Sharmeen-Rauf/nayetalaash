@@ -649,7 +649,7 @@ const SwatKalamPage = () => {
 									<h3 className="text-2xl md:text-3xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 										{destination.title}
 									</h3>
-									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="leading-normal ml-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 										{destination.description}
 									</p>
 								</div>
