@@ -752,8 +752,8 @@ const SwatKalamPage = () => {
 						</h2>
 					</div>
 					
-					{/* 5 Images Horizontal Collage */}
-					<div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-7xl mx-auto">
+					{/* 5 Images Vertical Collage - Attached */}
+					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden">
 						{[
 							'/images/swat.jpg',
 							'/images/swat.jpg',
@@ -761,7 +761,7 @@ const SwatKalamPage = () => {
 							'/images/swat.jpg',
 							'/images/swat.jpg',
 						].map((image, idx) => (
-							<div key={idx} className="relative aspect-[4/3] overflow-hidden rounded-lg">
+							<div key={idx} className="relative flex-1 h-[500px] md:h-[600px] overflow-hidden">
 								<Image 
 									src={image}
 									alt={`Activity ${idx + 1} in Kalam Swat`}
