@@ -394,58 +394,115 @@ const SwatKalamPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== DISCOVER PAKISTAN ====================== */}
+			{/* ====================== PUBLIC SWAT KALAM TOUR PACKAGES 2025 ====================== */}
 			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<div className="text-center mb-8">
-							<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								DISCOVER PAKISTAN
-							</h2>
-						</div>
-						
-						<p className="text-base md:text-lg leading-relaxed mb-6 text-center" style={{ color: `${secondaryBlack}90` }}>
-							Pakistan is a land of unmatched beauty, culture, and hospitality. With its mix of vibrant cities, serene valleys, vast deserts, and unspoiled coastlines, the country invites travelers to experience its rich traditions, diverse cuisines, and breathtaking landscapes.
+					{/* Main Heading and Intro */}
+					<div className="max-w-4xl mx-auto mb-12">
+						<h2 className="text-3xl md:text-4xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
+							Public Swat Kalam Tour Packages 2025
+						</h2>
+						<p className="text-base md:text-lg leading-relaxed text-center" style={{ color: `${secondaryBlack}90` }}>
+							Nayi Talaash offers these swat tour packages to Swat Kalam Valley throughout the year. You can join them as per your schedule, individually or with your group. Here are the Swat Kalam Valley Tours that you can choose from.
 						</p>
-						
-						<ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8 max-w-2xl mx-auto">
-							{[
-								'Trekking & Hiking',
-								'Camping & Bonfire',
-								'Marine Adventures',
-								'Desert Safaris',
-								'Food Tours',
-								'Tribal Experiences',
-							].map((item, idx) => (
-								<li key={idx} className="flex items-center gap-2">
-									<div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: primaryOrange }}></div>
-									<span className="text-base" style={{ color: `${secondaryBlack}90` }}>
-										{item}
-									</span>
-								</li>
-							))}
-						</ul>
-						
-						<div className="text-center">
-							<button 
-								className="px-8 py-3 font-bold rounded-lg border-2 transition-all transform hover:scale-105" 
-								style={{ 
-									backgroundColor: 'white', 
-									color: secondaryBlack, 
-									borderColor: secondaryBlack 
-								}}
-								onMouseEnter={(e) => { 
-									e.currentTarget.style.backgroundColor = secondaryBlack; 
-									e.currentTarget.style.color = 'white'; 
-								}}
-								onMouseLeave={(e) => { 
-									e.currentTarget.style.backgroundColor = 'white'; 
-									e.currentTarget.style.color = secondaryBlack; 
-								}}
-							>
-								READ MORE
-							</button>
+					</div>
+
+					{/* Two Tour Package Images */}
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative w-full aspect-[4/3] overflow-hidden">
+								<Image 
+									src="/images/swat.jpg"
+									alt="3 Days Malam Jabba, Kalam Swat Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-500"
+								/>
+							</div>
+							<div className="p-4">
+								<p className="text-base font-medium leading-relaxed" style={{ color: secondaryBlack }}>
+									3 Days Malam Jabba, Kalam Swat Tour
+								</p>
+							</div>
 						</div>
+
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative w-full aspect-[4/3] overflow-hidden">
+								<Image 
+									src="/images/swat.jpg"
+									alt="2 Days Malam Jabba Swat Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-500"
+								/>
+							</div>
+							<div className="p-4">
+								<p className="text-base font-medium leading-relaxed" style={{ color: secondaryBlack }}>
+									2 Days Malam Jabba Swat Tour
+								</p>
+							</div>
+						</div>
+					</div>
+
+					{/* Client Category Section */}
+					<div className="max-w-4xl mx-auto mb-12">
+						<h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							Client Category of Customized Swat Tours:
+						</h3>
+						<ul className="space-y-4">
+							<li className="flex items-start gap-3">
+								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									Swat Tour Packages / Couple Tours / Honeymoon Tour are designed to help the newlyweds cherish the new life together with all the luxury and solitude, surrounded by the beautiful nature.
+								</p>
+							</li>
+							<li className="flex items-start gap-3">
+								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									Swat Family Tour Packages are designed to create a fun, luxurious, and secure environment for your loved ones to intensify the blood bond and acquire memories for a lifetime.
+								</p>
+							</li>
+							<li className="flex items-start gap-3">
+								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									Swat Students Tours / Friends Group Tour Packages are designed to have all the fun engaging activities and games for laughing together, dancing together, and more importantly exploring the adventurous destinations together without the hassle of planning all the bits of the tour. You only have to decide what to pack for that memorable tour with your besties.
+								</p>
+							</li>
+							<li className="flex items-start gap-3">
+								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									Swat Corporate Groups Tour Packages are designed to create an environment for the employees to develop a closer connection with each other, enhance their potential for team building, and entertain themselves with nature outside their usual office environment.
+								</p>
+							</li>
+						</ul>
+					</div>
+
+					{/* Departure Cities Section */}
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							We have
+						</h3>
+						<ul className="space-y-3 mb-6">
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									Swat Tour Packages from Lahore
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									Swat Tour Packages from Karachi
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									Swat Tour Packages from Islamabad
+								</p>
+							</li>
+						</ul>
+						<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							You can also customize these tours from other cities in Pakistan.
+						</p>
 					</div>
 				</div>
 			</section>
