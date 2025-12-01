@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ArrowRight, ChevronDown, MapPin, MessageCircle, CheckCircle2 } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ArrowRight, ChevronDown, MapPin, MessageCircle, Check } from 'lucide-react';
 
 const ContactPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -315,8 +315,8 @@ const ContactPage = () => {
 										'Trusted travel support across Pakistan'
 									].map((item, idx) => (
 										<li key={idx} className="flex items-start gap-3">
-											<div className="w-6 h-6 rounded-full flex-shrink-0 mt-0.5 flex items-center justify-center" style={{ backgroundColor: `${primaryOrange}20` }}>
-												<CheckCircle2 className="w-5 h-5" style={{ color: primaryOrange }} />
+											<div className="w-5 h-5 rounded-full flex-shrink-0 mt-0.5 flex items-center justify-center" style={{ backgroundColor: primaryOrange }}>
+												<Check className="w-3 h-3 text-white" strokeWidth={3} />
 											</div>
 											<span className="text-base leading-relaxed" style={{ color: '#6b7280' }}>{item}</span>
 										</li>
@@ -494,8 +494,11 @@ const ContactPage = () => {
 
 						{/* Right: Content */}
 						<div className="order-1 lg:order-2">
+							<h3 className="font-autography text-3xl md:text-4xl font-bold mb-2" style={{ color: primaryOrange }}>
+								Head Office
+							</h3>
 							<h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Karachi, Pakistan<br />Head Office
+								Karachi, Pakistan
 							</h3>
 							<p className="text-base mb-4 leading-relaxed" style={{ color: '#6b7280' }}>
 								Located in the heart of the city, our head office in PECHS Block 6 serves as the center of all operations at Nayi Talaash. This is where our travel experts plan routes, design tour experiences and assist travelers from all across Pakistan.
