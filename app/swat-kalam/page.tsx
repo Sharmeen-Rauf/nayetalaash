@@ -633,59 +633,27 @@ const SwatKalamPage = () => {
 								imageLeft: false
 							},
 						].map((destination, idx) => (
-							<div key={idx} className="grid grid-cols-1 md:grid-cols-2 gap-2">
-								{/* Column 1 */}
-								<div className="w-full">
-									{destination.imageLeft ? (
-										/* Image on Left Column */
-										<div className="w-full">
-											<div className="relative h-40 lg:h-56 w-full overflow-hidden">
-												<Image 
-													src={destination.image}
-													alt={destination.title}
-													fill
-													className="object-cover"
-												/>
-											</div>
-										</div>
-									) : (
-										/* Text on Left Column */
-										<div className="w-full">
-											<h3 className="text-xl md:text-2xl font-bold mb-3 capitalize text-left" style={{ color: secondaryBlack }}>
-												{destination.title}
-											</h3>
-											<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-												{destination.description}
-											</p>
-										</div>
-									)}
+							<div key={idx} className={`grid grid-cols-1 lg:grid-cols-2 gap-2 items-center`}>
+								{/* Image */}
+								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'} ${idx % 2 === 0 ? 'lg:ml-8' : 'lg:mr-8'}`}>
+									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden">
+										<Image 
+											src={destination.image}
+											alt={destination.title}
+											fill
+											className="object-cover"
+										/>
+									</div>
 								</div>
 								
-								{/* Column 2 */}
-								<div className="w-full">
-									{destination.imageLeft ? (
-										/* Text on Right Column */
-										<div className="w-full">
-											<h3 className="text-xl md:text-2xl font-bold mb-3 capitalize text-right" style={{ color: secondaryBlack }}>
-												{destination.title}
-											</h3>
-											<p className="leading-normal text-right" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-												{destination.description}
-											</p>
-										</div>
-									) : (
-										/* Image on Right Column */
-										<div className="w-full">
-											<div className="relative h-40 lg:h-56 w-full overflow-hidden">
-												<Image 
-													src={destination.image}
-													alt={destination.title}
-													fill
-													className="object-cover"
-												/>
-											</div>
-										</div>
-									)}
+								{/* Text Content */}
+								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+									<h3 className={`text-xl md:text-2xl font-bold mb-3 capitalize ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
+										{destination.title}
+									</h3>
+									<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+										{destination.description}
+									</p>
 								</div>
 							</div>
 						))}
