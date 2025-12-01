@@ -327,13 +327,13 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== CUSTOMIZED SWAT TOUR PACKAGES 2025 ====================== */}
-			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto mb-12">
-						<h2 className="text-3xl md:text-4xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
+					<div className="max-w-4xl mx-auto mb-8">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
 							Customized Swat Tour Packages 2025
 						</h2>
-						<p className="text-base md:text-lg leading-relaxed text-center" style={{ color: `${secondaryBlack}90` }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							These Kalam Swat Tour Packages can be custom-built for you to have the experience you expect from us as professional Tour Operators in Pakistan. You can choose from the list below or customize your Swat Kalam Tours according to your requirements.
 						</p>
 					</div>
@@ -384,7 +384,7 @@ const SwatKalamPage = () => {
 									/>
 								</div>
 								<div className="p-4">
-									<p className="text-sm font-medium leading-relaxed" style={{ color: secondaryBlack }}>
+									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 										{item.title}
 									</p>
 								</div>
@@ -395,14 +395,14 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== PUBLIC SWAT KALAM TOUR PACKAGES 2025 ====================== */}
-			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					{/* Main Heading and Intro */}
-					<div className="max-w-4xl mx-auto mb-12">
-						<h2 className="text-3xl md:text-4xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
+					<div className="max-w-4xl mx-auto mb-8">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
 							Public Swat Kalam Tour Packages 2025
 						</h2>
-						<p className="text-base md:text-lg leading-relaxed text-center" style={{ color: `${secondaryBlack}90` }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Nayi Talaash offers these swat tour packages to Swat Kalam Valley throughout the year. You can join them as per your schedule, individually or with your group. Here are the Swat Kalam Valley Tours that you can choose from.
 						</p>
 					</div>
@@ -419,7 +419,7 @@ const SwatKalamPage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="text-base font-medium leading-relaxed" style={{ color: secondaryBlack }}>
+								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 									3 Days Malam Jabba, Kalam Swat Tour
 								</p>
 							</div>
@@ -435,7 +435,7 @@ const SwatKalamPage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="text-base font-medium leading-relaxed" style={{ color: secondaryBlack }}>
+								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 									2 Days Malam Jabba Swat Tour
 								</p>
 							</div>
@@ -443,32 +443,32 @@ const SwatKalamPage = () => {
 					</div>
 
 					{/* Client Category Section */}
-					<div className="max-w-4xl mx-auto mb-12">
-						<h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
+					<div className="max-w-4xl mx-auto mb-8">
+						<h3 className="text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '30px' }}>
 							Client Category of Customized Swat Tours:
 						</h3>
-						<ul className="space-y-4">
+						<ul className="space-y-3">
 							<li className="flex items-start gap-3">
 								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Swat Tour Packages / Couple Tours / Honeymoon Tour are designed to help the newlyweds cherish the new life together with all the luxury and solitude, surrounded by the beautiful nature.
 								</p>
 							</li>
 							<li className="flex items-start gap-3">
 								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Swat Family Tour Packages are designed to create a fun, luxurious, and secure environment for your loved ones to intensify the blood bond and acquire memories for a lifetime.
 								</p>
 							</li>
 							<li className="flex items-start gap-3">
 								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Swat Students Tours / Friends Group Tour Packages are designed to have all the fun engaging activities and games for laughing together, dancing together, and more importantly exploring the adventurous destinations together without the hassle of planning all the bits of the tour. You only have to decide what to pack for that memorable tour with your besties.
 								</p>
 							</li>
 							<li className="flex items-start gap-3">
 								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Swat Corporate Groups Tour Packages are designed to create an environment for the employees to develop a closer connection with each other, enhance their potential for team building, and entertain themselves with nature outside their usual office environment.
 								</p>
 							</li>
@@ -477,30 +477,30 @@ const SwatKalamPage = () => {
 
 					{/* Departure Cities Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
+						<h3 className="text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '30px' }}>
 							We have
 						</h3>
-						<ul className="space-y-3 mb-6">
+						<ul className="space-y-2 mb-4">
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Swat Tour Packages from Lahore
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Swat Tour Packages from Karachi
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Swat Tour Packages from Islamabad
 								</p>
 							</li>
 						</ul>
-						<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							You can also customize these tours from other cities in Pakistan.
 						</p>
 					</div>
@@ -508,19 +508,19 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== MOST POPULAR DESTINATIONS AND ATTRACTIONS IN SWAT VALLEY ====================== */}
-			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12">
-						<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+					<div className="text-center mb-8">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							Most Popular Destinations and Attractions to Visit in Swat Valley:
 						</h2>
-						<p className="text-base md:text-lg leading-relaxed max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90` }}>
+						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Swat Valley is blessed with beautiful valleys, waterfalls, and lakes. We have created a list of some famous tourist places to visit in Swat Kalam and a little Swat Kalam Valley travel guide.
 						</p>
 					</div>
 					
 					{/* 18 Destinations with Alternating Layout */}
-					<div className="space-y-12">
+					<div className="space-y-8">
 						{[
 							{ 
 								title: 'Kalam Valley', 
@@ -646,10 +646,10 @@ const SwatKalamPage = () => {
 								
 								{/* Text Content */}
 								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
-									<h3 className="text-2xl md:text-3xl font-bold mb-4 capitalize" style={{ color: secondaryBlack }}>
+									<h3 className="text-2xl md:text-3xl font-bold mb-3 capitalize" style={{ color: secondaryBlack }}>
 										{destination.title}
 									</h3>
-									<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 										{destination.description}
 									</p>
 								</div>
@@ -660,7 +660,7 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== HISTORICAL SITES IN SWAT VALLEY ====================== */}
-			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<p className="leading-normal mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -744,18 +744,18 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== WHY TRAVEL WITH US? ====================== */}
-			<section className="py-8 md:py-12 bg-gray-100 relative overflow-x-hidden">
+			<section className="py-6 md:py-8 bg-gray-100 relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 						{/* Left: Text Content */}
 						<div>
-							<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 								WHY TRAVEL WITH US?
 							</h2>
-							<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							<p className="leading-normal mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								Our people are our strength. We know the mountains, the roads, the people and we help you feel the soul of every destination.
 							</p>
-							<ul className="space-y-4 mb-8">
+							<ul className="space-y-2 mb-6">
 								{[
 									'Experienced Tour Leaders',
 									'Local Guides & Cultural Experts',
@@ -765,7 +765,7 @@ const SwatKalamPage = () => {
 								].map((item, idx) => (
 									<li key={idx} className="flex items-center gap-3">
 										<div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-										<span className="text-base" style={{ color: `${secondaryBlack}90` }}>
+										<span className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 											{item}
 										</span>
 									</li>
@@ -794,7 +794,7 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== READY FOR AN UNFORGETTABLE TOUR! ====================== */}
-			<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
+			<section className="py-6 md:py-8 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
 				<div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-[2]">
 					<div className="flex flex-col md:flex-row items-center justify-between gap-4">
 						<div className="px-4 md:px-6">
