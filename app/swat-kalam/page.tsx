@@ -663,11 +663,11 @@ const SwatKalamPage = () => {
 			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<p className="leading-normal mb-6" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Alongside natural beauty, Swat also has many historical sites. It has attracted many archeologists worldwide due to its historical importance. There are around 400 Buddhist historical sites in the valley, including Buddhist stupas and rock carvings of Buddha.
 						</p>
 
-						<h3 className="text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '30px' }}>
 							Some other historical and archeological sites in Swat Valley are as follows:
 						</h3>
 
@@ -702,10 +702,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
-			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '30px' }}>
 							Culture of Swat Valley:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -716,10 +716,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
-			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '30px' }}>
 							The Economy of Kalam Swat Valley:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -730,10 +730,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== EDUCATIONAL IN KALAM SWAT VALLEY ====================== */}
-			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '30px' }}>
+						<h3 className="text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '30px' }}>
 							Educational in Kalam Swat Valley:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
