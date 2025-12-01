@@ -377,7 +377,7 @@ const SwatKalamPage = () => {
 							},
 						].map((item, idx) => (
 							<div key={idx} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-								<div className="relative w-full aspect-[4/3] overflow-hidden">
+								<div className="relative w-full aspect-[16/9] overflow-hidden">
 									<Image 
 										src={item.image}
 										alt={item.title}
