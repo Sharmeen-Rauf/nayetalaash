@@ -636,7 +636,7 @@ const SwatKalamPage = () => {
 							<div key={idx} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center`}>
 								{/* Image */}
 								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
-									<div className="relative h-64 lg:h-96 w-full overflow-hidden">
+									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden">
 										<Image 
 											src={destination.image}
 											alt={destination.title}
@@ -648,10 +648,10 @@ const SwatKalamPage = () => {
 								
 								{/* Text Content */}
 								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
-									<h3 className="text-xl md:text-2xl font-bold mb-3 capitalize text-center lg:text-left" style={{ color: secondaryBlack }}>
+									<h3 className="text-xl md:text-2xl font-bold mb-3 capitalize text-center" style={{ color: secondaryBlack }}>
 										{destination.title}
 									</h3>
-									<p className="leading-normal text-center lg:text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+									<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 										{destination.description}
 									</p>
 								</div>
