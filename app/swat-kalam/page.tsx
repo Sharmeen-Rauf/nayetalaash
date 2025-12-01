@@ -634,7 +634,7 @@ const SwatKalamPage = () => {
 							<div key={idx} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center`}>
 								{/* Image */}
 								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
-									<div className="relative h-64 lg:h-96 overflow-hidden">
+									<div className="relative h-48 lg:h-72 max-w-[90%] mx-auto overflow-hidden">
 										<Image 
 											src={destination.image}
 											alt={destination.title}
