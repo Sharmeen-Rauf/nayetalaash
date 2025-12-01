@@ -412,7 +412,7 @@ const SwatKalamPage = () => {
 					{/* Two Tour Package Images */}
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative w-full aspect-[4/3] overflow-hidden">
+							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
 									alt="3 Days Malam Jabba, Kalam Swat Tour"
@@ -428,7 +428,7 @@ const SwatKalamPage = () => {
 						</div>
 
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative w-full aspect-[4/3] overflow-hidden">
+							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
 									alt="2 Days Malam Jabba Swat Tour"
