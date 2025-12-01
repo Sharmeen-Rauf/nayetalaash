@@ -9,6 +9,7 @@ const SwatKalamPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
+	const [hoveredImageIndex, setHoveredImageIndex] = useState<number | null>(null);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -762,12 +763,24 @@ const SwatKalamPage = () => {
 							'/images/swat.jpg',
 							'/images/swat.jpg',
 						].map((image, idx) => (
-							<div key={idx} className="relative flex-1 h-[400px] md:h-[500px] overflow-hidden">
+							<div 
+								key={idx} 
+								className={`relative h-[400px] md:h-[500px] overflow-hidden transition-all duration-500 ease-in-out ${
+									hoveredImageIndex === idx 
+										? 'flex-[2]' 
+										: hoveredImageIndex !== null 
+											? 'flex-[0.5]' 
+											: 'flex-1'
+								}`}
+								onMouseEnter={() => setHoveredImageIndex(idx)}
+								onMouseLeave={() => setHoveredImageIndex(null)}
+							>
 								<Image 
 									src={image}
 									alt={`Activity ${idx + 1} in Kalam Swat`}
 									fill
-									className="object-cover hover:scale-110 transition-transform duration-500"
+									className="object-cover transition-transform duration-500"
+									style={{ transform: hoveredImageIndex === idx ? 'scale(1.1)' : 'scale(1)' }}
 								/>
 							</div>
 						))}
