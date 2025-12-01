@@ -618,7 +618,7 @@ const AboutPage = () => {
 							<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 							<div className="absolute bottom-0 left-0 right-0 p-4 text-white">
 								<p className="text-xs mb-2 font-medium opacity-90">Travel Smoothly With Clean, Safe And Comfortable Transport</p>
-								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Conveyance</h3>
+								<h3 className="text-base md:text-lg font-bold leading-tight capitalize">Conveyance into Your Travel Ride</h3>
 							</div>
 						</div>
 
@@ -928,7 +928,7 @@ const AboutPage = () => {
 							
 							{/* Text Overlay */}
 							<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-								<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Conveyance</h2>
+								<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Conveyance into Your Travel Ride</h2>
 								<p className="text-base md:text-lg mb-4">Travel In Style & Comfort</p>
 								<button
 									onClick={handleWhatsAppClick}
@@ -1109,7 +1109,7 @@ const AboutPage = () => {
 						
 						{/* Text Overlay */}
 						<div className="absolute top-1/4 left-8 md:left-16 z-10 text-white">
-							<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Curated Trip Experiences</h2>
+							<h2 className="text-3xl md:text-4xl font-bold mb-4 capitalize">Trips Designed Just for You</h2>
 							<p className="text-base md:text-lg mb-4 capitalize">Matching Your Taste</p>
 							<button
 								onClick={handleWhatsAppClick}
