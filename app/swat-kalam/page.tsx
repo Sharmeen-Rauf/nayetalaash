@@ -837,11 +837,9 @@ const SwatKalamPage = () => {
 								</button>
 								{openFAQIndex === idx && (
 									<div className="pb-3 pl-7">
-										<div className="bg-gray-100 border border-gray-300 rounded p-3">
-											<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-												{faq.answer}
-											</p>
-										</div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+											{faq.answer}
+										</p>
 									</div>
 								)}
 							</div>
