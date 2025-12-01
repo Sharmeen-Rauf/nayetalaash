@@ -647,7 +647,7 @@ const SwatKalamPage = () => {
 								</div>
 								
 								{/* Text Content */}
-								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'} ${idx % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}`}>
+								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<h3 className={`text-xl md:text-2xl font-bold mb-3 capitalize ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
 										{destination.title}
 									</h3>
