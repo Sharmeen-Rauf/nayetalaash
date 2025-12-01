@@ -22,7 +22,7 @@ const AboutPage = () => {
 
 	// Hotels & Accommodation slider images
 	const hotelsMainImages = [
-		'/images/hotelbackup1stimage.jpg',
+		'/images/backupagain.jpg',
 		'/images/hotel 1.jpg',
 		'/images/hotel 2.jpg',
 		'/images/hotel 3.jpg',
@@ -30,7 +30,7 @@ const AboutPage = () => {
 	];
 
 	const hotelsThumbnails = [
-		'/images/hotelbackup1stimage.jpg',
+		'/images/backupagain.jpg',
 		'/images/hotel 1.jpg',
 		'/images/hotel 2.jpg',
 		'/images/hotel 3.jpg',
