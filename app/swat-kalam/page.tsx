@@ -659,6 +659,90 @@ const SwatKalamPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== HISTORICAL SITES IN SWAT VALLEY ====================== */}
+			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: `${secondaryBlack}90` }}>
+							Alongside natural beauty, Swat also has many historical sites. It has attracted many archeologists worldwide due to its historical importance. There are around 400 Buddhist historical sites in the valley, including Buddhist stupas and rock carvings of Buddha.
+						</p>
+
+						<h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							Some other historical and archeological sites in Swat Valley are as follows:
+						</h3>
+
+						<ul className="space-y-3 mb-12">
+							{[
+								'Mahmood Ghaznavi Masjid',
+								'Oba Ghar and Khazana Ghar Rock Carving',
+								'Dune of Darkot',
+								'Ram Takht at Mount Ilum',
+								'Panr Jambil Khwar Archaeology',
+								'Jehanabad Buddha Statue',
+								'Tokar Dara Najigram Stupa and Monastery',
+								'Amluk Dara Stupa',
+								'Shingardar Stupa',
+								'Gumbatona Stupa',
+								'Ghaligay Buddha Statue and Archaeological Remains',
+								'Shahkot Pass Elephant Paw and Queen\'s Throne',
+								'Nemogram Stupa and Monastery',
+								'Butkara I Stupa and Archaeological Remains',
+								'Butkara II Stupa and Archaeological Remains',
+							].map((item, idx) => (
+								<li key={idx} className="flex items-start gap-3">
+									<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+									<p className="text-base leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+										{item}
+									</p>
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
+			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							Culture of Swat Valley:
+						</h2>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							The people of Kalam Swat Valley are known for their rich culture. Both men and women take part in the making of their hand-woven fabrics, embroidery, and carpets. These people are also blessed with wood carving talent; their furniture and strong wood are famous worldwide. They also specialize in producing uniquely designed ornamental jewelry.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
+			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							The Economy of Kalam Swat Valley:
+						</h2>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							The economy of Kalam Swat Valley is primarily based on agriculture, tourism, and small-scale industries. The valley produces yummy apples, apricots, and potatoes.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== EDUCATIONAL IN KALAM SWAT VALLEY ====================== */}
+			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							Educational in Kalam Swat Valley:
+						</h2>
+						<p className="text-base md:text-lg leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							Several educational institutions in Kalam Swat Valley include primary and secondary schools, colleges, and universities. The University of Swat, located in the nearby city of Mingora, also serves the students of Kalam Swat Valley.
+						</p>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== WHY TRAVEL WITH US? ====================== */}
 			<section className="py-8 md:py-12 bg-gray-100 relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
