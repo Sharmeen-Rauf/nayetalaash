@@ -671,7 +671,7 @@ const SwatKalamPage = () => {
 							Alongside natural beauty, Swat also has many historical sites. It has attracted many archeologists worldwide due to its historical importance. There are around 400 Buddhist historical sites in the valley, including Buddhist stupas and rock carvings of Buddha.
 						</p>
 
-						<h3 className="text-xl md:text-2xl font-bold mb-6" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Some other historical and archeological sites in Swat Valley are as follows:
 						</h3>
 
