@@ -474,7 +474,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== PUBLIC SWAT KALAM TOUR PACKAGES 2025 ====================== */}
-			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="public-packages"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('public-packages') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
@@ -488,14 +491,7 @@ const SwatKalamPage = () => {
 
 					{/* Two Tour Package Images */}
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
-						<div 
-							className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-700"
-							style={{ 
-								opacity: visibleSections.has('public-packages') ? 1 : 0,
-								transform: visibleSections.has('public-packages') ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
-								transition: 'opacity 0.7s ease-out 0.1s, transform 0.7s ease-out 0.1s'
-							}}
-						>
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
@@ -511,14 +507,7 @@ const SwatKalamPage = () => {
 							</div>
 						</div>
 
-						<div 
-							className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-700"
-							style={{ 
-								opacity: visibleSections.has('public-packages') ? 1 : 0,
-								transform: visibleSections.has('public-packages') ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
-								transition: 'opacity 0.7s ease-out 0.2s, transform 0.7s ease-out 0.2s'
-							}}
-						>
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
