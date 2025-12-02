@@ -695,9 +695,8 @@ const SwatKalamPage = () => {
 							].map((item, idx) => (
 								<div 
 									key={idx} 
-									className="p-4 transition-all duration-300 cursor-pointer group"
+									className="p-4 transition-all duration-300 cursor-pointer group rounded-lg"
 									style={{ 
-										borderRadius: '0',
 										backgroundColor: primaryOrange,
 										minHeight: '60px',
 										display: 'flex',
@@ -713,7 +712,7 @@ const SwatKalamPage = () => {
 										e.currentTarget.style.transform = 'translateY(0)';
 									}}
 								>
-									<p className="leading-normal font-bold transition-colors duration-300 text-center" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
+									<p className="leading-normal font-bold transition-colors duration-300 text-center uppercase" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
 										{item}
 									</p>
 								</div>
