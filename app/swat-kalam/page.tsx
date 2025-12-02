@@ -352,12 +352,19 @@ const SwatKalamPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Discover the Switzerland of Pakistan with Nayi Talaash
+								Discover the Switzerland of Pakistan
 							</span>
 						</h1>
-						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2">
-							At Nayi Talaash, we bring you well-designed, comfortable, and adventure filled Swat & Kalam Tour Packages that help you explore this paradise with ease without stress, confusion, or planning hassles.
+						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
+							Explore Swat & Kalam with our comfortable, well planned and adventure filled tour packages designed to give you a smooth, stress free travel experience.
 						</p>
+						<button
+							onClick={handleWhatsAppClick}
+							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
+							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+						>
+							Book Now
+						</button>
 					</div>
 				</div>
 			</section>
