@@ -717,7 +717,7 @@ const SwatKalamPage = () => {
 										e.currentTarget.style.transform = 'translateY(0)';
 									}}
 								>
-									<p className="leading-normal font-bold transition-colors duration-300 text-center uppercase" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
+									<p className="leading-normal transition-colors duration-300 text-center uppercase" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
 										{item}
 									</p>
 								</div>
