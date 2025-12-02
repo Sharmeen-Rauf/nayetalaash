@@ -545,39 +545,39 @@ const SwatKalamPage = () => {
 
 					{/* Who Are These Tours For Section */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Who Are These Tours For?
 						</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
-								<h4 className="text-lg font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px' }}>
+								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
 									Couples & Honeymooners
 								</h4>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Romantic, private, and relaxing trips with premium stays and scenic spots perfect for making new memories.
 								</p>
 							</div>
 							<div>
-								<h4 className="text-lg font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px' }}>
+								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
 									Families
 								</h4>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Safe, fun, and comfortable travel with activities and spots everyone can enjoy.
 								</p>
 							</div>
 							<div>
-								<h4 className="text-lg font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px' }}>
+								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
 									Friends & Student Groups
 								</h4>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Adventure, trekking, games, activities, and fun moments all without planning stress.
 								</p>
 							</div>
 							<div>
-								<h4 className="text-lg font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px' }}>
+								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
 									Corporate Groups
 								</h4>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Perfect for team building, relaxation, and bonding outside the office.
 								</p>
 							</div>
@@ -586,33 +586,33 @@ const SwatKalamPage = () => {
 
 					{/* Swat Tour Packages From Major Cities Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Swat Tour Packages From Major Cities
 						</h3>
-						<p className="text-center mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							We provide tours from:
 						</p>
-						<ul className="space-y-3 mb-4 max-w-md mx-auto">
+						<ul className="space-y-3 mb-4">
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Lahore
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Karachi
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Islamabad
 								</p>
 							</li>
 						</ul>
-						<p className="text-center leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="text-left leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Custom departures available for other cities as well.
 						</p>
 					</div>
