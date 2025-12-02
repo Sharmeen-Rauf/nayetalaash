@@ -11,6 +11,7 @@ const SwatKalamPage = () => {
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
 	const [hoveredImageIndex, setHoveredImageIndex] = useState<number | null>(null);
 	const [showAllPackages, setShowAllPackages] = useState(false);
+	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -37,6 +38,33 @@ const SwatKalamPage = () => {
 		handleScroll();
 		window.addEventListener('scroll', handleScroll, { passive: true });
 		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
+	// Intersection Observer for scroll animations
+	useEffect(() => {
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const targetId = entry.target.getAttribute('data-section-id');
+					if (targetId) {
+						setVisibleSections((prev) => new Set(prev).add(targetId));
+					}
+				}
+			});
+		}, observerOptions);
+
+		// Observe all sections with data-section-id
+		const sections = document.querySelectorAll('[data-section-id]');
+		sections.forEach((section) => observer.observe(section));
+
+		return () => {
+			sections.forEach((section) => observer.unobserve(section));
+		};
 	}, []);
 
 	return (
@@ -330,7 +358,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== CUSTOMIZED SWAT TOUR PACKAGES 2025 ====================== */}
-			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="customized-packages"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('customized-packages') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
@@ -389,7 +420,16 @@ const SwatKalamPage = () => {
 								{/* 9 Tour Packages Grid */}
 								<div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-4 md:px-8">
 									{visiblePackages.map((item, idx) => (
-							<div key={idx} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div 
+								key={idx} 
+								className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-700"
+								style={{
+									animationDelay: `${idx * 0.1}s`,
+									opacity: visibleSections.has('customized-packages') ? 1 : 0,
+									transform: visibleSections.has('customized-packages') ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
+									transition: 'opacity 0.7s ease-out, transform 0.7s ease-out'
+								}}
+							>
 								<div className="relative w-full aspect-[2/1] overflow-hidden">
 									<Image 
 										src={item.image}
@@ -448,7 +488,14 @@ const SwatKalamPage = () => {
 
 					{/* Two Tour Package Images */}
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+						<div 
+							className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-700"
+							style={{ 
+								opacity: visibleSections.has('public-packages') ? 1 : 0,
+								transform: visibleSections.has('public-packages') ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
+								transition: 'opacity 0.7s ease-out 0.1s, transform 0.7s ease-out 0.1s'
+							}}
+						>
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
@@ -464,7 +511,14 @@ const SwatKalamPage = () => {
 							</div>
 						</div>
 
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+						<div 
+							className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-700"
+							style={{ 
+								opacity: visibleSections.has('public-packages') ? 1 : 0,
+								transform: visibleSections.has('public-packages') ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
+								transition: 'opacity 0.7s ease-out 0.2s, transform 0.7s ease-out 0.2s'
+							}}
+						>
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
@@ -547,7 +601,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== MOST POPULAR DESTINATIONS AND ATTRACTIONS IN SWAT VALLEY ====================== */}
-			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="destinations"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
@@ -670,7 +727,13 @@ const SwatKalamPage = () => {
 								imageLeft: false
 							},
 						].map((destination, idx) => (
-							<div key={idx} className={`grid grid-cols-1 lg:grid-cols-2 gap-2 items-center`}>
+							<div 
+								key={idx} 
+								className={`grid grid-cols-1 lg:grid-cols-2 gap-2 items-center scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+								style={{
+									transitionDelay: `${idx * 0.1}s`
+								}}
+							>
 								{/* Image */}
 								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'} ${idx % 2 === 0 ? 'lg:ml-8' : 'lg:mr-8'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden">
@@ -701,7 +764,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== HISTORICAL SITES IN SWAT VALLEY ====================== */}
-			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="historical-sites"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-sites') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="w-full">
 						<p className="leading-normal mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
@@ -732,7 +798,7 @@ const SwatKalamPage = () => {
 							].map((item, idx) => (
 								<div 
 									key={idx} 
-									className="transition-all duration-300 cursor-pointer group rounded-lg w-full"
+									className="transition-all duration-500 cursor-pointer group rounded-lg w-full scroll-reveal-fade-up"
 									style={{ 
 										backgroundColor: primaryOrange,
 										height: '56px',
@@ -741,7 +807,10 @@ const SwatKalamPage = () => {
 										justifyContent: 'center',
 										paddingLeft: '2rem',
 										paddingRight: '2rem',
-										minWidth: '100%'
+										minWidth: '100%',
+										opacity: visibleSections.has('historical-sites') ? 1 : 0,
+										transform: visibleSections.has('historical-sites') ? 'translateY(0)' : 'translateY(20px)',
+										transitionDelay: `${idx * 0.05}s`
 									}}
 									onMouseEnter={(e) => {
 										e.currentTarget.style.backgroundColor = '#e6891a';
@@ -763,7 +832,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
-			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="culture"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '24px' }}>
@@ -777,7 +849,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
-			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="economy"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '24px' }}>
@@ -791,7 +866,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== EDUCATIONAL IN KALAM SWAT VALLEY ====================== */}
-			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="educational"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '24px' }}>
@@ -805,7 +883,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== THINGS TO DO IN KALAM SWAT ====================== */}
-			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="things-to-do"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
@@ -824,13 +905,16 @@ const SwatKalamPage = () => {
 						].map((image, idx) => (
 							<div 
 								key={idx} 
-								className={`relative h-[400px] md:h-[500px] overflow-hidden transition-all duration-500 ease-in-out ${
+								className={`relative h-[400px] md:h-[500px] overflow-hidden transition-all duration-700 ease-in-out scroll-reveal-fade-in ${
 									hoveredImageIndex === idx 
 										? 'flex-[2]' 
 										: hoveredImageIndex !== null 
 											? 'flex-[0.5]' 
 											: 'flex-1'
-								}`}
+								} ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
+								style={{
+									transitionDelay: `${idx * 0.1}s`
+								}}
 								onMouseEnter={() => setHoveredImageIndex(idx)}
 								onMouseLeave={() => setHoveredImageIndex(null)}
 							>
@@ -848,7 +932,10 @@ const SwatKalamPage = () => {
 			</section>
 
 			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
-			<section className="py-6 md:py-8 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="faq"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('faq') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
 					<div className="text-center mb-6">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
@@ -879,10 +966,18 @@ const SwatKalamPage = () => {
 								answer: 'Yes, Swat and Kalam are safe destinations for tourists. The region has seen significant improvements in security. We ensure safe travel routes, verified accommodations, and experienced local guides. We also provide 24/7 support during your trip.'
 							},
 						].map((faq, idx) => (
-							<div key={idx} className="border-b border-gray-300">
+							<div 
+								key={idx} 
+								className="border-b border-gray-300 scroll-reveal-fade-up"
+								style={{
+									opacity: visibleSections.has('faq') ? 1 : 0,
+									transform: visibleSections.has('faq') ? 'translateY(0)' : 'translateY(20px)',
+									transition: `opacity 0.6s ease-out ${idx * 0.1}s, transform 0.6s ease-out ${idx * 0.1}s`
+								}}
+							>
 								<button
 									onClick={() => setOpenFAQIndex(openFAQIndex === idx ? null : idx)}
-									className="w-full flex items-center justify-between py-3 text-left"
+									className="w-full flex items-center justify-between py-3 text-left transition-all duration-300 hover:opacity-80"
 								>
 									<span className="flex items-center gap-3 flex-1">
 										<ChevronDown 
@@ -895,7 +990,7 @@ const SwatKalamPage = () => {
 									</span>
 								</button>
 								{openFAQIndex === idx && (
-									<div className="pb-3 pl-7">
+									<div className="pb-3 pl-7 animate-fadeIn" style={{ animation: 'fadeIn 0.3s ease-in' }}>
 										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 											{faq.answer}
 										</p>
