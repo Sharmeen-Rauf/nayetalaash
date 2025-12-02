@@ -675,7 +675,7 @@ const SwatKalamPage = () => {
 							Some other historical and archeological sites in Swat Valley are as follows:
 						</h3>
 
-						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 							{[
 								'Mahmood Ghaznavi Masjid',
 								'Oba Ghar and Khazana Ghar Rock Carving',
@@ -711,15 +711,9 @@ const SwatKalamPage = () => {
 										e.currentTarget.style.transform = 'translateY(0)';
 									}}
 								>
-									<div className="flex items-start gap-3">
-										<div 
-											className="w-2 h-2 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" 
-											style={{ backgroundColor: primaryOrange }}
-										></div>
-										<p className="leading-normal font-medium group-hover:text-[#f99621] transition-colors duration-300" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
-											{item}
-										</p>
-									</div>
+									<p className="leading-normal font-medium group-hover:text-[#f99621] transition-colors duration-300 text-center" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
+										{item}
+									</p>
 								</div>
 							))}
 						</div>
