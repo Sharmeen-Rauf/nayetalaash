@@ -543,66 +543,77 @@ const SwatKalamPage = () => {
 						</div>
 					</div>
 
-					{/* Client Category Section */}
+					{/* Who Are These Tours For Section */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Client Category of Customized Swat Tours:
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Who Are These Tours For?
 						</h3>
-						<ul className="space-y-3">
-							<li className="flex items-start gap-3">
-								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-									Swat Tour Packages / Couple Tours / Honeymoon Tour are designed to help the newlyweds cherish the new life together with all the luxury and solitude, surrounded by the beautiful nature.
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+							<div>
+								<h4 className="text-lg font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px' }}>
+									Couples & Honeymooners
+								</h4>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Romantic, private, and relaxing trips with premium stays and scenic spots perfect for making new memories.
 								</p>
-							</li>
-							<li className="flex items-start gap-3">
-								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-									Swat Family Tour Packages are designed to create a fun, luxurious, and secure environment for your loved ones to intensify the blood bond and acquire memories for a lifetime.
+							</div>
+							<div>
+								<h4 className="text-lg font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px' }}>
+									Families
+								</h4>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Safe, fun, and comfortable travel with activities and spots everyone can enjoy.
 								</p>
-							</li>
-							<li className="flex items-start gap-3">
-								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-									Swat Students Tours / Friends Group Tour Packages are designed to have all the fun engaging activities and games for laughing together, dancing together, and more importantly exploring the adventurous destinations together without the hassle of planning all the bits of the tour. You only have to decide what to pack for that memorable tour with your besties.
+							</div>
+							<div>
+								<h4 className="text-lg font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px' }}>
+									Friends & Student Groups
+								</h4>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Adventure, trekking, games, activities, and fun moments all without planning stress.
 								</p>
-							</li>
-							<li className="flex items-start gap-3">
-								<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-									Swat Corporate Groups Tour Packages are designed to create an environment for the employees to develop a closer connection with each other, enhance their potential for team building, and entertain themselves with nature outside their usual office environment.
+							</div>
+							<div>
+								<h4 className="text-lg font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px' }}>
+									Corporate Groups
+								</h4>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Perfect for team building, relaxation, and bonding outside the office.
 								</p>
-							</li>
-						</ul>
+							</div>
+						</div>
 					</div>
 
-					{/* Departure Cities Section */}
+					{/* Swat Tour Packages From Major Cities Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							We have
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Swat Tour Packages From Major Cities
 						</h3>
-						<ul className="space-y-2 mb-4">
+						<p className="text-center mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							We provide tours from:
+						</p>
+						<ul className="space-y-3 mb-4 max-w-md mx-auto">
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-									Swat Tour Packages from Lahore
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Lahore
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-									Swat Tour Packages from Karachi
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Karachi
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-									Swat Tour Packages from Islamabad
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Islamabad
 								</p>
 							</li>
 						</ul>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							You can also customize these tours from other cities in Pakistan.
+						<p className="text-center leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Custom departures available for other cities as well.
 						</p>
 					</div>
 				</div>
