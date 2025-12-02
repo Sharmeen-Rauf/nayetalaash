@@ -800,7 +800,8 @@ const SwatKalamPage = () => {
 									key={idx} 
 									className="transition-all duration-500 cursor-pointer group rounded-lg w-full scroll-reveal-fade-up"
 									style={{ 
-										backgroundColor: primaryOrange,
+										backgroundColor: 'white',
+										border: `2px solid ${primaryOrange}`,
 										height: '56px',
 										display: 'flex',
 										alignItems: 'center',
@@ -813,15 +814,19 @@ const SwatKalamPage = () => {
 										transitionDelay: `${idx * 0.05}s`
 									}}
 									onMouseEnter={(e) => {
-										e.currentTarget.style.backgroundColor = '#e6891a';
+										e.currentTarget.style.backgroundColor = primaryOrange;
 										e.currentTarget.style.transform = 'translateY(-2px)';
+										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+										if (pElement) pElement.style.color = secondaryBlack;
 									}}
 									onMouseLeave={(e) => {
-										e.currentTarget.style.backgroundColor = primaryOrange;
+										e.currentTarget.style.backgroundColor = 'white';
 										e.currentTarget.style.transform = 'translateY(0)';
+										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+										if (pElement) pElement.style.color = primaryOrange;
 									}}
 								>
-									<p className="leading-normal transition-colors duration-300 text-center uppercase" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
+									<p className="leading-normal transition-colors duration-300 text-center uppercase" style={{ color: primaryOrange, fontSize: '14px', lineHeight: '1.5' }}>
 										{item}
 									</p>
 								</div>
