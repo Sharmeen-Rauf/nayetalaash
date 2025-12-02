@@ -718,25 +718,48 @@ const SwatKalamPage = () => {
 						].map((destination, idx) => (
 							<div 
 								key={idx} 
-								className={`grid grid-cols-1 lg:grid-cols-2 gap-2 items-center scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
 								style={{
-									transitionDelay: `${idx * 0.1}s`
+									opacity: visibleSections.has('destinations') ? 1 : 0,
+									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
 								}}
 							>
 								{/* Image */}
-								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'} ${idx % 2 === 0 ? 'lg:ml-8' : 'lg:mr-8'}`}>
-									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden">
+								<div 
+									className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'} ${idx % 2 === 0 ? 'lg:ml-8' : 'lg:mr-8'}`}
+									style={{
+										opacity: visibleSections.has('destinations') ? 1 : 0,
+										transform: visibleSections.has('destinations') 
+											? 'translateX(0)' 
+											: destination.imageLeft 
+												? 'translateX(-60px)' 
+												: 'translateX(60px)',
+										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.1}s, transform 0.8s ease-out ${idx * 0.15 + 0.1}s`
+									}}
+								>
+									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={destination.image}
 											alt={destination.title}
 											fill
-											className="object-cover"
+											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
 									</div>
 								</div>
 								
 								{/* Text Content */}
-								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'} ${idx % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}`}>
+								<div 
+									className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'} ${idx % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}`}
+									style={{
+										opacity: visibleSections.has('destinations') ? 1 : 0,
+										transform: visibleSections.has('destinations') 
+											? 'translateX(0)' 
+											: destination.imageLeft 
+												? 'translateX(60px)' 
+												: 'translateX(-60px)',
+										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.2}s, transform 0.8s ease-out ${idx * 0.15 + 0.2}s`
+									}}
+								>
 									<div className="max-w-[80%] mx-auto">
 										<h3 className={`text-xl md:text-2xl font-bold mb-3 capitalize ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
 											{destination.title}
