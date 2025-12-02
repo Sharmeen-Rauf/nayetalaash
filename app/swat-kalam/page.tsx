@@ -10,6 +10,7 @@ const SwatKalamPage = () => {
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
 	const [hoveredImageIndex, setHoveredImageIndex] = useState<number | null>(null);
+	const [showAllPackages, setShowAllPackages] = useState(false);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -340,9 +341,9 @@ const SwatKalamPage = () => {
 						</p>
 					</div>
 					
-					{/* 8 Tour Packages Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-4 md:px-8">
-						{[
+					{/* Tour Packages Data */}
+					{(() => {
+						const allPackages = [
 							{ 
 								title: '4 Days Kalam, Mahodand Lake, Malam Jabba, and Green Top Tour',
 								image: '/images/swat.jpg'
@@ -375,7 +376,19 @@ const SwatKalamPage = () => {
 								title: '2 Days Malam Jabba Swat Tour',
 								image: '/images/swat.jpg'
 							},
-						].map((item, idx) => (
+							{ 
+								title: '6 Days Swat Kalam Valley Exploration Tour',
+								image: '/images/swat.jpg'
+							},
+						];
+						
+						const visiblePackages = showAllPackages ? allPackages : allPackages.slice(0, 6);
+						
+						return (
+							<>
+								{/* 9 Tour Packages Grid */}
+								<div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-4 md:px-8">
+									{visiblePackages.map((item, idx) => (
 							<div key={idx} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 								<div className="relative w-full aspect-[2/1] overflow-hidden">
 									<Image 
@@ -391,8 +404,24 @@ const SwatKalamPage = () => {
 									</p>
 								</div>
 							</div>
-						))}
-					</div>
+									))}
+								</div>
+								
+								{/* See More Button */}
+								{!showAllPackages && (
+									<div className="flex justify-center mt-8">
+										<button
+											onClick={() => setShowAllPackages(true)}
+											className="px-8 py-3 font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+											style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+										>
+											See More
+										</button>
+									</div>
+								)}
+							</>
+						);
+					})()}
 				</div>
 			</section>
 
