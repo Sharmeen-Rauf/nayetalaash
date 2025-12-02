@@ -407,9 +407,9 @@ const SwatKalamPage = () => {
 									))}
 								</div>
 								
-								{/* See More Button */}
-								{!showAllPackages && (
-									<div className="flex justify-center mt-8">
+								{/* See More / See Less Button */}
+								<div className="flex justify-center mt-8">
+									{!showAllPackages ? (
 										<button
 											onClick={() => setShowAllPackages(true)}
 											className="px-8 py-3 font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -417,8 +417,16 @@ const SwatKalamPage = () => {
 										>
 											See More
 										</button>
-									</div>
-								)}
+									) : (
+										<button
+											onClick={() => setShowAllPackages(false)}
+											className="px-8 py-3 font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+											style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+										>
+											See Less
+										</button>
+									)}
+								</div>
 							</>
 						);
 					})()}
