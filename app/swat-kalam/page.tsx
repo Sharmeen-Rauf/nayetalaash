@@ -675,7 +675,7 @@ const SwatKalamPage = () => {
 							Some other historical and archeological sites in Swat Valley are as follows:
 						</h3>
 
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
 							{[
 								'Mahmood Ghaznavi Masjid',
 								'Oba Ghar and Khazana Ghar Rock Carving',
