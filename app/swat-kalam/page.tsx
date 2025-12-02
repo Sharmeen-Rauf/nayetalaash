@@ -376,50 +376,58 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Swat Tour Packages 2025
+							Customized Swat & Kalam Tour Packages
 						</h2>
-						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							These Kalam Swat Tour Packages can be custom-built for you to have the experience you expect from us as professional Tour Operators in Pakistan. You can choose from the list below or customize your Swat Kalam Tours according to your requirements.
-						</p>
+						<div className="space-y-4">
+							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								We offer thoughtfully curated and customizable packages, allowing you to adjust destinations, trip days, stays and activities according to your preferences.
+							</p>
+							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								Swat Valley, often called the Switzerland of Pakistan, is one of the most stunning regions in the country. With its snow capped mountains, blue water lakes, lush forests, and peaceful meadows, Swat is a dream for every traveler.
+							</p>
+							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								Whether you're traveling with family, friends, your partner, or a corporate team, we create tours that match your style.
+							</p>
+						</div>
 					</div>
 					
 					{/* Tour Packages Data */}
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '4 Days Kalam, Mahodand Lake, Malam Jabba, and Green Top Tour',
+								title: '2 Days – Malam Jabba Tour (Short Escape)',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '3 Days Kalam, Mahudand Lake, and Malam Jabba Tour',
+								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '5 Days Relaxed Kalam, Mahodand Lake, Malam Jabba, Green Top, and Blue Water Tour',
+								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '5 Days Kalam, Mahudand Lake, Malam Jabba, and Desan Top Tour',
+								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '7 Days Malam Jabba, Kalam, and Nathia Gali Tour',
+								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '7 Days Malam Jabba, Kalam, Swat to Kumrat Valley Tour',
+								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '10 Days Malam Jabba, Kalam, and Hunza Valley Gilgit Tour',
+								title: '7 Days – Swat to Kumrat Valley Adventure',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '2 Days Malam Jabba Swat Tour',
+								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '6 Days Swat Kalam Valley Exploration Tour',
+								title: '3 Days – Swat Valley Highlights Tour',
 								image: '/images/swat.jpg'
 							},
 						];
