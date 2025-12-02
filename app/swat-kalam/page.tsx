@@ -341,17 +341,22 @@ const SwatKalamPage = () => {
 				{/* Main Content */}
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<div className="text-center px-4">
-						<h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
-							<span className="hero-text-reveal hero-text-delay-1" 
-								style={{ 
-									color: primaryOrange, 
-									display: 'inline-block'
-								}}>
-								Swat Kalam Tour Packages
+						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
+							<span className="font-autography hero-text-reveal block mb-2 text-white" style={{ display: 'inline-block', fontSize: '48px', color: 'white' }}>
+								Swat & Kalam Tour Packages
+							</span>
+							<br />
+							<span className="block hero-text-reveal hero-text-delay-1"
+								  style={{
+									  color: primaryOrange,
+									  display: 'inline-block',
+									  fontSize: '48px'
+								  }}>
+								Discover the Switzerland of Pakistan with Nayi Talaash
 							</span>
 						</h1>
-						<p className="text-sm sm:text-xs md:text-base text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2">
-							Discover the breathtaking beauty of Swat Valley and Kalam - Switzerland of Pakistan with our carefully crafted tour packages.
+						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2">
+							At Nayi Talaash, we bring you well-designed, comfortable, and adventure filled Swat & Kalam Tour Packages that help you explore this paradise with ease without stress, confusion, or planning hassles.
 						</p>
 					</div>
 				</div>
