@@ -671,11 +671,11 @@ const SwatKalamPage = () => {
 							Alongside natural beauty, Swat also has many historical sites. It has attracted many archeologists worldwide due to its historical importance. There are around 400 Buddhist historical sites in the valley, including Buddhist stupas and rock carvings of Buddha.
 						</p>
 
-						<h3 className="text-xl md:text-2xl font-bold mb-3" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-6" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Some other historical and archeological sites in Swat Valley are as follows:
 						</h3>
 
-						<ul className="space-y-2">
+						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 							{[
 								'Mahmood Ghaznavi Masjid',
 								'Oba Ghar and Khazana Ghar Rock Carving',
@@ -693,14 +693,36 @@ const SwatKalamPage = () => {
 								'Butkara I Stupa and Archaeological Remains',
 								'Butkara II Stupa and Archaeological Remains',
 							].map((item, idx) => (
-								<li key={idx} className="flex items-start gap-3">
-									<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-										{item}
-									</p>
-								</li>
+								<div 
+									key={idx} 
+									className="bg-white border-2 rounded-lg p-4 hover:shadow-lg transition-all duration-300 cursor-pointer group"
+									style={{ 
+										borderColor: primaryOrange + '40',
+										boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
+									}}
+									onMouseEnter={(e) => {
+										e.currentTarget.style.borderColor = primaryOrange;
+										e.currentTarget.style.boxShadow = '0 4px 12px rgba(249, 150, 33, 0.2)';
+										e.currentTarget.style.transform = 'translateY(-2px)';
+									}}
+									onMouseLeave={(e) => {
+										e.currentTarget.style.borderColor = primaryOrange + '40';
+										e.currentTarget.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+										e.currentTarget.style.transform = 'translateY(0)';
+									}}
+								>
+									<div className="flex items-start gap-3">
+										<div 
+											className="w-2 h-2 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300" 
+											style={{ backgroundColor: primaryOrange }}
+										></div>
+										<p className="leading-normal font-medium group-hover:text-[#f99621] transition-colors duration-300" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
+											{item}
+										</p>
+									</div>
+								</div>
 							))}
-						</ul>
+						</div>
 					</div>
 				</div>
 			</section>
