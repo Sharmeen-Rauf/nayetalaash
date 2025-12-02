@@ -695,19 +695,17 @@ const SwatKalamPage = () => {
 							].map((item, idx) => (
 								<div 
 									key={idx} 
-									className="bg-white border-2 rounded-lg p-4 hover:shadow-lg transition-all duration-300 cursor-pointer group"
+									className="bg-white p-4 hover:shadow-lg transition-all duration-300 cursor-pointer group"
 									style={{ 
-										borderColor: primaryOrange + '40',
-										boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
+										borderRadius: '0',
+										boxShadow: `0 4px 8px ${primaryOrange}40`
 									}}
 									onMouseEnter={(e) => {
-										e.currentTarget.style.borderColor = primaryOrange;
-										e.currentTarget.style.boxShadow = '0 4px 12px rgba(249, 150, 33, 0.2)';
+										e.currentTarget.style.boxShadow = `0 6px 16px ${primaryOrange}60`;
 										e.currentTarget.style.transform = 'translateY(-2px)';
 									}}
 									onMouseLeave={(e) => {
-										e.currentTarget.style.borderColor = primaryOrange + '40';
-										e.currentTarget.style.boxShadow = '0 2px 4px rgba(0,0,0,0.05)';
+										e.currentTarget.style.boxShadow = `0 4px 8px ${primaryOrange}40`;
 										e.currentTarget.style.transform = 'translateY(0)';
 									}}
 								>
