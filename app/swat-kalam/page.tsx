@@ -356,8 +356,7 @@ const SwatKalamPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-							Explore Swat & Kalam with our comfortable, well planned and adventure filled tour packages designed to give you a smooth, stress free travel experience.
-						</p>
+						Discover Swat & Kalam stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
