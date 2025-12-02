@@ -666,7 +666,7 @@ const SwatKalamPage = () => {
 			{/* ====================== HISTORICAL SITES IN SWAT VALLEY ====================== */}
 			<section className="py-4 md:py-5 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
+					<div className="w-full">
 						<p className="leading-normal mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Alongside natural beauty, Swat also has many historical sites. It has attracted many archeologists worldwide due to its historical importance. There are around 400 Buddhist historical sites in the valley, including Buddhist stupas and rock carvings of Buddha.
 						</p>
@@ -675,7 +675,7 @@ const SwatKalamPage = () => {
 							Some other historical and archeological sites in Swat Valley are as follows:
 						</h3>
 
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 w-full">
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
 							{[
 								'Mahmood Ghaznavi Masjid',
 								'Oba Ghar and Khazana Ghar Rock Carving',
@@ -702,8 +702,9 @@ const SwatKalamPage = () => {
 										display: 'flex',
 										alignItems: 'center',
 										justifyContent: 'center',
-										paddingLeft: '1.5rem',
-										paddingRight: '1.5rem'
+										paddingLeft: '2rem',
+										paddingRight: '2rem',
+										minWidth: '100%'
 									}}
 									onMouseEnter={(e) => {
 										e.currentTarget.style.backgroundColor = '#e6891a';
