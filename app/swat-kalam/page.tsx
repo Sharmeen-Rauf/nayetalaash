@@ -611,10 +611,13 @@ const SwatKalamPage = () => {
 									Islamabad
 								</p>
 							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Custom departures available for other cities as well.
+								</p>
+							</li>
 						</ul>
-						<p className="text-left leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Custom departures available for other cities as well.
-						</p>
 					</div>
 				</div>
 			</section>
