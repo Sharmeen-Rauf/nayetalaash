@@ -9,6 +9,7 @@ const AboutPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 
 	// Slider states for each section
 	const [hotelsSlide, setHotelsSlide] = useState(0);
@@ -483,15 +484,64 @@ const AboutPage = () => {
 
 					{/* Nav Links */}
 					<nav className="flex flex-col space-y-2 flex-grow">
-						<Link href="/#home" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						<Link href="/" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 							HOME
 						</Link>
-						<Link href="/#tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-							PAKISTAN TOURS
-						</Link>
-						<Link href="/#city-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-							CITY TOURS
-						</Link>
+						
+						{/* PAKISTAN TOURS with Dropdown */}
+						<div>
+							<button
+								onClick={() => setMobileDropdownOpen(mobileDropdownOpen === 'pakistan-tours' ? null : 'pakistan-tours')}
+								className="w-full flex items-center justify-between px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg"
+							>
+								<span>PAKISTAN TOURS</span>
+								<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'pakistan-tours' ? 'rotate-180' : ''}`} />
+							</button>
+							{mobileDropdownOpen === 'pakistan-tours' && (
+								<div className="pl-4 pr-2 py-2 space-y-1">
+									<Link href="/swat-kalam" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										Swat Kalam Tour Packages
+									</Link>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										Hunza Tour Packages
+									</Link>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										Skardu Tour Packages
+									</Link>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										Nathia Gali And Murree Tour Packages
+									</Link>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										Neelum Valley Azad Kashmir Tour Packages
+									</Link>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										Kumrat Valley Tour Packages
+									</Link>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										Naran Kaghan Tour Packages
+									</Link>
+								</div>
+							)}
+						</div>
+
+						{/* CITY TOURS with Dropdown */}
+						<div>
+							<button
+								onClick={() => setMobileDropdownOpen(mobileDropdownOpen === 'city-tours' ? null : 'city-tours')}
+								className="w-full flex items-center justify-between px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg"
+							>
+								<span>CITY TOURS</span>
+								<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'city-tours' ? 'rotate-180' : ''}`} />
+							</button>
+							{mobileDropdownOpen === 'city-tours' && (
+								<div className="pl-4 pr-2 py-2 space-y-1">
+									<Link href="/#city-tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										City Tour Packages
+									</Link>
+								</div>
+							)}
+						</div>
+
 						<Link href="/#group-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 							GROUP TOUR
 						</Link>
