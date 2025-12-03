@@ -792,9 +792,6 @@ const SwatKalamPage = () => {
 								'Gumbatona Stupa',
 								'Ghaligay Buddha Statue and Archaeological Remains',
 								'Shahkot Pass Elephant Paw and Queen\'s Throne',
-								'Nemogram Stupa and Monastery',
-								'Butkara I Stupa and Archaeological Remains',
-								'Butkara II Stupa and Archaeological Remains',
 							].map((item, idx) => (
 								<div 
 									key={idx} 
