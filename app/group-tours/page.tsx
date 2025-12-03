@@ -370,6 +370,245 @@ const GroupToursPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== WEEKLY GROUP TOURS SECTION ====================== */}
+			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-12">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4">
+							<span className="font-autography text-3xl md:text-4xl block" style={{ 
+								color: '#dc2626',
+								paddingLeft: '8px',
+								paddingRight: '8px',
+								display: 'inline-block'
+							}}>
+								Weekly Group Tours
+							</span>
+						</h2>
+						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							Here is the list of all upcoming trips by WeeklyGroupTours.pk. You can book the trips that best suit your needs, if not, you always have the option to customize a trip for yourself. Just contact us!
+						</p>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+						{/* Tour Package 1 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/skardu 2.jpg"
+									alt="Skardu Hunza and Shandur Top Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									SKARDU HUNZA AND SHANDUR TOP GROUP TOUR
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 2 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/skardu 2.jpg"
+									alt="Skardu Shakar and Babusar Valley Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									SKARDU SHAKAR AND BABUSAR VALLEY GROUP TOUR
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 3 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/naran and kaghan.jpg"
+									alt="9 Days Kaghan Babusar and Neelum Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									9 DAYS KAGHAN BABUSAR AND NEELUM GROUP TOUR
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 4 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/Hunza.jpg"
+									alt="Skardu Hunza, Naltar and Khunjerab Public Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									SKARDU HUNZA, NALTAR AND KHUNJERAB PUBLIC GROUP TOUR
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 5 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/fairy meadows 2.jpg"
+									alt="Skardu Fairy Meadows and Beyal Camp Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									SKARDU FAIRY MEADOWS AND BEYAL CAMP GROUP TOUR
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 6 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/naran and kaghan.jpg"
+									alt="8 Days Kaghan, Naltar and Fairy Meadows Valley Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									8 DAYS KAGHAN, NALTAR AND FAIRY MEADOWS VALLEY GROUP TOUR
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 7 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/skardu 2.jpg"
+									alt="Skardu Hunza Babusar and Shandur Top Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									SKARDU HUNZA BABUSAR AND SHANDUR TOP GROUP TOUR
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 8 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/gilgit.jpg"
+									alt="Skardu Gilgit, Babusar and Jabba Smart Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									SKARDU GILGIT, BABUSAR AND JABBA SMART GROUP TOUR
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 9 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/azad kashmir.jpg"
+									alt="8 Days Kaghan, Neelum and Azad Kashmir Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									8 DAYS KAGHAN, NEELUM AND AZAD KASHMIR GROUP TOUR
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== GROUP TOURS CONTENT SECTION ====================== */}
 			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
