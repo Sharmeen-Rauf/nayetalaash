@@ -935,27 +935,27 @@ const SwatKalamPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/swat.jpg',
+								image: '/images/zip line.jpg',
 								title: 'Chairlift & Zipline at Malam Jabba',
 								description: 'Experience thrilling ziplining and scenic chairlift rides at Malam Jabba Resort'
 							},
 							{
-								image: '/images/swat.jpg',
+								image: '/images/boating.jpg',
 								title: 'Boating at Mahodand Lake',
 								description: 'Enjoy peaceful boat rides on the crystal clear waters of Mahodand Lake'
 							},
 							{
-								image: '/images/swat.jpg',
+								image: '/images/camping.jpg',
 								title: 'Camping in meadows',
 								description: 'Spend nights under the stars in beautiful meadows surrounded by nature'
 							},
 							{
-								image: '/images/swat.jpg',
+								image: '/images/Hiking to lakes & waterfalls.jpg',
 								title: 'Hiking to lakes & waterfalls',
 								description: 'Explore scenic trails leading to stunning lakes and cascading waterfalls'
 							},
 							{
-								image: '/images/swat.jpg',
+								image: '/images/picture forest.jpg',
 								title: 'Photography in forests & meadows',
 								description: 'Capture breathtaking moments in lush forests and serene meadows'
 							},
