@@ -373,10 +373,10 @@ const GroupToursPage = () => {
 			{/* ====================== WEEKLY GROUP TOURS SECTION ====================== */}
 			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12">
+					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							<span className="font-autography text-3xl md:text-4xl block" style={{ 
-								color: '#dc2626',
+							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+								color: primaryOrange,
 								paddingLeft: '8px',
 								paddingRight: '8px',
 								display: 'inline-block'
@@ -612,12 +612,21 @@ const GroupToursPage = () => {
 			{/* ====================== HOW IT WORKS SECTION ====================== */}
 			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12">
-						<p className="text-base md:text-lg mb-2" style={{ color: '#dc2626' }}>
-							<span className="font-autography">Here is a guide on</span>
-						</p>
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							How it works?
+					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4">
+							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+								color: primaryOrange,
+								paddingLeft: '8px',
+								paddingRight: '8px',
+								display: 'inline-block'
+							}}>
+								Here is a guide on
+							</span>
+							<span className="block mt-2" style={{ 
+								color: secondaryBlack
+							}}>
+								How it works?
+							</span>
 						</h2>
 					</div>
 
@@ -680,10 +689,10 @@ const GroupToursPage = () => {
 			{/* ====================== OUR JOURNEYS SECTION ====================== */}
 			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12">
+					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							<span className="font-autography text-3xl md:text-4xl block" style={{ 
-								color: '#dc2626',
+							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+								color: primaryOrange,
 								paddingLeft: '8px',
 								paddingRight: '8px',
 								display: 'inline-block'
@@ -742,98 +751,6 @@ const GroupToursPage = () => {
 								fill
 								className="object-cover hover:scale-110 transition-transform duration-300"
 							/>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== GROUP TOURS CONTENT SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: primaryOrange,
-								paddingLeft: '8px',
-								paddingRight: '8px',
-								display: 'inline-block'
-							}}>
-								Why Choose Group Tours
-							</span>
-							<span className="block mt-2" style={{ color: secondaryBlack }}>
-								With Nayi Talaash
-							</span>
-						</h2>
-						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
-							Our group tour packages are designed to bring people together, create lasting memories, and offer unbeatable value for groups of all sizes.
-						</p>
-					</div>
-
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-						{/* Feature Card 1 */}
-						<div className="bg-white border-2 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]" style={{ borderColor: `${primaryOrange}30` }}>
-							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 shadow-lg" style={{ backgroundColor: primaryOrange }}>
-								<Users className="w-7 h-7 text-white" />
-							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Perfect for Groups</h3>
-							<p className="text-gray-600 leading-relaxed">
-								Whether you're a family of 5 or a corporate team of 50, we customize our tours to fit your group size and preferences perfectly.
-							</p>
-						</div>
-
-						{/* Feature Card 2 */}
-						<div className="bg-white border-2 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]" style={{ borderColor: `${primaryOrange}30` }}>
-							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 shadow-lg" style={{ backgroundColor: primaryOrange }}>
-								<CalendarDays className="w-7 h-7 text-white" />
-							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Flexible Scheduling</h3>
-							<p className="text-gray-600 leading-relaxed">
-								Choose your own dates! We work around your schedule to create the perfect itinerary for your group's availability.
-							</p>
-						</div>
-
-						{/* Feature Card 3 */}
-						<div className="bg-white border-2 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]" style={{ borderColor: `${primaryOrange}30` }}>
-							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 shadow-lg" style={{ backgroundColor: primaryOrange }}>
-								<ShieldCheck className="w-7 h-7 text-white" />
-							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Group Discounts</h3>
-							<p className="text-gray-600 leading-relaxed">
-								Enjoy special discounted rates for group bookings. The larger your group, the better the savings for everyone.
-							</p>
-						</div>
-
-						{/* Feature Card 4 */}
-						<div className="bg-white border-2 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]" style={{ borderColor: `${primaryOrange}30` }}>
-							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 shadow-lg" style={{ backgroundColor: primaryOrange }}>
-								<MapPin className="w-7 h-7 text-white" />
-							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Customized Itineraries</h3>
-							<p className="text-gray-600 leading-relaxed">
-								Every group is unique. We create personalized itineraries based on your interests, budget, and travel style.
-							</p>
-						</div>
-
-						{/* Feature Card 5 */}
-						<div className="bg-white border-2 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]" style={{ borderColor: `${primaryOrange}30` }}>
-							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 shadow-lg" style={{ backgroundColor: primaryOrange }}>
-								<CheckCircle2 className="w-7 h-7 text-white" />
-							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Dedicated Tour Manager</h3>
-							<p className="text-gray-600 leading-relaxed">
-								Your group gets a dedicated tour manager who handles all logistics, ensuring a smooth and stress-free journey for everyone.
-							</p>
-						</div>
-
-						{/* Feature Card 6 */}
-						<div className="bg-white border-2 rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]" style={{ borderColor: `${primaryOrange}30` }}>
-							<div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 shadow-lg" style={{ backgroundColor: primaryOrange }}>
-								<Users className="w-7 h-7 text-white" />
-							</div>
-							<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>Team Building Activities</h3>
-							<p className="text-gray-600 leading-relaxed">
-								Perfect for corporate groups! We include team-building activities and group experiences that strengthen bonds and create memories.
-							</p>
 						</div>
 					</div>
 				</div>
