@@ -726,7 +726,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Swat River', 
-								image: '/images/swat.jpg',
+								image: '/images/Swat River.jpg',
 								description: 'The river is mainly formed by the melting glacial waters flowing from the Hindukush Mountains. Its biggest feeding rivers are the Gabral, Utror, and Ushu Rivers. The Swat River travels throughout the valley, eventually joining the Panjkora River and flowing toward Peshawar.',
 								imageLeft: false
 							},
