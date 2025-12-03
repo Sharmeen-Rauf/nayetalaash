@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, Users, CalendarDays, MapPin, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, Users, CalendarDays, MapPin, ShieldCheck, CheckCircle2, Search, FileText, Mountain } from 'lucide-react';
 
 const GroupToursPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -402,7 +402,7 @@ const GroupToursPage = () => {
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									SKARDU HUNZA AND SHANDUR TOP GROUP TOUR
+									Skardu Hunza and Shandur Top Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -426,7 +426,7 @@ const GroupToursPage = () => {
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									SKARDU SHAKAR AND BABUSAR VALLEY GROUP TOUR
+									Skardu Shakar and Babusar Valley Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -450,7 +450,7 @@ const GroupToursPage = () => {
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									9 DAYS KAGHAN BABUSAR AND NEELUM GROUP TOUR
+									9 Days Kaghan Babusar and Neelum Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -474,7 +474,7 @@ const GroupToursPage = () => {
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									SKARDU HUNZA, NALTAR AND KHUNJERAB PUBLIC GROUP TOUR
+									Skardu Hunza, Naltar and Khunjerab Public Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -498,7 +498,7 @@ const GroupToursPage = () => {
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									SKARDU FAIRY MEADOWS AND BEYAL CAMP GROUP TOUR
+									Skardu Fairy Meadows and Beyal Camp Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -522,7 +522,7 @@ const GroupToursPage = () => {
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									8 DAYS KAGHAN, NALTAR AND FAIRY MEADOWS VALLEY GROUP TOUR
+									8 Days Kaghan, Naltar and Fairy Meadows Valley Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -546,7 +546,7 @@ const GroupToursPage = () => {
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									SKARDU HUNZA BABUSAR AND SHANDUR TOP GROUP TOUR
+									Skardu Hunza Babusar and Shandur Top Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -570,7 +570,7 @@ const GroupToursPage = () => {
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									SKARDU GILGIT, BABUSAR AND JABBA SMART GROUP TOUR
+									Skardu Gilgit, Babusar and Jabba Smart Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -594,7 +594,7 @@ const GroupToursPage = () => {
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									8 DAYS KAGHAN, NEELUM AND AZAD KASHMIR GROUP TOUR
+									8 Days Kaghan, Neelum and Azad Kashmir Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -604,6 +604,144 @@ const GroupToursPage = () => {
 									Read More
 								</a>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== HOW IT WORKS SECTION ====================== */}
+			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-12">
+						<p className="text-base md:text-lg mb-2" style={{ color: '#dc2626' }}>
+							<span className="font-autography">Here is a guide on</span>
+						</p>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							How it works?
+						</h2>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+						{/* Step 1 */}
+						<div className="text-center">
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
+								<Search className="w-10 h-10 text-white" />
+							</div>
+							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
+								FIND A DESTINATION
+							</h3>
+							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
+								from our list of tours updated on 'Tours' page.
+							</p>
+						</div>
+
+						{/* Step 2 */}
+						<div className="text-center">
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
+								<FileText className="w-10 h-10 text-white" />
+							</div>
+							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
+								PICK-UP
+							</h3>
+							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
+								the trip that best suits your requirements.
+							</p>
+						</div>
+
+						{/* Step 3 */}
+						<div className="text-center">
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
+								<Phone className="w-10 h-10 text-white" />
+							</div>
+							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
+								CONTACT US
+							</h3>
+							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
+								to book your trip or customize it according to your needs.
+							</p>
+						</div>
+
+						{/* Step 4 */}
+						<div className="text-center">
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
+								<Mountain className="w-10 h-10 text-white" />
+							</div>
+							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
+								GO & EXPLORE NOW
+							</h3>
+							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
+								Pack your bags and ENJOY.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== OUR JOURNEYS SECTION ====================== */}
+			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-12">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4">
+							<span className="font-autography text-3xl md:text-4xl block" style={{ 
+								color: '#dc2626',
+								paddingLeft: '8px',
+								paddingRight: '8px',
+								display: 'inline-block'
+							}}>
+								Our Journeys
+							</span>
+						</h2>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+						{/* Journey Image 1 */}
+						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+							<Image 
+								src="/images/skardu 2.jpg"
+								alt="Group tour journey 1"
+								fill
+								className="object-cover hover:scale-110 transition-transform duration-300"
+							/>
+						</div>
+
+						{/* Journey Image 2 */}
+						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+							<Image 
+								src="/images/Hunza.jpg"
+								alt="Group tour journey 2"
+								fill
+								className="object-cover hover:scale-110 transition-transform duration-300"
+							/>
+						</div>
+
+						{/* Journey Image 3 */}
+						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+							<Image 
+								src="/images/fairy meadows 2.jpg"
+								alt="Group tour journey 3"
+								fill
+								className="object-cover hover:scale-110 transition-transform duration-300"
+							/>
+						</div>
+
+						{/* Journey Image 4 */}
+						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+							<Image 
+								src="/images/naran and kaghan.jpg"
+								alt="Group tour journey 4"
+								fill
+								className="object-cover hover:scale-110 transition-transform duration-300"
+							/>
+						</div>
+
+						{/* Journey Image 5 */}
+						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+							<Image 
+								src="/images/azad kashmir.jpg"
+								alt="Group tour journey 5"
+								fill
+								className="object-cover hover:scale-110 transition-transform duration-300"
+							/>
 						</div>
 					</div>
 				</div>
