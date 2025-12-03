@@ -948,24 +948,44 @@ const SwatKalamPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Swat and Kalam?',
-								answer: 'The best time to visit Swat and Kalam is from April to October. Summer months (May-September) offer pleasant weather, lush green valleys, and accessible tourist spots. Winter (December-February) is ideal for snowfall and skiing at Malam Jabba.'
+								question: 'What is the best time to visit Swat & Kalam?',
+								answer: 'Swat is beautiful all year.\n\n• Summer: Lakes, forests, meadows\n\n• Winter: Snowfall, skiing, Malam Jabba activities'
 							},
 							{
-								question: 'How do I book a Swat Kalam tour package?',
-								answer: 'You can book a Swat Kalam tour package by contacting us via WhatsApp (+92 331 438251), email (info@nayitalaash.com), or by filling out the contact form on our website. We offer both customized and public group tour packages.'
+								question: 'Is Swat accessible by road?',
+								answer: 'Yes, Swat and Kalam are easily accessible via Swat Expressway.'
 							},
 							{
-								question: 'What should I pack for a trip to Swat Kalam?',
-								answer: 'Pack warm clothes (especially for evenings), comfortable hiking shoes, rain gear, sunscreen, sunglasses, and a camera. For winter visits, bring heavy jackets, gloves, and winter boots. Also carry basic medicines and personal toiletries.'
+								question: 'Are hotels available in Swat & Kalam?',
+								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts.'
 							},
 							{
-								question: 'Are hotels and accommodations available in Swat and Kalam?',
-								answer: 'Yes, there are various hotels, guest houses, and resorts available in Swat and Kalam ranging from budget to luxury options. We help arrange accommodation based on your preferences and budget. Advance booking is recommended during peak season.'
+								question: 'Is the tour safe for families and solo travelers?',
+								answer: 'Absolutely. Swat is a safe and friendly destination and our team ensures complete comfort.'
 							},
 							{
-								question: 'Is it safe to travel to Swat and Kalam?',
-								answer: 'Yes, Swat and Kalam are safe destinations for tourists. The region has seen significant improvements in security. We ensure safe travel routes, verified accommodations, and experienced local guides. We also provide 24/7 support during your trip.'
+								question: 'Are jeeps included for Mahodand Lake?',
+								answer: 'Yes, we arrange jeeps for all off road destinations.'
+							},
+							{
+								question: 'Can I customize my tour?',
+								answer: 'Yes, all packages can be customized to your preferences.'
+							},
+							{
+								question: 'Do you offer photography/videography?',
+								answer: 'Yes, we offer cinematic videos and photos on request.'
+							},
+							{
+								question: 'What should I pack?',
+								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
+							},
+							{
+								question: 'Are there restaurants and shops in Kalam?',
+								answer: 'Yes, there are many eateries, cafes and local markets.'
+							},
+							{
+								question: 'Do you have Swat tours from Karachi?',
+								answer: 'Yes, we offer complete Karachi-to-Swat packages with transport or flight options.'
 							},
 						].map((faq, idx) => (
 							<div 
@@ -986,14 +1006,14 @@ const SwatKalamPage = () => {
 											className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${openFAQIndex === idx ? 'rotate-180' : ''}`}
 											style={{ color: secondaryBlack }}
 										/>
-										<span className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.4' }}>
+										<span className="font-medium leading-normal text-left" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 											{faq.question}
 										</span>
 									</span>
 								</button>
 								{openFAQIndex === idx && (
-									<div className="pb-3 pl-7 animate-fadeIn" style={{ animation: 'fadeIn 0.3s ease-in' }}>
-										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+									<div className="pb-3 pl-7 animate-fadeIn text-left" style={{ animation: 'fadeIn 0.3s ease-in' }}>
+										<p className="leading-normal whitespace-pre-line text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 											{faq.answer}
 										</p>
 									</div>
