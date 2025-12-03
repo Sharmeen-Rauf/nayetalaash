@@ -390,23 +390,23 @@ const SwatKalamPage = () => {
 						const allPackages = [
 							{ 
 								title: '2 Days – Malam Jabba Tour (Short Escape)',
-								image: '/images/swat.jpg'
+								image: '/images/MalamJabba Tour(Short Escape)package 1.jpg'
 							},
 							{ 
 								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/swat.jpg'
+								image: '/images/Kalam, Mahodand Lake & Malam Jabbapackage 2.jpg'
 							},
 							{ 
 								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
-								image: '/images/swat.jpg'
+								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Green Top package 3.jpg'
 							},
 							{ 
 								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
-								image: '/images/swat.jpg'
+								image: '/images/Relaxed Kalam, Mahodand, Green Top & Blue Water Pointpackage 4.jpg'
 							},
 							{ 
 								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
-								image: '/images/swat.jpg'
+								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Desan Toppackage 5.jpg'
 							},
 							{ 
 								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
