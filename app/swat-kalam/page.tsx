@@ -690,7 +690,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Gabral Valley', 
-								image: '/images/swat.jpg',
+								image: '/images/Gabral Valley.jpg',
 								description: 'This beautiful valley is northwest of Swat and Utror, touching the lower parts of the Himalayas. If you travel deep inside, you\'ll discover lovely spots like Chota Banda Meadows and Shahi Bagh. Gabral Valley truly feels like a hidden slice of paradise for nature lovers and tourists.',
 								imageLeft: false
 							},
@@ -708,7 +708,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Shangla Top', 
-								image: '/images/swat.jpg',
+								image: '/images/Shangla Top.jpg',
 								description: 'This is a breathtaking hilltop destination located on the N90 Highway, about 20 km from Khwazakhela. It connects the region of Kohistan with Swat Valley, offering amazing mountain scenery. The best time to visit and enjoy the views is usually during spring and summer.',
 								imageLeft: true
 							},
@@ -732,13 +732,13 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Swat Expressway', 
-								image: '/images/swat.jpg',
+								image: '/images/Swat Expressway.jpg',
 								description: 'This modern highway (also called the N95 Highway) runs from Chakdara City all the way up to Kalam. It was finished in 2019 and has made a huge difference in the ease of travel to the valley. The highway has played a significant role in boosting tourism and accessibility to the region.',
 								imageLeft: true
 							},
 							{ 
 								title: 'White Palace Swat', 
-								image: '/images/swat.jpg',
+								image: '/images/White Palace Swat.jpg',
 								description: 'The beautiful White Palace was built in 1940 by the ruler (Wali) of Swat Valley. It is located in Marghazar, only about 13 kilometers from the capital, Saidu Sharif. The historic palace now operates as a stunning hotel, warmly welcoming guests.',
 								imageLeft: false
 							},
