@@ -376,7 +376,7 @@ const GroupToursPage = () => {
 					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
 							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: secondaryBlack,
+								color: '#000000',
 								paddingLeft: '8px',
 								paddingRight: '8px',
 								display: 'inline-block'
@@ -615,15 +615,15 @@ const GroupToursPage = () => {
 					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
 							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: secondaryBlack,
+								color: '#000000',
 								paddingLeft: '8px',
 								paddingRight: '8px',
 								display: 'inline-block'
 							}}>
 								Here is a guide on
 							</span>
-							<span className="block mt-2" style={{ 
-								color: secondaryBlack
+							<span className="block mt-2 font-bold" style={{ 
+								color: '#000000'
 							}}>
 								How it works?
 							</span>
@@ -692,7 +692,7 @@ const GroupToursPage = () => {
 					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4">
 							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: secondaryBlack,
+								color: '#000000',
 								paddingLeft: '8px',
 								paddingRight: '8px',
 								display: 'inline-block'
