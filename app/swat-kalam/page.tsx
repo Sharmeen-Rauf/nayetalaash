@@ -636,49 +636,49 @@ const SwatKalamPage = () => {
 						{[
 							{ 
 								title: 'Kalam Valley', 
-								image: '/images/swat.jpg',
+								image: '/images/Kalam valley.jpg',
 								description: 'Kalam is known for its blue streams, snowy mountain peaks and peaceful landscapes. It\'s an ideal destination for families, couples and adventure seekers looking for calm and natural beauty. It is often considered the heart of the region\'s scenic attractions.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Malam Jabba', 
-								image: '/images/swat.jpg',
+								image: '/images/malam jabba.jpg',
 								description: 'Malam Jabba is a popular hilltop ski resort offering chairlift rides, ziplines and stunning viewpoints. It is a hub for winter snow activities and year-round adventure sports. This location is perfect for both thrilling action and quiet relaxation.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Ushu Forest', 
-								image: '/images/swat.jpg',
+								image: '/images/Ushu Forest.jpg',
 								description: 'Ushu Forest is a dense Deodar forest filled with fresh air, tall trees and scenic views. It is a refreshing and peaceful spot ideal for deep nature walks. The area is highly recommended for photography enthusiasts seeking natural light and greenery.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Matiltan Waterfall', 
-								image: '/images/swat.jpg',
+								image: '/images/Matiltan Waterfall.jpg',
 								description: 'Matiltan Waterfall is a beautiful natural attraction surrounded by wooden huts and lush greenery. It is backdropped by majestic snow covered mountains, creating a striking scene. The waterfall\'s accessibility and beauty make it a favorite stop for tourists in the area.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Mahodand Lake', 
-								image: '/images/swat.jpg',
+								image: '/images/Mahodand Lake.jpg',
 								description: 'Mahodand Lake is a breathtaking glacier lake open primarily during the summer season. Surrounded by pine forests and green meadows, it\'s perfect for boating and camping. The stunning high altitude scenery makes it an excellent location for photography.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Saifullah Lake', 
-								image: '/images/swat.jpg',
+								image: '/images/Saifullah Lake.jpg',
 								description: 'Located close to Mahodand, Saifullah Lake is another crystal clear alpine lake. It can be reached either by a scenic walk or a thrilling jeep ride through the terrain. The clear waters and surrounding mountain views offer great tranquility.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Desan Meadows', 
-								image: '/images/swat.jpg',
+								image: '/images/Desan Meadows.jpg',
 								description: 'Desan Meadows offer wide green fields and stunning panoramic mountain views. This area also provides easy access to nearby spots like the picturesque Godar Lake. It\'s a truly beautiful and open place for dedicated trekking and nature exploration.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Green Top (Boyun Village)', 
-								image: '/images/swat.jpg',
+								image: '/images/Green Top (Boyun Village).jpg',
 								description: 'Green Top provides one of Kalam\'s best and most famous panoramic viewpoints. It is easy to reach and is widely loved by tourists and locals alike. The spot is a must visit for its breathtaking sunrise and sunset views over the valley.',
 								imageLeft: false
 							},
@@ -690,13 +690,13 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Blue Water Point', 
-								image: '/images/swat.jpg',
+								image: '/images/Blue Water Point.jpg',
 								description: 'Blue Water Point is famous for its uniquely crystal clear water flowing through the area. It is set within peaceful, dense and scenic forested surroundings. This location serves as a calming and beautiful stop for relaxation and photos.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Badgoi Pass', 
-								image: '/images/swat.jpg',
+								image: '/images/Badgoi Pass.jpg',
 								description: 'Badgoi Pass is a high altitude mountain pass connecting Kalam with Upper Dir. It offers dramatic, rugged landscapes and truly remote scenery. Traversing this pass is a thrilling and memorable experience for adventure lovers.',
 								imageLeft: true
 							},
