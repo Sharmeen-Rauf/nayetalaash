@@ -894,21 +894,41 @@ const SwatKalamPage = () => {
 					</div>
 					
 					{/* 5 Images Vertical Collage - Attached */}
-					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden">
+					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
-							'/images/swat.jpg',
-							'/images/swat.jpg',
-							'/images/swat.jpg',
-							'/images/swat.jpg',
-							'/images/swat.jpg',
-						].map((image, idx) => (
+							{
+								image: '/images/swat.jpg',
+								title: 'Chairlift & Zipline at Malam Jabba',
+								description: 'Experience thrilling ziplining and scenic chairlift rides at Malam Jabba Resort'
+							},
+							{
+								image: '/images/swat.jpg',
+								title: 'Boating at Mahodand Lake',
+								description: 'Enjoy peaceful boat rides on the crystal clear waters of Mahodand Lake'
+							},
+							{
+								image: '/images/swat.jpg',
+								title: 'Camping in meadows',
+								description: 'Spend nights under the stars in beautiful meadows surrounded by nature'
+							},
+							{
+								image: '/images/swat.jpg',
+								title: 'Hiking to lakes & waterfalls',
+								description: 'Explore scenic trails leading to stunning lakes and cascading waterfalls'
+							},
+							{
+								image: '/images/swat.jpg',
+								title: 'Photography in forests & meadows',
+								description: 'Capture breathtaking moments in lush forests and serene meadows'
+							},
+						].map((item, idx) => (
 							<div 
 								key={idx} 
-								className={`relative h-[400px] md:h-[500px] overflow-hidden transition-all duration-700 ease-in-out scroll-reveal-fade-in ${
+								className={`relative h-[300px] md:h-[350px] overflow-hidden transition-all duration-700 ease-in-out scroll-reveal-fade-in cursor-pointer ${
 									hoveredImageIndex === idx 
-										? 'flex-[2]' 
+										? 'flex-[2.5]' 
 										: hoveredImageIndex !== null 
-											? 'flex-[0.5]' 
+											? 'flex-[0.6]' 
 											: 'flex-1'
 								} ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
 								style={{
@@ -918,12 +938,39 @@ const SwatKalamPage = () => {
 								onMouseLeave={() => setHoveredImageIndex(null)}
 							>
 								<Image 
-									src={image}
-									alt={`Activity ${idx + 1} in Kalam Swat`}
+									src={item.image}
+									alt={item.title}
 									fill
 									className="object-cover transition-transform duration-500"
 									style={{ transform: hoveredImageIndex === idx ? 'scale(1.1)' : 'scale(1)' }}
 								/>
+								{/* Overlay with content */}
+								<div 
+									className={`absolute inset-0 transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'bg-black/50' 
+											: 'bg-black/20'
+									}`}
+								></div>
+								{/* Content Overlay */}
+								<div 
+									className={`absolute inset-0 flex flex-col justify-center items-center text-white transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'opacity-100 translate-y-0' 
+											: 'opacity-0 translate-y-4'
+									}`}
+								>
+									<div className="text-center px-4">
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
+											{item.title}
+										</h3>
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<p className="text-sm md:text-base opacity-90 max-w-xs">
+											{item.description}
+										</p>
+									</div>
+								</div>
 							</div>
 						))}
 					</div>
