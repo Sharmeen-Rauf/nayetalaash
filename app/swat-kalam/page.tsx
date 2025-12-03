@@ -637,68 +637,110 @@ const SwatKalamPage = () => {
 							{ 
 								title: 'Kalam Valley', 
 								image: '/images/Kalam valley.jpg',
-								description: 'Kalam is known for its blue streams, snowy mountain peaks and peaceful landscapes. It\'s an ideal destination for families, couples and adventure seekers looking for calm and natural beauty. It is often considered the heart of the region\'s scenic attractions.',
+								description: 'Kalam means "Blue Water" and is the main entrance to the beautiful upper valleys. It sits high in the Hindukush mountains and gives amazing views of Falaksar Peak. You\'ll find comfy places to stay, great food, and it\'s open to enjoy in both summer and winter.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Malam Jabba', 
 								image: '/images/malam jabba.jpg',
-								description: 'Malam Jabba is a popular hilltop ski resort offering chairlift rides, ziplines and stunning viewpoints. It is a hub for winter snow activities and year-round adventure sports. This location is perfect for both thrilling action and quiet relaxation.',
+								description: 'This is a popular hilltop ski resort located about an hour or two from Mingora City. When it snows, you can enjoy skiing, a fun chair lift ride, and zip lining. It\'s the perfect spot for winter sports and has hotels available for your stay.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Ushu Forest', 
+								title: 'Ushu Forest (Ushu Valley)', 
 								image: '/images/Ushu Forest.jpg',
-								description: 'Ushu Forest is a dense Deodar forest filled with fresh air, tall trees and scenic views. It is a refreshing and peaceful spot ideal for deep nature walks. The area is highly recommended for photography enthusiasts seeking natural light and greenery.',
+								description: 'Just 8 km from Kalam, this forest is famous for its thick, dense Deodar trees. It\'s easy to reach even without a car and you\'ll find small shops, hotels, and places to camp along the road. It\'s a beautiful, shady spot for a walk and a great place to enjoy the fresh air.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Matiltan Waterfall', 
+								title: 'Matiltan Waterfall and Chashma-e-Shifa', 
 								image: '/images/Matiltan Waterfall.jpg',
-								description: 'Matiltan Waterfall is a beautiful natural attraction surrounded by wooden huts and lush greenery. It is backdropped by majestic snow covered mountains, creating a striking scene. The waterfall\'s accessibility and beauty make it a favorite stop for tourists in the area.',
+								description: 'The road leads up to Matiltan Village, where you can see the stunning waterfall and a seasonal glacier. There are hotels and restaurants here, and a special spring called Chashma-e-Shifa (Healing Fountain). Locals believe the water from this fountain has unique healing properties due to its minerals.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Mahodand Lake', 
 								image: '/images/Mahodand Lake.jpg',
-								description: 'Mahodand Lake is a breathtaking glacier lake open primarily during the summer season. Surrounded by pine forests and green meadows, it\'s perfect for boating and camping. The stunning high altitude scenery makes it an excellent location for photography.',
+								description: 'This is a beautiful, large glacial lake formed by melting ice from the Hindukush Mountains. It\'s great for summer visits but closes completely in winter because heavy snow blocks the road. You can find small shops, restaurants, and meadows perfect for camping near the water.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Saifullah Lake', 
 								image: '/images/Saifullah Lake.jpg',
-								description: 'Located close to Mahodand, Saifullah Lake is another crystal clear alpine lake. It can be reached either by a scenic walk or a thrilling jeep ride through the terrain. The clear waters and surrounding mountain views offer great tranquility.',
+								description: 'This lake is located further into Ushu Valley, about a 30 to 45-minute journey from Mahodand Lake. You can reach it either by hiking on foot or by taking a rugged 4x4 jeep for the scenic ride. It\'s another crystal-clear, stunning alpine lake waiting to be explored.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Desan Meadows', 
 								image: '/images/Desan Meadows.jpg',
-								description: 'Desan Meadows offer wide green fields and stunning panoramic mountain views. This area also provides easy access to nearby spots like the picturesque Godar Lake. It\'s a truly beautiful and open place for dedicated trekking and nature exploration.',
+								description: 'These meadows are near Kalam and offer stunning, lush green fields and heavenly views. You can reach this beautiful spot by taking a jeep ride from either Kalam or Utror Valley. It\'s surrounded by other stunning sites like Godar, Dararo, and Zahro Lakes.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Green Top (Boyun Village)', 
+								title: 'Green Top', 
 								image: '/images/Green Top (Boyun Village).jpg',
-								description: 'Green Top provides one of Kalam\'s best and most famous panoramic viewpoints. It is easy to reach and is widely loved by tourists and locals alike. The spot is a must visit for its breathtaking sunrise and sunset views over the valley.',
+								description: 'Also known as the "Kalam View Point," this spot is famous for its mesmerizing panoramic views. It\'s accessible by jeep or by enjoying a scenic hike to the top. A small place called Boyun Village is up here, known for its beautiful green surroundings in the summer.',
 								imageLeft: false
+							},
+							{ 
+								title: 'Utror Valley', 
+								image: '/images/swat.jpg',
+								description: 'Utror is a great central base camp for exploring many lesser-known valleys nearby. It\'s the gateway to beautiful spots like Gabral Valley, Kumrat Valley, and Dhan Valley. You can also visit gorgeous alpine lakes from here, including Kundol Lake and the twin lakes of Pari and Paristan.',
+								imageLeft: true
 							},
 							{ 
 								title: 'Gabral Valley', 
 								image: '/images/swat.jpg',
-								description: 'Gabral Valley is known for its untouched natural beauty and lush, extensive meadows. It features beautiful, pristine streams and points of interest like Shahi Bagh. The valley strongly attracts nature lovers and photographers seeking unspoiled landscapes.',
-								imageLeft: true
+								description: 'This beautiful valley is northwest of Swat and Utror, touching the lower parts of the Himalayas. If you travel deep inside, you\'ll discover lovely spots like Chota Banda Meadows and Shahi Bagh. Gabral Valley truly feels like a hidden slice of paradise for nature lovers and tourists.',
+								imageLeft: false
 							},
 							{ 
-								title: 'Blue Water Point', 
+								title: 'Blue Water Kalam Swat', 
 								image: '/images/Blue Water Point.jpg',
-								description: 'Blue Water Point is famous for its uniquely crystal clear water flowing through the area. It is set within peaceful, dense and scenic forested surroundings. This location serves as a calming and beautiful stop for relaxation and photos.',
-								imageLeft: false
+								description: 'This spot is about 10-15 km from Kalam and takes around two hours to reach by jeep. It is a popular summer getaway known for its crystal-clear water flow. It gained extra fame after a visit by the former Prime Minister of Pakistan, Mr. Imran Khan.',
+								imageLeft: true
 							},
 							{ 
 								title: 'Badgoi Pass', 
 								image: '/images/Badgoi Pass.jpg',
-								description: 'Badgoi Pass is a high altitude mountain pass connecting Kalam with Upper Dir. It offers dramatic, rugged landscapes and truly remote scenery. Traversing this pass is a thrilling and memorable experience for adventure lovers.',
+								description: 'Badgoi is a high mountain pass that links Kalam with the Upper Dir District. It leads directly to Thal in Upper Dir, and you\'ll pass through "heavenly places" like Hawa ka Darra. This scenic jeep journey from Kalam or Kumrat takes about 4–5 hours.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Shangla Top', 
+								image: '/images/swat.jpg',
+								description: 'This is a breathtaking hilltop destination located on the N90 Highway, about 20 km from Khwazakhela. It connects the region of Kohistan with Swat Valley, offering amazing mountain scenery. The best time to visit and enjoy the views is usually during spring and summer.',
 								imageLeft: true
+							},
+							{ 
+								title: 'Khwazakhela to Besham Route', 
+								image: '/images/swat.jpg',
+								description: 'This is the N90 Highway, a route connecting Swat to the Kohistan region. It stretches for about 65–70 km, starting at Khwazakhela City and ending at Besham City. This highway is essential and used frequently by both local traders and tourists.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Bahrain', 
+								image: '/images/swat.jpg',
+								description: 'Bahrain sits where the Daral and Swat Rivers meet on the main highway to Kalam. It was a beautiful tourist spot with a lively market, but the 2022 floods caused significant damage. From here, you can start the journey to visit Daral and Saidgai Lakes.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Swat River', 
+								image: '/images/swat.jpg',
+								description: 'The river is mainly formed by the melting glacial waters flowing from the Hindukush Mountains. Its biggest feeding rivers are the Gabral, Utror, and Ushu Rivers. The Swat River travels throughout the valley, eventually joining the Panjkora River and flowing toward Peshawar.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Swat Expressway', 
+								image: '/images/swat.jpg',
+								description: 'This modern highway (also called the N95 Highway) runs from Chakdara City all the way up to Kalam. It was finished in 2019 and has made a huge difference in the ease of travel to the valley. The highway has played a significant role in boosting tourism and accessibility to the region.',
+								imageLeft: true
+							},
+							{ 
+								title: 'White Palace Swat', 
+								image: '/images/swat.jpg',
+								description: 'The beautiful White Palace was built in 1940 by the ruler (Wali) of Swat Valley. It is located in Marghazar, only about 13 kilometers from the capital, Saidu Sharif. The historic palace now operates as a stunning hotel, warmly welcoming guests.',
+								imageLeft: false
 							},
 						].map((destination, idx) => (
 							<div 
