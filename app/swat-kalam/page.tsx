@@ -495,10 +495,10 @@ const SwatKalamPage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Swat Kalam Tour Packages 2025
+							Public Swat & Kalam Tour Packages
 						</h2>
-						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							Nayi Talaash offers these swat tour packages to Swat Kalam Valley throughout the year. You can join them as per your schedule, individually or with your group. Here are the Swat Kalam Valley Tours that you can choose from.
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Swat and Kalam Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
 						</p>
 					</div>
 
@@ -508,14 +508,14 @@ const SwatKalamPage = () => {
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
-									alt="3 Days Malam Jabba, Kalam Swat Tour"
+									alt="3 Days: Malam Jabba, Kalam & Swat Valley Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days Malam Jabba, Kalam Swat Tour
+									3 Days: Malam Jabba, Kalam & Swat Valley Tour
 								</p>
 							</div>
 						</div>
@@ -524,14 +524,14 @@ const SwatKalamPage = () => {
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
-									alt="2 Days Malam Jabba Swat Tour"
+									alt="2 Days: Malam Jabba Swat Quick Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									2 Days Malam Jabba Swat Tour
+									2 Days: Malam Jabba Swat Quick Tour
 								</p>
 							</div>
 						</div>
