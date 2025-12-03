@@ -10,7 +10,7 @@ import Lottie from 'lottie-react';
 const allTourPackages = [
 	{ name: 'Hunza – 5 Days Tour Package', image: '/images/Hunza.jpg', description: 'Majestic valleys and ancient culture' },
 	{ name: 'Skardu – 6 Days Tour Package', image: '/images/skardu 2.jpg', description: 'Gateway to K2 and Baltoro Glacier' },
-	{ name: 'Swat & Kalam – 4 Days Tour Package', image: '/images/kalam and swat.jpeg', description: 'Switzerland of Pakistan' },
+	{ name: 'Swat & Kalam – 4 Days Tour Package', image: '/images/Swat.jpg', description: 'Switzerland of Pakistan' },
 	{ name: 'Murree & Nathia Gali – 2 Days Tour Package', image: '/images/murree and nathia gali.jpg', description: 'Colonial hill station charm' },
 	{ name: 'Naran Kaghan – 3 Days Tour Package', image: '/images/naran and kaghan.jpg', description: 'Alpine lakes and meadows' },
 	{ name: 'Azad Kashmir – 4 Days Tour Package', image: '/images/azad kashmir.jpg', description: 'Paradise on earth' },

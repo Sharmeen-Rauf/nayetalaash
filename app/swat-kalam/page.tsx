@@ -330,7 +330,7 @@ const SwatKalamPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/Home Banner - Idea.jpg')",
+						backgroundImage: "url('/images/swatpageherosection.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -394,7 +394,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/Kalam, Mahodand Lake & Malam Jabbapackage 2.jpg'
+								image: '/images/pacakges2.jpeg'
 							},
 							{ 
 								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
