@@ -380,13 +380,7 @@ const SwatKalamPage = () => {
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer thoughtfully curated and customizable packages, allowing you to adjust destinations, trip days, stays and activities according to your preferences.
-							</p>
-							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Swat Valley, often called the Switzerland of Pakistan, is one of the most stunning regions in the country. With its snow capped mountains, blue water lakes, lush forests, and peaceful meadows, Swat is a dream for every traveler.
-							</p>
-							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Whether you're traveling with family, friends, your partner, or a corporate team, we create tours that match your style.
+								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Swat Valley often called the Switzerland of Pakistan is known for its snow covered mountains, blue lakes, green forests and calm meadows, making it a perfect place for every traveler. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
 							</p>
 						</div>
 					</div>
@@ -778,7 +772,7 @@ const SwatKalamPage = () => {
 						</p>
 
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some other historical and archeological sites in Swat Valley are as follows:
+							Some Other Historical and Archeological Sites in Swat Valley are as Follows:
 						</h3>
 
 						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
