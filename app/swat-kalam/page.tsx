@@ -826,7 +826,7 @@ const SwatKalamPage = () => {
 										if (pElement) pElement.style.color = secondaryBlack;
 									}}
 								>
-									<p className="leading-normal transition-colors duration-300 text-center uppercase" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
+									<p className="leading-normal transition-colors duration-300 text-center capitalize" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
 										{item}
 									</p>
 								</div>
