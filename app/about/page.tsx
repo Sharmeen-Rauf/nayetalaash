@@ -433,14 +433,15 @@ const AboutPage = () => {
 							<Link href="/contact" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>CONTACT US</Link>
 						</nav>
 
-						{/* Mobile Menu Button */}
-						<button
-							onClick={() => setIsMenuOpen(true)}
-							className="lg:hidden p-2 rounded-md transition-colors hover:bg-white/20"
-							aria-label="Toggle navigation menu"
-						>
-							<Menu className={`w-6 h-6 ${isLight ? 'text-[#211f20]' : 'text-white'}`} />
-						</button>
+					{/* Mobile Menu Button */}
+					<button
+						onClick={() => setIsMenuOpen(!isMenuOpen)}
+						className="lg:hidden p-2 rounded-lg transition-colors"
+						style={{ color: isLight ? secondaryBlack : 'white' }}
+						aria-label="Toggle navigation menu"
+					>
+						{isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+					</button>
 					</div>
 				</div>
 			</header>
@@ -481,7 +482,7 @@ const AboutPage = () => {
 					</div>
 
 					{/* Nav Links */}
-					<nav className="flex flex-col space-y-1 flex-grow">
+					<nav className="flex flex-col space-y-2 flex-grow">
 						<Link href="/#home" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 							HOME
 						</Link>

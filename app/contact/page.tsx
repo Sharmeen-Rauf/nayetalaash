@@ -212,37 +212,103 @@ const ContactPage = () => {
 							<Link href="/contact" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>CONTACT US</Link>
 						</nav>
 
-						{/* Mobile Menu Button */}
-						<button
-							onClick={() => setIsMenuOpen(true)}
-							className="lg:hidden p-2 rounded-md transition-colors hover:bg-white/20"
-							aria-label="Toggle navigation menu"
-						>
-							<Menu className={`w-6 h-6 ${isLight ? 'text-[#211f20]' : 'text-white'}`} />
-						</button>
-					</div>
+					{/* Mobile Menu Button */}
+					<button
+						onClick={() => setIsMenuOpen(!isMenuOpen)}
+						className="lg:hidden p-2 rounded-lg transition-colors"
+						style={{ color: isLight ? secondaryBlack : 'white' }}
+						aria-label="Toggle navigation menu"
+					>
+						{isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+					</button>
 				</div>
-			</header>
+			</div>
+		</header>
 
-			{/* Mobile Menu */}
+		{/* Mobile Side Navigation Menu */}
+		<div
+			className={`fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+			style={{ backgroundColor: '#f8f9fa' }}
+		>
+			{/* Clickable Overlay to close menu */}
 			{isMenuOpen && (
-				<div className="fixed inset-0 z-[120] bg-black/50 lg:hidden" onClick={() => setIsMenuOpen(false)}>
-					<div className="fixed top-[32px] sm:top-[36px] left-0 right-0 bg-white shadow-xl" onClick={(e) => e.stopPropagation()}>
-						<div className="px-4 py-4 space-y-2">
-							<Link href="/#home" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621]" onClick={() => setIsMenuOpen(false)}>HOME</Link>
-							<Link href="/#tours" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621]" onClick={() => setIsMenuOpen(false)}>PAKISTAN TOURS</Link>
-							<Link href="/#city-tours" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621]" onClick={() => setIsMenuOpen(false)}>CITY TOURS</Link>
-							<Link href="/#group-tours" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621]" onClick={() => setIsMenuOpen(false)}>GROUP TOUR</Link>
-							<Link href="/#destination" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621]" onClick={() => setIsMenuOpen(false)}>DESTINATION</Link>
-							<Link href="/#about" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621]" onClick={() => setIsMenuOpen(false)}>ABOUT US</Link>
-							<Link href="/contact" className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:text-[#f99621]" onClick={() => setIsMenuOpen(false)}>CONTACT US</Link>
-							<button onClick={() => setIsMenuOpen(false)} className="absolute top-4 right-4 p-2">
-								<X className="w-6 h-6 text-[#211f20]" />
-							</button>
-						</div>
-					</div>
-				</div>
+				<div 
+					className="fixed inset-0 bg-black/50 z-[-1] backdrop-blur-sm" 
+					onClick={() => setIsMenuOpen(false)}
+					aria-hidden="true"
+				/>
 			)}
+			<div className="p-6 sm:p-8 flex flex-col h-full">
+				{/* Close Button */}
+				<button
+					onClick={() => setIsMenuOpen(false)}
+					className="absolute top-6 right-6 p-2 rounded-full text-white transition-colors hover:bg-[#e8851a]"
+					style={{ backgroundColor: '#f99621' }}
+					aria-label="Close navigation menu"
+				>
+					<X className="w-6 h-6" />
+				</button>
+
+				{/* Logo */}
+				<div className="mt-12 mb-8">
+					<Link href="/">
+						<Image 
+							src={logoImage}
+							alt="Nayi Talaash Logo"
+							width={150}
+							height={50}
+							className="h-12 w-auto object-contain"
+						/>
+					</Link>
+				</div>
+
+				{/* Nav Links */}
+				<nav className="flex flex-col space-y-2 flex-grow">
+					<Link href="/" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						HOME
+					</Link>
+					<Link href="/#tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						PAKISTAN TOURS
+					</Link>
+					<Link href="/#city-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						CITY TOURS
+					</Link>
+					<Link href="/#group-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						GROUP TOUR
+					</Link>
+					<Link href="/#destination" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						DESTINATION
+					</Link>
+					<Link href="/about" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						ABOUT US
+					</Link>
+					<Link href="/contact" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+						CONTACT US
+					</Link>
+				</nav>
+
+				{/* Footer Info in Menu */}
+				<div className="mt-auto pt-6 border-t border-gray-300">
+					<div className="flex items-center gap-3 mb-3">
+						<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+							<Facebook className="w-5 h-5 text-white stroke-[white]" />
+						</a>
+						<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+							<Instagram className="w-5 h-5 text-white stroke-[white]" />
+						</a>
+						<a href="https://www.youtube.com/@nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+							<Youtube className="w-5 h-5 text-white stroke-[white]" />
+						</a>
+					</div>
+					<p className="text-gray-600 text-sm">
+						Explore the unknown with us.
+					</p>
+					<p className="text-gray-500 text-xs mt-2">
+						© 2024 Nayi Talaash. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
 
 			{/* Hero Section */}
 			<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[100px] sm:pt-[104px]" style={{ backgroundColor: secondaryBlack }}>

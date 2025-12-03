@@ -996,11 +996,12 @@ const Page = () => {
 
 					{/* Mobile Menu Button */}
 				<button
-					onClick={() => setIsMenuOpen(true)}
-						className="lg:hidden p-2 rounded-md transition-colors hover:bg-white/20"
+					onClick={() => setIsMenuOpen(!isMenuOpen)}
+					className="lg:hidden p-2 rounded-lg transition-colors"
+					style={{ color: isLight ? secondaryBlack : 'white' }}
 					aria-label="Toggle navigation menu"
 				>
-						<Menu className={`w-6 h-6 ${isLight ? 'text-[#211f20]' : 'text-white'}`} />
+					{isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
 				</button>
 				</div>
 			</div>
