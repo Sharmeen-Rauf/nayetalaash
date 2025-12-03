@@ -538,8 +538,8 @@ const SwatKalamPage = () => {
 					</div>
 
 					{/* Who Are These Tours For Section */}
-					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12 mb-8">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Who Are These Tours For?
 						</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -547,7 +547,7 @@ const SwatKalamPage = () => {
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
 									Couples & Honeymooners
 								</h4>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Romantic, private, and relaxing trips with premium stays and scenic spots perfect for making new memories.
 								</p>
 							</div>
@@ -555,7 +555,7 @@ const SwatKalamPage = () => {
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
 									Families
 								</h4>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Safe, fun, and comfortable travel with activities and spots everyone can enjoy.
 								</p>
 							</div>
@@ -563,7 +563,7 @@ const SwatKalamPage = () => {
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
 									Friends & Student Groups
 								</h4>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Adventure, trekking, games, activities, and fun moments all without planning stress.
 								</p>
 							</div>
@@ -571,7 +571,7 @@ const SwatKalamPage = () => {
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
 									Corporate Groups
 								</h4>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 									Perfect for team building, relaxation, and bonding outside the office.
 								</p>
 							</div>
