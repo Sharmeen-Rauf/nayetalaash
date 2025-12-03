@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
 
-const SwatKalamPage = () => {
+const HunzaPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -187,27 +187,27 @@ const SwatKalamPage = () => {
 												</Link>
 											</li>
 											<li>
-												<Link href="/skardu" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Skardu Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/nathia-gali-murree" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Nathia Gali And Murree Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/neelum-valley" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Neelum Valley Azad Kashmir Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/kumrat-valley" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Kumrat Valley Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/naran-kaghan" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Naran Kaghan Tour Packages
 												</Link>
 											</li>
@@ -300,19 +300,19 @@ const SwatKalamPage = () => {
 									<Link href="/hunza" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Hunza Tour Packages
 									</Link>
-									<Link href="/skardu" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Skardu Tour Packages
 									</Link>
-									<Link href="/nathia-gali-murree" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Nathia Gali And Murree Tour Packages
 									</Link>
-									<Link href="/neelum-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Neelum Valley Azad Kashmir Tour Packages
 									</Link>
-									<Link href="/kumrat-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Kumrat Valley Tour Packages
 									</Link>
-									<Link href="/naran-kaghan" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Naran Kaghan Tour Packages
 									</Link>
 								</div>
@@ -380,7 +380,7 @@ const SwatKalamPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/swatpageherosection.jpg')",
+						backgroundImage: "url('/images/Hunza.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -393,7 +393,7 @@ const SwatKalamPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
 							<span className="font-autography hero-text-reveal block mb-2 text-white" style={{ display: 'inline-block', fontSize: '48px', color: 'white' }}>
-								Swat & Kalam Tour Packages
+								Hunza Tour Packages
 							</span>
 							<br />
 							<span className="block hero-text-reveal hero-text-delay-1"
@@ -402,11 +402,11 @@ const SwatKalamPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Discover the Switzerland of Pakistan
+								Explore the Land of Longevity
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Discover Swat & Kalam stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
+						Discover Hunza Valley stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
@@ -426,11 +426,11 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Swat & Kalam Tour Packages
+							Customized Hunza Tour Packages
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Swat Valley often called the Switzerland of Pakistan is known for its snow covered mountains, blue lakes, green forests and calm meadows, making it a perfect place for every traveler. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Hunza Valley is known for its stunning mountain peaks, ancient forts, crystal-clear lakes, and rich cultural heritage, making it a perfect place for every traveler. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
 							</p>
 						</div>
 					</div>
@@ -545,10 +545,10 @@ const SwatKalamPage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Swat & Kalam Tour Packages
+							Public Hunza Tour Packages
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Swat and Kalam Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
+							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Hunza Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
 						</p>
 					</div>
 
@@ -565,7 +565,7 @@ const SwatKalamPage = () => {
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days: Malam Jabba, Kalam & Swat Valley Tour
+									5 Days: Hunza Valley Complete Tour
 								</p>
 							</div>
 						</div>
@@ -581,7 +581,7 @@ const SwatKalamPage = () => {
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									2 Days: Malam Jabba Swat Quick Tour
+									3 Days: Hunza Valley Quick Tour
 								</p>
 							</div>
 						</div>
@@ -631,7 +631,7 @@ const SwatKalamPage = () => {
 					{/* Swat Tour Packages From Major Cities Section */}
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Swat Tour Packages From Major Cities
+							Hunza Tour Packages From Major Cities
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							We provide tours from:
@@ -674,123 +674,81 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Swat & Kalam
+							Top Places to Visit in Hunza
 						</h2>
 						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Swat Valley is full of natural wonders, flowing rivers, crystal lakes, waterfalls and forests. Here are the must visit attractions included in our tours:
+							Hunza Valley is full of natural wonders, ancient forts, crystal lakes, and stunning mountain peaks. Here are the must visit attractions included in our tours:
 						</p>
 					</div>
 					
-					{/* 11 Destinations with Alternating Layout */}
+					{/* Destinations with Alternating Layout */}
 					<div className="space-y-8">
 						{[
 							{ 
-								title: 'Kalam Valley', 
-								image: '/images/Kalam valley.jpg',
-								description: 'Kalam means "Blue Water" and is the main entrance to the beautiful upper valleys. It sits high in the Hindukush mountains and gives amazing views of Falaksar Peak. You\'ll find comfy places to stay, great food, and it\'s open to enjoy in both summer and winter.',
+								title: 'Baltit Fort', 
+								image: '/images/Hunza.jpg',
+								description: 'A historic fort located in Karimabad, Hunza. This ancient fort offers stunning views of the valley and showcases the rich history and architecture of the Hunza people. It\'s a UNESCO World Heritage site and a must-visit destination.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Malam Jabba', 
-								image: '/images/malam jabba.jpg',
-								description: 'This is a popular hilltop ski resort located about an hour or two from Mingora City. When it snows, you can enjoy skiing, a fun chair lift ride, and zip lining. It\'s the perfect spot for winter sports and has hotels available for your stay.',
+								title: 'Altit Fort', 
+								image: '/images/Hunza.jpg',
+								description: 'Another ancient fort in Hunza, Altit Fort is even older than Baltit Fort. It provides breathtaking views of the Hunza River and surrounding mountains. The fort has been beautifully restored and is open to visitors.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Ushu Forest (Ushu Valley)', 
-								image: '/images/Ushu Forest.jpg',
-								description: 'Just 8 km from Kalam, this forest is famous for its thick, dense Deodar trees. It\'s easy to reach even without a car and you\'ll find small shops, hotels, and places to camp along the road. It\'s a beautiful, shady spot for a walk and a great place to enjoy the fresh air.',
+								title: 'Attabad Lake', 
+								image: '/images/Hunza.jpg',
+								description: 'A stunning turquoise lake formed after a landslide in 2010. The lake is famous for its beautiful blue-green color and is a popular spot for boating and photography. It\'s one of the most photographed locations in Hunza.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Matiltan Waterfall and Chashma-e-Shifa', 
-								image: '/images/Matiltan Waterfall.jpg',
-								description: 'The road leads up to Matiltan Village, where you can see the stunning waterfall and a seasonal glacier. There are hotels and restaurants here, and a special spring called Chashma-e-Shifa (Healing Fountain). Locals believe the water from this fountain has unique healing properties due to its minerals.',
+								title: 'Passu Cones', 
+								image: '/images/Hunza.jpg',
+								description: 'Iconic mountain peaks that are one of the most recognizable landmarks in Hunza. These unique cone-shaped peaks create a dramatic backdrop and are perfect for photography, especially during sunrise and sunset.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Mahodand Lake', 
-								image: '/images/Mahodand Lake.jpg',
-								description: 'This is a beautiful, large glacial lake formed by melting ice from the Hindukush Mountains. It\'s great for summer visits but closes completely in winter because heavy snow blocks the road. You can find small shops, restaurants, and meadows perfect for camping near the water.',
+								title: 'Khunjerab Pass', 
+								image: '/images/Hunza.jpg',
+								description: 'The highest paved international border crossing in the world, located at 4,693 meters. It connects Pakistan with China and offers stunning views of the Karakoram Range. The pass is accessible during summer months.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Saifullah Lake', 
-								image: '/images/Saifullah Lake.jpg',
-								description: 'This lake is located further into Ushu Valley, about a 30 to 45-minute journey from Mahodand Lake. You can reach it either by hiking on foot or by taking a rugged 4x4 jeep for the scenic ride. It\'s another crystal-clear, stunning alpine lake waiting to be explored.',
+								title: 'Hunza Valley Viewpoint', 
+								image: '/images/Hunza.jpg',
+								description: 'A popular viewpoint offering panoramic views of the entire Hunza Valley. This spot provides breathtaking vistas of the mountains, rivers, and villages below. It\'s perfect for photography and enjoying the natural beauty.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Desan Meadows', 
-								image: '/images/Desan Meadows.jpg',
-								description: 'These meadows are near Kalam and offer stunning, lush green fields and heavenly views. You can reach this beautiful spot by taking a jeep ride from either Kalam or Utror Valley. It\'s surrounded by other stunning sites like Godar, Dararo, and Zahro Lakes.',
+								title: 'Rakaposhi Viewpoint', 
+								image: '/images/Hunza.jpg',
+								description: 'A viewpoint dedicated to Rakaposhi, one of the most beautiful mountains in the Karakoram Range. The viewpoint offers stunning views of the 7,788-meter peak and is a favorite spot for photographers and nature lovers.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Green Top', 
-								image: '/images/Green Top (Boyun Village).jpg',
-								description: 'Also known as the "Kalam View Point," this spot is famous for its mesmerizing panoramic views. It\'s accessible by jeep or by enjoying a scenic hike to the top. A small place called Boyun Village is up here, known for its beautiful green surroundings in the summer.',
+								title: 'Hunza River', 
+								image: '/images/Hunza.jpg',
+								description: 'The beautiful Hunza River flows through the valley, creating stunning landscapes. The river is fed by glaciers and offers opportunities for photography and peaceful moments by the water.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Utror Valley', 
-								image: '/images/swat.jpg',
-								description: 'Utror is a great central base camp for exploring many lesser-known valleys nearby. It\'s the gateway to beautiful spots like Gabral Valley, Kumrat Valley, and Dhan Valley. You can also visit gorgeous alpine lakes from here, including Kundol Lake and the twin lakes of Pari and Paristan.',
+								title: 'Eagle\'s Nest', 
+								image: '/images/Hunza.jpg',
+								description: 'A popular viewpoint located at a high elevation offering spectacular views of the Hunza Valley. The name comes from the eagle-like shape of the rock formation. It\'s accessible by jeep and offers amazing sunrise and sunset views.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Gabral Valley', 
-								image: '/images/Gabral Valley.jpg',
-								description: 'This beautiful valley is northwest of Swat and Utror, touching the lower parts of the Himalayas. If you travel deep inside, you\'ll discover lovely spots like Chota Banda Meadows and Shahi Bagh. Gabral Valley truly feels like a hidden slice of paradise for nature lovers and tourists.',
+								title: 'Gulmit Village', 
+								image: '/images/Hunza.jpg',
+								description: 'A charming village in Upper Hunza known for its traditional architecture and friendly locals. The village offers a glimpse into the local culture and lifestyle of the Hunza people.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Blue Water Kalam Swat', 
-								image: '/images/Blue Water Point.jpg',
-								description: 'This spot is about 10-15 km from Kalam and takes around two hours to reach by jeep. It is a popular summer getaway known for its crystal-clear water flow. It gained extra fame after a visit by the former Prime Minister of Pakistan, Mr. Imran Khan.',
+								title: 'Hussaini Suspension Bridge', 
+								image: '/images/Hunza.jpg',
+								description: 'One of the most dangerous bridges in the world, this suspension bridge crosses the Hunza River. It\'s an adventure for thrill-seekers and offers unique views of the river and surrounding mountains.',
 								imageLeft: true
-							},
-							{ 
-								title: 'Badgoi Pass', 
-								image: '/images/Badgoi Pass.jpg',
-								description: 'Badgoi is a high mountain pass that links Kalam with the Upper Dir District. It leads directly to Thal in Upper Dir, and you\'ll pass through "heavenly places" like Hawa ka Darra. This scenic jeep journey from Kalam or Kumrat takes about 4–5 hours.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Shangla Top', 
-								image: '/images/Shangla Top.jpg',
-								description: 'This is a breathtaking hilltop destination located on the N90 Highway, about 20 km from Khwazakhela. It connects the region of Kohistan with Swat Valley, offering amazing mountain scenery. The best time to visit and enjoy the views is usually during spring and summer.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Khwazakhela to Besham Route', 
-								image: '/images/swat.jpg',
-								description: 'This is the N90 Highway, a route connecting Swat to the Kohistan region. It stretches for about 65–70 km, starting at Khwazakhela City and ending at Besham City. This highway is essential and used frequently by both local traders and tourists.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Bahrain', 
-								image: '/images/swat.jpg',
-								description: 'Bahrain sits where the Daral and Swat Rivers meet on the main highway to Kalam. It was a beautiful tourist spot with a lively market, but the 2022 floods caused significant damage. From here, you can start the journey to visit Daral and Saidgai Lakes.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Swat River', 
-								image: '/images/Swat River.jpg',
-								description: 'The river is mainly formed by the melting glacial waters flowing from the Hindukush Mountains. Its biggest feeding rivers are the Gabral, Utror, and Ushu Rivers. The Swat River travels throughout the valley, eventually joining the Panjkora River and flowing toward Peshawar.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Swat Expressway', 
-								image: '/images/Swat Expressway.jpg',
-								description: 'This modern highway (also called the N95 Highway) runs from Chakdara City all the way up to Kalam. It was finished in 2019 and has made a huge difference in the ease of travel to the valley. The highway has played a significant role in boosting tourism and accessibility to the region.',
-								imageLeft: true
-							},
-							{ 
-								title: 'White Palace Swat', 
-								image: '/images/White Palace Swat.jpg',
-								description: 'The beautiful White Palace was built in 1940 by the ruler (Wali) of Swat Valley. It is located in Marghazar, only about 13 kilometers from the capital, Saidu Sharif. The historic palace now operates as a stunning hotel, warmly welcoming guests.',
-								imageLeft: false
 							},
 						].map((destination, idx) => (
 							<div 
@@ -860,7 +818,7 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="w-full">
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some Other Historical and Archeological Sites in Swat Valley are as Follows:
+							Some Other Historical and Archeological Sites in Hunza Valley are as Follows:
 						</h3>
 
 						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
@@ -926,10 +884,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Culture of Swat Valley:
+							Culture of Hunza Valley:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							The people of Kalam Swat Valley are known for their rich culture. Both men and women take part in the making of their hand-woven fabrics, embroidery, and carpets. These people are also blessed with wood carving talent; their furniture and strong wood are famous worldwide. They also specialize in producing uniquely designed ornamental jewelry.
+							The people of Hunza Valley are known for their rich culture and longevity. Both men and women take part in traditional crafts, including hand-woven fabrics, embroidery, and unique jewelry making. The Hunza people are famous for their hospitality, traditional music, and unique architectural style.
 						</p>
 					</div>
 				</div>
@@ -943,10 +901,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							The Economy of Kalam Swat Valley:
+							The Economy of Hunza Valley:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							The economy of Kalam Swat Valley is primarily based on agriculture, tourism, and small-scale industries. The valley produces yummy apples, apricots, and potatoes.
+							The economy of Hunza Valley is primarily based on agriculture, tourism, and small-scale industries. The valley produces delicious apricots, apples, and other fruits.
 						</p>
 					</div>
 				</div>
@@ -960,10 +918,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Educational in Kalam Swat Valley:
+							Educational in Hunza Valley:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							Several educational institutions in Kalam Swat Valley include primary and secondary schools, colleges, and universities. The University of Swat, located in the nearby city of Mingora, also serves the students of Kalam Swat Valley.
+							Several educational institutions in Hunza Valley include primary and secondary schools, colleges, and universities. The region has a strong focus on education and literacy.
 						</p>
 					</div>
 				</div>
@@ -977,7 +935,7 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Kalam Swat</span>
+							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza</span>
 						</h2>
 					</div>
 					
@@ -1080,23 +1038,23 @@ const SwatKalamPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Swat & Kalam?',
-								answer: 'Swat is beautiful all year.\n\n• Summer: Lakes, forests, meadows\n\n• Winter: Snowfall, skiing, Malam Jabba activities'
+								question: 'What is the best time to visit Hunza?',
+								answer: 'Hunza is beautiful all year.\n\n• Spring: Cherry blossoms, mild weather\n\n• Summer: Clear views, perfect for trekking\n\n• Autumn: Golden colors, harvest season\n\n• Winter: Snow-covered peaks, winter activities'
 							},
 							{
-								question: 'Is Swat accessible by road?',
-								answer: 'Yes, Swat and Kalam are easily accessible via Swat Expressway.'
+								question: 'Is Hunza accessible by road?',
+								answer: 'Yes, Hunza is easily accessible via the Karakoram Highway (KKH).'
 							},
 							{
-								question: 'Are hotels available in Swat & Kalam?',
+								question: 'Are hotels available in Hunza?',
 								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts.'
 							},
 							{
 								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Swat is a safe and friendly destination and our team ensures complete comfort.'
+								answer: 'Absolutely. Hunza is a safe and friendly destination and our team ensures complete comfort.'
 							},
 							{
-								question: 'Are jeeps included for Mahodand Lake?',
+								question: 'Are jeeps included for remote destinations?',
 								answer: 'Yes, we arrange jeeps for all off road destinations.'
 							},
 							{
@@ -1112,12 +1070,12 @@ const SwatKalamPage = () => {
 								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
 							},
 							{
-								question: 'Are there restaurants and shops in Kalam?',
+								question: 'Are there restaurants and shops in Hunza?',
 								answer: 'Yes, there are many eateries, cafes and local markets.'
 							},
 							{
-								question: 'Do you have Swat tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Swat packages with transport or flight options.'
+								question: 'Do you have Hunza tours from Karachi?',
+								answer: 'Yes, we offer complete Karachi-to-Hunza packages with transport or flight options.'
 							},
 						].map((faq, idx) => (
 							<div 
@@ -1327,5 +1285,5 @@ const SwatKalamPage = () => {
 	);
 };
 
-export default SwatKalamPage;
+export default HunzaPage;
 
