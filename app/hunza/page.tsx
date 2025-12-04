@@ -402,17 +402,17 @@ const HunzaPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Explore the Land of Longevity
+								Explore the Gem of the North with Nayi Talaash
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Discover Hunza Valley stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
+						At Nayi Talaash, we offer the finest Hunza Tour Packages for families, couples, students, corporate groups and adventure lovers.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Book Now
+							Book Your Adventure
 						</button>
 					</div>
 				</div>
@@ -426,11 +426,17 @@ const HunzaPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Hunza Tour Packages
+							Hunza Customized Tour Packages
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Hunza Valley is known for its stunning mountain peaks, ancient forts, crystal-clear lakes, and rich cultural heritage, making it a perfect place for every traveler. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+								Hunza Valley is one of Pakistan's most stunning travel destinations famous for its mighty mountains, crystal blue lakes, ancient forts, warm hearted people and vibrant culture.
+							</p>
+							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								All tours are customizable, ensuring comfort, flexibility and an unforgettable travel experience.
+							</p>
+							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								Choose from our ready-made tours or build a trip exactly the way you want:
 							</p>
 						</div>
 					</div>
@@ -439,49 +445,58 @@ const HunzaPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '2 Days – Malam Jabba Tour (Short Escape)',
-								image: '/images/MalamJabba Tour(Short Escape)package 1.jpg'
+								title: '4 Days – Hunza, Gilgit & Khunjerab Pass',
+								description: 'A quick journey exploring Gilgit, Hunza Valley highlights and the Pak China border at Khunjerab Pass.',
+								image: '/images/Hunza.jpg'
 							},
 							{ 
-								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/pacakges2.jpeg'
+								title: '5 Days – Hunza & Khunjerab Pass Tour',
+								description: 'A short but complete journey to Altit Fort, Baltit Fort, Attabad Lake and the Pak China border.',
+								image: '/images/Hunza.jpg'
 							},
 							{ 
-								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Green Top package 3.jpg'
+								title: '6 Days – Minapin, Gojal & Naltar Valley',
+								description: 'Explore the beautiful Minapin village, Gojal region and the colorful lakes of Naltar Valley.',
+								image: '/images/Hunza.jpg'
 							},
 							{ 
-								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
-								image: '/images/Relaxed Kalam, Mahodand, Green Top & Blue Water Pointpackage 4.jpg'
+								title: '6 Days – Hunza, Naltar & Khunjerab Tour',
+								description: 'Includes Naltar Valley's colorful lakes plus the classic Hunza experience.',
+								image: '/images/Hunza.jpg'
 							},
 							{ 
-								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Desan Toppackage 5.jpg'
+								title: '7 Days – Hunza, Nagar & Minapin Tour',
+								description: 'Ideal for those who want to explore both Hunza and the scenic Nagar region.',
+								image: '/images/Hunza.jpg'
 							},
 							{ 
-								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
-								image: '/images/swat.jpg'
+								title: '8 Days – Naran, Shogran & Hunza Tour',
+								description: 'Perfect for first time travelers who want to see the best of Kaghan and Hunza together.',
+								image: '/images/Hunza.jpg'
 							},
 							{ 
-								title: '7 Days – Swat to Kumrat Valley Adventure',
-								image: '/images/swat.jpg'
+								title: '8 Days – Hunza & Skardu Valley Tour',
+								description: 'A dual-valley adventure covering the top attractions of both Hunza and Skardu.',
+								image: '/images/Hunza.jpg'
 							},
 							{ 
-								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
-								image: '/images/swat.jpg'
+								title: '10 Days – Hunza, Skardu Premium Journey',
+								description: 'A long, scenic expedition through glaciers, lakes, forts and the most iconic northern valleys.',
+								image: '/images/Hunza.jpg'
 							},
 							{ 
-								title: '3 Days – Swat Valley Highlights Tour',
-								image: '/images/swat.jpg'
+								title: '15 Days – Fairy Meadows, Hunza & Skardu Expedition',
+								description: 'Perfect for adventure seekers who want to experience everything mountains, meadows, lakes and cultural villages.',
+								image: '/images/Hunza.jpg'
 							},
 						];
 						
-						const visiblePackages = showAllPackages ? allPackages : allPackages.slice(0, 6);
+						const visiblePackages = allPackages;
 						
 						return (
 							<>
 								{/* 9 Tour Packages Grid */}
-								<div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-4 md:px-8">
+								<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto px-4 md:px-8">
 									{visiblePackages.map((item, idx) => (
 							<div 
 								key={idx} 
@@ -502,34 +517,19 @@ const HunzaPage = () => {
 									/>
 								</div>
 								<div className="p-3">
-									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="font-medium leading-normal mb-2" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 										{item.title}
 									</p>
+									{item.description && (
+										<p className="text-sm leading-normal" style={{ color: `${secondaryBlack}80`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
+										</p>
+									)}
 								</div>
 							</div>
 									))}
 								</div>
 								
-								{/* See More / See Less Button */}
-								<div className="flex justify-center mt-8">
-									{!showAllPackages ? (
-										<button
-											onClick={() => setShowAllPackages(true)}
-											className="px-8 py-3 font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-											style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-										>
-											See More
-										</button>
-									) : (
-										<button
-											onClick={() => setShowAllPackages(false)}
-											className="px-8 py-3 font-bold rounded-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
-											style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-										>
-											See Less
-										</button>
-									)}
-								</div>
 							</>
 						);
 					})()}
