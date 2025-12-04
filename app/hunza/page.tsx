@@ -13,7 +13,6 @@ const HunzaPage = () => {
 	const [showAllPackages, setShowAllPackages] = useState(false);
 	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
 	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
-	const [bestTimeSlideIndex, setBestTimeSlideIndex] = useState(0);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -1083,94 +1082,27 @@ const HunzaPage = () => {
 						</h2>
 					</div>
 					
-					{/* Slider Container */}
-					<div className="relative max-w-4xl mx-auto">
-						{/* Slider Wrapper */}
-						<div className="relative overflow-hidden rounded-lg">
-							<div 
-								className="flex transition-transform duration-500 ease-in-out"
-								style={{ transform: `translateX(-${bestTimeSlideIndex * 100}%)` }}
-							>
-								{[
-									{
-										title: 'Cherry Blossom (March–April)',
-										description: 'The valley turns pink and white ideal for photography and peaceful walks.',
-										image: '/images/Hunza.jpg'
-									},
-									{
-										title: 'Autumn (October–November)',
-										description: 'Golden leaves and dramatic mountain views Hunza at its most colorful.',
-										image: '/images/Hunza.jpg'
-									}
-								].map((item, idx) => (
-									<div 
-										key={idx} 
-										className="min-w-full flex-shrink-0"
-									>
-										<div className="bg-gradient-to-br from-white to-gray-50 rounded-lg overflow-hidden shadow-lg border" style={{ borderColor: `${primaryOrange}30` }}>
-											<div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-												{/* Content Side */}
-												<div className="p-8 md:p-10 flex flex-col justify-center">
-													<h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-														{item.title}
-													</h3>
-													<p className="leading-relaxed" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-														{item.description}
-													</p>
-												</div>
-												
-												{/* Image Side */}
-												<div className="relative h-64 md:h-auto min-h-[300px]">
-													<Image 
-														src={item.image}
-														alt={item.title}
-														fill
-														className="object-cover"
-													/>
-												</div>
-											</div>
-										</div>
-									</div>
-								))}
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border" style={{ borderColor: `${primaryOrange}30` }}>
+							<div className="p-6">
+								<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
+									Cherry Blossom (March–April)
+								</h3>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									The valley turns pink and white ideal for photography and peaceful walks.
+								</p>
 							</div>
 						</div>
 						
-						{/* Navigation Arrows */}
-						<button
-							onClick={() => setBestTimeSlideIndex((prev) => (prev === 0 ? 1 : prev - 1))}
-							className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-10"
-							style={{ color: primaryOrange }}
-							aria-label="Previous slide"
-						>
-							<ChevronLeft className="w-6 h-6" />
-						</button>
-						
-						<button
-							onClick={() => setBestTimeSlideIndex((prev) => (prev === 1 ? 0 : prev + 1))}
-							className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 z-10"
-							style={{ color: primaryOrange }}
-							aria-label="Next slide"
-						>
-							<ChevronRight className="w-6 h-6" />
-						</button>
-						
-						{/* Dot Indicators */}
-						<div className="flex justify-center gap-2 mt-6">
-							{[0, 1].map((idx) => (
-								<button
-									key={idx}
-									onClick={() => setBestTimeSlideIndex(idx)}
-									className={`w-3 h-3 rounded-full transition-all duration-300 ${
-										bestTimeSlideIndex === idx 
-											? 'scale-125' 
-											: 'opacity-50 hover:opacity-75'
-									}`}
-									style={{ 
-										backgroundColor: bestTimeSlideIndex === idx ? primaryOrange : `${primaryOrange}40`
-									}}
-									aria-label={`Go to slide ${idx + 1}`}
-								/>
-							))}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border" style={{ borderColor: `${primaryOrange}30` }}>
+							<div className="p-6">
+								<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
+									Autumn (October–November)
+								</h3>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Golden leaves and dramatic mountain views Hunza at its most colorful.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
