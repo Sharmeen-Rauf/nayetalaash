@@ -1167,7 +1167,7 @@ const HunzaPage = () => {
 							},
 							{
 								question: 'Is Hunza safe for tourists?',
-								answer: 'Yes, Hunza is considered one of Pakistan's safest regions.'
+								answer: 'Yes, Hunza is considered one of Pakistan\'s safest regions.'
 							},
 							{
 								question: 'How can I reach Hunza?',
@@ -1175,7 +1175,7 @@ const HunzaPage = () => {
 							},
 							{
 								question: 'Are there trekking routes in Hunza?',
-								answer: 'Yes, Passu Glacier, Borith Lake, Ondra Poygah and Eagle's Nest.'
+								answer: 'Yes, Passu Glacier, Borith Lake, Ondra Poygah and Eagle\'s Nest.'
 							},
 							{
 								question: 'Are there historical places?',
