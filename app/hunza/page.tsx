@@ -545,10 +545,10 @@ const HunzaPage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Hunza Tour Packages
+							Hunza Group Tour Packages
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Hunza Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
+							Join our fixed departure group tours, perfect for students, solo travelers and families.
 						</p>
 					</div>
 
@@ -557,15 +557,15 @@ const HunzaPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="3 Days: Malam Jabba, Kalam & Swat Valley Tour"
+									src="/images/Hunza.jpg"
+									alt="5 Days Hunza Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									5 Days: Hunza Valley Complete Tour
+									5 Days Hunza Group Tour
 								</p>
 							</div>
 						</div>
@@ -573,15 +573,15 @@ const HunzaPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="2 Days: Malam Jabba Swat Quick Tour"
+									src="/images/Hunza.jpg"
+									alt="8 Days Hunza & Skardu Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days: Hunza Valley Quick Tour
+									8 Days Hunza & Skardu Group Tour
 								</p>
 							</div>
 						</div>
@@ -595,10 +595,10 @@ const HunzaPage = () => {
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Couples & Honeymooners
+									Couples / Honeymooners
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Romantic, private, and relaxing trips with premium stays and scenic spots perfect for making new memories.
+									Private stays, peaceful views and romantic moments.
 								</p>
 							</div>
 							<div>
@@ -606,23 +606,23 @@ const HunzaPage = () => {
 									Families
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Safe, fun, and comfortable travel with activities and spots everyone can enjoy.
+									Safe, comfortable and enjoyable for all age groups.
 								</p>
 							</div>
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Friends & Student Groups
+									Students & Friends
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Adventure, trekking, games, activities, and fun moments all without planning stress.
+									Adventure activities, bonfires, trekking and group fun.
 								</p>
 							</div>
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Corporate Groups
+									Corporate Teams
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Perfect for team building, relaxation, and bonding outside the office.
+									Team building retreats, adventure breaks and fully managed tours.
 								</p>
 							</div>
 						</div>
@@ -674,80 +674,125 @@ const HunzaPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Hunza
+							Top Attractions in Hunza Valley
 						</h2>
-						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Hunza Valley is full of natural wonders, ancient forts, crystal lakes, and stunning mountain peaks. Here are the must visit attractions included in our tours:
-						</p>
 					</div>
 					
 					{/* Destinations with Alternating Layout */}
 					<div className="space-y-8">
 						{[
 							{ 
-								title: 'Baltit Fort', 
+								title: 'Hunza Valley', 
 								image: '/images/Hunza.jpg',
-								description: 'A historic fort located in Karimabad, Hunza. This ancient fort offers stunning views of the valley and showcases the rich history and architecture of the Hunza people. It\'s a UNESCO World Heritage site and a must-visit destination.',
+								description: 'Located in Gilgit Baltistan, Hunza is a district blessed with sky-high, heavenly mountains and turquoise lakes. It offers rich history, thrilling adventure spots, and famously welcoming people. Hunza\'s history may date back to Alexander the Great and it shares borders with China and Afghanistan.',
 								imageLeft: true
+							},
+							{ 
+								title: 'Karakoram Highway (KKH)', 
+								image: '/images/Hunza.jpg',
+								description: 'The Karakoram Highway, often called the "8th Wonder of the World," is one of the most scenic roads on the planet. It winds through towering mountains, deep valleys, and crystal clear rivers, offering breathtaking views throughout the journey to Hunza. Traveling on KKH is an experience in itself, filled with dramatic landscapes and unforgettable moments.',
+								imageLeft: false
 							},
 							{ 
 								title: 'Altit Fort', 
 								image: '/images/Hunza.jpg',
-								description: 'Another ancient fort in Hunza, Altit Fort is even older than Baltit Fort. It provides breathtaking views of the Hunza River and surrounding mountains. The fort has been beautifully restored and is open to visitors.',
+								description: 'This nearly 1100-year-old fort sits on a massive rock and was the home of the Hunza Rulers (Mirs). It features a 200-meter-high watch tower that overlooked the ancient Silk Route. It has been beautifully restored and offers guided tours and a wonderful local women-run café at its base.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Baltit Fort', 
+								image: '/images/Hunza.jpg',
+								description: 'An ancient, stunning fort in Karimabad, estimated to be 700 to 800 years old. It was built higher than Altit to act as a watchtower over the Silk Route for trade and protection. Now a beautifully preserved UNESCO World Heritage site, it offers extraordinary views of the valley.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Attabad Lake', 
 								image: '/images/Hunza.jpg',
-								description: 'A stunning turquoise lake formed after a landslide in 2010. The lake is famous for its beautiful blue-green color and is a popular spot for boating and photography. It\'s one of the most photographed locations in Hunza.',
+								description: 'Attabad Lake is famous worldwide for its bright turquoise water. Formed after a natural landslide in 2010, the lake has become a major attraction where travelers enjoy boating, jet skiing, dining at lakeside cafes and capturing stunning photographs. The magical blue color makes this lake one of the most iconic spots of Hunza.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Passu Cones', 
+								title: 'Attabad Tunnels', 
 								image: '/images/Hunza.jpg',
-								description: 'Iconic mountain peaks that are one of the most recognizable landmarks in Hunza. These unique cone-shaped peaks create a dramatic backdrop and are perfect for photography, especially during sunrise and sunset.',
+								description: 'The Attabad Tunnels add a modern touch to the region\'s natural beauty. These long tunnels cut directly through the mountains and provide a smooth, scenic drive connecting Lower Hunza with the Upper Hunza region. The contrast of engineering brilliance with natural landscapes makes this stretch unforgettable.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Khunjerab Pass', 
 								image: '/images/Hunza.jpg',
-								description: 'The highest paved international border crossing in the world, located at 4,693 meters. It connects Pakistan with China and offers stunning views of the Karakoram Range. The pass is accessible during summer months.',
+								description: 'Khunjerab Pass, located at an altitude of 4,693 meters, is the world\'s highest paved international border crossing between Pakistan and China. The journey to the pass is filled with breathtaking glacier views, snow-covered mountains, and chances of spotting wildlife like ibex and marmots. The cold, fresh air and open landscapes make it a must visit destination.',
 								imageLeft: true
-							},
-							{ 
-								title: 'Hunza Valley Viewpoint', 
-								image: '/images/Hunza.jpg',
-								description: 'A popular viewpoint offering panoramic views of the entire Hunza Valley. This spot provides breathtaking vistas of the mountains, rivers, and villages below. It\'s perfect for photography and enjoying the natural beauty.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Rakaposhi Viewpoint', 
-								image: '/images/Hunza.jpg',
-								description: 'A viewpoint dedicated to Rakaposhi, one of the most beautiful mountains in the Karakoram Range. The viewpoint offers stunning views of the 7,788-meter peak and is a favorite spot for photographers and nature lovers.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Hunza River', 
-								image: '/images/Hunza.jpg',
-								description: 'The beautiful Hunza River flows through the valley, creating stunning landscapes. The river is fed by glaciers and offers opportunities for photography and peaceful moments by the water.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Eagle\'s Nest', 
-								image: '/images/Hunza.jpg',
-								description: 'A popular viewpoint located at a high elevation offering spectacular views of the Hunza Valley. The name comes from the eagle-like shape of the rock formation. It\'s accessible by jeep and offers amazing sunrise and sunset views.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Gulmit Village', 
-								image: '/images/Hunza.jpg',
-								description: 'A charming village in Upper Hunza known for its traditional architecture and friendly locals. The village offers a glimpse into the local culture and lifestyle of the Hunza people.',
-								imageLeft: false
 							},
 							{ 
 								title: 'Hussaini Suspension Bridge', 
 								image: '/images/Hunza.jpg',
-								description: 'One of the most dangerous bridges in the world, this suspension bridge crosses the Hunza River. It\'s an adventure for thrill-seekers and offers unique views of the river and surrounding mountains.',
+								description: 'The Hussaini Suspension Bridge is often called one of the most thrilling bridges in the world. With its wooden planks and dramatic setting over the river, it offers a unique adventure. Despite its looks, it is safe to cross and provides excellent views of the majestic Passu Cones rising sharply in the background.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Eagle\'s Nest Viewpoint', 
+								image: '/images/Hunza.jpg',
+								description: 'Eagle\'s Nest in Duikar is the best place in Hunza to witness magical sunrises and sunsets. From this viewpoint, travelers can see panoramic views of Rakaposhi, Golden Peak, Ultar Sar and other surrounding mountains. The scenery transforms beautifully with changing light, making it a must see location for photographers.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Karimabad Bazar', 
+								image: '/images/Hunza.jpg',
+								description: 'Karimabad Bazar is the cultural and shopping hub of Hunza. Visitors can explore local gemstones, traditional handicrafts, handmade wool clothing, dry fruits, and authentic Hunzai food. The lively atmosphere, combined with friendly locals and scenic views, makes shopping here a pleasure.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Passu Cones', 
+								image: '/images/Hunza.jpg',
+								description: 'These mountains are famous for their sharp, pyramid like structure and are also known as Passu Cathedral. They stand at 6106 meters and dominate the backdrop of the peaceful Passu Village on the KKH. Passu is a quiet destination, offering panoramic, serene views perfect for contemplation and photos.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Passu Glacier', 
+								image: '/images/Hunza.jpg',
+								description: 'Located just south of the mighty Passu Cones, you can spot this glacier easily from the KKH. It stretches over 1.5 sq km and is connected to the massive Batura Glacier behind it. You can trek from Borith Lake for 1-2 hours to get closer to this impressive ice mass.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Batura Glacier', 
+								image: '/images/Hunza.jpg',
+								description: 'This is the neighboring glacier to Passu Glacier and is incredibly important. It is the longest and largest glacier outside the polar regions and the third largest in all of Pakistan. Stretching for almost 57 km, it sits at the base of the Batura and Passu Peaks.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Hopper Valley (Nagar)', 
+								image: '/images/Hunza.jpg',
+								description: 'Hopper Valley in Nagar offers a quieter, peaceful escape filled with lush greenery, historical villages, and the famous Hopper Glacier. The contrast of white glaciers with green fields creates a stunning landscape, perfect for nature lovers who want to experience untouched beauty.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Gulmit Village', 
+								image: '/images/Hunza.jpg',
+								description: 'Known locally as Gul-e-Gulmit (Flower of Gulmit), this is a very peaceful spot along the KKH. It offers tourist accommodations and is stunning during the peak Cherry Blossom and Autumn seasons. Gulmit is a quiet destination with historical importance, located just past Attabad Lake.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Ondra Poygah Gulmit', 
+								image: '/images/Hunza.jpg',
+								description: 'Ondra was the site of an old fort in Gulmit and Poygah means stairs in the local language. Local volunteers built nearly 1655 stone stairs to reach the fort ruins at the top. From the fort, you get expansive views of Attabad Lake, the Passu Cones, and the surrounding villages.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Borith Lake', 
+								image: '/images/Hunza.jpg',
+								description: 'Borith Lake is a calm, serene freshwater lake surrounded by mountains. It\'s ideal for peaceful walks, short hikes and photography. The area offers stunning views and a refreshing environment, making it a great stop for travelers looking to relax.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Old Ganish Village', 
+								image: '/images/Hunza.jpg',
+								description: 'Old Ganish Village is one of the oldest settlements in Hunza, over 1,000 years old and recognized by UNESCO for its cultural preservation. The village features ancient mosques, old houses and beautifully restored architecture that represents the deep history of the region.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Rainbow Suspension Bridge', 
+								image: '/images/Hunza.jpg',
+								description: 'The Rainbow Suspension Bridge is a colorful, scenic attraction perfect for light adventure and photography. Surrounded by mountains and vibrant landscapes, this bridge adds a playful and picturesque element to any Hunza trip.',
 								imageLeft: true
 							},
 						].map((destination, idx) => (
@@ -935,7 +980,7 @@ const HunzaPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza</span>
+							Things to Do in Hunza
 						</h2>
 					</div>
 					
@@ -943,29 +988,29 @@ const HunzaPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/zip line.jpg',
-								title: 'Chairlift & Zipline at Malam Jabba',
-								description: 'Experience thrilling ziplining and scenic chairlift rides at Malam Jabba Resort'
-							},
-							{
 								image: '/images/boating.jpg',
-								title: 'Boating at Mahodand Lake',
-								description: 'Enjoy peaceful boat rides on the crystal clear waters of Mahodand Lake'
-							},
-							{
-								image: '/images/camping.jpg',
-								title: 'Camping in meadows',
-								description: 'Spend nights under the stars in beautiful meadows surrounded by nature'
+								title: 'Boating & jet skiing at Attabad Lake',
+								description: 'Enjoy thrilling water activities on the stunning turquoise waters of Attabad Lake'
 							},
 							{
 								image: '/images/Hiking to lakes & waterfalls.jpg',
-								title: 'Hiking to lakes & waterfalls',
-								description: 'Explore scenic trails leading to stunning lakes and cascading waterfalls'
+								title: 'Trekking & hiking (Passu, Ondra Poygah, Eagle\'s Nest)',
+								description: 'Explore scenic trails and trekking routes offering breathtaking mountain views'
+							},
+							{
+								image: '/images/camping.jpg',
+								title: 'Camping, bonfires & stargazing',
+								description: 'Experience magical nights under the stars with bonfires in beautiful locations'
+							},
+							{
+								image: '/images/boating.jpg',
+								title: 'Fishing & boating',
+								description: 'Enjoy peaceful fishing and boating experiences in pristine mountain lakes'
 							},
 							{
 								image: '/images/picture forest.jpg',
-								title: 'Photography in forests & meadows',
-								description: 'Capture breathtaking moments in lush forests and serene meadows'
+								title: 'Photography & drone shots',
+								description: 'Capture stunning landscapes, mountains, and valleys with photography and drone shots'
 							},
 						].map((item, idx) => (
 							<div 
@@ -1023,6 +1068,81 @@ const HunzaPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== HUNZA'S MUST-TRY TRADITIONAL FOOD ====================== */}
+			<section 
+				data-section-id="traditional-food"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('traditional-food') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
+							Hunza's Must-Try Traditional Food
+						</h2>
+						<p className="leading-normal text-center mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Hunza dishes are cooked with pure, organic ingredients to be very nutritious and keep people warm during the cold mountain winters. Local herbs are used a lot, and yak meat is a common and important part of the meals in Gilgit Baltistan.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== BEST RESTAURANTS TO VISIT IN HUNZA VALLEY ====================== */}
+			<section 
+				data-section-id="restaurants"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('restaurants') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
+							Best Restaurants to Visit in Hunza Valley
+						</h2>
+						<p className="leading-normal text-center mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Hunza Valley is famous for its massive mountains, huge glaciers, and breathtaking turquoise lakes, creating a picture perfect setting. But this region is also a culinary destination where delicious food awaits at every turn!
+						</p>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							The key to Hunzai cuisine is the focus on organic, pure, and healthy ingredients their motto is: tasty, locally grown, and all organic. So, you don't need to worry if you eat a little too much while enjoying your trip in Hunza Valley.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== BEST TIME TO VISIT HUNZA ====================== */}
+			<section 
+				data-section-id="best-time"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('best-time') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							Best Time to Visit Hunza
+						</h2>
+					</div>
+					
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border" style={{ borderColor: `${primaryOrange}30` }}>
+							<div className="p-6">
+								<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
+									Cherry Blossom (March–April)
+								</h3>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									The valley turns pink and white ideal for photography and peaceful walks.
+								</p>
+							</div>
+						</div>
+						
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border" style={{ borderColor: `${primaryOrange}30` }}>
+							<div className="p-6">
+								<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
+									Autumn (October–November)
+								</h3>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Golden leaves and dramatic mountain views Hunza at its most colorful.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
 			<section 
 				data-section-id="faq"
@@ -1038,44 +1158,44 @@ const HunzaPage = () => {
 					<div className="space-y-0">
 						{[
 							{
+								question: 'Where is Hunza Valley located?',
+								answer: 'Hunza is located in Gilgit-Baltistan, along the Karakoram Highway.'
+							},
+							{
 								question: 'What is the best time to visit Hunza?',
-								answer: 'Hunza is beautiful all year.\n\n• Spring: Cherry blossoms, mild weather\n\n• Summer: Clear views, perfect for trekking\n\n• Autumn: Golden colors, harvest season\n\n• Winter: Snow-covered peaks, winter activities'
+								answer: 'Cherry Blossom (March–April) and Autumn (October–November).'
 							},
 							{
-								question: 'Is Hunza accessible by road?',
-								answer: 'Yes, Hunza is easily accessible via the Karakoram Highway (KKH).'
+								question: 'Is Hunza safe for tourists?',
+								answer: 'Yes, Hunza is considered one of Pakistan's safest regions.'
 							},
 							{
-								question: 'Are hotels available in Hunza?',
-								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts.'
+								question: 'How can I reach Hunza?',
+								answer: 'By road via KKH or by air via Gilgit Airport (then 1.5–2 hours drive).'
 							},
 							{
-								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Hunza is a safe and friendly destination and our team ensures complete comfort.'
+								question: 'Are there trekking routes in Hunza?',
+								answer: 'Yes, Passu Glacier, Borith Lake, Ondra Poygah and Eagle's Nest.'
 							},
 							{
-								question: 'Are jeeps included for remote destinations?',
-								answer: 'Yes, we arrange jeeps for all off road destinations.'
+								question: 'Are there historical places?',
+								answer: 'Altit Fort, Baltit Fort, Ganish Village and ancient settlements.'
 							},
 							{
-								question: 'Can I customize my tour?',
-								answer: 'Yes, all packages can be customized to your preferences.'
+								question: 'What festivals take place in Hunza?',
+								answer: 'Local music nights, cultural festivals, apricot harvest festivals and more.'
 							},
 							{
-								question: 'Do you offer photography/videography?',
-								answer: 'Yes, we offer cinematic videos and photos on request.'
+								question: 'What food is available?',
+								answer: 'Traditional Hunzai food, continental meals, BBQ and desi dishes.'
 							},
 							{
-								question: 'What should I pack?',
-								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
+								question: 'Which languages are spoken?',
+								answer: 'Burushaski, Wakhi, and Urdu.'
 							},
 							{
-								question: 'Are there restaurants and shops in Hunza?',
-								answer: 'Yes, there are many eateries, cafes and local markets.'
-							},
-							{
-								question: 'Do you have Hunza tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Hunza packages with transport or flight options.'
+								question: 'Is ATM/credit card service available?',
+								answer: 'ATMs available in Aliabad & Karimabad. Carry some cash for Upper Hunza'
 							},
 						].map((faq, idx) => (
 							<div 
