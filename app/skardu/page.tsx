@@ -889,68 +889,35 @@ const SkarduPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== HISTORICAL SITES IN SWAT VALLEY ====================== */}
+			{/* ====================== ALL TOURS INCLUDE ====================== */}
 			<section 
-				data-section-id="historical-sites"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-sites') ? 'revealed' : ''}`}
+				data-section-id="tours-include"
+				className={`py-6 md:py-8 bg-gray-50 relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('tours-include') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="w-full">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some Other Historical and Archeological Sites in Skardu Valley are as Follows:
-						</h3>
-
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
-							{[
-								'Mahmood Ghaznavi Masjid',
-								'Oba Ghar and Khazana Ghar Rock Carving',
-								'Dune of Darkot',
-								'Ram Takht at Mount Ilum',
-								'Panr Jambil Khwar Archaeology',
-								'Jehanabad Buddha Statue',
-								'Tokar Dara Najigram Stupa and Monastery',
-								'Amluk Dara Stupa',
-								'Shingardar Stupa',
-								'Gumbatona Stupa',
-								'Ghaligay Buddha Statue and Archaeological Remains',
-								'Shahkot Pass Elephant Paw and Queen\'s Throne',
-							].map((item, idx) => (
-								<div 
-									key={idx} 
-									className="transition-all duration-500 cursor-pointer group rounded-lg w-full scroll-reveal-fade-up"
-									style={{ 
-										backgroundColor: 'white',
-										border: `2px solid ${primaryOrange}`,
-										height: '56px',
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-										paddingLeft: '2rem',
-										paddingRight: '2rem',
-										minWidth: '100%',
-										opacity: visibleSections.has('historical-sites') ? 1 : 0,
-										transform: visibleSections.has('historical-sites') ? 'translateY(0)' : 'translateY(20px)',
-										transitionDelay: `${idx * 0.05}s`
-									}}
-									onMouseEnter={(e) => {
-										e.currentTarget.style.backgroundColor = primaryOrange;
-										e.currentTarget.style.transform = 'translateY(-2px)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-									onMouseLeave={(e) => {
-										e.currentTarget.style.backgroundColor = 'white';
-										e.currentTarget.style.transform = 'translateY(0)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-								>
-									<p className="leading-normal transition-colors duration-300 text-center capitalize" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
-										{item}
-									</p>
-								</div>
-							))}
-						</div>
+					<div className="text-center mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							All tours include:
+						</h2>
+					</div>
+					
+					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+						{[
+							'Comfortable transport',
+							'Professional guide',
+							'Luxury stays',
+							'Sightseeing & adventure spots',
+							'Photography points'
+						].map((item, idx) => (
+							<div 
+								key={idx}
+								className="bg-white rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow"
+							>
+								<p className="text-sm font-medium" style={{ color: secondaryBlack }}>
+									{item}
+								</p>
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
@@ -1102,39 +1069,6 @@ const SkarduPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== ALL TOURS INCLUDE ====================== */}
-			<section 
-				data-section-id="tours-include"
-				className={`py-6 md:py-8 bg-gray-50 relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('tours-include') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-8">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							All tours include:
-						</h2>
-					</div>
-					
-					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
-						{[
-							'Comfortable transport',
-							'Professional guide',
-							'Luxury stays',
-							'Sightseeing & adventure spots',
-							'Photography points',
-							'Safety monitoring'
-						].map((item, idx) => (
-							<div 
-								key={idx}
-								className="bg-white rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow"
-							>
-								<p className="text-sm font-medium" style={{ color: secondaryBlack }}>
-									{item}
-								</p>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
 
 			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
 			<section 
