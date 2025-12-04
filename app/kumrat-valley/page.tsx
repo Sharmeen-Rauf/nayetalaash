@@ -393,7 +393,7 @@ const KumratValleyPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
 							<span className="font-autography hero-text-reveal block mb-2 text-white" style={{ display: 'inline-block', fontSize: '48px', color: 'white' }}>
-								Kumrat Valley Tour Packages
+								Kumrat Tour Packages
 							</span>
 							<br />
 							<span className="block hero-text-reveal hero-text-delay-1"
@@ -402,17 +402,17 @@ const KumratValleyPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Hidden Gem of Upper Dir
+								Raw Nature, Real Adventure
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Discover Kumrat Valley stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
+						Our safe, custom Kumrat packages are a perfect escape for nature lovers and trekkers. Explore thick Deodar forests, pristine Katora Lake, and stunning mountain passes with us.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Book Now
+							View Packages
 						</button>
 					</div>
 				</div>
@@ -426,11 +426,11 @@ const KumratValleyPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Kumrat Valley Tour Packages
+							Kumrat Valley Customized Tour Packages
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Kumrat Valley is a hidden gem located in Upper Dir, known for its lush green meadows, dense forests, crystal-clear rivers, and stunning waterfalls. This beautiful valley offers a perfect escape for nature lovers seeking tranquility and adventure. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+								Your adventure should be tailored just for you! These Kumrat Valley packages can be custom built by our professional team to give you the exact experience you want. You can choose from our popular itineraries below or tell us your specific travel needs:
 							</p>
 						</div>
 					</div>
@@ -439,39 +439,39 @@ const KumratValleyPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '2 Days – Malam Jabba Tour (Short Escape)',
-								image: '/images/MalamJabba Tour(Short Escape)package 1.jpg'
-							},
-							{ 
-								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/pacakges2.jpeg'
-							},
-							{ 
-								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Green Top package 3.jpg'
-							},
-							{ 
-								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
-								image: '/images/Relaxed Kalam, Mahodand, Green Top & Blue Water Pointpackage 4.jpg'
-							},
-							{ 
-								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Desan Toppackage 5.jpg'
-							},
-							{ 
-								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
+								title: '3 Days-Kumrat Valley, Kumrat Waterfall, and Kala Chashma (Black Spring)',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '7 Days – Swat to Kumrat Valley Adventure',
+								title: '4 Days-Kumrat Valley, Kumrat Waterfall, Kala Chashma, and Badgoi Top (Mountain Pass)',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
+								title: '6 Days-Kumrat Valley, Jahazbanda Meadows, Kund Banda Meadows, and the challenging Katora Lake Trekking',
 								image: '/images/swat.jpg'
 							},
 							{ 
-								title: '3 Days – Swat Valley Highlights Tour',
+								title: '7 Days-Kumrat Forest, Badgoi Top, Jahaz Banda, and the final ascent to Katora Lake',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '7 Days-Malam Jabba, Kalam, Swat Valley exploration',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '5 Days-Deep Forest Camping, Panjkora River experience, Kumrat Waterfall, and Thal Bazaar',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '4 Days-Jahaz Banda Meadows, Snake Lake at Kund Banda, and an attempt to reach Katora Lake',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '3 Days-Thal Historical Mosque, Panjkora River Camping, Kumrat Forest Drive, Kala Chashma',
+								image: '/images/swat.jpg'
+							},
+							{ 
+								title: '9 Days-Extended trip covering Swat, Kalam, Kumrat Valley, Jahaz Banda, and Badgoi Pass',
 								image: '/images/swat.jpg'
 							},
 						];
@@ -545,10 +545,10 @@ const KumratValleyPage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Kumrat Valley Tour Packages
+							Kumrat Valley Group Tour Packages
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Kumrat Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
+							We organize these tours throughout the year. You are welcome to join our fixed group departure dates, whether you are traveling alone or with your own friends and family.
 						</p>
 					</div>
 
@@ -558,14 +558,14 @@ const KumratValleyPage = () => {
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
-									alt="3 Days: Malam Jabba, Kalam & Swat Valley Tour"
+									alt="3 Days: Kumrat Valley Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days: Malam Jabba, Kalam & Swat Valley Tour
+									3 Days: Kumrat Valley Group Tour
 								</p>
 							</div>
 						</div>
@@ -574,31 +574,34 @@ const KumratValleyPage = () => {
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/swat.jpg"
-									alt="2 Days: Malam Jabba Swat Quick Tour"
+									alt="7 Days: Malam Jabba, Kalam, Swat to Kumrat Valley Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									2 Days: Malam Jabba Swat Quick Tour
+									7 Days: Malam Jabba, Kalam, Swat to Kumrat Valley Group Tour
 								</p>
 							</div>
 						</div>
 					</div>
 
-					{/* Who Are These Tours For Section */}
+					{/* Customized Kumrat Valley Trips: Who Are You Traveling With? Section */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Who Are These Tours For?
+							Customized Kumrat Valley Trips: Who Are You Traveling With?
 						</h3>
+						<p className="leading-normal text-left mb-6" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							We design every trip to suit your companions:
+						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Couples & Honeymooners
+									Couples / Honeymoon
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Romantic, private, and relaxing trips with premium stays and scenic spots perfect for making new memories.
+									Luxury and Solitude. We offer a private, beautiful environment for newlyweds to celebrate surrounded by nature\'s stunning beauty.
 								</p>
 							</div>
 							<div>
@@ -606,15 +609,15 @@ const KumratValleyPage = () => {
 									Families
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Safe, fun, and comfortable travel with activities and spots everyone can enjoy.
+									Fun, Safe, and Secure. We ensure a great, relaxing environment for your loved ones to connect and make lifelong memories.
 								</p>
 							</div>
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Friends & Student Groups
+									Students / Friends
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Adventure, trekking, games, activities, and fun moments all without planning stress.
+									Pure Fun and Adventure! Enjoy exciting activities, games, and exploring new spots without the hassle of planning everything yourself.
 								</p>
 							</div>
 							<div>
@@ -622,46 +625,20 @@ const KumratValleyPage = () => {
 									Corporate Groups
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Perfect for team building, relaxation, and bonding outside the office.
+									Team Building in Nature. A perfect setting for employees to connect, enhance teamwork skills, and relax outside the office environment.
 								</p>
 							</div>
 						</div>
 					</div>
 
-					{/* Swat Tour Packages From Major Cities Section */}
+					{/* Starting Point Flexibility Section */}
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Kumrat Valley Tour Packages From Major Cities
+							Starting Point Flexibility
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We provide tours from:
+							We offer tours starting from: Lahore, Karachi and Islamabad. You can also customize your tour to start from any other city in Pakistan!
 						</p>
-						<ul className="space-y-3 mb-4">
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Lahore
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Karachi
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Islamabad
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Custom departures available for other cities as well.
-								</p>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</section>
@@ -674,122 +651,95 @@ const KumratValleyPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Kumrat Valley
+							Most Popular Destinations and Attractions in Kumrat Valley
 						</h2>
-						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Kumrat Valley is full of natural wonders, lush meadows, dense forests, crystal-clear rivers, and stunning waterfalls. Here are the must visit attractions included in our tours:
-						</p>
 					</div>
 					
 					{/* 11 Destinations with Alternating Layout */}
 					<div className="space-y-8">
 						{[
 							{ 
-								title: 'Kalam Valley', 
-								image: '/images/Kalam valley.jpg',
-								description: 'Kalam means "Blue Water" and is the main entrance to the beautiful upper valleys. It sits high in the Hindukush mountains and gives amazing views of Falaksar Peak. You\'ll find comfy places to stay, great food, and it\'s open to enjoy in both summer and winter.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Malam Jabba', 
-								image: '/images/malam jabba.jpg',
-								description: 'This is a popular hilltop ski resort located about an hour or two from Mingora City. When it snows, you can enjoy skiing, a fun chair lift ride, and zip lining. It\'s the perfect spot for winter sports and has hotels available for your stay.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Ushu Forest (Ushu Valley)', 
-								image: '/images/Ushu Forest.jpg',
-								description: 'Just 8 km from Kalam, this forest is famous for its thick, dense Deodar trees. It\'s easy to reach even without a car and you\'ll find small shops, hotels, and places to camp along the road. It\'s a beautiful, shady spot for a walk and a great place to enjoy the fresh air.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Matiltan Waterfall and Chashma-e-Shifa', 
-								image: '/images/Matiltan Waterfall.jpg',
-								description: 'The road leads up to Matiltan Village, where you can see the stunning waterfall and a seasonal glacier. There are hotels and restaurants here, and a special spring called Chashma-e-Shifa (Healing Fountain). Locals believe the water from this fountain has unique healing properties due to its minerals.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Mahodand Lake', 
-								image: '/images/Mahodand Lake.jpg',
-								description: 'This is a beautiful, large glacial lake formed by melting ice from the Hindukush Mountains. It\'s great for summer visits but closes completely in winter because heavy snow blocks the road. You can find small shops, restaurants, and meadows perfect for camping near the water.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Saifullah Lake', 
-								image: '/images/Saifullah Lake.jpg',
-								description: 'This lake is located further into Ushu Valley, about a 30 to 45-minute journey from Mahodand Lake. You can reach it either by hiking on foot or by taking a rugged 4x4 jeep for the scenic ride. It\'s another crystal-clear, stunning alpine lake waiting to be explored.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Desan Meadows', 
-								image: '/images/Desan Meadows.jpg',
-								description: 'These meadows are near Kalam and offer stunning, lush green fields and heavenly views. You can reach this beautiful spot by taking a jeep ride from either Kalam or Utror Valley. It\'s surrounded by other stunning sites like Godar, Dararo, and Zahro Lakes.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Green Top', 
-								image: '/images/Green Top (Boyun Village).jpg',
-								description: 'Also known as the "Kalam View Point," this spot is famous for its mesmerizing panoramic views. It\'s accessible by jeep or by enjoying a scenic hike to the top. A small place called Boyun Village is up here, known for its beautiful green surroundings in the summer.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Utror Valley', 
+								title: 'Kumrat Valley', 
 								image: '/images/swat.jpg',
-								description: 'Utror is a great central base camp for exploring many lesser-known valleys nearby. It\'s the gateway to beautiful spots like Gabral Valley, Kumrat Valley, and Dhan Valley. You can also visit gorgeous alpine lakes from here, including Kundol Lake and the twin lakes of Pari and Paristan.',
+								description: 'Kumrat is a long, 35km valley located in the Upper Dir district. Its raw nature, thick Deodar forest, clear Panjkora River, and stunning waterfalls draw tourists seeking pristine beauty. The valley borders both Chitral and Swat, making it a key destination for nature lovers.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Gabral Valley', 
-								image: '/images/Gabral Valley.jpg',
-								description: 'This beautiful valley is northwest of Swat and Utror, touching the lower parts of the Himalayas. If you travel deep inside, you\'ll discover lovely spots like Chota Banda Meadows and Shahi Bagh. Gabral Valley truly feels like a hidden slice of paradise for nature lovers and tourists.',
+								title: 'Kumrat Waterfall', 
+								image: '/images/swat.jpg',
+								description: 'This impressive waterfall is about 12-13 km from Thal town and requires a 4*4 jeep to reach the starting point. It falls dramatically down a rocky mountain, feeding the Panjkora River. A short hike is needed from the road to see this huge waterfall fully, which is surrounded by campsites and food stalls.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Blue Water Kalam Swat', 
-								image: '/images/Blue Water Point.jpg',
-								description: 'This spot is about 10-15 km from Kalam and takes around two hours to reach by jeep. It is a popular summer getaway known for its crystal-clear water flow. It gained extra fame after a visit by the former Prime Minister of Pakistan, Mr. Imran Khan.',
+								title: 'Jahaz Banda Meadows', 
+								image: '/images/swat.jpg',
+								description: 'Jahaz Banda is a high, beautiful meadow you reach by combining a jeep ride and a hike from Thal. You first take a 2-3 hour jeep ride to Takai Banda. From there, it\'s a relatively easy 2-3 hour trek for beginners to reach the wide, stunning Jahaz Banda Meadows.',
 								imageLeft: true
+							},
+							{ 
+								title: 'Kund Banda Meadows and Jahaz Banda Waterfall', 
+								image: '/images/swat.jpg',
+								description: 'A steep track downhill from Jahaz Banda leads you to the beautiful Kund Banda Meadows, a picture postcard valley. Here you can find the unique Snake Lake and the beautiful Jahaz Banda Waterfall (also called Kund Banda Waterfall). This area is famous for its powerful views of the surrounding mighty mountains.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Katora Lake', 
+								image: '/images/swat.jpg',
+								description: 'Katora Lake (meaning Bowl Lake in local dialect) is a gem of Kumrat Valley, but requires a moderate-level trek. The 3-4 hour hike is best for those with some prior trekking experience. On the way, you will also see the smaller Chota Katora Lake (or Jahaz Banda Lake).',
+								imageLeft: true
+							},
+							{ 
+								title: 'Kala Chashma', 
+								image: '/images/swat.jpg',
+								description: 'Kala Chashma literally translates to "Black Spring" in English. It is believed to get its name from the dark color of the stones at the bottom, which makes the crystal clear water look darker. This popular spot is located about 20 km from the main Thal Bazaar.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Thal Bazar', 
+								image: '/images/swat.jpg',
+								description: 'Thal Bazaar is the main town, located about 75 km from Upper Dir, and serves as the base camp for the whole region. You can hire 4*4 jeeps and drivers here to access Kumrat, Jahaz Banda, and Badgoi Pass. It\'s a basic market that provides essential supplies, hotels, and restaurants for tourists.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Kumrat Forest', 
+								image: '/images/swat.jpg',
+								description: 'The Kumrat Forest is a massive, thick Deodar (Cedar) forest that gives Kumrat its famous fresh air and raw natural feel. This dense forest is the biggest magnet for tourists and is the reason the valley feels so pristine. Protecting this forest from deforestation is crucial to keeping the valley a gem.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Panjkora River', 
+								image: '/images/swat.jpg',
+								description: 'The Panjkora River flows through the entire Kumrat Valley, giving the area a fresh, misty atmosphere. Many tourists choose to camp right beside the river, as it is lined with food stalls, tent hotels, and campsites. The sound of the river flowing through the dense forest is a key part of the Kumrat experience.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Dojanga Kumrat', 
+								image: '/images/swat.jpg',
+								description: 'Dojanga is a beautiful point deeper into the valley, located right after Kala Chashma. As you travel past this point, the valley reveals its most untouched natural treasures. A small wooden bridge takes you across the river and into the thickest, most secluded part of the Kumrat forest.',
+								imageLeft: false
 							},
 							{ 
 								title: 'Badgoi Pass', 
-								image: '/images/Badgoi Pass.jpg',
-								description: 'Badgoi is a high mountain pass that links Kalam with the Upper Dir District. It leads directly to Thal in Upper Dir, and you\'ll pass through "heavenly places" like Hawa ka Darra. This scenic jeep journey from Kalam or Kumrat takes about 4–5 hours.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Shangla Top', 
-								image: '/images/Shangla Top.jpg',
-								description: 'This is a breathtaking hilltop destination located on the N90 Highway, about 20 km from Khwazakhela. It connects the region of Kohistan with Swat Valley, offering amazing mountain scenery. The best time to visit and enjoy the views is usually during spring and summer.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Khwazakhela to Besham Route', 
 								image: '/images/swat.jpg',
-								description: 'This is the N90 Highway, a route connecting Swat to the Kohistan region. It stretches for about 65–70 km, starting at Khwazakhela City and ending at Besham City. This highway is essential and used frequently by both local traders and tourists.',
-								imageLeft: false
+								description: 'Badgoi Pass is a high mountain pass that connects Upper Dir (Thal) with Kalam in Swat Valley. The road offers adventurous sights, including Hawa ka Darra and Dasht-e-Laila viewpoints. You must hire a 4*4 jeep from Thal to travel this route.',
+								imageLeft: true
 							},
 							{ 
-								title: 'Bahrain', 
+								title: 'Jamia Masjid Thal Kumrat', 
 								image: '/images/swat.jpg',
-								description: 'Bahrain sits where the Daral and Swat Rivers meet on the main highway to Kalam. It was a beautiful tourist spot with a lively market, but the 2022 floods caused significant damage. From here, you can start the journey to visit Daral and Saidgai Lakes.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Swat River', 
-								image: '/images/Swat River.jpg',
-								description: 'The river is mainly formed by the melting glacial waters flowing from the Hindukush Mountains. Its biggest feeding rivers are the Gabral, Utror, and Ushu Rivers. The Swat River travels throughout the valley, eventually joining the Panjkora River and flowing toward Peshawar.',
+								description: 'This historic Mosque is located right in the heart of Thal Bazaar on the bank of the Panjkora River. It was built in the mid 18th century entirely from massive, beautifully carved wooden planks without the use of machinery. The wooden structure is painted with bright, vibrant colors, making it a historical and architectural sight.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Swat Expressway', 
-								image: '/images/Swat Expressway.jpg',
-								description: 'This modern highway (also called the N95 Highway) runs from Chakdara City all the way up to Kalam. It was finished in 2019 and has made a huge difference in the ease of travel to the valley. The highway has played a significant role in boosting tourism and accessibility to the region.',
+								title: 'Shahzore Lake', 
+								image: '/images/swat.jpg',
+								description: 'Shahzore Lake is a beautiful small glacial lake that can be reached by a long, scenic 5-7 hour trek from Dojanga. The track from Dojanga is rocky but offers incredible views. From the lake, you are high enough to even catch a view of the Chitral Valley.',
 								imageLeft: true
 							},
 							{ 
-								title: 'White Palace Swat', 
-								image: '/images/White Palace Swat.jpg',
-								description: 'The beautiful White Palace was built in 1940 by the ruler (Wali) of Swat Valley. It is located in Marghazar, only about 13 kilometers from the capital, Saidu Sharif. The historic palace now operates as a stunning hotel, warmly welcoming guests.',
+								title: 'Thalo Pass', 
+								image: '/images/swat.jpg',
+								description: 'Thalo Pass (or Thallo Pass) is a high mountain pass that connects Kumrat Valley with Chitral Valley. Reaching it requires a challenging, long 4-5 day trek for serious adventurers. Along this long route, trekkers will see several stunning glacial lakes, including Shahzore Lake and Bashqar Lake.',
 								imageLeft: false
 							},
 						].map((destination, idx) => (
@@ -1073,51 +1023,51 @@ const KumratValleyPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
 					<div className="text-center mb-6">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Frequently Asked Question
+							Frequently Asked Questions
 						</h2>
 					</div>
 					
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Kumrat Valley?',
-								answer: 'Kumrat Valley is beautiful all year.\n\n• Spring: Mild weather, blooming flowers\n\n• Summer: Perfect for camping and sightseeing\n\n• Autumn: Beautiful fall colors\n\n• Winter: Snow-covered landscapes, winter activities'
+								question: 'Is any accommodation available?',
+								answer: 'Yes, mainly tent hotels, guesthouses, and campsites (mostly basic facilities).'
 							},
 							{
-								question: 'Is Kumrat Valley accessible by road?',
-								answer: 'Yes, Kumrat Valley is accessible by road from Upper Dir via a scenic route.'
+								question: 'Are there any medical facilities?',
+								answer: 'Limited basic facilities in the main towns like Thal; best to carry a personal first aid kit.'
 							},
 							{
-								question: 'Are hotels available in Kumrat Valley?',
-								answer: 'Yes. We offer a range of options from budget hotels to camping sites and guesthouses.'
+								question: 'Are there any outdoor markets or bazaars?',
+								answer: 'Yes, Thal Bazaar is the main market for basic necessities.'
 							},
 							{
-								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Kumrat Valley is a safe and friendly destination and our team ensures complete comfort.'
+								question: 'How can we reach Kumrat from Kalam/Swat?',
+								answer: 'Via the Badgoi Pass road, which requires a 4*4 jeep (road is seasonal).'
 							},
 							{
-								question: 'Are jeeps included for remote destinations?',
-								answer: 'Yes, we arrange jeeps for all off road destinations when needed.'
+								question: 'How can I reach Kumrat Valley?',
+								answer: 'By road from Upper Dir to Thal, then hire a local 4*4 jeep.'
 							},
 							{
-								question: 'Can I customize my tour?',
-								answer: 'Yes, all packages can be customized to your preferences.'
+								question: 'What kind of food is available?',
+								answer: 'Mostly basic Pakistani cuisine (dals, curries, rice) and simple local meals.'
 							},
 							{
-								question: 'Do you offer photography/videography?',
-								answer: 'Yes, we offer cinematic videos and photos on request.'
+								question: 'Is there any mobile network coverage?',
+								answer: 'Limited coverage (mostly only in Thal Bazaar and main towns).'
 							},
 							{
-								question: 'What should I pack?',
-								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
+								question: 'Are there any ATMs or banks?',
+								answer: 'Extremely rare/non existent in the valley. Carry all cash with you.'
 							},
 							{
-								question: 'Are there restaurants and shops in Kumrat Valley?',
-								answer: 'Yes, there are eateries, cafes and local markets in the valley.'
+								question: 'Is Kumrat safe to travel?',
+								answer: 'Yes, it is generally safe for tourists.'
 							},
 							{
-								question: 'Do you have Kumrat Valley tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Kumrat Valley packages with transport or flight options.'
+								question: 'How much time should I spend?',
+								answer: '3 to 7 days is ideal to cover the main attractions like Katora Lake and Jahaz Banda.'
 							},
 						].map((faq, idx) => (
 							<div 
