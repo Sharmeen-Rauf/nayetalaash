@@ -843,72 +843,6 @@ const NathiaGaliMurreePage = () => {
 				</div>
 			</section>
 
-			{/* ====================== HISTORICAL SITES IN SWAT VALLEY ====================== */}
-			<section 
-				data-section-id="historical-sites"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-sites') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="w-full">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some Other Historical and Attraction Sites in Nathia Gali And Murree are as Follows:
-						</h3>
-
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
-							{[
-								'Mahmood Ghaznavi Masjid',
-								'Oba Ghar and Khazana Ghar Rock Carving',
-								'Dune of Darkot',
-								'Ram Takht at Mount Ilum',
-								'Panr Jambil Khwar Archaeology',
-								'Jehanabad Buddha Statue',
-								'Tokar Dara Najigram Stupa and Monastery',
-								'Amluk Dara Stupa',
-								'Shingardar Stupa',
-								'Gumbatona Stupa',
-								'Ghaligay Buddha Statue and Archaeological Remains',
-								'Shahkot Pass Elephant Paw and Queen\'s Throne',
-							].map((item, idx) => (
-								<div 
-									key={idx} 
-									className="transition-all duration-500 cursor-pointer group rounded-lg w-full scroll-reveal-fade-up"
-									style={{ 
-										backgroundColor: 'white',
-										border: `2px solid ${primaryOrange}`,
-										height: '56px',
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-										paddingLeft: '2rem',
-										paddingRight: '2rem',
-										minWidth: '100%',
-										opacity: visibleSections.has('historical-sites') ? 1 : 0,
-										transform: visibleSections.has('historical-sites') ? 'translateY(0)' : 'translateY(20px)',
-										transitionDelay: `${idx * 0.05}s`
-									}}
-									onMouseEnter={(e) => {
-										e.currentTarget.style.backgroundColor = primaryOrange;
-										e.currentTarget.style.transform = 'translateY(-2px)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-									onMouseLeave={(e) => {
-										e.currentTarget.style.backgroundColor = 'white';
-										e.currentTarget.style.transform = 'translateY(0)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-								>
-									<p className="leading-normal transition-colors duration-300 text-center capitalize" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
-										{item}
-									</p>
-								</div>
-							))}
-						</div>
-					</div>
-				</div>
-			</section>
-
 			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="culture"
@@ -968,50 +902,95 @@ const NathiaGaliMurreePage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Things to Do in Murree & Galiyat
+							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Murree & Galiyat</span>
 						</h2>
 					</div>
 					
-					{/* 6 Items List */}
-					<div className="max-w-4xl mx-auto">
-						<ul className="space-y-4 text-left">
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Chairlift & cable car rides
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Trekking & hiking
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Shopping at local markets
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Bonfire & BBQ nights
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Snowfall viewing
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Horse riding
-								</p>
-							</li>
-						</ul>
+					{/* 6 Images Horizontal Collage - Attached */}
+					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
+						{[
+							{
+								image: '/images/murree and nathia gali.jpg',
+								title: 'Chairlift & cable car rides',
+								description: 'Experience thrilling chairlift and cable car rides offering panoramic views of the beautiful Galiyat region'
+							},
+							{
+								image: '/images/murree and nathia gali.jpg',
+								title: 'Trekking & hiking',
+								description: 'Explore scenic trails and hiking tracks leading to stunning mountain peaks and viewpoints'
+							},
+							{
+								image: '/images/murree and nathia gali.jpg',
+								title: 'Shopping at local markets',
+								description: 'Browse through vibrant local markets and discover unique handicrafts and souvenirs'
+							},
+							{
+								image: '/images/murree and nathia gali.jpg',
+								title: 'Bonfire & BBQ nights',
+								description: 'Enjoy cozy bonfire evenings with delicious BBQ under the starry mountain sky'
+							},
+							{
+								image: '/images/murree and nathia gali.jpg',
+								title: 'Snowfall viewing',
+								description: 'Witness the magical transformation as snow blankets the hills during winter months'
+							},
+							{
+								image: '/images/murree and nathia gali.jpg',
+								title: 'Horse riding',
+								description: 'Take a peaceful horse ride through scenic trails and enjoy the natural beauty'
+							},
+						].map((item, idx) => (
+							<div 
+								key={idx} 
+								className={`relative h-[300px] md:h-[350px] overflow-hidden transition-all duration-700 ease-in-out scroll-reveal-fade-in cursor-pointer ${
+									hoveredImageIndex === idx 
+										? 'flex-[2.5]' 
+										: hoveredImageIndex !== null 
+											? 'flex-[0.6]' 
+											: 'flex-1'
+								} ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
+								style={{
+									transitionDelay: `${idx * 0.1}s`
+								}}
+								onMouseEnter={() => setHoveredImageIndex(idx)}
+								onMouseLeave={() => setHoveredImageIndex(null)}
+							>
+								<Image 
+									src={item.image}
+									alt={item.title}
+									fill
+									className="object-cover transition-transform duration-500"
+									style={{ transform: hoveredImageIndex === idx ? 'scale(1.1)' : 'scale(1)' }}
+								/>
+								{/* Overlay with content */}
+								<div 
+									className={`absolute inset-0 transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'bg-black/50' 
+											: 'bg-black/20'
+									}`}
+								></div>
+								{/* Content Overlay */}
+								<div 
+									className={`absolute inset-0 flex flex-col justify-center items-center text-white transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'opacity-100 translate-y-0' 
+											: 'opacity-0 translate-y-4'
+									}`}
+								>
+									<div className="text-center px-4">
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
+											{item.title}
+										</h3>
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<p className="text-sm md:text-base opacity-90 max-w-xs">
+											{item.description}
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
