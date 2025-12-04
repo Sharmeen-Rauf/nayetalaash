@@ -393,7 +393,7 @@ const NeelumValleyPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
 							<span className="font-autography hero-text-reveal block mb-2 text-white" style={{ display: 'inline-block', fontSize: '48px', color: 'white' }}>
-								Neelum Valley Azad Kashmir Tour Packages
+								Neelum Valley and Kashmir Tour Packages
 							</span>
 							<br />
 							<span className="block hero-text-reveal hero-text-delay-1"
@@ -402,17 +402,17 @@ const NeelumValleyPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Paradise on Earth
+								Your Heaven on Earth Tour
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Discover Neelum Valley stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
+						Explore clear rivers, lush green meadows, and high mountain lakes. Our custom built, stress free packages let you experience the true luxury and adventure of this breathtaking paradise.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Book Now
+							View Packages
 						</button>
 					</div>
 				</div>
@@ -426,11 +426,11 @@ const NeelumValleyPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Neelum Valley Azad Kashmir Tour Packages
+							Best Neelum Valley and Kashmir Tour Packages
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Neelum Valley, often called Paradise on Earth, is known for its pristine rivers, lush green forests, stunning waterfalls, and breathtaking mountain views. This beautiful valley offers a perfect escape for nature lovers and adventure seekers. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+								Your trip should be perfect! Our packages can be custom built by our professional tour operators to match exactly what you want to see and do. You can select from our popular itineraries below or contact us to customize your perfect Kashmir adventure:
 							</p>
 						</div>
 					</div>
@@ -439,40 +439,40 @@ const NeelumValleyPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '2 Days – Malam Jabba Tour (Short Escape)',
-								image: '/images/MalamJabba Tour(Short Escape)package 1.jpg'
+								title: '6 Days-Ratti Gali, Arangkel, and Taobat Neelum Valley Adventure',
+								image: '/images/azad kashmir.jpg'
 							},
 							{ 
-								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/pacakges2.jpeg'
+								title: '7 Days-The Complete Neelum Valley Tour',
+								image: '/images/azad kashmir.jpg'
 							},
 							{ 
-								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Green Top package 3.jpg'
+								title: '6 Days-Neelum Valley and Shogran (Kaghan Valley) Combo',
+								image: '/images/azad kashmir.jpg'
 							},
 							{ 
-								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
-								image: '/images/Relaxed Kalam, Mahodand, Green Top & Blue Water Pointpackage 4.jpg'
+								title: '9 Days-Neelum Valley & Kaghan Valley Extended Trip',
+								image: '/images/azad kashmir.jpg'
 							},
 							{ 
-								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Desan Toppackage 5.jpg'
+								title: '4 Days-Ratti Gali Lake, Murree and Nathia Gali Highlights',
+								image: '/images/azad kashmir.jpg'
 							},
 							{ 
-								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
-								image: '/images/swat.jpg'
+								title: '5 Days-Arangkel, Shogran and Siri Paye Short Tour',
+								image: '/images/azad kashmir.jpg'
 							},
 							{ 
-								title: '7 Days – Swat to Kumrat Valley Adventure',
-								image: '/images/swat.jpg'
+								title: '3 Days-Rawalakot, Tolipeer and Banjosa Lake Short Tour',
+								image: '/images/azad kashmir.jpg'
 							},
 							{ 
-								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
-								image: '/images/swat.jpg'
+								title: '6 Days-Neelum Valley, Murree and Nathia Gali Explorer',
+								image: '/images/azad kashmir.jpg'
 							},
 							{ 
-								title: '3 Days – Swat Valley Highlights Tour',
-								image: '/images/swat.jpg'
+								title: '5 Days-Ratti Gali Lake, Shogran and Siri Paye Trip',
+								image: '/images/azad kashmir.jpg'
 							},
 						];
 						
@@ -545,10 +545,10 @@ const NeelumValleyPage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Neelum Valley Azad Kashmir Tour Packages
+							Neelum Valley and Kashmir Group Tour Packages
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Neelum Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
+							We organize these tours throughout the year, so you can join our fixed group departure dates whenever is convenient. It's a great way to meet fellow travelers!
 						</p>
 					</div>
 
@@ -557,15 +557,15 @@ const NeelumValleyPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="3 Days: Malam Jabba, Kalam & Swat Valley Tour"
+									src="/images/azad kashmir.jpg"
+									alt="3 Days: Arangkel Neelum Valley Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days: Malam Jabba, Kalam & Swat Valley Tour
+									3 Days: Arangkel Neelum Valley Group Tour
 								</p>
 							</div>
 						</div>
@@ -573,32 +573,35 @@ const NeelumValleyPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="2 Days: Malam Jabba Swat Quick Tour"
+									src="/images/azad kashmir.jpg"
+									alt="4 Days: Arangkel, Murree and Nathia Gali Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									2 Days: Malam Jabba Swat Quick Tour
+									4 Days: Arangkel, Murree and Nathia Gali Group Tour
 								</p>
 							</div>
 						</div>
 					</div>
 
-					{/* Who Are These Tours For Section */}
+					{/* Customized Neelum Valley Trips: Who Are You Traveling With? Section */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Who Are These Tours For?
+							Customized Neelum Valley Trips: Who Are You Traveling With?
 						</h3>
+						<p className="leading-normal text-left mb-6" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							We design your experience around your travel partners:
+						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Couples & Honeymooners
+									Couples / Honeymoon
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Romantic, private, and relaxing trips with premium stays and scenic spots perfect for making new memories.
+									Luxury and Solitude. We create a romantic, stress-free environment for newlyweds to celebrate surrounded by beautiful nature.
 								</p>
 							</div>
 							<div>
@@ -606,15 +609,15 @@ const NeelumValleyPage = () => {
 									Families
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Safe, fun, and comfortable travel with activities and spots everyone can enjoy.
+									Fun, Safe, and Secure. We ensure a great environment for families to connect, relax, and make wonderful memories together.
 								</p>
 							</div>
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Friends & Student Groups
+									Students / Friends
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Adventure, trekking, games, activities, and fun moments all without planning stress.
+									Pure Fun and Adventure! Get ready for exciting activities, games, and exploring without the trouble of planning the logistics.
 								</p>
 							</div>
 							<div>
@@ -622,46 +625,20 @@ const NeelumValleyPage = () => {
 									Corporate Groups
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Perfect for team building, relaxation, and bonding outside the office.
+									Team Building in Nature. A perfect opportunity for employees to connect and recharge outside of the typical office environment.
 								</p>
 							</div>
 						</div>
 					</div>
 
-					{/* Swat Tour Packages From Major Cities Section */}
+					{/* Starting Point Flexibility Section */}
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Neelum Valley Tour Packages From Major Cities
+							Starting Point Flexibility
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We provide tours from:
+							We offer tours starting from: Lahore, Karachi and Islamabad. You can also easily customize these tours to start from any other city in Pakistan!
 						</p>
-						<ul className="space-y-3 mb-4">
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Lahore
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Karachi
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Islamabad
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Custom departures available for other cities as well.
-								</p>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</section>
@@ -674,122 +651,107 @@ const NeelumValleyPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Neelum Valley
+							Most Popular Destinations and Attractions in Neelum Valley
 						</h2>
-						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Neelum Valley is full of natural wonders, pristine rivers, stunning waterfalls, lush forests, and breathtaking mountain views. Here are the must visit attractions included in our tours:
-						</p>
 					</div>
 					
 					{/* 11 Destinations with Alternating Layout */}
 					<div className="space-y-8">
 						{[
 							{ 
-								title: 'Kalam Valley', 
-								image: '/images/Kalam valley.jpg',
-								description: 'Kalam means "Blue Water" and is the main entrance to the beautiful upper valleys. It sits high in the Hindukush mountains and gives amazing views of Falaksar Peak. You\'ll find comfy places to stay, great food, and it\'s open to enjoy in both summer and winter.',
+								title: 'Neelum Valley', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Neelum Valley is the northernmost part of Kashmir, a true piece of heaven on Earth that starts at Patihka Town. The journey follows the Neelum River along the road, offering heavenly views and glimpses of the Line of Control (LOC) with Indian-Occupied Kashmir. Before the partition, the valley was known as the Kishanganga Valley, and the river still has this name on the Indian side.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Malam Jabba', 
-								image: '/images/malam jabba.jpg',
-								description: 'This is a popular hilltop ski resort located about an hour or two from Mingora City. When it snows, you can enjoy skiing, a fun chair lift ride, and zip lining. It\'s the perfect spot for winter sports and has hotels available for your stay.',
+								title: 'Keran Village', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Keran is a unique tourist spot because the village is split by the Line of Control with the other side located in Indian-Occupied Kashmir. You can clearly see houses, people, and camps on the other bank of the Neelum River. It is highly recommended for adventure lovers to try camping beside the Neelum River in Keran.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Ushu Forest (Ushu Valley)', 
-								image: '/images/Ushu Forest.jpg',
-								description: 'Just 8 km from Kalam, this forest is famous for its thick, dense Deodar trees. It\'s easy to reach even without a car and you\'ll find small shops, hotels, and places to camp along the road. It\'s a beautiful, shady spot for a walk and a great place to enjoy the fresh air.',
+								title: 'Upper Neelum', 
+								image: '/images/azad kashmir.jpg',
+								description: 'This is another beautiful village that can be accessed by a short 25-30 minute drive or a trek from Keran. It gives you an incredible aerial view of Keran Village and the lands on the Indian side of the Line of Control. Several hotels and camping options are available here for a peaceful stay with great views.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Matiltan Waterfall and Chashma-e-Shifa', 
-								image: '/images/Matiltan Waterfall.jpg',
-								description: 'The road leads up to Matiltan Village, where you can see the stunning waterfall and a seasonal glacier. There are hotels and restaurants here, and a special spring called Chashma-e-Shifa (Healing Fountain). Locals believe the water from this fountain has unique healing properties due to its minerals.',
+								title: 'Sharda Village', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Sharda holds great historical importance and is believed to be named after the Hindu goddesses Shardi and Nardi. It is home to the ancient Sharda Peeth temple, which was once a university for research important to Buddhists and Hindus. The village is a starting point for a challenging 4-5 hour jeep track that leads to the Noori Nar Pass into Kaghan Valley.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Mahodand Lake', 
-								image: '/images/Mahodand Lake.jpg',
-								description: 'This is a beautiful, large glacial lake formed by melting ice from the Hindukush Mountains. It\'s great for summer visits but closes completely in winter because heavy snow blocks the road. You can find small shops, restaurants, and meadows perfect for camping near the water.',
+								title: 'Arangkel', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Arangkel is a stunning hilltop meadow and village crowned by thick forests and snow-capped mountains. It is accessed by a hour trek from Kel Village or you can take an exciting Doli (cable car) ride to make the hike easier. This beautiful spot is right on the border with Indian-Occupied Kashmir and offers plenty of accommodation for tourists.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Saifullah Lake', 
-								image: '/images/Saifullah Lake.jpg',
-								description: 'This lake is located further into Ushu Valley, about a 30 to 45-minute journey from Mahodand Lake. You can reach it either by hiking on foot or by taking a rugged 4x4 jeep for the scenic ride. It\'s another crystal-clear, stunning alpine lake waiting to be explored.',
+								title: 'Kundal Shahi Waterfall (Kutton Waterfall)', 
+								image: '/images/azad kashmir.jpg',
+								description: 'This powerful waterfall is accessed from the Neelum Valley Road via the Kundal Shahi Bazaar. The height of the waterfall is impressive, and the sheer volume of water will give you a chill. The water forming this cascade flows as the Jagran Nala, originating from the beautiful Baboon Valley.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Desan Meadows', 
-								image: '/images/Desan Meadows.jpg',
-								description: 'These meadows are near Kalam and offer stunning, lush green fields and heavenly views. You can reach this beautiful spot by taking a jeep ride from either Kalam or Utror Valley. It\'s surrounded by other stunning sites like Godar, Dararo, and Zahro Lakes.',
+								title: 'Kutton', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Kutton is a picturesque village further into Neelum Valley, famous for the Kutton Resort (also known as Jagran Resort). This popular resort is managed by the AJK Government, offering comfortable stays in a serene environment. It\'s a perfect spot to relax and enjoy the scenic beauty of the surrounding area.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Green Top', 
-								image: '/images/Green Top (Boyun Village).jpg',
-								description: 'Also known as the "Kalam View Point," this spot is famous for its mesmerizing panoramic views. It\'s accessible by jeep or by enjoying a scenic hike to the top. A small place called Boyun Village is up here, known for its beautiful green surroundings in the summer.',
+								title: 'Ratti Gali Lake', 
+								image: '/images/azad kashmir.jpg',
+								description: 'This glacial lake is undoubtedly the most scenic lake in the entire region and borders the Kaghan Valley. Getting there is an adventure! You take a 2.5–3 hour jeep ride from Dowarian village to the basecamp.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Utror Valley', 
-								image: '/images/swat.jpg',
-								description: 'Utror is a great central base camp for exploring many lesser-known valleys nearby. It\'s the gateway to beautiful spots like Gabral Valley, Kumrat Valley, and Dhan Valley. You can also visit gorgeous alpine lakes from here, including Kundol Lake and the twin lakes of Pari and Paristan.',
+								title: 'Patlian Lake', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Patlian is another beautiful glacial lake accessed by an adventurous off-road jeep track from Lawat Town. The jeep takes you to the basecamp, and a further hour hike leads you to the stunning lake itself. Camping is available at the basecamp for visitors who wish to stay the night under the stars.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Gabral Valley', 
-								image: '/images/Gabral Valley.jpg',
-								description: 'This beautiful valley is northwest of Swat and Utror, touching the lower parts of the Himalayas. If you travel deep inside, you\'ll discover lovely spots like Chota Banda Meadows and Shahi Bagh. Gabral Valley truly feels like a hidden slice of paradise for nature lovers and tourists.',
+								title: 'Baboon Valley', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Baboon Top is a lush green, less-explored summer destination that is quickly gaining attention from tourists. It can be reached by rough, rugged hour jeep tracks starting from both Kutton Jagran and Keran villages. The valley is crowned by rocky mountains and is a great spot for nature lovers seeking quiet beauty.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Blue Water Kalam Swat', 
-								image: '/images/Blue Water Point.jpg',
-								description: 'This spot is about 10-15 km from Kalam and takes around two hours to reach by jeep. It is a popular summer getaway known for its crystal-clear water flow. It gained extra fame after a visit by the former Prime Minister of Pakistan, Mr. Imran Khan.',
+								title: 'Shounter Valley', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Shounter Valley is truly a hidden gem of Kashmir, located further past Kel in the Neelum Valley. It is the future site of the longest tunnel in Pakistan (12.6 km), connecting Kashmir with Astore in Gilgit Baltistan. Key attractions here include the stunning Shounter Lake (also called Spoon Lake) and the breathtaking Chitta Katha Lake.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Badgoi Pass', 
-								image: '/images/Badgoi Pass.jpg',
-								description: 'Badgoi is a high mountain pass that links Kalam with the Upper Dir District. It leads directly to Thal in Upper Dir, and you\'ll pass through "heavenly places" like Hawa ka Darra. This scenic jeep journey from Kalam or Kumrat takes about 4–5 hours.',
+								title: 'Chitta Katha Lake', 
+								image: '/images/azad kashmir.jpg',
+								description: 'This beautiful natural glacial lake is located at a high elevation of about 13,500 feet in Shounter Valley. It sits majestically shadowed by the mighty Hari Parbat mountain. Like Sharda, this place is considered sacred by Hindus, and reaching it involves a two-day trek from Hoz Village.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Shangla Top', 
-								image: '/images/Shangla Top.jpg',
-								description: 'This is a breathtaking hilltop destination located on the N90 Highway, about 20 km from Khwazakhela. It connects the region of Kohistan with Swat Valley, offering amazing mountain scenery. The best time to visit and enjoy the views is usually during spring and summer.',
+								title: 'Gurez Valley', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Taking a right turn from the Neelum Valley road after Kel leads you into the beautiful Gurez Valley. It stretches from Kel all the way to the lovely Taobat Village, bordering Gilgit Baltistan. Don\'t miss visiting Gurez if you are exploring the upper areas of Neelum Valley.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Khwazakhela to Besham Route', 
-								image: '/images/swat.jpg',
-								description: 'This is the N90 Highway, a route connecting Swat to the Kohistan region. It stretches for about 65–70 km, starting at Khwazakhela City and ending at Besham City. This highway is essential and used frequently by both local traders and tourists.',
+								title: 'Taobat Village', 
+								image: '/images/azad kashmir.jpg',
+								description: 'Taobat is often called the most beautiful village in the entire valley, bordering the Indian-Occupied Kashmir side. It is located at the very end of the Gurez Valley and offers several comfortable hotels for travelers. You can visit the small Trout Fish Farm here, which supplies fresh fish to the local villagers and tourists.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Bahrain', 
-								image: '/images/swat.jpg',
-								description: 'Bahrain sits where the Daral and Swat Rivers meet on the main highway to Kalam. It was a beautiful tourist spot with a lively market, but the 2022 floods caused significant damage. From here, you can start the journey to visit Daral and Saidgai Lakes.',
+								title: 'Wazwan - The Cuisine of Kashmir', 
+								image: '/images/azad kashmir.jpg',
+								description: 'The famous local cuisine is called Wazwan, where "Waz" means cook and "Wan" means shop in Kashmiri. It traditionally includes 36 to 40 dishes made mainly from organic mutton, offering an incredible feast. No visit is complete without tasting the creamy, savory Kashmiri Chaye paired with a local Kashmiri Kulcha bread.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Swat River', 
-								image: '/images/Swat River.jpg',
-								description: 'The river is mainly formed by the melting glacial waters flowing from the Hindukush Mountains. Its biggest feeding rivers are the Gabral, Utror, and Ushu Rivers. The Swat River travels throughout the valley, eventually joining the Panjkora River and flowing toward Peshawar.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Swat Expressway', 
-								image: '/images/Swat Expressway.jpg',
-								description: 'This modern highway (also called the N95 Highway) runs from Chakdara City all the way up to Kalam. It was finished in 2019 and has made a huge difference in the ease of travel to the valley. The highway has played a significant role in boosting tourism and accessibility to the region.',
-								imageLeft: true
-							},
-							{ 
-								title: 'White Palace Swat', 
-								image: '/images/White Palace Swat.jpg',
-								description: 'The beautiful White Palace was built in 1940 by the ruler (Wali) of Swat Valley. It is located in Marghazar, only about 13 kilometers from the capital, Saidu Sharif. The historic palace now operates as a stunning hotel, warmly welcoming guests.',
+								title: 'Kashmir to Kaghan Routes', 
+								image: '/images/azad kashmir.jpg',
+								description: 'There are two main routes connecting Kashmir and Kaghan Valleys. The first is an easy, short 1-1.5 hour road from Muzaffarabad to Balakot through Garhi Habibullah. The second is a highly dangerous, 4x4 only jeep track passing over the steep Noori Nar Pass from Sharda to Jalkhad.',
 								imageLeft: false
 							},
 						].map((destination, idx) => (
@@ -1073,51 +1035,63 @@ const NeelumValleyPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
 					<div className="text-center mb-6">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Frequently Asked Question
+							Frequently Asked Questions
 						</h2>
 					</div>
 					
 					<div className="space-y-0">
 						{[
 							{
+								question: 'Where is Neelum Valley located?',
+								answer: 'Azad Jammu and Kashmir (AJK), Pakistan.'
+							},
+							{
+								question: 'Where is Azad Kashmir located?',
+								answer: 'Western part of the Kashmir region.'
+							},
+							{
 								question: 'What is the best time to visit Neelum Valley?',
-								answer: 'Neelum Valley is beautiful all year.\n\n• Spring: Mild weather, blooming flowers\n\n• Summer: Perfect for river activities and sightseeing\n\n• Autumn: Beautiful fall colors\n\n• Winter: Snow-covered landscapes, winter activities'
+								answer: 'Summer (May to September).'
 							},
 							{
-								question: 'Is Neelum Valley accessible by road?',
-								answer: 'Yes, Neelum Valley is easily accessible by road from Muzaffarabad via the Neelum Road.'
+								question: 'Which areas are open in winter?',
+								answer: 'Lower areas like Keran (high areas often close).'
 							},
 							{
-								question: 'Are hotels available in Neelum Valley?',
-								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts and guesthouses.'
+								question: 'What kind of accommodation is available?',
+								answer: 'Local guesthouses, hotels, and camping sites.'
 							},
 							{
-								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Neelum Valley is a safe and friendly destination and our team ensures complete comfort.'
+								question: 'Is it safe to travel to Neelum Valley?',
+								answer: 'Yes, generally very safe (follow LOC guidelines).'
 							},
 							{
-								question: 'Are jeeps included for remote destinations?',
-								answer: 'Yes, we arrange jeeps for all off road destinations when needed.'
+								question: 'Which is the highest peak in Neelum Valley?',
+								answer: 'Sarwali Peak.'
 							},
 							{
-								question: 'Can I customize my tour?',
-								answer: 'Yes, all packages can be customized to your preferences.'
+								question: 'Can I use my credit card or ATM?',
+								answer: 'No, cash is essential.'
 							},
 							{
-								question: 'Do you offer photography/videography?',
-								answer: 'Yes, we offer cinematic videos and photos on request.'
+								question: 'Is a cellular/mobile network available?',
+								answer: 'Limited SCOM is the only reliable network.'
 							},
 							{
-								question: 'What should I pack?',
-								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
+								question: 'What kind of food is available?',
+								answer: 'Wazwan (local mutton feast) and Pakistani food.'
 							},
 							{
-								question: 'Are there restaurants and shops in Neelum Valley?',
-								answer: 'Yes, there are many eateries, cafes and local markets in the valley.'
+								question: 'How to get to Neelum Valley?',
+								answer: 'By road from Muzaffarabad City.'
 							},
 							{
-								question: 'Do you have Neelum Valley tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Neelum Valley packages with transport or flight options.'
+								question: 'What is the primary source of income?',
+								answer: 'Agriculture, livestock, and tourism.'
+							},
+							{
+								question: 'What is the local language spoken?',
+								answer: 'Kashmiri, Hindko, and Urdu.'
 							},
 						].map((faq, idx) => (
 							<div 

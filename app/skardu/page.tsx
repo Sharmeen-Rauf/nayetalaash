@@ -402,11 +402,11 @@ const SkarduPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Your Stress Free Skardu Adventure Starts Here!
+								 Skardu Adventure Starts Here!
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						At Nayi Talaash, we bring you premium, well planned and safe Skardu tour packages designed for families, couples, groups, and corporate travelers.						</p>
+						We bring you premium, well planned and safe Skardu tour packages designed for families, couples, groups, and corporate travelers.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
