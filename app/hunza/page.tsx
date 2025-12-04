@@ -1006,7 +1006,7 @@ const HunzaPage = () => {
 			{/* ====================== HUNZA'S CULINARY EXPERIENCE ====================== */}
 			<section 
 				data-section-id="culinary-experience"
-				className={`py-12 md:py-16 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden scroll-reveal-fade-up ${visibleSections.has('culinary-experience') ? 'revealed' : ''}`}
+				className={`py-8 md:py-10 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden scroll-reveal-fade-up ${visibleSections.has('culinary-experience') ? 'revealed' : ''}`}
 			>
 				{/* Decorative Background Elements */}
 				<div className="absolute top-0 right-0 w-96 h-96 opacity-5" style={{ background: `radial-gradient(circle, ${primaryOrange} 0%, transparent 70%)` }}></div>
@@ -1014,21 +1014,21 @@ const HunzaPage = () => {
 				
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					{/* Section Header */}
-					<div className="text-center mb-12">
-						<span className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4" style={{ backgroundColor: `${primaryOrange}15`, color: primaryOrange }}>
+					<div className="text-center mb-8">
+						<span className="inline-block px-3 py-1.5 rounded-full text-xs font-semibold mb-3" style={{ backgroundColor: `${primaryOrange}15`, color: primaryOrange }}>
 							Culinary Journey
 						</span>
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+						<h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: secondaryBlack }}>
 							Hunza's Must-Try Traditional Food
 						</h2>
 					</div>
 
 					{/* Traditional Food Section */}
-					<div className="mb-16">
-						<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+					<div className="mb-10">
+						<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
 							{/* Image with Overlay Effect */}
 							<div className="lg:order-2 relative group">
-								<div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+								<div className="relative h-64 lg:h-80 rounded-xl overflow-hidden shadow-xl">
 									<Image 
 										src="/images/Hunza.jpg"
 										alt="Hunza Traditional Food"
@@ -1038,11 +1038,11 @@ const HunzaPage = () => {
 									{/* Gradient Overlay */}
 									<div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
 									{/* Decorative Frame */}
-									<div className="absolute inset-4 border-2 border-white/30 rounded-xl"></div>
+									<div className="absolute inset-3 border-2 border-white/30 rounded-lg"></div>
 								</div>
 								{/* Floating Badge */}
-								<div className="absolute -bottom-6 -left-6 bg-white rounded-full p-4 shadow-xl border-4" style={{ borderColor: primaryOrange }}>
-									<div className="w-16 h-16 rounded-full bg-gradient-to-br" style={{ background: `linear-gradient(135deg, ${primaryOrange}, #ffb84d)` }}></div>
+								<div className="absolute -bottom-4 -left-4 bg-white rounded-full p-2 shadow-lg border-2" style={{ borderColor: primaryOrange }}>
+									<div className="w-10 h-10 rounded-full bg-gradient-to-br" style={{ background: `linear-gradient(135deg, ${primaryOrange}, #ffb84d)` }}></div>
 								</div>
 							</div>
 							
@@ -1050,25 +1050,25 @@ const HunzaPage = () => {
 							<div className="lg:order-1">
 								<div className="relative">
 									{/* Decorative Line */}
-									<div className="w-20 h-1 mb-6" style={{ backgroundColor: primaryOrange }}></div>
+									<div className="w-16 h-0.5 mb-4" style={{ backgroundColor: primaryOrange }}></div>
 									
-									<p className="leading-relaxed mb-6 text-lg" style={{ color: `${secondaryBlack}90`, fontSize: '17px', lineHeight: '1.8' }}>
+									<p className="leading-relaxed mb-4 text-base" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
 										Hunza dishes are cooked with pure, organic ingredients to be very nutritious and keep people warm during the cold mountain winters. Local herbs are used a lot, and yak meat is a common and important part of the meals in Gilgit Baltistan.
 									</p>
 									
 									{/* Feature Points */}
-									<div className="space-y-4">
-										<div className="flex items-start gap-3">
-											<div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-											<p className="text-base" style={{ color: `${secondaryBlack}80` }}>Pure organic ingredients</p>
+									<div className="space-y-2">
+										<div className="flex items-start gap-2">
+											<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+											<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>Pure organic ingredients</p>
 										</div>
-										<div className="flex items-start gap-3">
-											<div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-											<p className="text-base" style={{ color: `${secondaryBlack}80` }}>Traditional local herbs</p>
+										<div className="flex items-start gap-2">
+											<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+											<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>Traditional local herbs</p>
 										</div>
-										<div className="flex items-start gap-3">
-											<div className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-											<p className="text-base" style={{ color: `${secondaryBlack}80` }}>Authentic yak meat dishes</p>
+										<div className="flex items-start gap-2">
+											<div className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+											<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>Authentic yak meat dishes</p>
 										</div>
 									</div>
 								</div>
@@ -1078,27 +1078,27 @@ const HunzaPage = () => {
 
 					{/* Best Restaurants Section */}
 					<div className="relative">
-						<div className="text-center mb-10">
-							<h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: secondaryBlack }}>
+						<div className="text-center mb-6">
+							<h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: secondaryBlack }}>
 								Best Restaurants to Visit in Hunza Valley
 							</h2>
 						</div>
 						
-						<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
 							{/* Content Side */}
 							<div>
-								<div className="relative bg-white rounded-2xl p-8 md:p-10 shadow-xl border-l-4" style={{ borderColor: primaryOrange }}>
-									<p className="leading-relaxed mb-6 text-lg" style={{ color: `${secondaryBlack}90`, fontSize: '17px', lineHeight: '1.8' }}>
+								<div className="relative bg-white rounded-xl p-6 md:p-8 shadow-lg border-l-4" style={{ borderColor: primaryOrange }}>
+									<p className="leading-relaxed mb-4 text-base" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
 										Hunza Valley is famous for its massive mountains, huge glaciers, and breathtaking turquoise lakes, creating a picture perfect setting. But this region is also a culinary destination where delicious food awaits at every turn!
 									</p>
 									
-									<div className="bg-gradient-to-r p-6 rounded-xl mb-4" style={{ background: `linear-gradient(135deg, ${primaryOrange}15, ${primaryOrange}05)` }}>
-										<p className="leading-relaxed text-base italic" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.7' }}>
+									<div className="bg-gradient-to-r p-4 rounded-lg mb-3" style={{ background: `linear-gradient(135deg, ${primaryOrange}15, ${primaryOrange}05)` }}>
+										<p className="leading-relaxed text-sm italic" style={{ color: `${secondaryBlack}90`, fontSize: '15px', lineHeight: '1.6' }}>
 											"The key to Hunzai cuisine is the focus on organic, pure, and healthy ingredients - their motto is: tasty, locally grown, and all organic."
 										</p>
 									</div>
 									
-									<p className="leading-relaxed text-lg" style={{ color: `${secondaryBlack}90`, fontSize: '17px', lineHeight: '1.8' }}>
+									<p className="leading-relaxed text-base" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
 										So, you don't need to worry if you eat a little too much while enjoying your trip in Hunza Valley.
 									</p>
 								</div>
@@ -1106,7 +1106,7 @@ const HunzaPage = () => {
 							
 							{/* Image with Modern Design */}
 							<div className="relative group">
-								<div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+								<div className="relative h-64 lg:h-80 rounded-xl overflow-hidden shadow-xl">
 									<Image 
 										src="/images/Hunza.jpg"
 										alt="Best Restaurants in Hunza Valley"
@@ -1117,11 +1117,11 @@ const HunzaPage = () => {
 									<div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-transparent"></div>
 								</div>
 								{/* Floating Card Overlay */}
-								<div className="absolute -bottom-6 -right-6 bg-white rounded-xl p-6 shadow-2xl max-w-xs border-t-4" style={{ borderColor: primaryOrange }}>
-									<p className="font-bold text-lg mb-2" style={{ color: secondaryBlack }}>
+								<div className="absolute -bottom-4 -right-4 bg-white rounded-lg p-4 shadow-lg max-w-xs border-t-2" style={{ borderColor: primaryOrange }}>
+									<p className="font-bold text-base mb-1" style={{ color: secondaryBlack }}>
 										🍽️ Authentic Experience
 									</p>
-									<p className="text-sm" style={{ color: `${secondaryBlack}70` }}>
+									<p className="text-xs" style={{ color: `${secondaryBlack}70` }}>
 										Discover the finest culinary traditions
 									</p>
 								</div>
