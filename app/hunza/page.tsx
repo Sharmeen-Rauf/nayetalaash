@@ -461,7 +461,7 @@ const HunzaPage = () => {
 							},
 							{ 
 								title: '6 Days – Hunza, Naltar & Khunjerab Tour',
-								description: 'Includes Naltar Valley's colorful lakes plus the classic Hunza experience.',
+								description: 'Includes Naltar Valley\'s colorful lakes plus the classic Hunza experience.',
 								image: '/images/Hunza.jpg'
 							},
 							{ 
