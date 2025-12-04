@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
 
-const SwatKalamPage = () => {
+const SkarduPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -187,7 +187,7 @@ const SwatKalamPage = () => {
 												</Link>
 											</li>
 											<li>
-												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/skardu" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Skardu Tour Packages
 												</Link>
 											</li>
@@ -300,7 +300,7 @@ const SwatKalamPage = () => {
 									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Hunza Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/skardu" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Skardu Tour Packages
 									</Link>
 									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
@@ -380,7 +380,7 @@ const SwatKalamPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/swatpageherosection.jpg')",
+						backgroundImage: "url('/images/skardu 2.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -393,7 +393,7 @@ const SwatKalamPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
 							<span className="font-autography hero-text-reveal block mb-2 text-white" style={{ display: 'inline-block', fontSize: '48px', color: 'white' }}>
-								Swat & Kalam Tour Packages
+								Skardu Tour Packages
 							</span>
 							<br />
 							<span className="block hero-text-reveal hero-text-delay-1"
@@ -402,11 +402,11 @@ const SwatKalamPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Discover the Switzerland of Pakistan
+								Gateway to K2 and Baltoro Glacier
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Discover Swat & Kalam stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
+						Discover Skardu stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
@@ -426,11 +426,11 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Swat & Kalam Tour Packages
+							Customized Skardu Tour Packages
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Swat Valley often called the Switzerland of Pakistan is known for its snow covered mountains, blue lakes, green forests and calm meadows, making it a perfect place for every traveler. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Skardu is the gateway to the world's second highest peak K2 and the majestic Baltoro Glacier. Known for its dramatic landscapes, crystal-clear lakes, and breathtaking mountain vistas, Skardu is a perfect destination for adventure seekers and nature lovers. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
 							</p>
 						</div>
 					</div>
@@ -545,10 +545,10 @@ const SwatKalamPage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Swat & Kalam Tour Packages
+							Public Skardu Tour Packages
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Swat and Kalam Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
+							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Skardu Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
 						</p>
 					</div>
 
@@ -565,7 +565,7 @@ const SwatKalamPage = () => {
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days: Malam Jabba, Kalam & Swat Valley Tour
+									6 Days: Skardu Complete Tour Package
 								</p>
 							</div>
 						</div>
@@ -581,7 +581,7 @@ const SwatKalamPage = () => {
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									2 Days: Malam Jabba Swat Quick Tour
+									4 Days: Skardu Quick Tour
 								</p>
 							</div>
 						</div>
@@ -631,7 +631,7 @@ const SwatKalamPage = () => {
 					{/* Swat Tour Packages From Major Cities Section */}
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Swat Tour Packages From Major Cities
+							Skardu Tour Packages From Major Cities
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							We provide tours from:
@@ -674,123 +674,81 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Swat & Kalam
+							Top Places to Visit in Skardu
 						</h2>
 						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Swat Valley is full of natural wonders, flowing rivers, crystal lakes, waterfalls and forests. Here are the must visit attractions included in our tours:
+							Skardu is full of natural wonders, stunning lakes, majestic mountains, and ancient forts. Here are the must visit attractions included in our tours:
 						</p>
 					</div>
 					
-					{/* 11 Destinations with Alternating Layout */}
+					{/* Destinations with Alternating Layout */}
 					<div className="space-y-8">
 						{[
 							{ 
-								title: 'Kalam Valley', 
-								image: '/images/Kalam valley.jpg',
-								description: 'Kalam means "Blue Water" and is the main entrance to the beautiful upper valleys. It sits high in the Hindukush mountains and gives amazing views of Falaksar Peak. You\'ll find comfy places to stay, great food, and it\'s open to enjoy in both summer and winter.',
+								title: 'Shangrila Resort', 
+								image: '/images/skardu 2.jpg',
+								description: 'A beautiful resort located on the shores of Lower Kachura Lake, known for its stunning architecture and breathtaking views. The resort offers comfortable accommodations and is famous for its picturesque setting against the backdrop of the Karakoram Range.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Malam Jabba', 
-								image: '/images/malam jabba.jpg',
-								description: 'This is a popular hilltop ski resort located about an hour or two from Mingora City. When it snows, you can enjoy skiing, a fun chair lift ride, and zip lining. It\'s the perfect spot for winter sports and has hotels available for your stay.',
+								title: 'Upper Kachura Lake (Shangrila Lake)', 
+								image: '/images/skardu 2.jpg',
+								description: 'A stunning alpine lake known for its crystal-clear emerald green water. The lake is surrounded by mountains and offers a peaceful setting perfect for photography and relaxation. It\'s one of the most beautiful lakes in the region.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Ushu Forest (Ushu Valley)', 
-								image: '/images/Ushu Forest.jpg',
-								description: 'Just 8 km from Kalam, this forest is famous for its thick, dense Deodar trees. It\'s easy to reach even without a car and you\'ll find small shops, hotels, and places to camp along the road. It\'s a beautiful, shady spot for a walk and a great place to enjoy the fresh air.',
+								title: 'Lower Kachura Lake', 
+								image: '/images/skardu 2.jpg',
+								description: 'Another beautiful lake in Skardu, famous for its clear blue water and scenic surroundings. The lake is easily accessible and offers opportunities for boating and photography. It\'s a popular spot for tourists visiting Skardu.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Matiltan Waterfall and Chashma-e-Shifa', 
-								image: '/images/Matiltan Waterfall.jpg',
-								description: 'The road leads up to Matiltan Village, where you can see the stunning waterfall and a seasonal glacier. There are hotels and restaurants here, and a special spring called Chashma-e-Shifa (Healing Fountain). Locals believe the water from this fountain has unique healing properties due to its minerals.',
+								title: 'Skardu Fort (Kharpocho Fort)', 
+								image: '/images/skardu 2.jpg',
+								description: 'An ancient fort located on a hilltop overlooking Skardu town. The fort offers panoramic views of the surrounding mountains and the Indus River. It\'s a historic landmark that showcases the rich history of the region.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Mahodand Lake', 
-								image: '/images/Mahodand Lake.jpg',
-								description: 'This is a beautiful, large glacial lake formed by melting ice from the Hindukush Mountains. It\'s great for summer visits but closes completely in winter because heavy snow blocks the road. You can find small shops, restaurants, and meadows perfect for camping near the water.',
+								title: 'Deosai National Park', 
+								image: '/images/skardu 2.jpg',
+								description: 'One of the highest plateaus in the world, located at an altitude of over 4,000 meters. The park is known for its unique landscape, wildflowers, and the endangered Himalayan brown bear. It\'s accessible during summer months only.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Saifullah Lake', 
-								image: '/images/Saifullah Lake.jpg',
-								description: 'This lake is located further into Ushu Valley, about a 30 to 45-minute journey from Mahodand Lake. You can reach it either by hiking on foot or by taking a rugged 4x4 jeep for the scenic ride. It\'s another crystal-clear, stunning alpine lake waiting to be explored.',
+								title: 'Sadpara Lake', 
+								image: '/images/skardu 2.jpg',
+								description: 'A beautiful lake located near Skardu, known for its stunning blue color and peaceful atmosphere. The lake is surrounded by mountains and offers great opportunities for photography and nature walks.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Desan Meadows', 
-								image: '/images/Desan Meadows.jpg',
-								description: 'These meadows are near Kalam and offer stunning, lush green fields and heavenly views. You can reach this beautiful spot by taking a jeep ride from either Kalam or Utror Valley. It\'s surrounded by other stunning sites like Godar, Dararo, and Zahro Lakes.',
+								title: 'Cold Desert (Katpana Desert)', 
+								image: '/images/skardu 2.jpg',
+								description: 'One of the highest deserts in the world, located near Skardu. The desert is unique because it experiences cold temperatures and sometimes even snowfall. It\'s a fascinating natural phenomenon that attracts many visitors.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Green Top', 
-								image: '/images/Green Top (Boyun Village).jpg',
-								description: 'Also known as the "Kalam View Point," this spot is famous for its mesmerizing panoramic views. It\'s accessible by jeep or by enjoying a scenic hike to the top. A small place called Boyun Village is up here, known for its beautiful green surroundings in the summer.',
+								title: 'Shigar Fort', 
+								image: '/images/skardu 2.jpg',
+								description: 'A historic fort located in Shigar Valley, about 32 km from Skardu. The fort has been beautifully restored and now operates as a luxury heritage hotel. It offers a glimpse into the rich cultural heritage of the region.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Utror Valley', 
-								image: '/images/swat.jpg',
-								description: 'Utror is a great central base camp for exploring many lesser-known valleys nearby. It\'s the gateway to beautiful spots like Gabral Valley, Kumrat Valley, and Dhan Valley. You can also visit gorgeous alpine lakes from here, including Kundol Lake and the twin lakes of Pari and Paristan.',
+								title: 'Khaplu Palace', 
+								image: '/images/skardu 2.jpg',
+								description: 'A historic palace located in Khaplu Valley, about 103 km from Skardu. The palace has been restored and converted into a hotel, offering a unique opportunity to experience the royal heritage of the Baltistan region.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Gabral Valley', 
-								image: '/images/Gabral Valley.jpg',
-								description: 'This beautiful valley is northwest of Swat and Utror, touching the lower parts of the Himalayas. If you travel deep inside, you\'ll discover lovely spots like Chota Banda Meadows and Shahi Bagh. Gabral Valley truly feels like a hidden slice of paradise for nature lovers and tourists.',
+								title: 'Manthoka Waterfall', 
+								image: '/images/skardu 2.jpg',
+								description: 'A beautiful waterfall located near Skardu, known for its scenic beauty. The waterfall is surrounded by lush greenery and offers a refreshing stop during your journey. It\'s a perfect spot for photography and relaxation.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Blue Water Kalam Swat', 
-								image: '/images/Blue Water Point.jpg',
-								description: 'This spot is about 10-15 km from Kalam and takes around two hours to reach by jeep. It is a popular summer getaway known for its crystal-clear water flow. It gained extra fame after a visit by the former Prime Minister of Pakistan, Mr. Imran Khan.',
+								title: 'Indus River', 
+								image: '/images/skardu 2.jpg',
+								description: 'The mighty Indus River flows through Skardu, creating stunning landscapes. The river is an important part of the region\'s geography and offers opportunities for photography and scenic views throughout the valley.',
 								imageLeft: true
-							},
-							{ 
-								title: 'Badgoi Pass', 
-								image: '/images/Badgoi Pass.jpg',
-								description: 'Badgoi is a high mountain pass that links Kalam with the Upper Dir District. It leads directly to Thal in Upper Dir, and you\'ll pass through "heavenly places" like Hawa ka Darra. This scenic jeep journey from Kalam or Kumrat takes about 4–5 hours.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Shangla Top', 
-								image: '/images/Shangla Top.jpg',
-								description: 'This is a breathtaking hilltop destination located on the N90 Highway, about 20 km from Khwazakhela. It connects the region of Kohistan with Swat Valley, offering amazing mountain scenery. The best time to visit and enjoy the views is usually during spring and summer.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Khwazakhela to Besham Route', 
-								image: '/images/swat.jpg',
-								description: 'This is the N90 Highway, a route connecting Swat to the Kohistan region. It stretches for about 65–70 km, starting at Khwazakhela City and ending at Besham City. This highway is essential and used frequently by both local traders and tourists.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Bahrain', 
-								image: '/images/swat.jpg',
-								description: 'Bahrain sits where the Daral and Swat Rivers meet on the main highway to Kalam. It was a beautiful tourist spot with a lively market, but the 2022 floods caused significant damage. From here, you can start the journey to visit Daral and Saidgai Lakes.',
-								imageLeft: true
-							},
-							{ 
-								title: 'Swat River', 
-								image: '/images/Swat River.jpg',
-								description: 'The river is mainly formed by the melting glacial waters flowing from the Hindukush Mountains. Its biggest feeding rivers are the Gabral, Utror, and Ushu Rivers. The Swat River travels throughout the valley, eventually joining the Panjkora River and flowing toward Peshawar.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Swat Expressway', 
-								image: '/images/Swat Expressway.jpg',
-								description: 'This modern highway (also called the N95 Highway) runs from Chakdara City all the way up to Kalam. It was finished in 2019 and has made a huge difference in the ease of travel to the valley. The highway has played a significant role in boosting tourism and accessibility to the region.',
-								imageLeft: true
-							},
-							{ 
-								title: 'White Palace Swat', 
-								image: '/images/White Palace Swat.jpg',
-								description: 'The beautiful White Palace was built in 1940 by the ruler (Wali) of Swat Valley. It is located in Marghazar, only about 13 kilometers from the capital, Saidu Sharif. The historic palace now operates as a stunning hotel, warmly welcoming guests.',
-								imageLeft: false
 							},
 						].map((destination, idx) => (
 							<div 
@@ -860,7 +818,7 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="w-full">
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some Other Historical and Archeological Sites in Swat Valley are as Follows:
+							Some Other Historical and Archeological Sites in Skardu Valley are as Follows:
 						</h3>
 
 						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
@@ -926,10 +884,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Culture of Swat Valley:
+							Culture of Skardu Valley:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							The people of Kalam Swat Valley are known for their rich culture. Both men and women take part in the making of their hand-woven fabrics, embroidery, and carpets. These people are also blessed with wood carving talent; their furniture and strong wood are famous worldwide. They also specialize in producing uniquely designed ornamental jewelry.
+							The people of Skardu are known for their rich Balti culture and traditions. Both men and women are skilled in traditional crafts including hand-woven textiles, embroidery, and unique Balti cuisine. The region has a strong cultural heritage with traditional music, dance, and festivals that reflect the unique identity of the Balti people.
 						</p>
 					</div>
 				</div>
@@ -943,10 +901,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							The Economy of Kalam Swat Valley:
+							The Economy of Skardu Valley:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							The economy of Kalam Swat Valley is primarily based on agriculture, tourism, and small-scale industries. The valley produces yummy apples, apricots, and potatoes.
+							The economy of Skardu is primarily based on agriculture, tourism, and mountaineering expeditions. The region produces delicious apricots, apples, and other fruits, and is a major hub for trekkers and mountaineers heading to K2 and other peaks.
 						</p>
 					</div>
 				</div>
@@ -960,10 +918,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Educational in Kalam Swat Valley:
+							Educational in Skardu Valley:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							Several educational institutions in Kalam Swat Valley include primary and secondary schools, colleges, and universities. The University of Swat, located in the nearby city of Mingora, also serves the students of Kalam Swat Valley.
+							Several educational institutions in Skardu include primary and secondary schools, colleges, and universities. The region has a strong focus on education and literacy, with institutions serving both local communities and remote areas.
 						</p>
 					</div>
 				</div>
@@ -977,7 +935,7 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Kalam Swat</span>
+							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Skardu</span>
 						</h2>
 					</div>
 					
@@ -1080,24 +1038,24 @@ const SwatKalamPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Swat & Kalam?',
-								answer: 'Swat is beautiful all year.\n\n• Summer: Lakes, forests, meadows\n\n• Winter: Snowfall, skiing, Malam Jabba activities'
+								question: 'What is the best time to visit Skardu?',
+								answer: 'Skardu is beautiful all year.\n\n• Spring: Mild weather, blooming flowers\n\n• Summer: Perfect for trekking and lake visits\n\n• Autumn: Clear skies, stunning views\n\n• Winter: Snow-covered peaks, winter activities'
 							},
 							{
-								question: 'Is Swat accessible by road?',
-								answer: 'Yes, Swat and Kalam are easily accessible via Swat Expressway.'
+								question: 'Is Skardu accessible by road?',
+								answer: 'Yes, Skardu is accessible via the Karakoram Highway (KKH) or by flight from Islamabad.'
 							},
 							{
-								question: 'Are hotels available in Swat & Kalam?',
+								question: 'Are hotels available in Skardu?',
 								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts.'
 							},
 							{
 								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Swat is a safe and friendly destination and our team ensures complete comfort.'
+								answer: 'Absolutely. Skardu is a safe and friendly destination and our team ensures complete comfort.'
 							},
 							{
-								question: 'Are jeeps included for Mahodand Lake?',
-								answer: 'Yes, we arrange jeeps for all off road destinations.'
+								question: 'Are jeeps included for remote destinations?',
+								answer: 'Yes, we arrange jeeps for all off road destinations including lakes and high-altitude areas.'
 							},
 							{
 								question: 'Can I customize my tour?',
@@ -1112,12 +1070,12 @@ const SwatKalamPage = () => {
 								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
 							},
 							{
-								question: 'Are there restaurants and shops in Kalam?',
-								answer: 'Yes, there are many eateries, cafes and local markets.'
+								question: 'Are there restaurants and shops in Skardu?',
+								answer: 'Yes, there are many eateries, cafes and local markets in Skardu.'
 							},
 							{
-								question: 'Do you have Swat tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Swat packages with transport or flight options.'
+								question: 'Do you have Skardu tours from Karachi?',
+								answer: 'Yes, we offer complete Karachi-to-Skardu packages with transport or flight options.'
 							},
 						].map((faq, idx) => (
 							<div 
@@ -1327,5 +1285,5 @@ const SwatKalamPage = () => {
 	);
 };
 
-export default SwatKalamPage;
+export default SkarduPage;
 

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
 
-const SwatKalamPage = () => {
+const NathiaGaliMurreePage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -182,32 +182,32 @@ const SwatKalamPage = () => {
 												</Link>
 											</li>
 											<li>
-												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/hunza" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Hunza Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/skardu" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Skardu Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/nathia-gali-murree" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Nathia Gali And Murree Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/neelum-valley" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Neelum Valley Azad Kashmir Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/kumrat-valley" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Kumrat Valley Tour Packages
 												</Link>
 											</li>
 											<li>
-												<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												<Link href="/naran-kaghan" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 													Naran Kaghan Tour Packages
 												</Link>
 											</li>
@@ -297,22 +297,22 @@ const SwatKalamPage = () => {
 									<Link href="/swat-kalam" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Swat Kalam Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/hunza" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Hunza Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/skardu" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Skardu Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/nathia-gali-murree" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Nathia Gali And Murree Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/neelum-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Neelum Valley Azad Kashmir Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/kumrat-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Kumrat Valley Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/naran-kaghan" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Naran Kaghan Tour Packages
 									</Link>
 								</div>
@@ -380,7 +380,7 @@ const SwatKalamPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/swatpageherosection.jpg')",
+						backgroundImage: "url('/images/murree and nathia gali.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -393,7 +393,7 @@ const SwatKalamPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
 							<span className="font-autography hero-text-reveal block mb-2 text-white" style={{ display: 'inline-block', fontSize: '48px', color: 'white' }}>
-								Swat & Kalam Tour Packages
+								Nathia Gali And Murree Tour Packages
 							</span>
 							<br />
 							<span className="block hero-text-reveal hero-text-delay-1"
@@ -402,11 +402,11 @@ const SwatKalamPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Discover the Switzerland of Pakistan
+								Colonial Hill Station Charm
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Discover Swat & Kalam stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
+						Discover Nathia Gali and Murree stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
@@ -426,11 +426,11 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Swat & Kalam Tour Packages
+							Customized Nathia Gali And Murree Tour Packages
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Swat Valley often called the Switzerland of Pakistan is known for its snow covered mountains, blue lakes, green forests and calm meadows, making it a perfect place for every traveler. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Nathia Gali and Murree are charming colonial hill stations located in the beautiful Galyat region, known for their cool climate, scenic views, pine forests, and old-world charm. These destinations are perfect for families, couples, and anyone seeking a refreshing mountain escape. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
 							</p>
 						</div>
 					</div>
@@ -545,10 +545,10 @@ const SwatKalamPage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Swat & Kalam Tour Packages
+							Public Nathia Gali And Murree Tour Packages
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Swat and Kalam Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
+							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Nathia Gali and Murree all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
 						</p>
 					</div>
 
@@ -631,7 +631,7 @@ const SwatKalamPage = () => {
 					{/* Swat Tour Packages From Major Cities Section */}
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Swat Tour Packages From Major Cities
+							Nathia Gali And Murree Tour Packages From Major Cities
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							We provide tours from:
@@ -674,10 +674,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Swat & Kalam
+							Top Places to Visit in Nathia Gali And Murree
 						</h2>
 						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Swat Valley is full of natural wonders, flowing rivers, crystal lakes, waterfalls and forests. Here are the must visit attractions included in our tours:
+							Nathia Gali and Murree are full of scenic viewpoints, pine forests, colonial architecture, and charming markets. Here are the must visit attractions included in our tours:
 						</p>
 					</div>
 					
@@ -860,7 +860,7 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="w-full">
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some Other Historical and Archeological Sites in Swat Valley are as Follows:
+							Some Other Historical and Attraction Sites in Nathia Gali And Murree are as Follows:
 						</h3>
 
 						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
@@ -926,10 +926,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Culture of Swat Valley:
+							Culture of Nathia Gali And Murree:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							The people of Kalam Swat Valley are known for their rich culture. Both men and women take part in the making of their hand-woven fabrics, embroidery, and carpets. These people are also blessed with wood carving talent; their furniture and strong wood are famous worldwide. They also specialize in producing uniquely designed ornamental jewelry.
+							The region of Nathia Gali and Murree has a rich cultural heritage with influences from both British colonial era and local traditions. The area is known for its warm hospitality, traditional crafts, and unique cuisine. The local communities have preserved their cultural traditions while embracing modern tourism.
 						</p>
 					</div>
 				</div>
@@ -943,10 +943,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							The Economy of Kalam Swat Valley:
+							The Economy of Nathia Gali And Murree:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							The economy of Kalam Swat Valley is primarily based on agriculture, tourism, and small-scale industries. The valley produces yummy apples, apricots, and potatoes.
+							The economy of Nathia Gali and Murree is primarily based on tourism, hospitality, and small-scale businesses. The region benefits from year-round tourism due to its pleasant climate and proximity to major cities.
 						</p>
 					</div>
 				</div>
@@ -960,10 +960,10 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
 						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Educational in Kalam Swat Valley:
+							Educational in Nathia Gali And Murree:
 						</h3>
 						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							Several educational institutions in Kalam Swat Valley include primary and secondary schools, colleges, and universities. The University of Swat, located in the nearby city of Mingora, also serves the students of Kalam Swat Valley.
+							Several educational institutions in Nathia Gali and Murree include primary and secondary schools, colleges, and universities. The region has a strong focus on education with institutions serving both local communities and tourists.
 						</p>
 					</div>
 				</div>
@@ -977,7 +977,7 @@ const SwatKalamPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Kalam Swat</span>
+							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Nathia Gali And Murree</span>
 						</h2>
 					</div>
 					
@@ -1080,24 +1080,24 @@ const SwatKalamPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Swat & Kalam?',
-								answer: 'Swat is beautiful all year.\n\n• Summer: Lakes, forests, meadows\n\n• Winter: Snowfall, skiing, Malam Jabba activities'
+								question: 'What is the best time to visit Nathia Gali and Murree?',
+								answer: 'Nathia Gali and Murree are beautiful all year.\n\n• Spring: Mild weather, blooming flowers\n\n• Summer: Perfect escape from heat, cool climate\n\n• Autumn: Beautiful fall colors\n\n• Winter: Snowfall, winter activities'
 							},
 							{
-								question: 'Is Swat accessible by road?',
-								answer: 'Yes, Swat and Kalam are easily accessible via Swat Expressway.'
+								question: 'Are Nathia Gali and Murree accessible by road?',
+								answer: 'Yes, both Nathia Gali and Murree are easily accessible via the Murree Expressway from Islamabad.'
 							},
 							{
-								question: 'Are hotels available in Swat & Kalam?',
-								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts.'
+								question: 'Are hotels available in Nathia Gali and Murree?',
+								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts and colonial-style guesthouses.'
 							},
 							{
 								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Swat is a safe and friendly destination and our team ensures complete comfort.'
+								answer: 'Absolutely. Nathia Gali and Murree are safe and friendly destinations and our team ensures complete comfort.'
 							},
 							{
-								question: 'Are jeeps included for Mahodand Lake?',
-								answer: 'Yes, we arrange jeeps for all off road destinations.'
+								question: 'Are jeeps included for remote destinations?',
+								answer: 'Yes, we arrange jeeps for all off road destinations when needed.'
 							},
 							{
 								question: 'Can I customize my tour?',
@@ -1112,12 +1112,12 @@ const SwatKalamPage = () => {
 								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
 							},
 							{
-								question: 'Are there restaurants and shops in Kalam?',
-								answer: 'Yes, there are many eateries, cafes and local markets.'
+								question: 'Are there restaurants and shops in Nathia Gali and Murree?',
+								answer: 'Yes, there are many eateries, cafes, and local markets in both Nathia Gali and Murree.'
 							},
 							{
-								question: 'Do you have Swat tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Swat packages with transport or flight options.'
+								question: 'Do you have Nathia Gali and Murree tours from Karachi?',
+								answer: 'Yes, we offer complete Karachi-to-Nathia Gali and Murree packages with transport or flight options.'
 							},
 						].map((faq, idx) => (
 							<div 
@@ -1327,5 +1327,5 @@ const SwatKalamPage = () => {
 	);
 };
 
-export default SwatKalamPage;
+export default NathiaGaliMurreePage;
 

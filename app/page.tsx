@@ -821,32 +821,32 @@ const Page = () => {
 											</Link>
 										</li>
 										<li>
-											<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<Link href="/hunza" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 												Hunza Tour Packages
 											</Link>
 										</li>
 										<li>
-											<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<Link href="/skardu" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 												Skardu Tour Packages
 											</Link>
 										</li>
 										<li>
-											<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<Link href="/nathia-gali-murree" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 												Nathia Gali And Murree Tour Packages
 											</Link>
 										</li>
 										<li>
-											<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<Link href="/neelum-valley" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 												Neelum Valley Azad Kashmir Tour Packages
 											</Link>
 										</li>
 										<li>
-											<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<Link href="/kumrat-valley" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 												Kumrat Valley Tour Packages
 											</Link>
 										</li>
 										<li>
-											<Link href="/#tours" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+											<Link href="/naran-kaghan" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
 												Naran Kaghan Tour Packages
 											</Link>
 										</li>
@@ -1095,22 +1095,22 @@ const Page = () => {
 								<a href="/swat-kalam" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 									Swat Kalam Tour Packages
 								</a>
-								<a href="#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
+								<a href="/hunza" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 									Hunza Tour Packages
 								</a>
-								<a href="#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
+								<a href="/skardu" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 									Skardu Tour Packages
 								</a>
-								<a href="#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
+								<a href="/nathia-gali-murree" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 									Nathia Gali And Murree Tour Packages
 								</a>
-								<a href="#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
+								<a href="/neelum-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 									Neelum Valley Azad Kashmir Tour Packages
 								</a>
-								<a href="#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
+								<a href="/kumrat-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 									Kumrat Valley Tour Packages
 								</a>
-								<a href="#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
+								<a href="/naran-kaghan" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
 									Naran Kaghan Tour Packages
 								</a>
 							</div>
