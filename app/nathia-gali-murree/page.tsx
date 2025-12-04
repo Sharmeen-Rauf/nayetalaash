@@ -393,7 +393,7 @@ const NathiaGaliMurreePage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
 							<span className="font-autography hero-text-reveal block mb-2 text-white" style={{ display: 'inline-block', fontSize: '48px', color: 'white' }}>
-								Nathia Gali And Murree Tour Packages
+								Murree & Nathia Gali Tour Packages
 							</span>
 							<br />
 							<span className="block hero-text-reveal hero-text-delay-1"
@@ -402,17 +402,17 @@ const NathiaGaliMurreePage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Colonial Hill Station Charm
+								Your Perfect Mountain Getaway Starts Here
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Discover Nathia Gali and Murree stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
+						Enjoy pine forests, fresh air, peaceful views, and hassle free travel. We handle everything transport, hotels, and sightseeing.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Book Now
+							View Tour Packages
 						</button>
 					</div>
 				</div>
@@ -426,11 +426,11 @@ const NathiaGaliMurreePage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Nathia Gali And Murree Tour Packages
+							Best Murree & Nathia Gali Tour Packages
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Nathia Gali and Murree are charming colonial hill stations located in the beautiful Galyat region, known for their cool climate, scenic views, pine forests, and old-world charm. These destinations are perfect for families, couples, and anyone seeking a refreshing mountain escape. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+								Murree is Pakistan's most loved hill station cool weather, pine forests, scenic peaks, and peaceful surroundings. Whether you want a relaxing family holiday, a romantic couples getaway, or an adventurous student trip, Nayi Talaash offers the best Murree & Galiyat Tour Packages with complete comfort and customization. We plan everything for you travel, hotel stay, sightseeing, activities and local experiences so you can enjoy your trip without stress. We offer a wide range of tours, from short weekend trips to long multi-city vacations.
 							</p>
 						</div>
 					</div>
@@ -439,40 +439,40 @@ const NathiaGaliMurreePage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '2 Days – Malam Jabba Tour (Short Escape)',
-								image: '/images/MalamJabba Tour(Short Escape)package 1.jpg'
+								title: '6 Days – Murree, Nathia Gali, Siri Paye, Shogran',
+								image: '/images/murree and nathia gali.jpg'
 							},
 							{ 
-								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/pacakges2.jpeg'
+								title: '5 Days – Nathia Gali, Ayubia, Murree Mall Road, Patriata, Bhurban',
+								image: '/images/murree and nathia gali.jpg'
 							},
 							{ 
-								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Green Top package 3.jpg'
+								title: '4 Days – Murree, Patriata, Nathia Gali, Ayubia',
+								image: '/images/murree and nathia gali.jpg'
 							},
 							{ 
-								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
-								image: '/images/Relaxed Kalam, Mahodand, Green Top & Blue Water Pointpackage 4.jpg'
+								title: '4 Days – Thandiani, Nathia Gali, Ayubia, Khanaspur',
+								image: '/images/murree and nathia gali.jpg'
 							},
 							{ 
-								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Desan Toppackage 5.jpg'
+								title: '3 Days – Siri Paye, Shogran, Nathia Gali',
+								image: '/images/murree and nathia gali.jpg'
 							},
 							{ 
-								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
-								image: '/images/swat.jpg'
+								title: '3 Days – Nathia Gali, Ayubia, Mall Road, Patriata',
+								image: '/images/murree and nathia gali.jpg'
 							},
 							{ 
-								title: '7 Days – Swat to Kumrat Valley Adventure',
-								image: '/images/swat.jpg'
+								title: '2 Days – Nathia Gali & Ayubia',
+								image: '/images/murree and nathia gali.jpg'
 							},
 							{ 
-								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
-								image: '/images/swat.jpg'
+								title: '2 Days – Mukshpuri Top & Ayubia',
+								image: '/images/murree and nathia gali.jpg'
 							},
 							{ 
-								title: '3 Days – Swat Valley Highlights Tour',
-								image: '/images/swat.jpg'
+								title: '6 Days – Neelum Valley + Murree & Patriata',
+								image: '/images/murree and nathia gali.jpg'
 							},
 						];
 						
@@ -545,7 +545,7 @@ const NathiaGaliMurreePage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Nathia Gali And Murree Tour Packages
+							Nathia Gali And Murree Group Tour Packages
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Nathia Gali and Murree all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
@@ -557,15 +557,15 @@ const NathiaGaliMurreePage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="3 Days: Malam Jabba, Kalam & Swat Valley Tour"
+									src="/images/murree and nathia gali.jpg"
+									alt="3 Days: Murree, Nathia Gali & Ayubia Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days: Malam Jabba, Kalam & Swat Valley Tour
+									3 Days: Murree, Nathia Gali & Ayubia Group Tour
 								</p>
 							</div>
 						</div>
@@ -573,24 +573,24 @@ const NathiaGaliMurreePage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="2 Days: Malam Jabba Swat Quick Tour"
+									src="/images/murree and nathia gali.jpg"
+									alt="4 Days: Galiyat Winter Snow Family Trip"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									2 Days: Malam Jabba Swat Quick Tour
+									4 Days: Galiyat Winter Snow Family Trip
 								</p>
 							</div>
 						</div>
 					</div>
 
-					{/* Who Are These Tours For Section */}
+					{/* Who Are These Tours Perfect For Section */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Who Are These Tours For?
+							Who Are These Tours Perfect For?
 						</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
@@ -598,7 +598,7 @@ const NathiaGaliMurreePage = () => {
 									Couples & Honeymooners
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Romantic, private, and relaxing trips with premium stays and scenic spots perfect for making new memories.
+									Romantic stays, quiet viewpoints, nature walks, and luxurious resort options.
 								</p>
 							</div>
 							<div>
@@ -606,59 +606,59 @@ const NathiaGaliMurreePage = () => {
 									Families
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Safe, fun, and comfortable travel with activities and spots everyone can enjoy.
+									Safe, comfortable tours with kid-friendly spots, activities, and guided sightseeing.
 								</p>
 							</div>
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Friends & Student Groups
+									Students & Friends Groups
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Adventure, trekking, games, activities, and fun moments all without planning stress.
+									Trekking, chairlifts, bonfire nights, games, and affordable group packages.
 								</p>
 							</div>
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Corporate Groups
+									Corporate & Business Teams
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Perfect for team building, relaxation, and bonding outside the office.
+									Team outings, retreats, leadership trips, and stress-free travel planning.
 								</p>
 							</div>
 						</div>
 					</div>
 
-					{/* Swat Tour Packages From Major Cities Section */}
+					{/* Departure Cities Section */}
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Nathia Gali And Murree Tour Packages From Major Cities
+							Departure Cities
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We provide tours from:
+							You can start your Murree tour from any major city:
 						</p>
 						<ul className="space-y-3 mb-4">
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Lahore
+									Murree tour from Lahore
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Karachi
+									Murree tour from Karachi
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Islamabad
+									Murree tour from Islamabad
 								</p>
 							</li>
 							<li className="flex items-center gap-3">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Custom departures available for other cities as well.
+									Custom plans available from Faisalabad, Multan, Sialkot & others
 								</p>
 							</li>
 						</ul>
@@ -674,20 +674,17 @@ const NathiaGaliMurreePage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Nathia Gali And Murree
+							Top Attractions in Murree & Galiyat
 						</h2>
-						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Nathia Gali and Murree are full of scenic viewpoints, pine forests, colonial architecture, and charming markets. Here are the must visit attractions included in our tours:
-						</p>
 					</div>
 					
-					{/* 11 Destinations with Alternating Layout */}
+					{/* Destinations with Alternating Layout */}
 					<div className="space-y-8">
 						{[
 							{ 
-								title: 'Kalam Valley', 
-								image: '/images/Kalam valley.jpg',
-								description: 'Kalam means "Blue Water" and is the main entrance to the beautiful upper valleys. It sits high in the Hindukush mountains and gives amazing views of Falaksar Peak. You\'ll find comfy places to stay, great food, and it\'s open to enjoy in both summer and winter.',
+								title: 'Murree', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Murree was first built in the 1850s as a retreat for the British Military troops in the Pir Panjal Mountain Range. It is blessed with dense forests, cool fresh air, beautiful mountains and a pure environment. Today, Murree is Pakistan\'s most famous and easily accessible tourist spot, popular year round for its cool climate and activities.',
 								imageLeft: true
 							},
 							{ 
@@ -977,90 +974,50 @@ const NathiaGaliMurreePage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Nathia Gali And Murree</span>
+							Things to Do in Murree & Galiyat
 						</h2>
 					</div>
 					
-					{/* 5 Images Vertical Collage - Attached */}
-					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
-						{[
-							{
-								image: '/images/zip line.jpg',
-								title: 'Chairlift & Zipline at Malam Jabba',
-								description: 'Experience thrilling ziplining and scenic chairlift rides at Malam Jabba Resort'
-							},
-							{
-								image: '/images/boating.jpg',
-								title: 'Boating at Mahodand Lake',
-								description: 'Enjoy peaceful boat rides on the crystal clear waters of Mahodand Lake'
-							},
-							{
-								image: '/images/camping.jpg',
-								title: 'Camping in meadows',
-								description: 'Spend nights under the stars in beautiful meadows surrounded by nature'
-							},
-							{
-								image: '/images/Hiking to lakes & waterfalls.jpg',
-								title: 'Hiking to lakes & waterfalls',
-								description: 'Explore scenic trails leading to stunning lakes and cascading waterfalls'
-							},
-							{
-								image: '/images/picture forest.jpg',
-								title: 'Photography in forests & meadows',
-								description: 'Capture breathtaking moments in lush forests and serene meadows'
-							},
-						].map((item, idx) => (
-							<div 
-								key={idx} 
-								className={`relative h-[300px] md:h-[350px] overflow-hidden transition-all duration-700 ease-in-out scroll-reveal-fade-in cursor-pointer ${
-									hoveredImageIndex === idx 
-										? 'flex-[2.5]' 
-										: hoveredImageIndex !== null 
-											? 'flex-[0.6]' 
-											: 'flex-1'
-								} ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
-								style={{
-									transitionDelay: `${idx * 0.1}s`
-								}}
-								onMouseEnter={() => setHoveredImageIndex(idx)}
-								onMouseLeave={() => setHoveredImageIndex(null)}
-							>
-								<Image 
-									src={item.image}
-									alt={item.title}
-									fill
-									className="object-cover transition-transform duration-500"
-									style={{ transform: hoveredImageIndex === idx ? 'scale(1.1)' : 'scale(1)' }}
-								/>
-								{/* Overlay with content */}
-								<div 
-									className={`absolute inset-0 transition-all duration-500 ${
-										hoveredImageIndex === idx 
-											? 'bg-black/50' 
-											: 'bg-black/20'
-									}`}
-								></div>
-								{/* Content Overlay */}
-								<div 
-									className={`absolute inset-0 flex flex-col justify-center items-center text-white transition-all duration-500 ${
-										hoveredImageIndex === idx 
-											? 'opacity-100 translate-y-0' 
-											: 'opacity-0 translate-y-4'
-									}`}
-								>
-									<div className="text-center px-4">
-										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
-											{item.title}
-										</h3>
-										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<p className="text-sm md:text-base opacity-90 max-w-xs">
-											{item.description}
-										</p>
-									</div>
-								</div>
-							</div>
-						))}
+					{/* 6 Items List */}
+					<div className="max-w-4xl mx-auto">
+						<ul className="space-y-4 text-left">
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Chairlift & cable car rides
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Trekking & hiking
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Shopping at local markets
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Bonfire & BBQ nights
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Snowfall viewing
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Horse riding
+								</p>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -1073,39 +1030,43 @@ const NathiaGaliMurreePage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
 					<div className="text-center mb-6">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Frequently Asked Question
+							Frequently Asked Questions
 						</h2>
 					</div>
 					
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Nathia Gali and Murree?',
-								answer: 'Nathia Gali and Murree are beautiful all year.\n\n• Spring: Mild weather, blooming flowers\n\n• Summer: Perfect escape from heat, cool climate\n\n• Autumn: Beautiful fall colors\n\n• Winter: Snowfall, winter activities'
+								question: 'How far is Murree from Islamabad?',
+								answer: 'Around 60 km 1 to 1.5 hours by road.'
 							},
 							{
-								question: 'Are Nathia Gali and Murree accessible by road?',
-								answer: 'Yes, both Nathia Gali and Murree are easily accessible via the Murree Expressway from Islamabad.'
+								question: 'What is Galiyat?',
+								answer: 'A chain of hill stations between Abbottabad and Murree, including Ayubia and Nathia Gali.'
 							},
 							{
-								question: 'Are hotels available in Nathia Gali and Murree?',
-								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts and colonial-style guesthouses.'
+								question: 'Is Murree suitable for families?',
+								answer: 'Yes, it is one of Pakistan\'s safest and most popular destinations.'
 							},
 							{
-								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Nathia Gali and Murree are safe and friendly destinations and our team ensures complete comfort.'
+								question: 'Is snowfall guaranteed?',
+								answer: 'Snowfall usually occurs from December to February.'
 							},
 							{
-								question: 'Are jeeps included for remote destinations?',
-								answer: 'Yes, we arrange jeeps for all off road destinations when needed.'
+								question: 'How is the weather?',
+								answer: 'Cool in summer, cold in winter.'
 							},
 							{
-								question: 'Can I customize my tour?',
-								answer: 'Yes, all packages can be customized to your preferences.'
+								question: 'Do you offer custom tours?',
+								answer: 'Yes, all tours can be fully customized based on your preferences.'
 							},
 							{
-								question: 'Do you offer photography/videography?',
-								answer: 'Yes, we offer cinematic videos and photos on request.'
+								question: 'Are credit cards accepted?',
+								answer: 'Hotels and restaurants usually accept cards, but small shops prefer cash.'
+							},
+							{
+								question: 'Do you provide transport?',
+								answer: 'Yes, we offer private cars, coasters and hiace vans.'
 							},
 							{
 								question: 'What should I pack?',
