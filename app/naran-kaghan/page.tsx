@@ -402,11 +402,11 @@ const NaranKaghanPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Alpine Lakes and Meadows
+								Mountains, Lakes & Adventure
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Discover Naran and Kaghan stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
+						Relive cherished memories or make new ones with our custom tours. Journey from the lively Naran Bazaar to high passes like Babusar and the magical Saif-ul-Malook Lake.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
@@ -426,11 +426,11 @@ const NaranKaghanPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Naran Kaghan Tour Packages
+							Best Naran Kaghan Tour Packages
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Naran and Kaghan are famous for their alpine lakes, lush meadows, snow-capped peaks, and stunning natural beauty. These destinations offer perfect opportunities for hiking, fishing, camping, and enjoying the cool mountain climate. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+								Your journey should be unique! These tour packages to Naran Kaghan can be custom built for you by our professional tour operators. Feel free to choose from the popular list below or customize your itinerary to meet your exact requirements:
 							</p>
 						</div>
 					</div>
@@ -439,40 +439,40 @@ const NaranKaghanPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '2 Days – Malam Jabba Tour (Short Escape)',
-								image: '/images/MalamJabba Tour(Short Escape)package 1.jpg'
+								title: '4 Days – Naran, Lalazar Meadows, and Babusar Top Climb',
+								image: '/images/naran and kaghan.jpg'
 							},
 							{ 
-								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/pacakges2.jpeg'
+								title: '4 Days – Naran, Babusar Top, and Shogran Valley Explorer',
+								image: '/images/naran and kaghan.jpg'
 							},
 							{ 
-								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Green Top package 3.jpg'
+								title: '4 Days – Sharan Forest, Manshi Top, and Shogran Kaghan Valley Trip',
+								image: '/images/naran and kaghan.jpg'
 							},
 							{ 
-								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
-								image: '/images/Relaxed Kalam, Mahodand, Green Top & Blue Water Pointpackage 4.jpg'
+								title: '3 Days – Shogran, Siri Paye Meadows, and Sharan Valley Quick Tour',
+								image: '/images/naran and kaghan.jpg'
 							},
 							{ 
-								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Desan Toppackage 5.jpg'
+								title: '4 Days – Naran Kaghan Valley, Babusar Top, and Nathiya Gali Combo',
+								image: '/images/naran and kaghan.jpg'
 							},
 							{ 
-								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
-								image: '/images/swat.jpg'
+								title: '8 Days – Shogran, Naran, and Hunza Valley Grand Tour',
+								image: '/images/naran and kaghan.jpg'
 							},
 							{ 
-								title: '7 Days – Swat to Kumrat Valley Adventure',
-								image: '/images/swat.jpg'
+								title: '9 Days – Naran Kaghan and Neelum Valley',
+								image: '/images/naran and kaghan.jpg'
 							},
 							{ 
-								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
-								image: '/images/swat.jpg'
+								title: '4 Days – Naran, Lulusar Lake, and Jalkhad Scenic Tour',
+								image: '/images/naran and kaghan.jpg'
 							},
 							{ 
-								title: '3 Days – Swat Valley Highlights Tour',
-								image: '/images/swat.jpg'
+								title: '5 Days – Naran, Kaghan, Batakundi & Babusar Top Adventure',
+								image: '/images/naran and kaghan.jpg'
 							},
 						];
 						
@@ -545,10 +545,10 @@ const NaranKaghanPage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Naran Kaghan Tour Packages
+							Naran Kaghan Group Tour Packages
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Naran and Kaghan all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
+							Nayi Talaash organizes these group tours throughout the summer season. You can easily join these fixed departures as an individual traveler or with your group, according to your schedule:
 						</p>
 					</div>
 
@@ -557,15 +557,15 @@ const NaranKaghanPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="3 Days: Malam Jabba, Kalam & Swat Valley Tour"
+									src="/images/naran and kaghan.jpg"
+									alt="3 Days: Naran Kaghan, Babusar Top, and Shogran Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days: Malam Jabba, Kalam & Swat Valley Tour
+									3 Days: Naran Kaghan, Babusar Top, and Shogran Group Tour
 								</p>
 							</div>
 						</div>
@@ -573,32 +573,35 @@ const NaranKaghanPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="2 Days: Malam Jabba Swat Quick Tour"
+									src="/images/naran and kaghan.jpg"
+									alt="2 Days: Shogran and Siri Paye Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									2 Days: Malam Jabba Swat Quick Tour
+									2 Days: Shogran and Siri Paye Group Tour
 								</p>
 							</div>
 						</div>
 					</div>
 
-					{/* Who Are These Tours For Section */}
+					{/* Customized Naran Kaghan Tours: Who Are You Traveling With? Section */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Who Are These Tours For?
+							Customized Naran Kaghan Tours: Who Are You Traveling With?
 						</h3>
+						<p className="leading-normal text-left mb-6" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							We design your package to suit your companions:
+						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Couples & Honeymooners
+									Couples / Honeymoon
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Romantic, private, and relaxing trips with premium stays and scenic spots perfect for making new memories.
+									Luxury and Solitude. We offer a private, beautiful environment for newlyweds to celebrate surrounded by nature\'s stunning beauty.
 								</p>
 							</div>
 							<div>
@@ -606,15 +609,15 @@ const NaranKaghanPage = () => {
 									Families
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Safe, fun, and comfortable travel with activities and spots everyone can enjoy.
+									Fun, Luxurious, and Secure. We ensure a great, relaxing environment for your loved ones to connect and make lifelong memories.
 								</p>
 							</div>
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Friends & Student Groups
+									Students / Friends
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Adventure, trekking, games, activities, and fun moments all without planning stress.
+									Pure Fun and Adventure! Enjoy exciting activities and games while exploring adventurous destinations without the hassle of planning.
 								</p>
 							</div>
 							<div>
@@ -622,46 +625,20 @@ const NaranKaghanPage = () => {
 									Corporate Groups
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Perfect for team building, relaxation, and bonding outside the office.
+									Team Building in Nature. A perfect setting for employees to develop a closer connection and recharge outside the usual office environment.
 								</p>
 							</div>
 						</div>
 					</div>
 
-					{/* Swat Tour Packages From Major Cities Section */}
+					{/* Starting Point Flexibility Section */}
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Naran Kaghan Tour Packages From Major Cities
+							Starting Point Flexibility
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We provide tours from:
+							We offer tours starting from: Lahore, Karachi, and Islamabad. You can also customize these tours to start from any other city in Pakistan!
 						</p>
-						<ul className="space-y-3 mb-4">
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Lahore
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Karachi
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Islamabad
-								</p>
-							</li>
-							<li className="flex items-center gap-3">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Custom departures available for other cities as well.
-								</p>
-							</li>
-						</ul>
 					</div>
 				</div>
 			</section>
@@ -674,123 +651,102 @@ const NaranKaghanPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Naran Kaghan
+							Top Attractions in Naran Kaghan
 						</h2>
-						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Naran and Kaghan are full of natural wonders, alpine lakes, lush meadows, waterfalls, and stunning mountain views. Here are the must visit attractions included in our tours:
-						</p>
 					</div>
 					
-					{/* 11 Destinations with Alternating Layout */}
+					{/* 15 Destinations with Alternating Layout */}
 					<div className="space-y-8">
 						{[
 							{ 
-								title: 'Kalam Valley', 
-								image: '/images/Kalam valley.jpg',
-								description: 'Kalam means "Blue Water" and is the main entrance to the beautiful upper valleys. It sits high in the Hindukush mountains and gives amazing views of Falaksar Peak. You\'ll find comfy places to stay, great food, and it\'s open to enjoy in both summer and winter.',
+								title: 'Naran', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Naran is a beautiful small town and the main hub in Kaghan Valley. It is where most tourists stay to visit the upper parts of Kaghan and the Gilgit Baltistan road. Naran offers a wide variety of accommodations but is closed during the winter due to heavy snowfall.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Malam Jabba', 
-								image: '/images/malam jabba.jpg',
-								description: 'This is a popular hilltop ski resort located about an hour or two from Mingora City. When it snows, you can enjoy skiing, a fun chair lift ride, and zip lining. It\'s the perfect spot for winter sports and has hotels available for your stay.',
+								title: 'Naran Bazaar', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'The Naran Bazaar is always busy and crowded with tourists, offering a lively atmosphere. You can find all your necessities here, plus shops selling traditional clothes, dry fruits, and local handicrafts. It\'s famous for the tempting aroma of local foods being cooked, especially fresh Trout Fish and Chapli Kababs.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Ushu Forest (Ushu Valley)', 
-								image: '/images/Ushu Forest.jpg',
-								description: 'Just 8 km from Kalam, this forest is famous for its thick, dense Deodar trees. It\'s easy to reach even without a car and you\'ll find small shops, hotels, and places to camp along the road. It\'s a beautiful, shady spot for a walk and a great place to enjoy the fresh air.',
+								title: 'Kunhar River', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'The Kunhar River flows right through the Kaghan Valley, fed by glaciers, lakes and surrounding streams from Babusar Top. It is home to various fish species, most famously the Trout Fish, which supports the local fishing industry. The river eventually flows out of Kaghan and joins the Jhelum River near Muzaffarabad.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Matiltan Waterfall and Chashma-e-Shifa', 
-								image: '/images/Matiltan Waterfall.jpg',
-								description: 'The road leads up to Matiltan Village, where you can see the stunning waterfall and a seasonal glacier. There are hotels and restaurants here, and a special spring called Chashma-e-Shifa (Healing Fountain). Locals believe the water from this fountain has unique healing properties due to its minerals.',
+								title: 'Saif-ul-Malook Lake', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Located north of Naran, this stunning glacial lake is shadowed by the iconic Malika-e-Parbat peak. Access requires an exciting off-road jeep ride up a narrow track. It is famous for the local fairy tale about the Egyptian prince Saif-ul-Malook and the fairy Badri-ul-Jamal.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Mahodand Lake', 
-								image: '/images/Mahodand Lake.jpg',
-								description: 'This is a beautiful, large glacial lake formed by melting ice from the Hindukush Mountains. It\'s great for summer visits but closes completely in winter because heavy snow blocks the road. You can find small shops, restaurants, and meadows perfect for camping near the water.',
+								title: 'Batakundi', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Batakundi is the first town you reach after Naran when heading towards Babusar, offering a beautiful, peaceful place to stay. It is the starting point for the one hour jeep track that leads up to the scenic Lalazar Meadows. The town offers several hotels, rest houses, camping sites, and a small market.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Saifullah Lake', 
-								image: '/images/Saifullah Lake.jpg',
-								description: 'This lake is located further into Ushu Valley, about a 30 to 45-minute journey from Mahodand Lake. You can reach it either by hiking on foot or by taking a rugged 4x4 jeep for the scenic ride. It\'s another crystal-clear, stunning alpine lake waiting to be explored.',
+								title: 'Jalkhad', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Jalkhad is a scenic small town further up the Naran-Babusar road, popular for camping. It is a hub for high altitude attractions like Tiger Peak, the bowl-shaped Pyala Lake, and the route to Saral Lake. It is also where the jeepable mountain pass, Noori Top, begins its climb towards Neelum Valley in Kashmir.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Desan Meadows', 
-								image: '/images/Desan Meadows.jpg',
-								description: 'These meadows are near Kalam and offer stunning, lush green fields and heavenly views. You can reach this beautiful spot by taking a jeep ride from either Kalam or Utror Valley. It\'s surrounded by other stunning sites like Godar, Dararo, and Zahro Lakes.',
+								title: 'Besal', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'The scenery changes completely at Besal (or Besar), where the valley broadens out amidst huge surrounding mountains. It is the official starting point for the challenging two-day moderate level trek to the beautiful Dudipatsar Lake. Besal is also home to the famous Moon Restaurant and falls under the Lulusar-Dudipatsar National Park area.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Green Top', 
-								image: '/images/Green Top (Boyun Village).jpg',
-								description: 'Also known as the "Kalam View Point," this spot is famous for its mesmerizing panoramic views. It\'s accessible by jeep or by enjoying a scenic hike to the top. A small place called Boyun Village is up here, known for its beautiful green surroundings in the summer.',
+								title: 'Lulusar Lake', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Lulusar is the largest lake in the entire Kaghan Valley, famous for its deep teal colored water. As a glacial lake, it is a significant source of water for the Kunhar River. It remains completely covered in snow during the winter and is a crucial part of the Lulusar-Dudipatsar National Park.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Utror Valley', 
-								image: '/images/swat.jpg',
-								description: 'Utror is a great central base camp for exploring many lesser-known valleys nearby. It\'s the gateway to beautiful spots like Gabral Valley, Kumrat Valley, and Dhan Valley. You can also visit gorgeous alpine lakes from here, including Kundol Lake and the twin lakes of Pari and Paristan.',
+								title: 'Babusar Pass', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Babusar Pass is the highest point on the Kaghan Road, reached via a zigzag, steep drive past Gitidas. From the top, on a clear day, you can see stunning views of Nanga Parbat, Rakaposhi, and the lower Kaghan Valley. This pass is the high-altitude route that connects Kaghan to Gilgit Baltistan via Chilas and is best visited from May to September.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Gabral Valley', 
-								image: '/images/Gabral Valley.jpg',
-								description: 'This beautiful valley is northwest of Swat and Utror, touching the lower parts of the Himalayas. If you travel deep inside, you\'ll discover lovely spots like Chota Banda Meadows and Shahi Bagh. Gabral Valley truly feels like a hidden slice of paradise for nature lovers and tourists.',
+								title: 'Ansoo Lake', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Ansoo means "teardrop" in Urdu, and the lake is named for its distinctive shape. It is located north of Naran and requires a challenging one-day trek from Saif-ul-Malook Lake. Visitors can hire mules from Saif-ul-Malook to make the difficult hike easier.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Blue Water Kalam Swat', 
-								image: '/images/Blue Water Point.jpg',
-								description: 'This spot is about 10-15 km from Kalam and takes around two hours to reach by jeep. It is a popular summer getaway known for its crystal-clear water flow. It gained extra fame after a visit by the former Prime Minister of Pakistan, Mr. Imran Khan.',
+								title: 'Kiwai Waterfall', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Kiwai is a town in Kaghan Valley famous for a small, accessible waterfall reached by hiking along water streams. Kiwai is the main starting point for the jeep tracks that lead up to the popular hilltop tourist destinations of Shogran and Siri Paye. The town itself has a small market and several hotels.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Badgoi Pass', 
-								image: '/images/Badgoi Pass.jpg',
-								description: 'Badgoi is a high mountain pass that links Kalam with the Upper Dir District. It leads directly to Thal in Upper Dir, and you\'ll pass through "heavenly places" like Hawa ka Darra. This scenic jeep journey from Kalam or Kumrat takes about 4–5 hours.',
+								title: 'Shogran', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Shogran is a beautiful hilltop tourist destination easily accessible by jeep from Kiwai. It is popular because it remains open throughout the year, even when high-altitude areas like Naran close down. Shogran offers a range of accommodations, from economical to luxury.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Shangla Top', 
-								image: '/images/Shangla Top.jpg',
-								description: 'This is a breathtaking hilltop destination located on the N90 Highway, about 20 km from Khwazakhela. It connects the region of Kohistan with Swat Valley, offering amazing mountain scenery. The best time to visit and enjoy the views is usually during spring and summer.',
+								title: 'Siri Paye', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Siri Paye consists of two parts Siri (a small seasonal lake/pond) and Paye Meadows. Paye Meadows are vast grasslands at the end of the jeep track, known for attracting shepherd herds in summer. This area is a great starting point to spot or trek towards the majestic Makra Peak.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Khwazakhela to Besham Route', 
-								image: '/images/swat.jpg',
-								description: 'This is the N90 Highway, a route connecting Swat to the Kohistan region. It stretches for about 65–70 km, starting at Khwazakhela City and ending at Besham City. This highway is essential and used frequently by both local traders and tourists.',
+								title: 'Sharan Forest', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Sharan Forest is a beautiful neighboring hilltop destination, accessible by a steep jeep track from Paras town. It is a thick forest made up of Deodar, Cedar, and Pine trees, popular for summer camping and glamping.The forest offers government run pods for accommodation and is home to the stunning Sharan Waterfall.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Bahrain', 
-								image: '/images/swat.jpg',
-								description: 'Bahrain sits where the Daral and Swat Rivers meet on the main highway to Kalam. It was a beautiful tourist spot with a lively market, but the 2022 floods caused significant damage. From here, you can start the journey to visit Daral and Saidgai Lakes.',
+								title: 'Manshi Top', 
+								image: '/images/naran and kaghan.jpg',
+								description: 'Manshi Top is a viewpoint at an altitude of 9,000 feet, reached by a 2-3 hour steep hike through the dense Sharan Forest. From this majestic top, you can see vast landscapes, including Makra Peak, Siri Paye, Malika-e-Parbat, and Allai Valley. It is one of the most rewarding short treks in the region.',
 								imageLeft: true
-							},
-							{ 
-								title: 'Swat River', 
-								image: '/images/Swat River.jpg',
-								description: 'The river is mainly formed by the melting glacial waters flowing from the Hindukush Mountains. Its biggest feeding rivers are the Gabral, Utror, and Ushu Rivers. The Swat River travels throughout the valley, eventually joining the Panjkora River and flowing toward Peshawar.',
-								imageLeft: false
-							},
-							{ 
-								title: 'Swat Expressway', 
-								image: '/images/Swat Expressway.jpg',
-								description: 'This modern highway (also called the N95 Highway) runs from Chakdara City all the way up to Kalam. It was finished in 2019 and has made a huge difference in the ease of travel to the valley. The highway has played a significant role in boosting tourism and accessibility to the region.',
-								imageLeft: true
-							},
-							{ 
-								title: 'White Palace Swat', 
-								image: '/images/White Palace Swat.jpg',
-								description: 'The beautiful White Palace was built in 1940 by the ruler (Wali) of Swat Valley. It is located in Marghazar, only about 13 kilometers from the capital, Saidu Sharif. The historic palace now operates as a stunning hotel, warmly welcoming guests.',
-								imageLeft: false
 							},
 						].map((destination, idx) => (
 							<div 
@@ -848,72 +804,6 @@ const NaranKaghanPage = () => {
 								</div>
 							</div>
 						))}
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== HISTORICAL SITES IN SWAT VALLEY ====================== */}
-			<section 
-				data-section-id="historical-sites"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-sites') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="w-full">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some Other Historical and Attraction Sites in Naran Kaghan are as Follows:
-						</h3>
-
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
-							{[
-								'Mahmood Ghaznavi Masjid',
-								'Oba Ghar and Khazana Ghar Rock Carving',
-								'Dune of Darkot',
-								'Ram Takht at Mount Ilum',
-								'Panr Jambil Khwar Archaeology',
-								'Jehanabad Buddha Statue',
-								'Tokar Dara Najigram Stupa and Monastery',
-								'Amluk Dara Stupa',
-								'Shingardar Stupa',
-								'Gumbatona Stupa',
-								'Ghaligay Buddha Statue and Archaeological Remains',
-								'Shahkot Pass Elephant Paw and Queen\'s Throne',
-							].map((item, idx) => (
-								<div 
-									key={idx} 
-									className="transition-all duration-500 cursor-pointer group rounded-lg w-full scroll-reveal-fade-up"
-									style={{ 
-										backgroundColor: 'white',
-										border: `2px solid ${primaryOrange}`,
-										height: '56px',
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-										paddingLeft: '2rem',
-										paddingRight: '2rem',
-										minWidth: '100%',
-										opacity: visibleSections.has('historical-sites') ? 1 : 0,
-										transform: visibleSections.has('historical-sites') ? 'translateY(0)' : 'translateY(20px)',
-										transitionDelay: `${idx * 0.05}s`
-									}}
-									onMouseEnter={(e) => {
-										e.currentTarget.style.backgroundColor = primaryOrange;
-										e.currentTarget.style.transform = 'translateY(-2px)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-									onMouseLeave={(e) => {
-										e.currentTarget.style.backgroundColor = 'white';
-										e.currentTarget.style.transform = 'translateY(0)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-								>
-									<p className="leading-normal transition-colors duration-300 text-center capitalize" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
-										{item}
-									</p>
-								</div>
-							))}
-						</div>
 					</div>
 				</div>
 			</section>
@@ -1080,44 +970,56 @@ const NaranKaghanPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Naran and Kaghan?',
-								answer: 'Naran and Kaghan are beautiful all year.\n\n• Spring: Mild weather, blooming flowers\n\n• Summer: Perfect for lake visits, fishing, and hiking\n\n• Autumn: Beautiful fall colors\n\n• Winter: Snow-covered peaks, winter sports (limited access due to snow)'
+								question: 'Where is Kaghan Valley located?',
+								answer: 'Mansehra District of Khyber Pakhtunkhwa (KPK), Pakistan.'
 							},
 							{
-								question: 'Are Naran and Kaghan accessible by road?',
-								answer: 'Yes, Naran and Kaghan are accessible by road via the Naran Valley Road. Note that some areas may be closed in heavy winter months due to snow.'
+								question: 'Can I drive to Naran Kaghan?',
+								answer: 'Yes, the main road to Naran is suitable for all vehicles.'
 							},
 							{
-								question: 'Are hotels available in Naran and Kaghan?',
-								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts and guesthouses.'
+								question: 'How can we travel there?',
+								answer: 'Best way is by private car, rental car, or local bus/van.'
 							},
 							{
-								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Naran and Kaghan are safe and friendly destinations and our team ensures complete comfort.'
+								question: 'What kind of accommodations is available?',
+								answer: 'Hotels, guesthouses, and camping sites (luxury and economical options available).'
 							},
 							{
-								question: 'Are jeeps included for remote destinations?',
-								answer: 'Yes, we arrange jeeps for all off road destinations including high-altitude lakes and viewpoints.'
+								question: 'Are there any trekking routes?',
+								answer: 'Yes, popular routes include Saif-ul-Malook to Ansoo Lake and Besal to Dudipatsar Lake.'
 							},
 							{
-								question: 'Can I customize my tour?',
-								answer: 'Yes, all packages can be customized to your preferences.'
+								question: 'How many lakes are there?',
+								answer: 'Several, including major ones like Saif-ul-Malook, Lulusar, and Ansoo Lake.'
 							},
 							{
-								question: 'Do you offer photography/videography?',
-								answer: 'Yes, we offer cinematic videos and photos on request.'
+								question: 'What is the highest point?',
+								answer: 'Babusar Pass (approx. 13,700 ft / 4,170 m).'
 							},
 							{
-								question: 'What should I pack?',
-								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials. Warm clothing is essential even in summer months.'
+								question: 'Which is the highest peak?',
+								answer: 'Malika-e-Parbat (approx. 17,356 ft / 5,290 m).'
 							},
 							{
-								question: 'Are there restaurants and shops in Naran and Kaghan?',
-								answer: 'Yes, there are many eateries, cafes and local markets in both Naran and Kaghan.'
+								question: 'What is the local cuisine like?',
+								answer: 'Famous for fresh Trout Fish and Chapli Kababs (also standard Pakistani food).'
 							},
 							{
-								question: 'Do you have Naran Kaghan tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Naran Kaghan packages with transport or flight options.'
+								question: 'Can I use my credit card or ATM?',
+								answer: 'ATMs are limited (mostly in Naran Bazaar) cash is highly recommended.'
+							},
+							{
+								question: 'What is the main source of income?',
+								answer: 'Tourism, agriculture, and fishing.'
+							},
+							{
+								question: 'Is it safe to travel to Kaghan Valley?',
+								answer: 'Yes, it is considered very safe for tourists.'
+							},
+							{
+								question: 'Is there any mobile network coverage?',
+								answer: 'Yes, good coverage in Naran and surrounding areas, but spotty past Besal.'
 							},
 						].map((faq, idx) => (
 							<div 
