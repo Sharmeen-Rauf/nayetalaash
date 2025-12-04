@@ -297,22 +297,22 @@ const NaranKaghanPage = () => {
 									<Link href="/swat-kalam" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Swat Kalam Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/hunza" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Hunza Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/skardu" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Skardu Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/nathia-gali-murree" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Nathia Gali And Murree Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/neelum-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Neelum Valley Azad Kashmir Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/kumrat-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Kumrat Valley Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/naran-kaghan" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Naran Kaghan Tour Packages
 									</Link>
 								</div>
@@ -1080,24 +1080,24 @@ const NaranKaghanPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Swat & Kalam?',
-								answer: 'Swat is beautiful all year.\n\n• Summer: Lakes, forests, meadows\n\n• Winter: Snowfall, skiing, Malam Jabba activities'
+								question: 'What is the best time to visit Naran and Kaghan?',
+								answer: 'Naran and Kaghan are beautiful all year.\n\n• Spring: Mild weather, blooming flowers\n\n• Summer: Perfect for lake visits, fishing, and hiking\n\n• Autumn: Beautiful fall colors\n\n• Winter: Snow-covered peaks, winter sports (limited access due to snow)'
 							},
 							{
-								question: 'Is Swat accessible by road?',
-								answer: 'Yes, Swat and Kalam are easily accessible via Swat Expressway.'
+								question: 'Are Naran and Kaghan accessible by road?',
+								answer: 'Yes, Naran and Kaghan are accessible by road via the Naran Valley Road. Note that some areas may be closed in heavy winter months due to snow.'
 							},
 							{
-								question: 'Are hotels available in Swat & Kalam?',
-								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts.'
+								question: 'Are hotels available in Naran and Kaghan?',
+								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts and guesthouses.'
 							},
 							{
 								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Swat is a safe and friendly destination and our team ensures complete comfort.'
+								answer: 'Absolutely. Naran and Kaghan are safe and friendly destinations and our team ensures complete comfort.'
 							},
 							{
-								question: 'Are jeeps included for Mahodand Lake?',
-								answer: 'Yes, we arrange jeeps for all off road destinations.'
+								question: 'Are jeeps included for remote destinations?',
+								answer: 'Yes, we arrange jeeps for all off road destinations including high-altitude lakes and viewpoints.'
 							},
 							{
 								question: 'Can I customize my tour?',
@@ -1109,15 +1109,15 @@ const NaranKaghanPage = () => {
 							},
 							{
 								question: 'What should I pack?',
-								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
+								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials. Warm clothing is essential even in summer months.'
 							},
 							{
-								question: 'Are there restaurants and shops in Kalam?',
-								answer: 'Yes, there are many eateries, cafes and local markets.'
+								question: 'Are there restaurants and shops in Naran and Kaghan?',
+								answer: 'Yes, there are many eateries, cafes and local markets in both Naran and Kaghan.'
 							},
 							{
-								question: 'Do you have Swat tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Swat packages with transport or flight options.'
+								question: 'Do you have Naran Kaghan tours from Karachi?',
+								answer: 'Yes, we offer complete Karachi-to-Naran Kaghan packages with transport or flight options.'
 							},
 						].map((faq, idx) => (
 							<div 

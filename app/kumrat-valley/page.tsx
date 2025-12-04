@@ -297,22 +297,22 @@ const KumratValleyPage = () => {
 									<Link href="/swat-kalam" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Swat Kalam Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/hunza" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Hunza Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/skardu" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Skardu Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/nathia-gali-murree" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Nathia Gali And Murree Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/neelum-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Neelum Valley Azad Kashmir Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/kumrat-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Kumrat Valley Tour Packages
 									</Link>
-									<Link href="/#tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									<Link href="/naran-kaghan" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 										Naran Kaghan Tour Packages
 									</Link>
 								</div>
@@ -1080,24 +1080,24 @@ const KumratValleyPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Swat & Kalam?',
-								answer: 'Swat is beautiful all year.\n\n• Summer: Lakes, forests, meadows\n\n• Winter: Snowfall, skiing, Malam Jabba activities'
+								question: 'What is the best time to visit Kumrat Valley?',
+								answer: 'Kumrat Valley is beautiful all year.\n\n• Spring: Mild weather, blooming flowers\n\n• Summer: Perfect for camping and sightseeing\n\n• Autumn: Beautiful fall colors\n\n• Winter: Snow-covered landscapes, winter activities'
 							},
 							{
-								question: 'Is Swat accessible by road?',
-								answer: 'Yes, Swat and Kalam are easily accessible via Swat Expressway.'
+								question: 'Is Kumrat Valley accessible by road?',
+								answer: 'Yes, Kumrat Valley is accessible by road from Upper Dir via a scenic route.'
 							},
 							{
-								question: 'Are hotels available in Swat & Kalam?',
-								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts.'
+								question: 'Are hotels available in Kumrat Valley?',
+								answer: 'Yes. We offer a range of options from budget hotels to camping sites and guesthouses.'
 							},
 							{
 								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Swat is a safe and friendly destination and our team ensures complete comfort.'
+								answer: 'Absolutely. Kumrat Valley is a safe and friendly destination and our team ensures complete comfort.'
 							},
 							{
-								question: 'Are jeeps included for Mahodand Lake?',
-								answer: 'Yes, we arrange jeeps for all off road destinations.'
+								question: 'Are jeeps included for remote destinations?',
+								answer: 'Yes, we arrange jeeps for all off road destinations when needed.'
 							},
 							{
 								question: 'Can I customize my tour?',
@@ -1112,12 +1112,12 @@ const KumratValleyPage = () => {
 								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
 							},
 							{
-								question: 'Are there restaurants and shops in Kalam?',
-								answer: 'Yes, there are many eateries, cafes and local markets.'
+								question: 'Are there restaurants and shops in Kumrat Valley?',
+								answer: 'Yes, there are eateries, cafes and local markets in the valley.'
 							},
 							{
-								question: 'Do you have Swat tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Swat packages with transport or flight options.'
+								question: 'Do you have Kumrat Valley tours from Karachi?',
+								answer: 'Yes, we offer complete Karachi-to-Kumrat Valley packages with transport or flight options.'
 							},
 						].map((faq, idx) => (
 							<div 
