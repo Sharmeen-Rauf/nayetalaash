@@ -1009,13 +1009,28 @@ const HunzaPage = () => {
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('traditional-food') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Hunza's Must-Try Traditional Food
-						</h2>
-						<p className="leading-normal text-center mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Hunza dishes are cooked with pure, organic ingredients to be very nutritious and keep people warm during the cold mountain winters. Local herbs are used a lot, and yak meat is a common and important part of the meals in Gilgit Baltistan.
-						</p>
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+						{/* Text Content - Left Side */}
+						<div className="lg:order-1">
+							<h2 className="text-2xl md:text-3xl font-bold mb-4 text-left" style={{ color: secondaryBlack }}>
+								Hunza's Must-Try Traditional Food
+							</h2>
+							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								Hunza dishes are cooked with pure, organic ingredients to be very nutritious and keep people warm during the cold mountain winters. Local herbs are used a lot, and yak meat is a common and important part of the meals in Gilgit Baltistan.
+							</p>
+						</div>
+						
+						{/* Image - Right Side */}
+						<div className="lg:order-2">
+							<div className="relative h-64 lg:h-80 w-full overflow-hidden rounded-lg">
+								<Image 
+									src="/images/Hunza.jpg"
+									alt="Hunza Traditional Food"
+									fill
+									className="object-cover transition-transform duration-700 hover:scale-110"
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -1026,16 +1041,31 @@ const HunzaPage = () => {
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('restaurants') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Best Restaurants to Visit in Hunza Valley
-						</h2>
-						<p className="leading-normal text-center mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Hunza Valley is famous for its massive mountains, huge glaciers, and breathtaking turquoise lakes, creating a picture perfect setting. But this region is also a culinary destination where delicious food awaits at every turn!
-						</p>
-						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							The key to Hunzai cuisine is the focus on organic, pure, and healthy ingredients their motto is: tasty, locally grown, and all organic. So, you don't need to worry if you eat a little too much while enjoying your trip in Hunza Valley.
-						</p>
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+						{/* Text Content - Left Side */}
+						<div className="lg:order-1">
+							<h2 className="text-2xl md:text-3xl font-bold mb-4 text-left" style={{ color: secondaryBlack }}>
+								Best Restaurants to Visit in Hunza Valley
+							</h2>
+							<p className="leading-normal text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								Hunza Valley is famous for its massive mountains, huge glaciers, and breathtaking turquoise lakes, creating a picture perfect setting. But this region is also a culinary destination where delicious food awaits at every turn!
+							</p>
+							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+								The key to Hunzai cuisine is the focus on organic, pure, and healthy ingredients their motto is: tasty, locally grown, and all organic. So, you don't need to worry if you eat a little too much while enjoying your trip in Hunza Valley.
+							</p>
+						</div>
+						
+						{/* Image - Right Side */}
+						<div className="lg:order-2">
+							<div className="relative h-64 lg:h-80 w-full overflow-hidden rounded-lg">
+								<Image 
+									src="/images/Hunza.jpg"
+									alt="Best Restaurants in Hunza Valley"
+									fill
+									className="object-cover transition-transform duration-700 hover:scale-110"
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
