@@ -402,17 +402,17 @@ const SkarduPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Gateway to K2 and Baltoro Glacier
+								Your Stress Free Skardu Adventure Starts Here!
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Discover Skardu stress free. Our well planned packages offer comfortable travel and unforgettable adventure.						</p>
+						At Nayi Talaash, we bring you premium, well planned and safe Skardu tour packages designed for families, couples, groups, and corporate travelers.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Book Now
+							View Tour Packages
 						</button>
 					</div>
 				</div>
@@ -426,11 +426,11 @@ const SkarduPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Customized Skardu Tour Packages
+							Skardu Tour Packages
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Skardu is the gateway to the world's second highest peak K2 and the majestic Baltoro Glacier. Known for its dramatic landscapes, crystal-clear lakes, and breathtaking mountain vistas, Skardu is a perfect destination for adventure seekers and nature lovers. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+								Your adventure should be unique! Our Skardu packages can be custom built by our professional team to match your perfect vision. Choose from our popular ideas below, or tell us exactly what you want to see:
 							</p>
 						</div>
 					</div>
@@ -439,40 +439,40 @@ const SkarduPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '2 Days – Malam Jabba Tour (Short Escape)',
-								image: '/images/MalamJabba Tour(Short Escape)package 1.jpg'
+								title: '6 Days-Essential Skardu Valley Tour',
+								image: '/images/skardu 2.jpg'
 							},
 							{ 
-								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/pacakges2.jpeg'
+								title: '7 Days-Deep Skardu Valley Exploration',
+								image: '/images/skardu 2.jpg'
 							},
 							{ 
-								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Green Top package 3.jpg'
+								title: '8 Days-Best of Both: Hunza and Skardu Valley',
+								image: '/images/skardu 2.jpg'
 							},
 							{ 
-								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
-								image: '/images/Relaxed Kalam, Mahodand, Green Top & Blue Water Pointpackage 4.jpg'
+								title: '9 Days-Comprehensive Skardu Valley Adventure',
+								image: '/images/skardu 2.jpg'
 							},
 							{ 
-								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Desan Toppackage 5.jpg'
+								title: '10 Days-Ultimate Skardu Valley Journey',
+								image: '/images/skardu 2.jpg'
 							},
 							{ 
-								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
-								image: '/images/swat.jpg'
+								title: '10 Days-Long Adventure: Hunza and Skardu Combo',
+								image: '/images/skardu 2.jpg'
 							},
 							{ 
-								title: '7 Days – Swat to Kumrat Valley Adventure',
-								image: '/images/swat.jpg'
+								title: '11 Days-Grand Skardu Valley Exploration',
+								image: '/images/skardu 2.jpg'
 							},
 							{ 
-								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
-								image: '/images/swat.jpg'
+								title: '15 Days-Hunza and Skardu Valley Complete Experience',
+								image: '/images/skardu 2.jpg'
 							},
 							{ 
-								title: '3 Days – Swat Valley Highlights Tour',
-								image: '/images/swat.jpg'
+								title: '12 Days-Skardu, Hunza, and Fairy Meadows Explorer',
+								image: '/images/skardu 2.jpg'
 							},
 						];
 						
@@ -545,10 +545,10 @@ const SkarduPage = () => {
 					{/* Main Heading and Intro */}
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Public Skardu Tour Packages
+							Public Skardu Pakistan Tour Packages
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Join the Adventure! Nayi Talaash offers amazing tours to the beautiful Skardu Valley all year long. It's easy to join you can come by yourself, with a friend or with your whole group, whenever your schedule allows!
+							You can join our fixed group departure dates throughout the year. Whether you're traveling solo or with a group, you're welcome to jump in on the adventure
 						</p>
 					</div>
 
@@ -557,15 +557,15 @@ const SkarduPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="3 Days: Malam Jabba, Kalam & Swat Valley Tour"
+									src="/images/skardu 2.jpg"
+									alt="8 Days-Skardu, Chunda Valley, Khaplu, and Deosai Family Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									6 Days: Skardu Complete Tour Package
+									8 Days-Skardu, Chunda Valley, Khaplu, and Deosai Family Tour
 								</p>
 							</div>
 						</div>
@@ -573,32 +573,38 @@ const SkarduPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
-									alt="2 Days: Malam Jabba Swat Quick Tour"
+									src="/images/skardu 2.jpg"
+									alt="8 Days: Hunza and Skardu Valley Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
 								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									4 Days: Skardu Quick Tour
+									8 Days: Hunza and Skardu Valley Group Tour
 								</p>
 							</div>
 						</div>
 					</div>
 
-					{/* Who Are These Tours For Section */}
+					{/* Our Skardu Tour Categories */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Who Are These Tours For?
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Our Skardu Tour Categories
 						</h3>
+						<h4 className="text-lg md:text-xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '20px' }}>
+							Customized Skardu Trips: Who Are You Traveling With?
+						</h4>
+						<p className="leading-normal text-left mb-6" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							We design your trip around you and your loved ones:
+						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Couples & Honeymooners
+									Couples / Honeymoon
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Romantic, private, and relaxing trips with premium stays and scenic spots perfect for making new memories.
+									Luxury and Solitude. We provide a romantic, stress free environment for newlyweds to celebrate surrounded by beautiful nature.
 								</p>
 							</div>
 							<div>
@@ -606,15 +612,15 @@ const SkarduPage = () => {
 									Families
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Safe, fun, and comfortable travel with activities and spots everyone can enjoy.
+									Fun, Safe and Secure. We ensure a great environment for families to laugh, connect, and make wonderful memories together.
 								</p>
 							</div>
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
-									Friends & Student Groups
+									Students / Friends
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Adventure, trekking, games, activities, and fun moments all without planning stress.
+									Pure Fun and Adventure! Get ready for exciting activities and exploring without the hassle of planning. Just pack and go!
 								</p>
 							</div>
 							<div>
@@ -622,10 +628,20 @@ const SkarduPage = () => {
 									Corporate Groups
 								</h4>
 								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Perfect for team building, relaxation, and bonding outside the office.
+									Team Building in Nature. A great way for employees to connect, enhance team spirit, and recharge outside of the typical office setting.
 								</p>
 							</div>
 						</div>
+					</div>
+
+					{/* Starting Point Flexibility */}
+					<div className="max-w-4xl mx-auto mb-8">
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Starting Point Flexibility
+						</h3>
+						<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							We offer tours starting from: Lahore, Karachi, and Islamabad. We can also customize your tour to start from any other city in Pakistan
+						</p>
 					</div>
 
 					{/* Swat Tour Packages From Major Cities Section */}
@@ -677,7 +693,10 @@ const SkarduPage = () => {
 							Top Places to Visit in Skardu
 						</h2>
 						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Skardu is full of natural wonders, stunning lakes, majestic mountains, and ancient forts. Here are the must visit attractions included in our tours:
+							A perfect mix of nature, history & adventure:
+						</p>
+						<p className="leading-normal max-w-4xl mx-auto mt-2" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Most Popular Destinations and Attractions in Skardu
 						</p>
 					</div>
 					
@@ -685,69 +704,129 @@ const SkarduPage = () => {
 					<div className="space-y-8">
 						{[
 							{ 
-								title: 'Shangrila Resort', 
+								title: 'Skardu City', 
 								image: '/images/skardu 2.jpg',
-								description: 'A beautiful resort located on the shores of Lower Kachura Lake, known for its stunning architecture and breathtaking views. The resort offers comfortable accommodations and is famous for its picturesque setting against the backdrop of the Karakoram Range.',
+								description: 'Skardu City is the capital of the district and a famous tourist hub where the Shigar River meets the mighty Indus River. It has a deep history, with traces of Tibetan, Mughal, and British influence. Millions of local and international tourists visit this amazing city every year.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Upper Kachura Lake (Shangrila Lake)', 
+								title: 'Skardu International Airport', 
 								image: '/images/skardu 2.jpg',
-								description: 'A stunning alpine lake known for its crystal-clear emerald green water. The lake is surrounded by mountains and offers a peaceful setting perfect for photography and relaxation. It\'s one of the most beautiful lakes in the region.',
+								description: 'This is considered one of the most scenic airports in the world! You\'ll fall in love with Skardu the moment you land. It now offers direct international flights (like from Dubai) and domestic flights from Lahore, Karachi, and Islamabad. The airport has dramatically boosted tourism and makes the valley easy to access.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Lower Kachura Lake', 
+								title: 'Masroor Rock Hussainabad', 
 								image: '/images/skardu 2.jpg',
-								description: 'Another beautiful lake in Skardu, famous for its clear blue water and scenic surroundings. The lake is easily accessible and offers opportunities for boating and photography. It\'s a popular spot for tourists visiting Skardu.',
+								description: 'This unique rock formation recently gained fame because it looks a bit like the famous Trolltunga rock in Norway. It offers a challenging 3-4 hour climb from Hussainabad Village but rewards you with a panoramic view of the entire valley. You\'ll even pass the beautiful Hussainabad Waterfall on the way, like an oasis!',
 								imageLeft: true
 							},
 							{ 
-								title: 'Skardu Fort (Kharpocho Fort)', 
+								title: 'Manthal Buddha Rock Carving', 
 								image: '/images/skardu 2.jpg',
-								description: 'An ancient fort located on a hilltop overlooking Skardu town. The fort offers panoramic views of the surrounding mountains and the Indus River. It\'s a historic landmark that showcases the rich history of the region.',
+								description: 'This carving proves that Buddhism once had a strong presence in the region long ago. This huge Buddha is carved into a granite rock in Manthal Village, about 3 km from Skardu City. It is a holy site for Buddhists and a perfectly preserved historical treasure for all visitors.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Deosai National Park', 
+								title: 'Skardu Highway (JSR)', 
 								image: '/images/skardu 2.jpg',
-								description: 'One of the highest plateaus in the world, located at an altitude of over 4,000 meters. The park is known for its unique landscape, wildflowers, and the endangered Himalayan brown bear. It\'s accessible during summer months only.',
+								description: 'This highway, the Jaglot-Skardu Road (S-1), is the vital 167 km link between the Karakoram Highway (KKH) and Skardu City. Although it sometimes faces landslides, it is crucial for tourism and for bringing essential goods to the local people. It\'s your main route into the heart of the Skardu region.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Sadpara Lake', 
+								title: 'Deosai Plains', 
 								image: '/images/skardu 2.jpg',
-								description: 'A beautiful lake located near Skardu, known for its stunning blue color and peaceful atmosphere. The lake is surrounded by mountains and offers great opportunities for photography and nature walks.',
+								description: 'Referred to as the "Roof of The World," this massive plateau sits at 4,114 meters and is the second highest plateau globally. It means "The Land of Giants" and is protected as a National Park, famous for the rare Himalayan Brown Bears. It\'s closed from November to May due to heavy snow and features stunning lakes like Sheosar and Talkhumbo.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Cold Desert (Katpana Desert)', 
+								title: 'Satpara Lake', 
 								image: '/images/skardu 2.jpg',
-								description: 'One of the highest deserts in the world, located near Skardu. The desert is unique because it experiences cold temperatures and sometimes even snowfall. It\'s a fascinating natural phenomenon that attracts many visitors.',
+								description: 'This is a beautiful natural glacial lake located only about 7 km from Skardu City, surrounded by rocky mountains. Its size grew when the Satpara Dam was built on it in 2013 to provide water and electricity to Skardu. The lake\'s water is essential for drinking and farming in the region.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Sheosar Lake', 
+								image: '/images/skardu 2.jpg',
+								description: 'Located in the very heart of the Deosai Plains, this stunning alpine lake is fed by glacial meltwater. It\'s only accessible for about 5-6 months a year (May to November) due to extreme winter snow. On clear days, you can see the imposing Nanga Parbat from the lake, and the surroundings are carpeted with colorful wildflowers.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Shangrila Resort and Lower Kachura Lake', 
+								image: '/images/skardu 2.jpg',
+								description: 'Often called "Heaven on Earth," this was the first resort of its kind in Northern Pakistan. Beautiful cottages sit around the artificial, heart-shaped Lower Kachura Lake (Shangrila Lake). It offers a magical, serene experience with fish swimming in the lake and rocky mountains towering above.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Upper Kachura Lake', 
+								image: '/images/skardu 2.jpg',
+								description: 'This is a gorgeous alpine glacial lake reached by a short 15-20 minutes trek through the old Kachura Village. The walk is a bonus, allowing you to see local life, and the lake is crowned by mighty mountains and thick Deodar trees. It\'s a perfect picnic spot offering activities like boating and jet skiing.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Shigar Valley', 
+								image: '/images/skardu 2.jpg',
+								description: 'Shigar is the gateway to the world\'s most impressive peaks, like K2, Broad Peak, and Golden Peak. Askole, the last village before the wild mountains, is located here, as are huge glaciers like Baltoro and Biafo. The valley is accessible by a metalled road from Skardu and is rich in historical importance.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Shigar Fort', 
 								image: '/images/skardu 2.jpg',
-								description: 'A historic fort located in Shigar Valley, about 32 km from Skardu. The fort has been beautifully restored and now operates as a luxury heritage hotel. It offers a glimpse into the rich cultural heritage of the region.',
+								description: 'An impressive 450-year-old fort from the 17th century, originally built for the Rajas of Shigar Valley. Part of the fort has been converted into the luxurious Serena Shigar Fort hotel, restoring its royal charm. It includes a museum, the beautiful Anchan Garden and a small 12 door structure called "Baradari."',
 								imageLeft: false
 							},
 							{ 
-								title: 'Khaplu Palace', 
+								title: 'Katpana Desert or Sarfaranga Desert Skardu', 
 								image: '/images/skardu 2.jpg',
-								description: 'A historic palace located in Khaplu Valley, about 103 km from Skardu. The palace has been restored and converted into a hotel, offering a unique opportunity to experience the royal heritage of the Baltistan region.',
+								description: 'Skardu is home to the world\'s unique \'cold deserts,\' like Katpana and Sarfaranga. Katpana Desert is right next to Skardu Airport and offers hotels, glamping, and the small Katpana Lake. Sarfaranga Desert, the highest desert in Pakistan, hosts the annual Desert Jeep Rally and activities like paramotor gliding.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Manthoka Waterfall', 
+								title: 'Khaplu Valley', 
 								image: '/images/skardu 2.jpg',
-								description: 'A beautiful waterfall located near Skardu, known for its scenic beauty. The waterfall is surrounded by lush greenery and offers a refreshing stop during your journey. It\'s a perfect spot for photography and relaxation.',
+								description: 'Khaplu is a district capital located about 3 hours from Skardu, where the Shyok River merges with the Indus River. The Shyok River enters Pakistan from the Ladakh Valley here. Khaplu was historically important as a key trade route between Ladakh and Gilgit Baltistan.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Indus River', 
+								title: 'Khaplu Fort', 
 								image: '/images/skardu 2.jpg',
-								description: 'The mighty Indus River flows through Skardu, creating stunning landscapes. The river is an important part of the region\'s geography and offers opportunities for photography and scenic views throughout the valley.',
+								description: 'Also known as "Yabgo Khar," this fort was built in the mid-19th century for the Raja (Ruler) of Khaplu. The fort was magically built where a huge stone thrown from a nearby mountain landed. Part of it is now the luxurious Serena Khaplu Fort, which also houses a museum preserving royal history.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Chaqchan Mosque Khaplu', 
+								image: '/images/skardu 2.jpg',
+								description: 'This is a nearly 700-year-old mosque built by Mir Syed Ali Hamdani, who brought Islam to the valley. The mosque\'s design beautifully combines Kashmiri, Mughal and Tibetan building styles. Its colorful and printed interior walls make it a bright and unique place of worship.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Kharpocho Fort (Skardu Fort)', 
+								image: '/images/skardu 2.jpg',
+								description: 'Also called "The King of Forts," this was built by Baltistani King Ali Sher Khan Anchan in 1840. The ruins of this fort sit behind the main market in Skardu City, reached by a narrow, steep track. From the fort, you get a stunning aerial view of Skardu City and the surrounding area.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Organic Village', 
+								image: '/images/skardu 2.jpg',
+								description: 'Nansoq Village is known as the Organic Village because its residents maintain the ancient, sustainable lifestyle of the Balti people. Everything, from farming to house building, shows how people lived long ago. It is located right next to the Kharpocho Fort, offering a beautiful glimpse into the past.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Astore Valley', 
+								image: '/images/skardu 2.jpg',
+								description: 'Astore was closed for a long time but has recently opened its gates to everyone. You can access it from the Karakoram Highway (KKH) at Jaglot or from the Deosai Plains. Astore is home to dozens of stunning locations, including Rama Meadows, Rupal Valley, and many alpine lakes.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Rama Meadows and Rama Lake', 
+								image: '/images/skardu 2.jpg',
+								description: 'A jeep track from Astore leads you to the beautiful Rama Meadows, where you can set up camp. A simple 1 to 1.5-hour trek takes you to Rama Lake, which sits shadowed by the massive Nanga Parbat. This is a very popular spot for both trekkers and adventure riders.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Rupal Valley', 
+								image: '/images/skardu 2.jpg',
+								description: 'This valley is famous because it is home to the Rupal Face, the southern side of the mighty Nanga Parbat. A jeep track leads you through Tarshing Village and Chhungphar Glacier to a camping site near the basecamp. It\'s one of the most easily accessible basecamps of an 8,000 meter peak in the world!',
 								imageLeft: true
 							},
 						].map((destination, idx) => (
@@ -943,29 +1022,29 @@ const SkarduPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/zip line.jpg',
-								title: 'Chairlift & Zipline at Malam Jabba',
-								description: 'Experience thrilling ziplining and scenic chairlift rides at Malam Jabba Resort'
-							},
-							{
-								image: '/images/boating.jpg',
-								title: 'Boating at Mahodand Lake',
-								description: 'Enjoy peaceful boat rides on the crystal clear waters of Mahodand Lake'
-							},
-							{
 								image: '/images/camping.jpg',
-								title: 'Camping in meadows',
-								description: 'Spend nights under the stars in beautiful meadows surrounded by nature'
+								title: 'Camping & Glamping',
+								description: 'Experience camping under the stars or enjoy luxury glamping in scenic locations'
 							},
 							{
 								image: '/images/Hiking to lakes & waterfalls.jpg',
-								title: 'Hiking to lakes & waterfalls',
-								description: 'Explore scenic trails leading to stunning lakes and cascading waterfalls'
+								title: 'Trekking & Hiking',
+								description: 'Explore scenic trails and trek to stunning lakes, meadows, and mountain peaks'
 							},
 							{
-								image: '/images/picture forest.jpg',
-								title: 'Photography in forests & meadows',
-								description: 'Capture breathtaking moments in lush forests and serene meadows'
+								image: '/images/boating.jpg',
+								title: 'Boating & Jet Skiing',
+								description: 'Enjoy peaceful boat rides and thrilling jet skiing on crystal clear lakes'
+							},
+							{
+								image: '/images/skardu 2.jpg',
+								title: 'Cultural Visits',
+								description: 'Discover ancient forts, mosques, and traditional villages rich in history'
+							},
+							{
+								image: '/images/skardu 2.jpg',
+								title: 'Desert Safari & Quad Bikes',
+								description: 'Experience the unique cold desert with thrilling quad bike adventures'
 							},
 						].map((item, idx) => (
 							<div 
@@ -1023,6 +1102,40 @@ const SkarduPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== ALL TOURS INCLUDE ====================== */}
+			<section 
+				data-section-id="tours-include"
+				className={`py-6 md:py-8 bg-gray-50 relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('tours-include') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							All tours include:
+						</h2>
+					</div>
+					
+					<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+						{[
+							'Comfortable transport',
+							'Professional guide',
+							'Luxury stays',
+							'Sightseeing & adventure spots',
+							'Photography points',
+							'Safety monitoring'
+						].map((item, idx) => (
+							<div 
+								key={idx}
+								className="bg-white rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow"
+							>
+								<p className="text-sm font-medium" style={{ color: secondaryBlack }}>
+									{item}
+								</p>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
 			<section 
 				data-section-id="faq"
@@ -1038,44 +1151,40 @@ const SkarduPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'What is the best time to visit Skardu?',
-								answer: 'Skardu is beautiful all year.\n\n• Spring: Mild weather, blooming flowers\n\n• Summer: Perfect for trekking and lake visits\n\n• Autumn: Clear skies, stunning views\n\n• Winter: Snow-covered peaks, winter activities'
+								question: 'Best time to visit Skardu?',
+								answer: 'April to October pleasant weather and clear views.'
 							},
 							{
-								question: 'Is Skardu accessible by road?',
-								answer: 'Yes, Skardu is accessible via the Karakoram Highway (KKH) or by flight from Islamabad.'
+								question: 'How to reach Skardu?',
+								answer: 'By air from major cities or by road via the Karakoram Highway.'
 							},
 							{
-								question: 'Are hotels available in Skardu?',
-								answer: 'Yes. We offer a range of options from budget hotels to luxury resorts.'
+								question: 'Is Skardu safe for tourists?',
+								answer: 'Yes, it\'s considered safe. Locals are friendly and helpful.'
 							},
 							{
-								question: 'Is the tour safe for families and solo travelers?',
-								answer: 'Absolutely. Skardu is a safe and friendly destination and our team ensures complete comfort.'
+								question: 'Available hotels & stays?',
+								answer: 'From budget guest houses to luxury resorts options for every traveler.'
 							},
 							{
-								question: 'Are jeeps included for remote destinations?',
-								answer: 'Yes, we arrange jeeps for all off road destinations including lakes and high-altitude areas.'
+								question: 'Local culture & food?',
+								answer: 'Rich Balti culture with dishes like Mamto, Balti Gosht, and Apricot Soup.'
 							},
 							{
-								question: 'Can I customize my tour?',
-								answer: 'Yes, all packages can be customized to your preferences.'
+								question: 'Adventure activities?',
+								answer: 'Trekking, camping, boating, jeep safaris, and mountain photography.'
 							},
 							{
-								question: 'Do you offer photography/videography?',
-								answer: 'Yes, we offer cinematic videos and photos on request.'
+								question: 'ATM, network & medical facilities?',
+								answer: 'Limited ATMs in the main town network works mostly in central areas basic medical services are available.'
 							},
 							{
-								question: 'What should I pack?',
-								answer: 'Comfortable clothes, warm layers (even in summer), joggers, and essentials.'
+								question: 'Language & communication?',
+								answer: 'Balti and Urdu are common English is understood at tourist spots.'
 							},
 							{
-								question: 'Are there restaurants and shops in Skardu?',
-								answer: 'Yes, there are many eateries, cafes and local markets in Skardu.'
-							},
-							{
-								question: 'Do you have Skardu tours from Karachi?',
-								answer: 'Yes, we offer complete Karachi-to-Skardu packages with transport or flight options.'
+								question: 'Boating, fishing & glamping options?',
+								answer: 'Yes, boating at Shangrila/Upper Kachura, fishing in selected lakes and scenic glamping sites are available.'
 							},
 						].map((faq, idx) => (
 							<div 
