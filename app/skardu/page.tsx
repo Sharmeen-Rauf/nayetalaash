@@ -685,7 +685,7 @@ const SkarduPage = () => {
 			{/* ====================== MOST POPULAR DESTINATIONS AND ATTRACTIONS IN SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="destinations"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+				className="py-6 md:py-8 bg-white relative overflow-x-hidden"
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
@@ -833,23 +833,10 @@ const SkarduPage = () => {
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
-								style={{
-									opacity: visibleSections.has('destinations') ? 1 : 0,
-									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
-								}}
 							>
 								{/* Image */}
 								<div 
 									className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'} ${idx % 2 === 0 ? 'lg:ml-8' : 'lg:mr-8'}`}
-									style={{
-										opacity: visibleSections.has('destinations') ? 1 : 0,
-										transform: visibleSections.has('destinations') 
-											? 'translateX(0)' 
-											: destination.imageLeft 
-												? 'translateX(-60px)' 
-												: 'translateX(60px)',
-										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.1}s, transform 0.8s ease-out ${idx * 0.15 + 0.1}s`
-									}}
 								>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
@@ -864,15 +851,6 @@ const SkarduPage = () => {
 								{/* Text Content */}
 								<div 
 									className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'} ${idx % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}`}
-									style={{
-										opacity: visibleSections.has('destinations') ? 1 : 0,
-										transform: visibleSections.has('destinations') 
-											? 'translateX(0)' 
-											: destination.imageLeft 
-												? 'translateX(60px)' 
-												: 'translateX(-60px)',
-										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.2}s, transform 0.8s ease-out ${idx * 0.15 + 0.2}s`
-									}}
 								>
 									<div className="max-w-[80%] mx-auto">
 										<h3 className={`text-xl md:text-2xl font-bold mb-3 capitalize ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
