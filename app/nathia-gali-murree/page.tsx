@@ -688,106 +688,100 @@ const NathiaGaliMurreePage = () => {
 								imageLeft: true
 							},
 							{ 
-								title: 'Malam Jabba', 
-								image: '/images/malam jabba.jpg',
-								description: 'This is a popular hilltop ski resort located about an hour or two from Mingora City. When it snows, you can enjoy skiing, a fun chair lift ride, and zip lining. It\'s the perfect spot for winter sports and has hotels available for your stay.',
+								title: 'Murree Mall Road and GPO Chowk', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'The Mall Road (also known as "Jinnah Road") is the lively main street built by the British founders of the town. It is always buzzing with tourists enjoying the shops, local restaurants, and engaging activities like horse riding and safari train rides. The GPO Chowk (General Post Office) is the busy heart of the Mall Road, always full of hustle and bustle.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Ushu Forest (Ushu Valley)', 
-								image: '/images/Ushu Forest.jpg',
-								description: 'Just 8 km from Kalam, this forest is famous for its thick, dense Deodar trees. It\'s easy to reach even without a car and you\'ll find small shops, hotels, and places to camp along the road. It\'s a beautiful, shady spot for a walk and a great place to enjoy the fresh air.',
+								title: 'Pindi Point', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'This location is a popular spot to get a high, aerial view of the twin cities of Islamabad and Rawalpindi. It\'s just a short 15 minute walk from the Mall Road, making it easy to reach. Pindi Point is most famous for its Chairlift ride, which offers a delightful trip over the pine forest to Bansara Gali.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Matiltan Waterfall and Chashma-e-Shifa', 
-								image: '/images/Matiltan Waterfall.jpg',
-								description: 'The road leads up to Matiltan Village, where you can see the stunning waterfall and a seasonal glacier. There are hotels and restaurants here, and a special spring called Chashma-e-Shifa (Healing Fountain). Locals believe the water from this fountain has unique healing properties due to its minerals.',
+								title: 'Kashmir Point', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Kashmir Point is a peaceful 15-minute walk from the Mall Road, offering a different kind of view. From here, you can see the high, panoramic mountains of Azad Kashmir and Indian occupied Kashmir, including Srinagar. Tourists love the Murree Safari Train here, which gives a guided scenic ride to the Government House at Jhika Gali.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Mahodand Lake', 
-								image: '/images/Mahodand Lake.jpg',
-								description: 'This is a beautiful, large glacial lake formed by melting ice from the Hindukush Mountains. It\'s great for summer visits but closes completely in winter because heavy snow blocks the road. You can find small shops, restaurants, and meadows perfect for camping near the water.',
+								title: 'Patriata and Patriata Chairlift (New Murree)', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Also called "New Murree," Patriata is about 15 km away, known for its thick surrounding forests. Its main attraction is the famous Patriata Chairlift and Cable Car ride, which gives thrilling views high over the dense forest. This area has also developed with many modern hotels, resorts and restaurants for visitors.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Saifullah Lake', 
-								image: '/images/Saifullah Lake.jpg',
-								description: 'This lake is located further into Ushu Valley, about a 30 to 45-minute journey from Mahodand Lake. You can reach it either by hiking on foot or by taking a rugged 4x4 jeep for the scenic ride. It\'s another crystal-clear, stunning alpine lake waiting to be explored.',
+								title: 'Ayubia and Ayubia National Park', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Ayubia is a small tourist town located inside the vast Ayubia National Park, covering over 8,184 acres. The park was created in 1984 to protect the unique wildlife, lush green forests and medicinal plants of the area. Ayubia is the starting point for two famous mountain hikes the Mushkpuri and Miranjani treks.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Desan Meadows', 
-								image: '/images/Desan Meadows.jpg',
-								description: 'These meadows are near Kalam and offer stunning, lush green fields and heavenly views. You can reach this beautiful spot by taking a jeep ride from either Kalam or Utror Valley. It\'s surrounded by other stunning sites like Godar, Dararo, and Zahro Lakes.',
+								title: 'Khanaspur', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'This is a nearby tourist spot, about a 10-minute drive from Ayubia, offering a quieter and calmer atmosphere. Famous attractions include an old Nawab Ashiq Hussain Qureshi Cricket Ground and the historic Virgin Mary Catholic Church. It also offers budget-friendly accommodation at the old Pakistan Youth Hostel.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Green Top', 
-								image: '/images/Green Top (Boyun Village).jpg',
-								description: 'Also known as the "Kalam View Point," this spot is famous for its mesmerizing panoramic views. It\'s accessible by jeep or by enjoying a scenic hike to the top. A small place called Boyun Village is up here, known for its beautiful green surroundings in the summer.',
+								title: 'Nathia Gali', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Nathia Gali is the main highlight of the Galiyat Region, located about 35 km from Murree. It\'s the starting point for two major hiking tracks the Miranjani and Mukshpuri Tops.You must visit the 100 year old St. Matthew\'s Church and try the world famous original Patakha Chicken at Taj Mahal Hotel.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Utror Valley', 
-								image: '/images/swat.jpg',
-								description: 'Utror is a great central base camp for exploring many lesser-known valleys nearby. It\'s the gateway to beautiful spots like Gabral Valley, Kumrat Valley, and Dhan Valley. You can also visit gorgeous alpine lakes from here, including Kundol Lake and the twin lakes of Pari and Paristan.',
+								title: 'Mukshpuri Top', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'This is the second-highest hilltop in the Galiyat region, standing at 9,200 feet, located within Ayubia National Park. There are two tracks for hikers: one starting from Dunga Gali and the other from Nathia Gali. The hike is relatively easy (1-2 hours) and on a clear day, you can even catch a glimpse of the majestic Nanga Parbat.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Gabral Valley', 
-								image: '/images/Gabral Valley.jpg',
-								description: 'This beautiful valley is northwest of Swat and Utror, touching the lower parts of the Himalayas. If you travel deep inside, you\'ll discover lovely spots like Chota Banda Meadows and Shahi Bagh. Gabral Valley truly feels like a hidden slice of paradise for nature lovers and tourists.',
+								title: 'Miranjani Top', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'At 9,816 feet, Miranjani is the highest hilltop in the entire Galiyat region, perfect for serious adventure lovers. The main track starts just a short drive from Nathia Gali and takes about 1-3 hours to complete. Completing this 4.96 km trail rewards hikers with the best possible mountain views in the area.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Blue Water Kalam Swat', 
-								image: '/images/Blue Water Point.jpg',
-								description: 'This spot is about 10-15 km from Kalam and takes around two hours to reach by jeep. It is a popular summer getaway known for its crystal-clear water flow. It gained extra fame after a visit by the former Prime Minister of Pakistan, Mr. Imran Khan.',
+								title: 'Pipeline Track Ayubia', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'This is an easy, scenic track that runs from Dunga Gali to Ayubia Bazaar, perfect for beginners and families. It was built during the British era to carry water supplies via a pipeline, giving the track its name. It\'s a wonderful way to walk through the peaceful forest with minimal effort.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Badgoi Pass', 
-								image: '/images/Badgoi Pass.jpg',
-								description: 'Badgoi is a high mountain pass that links Kalam with the Upper Dir District. It leads directly to Thal in Upper Dir, and you\'ll pass through "heavenly places" like Hawa ka Darra. This scenic jeep journey from Kalam or Kumrat takes about 4–5 hours.',
+								title: 'Ayubia Moto Tunnel', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'This unique British era stone tunnel was built in 1891 for water supply, but was hidden for decades. It was recently discovered, restored, and reopened in 2021, instantly attracting huge numbers of tourists.The tunnel is 250 feet long, giving a fun, unique historical experience connecting Ayubia and Khaira Gali.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Shangla Top', 
-								image: '/images/Shangla Top.jpg',
-								description: 'This is a breathtaking hilltop destination located on the N90 Highway, about 20 km from Khwazakhela. It connects the region of Kohistan with Swat Valley, offering amazing mountain scenery. The best time to visit and enjoy the views is usually during spring and summer.',
+								title: 'Bhurban and PC Bhurban Hotel', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Bhurban is a small hill station known for its peaceful, lush green forest surroundings. Its biggest attraction is the PC Bhurban Hotel, a 5 star resort famous as a luxury holiday destination in Pakistan. This area is a perfect retreat for those seeking calm, upscale stays away from the Murree bustle.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Khwazakhela to Besham Route', 
-								image: '/images/swat.jpg',
-								description: 'This is the N90 Highway, a route connecting Swat to the Kohistan region. It stretches for about 65–70 km, starting at Khwazakhela City and ending at Besham City. This highway is essential and used frequently by both local traders and tourists.',
+								title: 'Changla Gali', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Changla Gali is a beautiful, quieter hill station located in the Galiyat region. It offers stunning views and a serene environment, making it a peaceful retreat away from the crowds. It is a popular spot for visitors looking for calm stays, particularly when the area is covered in snow.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Bahrain', 
-								image: '/images/swat.jpg',
-								description: 'Bahrain sits where the Daral and Swat Rivers meet on the main highway to Kalam. It was a beautiful tourist spot with a lively market, but the 2022 floods caused significant damage. From here, you can start the journey to visit Daral and Saidgai Lakes.',
+								title: 'Kuza Gali', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Kuza Gali is another small, charming tourist spot along the scenic route of the Galiyat. It features a pleasant, relaxed atmosphere and its own unique local flavor and views. Visitors enjoy this location for its tranquility and easy access to the surrounding forest areas.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Swat River', 
-								image: '/images/Swat River.jpg',
-								description: 'The river is mainly formed by the melting glacial waters flowing from the Hindukush Mountains. Its biggest feeding rivers are the Gabral, Utror, and Ushu Rivers. The Swat River travels throughout the valley, eventually joining the Panjkora River and flowing toward Peshawar.',
+								title: 'Ghora Gali', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Ghora Gali is historically significant and is a quieter town in the Murree region. It is well known for being home to some older structures and providing a peaceful environment for tourists. Many visitors choose Ghora Gali for a relaxing stay with quick access to the main attractions of Murree.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Swat Expressway', 
-								image: '/images/Swat Expressway.jpg',
-								description: 'This modern highway (also called the N95 Highway) runs from Chakdara City all the way up to Kalam. It was finished in 2019 and has made a huge difference in the ease of travel to the valley. The highway has played a significant role in boosting tourism and accessibility to the region.',
+								title: 'Jhika Gali', 
+								image: '/images/murree and nathia gali.jpg',
+								description: 'Jhika Gali is a small, bustling stop often included in Murree and Galiyat tours. It is easily accessible and acts as a central point near tourist attractions like the Government House. This area offers a variety of local shops and small eateries for travelers to stop and enjoy.',
 								imageLeft: true
-							},
-							{ 
-								title: 'White Palace Swat', 
-								image: '/images/White Palace Swat.jpg',
-								description: 'The beautiful White Palace was built in 1940 by the ruler (Wali) of Swat Valley. It is located in Marghazar, only about 13 kilometers from the capital, Saidu Sharif. The historic palace now operates as a stunning hotel, warmly welcoming guests.',
-								imageLeft: false
 							},
 						].map((destination, idx) => (
 							<div 
