@@ -1131,43 +1131,6 @@ const HunzaPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== BEST TIME TO VISIT HUNZA ====================== */}
-			<section 
-				data-section-id="best-time"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('best-time') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-8">
-						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Best Time to Visit Hunza
-						</h2>
-					</div>
-					
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border" style={{ borderColor: `${primaryOrange}30` }}>
-							<div className="p-6">
-								<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
-									Cherry Blossom (March–April)
-								</h3>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									The valley turns pink and white ideal for photography and peaceful walks.
-								</p>
-							</div>
-						</div>
-						
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border" style={{ borderColor: `${primaryOrange}30` }}>
-							<div className="p-6">
-								<h3 className="text-xl font-bold mb-3" style={{ color: secondaryBlack }}>
-									Autumn (October–November)
-								</h3>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Golden leaves and dramatic mountain views Hunza at its most colorful.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 
 			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
 			<section 
