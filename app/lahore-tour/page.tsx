@@ -1098,7 +1098,7 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					{/* Main Title */}
 					<div className="text-center mb-6">
-						<h2 className="text-xl md:text-2xl font-bold" style={{ color: secondaryBlack }}>
+						<h2 className="text-1xl md:text-3xl font-bold" style={{ color: secondaryBlack }}>
 							Guided Lahore Tour Packages / Lahore City Tour
 						</h2>
 					</div>
