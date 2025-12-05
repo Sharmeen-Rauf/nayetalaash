@@ -1260,10 +1260,6 @@ const LahoreTourPage = () => {
 
 						{/* Center Content */}
 						<div className="lg:col-span-4">
-							<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-								Best Lahore Tour Packages / Lahore City Tour
-							</h3>
-							
 							<div className="bg-white rounded-lg shadow-md p-2">
 								{[
 									'Old Lahore Historical Tour',
