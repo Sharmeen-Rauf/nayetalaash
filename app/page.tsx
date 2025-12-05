@@ -854,12 +854,31 @@ const Page = () => {
 								</div>
 							</div>
 						</div>
-						<a href="#city-tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative group ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
-							<span className="flex items-center gap-1">
+						{/* CITY TOURS with Dropdown */}
+						<div className="relative group">
+							<a href="#city-tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
 								CITY TOURS
 								<ChevronRight className="w-4 h-4 rotate-90" />
-							</span>
-						</a>
+							</a>
+							
+							{/* Dropdown Menu */}
+							<div className="absolute top-full left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+								<div className="bg-white border border-gray-200 shadow-xl rounded-md overflow-hidden">
+									<ul className="py-1">
+										<li>
+											<Link href="/karachi-tour" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												Karachi Tour
+											</Link>
+										</li>
+										<li>
+											<Link href="/lahore-tour" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
+												Lahore Tour
+											</Link>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 						<Link href="/group-tours" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>GROUP TOUR</Link>
 						
 						{/* DESTINATION with Multi-Level Dropdown */}
@@ -1128,9 +1147,12 @@ const Page = () => {
 						</button>
 						{mobileDropdownOpen === 'city-tours' && (
 							<div className="pl-4 pr-2 py-2 space-y-1">
-								<a href="#city-tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); }}>
-									City Tour Packages
-								</a>
+								<Link href="/karachi-tour" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									Karachi Tour
+								</Link>
+								<Link href="/lahore-tour" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+									Lahore Tour
+								</Link>
 							</div>
 						)}
 					</div>
