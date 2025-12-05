@@ -1097,8 +1097,8 @@ const LahoreTourPage = () => {
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					{/* Main Title */}
-					<div className="text-center mb-6 py-3" style={{ backgroundColor: '#4a5568' }}>
-						<h2 className="text-xl md:text-2xl font-bold text-white">
+					<div className="text-center mb-6">
+						<h2 className="text-xl md:text-2xl font-bold" style={{ color: secondaryBlack }}>
 							Guided Lahore Tour Packages / Lahore City Tour
 						</h2>
 					</div>
@@ -1106,7 +1106,7 @@ const LahoreTourPage = () => {
 					{/* Three Column Layout: Image - List - Image */}
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-3 items-start max-w-7xl mx-auto mt-4">
 						{/* Left Image */}
-						<div className="lg:col-span-4 hidden lg:block">
+						<div className="lg:col-span-3 hidden lg:block">
 							<div className="relative w-full h-[400px] rounded overflow-hidden">
 								<Image 
 									src="/images/lahore.jpg"
@@ -1118,7 +1118,7 @@ const LahoreTourPage = () => {
 						</div>
 
 						{/* Center Content */}
-						<div className="lg:col-span-4">
+						<div className="lg:col-span-6">
 							<div className="bg-white rounded">
 								{[
 									'Old Lahore Historical Tour',
@@ -1136,7 +1136,7 @@ const LahoreTourPage = () => {
 										key={idx}
 										className="py-2 px-3"
 										style={{ 
-											backgroundColor: idx % 2 === 0 ? '#e5e7eb' : 'white',
+											backgroundColor: idx % 2 === 0 ? '#fff4e6' : 'white',
 										}}
 									>
 										<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
@@ -1148,7 +1148,7 @@ const LahoreTourPage = () => {
 						</div>
 
 						{/* Right Image */}
-						<div className="lg:col-span-4 hidden lg:block">
+						<div className="lg:col-span-3 hidden lg:block">
 							<div className="relative w-full h-[400px] rounded overflow-hidden">
 								<Image 
 									src="/images/lahore.jpg"
