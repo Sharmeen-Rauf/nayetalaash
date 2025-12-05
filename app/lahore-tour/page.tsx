@@ -436,20 +436,16 @@ const LahoreTourPage = () => {
 			</section>
 
 			{/* ====================== LAHORE GUIDED CITY TOURS 2025 ====================== */}
-			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+			<section 
+				data-section-id="guided-tours"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('guided-tours') ? 'revealed' : ''}`}
+			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4">
-						<h2 className="text-3xl md:text-4xl font-bold mb-6">
-							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: primaryOrange,
-								paddingLeft: '8px',
-								paddingRight: '8px',
-								display: 'inline-block'
-							}}>
-								Lahore Guided City Tours 2025
-							</span>
+					<div className="max-w-4xl mx-auto mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
+							Lahore Guided City Tours 2025
 						</h2>
-						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							These Lahore City Tour, Walled City Lahore Tour and Lahore City Guided Tours are curated for you to have the real essence of the Walled City of Lahore. You can enjoy the Rangeela Rickshaw Ride in Lahore, the Lahore Old City Bus Tour, Heritage Walk through Old Streets of Lahore, the Walking Tour of Lahore City, the British Colonial Architecture Lahore Tour, the Old Lahore Historical Tour, the Sufi Heritage Tour Lahore, the Sikh Heritage Tour Lahore, the Mughal History Tour Lahore, the Lahore Food Street Tour and the Androon Lahore Food Tour with these Lahore City Tour Packages. You can also customize them to your requirements as needed.
 						</p>
 					</div>
