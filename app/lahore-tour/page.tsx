@@ -8,6 +8,10 @@ import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, Chevr
 const LahoreTourPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
+	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
+	const [hoveredImageIndex, setHoveredImageIndex] = useState<number | null>(null);
+	const [showAllPackages, setShowAllPackages] = useState(false);
+	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
 	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 
 	// Theme Colors
@@ -33,6 +37,33 @@ const LahoreTourPage = () => {
 		handleScroll();
 		window.addEventListener('scroll', handleScroll, { passive: true });
 		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
+	// Intersection Observer for scroll animations
+	useEffect(() => {
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const targetId = entry.target.getAttribute('data-section-id');
+					if (targetId) {
+						setVisibleSections((prev) => new Set(prev).add(targetId));
+					}
+				}
+			});
+		}, observerOptions);
+
+		// Observe all sections with data-section-id
+		const sections = document.querySelectorAll('[data-section-id]');
+		sections.forEach((section) => observer.observe(section));
+
+		return () => {
+			sections.forEach((section) => observer.unobserve(section));
+		};
 	}, []);
 
 	// Animated Background Component
@@ -519,6 +550,582 @@ const LahoreTourPage = () => {
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== PUBLIC LAHORE TOUR PACKAGES ====================== */}
+			<section 
+				data-section-id="public-packages"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('public-packages') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
+							Public Lahore Tour Packages
+						</h2>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Join our fixed departure group tours to explore Lahore. Perfect for solo travelers, friends, and families who want to discover the cultural capital of Pakistan together.
+						</p>
+					</div>
+
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+							<div className="relative w-full aspect-[16/9] overflow-hidden">
+								<Image 
+									src="/images/lahore.jpg"
+									alt="1 Day Lahore City Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-500"
+								/>
+							</div>
+							<div className="p-4">
+								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									1 Day Lahore City Tour
+								</p>
+							</div>
+						</div>
+
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+							<div className="relative w-full aspect-[16/9] overflow-hidden">
+								<Image 
+									src="/images/lahore.jpg"
+									alt="2 Days Lahore Heritage Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-500"
+								/>
+							</div>
+							<div className="p-4">
+								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									2 Days Lahore Heritage Tour
+								</p>
+							</div>
+						</div>
+					</div>
+
+					{/* Who Are These Tours For Section */}
+					<div className="max-w-4xl mx-auto mb-8">
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Who Are These Tours For?
+						</h3>
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+							<div>
+								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
+									Couples & Honeymooners
+								</h4>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Romantic walks through Mughal gardens, sunset views from historical monuments, and intimate dining experiences.
+								</p>
+							</div>
+							<div>
+								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
+									Families
+								</h4>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Family-friendly tours with engaging stories, interactive experiences, and safe, comfortable travel for all ages.
+								</p>
+							</div>
+							<div>
+								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
+									Students & Friends
+								</h4>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Educational tours, group activities, and fun experiences exploring Lahore's history and culture.
+								</p>
+							</div>
+							<div>
+								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
+									Corporate Groups
+								</h4>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Team building experiences, professional networking tours, and corporate retreats in Lahore.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					{/* Departure Cities Section */}
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Departure Cities
+						</h3>
+						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							We provide tours starting from:
+						</p>
+						<ul className="space-y-3 mb-4">
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Lahore (Local Tours)
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Karachi
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Islamabad
+								</p>
+							</li>
+							<li className="flex items-center gap-3">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Custom departures available for other cities as well.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== TOP PLACES TO VISIT IN LAHORE ====================== */}
+			<section 
+				data-section-id="destinations"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							Top Places to Visit in Lahore
+						</h2>
+						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Lahore is a city rich in history, culture, and architectural marvels. Here are the must-visit attractions included in our tours:
+						</p>
+					</div>
+					
+					<div className="space-y-8">
+						{[
+							{ 
+								title: 'Lahore Fort (Shahi Qila)', 
+								image: '/images/lahore.jpg',
+								description: 'A UNESCO World Heritage Site, this magnificent fort was built during the Mughal era. It features beautiful palaces, gardens, and the iconic Sheesh Mahal (Palace of Mirrors).',
+								imageLeft: true
+							},
+							{ 
+								title: 'Badshahi Mosque', 
+								image: '/images/lahore.jpg',
+								description: 'One of the largest mosques in the world, built by Emperor Aurangzeb in 1673. It can accommodate up to 100,000 worshippers and offers stunning views of the Lahore Fort.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Walled City of Lahore', 
+								image: '/images/lahore.jpg',
+								description: 'The historic heart of Lahore, featuring narrow streets, ancient gates, bustling bazaars, and traditional architecture that tells stories of centuries past.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Shalimar Gardens', 
+								image: '/images/lahore.jpg',
+								description: 'A UNESCO World Heritage Site, these beautiful Mughal gardens were built by Emperor Shah Jahan in 1641. They feature terraced gardens, fountains, and stunning architectural elements.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Lahore Museum', 
+								image: '/images/lahore.jpg',
+								description: 'One of Pakistan\'s oldest museums, housing an impressive collection of artifacts, including the famous "Fasting Buddha" sculpture and Mughal era relics.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Minar-e-Pakistan', 
+								image: '/images/lahore.jpg',
+								description: 'A national monument built at the site where the Lahore Resolution was passed in 1940. It stands as a symbol of Pakistan\'s independence movement.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Wagah Border', 
+								image: '/images/lahore.jpg',
+								description: 'The only road border crossing between Pakistan and India. Visitors can witness the daily flag-lowering ceremony, a colorful and patriotic display.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Food Street (Fort Road)', 
+								image: '/images/lahore.jpg',
+								description: 'A vibrant street food destination offering traditional Lahori cuisine including nihari, paye, and kebabs, with a stunning view of the Badshahi Mosque.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Anarkali Bazaar', 
+								image: '/images/lahore.jpg',
+								description: 'One of the oldest markets in South Asia, named after Anarkali. It offers everything from traditional clothing to jewelry, spices, and local handicrafts.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Lahore Zoo', 
+								image: '/images/lahore.jpg',
+								description: 'One of the largest zoos in Pakistan, established in 1872. It houses a variety of animals and is a popular family destination.',
+								imageLeft: false
+							},
+							{ 
+								title: 'Jahangir\'s Tomb', 
+								image: '/images/lahore.jpg',
+								description: 'The mausoleum of the fourth Mughal Emperor Jahangir, located in Shahdara Bagh. It features beautiful Persian-style architecture and gardens.',
+								imageLeft: true
+							},
+							{ 
+								title: 'Lahore Railway Station', 
+								image: '/images/lahore.jpg',
+								description: 'A magnificent example of British colonial architecture, built in the 1860s. It\'s one of the most beautiful railway stations in South Asia.',
+								imageLeft: false
+							},
+						].map((destination, idx) => (
+							<div 
+								key={idx} 
+								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
+								style={{
+									opacity: visibleSections.has('destinations') ? 1 : 0,
+									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
+								}}
+							>
+								<div 
+									className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'} ${idx % 2 === 0 ? 'lg:ml-8' : 'lg:mr-8'}`}
+									style={{
+										opacity: visibleSections.has('destinations') ? 1 : 0,
+										transform: visibleSections.has('destinations') 
+											? 'translateX(0)' 
+											: destination.imageLeft 
+												? 'translateX(-60px)' 
+												: 'translateX(60px)',
+										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.1}s, transform 0.8s ease-out ${idx * 0.15 + 0.1}s`
+									}}
+								>
+									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
+										<Image 
+											src={destination.image}
+											alt={destination.title}
+											fill
+											className="object-cover transition-transform duration-700 hover:scale-110"
+										/>
+									</div>
+								</div>
+								
+								<div 
+									className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'} ${idx % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}`}
+									style={{
+										opacity: visibleSections.has('destinations') ? 1 : 0,
+										transform: visibleSections.has('destinations') 
+											? 'translateX(0)' 
+											: destination.imageLeft 
+												? 'translateX(60px)' 
+												: 'translateX(-60px)',
+										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.2}s, transform 0.8s ease-out ${idx * 0.15 + 0.2}s`
+									}}
+								>
+									<div className="max-w-[80%] mx-auto">
+										<h3 className={`text-xl md:text-2xl font-bold mb-3 capitalize ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
+											{destination.title}
+										</h3>
+										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{destination.description}
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== HISTORICAL SITES IN LAHORE ====================== */}
+			<section 
+				data-section-id="historical-sites"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-sites') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="w-full">
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Some Other Historical and Heritage Sites in Lahore:
+						</h3>
+
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
+							{[
+								'Hazuri Bagh',
+								'Naulakha Pavilion',
+								'Lahore Fort Gates',
+								'Delhi Gate',
+								'Roshnai Gate',
+								'Bhatti Gate',
+								'Mochi Gate',
+								'Taxali Gate',
+								'Gulabi Bagh Gateway',
+								'Chauburji',
+								'Tomb of Allama Iqbal',
+								'Masjid Wazir Khan',
+							].map((item, idx) => (
+								<div 
+									key={idx} 
+									className="transition-all duration-500 cursor-pointer group rounded-lg w-full scroll-reveal-fade-up"
+									style={{ 
+										backgroundColor: 'white',
+										border: `2px solid ${primaryOrange}`,
+										height: '56px',
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'center',
+										paddingLeft: '2rem',
+										paddingRight: '2rem',
+										minWidth: '100%',
+										opacity: visibleSections.has('historical-sites') ? 1 : 0,
+										transform: visibleSections.has('historical-sites') ? 'translateY(0)' : 'translateY(20px)',
+										transitionDelay: `${idx * 0.05}s`
+									}}
+									onMouseEnter={(e) => {
+										e.currentTarget.style.backgroundColor = primaryOrange;
+										e.currentTarget.style.transform = 'translateY(-2px)';
+										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+										if (pElement) pElement.style.color = secondaryBlack;
+									}}
+									onMouseLeave={(e) => {
+										e.currentTarget.style.backgroundColor = 'white';
+										e.currentTarget.style.transform = 'translateY(0)';
+										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+										if (pElement) pElement.style.color = secondaryBlack;
+									}}
+								>
+									<p className="leading-normal transition-colors duration-300 text-center capitalize" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
+										{item}
+									</p>
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== CULTURE OF LAHORE ====================== */}
+			<section 
+				data-section-id="culture"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
+						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Culture of Lahore:
+						</h3>
+						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+							Lahore is known as the cultural capital of Pakistan, famous for its rich heritage, traditional crafts, music, literature, and cuisine. The city has a vibrant arts scene, with numerous festivals, theaters, and cultural events throughout the year. Lahori people are known for their warmth, hospitality, and love for food and poetry.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== THE ECONOMY OF LAHORE ====================== */}
+			<section 
+				data-section-id="economy"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
+						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							The Economy of Lahore:
+						</h3>
+						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+							Lahore is the second-largest economy in Pakistan, with a diverse economic base including textiles, IT, finance, agriculture, and manufacturing. The city is also a major hub for education, healthcare, and tourism, contributing significantly to Pakistan's GDP.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== EDUCATIONAL IN LAHORE ====================== */}
+			<section 
+				data-section-id="educational"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
+						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Educational in Lahore:
+						</h3>
+						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+							Lahore is home to some of Pakistan's most prestigious educational institutions, including the University of the Punjab, Lahore University of Management Sciences (LUMS), Government College University, and many other universities and colleges. The city has a rich tradition of learning and scholarship.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== THINGS TO DO IN LAHORE ====================== */}
+			<section 
+				data-section-id="things-to-do"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Lahore</span>
+						</h2>
+					</div>
+					
+					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
+						{[
+							{
+								image: '/images/lahore.jpg',
+								title: 'Explore Mughal Architecture',
+								description: 'Visit the stunning Lahore Fort, Badshahi Mosque, and Shalimar Gardens to witness magnificent Mughal era architecture'
+							},
+							{
+								image: '/images/lahore.jpg',
+								title: 'Wander Through Walled City',
+								description: 'Take a heritage walk through the narrow streets of the old city, visit ancient gates, and shop at traditional bazaars'
+							},
+							{
+								image: '/images/lahore.jpg',
+								title: 'Savor Lahori Cuisine',
+								description: 'Experience the famous Food Street, taste traditional dishes like nihari, paye, and kebabs at authentic local eateries'
+							},
+							{
+								image: '/images/lahore.jpg',
+								title: 'Visit Museums & Galleries',
+								description: 'Explore Lahore Museum, visit art galleries, and learn about the rich history and culture of the region'
+							},
+							{
+								image: '/images/lahore.jpg',
+								title: 'Attend Cultural Events',
+								description: 'Enjoy traditional music performances, attend festivals, and experience the vibrant cultural scene of Lahore'
+							},
+						].map((item, idx) => (
+							<div 
+								key={idx} 
+								className={`relative h-[300px] md:h-[350px] overflow-hidden transition-all duration-700 ease-in-out scroll-reveal-fade-in cursor-pointer ${
+									hoveredImageIndex === idx 
+										? 'flex-[2.5]' 
+										: hoveredImageIndex !== null 
+											? 'flex-[0.6]' 
+											: 'flex-1'
+								} ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
+								style={{
+									transitionDelay: `${idx * 0.1}s`
+								}}
+								onMouseEnter={() => setHoveredImageIndex(idx)}
+								onMouseLeave={() => setHoveredImageIndex(null)}
+							>
+								<Image 
+									src={item.image}
+									alt={item.title}
+									fill
+									className="object-cover transition-transform duration-500"
+									style={{ transform: hoveredImageIndex === idx ? 'scale(1.1)' : 'scale(1)' }}
+								/>
+								<div 
+									className={`absolute inset-0 transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'bg-black/50' 
+											: 'bg-black/20'
+									}`}
+								></div>
+								<div 
+									className={`absolute inset-0 flex flex-col justify-center items-center text-white transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'opacity-100 translate-y-0' 
+											: 'opacity-0 translate-y-4'
+									}`}
+								>
+									<div className="text-center px-4">
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
+											{item.title}
+										</h3>
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<p className="text-sm md:text-base opacity-90 max-w-xs">
+											{item.description}
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
+			<section 
+				data-section-id="faq"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('faq') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
+					<div className="text-center mb-6">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							Frequently Asked Question
+						</h2>
+					</div>
+					
+					<div className="space-y-0">
+						{[
+							{
+								question: 'What is the best time to visit Lahore?',
+								answer: 'Lahore can be visited throughout the year, but the best time is during winter (October to March) when the weather is pleasant and cool.'
+							},
+							{
+								question: 'How many days are enough to explore Lahore?',
+								answer: 'A minimum of 2-3 days is recommended to explore the major attractions, but 4-5 days allow for a more relaxed and comprehensive experience.'
+							},
+							{
+								question: 'Is Lahore safe for tourists?',
+								answer: 'Yes, Lahore is generally safe for tourists. It\'s advisable to follow local guidelines and use reputable tour operators for guided tours.'
+							},
+							{
+								question: 'What should I wear while visiting Lahore?',
+								answer: 'Dress modestly, especially when visiting religious sites. Light, comfortable clothing in summer and warm layers in winter are recommended.'
+							},
+							{
+								question: 'Can I visit the Walled City on my own?',
+								answer: 'Yes, but we highly recommend a guided tour to fully appreciate the history, architecture, and hidden gems of the Walled City.'
+							},
+							{
+								question: 'What is included in the tour packages?',
+								answer: 'Tour packages typically include transportation, professional guide, entrance fees to monuments, and sometimes meals, depending on the package selected.'
+							},
+							{
+								question: 'Are photography and videography allowed?',
+								answer: 'Yes, photography is allowed at most tourist sites. Some places may have restrictions or require additional fees for professional photography.'
+							},
+							{
+								question: 'What local dishes should I try in Lahore?',
+								answer: 'Don\'t miss nihari, paye, kebabs, biryani, and traditional sweets. Food Street near Badshahi Mosque is a must-visit for authentic Lahori cuisine.'
+							},
+							{
+								question: 'Do you offer custom tour packages?',
+								answer: 'Yes, all our tour packages can be customized according to your preferences, schedule, and interests.'
+							},
+							{
+								question: 'How do I book a tour?',
+								answer: 'You can book through our website, contact us via WhatsApp, email, or phone. We also offer online booking options for convenience.'
+							},
+						].map((faq, idx) => (
+							<div 
+								key={idx} 
+								className="border-b border-gray-300 scroll-reveal-fade-up"
+								style={{
+									opacity: visibleSections.has('faq') ? 1 : 0,
+									transform: visibleSections.has('faq') ? 'translateY(0)' : 'translateY(20px)',
+									transition: `opacity 0.6s ease-out ${idx * 0.1}s, transform 0.6s ease-out ${idx * 0.1}s`
+								}}
+							>
+								<button
+									onClick={() => setOpenFAQIndex(openFAQIndex === idx ? null : idx)}
+									className="w-full flex items-center justify-between py-3 text-left transition-all duration-300 hover:opacity-80"
+								>
+									<span className="flex items-center gap-3 flex-1">
+										<ChevronDown 
+											className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${openFAQIndex === idx ? 'rotate-180' : ''}`}
+											style={{ color: secondaryBlack }}
+										/>
+										<span className="font-medium leading-normal text-left" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+											{faq.question}
+										</span>
+									</span>
+								</button>
+								{openFAQIndex === idx && (
+									<div className="pb-3 pl-7 animate-fadeIn text-left" style={{ animation: 'fadeIn 0.3s ease-in' }}>
+										<p className="leading-normal whitespace-pre-line text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+											{faq.answer}
+										</p>
+									</div>
+								)}
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
