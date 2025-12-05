@@ -857,18 +857,18 @@ const LahoreTourPage = () => {
 			{/* ====================== MORE ABOUT LAHORE CITY ====================== */}
 			<section 
 				data-section-id="more-about-lahore"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about-lahore') ? 'revealed' : ''}`}
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about-lahore') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto mb-8">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
+					<div className="max-w-4xl mx-auto mb-4">
+						<h2 className="text-2xl md:text-3xl font-bold mb-3 text-center" style={{ color: secondaryBlack }}>
 							More About Lahore City
 						</h2>
-						<div className="space-y-4">
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+						<div className="space-y-2">
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								Lahore, one of the oldest and most historically rich cities in South Asia, boasts a legacy spanning over 3000-3500 years. Despite facing numerous challenges throughout its history, Lahore has always emerged stronger, earning the nickname "Zinda Dilan e Lahore" (Lahore with Lively Hearts). Today, it stands as a vibrant metropolis, known for its bustling streets, lively markets, magnificent architecture, and the warm hospitality of its people.
 							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								The city has witnessed the rise and fall of countless empires, each leaving behind a unique architectural and cultural imprint. From ancient Hindu mythology to Mughal grandeur, from Sikh rule to British colonialism, Lahore has absorbed diverse influences, creating a rich tapestry of history, culture, and heritage that continues to thrive in the modern era.
 							</p>
 						</div>
@@ -879,17 +879,17 @@ const LahoreTourPage = () => {
 			{/* ====================== A BRIEF HISTORY OF THE WALLED CITY OF LAHORE ====================== */}
 			<section 
 				data-section-id="walled-city-history"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('walled-city-history') ? 'revealed' : ''}`}
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('walled-city-history') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							A Brief History of the Walled City of Lahore
 						</h3>
-						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							According to ancient Hindu mythology, the Walled City of Lahore was founded by Lav (Loh), one of the twin sons of the Hindu god Ram. It is said that Lav established Lavapuri (the present-day Walled City of Lahore), while his brother Kusha founded the nearby city of Kasur. However, this origin story is widely considered a myth, as concrete historical evidence only dates back to the 11th century when Mahmood Ghaznavi became victorious and established Muslim rule in the region.
 						</p>
-						<p className="leading-normal text-justify mt-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+						<p className="leading-normal text-justify mt-2" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							The Walled City, with its ancient gates, narrow alleys, and historic structures, has been the heart of Lahore for centuries. Its fortifications, originally built for defense, now serve as a living testament to the city's rich and complex history, attracting historians, archaeologists, and tourists from around the world.
 						</p>
 					</div>
@@ -899,24 +899,24 @@ const LahoreTourPage = () => {
 			{/* ====================== OTHER HISTORICAL NAMES OF LAHORE CITY ====================== */}
 			<section 
 				data-section-id="historical-names"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-names') ? 'revealed' : ''}`}
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-names') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Other Historical Names of Lahore City
 						</h3>
-						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Throughout its long history, Lahore has been known by various names. Some of the historical names associated with the city include:
 						</p>
-						<ul className="list-disc list-inside mt-4 space-y-2">
-							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Mehmood Puri</li>
-							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lohpur</li>
-							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lavapuri</li>
-							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lohawar</li>
-							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lohkot</li>
-							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lavakot</li>
-							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lavapur</li>
+						<ul className="list-disc list-inside mt-2 space-y-1">
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Mehmood Puri</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lohpur</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lavapuri</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lohawar</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lohkot</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lavakot</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lavapur</li>
 						</ul>
 					</div>
 				</div>
@@ -925,15 +925,15 @@ const LahoreTourPage = () => {
 			{/* ====================== RULERS AND DYNASTIES THAT RULED OVER LAHORE ====================== */}
 			<section 
 				data-section-id="rulers-dynasties"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('rulers-dynasties') ? 'revealed' : ''}`}
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('rulers-dynasties') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Rulers and Dynasties That Ruled Over the Lahore City
 						</h3>
 						
-						<div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
 							{/* Image on the left */}
 							<div className="lg:col-span-1">
 								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
@@ -947,30 +947,30 @@ const LahoreTourPage = () => {
 							</div>
 							
 							{/* Content on the right */}
-							<div className="lg:col-span-2 space-y-4">
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							<div className="lg:col-span-2 space-y-2">
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Lahore has been ruled by numerous powerful dynasties and empires throughout its history. The Hindu Shahis were among the earliest known rulers, with Raja Jayapal being defeated by Mahmud Ghaznavi in 1021, marking the beginning of Muslim rule in the region.
 								</p>
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									The city experienced a golden era under Malik Ahmed Ayyaz, but Ghazni rule was eventually overthrown by Shahabuddin Ghori. This was followed by a succession of Muslim dynasties that shaped Lahore's destiny.
 								</p>
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									The Sultans under Qutubuddin Albak established their presence, followed by the Turco-Afghan Dynasty under Jalaludin Firoz Khilji. The Tughlaq Dynasty, led by Ghiyasudin Tughlaq, and the Sadaat under Khizer Khan, also left their mark. The Lodhi Dynasty, with Ibrahim Lodhi at the helm, preceded the arrival of the Mughals.
 								</p>
 							</div>
 						</div>
 
-						<div className="space-y-4">
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+						<div className="space-y-2">
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								The Mughal era, beginning with Zahirudin Babar, marked a period of unprecedented architectural and cultural development. The Mughals contributed some of the most magnificent architectural marvels, including the Lahore Fort, Badshahi Mosque, and Shalimar Gardens, which continue to attract millions of visitors today.
 							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								After the decline of the Mughal Empire, Lahore saw brief periods under Raghunath Rao of the Marathas, Nadir Shah and Ahmad Shah Abdali of the Durrani Empire. The Sikh Empire, under the legendary Maharaja Ranjit Singh, established Lahore as the capital of the Sikh Kingdom, adding another rich layer to the city's heritage.
 							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								The British took control of Lahore after the fall of the Sikh Empire, introducing Victorian-style British Colonial Architecture that stands alongside the magnificent Mughal Architecture. This architectural fusion created a unique urban landscape that reflects Lahore's complex historical journey.
 							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 								After colonial rule, Lahore became part of Pakistan, and today it stands as a vibrant cultural and intellectual hub. The city continues to evolve while preserving its rich historical legacy, serving as a bridge between its glorious past and its promising future.
 							</p>
 						</div>
@@ -981,68 +981,68 @@ const LahoreTourPage = () => {
 			{/* ====================== 13 GATES OF THE WALLED CITY OF LAHORE ====================== */}
 			<section 
 				data-section-id="gates"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('gates') ? 'revealed' : ''}`}
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('gates') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							13 Gates of the Walled City of Lahore
 						</h3>
-						<p className="leading-normal text-justify mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+						<p className="leading-normal text-justify mb-3" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							The Walled City of Lahore was once enclosed by 13 grand gates, each serving as a magnificent entry point to this historic city. While some of these gates still stand proudly as testaments to Lahore's rich architectural heritage, others were unfortunately destroyed over time. These gates, commissioned during the Mughal era, not only served as defensive structures but also as symbols of the city's grandeur and historical significance.
 						</p>
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Delhi Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Delhi Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Bhatti Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Bhatti Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lohari Gate or Lahori Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lohari Gate or Lahori Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Mori Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Mori Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Sheranwala Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Sheranwala Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Taxali Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Taxali Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Roshnai Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Roshnai Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Mochi Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Mochi Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Shah Alam Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Shah Alam Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Akbari Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Akbari Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Masti Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Masti Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Kashmiri Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Kashmiri Gate</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Yakki Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Yakki Gate</p>
 							</div>
 						</div>
 					</div>
@@ -1052,37 +1052,37 @@ const LahoreTourPage = () => {
 			{/* ====================== THE COLORFUL BAZAARS OF LAHORE CITY ====================== */}
 			<section 
 				data-section-id="bazaars"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('bazaars') ? 'revealed' : ''}`}
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('bazaars') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Colorful Bazaars of Lahore City
 						</h3>
 						
-						<div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
 							{/* Content on the left */}
-							<div className="lg:col-span-2 space-y-4">
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							<div className="lg:col-span-2 space-y-2">
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Lahore's bazaars are among the most vibrant and bustling markets in Pakistan, offering visitors a chance to experience the true essence of the city and its people. From the biggest market in Asia to the narrowest streets filled with shops, and from traditional bazaars to luxurious modern malls, Lahore's shopping scene is as diverse as its culture.
 								</p>
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									These markets are characterized by narrow streets with shops lining both sides, offering everything from unique handicrafts and traditional jewelry to shiny and traditional clothes, fancy and casual footwear, household accessories, home decor, local and branded groceries, homeopathic and herbal medicines, aromatic spices, and small food stalls serving delicious local treats.
 								</p>
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									A walking tour is the best way to explore these bazaars and truly immerse yourself in the Lahori bustle. Alternatively, you can experience the vibrant atmosphere through a Lahore Rickshaw Tour, which offers a unique and colorful way to navigate through these historic markets.
 								</p>
 								
-								<div className="mt-4">
-									<p className="leading-normal mb-3 font-semibold" style={{ color: secondaryBlack, fontSize: '16px' }}>
+								<div className="mt-2">
+									<p className="leading-normal mb-2 font-semibold" style={{ color: secondaryBlack, fontSize: '16px' }}>
 										Some famous markets in Lahore include:
 									</p>
-									<ul className="list-disc list-inside space-y-2">
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Anarkali Bazaar</li>
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Ichhra Bazaar</li>
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Shah Alami Market</li>
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Rang Mahal Bazaar</li>
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Liberty Market</li>
+									<ul className="list-disc list-inside space-y-1">
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Anarkali Bazaar</li>
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Ichhra Bazaar</li>
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Shah Alami Market</li>
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Rang Mahal Bazaar</li>
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Liberty Market</li>
 									</ul>
 								</div>
 							</div>
