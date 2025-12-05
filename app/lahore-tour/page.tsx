@@ -446,42 +446,7 @@ const LahoreTourPage = () => {
 							Lahore Guided City Tours
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							These Lahore City Tours and Walled City Guided Tours are carefully designed to give you the real heart of the old city. You can choose from unique experiences like a fun Rangeela Rickshaw Ride, a Heritage Bus Tour, or deep dives into history:
-						</p>
-						<ul className="space-y-2 mt-4">
-							<li className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									1 Day: Walking Tour of the Mughal and Sikh-Era Walled City
-								</p>
-							</li>
-							<li className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									1 Day: Lahore Guided Walled City Tour and thrilling Wahga Border Ceremony
-								</p>
-							</li>
-							<li className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									1 Day: Heritage Walk along the Royal Route (Shahi Guzargah) and Old Streets
-								</p>
-							</li>
-							<li className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									British Colonial Architecture Lahore City Tour Package
-								</p>
-							</li>
-							<li className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Modern Day Lahore City Tour Package
-								</p>
-							</li>
-						</ul>
-						<p className="leading-normal text-center mt-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							You can also customize these packages to focus on Sufi Heritage, Sikh History, or an intense Food Street Tour based on your interests.
+							These Lahore City Tours and Walled City Guided Tours are carefully designed to give you the real heart of the old city. You can choose from unique experiences like a fun Rangeela Rickshaw Ride, a Heritage Bus Tour, or deep dives into history. You can also customize these packages to focus on Sufi Heritage, Sikh History, or an intense Food Street Tour based on your interests.
 						</p>
 					</div>
 
