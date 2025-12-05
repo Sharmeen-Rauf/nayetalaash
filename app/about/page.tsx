@@ -554,8 +554,11 @@ const AboutPage = () => {
 							</button>
 							{mobileDropdownOpen === 'city-tours' && (
 								<div className="pl-4 pr-2 py-2 space-y-1">
-									<Link href="/#city-tours" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										City Tour Packages
+									<Link href="/karachi-tour" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										Karachi Tour
+									</Link>
+									<Link href="/lahore-tour" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
+										Lahore Tour
 									</Link>
 								</div>
 							)}

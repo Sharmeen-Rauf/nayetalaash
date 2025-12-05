@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, Users, CalendarDays, MapPin, ShieldCheck, CheckCircle2, Search, FileText, Mountain } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
 
-const GroupToursPage = () => {
+const LahoreTourPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
@@ -356,7 +356,7 @@ const GroupToursPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/Home Banner - Idea.jpg')",
+						backgroundImage: "url('/images/lahore.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -374,7 +374,7 @@ const GroupToursPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography" style={{ display: 'inline-block' }}>
-								Group Tours
+								Lahore Tour
 							</span>
 							<br />
 							<span className="block mt-4" 
@@ -382,397 +382,23 @@ const GroupToursPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Travel Together, Explore Better
+								Discover the Heart of Pakistan
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed">
-							Perfect for families, friends, corporate teams, and student groups. Experience the beauty of Pakistan together with our customized group tour packages.
+							Experience the rich history, vibrant culture, and stunning architecture of Lahore. From Mughal monuments to bustling bazaars, discover why Lahore is called the cultural capital of Pakistan.
 						</p>
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== WEEKLY GROUP TOURS SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: '#ffffff',
-								paddingLeft: '8px',
-								paddingRight: '8px',
-								display: 'inline-block'
-							}}>
-								Weekly Group Tours
-							</span>
-						</h2>
-						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
-							Here is the list of all upcoming trips by WeeklyGroupTours.pk. You can book the trips that best suit your needs, if not, you always have the option to customize a trip for yourself. Just contact us!
-						</p>
-					</div>
-
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-						{/* Tour Package 1 */}
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative h-48 overflow-hidden">
-								<Image 
-									src="/images/skardu 2.jpg"
-									alt="Skardu Hunza and Shandur Top Group Tour"
-									fill
-									className="object-cover hover:scale-110 transition-transform duration-300"
-								/>
-							</div>
-							<div className="p-5">
-								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Hunza and Shandur Top Group Tour
-								</h3>
-								<a 
-									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
-								>
-									Read More
-								</a>
-							</div>
-						</div>
-
-						{/* Tour Package 2 */}
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative h-48 overflow-hidden">
-								<Image 
-									src="/images/skardu 2.jpg"
-									alt="Skardu Shakar and Babusar Valley Group Tour"
-									fill
-									className="object-cover hover:scale-110 transition-transform duration-300"
-								/>
-							</div>
-							<div className="p-5">
-								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Shakar and Babusar Valley Group Tour
-								</h3>
-								<a 
-									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
-								>
-									Read More
-								</a>
-							</div>
-						</div>
-
-						{/* Tour Package 3 */}
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative h-48 overflow-hidden">
-								<Image 
-									src="/images/naran and kaghan.jpg"
-									alt="9 Days Kaghan Babusar and Neelum Group Tour"
-									fill
-									className="object-cover hover:scale-110 transition-transform duration-300"
-								/>
-							</div>
-							<div className="p-5">
-								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									9 Days Kaghan Babusar and Neelum Group Tour
-								</h3>
-								<a 
-									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
-								>
-									Read More
-								</a>
-							</div>
-						</div>
-
-						{/* Tour Package 4 */}
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative h-48 overflow-hidden">
-								<Image 
-									src="/images/Hunza.jpg"
-									alt="Skardu Hunza, Naltar and Khunjerab Public Group Tour"
-									fill
-									className="object-cover hover:scale-110 transition-transform duration-300"
-								/>
-							</div>
-							<div className="p-5">
-								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Hunza, Naltar and Khunjerab Public Group Tour
-								</h3>
-								<a 
-									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
-								>
-									Read More
-								</a>
-							</div>
-						</div>
-
-						{/* Tour Package 5 */}
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative h-48 overflow-hidden">
-								<Image 
-									src="/images/fairy meadows 2.jpg"
-									alt="Skardu Fairy Meadows and Beyal Camp Group Tour"
-									fill
-									className="object-cover hover:scale-110 transition-transform duration-300"
-								/>
-							</div>
-							<div className="p-5">
-								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Fairy Meadows and Beyal Camp Group Tour
-								</h3>
-								<a 
-									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
-								>
-									Read More
-								</a>
-							</div>
-						</div>
-
-						{/* Tour Package 6 */}
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative h-48 overflow-hidden">
-								<Image 
-									src="/images/naran and kaghan.jpg"
-									alt="8 Days Kaghan, Naltar and Fairy Meadows Valley Group Tour"
-									fill
-									className="object-cover hover:scale-110 transition-transform duration-300"
-								/>
-							</div>
-							<div className="p-5">
-								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									8 Days Kaghan, Naltar and Fairy Meadows Valley Group Tour
-								</h3>
-								<a 
-									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
-								>
-									Read More
-								</a>
-							</div>
-						</div>
-
-						{/* Tour Package 7 */}
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative h-48 overflow-hidden">
-								<Image 
-									src="/images/skardu 2.jpg"
-									alt="Skardu Hunza Babusar and Shandur Top Group Tour"
-									fill
-									className="object-cover hover:scale-110 transition-transform duration-300"
-								/>
-							</div>
-							<div className="p-5">
-								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Hunza Babusar and Shandur Top Group Tour
-								</h3>
-								<a 
-									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
-								>
-									Read More
-								</a>
-							</div>
-						</div>
-
-						{/* Tour Package 8 */}
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative h-48 overflow-hidden">
-								<Image 
-									src="/images/gilgit.jpg"
-									alt="Skardu Gilgit, Babusar and Jabba Smart Group Tour"
-									fill
-									className="object-cover hover:scale-110 transition-transform duration-300"
-								/>
-							</div>
-							<div className="p-5">
-								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Gilgit, Babusar and Jabba Smart Group Tour
-								</h3>
-								<a 
-									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
-								>
-									Read More
-								</a>
-							</div>
-						</div>
-
-						{/* Tour Package 9 */}
-						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-							<div className="relative h-48 overflow-hidden">
-								<Image 
-									src="/images/azad kashmir.jpg"
-									alt="8 Days Kaghan, Neelum and Azad Kashmir Group Tour"
-									fill
-									className="object-cover hover:scale-110 transition-transform duration-300"
-								/>
-							</div>
-							<div className="p-5">
-								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									8 Days Kaghan, Neelum and Azad Kashmir Group Tour
-								</h3>
-								<a 
-									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
-									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
-								>
-									Read More
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== HOW IT WORKS SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: '#000000',
-								paddingLeft: '8px',
-								paddingRight: '8px',
-								display: 'inline-block'
-							}}>
-								Here is a guide on
-							</span>
-							<span className="block mt-2 font-bold" style={{ 
-								color: '#000000'
-							}}>
-								How it works?
-							</span>
-						</h2>
-					</div>
-
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-						{/* Step 1 */}
-						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
-								<Search className="w-10 h-10 text-white" />
-							</div>
-							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
-								FIND A DESTINATION
-							</h3>
-							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
-								from our list of tours updated on 'Tours' page.
-							</p>
-						</div>
-
-						{/* Step 2 */}
-						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
-								<FileText className="w-10 h-10 text-white" />
-							</div>
-							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
-								PICK-UP
-							</h3>
-							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
-								the trip that best suits your requirements.
-							</p>
-						</div>
-
-						{/* Step 3 */}
-						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
-								<Phone className="w-10 h-10 text-white" />
-							</div>
-							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
-								CONTACT US
-							</h3>
-							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
-								to book your trip or customize it according to your needs.
-							</p>
-						</div>
-
-						{/* Step 4 */}
-						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
-								<Mountain className="w-10 h-10 text-white" />
-							</div>
-							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
-								GO & EXPLORE NOW
-							</h3>
-							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
-								Pack your bags and ENJOY.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== OUR JOURNEYS SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: '#ffffff',
-								paddingLeft: '8px',
-								paddingRight: '8px',
-								display: 'inline-block'
-							}}>
-								Our Journeys
-							</span>
-						</h2>
-					</div>
-
-					<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
-						{/* Journey Image 1 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/skardu 2.jpg"
-								alt="Group tour journey 1"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
-						</div>
-
-						{/* Journey Image 2 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/Hunza.jpg"
-								alt="Group tour journey 2"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
-						</div>
-
-						{/* Journey Image 3 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/fairy meadows 2.jpg"
-								alt="Group tour journey 3"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
-						</div>
-
-						{/* Journey Image 4 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/naran and kaghan.jpg"
-								alt="Group tour journey 4"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
-						</div>
-
-						{/* Journey Image 5 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/azad kashmir.jpg"
-								alt="Group tour journey 5"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
+						<div className="mt-8">
+							<button 
+								onClick={handleWhatsAppClick}
+								className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-2xl"
+								style={{ 
+									backgroundColor: primaryOrange, 
+									color: secondaryBlack
+								}}
+							>
+								Book Your Tour
+							</button>
 						</div>
 					</div>
 				</div>
@@ -784,7 +410,7 @@ const GroupToursPage = () => {
 					<div className="flex flex-col md:flex-row items-center justify-between gap-4">
 						<div className="px-4 md:px-6">
 							<p className="text-white text-3xl font-autography mb-2">Ready for an unforgettable tour!</p>
-							<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your group trip with us</h2>
+							<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 						</div>
 						<div className="px-4 md:px-6">
 							<button
@@ -951,5 +577,4 @@ const GroupToursPage = () => {
 	);
 };
 
-export default GroupToursPage;
-
+export default LahoreTourPage;
