@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
 
-const LahoreTourPage = () => {
+const KarachiTourPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -387,7 +387,7 @@ const LahoreTourPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/lahore.jpg')",
+						backgroundImage: "url('/images/karachi.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -405,7 +405,7 @@ const LahoreTourPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography" style={{ display: 'inline-block' }}>
-								Lahore City Tour
+								Karachi City Tour
 							</span>
 							<br />
 							<span className="block mt-4" 
@@ -435,7 +435,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== LAHORE GUIDED CITY TOURS 2025 ====================== */}
+			{/* ====================== KARACHI GUIDED CITY TOURS 2025 ====================== */}
 			<section 
 				data-section-id="guided-tours"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('guided-tours') ? 'revealed' : ''}`}
@@ -443,10 +443,10 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Lahore Guided City Tours
+							Karachi Guided City Tours
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							These Lahore City Tours and Walled City Guided Tours are carefully designed to give you the real heart of the old city. You can choose from unique experiences like a fun Rangeela Rickshaw Ride, a Heritage Bus Tour, or deep dives into history. You can also customize these packages to focus on Sufi Heritage, Sikh History, or an intense Food Street Tour based on your interests.
+							These Karachi City Tours and Heritage Guided Tours are carefully designed to give you the real essence of Pakistan's largest city. You can choose from unique experiences like exploring the historic areas, a Heritage Bus Tour, or deep dives into the city's rich culture. You can also customize these packages to focus on Heritage Sites, Modern Architecture, or an intense Food Street Tour based on your interests.
 						</p>
 					</div>
 
@@ -457,7 +457,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/karachi.jpg"
 									alt="1 Day Walking Tour of Mughal and Sikh Era Walled City of Lahore"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -476,7 +476,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/karachi.jpg"
 									alt="1 Day Lahore Guided Walled City Tour and Wahga Border Flag Raising Ceremony"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -495,7 +495,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/karachi.jpg"
 									alt="1 Day Heritage Walk Through the Royal Route and Old Streets of Walled City Lahore"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -514,7 +514,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/karachi.jpg"
 									alt="Sufi Heritage Lahore City Tour Package"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -533,7 +533,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/karachi.jpg"
 									alt="British Colonial Architecture Lahore City Tour Package"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -552,7 +552,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/karachi.jpg"
 									alt="Modern Day Lahore City Tour Package"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -569,7 +569,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== TOP PLACES TO VISIT IN LAHORE ====================== */}
+			{/* ====================== TOP PLACES TO VISIT IN KARACHI ====================== */}
 			<section 
 				data-section-id="destinations"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
@@ -577,10 +577,10 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Lahore
+							Top Places to Visit in Karachi
 						</h2>
 						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We have compiled a list of the most prominent and famous places to visit in Lahore. Our city tours are structured to ensure you see all the best sites:
+							We have compiled a list of the most prominent and famous places to visit in Karachi. Our city tours are structured to ensure you see all the best sites:
 						</p>
 					</div>
 					
@@ -588,67 +588,67 @@ const LahoreTourPage = () => {
 						{[
 							{ 
 								title: '1. Lahore Fort (Shahi Qila)', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'A UNESCO World Heritage Site and the crown jewel of Mughal Lahore. Explore the stunning Sheesh Mahal, the magnificent Picture Wall, and the grand Alamgiri Gate. The fort holds centuries of history within its royal chambers and ancient walls.',
 								imageLeft: true
 							},
 							{ 
 								title: '2. Badshahi Mosque', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'One of the largest and most architecturally beautiful mosques in the world. Its striking red sandstone exterior and pristine white marble interior are truly spectacular. The mosque reflects the immense glory and power of Emperor Aurangzeb\'s historical era.',
 								imageLeft: false
 							},
 							{ 
 								title: '3. Wazir Khan Mosque', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'This beautiful mosque was built in the 17th century by Ilm-ud-Din Ansari (known as Wazir Khan), the Governor of Lahore under Emperor Shah Jahan. Located on the Royal Route (Shahi Guzargah), it is famous for its intricate Kashi Kari (tile work) and delicate Fresco Paintings. Its entrance includes a unique market area, historically known as the Calligrapher\'s Market.',
 								imageLeft: true
 							},
 							{ 
 								title: '4. Hazuri Bagh & Baradari', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'Hazuri Bagh is a significant garden located between the Lahore Fort\'s Alamgiri Gate and the Badshahi Mosque. At its center stands a Bara Dari (Twelve-Door Pavilion), which was built by Maharaja Ranjit Singh using white marble from dismantled Mughal structures. The garden also holds the Tombs of Sir Allama Mohammad Iqbal (National Poet) and Sikandar Hayat Khan.',
 								imageLeft: false
 							},
 							{ 
 								title: '5. Shahi Hammam', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'This is a Mughal era public bathhouse, inspired by Turkish designs, also commissioned by Wazir Khan near the Delhi Gate. It provided comprehensive services, including hot, warm, and cold water sections, a sauna, and separate areas for men and women. After being restored in 2013, its beautiful frescoes and hidden water channels were uncovered, making it a key historical site.',
 								imageLeft: true
 							},
 							{ 
 								title: '6. Shalimar Gardens', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'Referred to as Shah Jahan\'s "Heaven on Earth" for its meticulous design. The gardens feature stunning water terraces, numerous fountains, and elegant pavilions. They perfectly embody the symmetry and planning characteristic of Mughal landscape design.',
 								imageLeft: false
 							},
 							{ 
 								title: '7. Lahore Museum', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'A true treasure house preserving rare artifacts from across many eras of history. Its collection spans the Gandhara, Mughal, Sikh, and British periods. It is an essential stop for anyone interested in the cultural heritage of the region.',
 								imageLeft: true
 							},
 							{ 
 								title: '8. Gali Surjan Singh', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'A meticulously restored historic street nestled deep within old Lahore. It is filled with tangible heritage, vibrant culture, and charming architecture. This alley offers a uniquely beautiful setting perfect for photography and exploration.',
 								imageLeft: false
 							},
 							{ 
 								title: '9. Minar-e-Pakistan', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'The towering place where the landmark Pakistan Resolution was formally passed in 1940. This monument is an unmistakable and powerful symbol of the nation\'s identity and birth. It is a crucial site of historical and patriotic significance for the country.',
 								imageLeft: true
 							},
 							{ 
 								title: '10. Wahga Border Ceremony', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'A thrilling and popular daily flag lowering military ceremony between Pakistan and India. The event is a highly energetic spectacle, generating intense national pride and patriotism. It is an unmissable cultural and theatrical experience for visitors to Lahore.',
 								imageLeft: false
 							},
 							{ 
 								title: '11. Data Darbar', 
-								image: '/images/lahore.jpg',
+								image: '/images/karachi.jpg',
 								description: 'One of the most important and largest Sufi shrines found across all of South Asia. It is a spiritual center rich with deep historical and cultural significance. The shrine draws millions of pilgrims and followers seeking blessings and peace.',
 								imageLeft: true
 							},
@@ -710,7 +710,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== HISTORICAL SITES IN LAHORE ====================== */}
+			{/* ====================== HISTORICAL SITES IN KARACHI ====================== */}
 			<section 
 				data-section-id="historical-sites"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-sites') ? 'revealed' : ''}`}
@@ -776,7 +776,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== MORE ABOUT LAHORE CITY ====================== */}
+			{/* ====================== MORE ABOUT KARACHI CITY ====================== */}
 			<section 
 				data-section-id="more-about-lahore"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about-lahore') ? 'revealed' : ''}`}
@@ -798,7 +798,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== HISTORY OF LAHORE ====================== */}
+			{/* ====================== HISTORY OF KARACHI ====================== */}
 			<section 
 				data-section-id="history-lahore"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('history-lahore') ? 'revealed' : ''}`}
@@ -815,7 +815,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== A BRIEF HISTORY OF THE WALLED CITY OF LAHORE ====================== */}
+			{/* ====================== A BRIEF HISTORY OF THE WALLED CITY OF KARACHI ====================== */}
 			<section 
 				data-section-id="walled-city-history"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('walled-city-history') ? 'revealed' : ''}`}
@@ -835,7 +835,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== OTHER HISTORICAL NAMES OF LAHORE CITY ====================== */}
+			{/* ====================== OTHER HISTORICAL NAMES OF KARACHI CITY ====================== */}
 			<section 
 				data-section-id="historical-names"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-names') ? 'revealed' : ''}`}
@@ -882,7 +882,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== RULERS AND DYNASTIES THAT RULED OVER LAHORE ====================== */}
+			{/* ====================== RULERS AND DYNASTIES THAT RULED OVER KARACHI ====================== */}
 			<section 
 				data-section-id="rulers-dynasties"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('rulers-dynasties') ? 'revealed' : ''}`}
@@ -898,7 +898,7 @@ const LahoreTourPage = () => {
 							<div className="lg:col-span-1">
 								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
 									<Image 
-										src="/images/lahore.jpg"
+										src="/images/karachi.jpg"
 										alt="Historical Ruler of Lahore"
 										fill
 										className="object-cover"
@@ -938,7 +938,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== 13 GATES OF THE WALLED CITY OF LAHORE ====================== */}
+			{/* ====================== 13 GATES OF THE WALLED CITY OF KARACHI ====================== */}
 			<section 
 				data-section-id="gates"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('gates') ? 'revealed' : ''}`}
@@ -1009,7 +1009,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== THE COLORFUL BAZAARS OF LAHORE CITY ====================== */}
+			{/* ====================== THE COLORFUL BAZAARS OF KARACHI CITY ====================== */}
 			<section 
 				data-section-id="bazaars"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('bazaars') ? 'revealed' : ''}`}
@@ -1037,7 +1037,7 @@ const LahoreTourPage = () => {
 							<div className="lg:col-span-1">
 								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
 									<Image 
-										src="/images/lahore.jpg"
+										src="/images/karachi.jpg"
 										alt="Colorful Bazaar of Lahore"
 										fill
 										className="object-cover"
@@ -1049,7 +1049,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== LAHORE'S FOOD STREET AND VIBRANT CULTURE ====================== */}
+			{/* ====================== KARACHI'S FOOD STREET AND VIBRANT CULTURE ====================== */}
 			<section 
 				data-section-id="food-street"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('food-street') ? 'revealed' : ''}`}
@@ -1090,7 +1090,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== GUIDED LAHORE TOUR PACKAGES / LAHORE CITY TOUR ====================== */}
+			{/* ====================== GUIDED KARACHI TOUR PACKAGES / KARACHI CITY TOUR ====================== */}
 			<section 
 				data-section-id="guided-lahore-tour-packages"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('guided-lahore-tour-packages') ? 'revealed' : ''}`}
@@ -1099,7 +1099,7 @@ const LahoreTourPage = () => {
 					{/* Main Title */}
 					<div className="text-center mb-6">
 						<h2 className="text-1xl md:text-3xl font-bold" style={{ color: secondaryBlack }}>
-							Guided Lahore Tour Packages / Lahore City Tour
+							Guided Karachi Tour Packages / Karachi City Tour
 						</h2>
 					</div>
 
@@ -1109,7 +1109,7 @@ const LahoreTourPage = () => {
 						<div className="lg:col-span-3 hidden lg:block">
 							<div className="relative w-full h-[400px] rounded overflow-hidden">
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/karachi.jpg"
 									alt="Lahore Architecture"
 									fill
 									className="object-cover"
@@ -1121,16 +1121,16 @@ const LahoreTourPage = () => {
 						<div className="lg:col-span-6">
 							<div className="bg-white rounded">
 								{[
-									'Old Lahore Historical Tour',
-									'British Colonial Architecture Lahore City Tour',
-									'Mughal History Lahore City Tour',
-									'Sufi Heritage Lahore City Tour',
-									'Lahore Street Food Tour',
-									'Androon Lahore Food Tour',
-									'Lahore Rickshaw Tour',
-									'Lahore Rangeela Rickshaw Tour',
-									'Lahore City Bus Tour',
-									'Walking Lahore City Tour',
+									'Old Karachi Historical Tour',
+									'British Colonial Architecture Karachi City Tour',
+									'Heritage History Karachi City Tour',
+									'Sufi Heritage Karachi City Tour',
+									'Karachi Street Food Tour',
+									'Androon Karachi Food Tour',
+									'Karachi Rickshaw Tour',
+									'Karachi Rangeela Rickshaw Tour',
+									'Karachi City Bus Tour',
+									'Walking Karachi City Tour',
 								].map((tour, idx) => (
 									<div 
 										key={idx}
@@ -1140,7 +1140,7 @@ const LahoreTourPage = () => {
 										}}
 									>
 										<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											{tour} | Lahore City Tour
+											{tour} | Karachi City Tour
 										</p>
 									</div>
 								))}
@@ -1151,7 +1151,7 @@ const LahoreTourPage = () => {
 						<div className="lg:col-span-3 hidden lg:block">
 							<div className="relative w-full h-[400px] rounded overflow-hidden">
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/karachi.jpg"
 									alt="Lahore Architecture"
 									fill
 									className="object-cover"
@@ -1162,7 +1162,7 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== PLAN YOUR LAHORE CITY TOUR ====================== */}
+			{/* ====================== PLAN YOUR KARACHI CITY TOUR ====================== */}
 			<section 
 				data-section-id="plan-tour"
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('plan-tour') ? 'revealed' : ''}`}
@@ -1170,7 +1170,7 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Plan Your Lahore City Tour with Nayi Talaash
+							Plan Your Karachi City Tour with Nayi Talaash
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Whether you want to explore the rich history, the vibrant culture, the bustling bazaars, the religious sites or the flavorful desi cuisine, Nayi Talaash is here to guide you. Contact us now to plan your unforgettable Lahore City Tour!
@@ -1194,16 +1194,16 @@ const LahoreTourPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: '1. What is included in the Lahore City Tour?',
+								question: '1. What is included in the Karachi City Tour?',
 								answer: 'Our tours include guided visits to major landmarks, transportation, entry assistance and a curated experience based on the theme you choose.'
 							},
 							{
-								question: '2. Can I customize my Lahore tour?',
+								question: '2. Can I customize my Karachi tour?',
 								answer: 'Yes! You can add or remove destinations, extend the tour or create a fully custom city tour according to your preference.'
 							},
 							{
-								question: '3. How long is the Lahore City Tour?',
-								answer: 'It depends on the package. We offer half day, full day, and multi day Lahore tours.'
+								question: '3. How long is the Karachi City Tour?',
+								answer: 'It depends on the package. We offer half day, full day, and multi day Karachi tours.'
 							},
 							{
 								question: '4. Do you provide pickup and drop-off?',
@@ -1223,11 +1223,11 @@ const LahoreTourPage = () => {
 							},
 							{
 								question: '8. Do you offer food tours?',
-								answer: 'Yes, our Lahore Food Street & Androon Lahore Food Tour lets you enjoy authentic Lahori cuisine.'
+								answer: 'Yes, our Karachi Food Street & Androon Karachi Food Tour lets you enjoy authentic Karachi cuisine.'
 							},
 							{
-								question: '9. Is the Wahga Border Parade included?',
-								answer: 'Yes, it can be added as part of your tour. We provide guided assistance for the ceremony.'
+								question: '9. Are beaches and coastal areas included?',
+								answer: 'Yes, Karachi\'s beautiful beaches and coastal areas can be included in your tour. We provide guided visits to popular beach destinations.'
 							},
 						].map((faq, idx) => (
 							<div 
@@ -1439,4 +1439,4 @@ const LahoreTourPage = () => {
 	);
 };
 
-export default LahoreTourPage;
+export default KarachiTourPage;
