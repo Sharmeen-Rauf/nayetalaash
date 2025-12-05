@@ -1219,27 +1219,6 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== READY FOR TOUR CTA ====================== */}
-			<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
-				<div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-[2]">
-					<div className="flex flex-col md:flex-row items-center justify-between gap-4">
-						<div className="px-4 md:px-6">
-							<p className="text-white text-3xl font-autography mb-2">Ready for an unforgettable tour!</p>
-							<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
-						</div>
-						<div className="px-4 md:px-6">
-							<button
-								onClick={handleWhatsAppClick}
-								className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
-								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-							>
-								Customize A Tour
-							</button>
-						</div>
-					</div>
-				</div>
-			</section>
-
 			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
 			<section 
 				data-section-id="faq"
@@ -1323,6 +1302,27 @@ const LahoreTourPage = () => {
 								)}
 							</div>
 						))}
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== READY FOR TOUR CTA ====================== */}
+			<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
+				<div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-[2]">
+					<div className="flex flex-col md:flex-row items-center justify-between gap-4">
+						<div className="px-4 md:px-6">
+							<p className="text-white text-3xl font-autography mb-2">Ready for an unforgettable tour!</p>
+							<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
+						</div>
+						<div className="px-4 md:px-6">
+							<button
+								onClick={handleWhatsAppClick}
+								className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
+								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+							>
+								Customize A Tour
+							</button>
+						</div>
 					</div>
 				</div>
 			</section>
