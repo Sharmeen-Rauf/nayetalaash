@@ -509,8 +509,27 @@ const LahoreTourPage = () => {
 							</div>
 						</div>
 
-						{/* Package 4: British Colonial Architecture Lahore City Tour Package */}
-						<div className="relative group cursor-pointer lg:col-start-2 lg:col-end-3">
+						{/* Package 4: Sufi Heritage Lahore City Tour Package */}
+						<div className="relative group cursor-pointer">
+							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
+								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+								<Image 
+									src="/images/lahore.jpg"
+									alt="Sufi Heritage Lahore City Tour Package"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
+									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+										Sufi Heritage Lahore City Tour Package
+									</h3>
+								</div>
+							</div>
+						</div>
+
+						{/* Package 5: British Colonial Architecture Lahore City Tour Package */}
+						<div className="relative group cursor-pointer">
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
@@ -528,8 +547,8 @@ const LahoreTourPage = () => {
 							</div>
 						</div>
 
-						{/* Package 5: Modern Day Lahore City Tour Package */}
-						<div className="relative group cursor-pointer lg:col-start-3 lg:col-end-4">
+						{/* Package 6: Modern Day Lahore City Tour Package */}
+						<div className="relative group cursor-pointer">
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
