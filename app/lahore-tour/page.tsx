@@ -405,7 +405,7 @@ const LahoreTourPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography" style={{ display: 'inline-block' }}>
-								Lahore Tour
+								Lahore City Tour
 							</span>
 							<br />
 							<span className="block mt-4" 
@@ -417,7 +417,7 @@ const LahoreTourPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed">
-							Experience the rich history, vibrant culture, and stunning architecture of Lahore. From Mughal monuments to bustling bazaars, discover why Lahore is called the cultural capital of Pakistan.
+							Explore the ancient Walled City, taste the famous Food Street flavors, and feel the history of the Mughals. Your unforgettable Pakistan adventure starts here.
 						</p>
 						<div className="mt-8">
 							<button 
@@ -443,10 +443,45 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Lahore Guided City Tours 2025
+							Lahore Guided City Tours
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							These Lahore City Tour, Walled City Lahore Tour and Lahore City Guided Tours are curated for you to have the real essence of the Walled City of Lahore. You can enjoy the Rangeela Rickshaw Ride in Lahore, the Lahore Old City Bus Tour, Heritage Walk through Old Streets of Lahore, the Walking Tour of Lahore City, the British Colonial Architecture Lahore Tour, the Old Lahore Historical Tour, the Sufi Heritage Tour Lahore, the Sikh Heritage Tour Lahore, the Mughal History Tour Lahore, the Lahore Food Street Tour and the Androon Lahore Food Tour with these Lahore City Tour Packages. You can also customize them to your requirements as needed.
+							These Lahore City Tours and Walled City Guided Tours are carefully designed to give you the real heart of the old city. You can choose from unique experiences like a fun Rangeela Rickshaw Ride, a Heritage Bus Tour, or deep dives into history:
+						</p>
+						<ul className="space-y-2 mt-4">
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									1 Day: Walking Tour of the Mughal and Sikh-Era Walled City
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									1 Day: Lahore Guided Walled City Tour and thrilling Wahga Border Ceremony
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									1 Day: Heritage Walk along the Royal Route (Shahi Guzargah) and Old Streets
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									British Colonial Architecture Lahore City Tour Package
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Modern Day Lahore City Tour Package
+								</p>
+							</li>
+						</ul>
+						<p className="leading-normal text-center mt-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							You can also customize these packages to focus on Sufi Heritage, Sikh History, or an intense Food Street Tour based on your interests.
 						</p>
 					</div>
 
@@ -637,83 +672,77 @@ const LahoreTourPage = () => {
 							Top Places to Visit in Lahore
 						</h2>
 						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Lahore is a city rich in history, culture, and architectural marvels. Here are the must-visit attractions included in our tours:
+							We have compiled a list of the most prominent and famous places to visit in Lahore. Our city tours are structured to ensure you see all the best sites:
 						</p>
 					</div>
 					
-					<div className="space-y-8">
+					<div className="space-y-6">
 						{[
 							{ 
-								title: 'Lahore Fort (Shahi Qila)', 
+								title: '1. Lahore Fort (Shahi Qila)', 
 								image: '/images/lahore.jpg',
-								description: 'A UNESCO World Heritage Site, this magnificent fort was built during the Mughal era. It features beautiful palaces, gardens, and the iconic Sheesh Mahal (Palace of Mirrors).',
+								description: 'A UNESCO World Heritage Site and the crown jewel of Mughal Lahore. Explore the stunning Sheesh Mahal, the magnificent Picture Wall, and the grand Alamgiri Gate. The fort holds centuries of history within its royal chambers and ancient walls.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Badshahi Mosque', 
+								title: '2. Badshahi Mosque', 
 								image: '/images/lahore.jpg',
-								description: 'One of the largest mosques in the world, built by Emperor Aurangzeb in 1673. It can accommodate up to 100,000 worshippers and offers stunning views of the Lahore Fort.',
+								description: 'One of the largest and most architecturally beautiful mosques in the world. Its striking red sandstone exterior and pristine white marble interior are truly spectacular. The mosque reflects the immense glory and power of Emperor Aurangzeb\'s historical era.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Walled City of Lahore', 
+								title: '3. Wazir Khan Mosque', 
 								image: '/images/lahore.jpg',
-								description: 'The historic heart of Lahore, featuring narrow streets, ancient gates, bustling bazaars, and traditional architecture that tells stories of centuries past.',
+								description: 'This beautiful mosque was built in the 17th century by Ilm-ud-Din Ansari (known as Wazir Khan), the Governor of Lahore under Emperor Shah Jahan. Located on the Royal Route (Shahi Guzargah), it is famous for its intricate Kashi Kari (tile work) and delicate Fresco Paintings. Its entrance includes a unique market area, historically known as the Calligrapher\'s Market.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Shalimar Gardens', 
+								title: '4. Hazuri Bagh & Baradari', 
 								image: '/images/lahore.jpg',
-								description: 'A UNESCO World Heritage Site, these beautiful Mughal gardens were built by Emperor Shah Jahan in 1641. They feature terraced gardens, fountains, and stunning architectural elements.',
+								description: 'Hazuri Bagh is a significant garden located between the Lahore Fort\'s Alamgiri Gate and the Badshahi Mosque. At its center stands a Bara Dari (Twelve-Door Pavilion), which was built by Maharaja Ranjit Singh using white marble from dismantled Mughal structures. The garden also holds the Tombs of Sir Allama Mohammad Iqbal (National Poet) and Sikandar Hayat Khan.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Lahore Museum', 
+								title: '5. Shahi Hammam', 
 								image: '/images/lahore.jpg',
-								description: 'One of Pakistan\'s oldest museums, housing an impressive collection of artifacts, including the famous "Fasting Buddha" sculpture and Mughal era relics.',
+								description: 'This is a Mughal era public bathhouse, inspired by Turkish designs, also commissioned by Wazir Khan near the Delhi Gate. It provided comprehensive services, including hot, warm, and cold water sections, a sauna, and separate areas for men and women. After being restored in 2013, its beautiful frescoes and hidden water channels were uncovered, making it a key historical site.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Minar-e-Pakistan', 
+								title: '6. Shalimar Gardens', 
 								image: '/images/lahore.jpg',
-								description: 'A national monument built at the site where the Lahore Resolution was passed in 1940. It stands as a symbol of Pakistan\'s independence movement.',
+								description: 'Referred to as Shah Jahan\'s "Heaven on Earth" for its meticulous design. The gardens feature stunning water terraces, numerous fountains, and elegant pavilions. They perfectly embody the symmetry and planning characteristic of Mughal landscape design.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Wagah Border', 
+								title: '7. Lahore Museum', 
 								image: '/images/lahore.jpg',
-								description: 'The only road border crossing between Pakistan and India. Visitors can witness the daily flag-lowering ceremony, a colorful and patriotic display.',
+								description: 'A true treasure house preserving rare artifacts from across many eras of history. Its collection spans the Gandhara, Mughal, Sikh, and British periods. It is an essential stop for anyone interested in the cultural heritage of the region.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Food Street (Fort Road)', 
+								title: '8. Gali Surjan Singh', 
 								image: '/images/lahore.jpg',
-								description: 'A vibrant street food destination offering traditional Lahori cuisine including nihari, paye, and kebabs, with a stunning view of the Badshahi Mosque.',
+								description: 'A meticulously restored historic street nestled deep within old Lahore. It is filled with tangible heritage, vibrant culture, and charming architecture. This alley offers a uniquely beautiful setting perfect for photography and exploration.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Anarkali Bazaar', 
+								title: '9. Minar-e-Pakistan', 
 								image: '/images/lahore.jpg',
-								description: 'One of the oldest markets in South Asia, named after Anarkali. It offers everything from traditional clothing to jewelry, spices, and local handicrafts.',
+								description: 'The towering place where the landmark Pakistan Resolution was formally passed in 1940. This monument is an unmistakable and powerful symbol of the nation\'s identity and birth. It is a crucial site of historical and patriotic significance for the country.',
 								imageLeft: true
 							},
 							{ 
-								title: 'Lahore Zoo', 
+								title: '10. Wahga Border Ceremony', 
 								image: '/images/lahore.jpg',
-								description: 'One of the largest zoos in Pakistan, established in 1872. It houses a variety of animals and is a popular family destination.',
+								description: 'A thrilling and popular daily flag lowering military ceremony between Pakistan and India. The event is a highly energetic spectacle, generating intense national pride and patriotism. It is an unmissable cultural and theatrical experience for visitors to Lahore.',
 								imageLeft: false
 							},
 							{ 
-								title: 'Jahangir\'s Tomb', 
+								title: '11. Data Darbar', 
 								image: '/images/lahore.jpg',
-								description: 'The mausoleum of the fourth Mughal Emperor Jahangir, located in Shahdara Bagh. It features beautiful Persian-style architecture and gardens.',
+								description: 'One of the most important and largest Sufi shrines found across all of South Asia. It is a spiritual center rich with deep historical and cultural significance. The shrine draws millions of pilgrims and followers seeking blessings and peace.',
 								imageLeft: true
-							},
-							{ 
-								title: 'Lahore Railway Station', 
-								image: '/images/lahore.jpg',
-								description: 'A magnificent example of British colonial architecture, built in the 1860s. It\'s one of the most beautiful railway stations in South Asia.',
-								imageLeft: false
 							},
 						].map((destination, idx) => (
 							<div 
@@ -839,97 +868,6 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
-			<section 
-				data-section-id="faq"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('faq') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
-					<div className="text-center mb-6">
-						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Frequently Asked Question
-						</h2>
-					</div>
-					
-					<div className="space-y-0">
-						{[
-							{
-								question: 'What is the best time to visit Lahore?',
-								answer: 'Lahore can be visited throughout the year, but the best time is during winter (October to March) when the weather is pleasant and cool.'
-							},
-							{
-								question: 'How many days are enough to explore Lahore?',
-								answer: 'A minimum of 2-3 days is recommended to explore the major attractions, but 4-5 days allow for a more relaxed and comprehensive experience.'
-							},
-							{
-								question: 'Is Lahore safe for tourists?',
-								answer: 'Yes, Lahore is generally safe for tourists. It\'s advisable to follow local guidelines and use reputable tour operators for guided tours.'
-							},
-							{
-								question: 'What should I wear while visiting Lahore?',
-								answer: 'Dress modestly, especially when visiting religious sites. Light, comfortable clothing in summer and warm layers in winter are recommended.'
-							},
-							{
-								question: 'Can I visit the Walled City on my own?',
-								answer: 'Yes, but we highly recommend a guided tour to fully appreciate the history, architecture, and hidden gems of the Walled City.'
-							},
-							{
-								question: 'What is included in the tour packages?',
-								answer: 'Tour packages typically include transportation, professional guide, entrance fees to monuments, and sometimes meals, depending on the package selected.'
-							},
-							{
-								question: 'Are photography and videography allowed?',
-								answer: 'Yes, photography is allowed at most tourist sites. Some places may have restrictions or require additional fees for professional photography.'
-							},
-							{
-								question: 'What local dishes should I try in Lahore?',
-								answer: 'Don\'t miss nihari, paye, kebabs, biryani, and traditional sweets. Food Street near Badshahi Mosque is a must-visit for authentic Lahori cuisine.'
-							},
-							{
-								question: 'Do you offer custom tour packages?',
-								answer: 'Yes, all our tour packages can be customized according to your preferences, schedule, and interests.'
-							},
-							{
-								question: 'How do I book a tour?',
-								answer: 'You can book through our website, contact us via WhatsApp, email, or phone. We also offer online booking options for convenience.'
-							},
-						].map((faq, idx) => (
-							<div 
-								key={idx} 
-								className="border-b border-gray-300 scroll-reveal-fade-up"
-								style={{
-									opacity: visibleSections.has('faq') ? 1 : 0,
-									transform: visibleSections.has('faq') ? 'translateY(0)' : 'translateY(20px)',
-									transition: `opacity 0.6s ease-out ${idx * 0.1}s, transform 0.6s ease-out ${idx * 0.1}s`
-								}}
-							>
-								<button
-									onClick={() => setOpenFAQIndex(openFAQIndex === idx ? null : idx)}
-									className="w-full flex items-center justify-between py-3 text-left transition-all duration-300 hover:opacity-80"
-								>
-									<span className="flex items-center gap-3 flex-1">
-										<ChevronDown 
-											className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${openFAQIndex === idx ? 'rotate-180' : ''}`}
-											style={{ color: secondaryBlack }}
-										/>
-										<span className="font-medium leading-normal text-left" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-											{faq.question}
-										</span>
-									</span>
-								</button>
-								{openFAQIndex === idx && (
-									<div className="pb-3 pl-7 animate-fadeIn text-left" style={{ animation: 'fadeIn 0.3s ease-in' }}>
-										<p className="leading-normal whitespace-pre-line text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-											{faq.answer}
-										</p>
-									</div>
-								)}
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
 			{/* ====================== MORE ABOUT LAHORE CITY ====================== */}
 			<section 
 				data-section-id="more-about-lahore"
@@ -942,12 +880,29 @@ const LahoreTourPage = () => {
 						</h2>
 						<div className="space-y-2">
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Lahore, one of the oldest and most historically rich cities in South Asia, boasts a legacy spanning over 3000-3500 years. Despite facing numerous challenges throughout its history, Lahore has always emerged stronger, earning the nickname "Zinda Dilan e Lahore" (Lahore with Lively Hearts). Today, it stands as a vibrant metropolis, known for its bustling streets, lively markets, magnificent architecture, and the warm hospitality of its people.
+								With a history spanning perhaps 3,000 to 3,500 years, Lahore is much more than a city; it is a narrator of history. This resilient metropolis has survived the rise and fall of countless empires, conflicts, and natural disasters, yet it always stands tall, emerging stronger than before.
 							</p>
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								The city has witnessed the rise and fall of countless empires, each leaving behind a unique architectural and cultural imprint. From ancient Hindu mythology to Mughal grandeur, from Sikh rule to British colonialism, Lahore has absorbed diverse influences, creating a rich tapestry of history, culture, and heritage that continues to thrive in the modern era.
+								Present-day Lahore is proud of its lively streets, fantastic architecture, echoing food streets, and vibrant, loving people, known locally as "Zinda Dilan e Lahore" (Lahore with Lively Hearts). Every door and alleyway tells a story of endurance, evolution, and timeless charm.
 							</p>
 						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== HISTORY OF LAHORE ====================== */}
+			<section 
+				data-section-id="history-lahore"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('history-lahore') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							History Of Lahore
+						</h3>
+						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Lahore is an ancient city, often called the "City of Gardens," with a history stretching back over a thousand years. It became truly magnificent under the Mughal emperors, who built stunning palaces and mosques like the Lahore Fort and Badshahi Mosque, making it an imperial cultural center. It also served as the capital during the Sikh era. Critically, Lahore is the symbolic birthplace of modern Pakistan, where the resolution for an independent nation was passed, blending its deep historical roots with its modern status as the country's vibrant, beating heart.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -1065,7 +1020,7 @@ const LahoreTourPage = () => {
 							13 Gates of the Walled City of Lahore
 						</h3>
 						<p className="leading-normal text-justify mb-3" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							The Walled City of Lahore was once enclosed by 13 grand gates, each serving as a magnificent entry point to this historic city. While some of these gates still stand proudly as testaments to Lahore's rich architectural heritage, others were unfortunately destroyed over time. These gates, commissioned during the Mughal era, not only served as defensive structures but also as symbols of the city's grandeur and historical significance.
+							The historic Walled City was once fortified by 13 grand gates, commissioned by the Mughals, each serving as a key entry point. Many still stand today, including:
 						</p>
 						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
 							<div className="flex items-center gap-2">
@@ -1140,26 +1095,12 @@ const LahoreTourPage = () => {
 							{/* Content on the left */}
 							<div className="lg:col-span-2 space-y-2">
 								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Lahore's bazaars are among the most vibrant and bustling markets in Pakistan, offering visitors a chance to experience the true essence of the city and its people. From the biggest market in Asia to the narrowest streets filled with shops, and from traditional bazaars to luxurious modern malls, Lahore's shopping scene is as diverse as its culture.
+									Lahore boasts some of the most vibrant and bustling bazaars in Pakistan. Exploring these markets is the best way to witness the city's true life and culture. They feature everything from traditional jewelry and handicrafts to aromatic spices and appealing food stalls.
 								</p>
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									These markets are characterized by narrow streets with shops lining both sides, offering everything from unique handicrafts and traditional jewelry to shiny and traditional clothes, fancy and casual footwear, household accessories, home decor, local and branded groceries, homeopathic and herbal medicines, aromatic spices, and small food stalls serving delicious local treats.
-								</p>
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									A walking tour is the best way to explore these bazaars and truly immerse yourself in the Lahori bustle. Alternatively, you can experience the vibrant atmosphere through a Lahore Rickshaw Tour, which offers a unique and colorful way to navigate through these historic markets.
-								</p>
-								
 								<div className="mt-2">
-									<p className="leading-normal mb-2 font-semibold" style={{ color: secondaryBlack, fontSize: '16px' }}>
-										Some famous markets in Lahore include:
+									<p className="leading-normal mb-2" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+										Famous markets include: Anarkali Bazaar, Ichhra Bazaar, Shah Alami Market, Rang Mahal Bazaar, and Liberty Market. For a true Lahori experience, you can take a colorful Rangeela Rickshaw Tour through these busy streets!
 									</p>
-									<ul className="list-disc list-inside space-y-1">
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Anarkali Bazaar</li>
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Ichhra Bazaar</li>
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Shah Alami Market</li>
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Rang Mahal Bazaar</li>
-										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Liberty Market</li>
-									</ul>
 								</div>
 							</div>
 							
@@ -1175,6 +1116,134 @@ const LahoreTourPage = () => {
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== LAHORE'S FOOD STREET AND VIBRANT CULTURE ====================== */}
+			<section 
+				data-section-id="food-street"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('food-street') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Lahore's Food Street and Vibrant Culture
+						</h3>
+						<p className="leading-normal text-justify mb-3" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							No trip is complete without a Lahore Food Street Tour.
+						</p>
+						<ul className="space-y-2 mb-3">
+							<li className="flex items-start gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+								<div>
+									<p className="leading-normal font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+										Fort Road Food Street:
+									</p>
+									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+										Located next to the Lahore Fort, it offers delicious food with a stunning view of the Fort and Badshahi Mosque. Old Havelis here have been converted into unique restaurants for fine dining.
+									</p>
+								</div>
+							</li>
+							<li className="flex items-start gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+								<div>
+									<p className="leading-normal font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+										Androon Lahore Food Tour:
+									</p>
+									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+										This is the heart of desi food. Lahoris specialize in classics like Paaye, Nihari, Karahis, and Chanay Kulchy. Our food tours will help you find the best of this rich culinary heritage.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== GUIDED LAHORE TOUR PACKAGES ====================== */}
+			<section 
+				data-section-id="guided-packages"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('guided-packages') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Guided Lahore Tour Packages
+						</h3>
+						<ul className="space-y-2">
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Old Lahore Historical Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									British Colonial Architecture Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Mughal History Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Sufi Heritage Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Lahore Street Food Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Androon Lahore Food Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Lahore Rickshaw Tour / Rangeela Rickshaw Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Lahore City Bus Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Walking Lahore City Tour
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== PLAN YOUR LAHORE CITY TOUR ====================== */}
+			<section 
+				data-section-id="plan-tour"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('plan-tour') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Plan Your Lahore City Tour with Nayi Talaash
+						</h3>
+						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Whether you want to explore the rich history, the vibrant culture, the bustling bazaars, the religious sites or the flavorful desi cuisine, Nayi Talaash is here to guide you. Contact us now to plan your unforgettable Lahore City Tour!
+						</p>
 					</div>
 				</div>
 			</section>
@@ -1196,6 +1265,93 @@ const LahoreTourPage = () => {
 								Customize A Tour
 							</button>
 						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== FREQUENTLY ASKED QUESTIONS ====================== */}
+			<section 
+				data-section-id="faq"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('faq') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl relative z-10">
+					<div className="text-center mb-6">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							FAQs – Lahore City Tour (Nayi Talaash)
+						</h2>
+					</div>
+					
+					<div className="space-y-0">
+						{[
+							{
+								question: '1. What is included in the Lahore City Tour?',
+								answer: 'Our tours include guided visits to major landmarks, transportation, entry assistance and a curated experience based on the theme you choose.'
+							},
+							{
+								question: '2. Can I customize my Lahore tour?',
+								answer: 'Yes! You can add or remove destinations, extend the tour or create a fully custom city tour according to your preference.'
+							},
+							{
+								question: '3. How long is the Lahore City Tour?',
+								answer: 'It depends on the package. We offer half day, full day, and multi day Lahore tours.'
+							},
+							{
+								question: '4. Do you provide pickup and drop-off?',
+								answer: 'Yes, we provide convenient pickup and drop-off from your hotel or preferred location.'
+							},
+							{
+								question: '5. Are entry tickets included?',
+								answer: 'Some tours include tickets, while others may require on spot purchase. Full details are provided before booking.'
+							},
+							{
+								question: '6. Is the tour suitable for families?',
+								answer: 'Absolutely! Our tours are family friendly and safe for all age groups.'
+							},
+							{
+								question: '7. What should I wear during the tour?',
+								answer: 'Comfortable clothing and shoes are recommended. For mosques or religious sites, modest dressing is appreciated.'
+							},
+							{
+								question: '8. Do you offer food tours?',
+								answer: 'Yes, our Lahore Food Street & Androon Lahore Food Tour lets you enjoy authentic Lahori cuisine.'
+							},
+							{
+								question: '9. Is the Wahga Border Parade included?',
+								answer: 'Yes, it can be added as part of your tour. We provide guided assistance for the ceremony.'
+							},
+						].map((faq, idx) => (
+							<div 
+								key={idx} 
+								className="border-b border-gray-300 scroll-reveal-fade-up"
+								style={{
+									opacity: visibleSections.has('faq') ? 1 : 0,
+									transform: visibleSections.has('faq') ? 'translateY(0)' : 'translateY(20px)',
+									transition: `opacity 0.6s ease-out ${idx * 0.1}s, transform 0.6s ease-out ${idx * 0.1}s`
+								}}
+							>
+								<button
+									onClick={() => setOpenFAQIndex(openFAQIndex === idx ? null : idx)}
+									className="w-full flex items-center justify-between py-3 text-left transition-all duration-300 hover:opacity-80"
+								>
+									<span className="flex items-center gap-3 flex-1">
+										<ChevronDown 
+											className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${openFAQIndex === idx ? 'rotate-180' : ''}`}
+											style={{ color: secondaryBlack }}
+										/>
+										<span className="font-medium leading-normal text-left" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+											{faq.question}
+										</span>
+									</span>
+								</button>
+								{openFAQIndex === idx && (
+									<div className="pb-3 pl-7 animate-fadeIn text-left" style={{ animation: 'fadeIn 0.3s ease-in' }}>
+										<p className="leading-normal whitespace-pre-line text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+											{faq.answer}
+										</p>
+									</div>
+								)}
+							</div>
+						))}
 					</div>
 				</div>
 			</section>
