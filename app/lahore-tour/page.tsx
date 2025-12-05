@@ -550,6 +550,82 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== BEST LAHORE TOUR PACKAGES ====================== */}
+			<section 
+				data-section-id="best-tour-packages"
+				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('best-tour-packages') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Best Lahore Tour Packages / Lahore City Tour
+						</h3>
+						<ul className="space-y-2">
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Old Lahore Historical Tour | Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									British Colonial Architecture Lahore City Tour | Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Mughal History Lahore City Tour | Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Sufi Heritage Lahore City Tour | Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Lahore Street Food Tour | Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Androon Lahore Food Tour | Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Lahore Rickshaw Tour | Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Lahore Rangeela Rickshaw Tour | Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Lahore City Bus Tour | Lahore City Tour
+								</p>
+							</li>
+							<li className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Walking Lahore City Tour | Lahore City Tour
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== TOP PLACES TO VISIT IN LAHORE ====================== */}
 			<section 
 				data-section-id="destinations"
