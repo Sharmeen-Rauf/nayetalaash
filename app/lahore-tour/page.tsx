@@ -404,6 +404,125 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== LAHORE GUIDED CITY TOURS 2025 ====================== */}
+			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4">
+						<h2 className="text-3xl md:text-4xl font-bold mb-6">
+							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
+								color: primaryOrange,
+								paddingLeft: '8px',
+								paddingRight: '8px',
+								display: 'inline-block'
+							}}>
+								Lahore Guided City Tours 2025
+							</span>
+						</h2>
+						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+							These Lahore City Tour, Walled City Lahore Tour and Lahore City Guided Tours are curated for you to have the real essence of the Walled City of Lahore. You can enjoy the Rangeela Rickshaw Ride in Lahore, the Lahore Old City Bus Tour, Heritage Walk through Old Streets of Lahore, the Walking Tour of Lahore City, the British Colonial Architecture Lahore Tour, the Old Lahore Historical Tour, the Sufi Heritage Tour Lahore, the Sikh Heritage Tour Lahore, the Mughal History Tour Lahore, the Lahore Food Street Tour and the Androon Lahore Food Tour with these Lahore City Tour Packages. You can also customize them to your requirements as needed.
+						</p>
+					</div>
+
+					{/* Tour Packages Grid - 3 columns top row, 2 columns bottom row */}
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+						{/* Package 1: 1 Day Walking Tour of Mughal and Sikh Era Walled City of Lahore */}
+						<div className="relative group cursor-pointer">
+							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
+								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+								<Image 
+									src="/images/lahore.jpg"
+									alt="1 Day Walking Tour of Mughal and Sikh Era Walled City of Lahore"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
+									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+										1 Day Walking Tour of Mughal and Sikh Era Walled City of Lahore
+									</h3>
+								</div>
+							</div>
+						</div>
+
+						{/* Package 2: 1 Day Lahore Guided Walled City Tour and Wahga Border Flag Raising Ceremony */}
+						<div className="relative group cursor-pointer">
+							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
+								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+								<Image 
+									src="/images/lahore.jpg"
+									alt="1 Day Lahore Guided Walled City Tour and Wahga Border Flag Raising Ceremony"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
+									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+										1 Day Lahore Guided Walled City Tour and Wahga Border Flag Raising Ceremony
+									</h3>
+								</div>
+							</div>
+						</div>
+
+						{/* Package 3: 1 Day Heritage Walk Through the Royal Route and Old Streets of Walled City Lahore */}
+						<div className="relative group cursor-pointer">
+							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
+								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+								<Image 
+									src="/images/lahore.jpg"
+									alt="1 Day Heritage Walk Through the Royal Route and Old Streets of Walled City Lahore"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
+									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+										1 Day Heritage Walk Through the Royal Route and Old Streets of Walled City Lahore
+									</h3>
+								</div>
+							</div>
+						</div>
+
+						{/* Package 4: British Colonial Architecture Lahore City Tour Package */}
+						<div className="relative group cursor-pointer lg:col-start-2 lg:col-end-3">
+							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
+								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+								<Image 
+									src="/images/lahore.jpg"
+									alt="British Colonial Architecture Lahore City Tour Package"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
+									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+										British Colonial Architecture Lahore City Tour Package
+									</h3>
+								</div>
+							</div>
+						</div>
+
+						{/* Package 5: Modern Day Lahore City Tour Package */}
+						<div className="relative group cursor-pointer lg:col-start-3 lg:col-end-4">
+							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
+								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+								<Image 
+									src="/images/lahore.jpg"
+									alt="Modern Day Lahore City Tour Package"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
+									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+										Modern Day Lahore City Tour Package
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== READY FOR TOUR CTA ====================== */}
 			<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
 				<div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-[2]">
