@@ -998,6 +998,130 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== MORE ABOUT LAHORE CITY ====================== */}
+			<section 
+				data-section-id="more-about-lahore"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about-lahore') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
+							<span style={{ color: primaryOrange }}>MORE ABOUT</span> <span style={{ color: secondaryBlack }}>LAHORE CITY</span>
+						</h2>
+						<div className="space-y-4">
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								Lahore, one of the oldest and most historically rich cities in South Asia, boasts a legacy spanning over 3000-3500 years. Despite facing numerous challenges throughout its history, Lahore has always emerged stronger, earning the nickname "Zinda Dilan e Lahore" (Lahore with Lively Hearts). Today, it stands as a vibrant metropolis, known for its bustling streets, lively markets, magnificent architecture, and the warm hospitality of its people.
+							</p>
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								The city has witnessed the rise and fall of countless empires, each leaving behind a unique architectural and cultural imprint. From ancient Hindu mythology to Mughal grandeur, from Sikh rule to British colonialism, Lahore has absorbed diverse influences, creating a rich tapestry of history, culture, and heritage that continues to thrive in the modern era.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== A BRIEF HISTORY OF THE WALLED CITY OF LAHORE ====================== */}
+			<section 
+				data-section-id="walled-city-history"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('walled-city-history') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							A BRIEF HISTORY OF THE WALLED CITY OF LAHORE
+						</h3>
+						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							According to ancient Hindu mythology, the Walled City of Lahore was founded by Lav (Loh), one of the twin sons of the Hindu god Ram. It is said that Lav established Lavapuri (the present-day Walled City of Lahore), while his brother Kusha founded the nearby city of Kasur. However, this origin story is widely considered a myth, as concrete historical evidence only dates back to the 11th century when <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Mahmood Ghaznavi</span> became victorious and established Muslim rule in the region.
+						</p>
+						<p className="leading-normal text-justify mt-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							The Walled City, with its ancient gates, narrow alleys, and historic structures, has been the heart of Lahore for centuries. Its fortifications, originally built for defense, now serve as a living testament to the city's rich and complex history, attracting historians, archaeologists, and tourists from around the world.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== OTHER HISTORICAL NAMES OF LAHORE CITY ====================== */}
+			<section 
+				data-section-id="historical-names"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-names') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							OTHER HISTORICAL NAMES OF LAHORE CITY
+						</h3>
+						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							Throughout its long history, Lahore has been known by various names. Some of the historical names associated with the city include:
+						</p>
+						<ul className="list-disc list-inside mt-4 space-y-2">
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Mehmood Puri</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lohpur</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lavapuri</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lohawar</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lohkot</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lavakot</li>
+							<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lavapur</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== RULERS AND DYNASTIES THAT RULED OVER LAHORE ====================== */}
+			<section 
+				data-section-id="rulers-dynasties"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('rulers-dynasties') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							RULERS AND DYNASTIES THAT RULED OVER THE LAHORE CITY
+						</h3>
+						
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+							{/* Image on the left */}
+							<div className="lg:col-span-1">
+								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
+									<Image 
+										src="/images/lahore.jpg"
+										alt="Historical Ruler of Lahore"
+										fill
+										className="object-cover"
+									/>
+								</div>
+							</div>
+							
+							{/* Content on the right */}
+							<div className="lg:col-span-2 space-y-4">
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+									Lahore has been ruled by numerous powerful dynasties and empires throughout its history. The Hindu Shahis were among the earliest known rulers, with Raja Jayapal being defeated by <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Mahmud Ghaznavi</span> in 1021, marking the beginning of Muslim rule in the region.
+								</p>
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+									The city experienced a golden era under Malik Ahmed Ayyaz, but Ghazni rule was eventually overthrown by <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Shahabuddin Ghori</span>. This was followed by a succession of Muslim dynasties that shaped Lahore's destiny.
+								</p>
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+									The Sultans under <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Qutubuddin Albak</span> established their presence, followed by the Turco-Afghan Dynasty under <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Jalaludin Firoz Khilji</span>. The Tughlaq Dynasty, led by <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Ghiyasudin Tughlaq</span>, and the Sadaat under <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Khizer Khan</span>, also left their mark. The Lodhi Dynasty, with <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Ibrahim Lodhi</span> at the helm, preceded the arrival of the Mughals.
+								</p>
+							</div>
+						</div>
+
+						<div className="space-y-4">
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								The Mughal era, beginning with <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Zahirudin Babar</span>, marked a period of unprecedented architectural and cultural development. The Mughals contributed some of the most magnificent architectural marvels, including the Lahore Fort, Badshahi Mosque, and Shalimar Gardens, which continue to attract millions of visitors today.
+							</p>
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								After the decline of the Mughal Empire, Lahore saw brief periods under <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Raghunath Rao</span> of the Marathas, <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Nadir Shah</span> and <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Ahmad Shah Abdali</span> of the Durrani Empire. The Sikh Empire, under the legendary <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Maharaja Ranjit Singh</span>, established Lahore as the capital of the Sikh Kingdom, adding another rich layer to the city's heritage.
+							</p>
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								The British took control of Lahore after the fall of the Sikh Empire, introducing Victorian-style <span style={{ color: '#16a34a', fontWeight: 'bold' }}>British Colonial Architecture</span> that stands alongside the magnificent <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Mughal Architecture</span>. This architectural fusion created a unique urban landscape that reflects Lahore's complex historical journey.
+							</p>
+							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								After colonial rule, Lahore became part of Pakistan, and today it stands as a vibrant cultural and intellectual hub. The city continues to evolve while preserving its rich historical legacy, serving as a bridge between its glorious past and its promising future.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== READY FOR TOUR CTA ====================== */}
 			<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
 				<div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-[2]">
