@@ -1122,6 +1122,131 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== 13 GATES OF THE WALLED CITY OF LAHORE ====================== */}
+			<section 
+				data-section-id="gates"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('gates') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							13 GATES OF THE WALLED CITY OF LAHORE
+						</h3>
+						<p className="leading-normal text-justify mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+							The Walled City of Lahore was once enclosed by 13 grand gates, each serving as a magnificent entry point to this historic city. While some of these gates still stand proudly as testaments to Lahore's rich architectural heritage, others were unfortunately destroyed over time. These gates, commissioned during the Mughal era, not only served as defensive structures but also as symbols of the city's grandeur and historical significance.
+						</p>
+						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Delhi Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Bhatti Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Lohari Gate or Lahori Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Mori Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Sheranwala Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Taxali Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Roshnai Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Mochi Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Shah Alam Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Akbari Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Masti Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Kashmiri Gate</p>
+							</div>
+							<div className="flex items-center gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Yakki Gate</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== THE COLORFUL BAZAARS OF LAHORE CITY ====================== */}
+			<section 
+				data-section-id="bazaars"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('bazaars') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							THE COLORFUL BAZAARS OF LAHORE CITY
+						</h3>
+						
+						<div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+							{/* Content on the left */}
+							<div className="lg:col-span-2 space-y-4">
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+									Lahore's bazaars are among the most vibrant and bustling markets in Pakistan, offering visitors a chance to experience the true essence of the city and its people. From the biggest market in Asia to the narrowest streets filled with shops, and from traditional bazaars to luxurious modern malls, Lahore's shopping scene is as diverse as its culture.
+								</p>
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+									These markets are characterized by narrow streets with shops lining both sides, offering everything from unique handicrafts and traditional jewelry to shiny and traditional clothes, fancy and casual footwear, household accessories, home decor, local and branded groceries, homeopathic and herbal medicines, aromatic spices, and small food stalls serving delicious local treats.
+								</p>
+								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+									A walking tour is the best way to explore these bazaars and truly immerse yourself in the Lahori bustle. Alternatively, you can experience the vibrant atmosphere through a Lahore Rickshaw Tour, which offers a unique and colorful way to navigate through these historic markets.
+								</p>
+								
+								<div className="mt-4">
+									<p className="leading-normal mb-3 font-semibold" style={{ color: secondaryBlack, fontSize: '16px' }}>
+										Some famous markets in Lahore include:
+									</p>
+									<ul className="list-disc list-inside space-y-2">
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Anarkali Bazaar</li>
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Ichhra Bazaar</li>
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Shah Alami Market</li>
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Rang Mahal Bazaar</li>
+										<li className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>Liberty Market</li>
+									</ul>
+								</div>
+							</div>
+							
+							{/* Image on the right */}
+							<div className="lg:col-span-1">
+								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
+									<Image 
+										src="/images/lahore.jpg"
+										alt="Colorful Bazaar of Lahore"
+										fill
+										className="object-cover"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== READY FOR TOUR CTA ====================== */}
 			<section className="py-8 md:py-12 relative overflow-hidden" style={{ backgroundColor: secondaryBlack }}>
 				<div className="container mx-auto px-6 md:px-12 lg:px-16 max-w-7xl relative z-[2]">
