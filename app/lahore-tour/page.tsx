@@ -862,7 +862,7 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
-							<span style={{ color: primaryOrange }}>MORE ABOUT</span> <span style={{ color: secondaryBlack }}>LAHORE CITY</span>
+							More About Lahore City
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
@@ -884,10 +884,10 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							A BRIEF HISTORY OF THE WALLED CITY OF LAHORE
+							A Brief History of the Walled City of Lahore
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-							According to ancient Hindu mythology, the Walled City of Lahore was founded by Lav (Loh), one of the twin sons of the Hindu god Ram. It is said that Lav established Lavapuri (the present-day Walled City of Lahore), while his brother Kusha founded the nearby city of Kasur. However, this origin story is widely considered a myth, as concrete historical evidence only dates back to the 11th century when <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Mahmood Ghaznavi</span> became victorious and established Muslim rule in the region.
+							According to ancient Hindu mythology, the Walled City of Lahore was founded by Lav (Loh), one of the twin sons of the Hindu god Ram. It is said that Lav established Lavapuri (the present-day Walled City of Lahore), while his brother Kusha founded the nearby city of Kasur. However, this origin story is widely considered a myth, as concrete historical evidence only dates back to the 11th century when Mahmood Ghaznavi became victorious and established Muslim rule in the region.
 						</p>
 						<p className="leading-normal text-justify mt-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
 							The Walled City, with its ancient gates, narrow alleys, and historic structures, has been the heart of Lahore for centuries. Its fortifications, originally built for defense, now serve as a living testament to the city's rich and complex history, attracting historians, archaeologists, and tourists from around the world.
@@ -904,7 +904,7 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							OTHER HISTORICAL NAMES OF LAHORE CITY
+							Other Historical Names of Lahore City
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
 							Throughout its long history, Lahore has been known by various names. Some of the historical names associated with the city include:
@@ -930,7 +930,7 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							RULERS AND DYNASTIES THAT RULED OVER THE LAHORE CITY
+							Rulers and Dynasties That Ruled Over the Lahore City
 						</h3>
 						
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
@@ -949,26 +949,26 @@ const LahoreTourPage = () => {
 							{/* Content on the right */}
 							<div className="lg:col-span-2 space-y-4">
 								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-									Lahore has been ruled by numerous powerful dynasties and empires throughout its history. The Hindu Shahis were among the earliest known rulers, with Raja Jayapal being defeated by <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Mahmud Ghaznavi</span> in 1021, marking the beginning of Muslim rule in the region.
+									Lahore has been ruled by numerous powerful dynasties and empires throughout its history. The Hindu Shahis were among the earliest known rulers, with Raja Jayapal being defeated by Mahmud Ghaznavi in 1021, marking the beginning of Muslim rule in the region.
 								</p>
 								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-									The city experienced a golden era under Malik Ahmed Ayyaz, but Ghazni rule was eventually overthrown by <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Shahabuddin Ghori</span>. This was followed by a succession of Muslim dynasties that shaped Lahore's destiny.
+									The city experienced a golden era under Malik Ahmed Ayyaz, but Ghazni rule was eventually overthrown by Shahabuddin Ghori. This was followed by a succession of Muslim dynasties that shaped Lahore's destiny.
 								</p>
 								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-									The Sultans under <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Qutubuddin Albak</span> established their presence, followed by the Turco-Afghan Dynasty under <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Jalaludin Firoz Khilji</span>. The Tughlaq Dynasty, led by <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Ghiyasudin Tughlaq</span>, and the Sadaat under <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Khizer Khan</span>, also left their mark. The Lodhi Dynasty, with <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Ibrahim Lodhi</span> at the helm, preceded the arrival of the Mughals.
+									The Sultans under Qutubuddin Albak established their presence, followed by the Turco-Afghan Dynasty under Jalaludin Firoz Khilji. The Tughlaq Dynasty, led by Ghiyasudin Tughlaq, and the Sadaat under Khizer Khan, also left their mark. The Lodhi Dynasty, with Ibrahim Lodhi at the helm, preceded the arrival of the Mughals.
 								</p>
 							</div>
 						</div>
 
 						<div className="space-y-4">
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The Mughal era, beginning with <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Zahirudin Babar</span>, marked a period of unprecedented architectural and cultural development. The Mughals contributed some of the most magnificent architectural marvels, including the Lahore Fort, Badshahi Mosque, and Shalimar Gardens, which continue to attract millions of visitors today.
+								The Mughal era, beginning with Zahirudin Babar, marked a period of unprecedented architectural and cultural development. The Mughals contributed some of the most magnificent architectural marvels, including the Lahore Fort, Badshahi Mosque, and Shalimar Gardens, which continue to attract millions of visitors today.
 							</p>
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								After the decline of the Mughal Empire, Lahore saw brief periods under <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Raghunath Rao</span> of the Marathas, <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Nadir Shah</span> and <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Ahmad Shah Abdali</span> of the Durrani Empire. The Sikh Empire, under the legendary <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Maharaja Ranjit Singh</span>, established Lahore as the capital of the Sikh Kingdom, adding another rich layer to the city's heritage.
+								After the decline of the Mughal Empire, Lahore saw brief periods under Raghunath Rao of the Marathas, Nadir Shah and Ahmad Shah Abdali of the Durrani Empire. The Sikh Empire, under the legendary Maharaja Ranjit Singh, established Lahore as the capital of the Sikh Kingdom, adding another rich layer to the city's heritage.
 							</p>
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The British took control of Lahore after the fall of the Sikh Empire, introducing Victorian-style <span style={{ color: '#16a34a', fontWeight: 'bold' }}>British Colonial Architecture</span> that stands alongside the magnificent <span style={{ color: '#16a34a', fontWeight: 'bold' }}>Mughal Architecture</span>. This architectural fusion created a unique urban landscape that reflects Lahore's complex historical journey.
+								The British took control of Lahore after the fall of the Sikh Empire, introducing Victorian-style British Colonial Architecture that stands alongside the magnificent Mughal Architecture. This architectural fusion created a unique urban landscape that reflects Lahore's complex historical journey.
 							</p>
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
 								After colonial rule, Lahore became part of Pakistan, and today it stands as a vibrant cultural and intellectual hub. The city continues to evolve while preserving its rich historical legacy, serving as a bridge between its glorious past and its promising future.
@@ -986,7 +986,7 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							13 GATES OF THE WALLED CITY OF LAHORE
+							13 Gates of the Walled City of Lahore
 						</h3>
 						<p className="leading-normal text-justify mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
 							The Walled City of Lahore was once enclosed by 13 grand gates, each serving as a magnificent entry point to this historic city. While some of these gates still stand proudly as testaments to Lahore's rich architectural heritage, others were unfortunately destroyed over time. These gates, commissioned during the Mughal era, not only served as defensive structures but also as symbols of the city's grandeur and historical significance.
@@ -1057,7 +1057,7 @@ const LahoreTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							THE COLORFUL BAZAARS OF LAHORE CITY
+							The Colorful Bazaars of Lahore City
 						</h3>
 						
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
