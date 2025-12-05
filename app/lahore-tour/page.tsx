@@ -1126,6 +1126,82 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== GUIDED LAHORE TOUR PACKAGES / LAHORE CITY TOUR ====================== */}
+			<section 
+				data-section-id="guided-lahore-tour-packages"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('guided-lahore-tour-packages') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					{/* Main Title */}
+					<div className="text-center mb-6 py-3" style={{ backgroundColor: '#4a5568' }}>
+						<h2 className="text-xl md:text-2xl font-bold text-white">
+							Guided Lahore Tour Packages / Lahore City Tour
+						</h2>
+					</div>
+
+					{/* Three Column Layout: Image - List - Image */}
+					<div className="grid grid-cols-1 lg:grid-cols-12 gap-3 items-start max-w-7xl mx-auto mt-4">
+						{/* Left Image */}
+						<div className="lg:col-span-4 hidden lg:block">
+							<div className="relative w-full h-[400px] rounded overflow-hidden">
+								<Image 
+									src="/images/lahore.jpg"
+									alt="Lahore Architecture"
+									fill
+									className="object-cover"
+								/>
+							</div>
+						</div>
+
+						{/* Center Content */}
+						<div className="lg:col-span-4">
+							<h3 className="text-base md:text-lg font-bold mb-2 text-left px-1" style={{ color: secondaryBlack }}>
+								Best Lahore Tour Packages / Lahore City Tour
+							</h3>
+							
+							<div className="bg-white rounded">
+								{[
+									'Old Lahore Historical Tour',
+									'British Colonial Architecture Lahore City Tour',
+									'Mughal History Lahore City Tour',
+									'Sufi Heritage Lahore City Tour',
+									'Lahore Street Food Tour',
+									'Androon Lahore Food Tour',
+									'Lahore Rickshaw Tour',
+									'Lahore Rangeela Rickshaw Tour',
+									'Lahore City Bus Tour',
+									'Walking Lahore City Tour',
+								].map((tour, idx) => (
+									<div 
+										key={idx}
+										className="py-2 px-3"
+										style={{ 
+											backgroundColor: idx % 2 === 0 ? '#e5e7eb' : 'white',
+										}}
+									>
+										<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{tour} | Lahore City Tour
+										</p>
+									</div>
+								))}
+							</div>
+						</div>
+
+						{/* Right Image */}
+						<div className="lg:col-span-4 hidden lg:block">
+							<div className="relative w-full h-[400px] rounded overflow-hidden">
+								<Image 
+									src="/images/lahore.jpg"
+									alt="Lahore Architecture"
+									fill
+									className="object-cover"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== PLAN YOUR LAHORE CITY TOUR ====================== */}
 			<section 
 				data-section-id="plan-tour"
