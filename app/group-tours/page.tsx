@@ -386,7 +386,7 @@ const GroupToursPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed">
-							Perfect for families, friends, corporate teams, and student groups. Experience the beauty of Pakistan together with our customized group tour packages.
+							Explore Pakistan's diverse history, culture, and nature with our comprehensive group packages that cover the North, South, and Central regions.
 						</p>
 					</div>
 				</div>
@@ -403,11 +403,11 @@ const GroupToursPage = () => {
 								paddingRight: '8px',
 								display: 'inline-block'
 							}}>
-								Weekly Group Tours
+								All Pakistan Group Tour Packages
 							</span>
 						</h2>
 						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
-							Here is the list of all upcoming trips by WeeklyGroupTours.pk. You can book the trips that best suit your needs, if not, you always have the option to customize a trip for yourself. Just contact us!
+							Explore Pakistan's diverse history, culture, and nature with our comprehensive group packages that cover the North, South, and Central regions.
 						</p>
 					</div>
 
@@ -416,15 +416,15 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/skardu 2.jpg"
-									alt="Skardu Hunza and Shandur Top Group Tour"
+									src="/images/murree and nathia gali.jpg"
+									alt="3 Days – Murree, Patriata & Nathia Gali Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
 								/>
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Hunza and Shandur Top Group Tour
+									3 Days – Murree, Patriata & Nathia Gali Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -440,15 +440,15 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/skardu 2.jpg"
-									alt="Skardu Shakar and Babusar Valley Group Tour"
+									src="/images/Swat.jpg"
+									alt="4 Days – Swat, Malam Jabba, Kalam & Mahodand Lake Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
 								/>
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Shakar and Babusar Valley Group Tour
+									4 Days – Swat, Malam Jabba, Kalam & Mahodand Lake Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -464,15 +464,15 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/naran and kaghan.jpg"
-									alt="9 Days Kaghan Babusar and Neelum Group Tour"
+									src="/images/Swat.jpg"
+									alt="5 Days – Kalam, Mahodand, Gabral & Shahi Bagh Adventure Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
 								/>
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									9 Days Kaghan Babusar and Neelum Group Tour
+									5 Days – Kalam, Mahodand, Gabral & Shahi Bagh Adventure Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -489,14 +489,14 @@ const GroupToursPage = () => {
 							<div className="relative h-48 overflow-hidden">
 								<Image 
 									src="/images/Hunza.jpg"
-									alt="Skardu Hunza, Naltar and Khunjerab Public Group Tour"
+									alt="5 Days – Hunza, Attabad Lake & Khunjerab Pass Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
 								/>
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Hunza, Naltar and Khunjerab Public Group Tour
+									5 Days – Hunza, Attabad Lake & Khunjerab Pass Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -512,15 +512,15 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/fairy meadows 2.jpg"
-									alt="Skardu Fairy Meadows and Beyal Camp Group Tour"
+									src="/images/skardu 2.jpg"
+									alt="7 Days – Hunza & Skardu Multi-Valley Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
 								/>
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Fairy Meadows and Beyal Camp Group Tour
+									7 Days – Hunza & Skardu Multi-Valley Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -536,15 +536,15 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/naran and kaghan.jpg"
-									alt="8 Days Kaghan, Naltar and Fairy Meadows Valley Group Tour"
+									src="/images/fairy meadows 2.jpg"
+									alt="8 Days – Fairy Meadows, Hunza & Naltar Valley Group Expedition"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
 								/>
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									8 Days Kaghan, Naltar and Fairy Meadows Valley Group Tour
+									8 Days – Fairy Meadows, Hunza & Naltar Valley Group Expedition
 								</h3>
 								<a 
 									href="#" 
@@ -560,15 +560,15 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/skardu 2.jpg"
-									alt="Skardu Hunza Babusar and Shandur Top Group Tour"
+									src="/images/azad kashmir.jpg"
+									alt="4 Days – Neelum Valley, Taobat & Arang Kel Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
 								/>
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Hunza Babusar and Shandur Top Group Tour
+									4 Days – Neelum Valley, Taobat & Arang Kel Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -584,15 +584,15 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/gilgit.jpg"
-									alt="Skardu Gilgit, Babusar and Jabba Smart Group Tour"
+									src="/images/azad kashmir.jpg"
+									alt="5 Days – Azad Kashmir (Keran, Sharda, Arang Kel, Ratti Gali) Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
 								/>
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									Skardu Gilgit, Babusar and Jabba Smart Group Tour
+									5 Days – Azad Kashmir (Keran, Sharda, Arang Kel, Ratti Gali) Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -608,15 +608,15 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/azad kashmir.jpg"
-									alt="8 Days Kaghan, Neelum and Azad Kashmir Group Tour"
+									src="/images/skardu 2.jpg"
+									alt="5 Days – Skardu, Deosai Plains, Cold Desert & Khaplu Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
 								/>
 							</div>
 							<div className="p-5">
 								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
-									8 Days Kaghan, Neelum and Azad Kashmir Group Tour
+									5 Days – Skardu, Deosai Plains, Cold Desert & Khaplu Group Tour
 								</h3>
 								<a 
 									href="#" 
@@ -627,6 +627,80 @@ const GroupToursPage = () => {
 								</a>
 							</div>
 						</div>
+
+						{/* Tour Package 10 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/Kund Malir.jpg"
+									alt="3 Days – Balochistan Coastal Belt (Ormara, Kund Malir, Hingol) Group Trip"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									3 Days – Balochistan Coastal Belt (Ormara, Kund Malir, Hingol) Group Trip
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 11 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/fairy meadows 2.jpg"
+									alt="5 Days – Fairy Meadows & Nanga Parbat Base Camp Trek Group Tour"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									5 Days – Fairy Meadows & Nanga Parbat Base Camp Trek Group Tour
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 12 */}
+						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+							<div className="relative h-48 overflow-hidden">
+								<Image 
+									src="/images/gilgit.jpg"
+									alt="7 Days – Gilgit, Hunza, Naltar & Khunjerab Group Explorer"
+									fill
+									className="object-cover hover:scale-110 transition-transform duration-300"
+								/>
+							</div>
+							<div className="p-5">
+								<h3 className="text-lg font-bold mb-3 leading-tight" style={{ color: secondaryBlack }}>
+									7 Days – Gilgit, Hunza, Naltar & Khunjerab Group Explorer
+								</h3>
+								<a 
+									href="#" 
+									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
+								>
+									Read More
+								</a>
+							</div>
+						</div>
+
+						{/* Tour Package 13 - Empty slot, keeping structure for future */}
 					</div>
 				</div>
 			</section>
@@ -662,7 +736,7 @@ const GroupToursPage = () => {
 								FIND A DESTINATION
 							</h3>
 							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
-								from our list of tours updated on 'Tours' page.
+								Look through our list of amazing tours updated regularly on the 'Tours' page or on this list.
 							</p>
 						</div>
 
@@ -675,7 +749,7 @@ const GroupToursPage = () => {
 								PICK-UP
 							</h3>
 							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
-								the trip that best suits your requirements.
+								Select the fixed-departure trip that best suits your requirements, budget, and schedule.
 							</p>
 						</div>
 
@@ -688,7 +762,7 @@ const GroupToursPage = () => {
 								CONTACT US
 							</h3>
 							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
-								to book your trip or customize it according to your needs.
+								Call, email, or message us to confirm your booking or to customize a private tour tailored exactly to your group's needs.
 							</p>
 						</div>
 
@@ -701,7 +775,7 @@ const GroupToursPage = () => {
 								GO & EXPLORE NOW
 							</h3>
 							<p className="text-sm" style={{ color: `${secondaryBlack}80` }}>
-								Pack your bags and ENJOY.
+								Get ready, pack your bags, and ENJOY your memorable journey with Nayi Talaash!
 							</p>
 						</div>
 					</div>
