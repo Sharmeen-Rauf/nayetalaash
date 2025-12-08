@@ -798,7 +798,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Swat River', 
-								image: '/images/Swat River.jpg',
+								image: '/images/swat river 2-swatpage.jpg',
 								description: 'The river is mainly formed by the melting glacial waters flowing from the Hindukush Mountains. Its biggest feeding rivers are the Gabral, Utror, and Ushu Rivers. The Swat River travels throughout the valley, eventually joining the Panjkora River and flowing toward Peshawar.',
 								imageLeft: false
 							},
@@ -810,7 +810,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'White Palace Swat', 
-								image: '/images/White Palace Swat.jpg',
+								image: '/images/White Palace Swat new-swatpage.jpg',
 								description: 'The beautiful White Palace was built in 1940 by the ruler (Wali) of Swat Valley. It is located in Marghazar, only about 13 kilometers from the capital, Saidu Sharif. The historic palace now operates as a stunning hotel, warmly welcoming guests.',
 								imageLeft: false
 							},
