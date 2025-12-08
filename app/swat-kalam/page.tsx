@@ -744,13 +744,13 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Desan Meadows', 
-								image: '/images/Desan Meadows.jpg',
+								image: '/images/Desan Meadows-swatpage.jpg',
 								description: 'These meadows are near Kalam and offer stunning, lush green fields and heavenly views. You can reach this beautiful spot by taking a jeep ride from either Kalam or Utror Valley. It\'s surrounded by other stunning sites like Godar, Dararo, and Zahro Lakes.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Green Top', 
-								image: '/images/Green Top (Boyun Village).jpg',
+								image: '/images/green top-swatpage.jpg',
 								description: 'Also known as the "Kalam View Point," this spot is famous for its mesmerizing panoramic views. It\'s accessible by jeep or by enjoying a scenic hike to the top. A small place called Boyun Village is up here, known for its beautiful green surroundings in the summer.',
 								imageLeft: false
 							},
@@ -762,13 +762,13 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Gabral Valley', 
-								image: '/images/Gabral Valley.jpg',
+								image: '/images/Gabral Valley new-swatpage.jpg',
 								description: 'This beautiful valley is northwest of Swat and Utror, touching the lower parts of the Himalayas. If you travel deep inside, you\'ll discover lovely spots like Chota Banda Meadows and Shahi Bagh. Gabral Valley truly feels like a hidden slice of paradise for nature lovers and tourists.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Blue Water Kalam Swat', 
-								image: '/images/Blue Water Point.jpg',
+								image: '/images/Blue Water Kalam Swat-swatpage.jpg',
 								description: 'This spot is about 10-15 km from Kalam and takes around two hours to reach by jeep. It is a popular summer getaway known for its crystal-clear water flow. It gained extra fame after a visit by the former Prime Minister of Pakistan, Mr. Imran Khan.',
 								imageLeft: true
 							},
@@ -792,7 +792,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Bahrain', 
-								image: '/images/swat.jpg',
+								image: '/images/bahrian-swatpage.jpg',
 								description: 'Bahrain sits where the Daral and Swat Rivers meet on the main highway to Kalam. It was a beautiful tourist spot with a lively market, but the 2022 floods caused significant damage. From here, you can start the journey to visit Daral and Saidgai Lakes.',
 								imageLeft: true
 							},
