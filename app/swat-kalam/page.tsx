@@ -756,7 +756,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Utror Valley', 
-								image: '/images/swat.jpg',
+								image: '/images/Utror Valley-swatpage.jpg',
 								description: 'Utror is a great central base camp for exploring many lesser-known valleys nearby. It\'s the gateway to beautiful spots like Gabral Valley, Kumrat Valley, and Dhan Valley. You can also visit gorgeous alpine lakes from here, including Kundol Lake and the twin lakes of Pari and Paristan.',
 								imageLeft: true
 							},
@@ -786,7 +786,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Khwazakhela to Besham Route', 
-								image: '/images/swat.jpg',
+								image: '/images/Khwazakhela to Besham Route-swatpage.jpg',
 								description: 'This is the N90 Highway, a route connecting Swat to the Kohistan region. It stretches for about 65–70 km, starting at Khwazakhela City and ending at Besham City. This highway is essential and used frequently by both local traders and tourists.',
 								imageLeft: false
 							},
