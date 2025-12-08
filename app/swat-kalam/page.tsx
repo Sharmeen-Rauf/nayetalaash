@@ -804,7 +804,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Swat Expressway', 
-								image: '/images/Swat Expressway.jpg',
+								image: '/images/Swat Expressway new-swatpage.jpg',
 								description: 'This modern highway (also called the N95 Highway) runs from Chakdara City all the way up to Kalam. It was finished in 2019 and has made a huge difference in the ease of travel to the valley. The highway has played a significant role in boosting tourism and accessibility to the region.',
 								imageLeft: true
 							},
