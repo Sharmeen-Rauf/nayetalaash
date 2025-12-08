@@ -466,35 +466,35 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/package 3-swatpage.jpg'
+								image: '/images/pacakges2.jpeg'
 							},
 							{ 
 								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
-								image: '/images/package 4-swatpage.jpg'
+								image: '/images/package 3-swatpage.jpg'
 							},
 							{ 
 								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
-								image: '/images/package 5-swatpage.jpg'
+								image: '/images/package 4-swatpage.jpg'
 							},
 							{ 
 								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
-								image: '/images/package 6-swatpage.jpg'
+								image: '/images/package 5-swatpage.jpg'
 							},
 							{ 
 								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
-								image: '/images/package 7-swatpage.jpg'
+								image: '/images/package 6-swatpage.jpg'
 							},
 							{ 
 								title: '7 Days – Swat to Kumrat Valley Adventure',
-								image: '/images/package 8-swatpage.jpg'
+								image: '/images/package 7-swatpage.jpg'
 							},
 							{ 
 								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
-								image: '/images/Package 9-swatpage.jpg'
+								image: '/images/package 8-swatpage.jpg'
 							},
 							{ 
 								title: '3 Days – Swat Valley Highlights Tour',
-								image: '/images/package 10-swatpage.jpg'
+								image: '/images/Package 9-swatpage.jpg'
 							},
 						];
 						
@@ -579,7 +579,7 @@ const SwatKalamPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
+									src="/images/package 10-swatpage.jpg"
 									alt="3 Days: Malam Jabba, Kalam & Swat Valley Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -595,7 +595,7 @@ const SwatKalamPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
+									src="/images/package 11-swatpage.jpg"
 									alt="2 Days: Malam Jabba Swat Quick Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
