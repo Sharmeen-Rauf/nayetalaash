@@ -462,39 +462,39 @@ const HunzaPage = () => {
 						const allPackages = [
 							{ 
 								title: '4 Days – Hunza, Gilgit & Khunjerab Pass',
-								image: '/images/Hunza.jpg'
+								image: '/images/package 1-hunzatourpage.jpg'
 							},
 							{ 
 								title: '5 Days – Hunza & Khunjerab Pass Tour',
-								image: '/images/Hunza.jpg'
+								image: '/images/package 2-hunzatourpage.jpg'
 							},
 							{ 
 								title: '6 Days – Minapin, Gojal & Naltar Valley',
-								image: '/images/Hunza.jpg'
+								image: '/images/package 3-hunzatourpage.jpg'
 							},
 							{ 
 								title: '6 Days – Hunza, Naltar & Khunjerab Tour',
-								image: '/images/Hunza.jpg'
+								image: '/images/package 4-hunzatourpage.jpg'
 							},
 							{ 
 								title: '7 Days – Hunza, Nagar & Minapin Tour',
-								image: '/images/Hunza.jpg'
+								image: '/images/package 5-hunzatourpage.jpg'
 							},
 							{ 
 								title: '8 Days – Naran, Shogran & Hunza Tour',
-								image: '/images/Hunza.jpg'
+								image: '/images/package 6-hunzatourpage.jpg'
 							},
 							{ 
 								title: '8 Days – Hunza & Skardu Valley Tour',
-								image: '/images/Hunza.jpg'
+								image: '/images/package 7-hunzatourpage.jpg'
 							},
 							{ 
 								title: '10 Days – Hunza, Skardu Premium Journey',
-								image: '/images/Hunza.jpg'
+								image: '/images/package 8-hunzatourpage.jpg'
 							},
 							{ 
 								title: '15 Days – Fairy Meadows, Hunza & Skardu Expedition',
-								image: '/images/Hunza.jpg'
+								image: '/images/package 9-hunzatourpage.jpg'
 							},
 						];
 						
@@ -579,7 +579,7 @@ const HunzaPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/Hunza.jpg"
+									src="/images/package 10-hunzatourpage.jpg"
 									alt="5 Days Hunza Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -595,7 +595,7 @@ const HunzaPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/Hunza.jpg"
+									src="/images/package 11-hunzatourpage.jpg"
 									alt="8 Days Hunza & Skardu Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -705,79 +705,79 @@ const HunzaPage = () => {
 						{[
 							{ 
 								title: 'Hunza Valley', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Hunza Valley-hunzatourpage.jpg',
 								description: 'Located in Gilgit Baltistan, Hunza is a district blessed with sky-high, heavenly mountains and turquoise lakes. It offers rich history, thrilling adventure spots, and famously welcoming people. Hunza\'s history may date back to Alexander the Great and it shares borders with China and Afghanistan.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Karakoram Highway (KKH)', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Karakoram Highway (KKH)-hunzatourpage.jpg',
 								description: 'The Karakoram Highway, often called the "8th Wonder of the World," is one of the most scenic roads on the planet. It winds through towering mountains, deep valleys, and crystal clear rivers, offering breathtaking views throughout the journey to Hunza. Traveling on KKH is an experience in itself, filled with dramatic landscapes and unforgettable moments.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Altit Fort', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Altit Fort-hunzatourpage.jpg',
 								description: 'This nearly 1100-year-old fort sits on a massive rock and was the home of the Hunza Rulers (Mirs). It features a 200-meter-high watch tower that overlooked the ancient Silk Route. It has been beautifully restored and offers guided tours and a wonderful local women-run café at its base.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Baltit Fort', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Baltit Fort-hunzatourpage.jpg',
 								description: 'An ancient, stunning fort in Karimabad, estimated to be 700 to 800 years old. It was built higher than Altit to act as a watchtower over the Silk Route for trade and protection. Now a beautifully preserved UNESCO World Heritage site, it offers extraordinary views of the valley.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Attabad Lake', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Attabad Lake-hunzatourpage.jpg',
 								description: 'Attabad Lake is famous worldwide for its bright turquoise water. Formed after a natural landslide in 2010, the lake has become a major attraction where travelers enjoy boating, jet skiing, dining at lakeside cafes and capturing stunning photographs. The magical blue color makes this lake one of the most iconic spots of Hunza.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Attabad Tunnels', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Attabad Tunnels-hunzatourpage.jpg',
 								description: 'The Attabad Tunnels add a modern touch to the region\'s natural beauty. These long tunnels cut directly through the mountains and provide a smooth, scenic drive connecting Lower Hunza with the Upper Hunza region. The contrast of engineering brilliance with natural landscapes makes this stretch unforgettable.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Khunjerab Pass', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Khunjerab Pass-hunzatourpage.jpg',
 								description: 'Khunjerab Pass, located at an altitude of 4,693 meters, is the world\'s highest paved international border crossing between Pakistan and China. The journey to the pass is filled with breathtaking glacier views, snow-covered mountains, and chances of spotting wildlife like ibex and marmots. The cold, fresh air and open landscapes make it a must visit destination.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Hussaini Suspension Bridge', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Hussaini Suspension Bridge-hunzatourpage.jpg',
 								description: 'The Hussaini Suspension Bridge is often called one of the most thrilling bridges in the world. With its wooden planks and dramatic setting over the river, it offers a unique adventure. Despite its looks, it is safe to cross and provides excellent views of the majestic Passu Cones rising sharply in the background.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Eagle\'s Nest Viewpoint', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Eagle\'s Nest Viewpoint-hunzatourpage.jpg',
 								description: 'Eagle\'s Nest in Duikar is the best place in Hunza to witness magical sunrises and sunsets. From this viewpoint, travelers can see panoramic views of Rakaposhi, Golden Peak, Ultar Sar and other surrounding mountains. The scenery transforms beautifully with changing light, making it a must see location for photographers.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Karimabad Bazar', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Karimabad Bazar-hunzatourpage.jpg',
 								description: 'Karimabad Bazar is the cultural and shopping hub of Hunza. Visitors can explore local gemstones, traditional handicrafts, handmade wool clothing, dry fruits, and authentic Hunzai food. The lively atmosphere, combined with friendly locals and scenic views, makes shopping here a pleasure.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Passu Cones', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Passu Cones-hunzatourpage.jpg',
 								description: 'These mountains are famous for their sharp, pyramid like structure and are also known as Passu Cathedral. They stand at 6106 meters and dominate the backdrop of the peaceful Passu Village on the KKH. Passu is a quiet destination, offering panoramic, serene views perfect for contemplation and photos.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Passu Glacier', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Passu Glacier-hunzatourpage.jpg',
 								description: 'Located just south of the mighty Passu Cones, you can spot this glacier easily from the KKH. It stretches over 1.5 sq km and is connected to the massive Batura Glacier behind it. You can trek from Borith Lake for 1-2 hours to get closer to this impressive ice mass.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Batura Glacier', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Batura Glacier-hunzatourpage.jpg',
 								description: 'This is the neighboring glacier to Passu Glacier and is incredibly important. It is the longest and largest glacier outside the polar regions and the third largest in all of Pakistan. Stretching for almost 57 km, it sits at the base of the Batura and Passu Peaks.',
 								imageLeft: true
 							},
