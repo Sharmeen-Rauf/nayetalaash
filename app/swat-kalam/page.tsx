@@ -708,7 +708,7 @@ const SwatKalamPage = () => {
 						{[
 							{ 
 								title: 'Kalam Valley', 
-								image: '/images/Kalam valley.jpg',
+								image: '/images/Kalam Valley-swatpage.jpg',
 								description: 'Kalam means "Blue Water" and is the main entrance to the beautiful upper valleys. It sits high in the Hindukush mountains and gives amazing views of Falaksar Peak. You\'ll find comfy places to stay, great food, and it\'s open to enjoy in both summer and winter.',
 								imageLeft: true
 							},
@@ -732,7 +732,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Mahodand Lake', 
-								image: '/images/Mahodand Lake.jpg',
+								image: '/images/Mahodand Lake new-swatpage.jpg',
 								description: 'This is a beautiful, large glacial lake formed by melting ice from the Hindukush Mountains. It\'s great for summer visits but closes completely in winter because heavy snow blocks the road. You can find small shops, restaurants, and meadows perfect for camping near the water.',
 								imageLeft: true
 							},
