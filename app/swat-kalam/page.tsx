@@ -720,13 +720,13 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Ushu Forest (Ushu Valley)', 
-								image: '/images/Ushu Forest.jpg',
+								image: '/images/Ushu Forest (Ushu Valley)-swatpage.jpg',
 								description: 'Just 8 km from Kalam, this forest is famous for its thick, dense Deodar trees. It\'s easy to reach even without a car and you\'ll find small shops, hotels, and places to camp along the road. It\'s a beautiful, shady spot for a walk and a great place to enjoy the fresh air.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Matiltan Waterfall and Chashma-e-Shifa', 
-								image: '/images/Matiltan Waterfall.jpg',
+								image: '/images/Matiltan Waterfall and Chashma-e-Shifaswatpage.jpg',
 								description: 'The road leads up to Matiltan Village, where you can see the stunning waterfall and a seasonal glacier. There are hotels and restaurants here, and a special spring called Chashma-e-Shifa (Healing Fountain). Locals believe the water from this fountain has unique healing properties due to its minerals.',
 								imageLeft: false
 							},
