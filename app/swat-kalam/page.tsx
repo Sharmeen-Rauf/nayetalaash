@@ -462,39 +462,39 @@ const SwatKalamPage = () => {
 						const allPackages = [
 							{ 
 								title: '2 Days – Malam Jabba Tour (Short Escape)',
-								image: '/images/MalamJabba Tour(Short Escape)package 1.jpg'
+								image: '/images/package 1-swatpage.jpg'
 							},
 							{ 
 								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
-								image: '/images/pacakges2.jpeg'
+								image: '/images/package 3-swatpage.jpg'
 							},
 							{ 
 								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Green Top package 3.jpg'
+								image: '/images/package 4-swatpage.jpg'
 							},
 							{ 
 								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
-								image: '/images/Relaxed Kalam, Mahodand, Green Top & Blue Water Pointpackage 4.jpg'
+								image: '/images/package 5-swatpage.jpg'
 							},
 							{ 
 								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
-								image: '/images/Kalam, Mahodand Lake, Malam Jabba & Desan Toppackage 5.jpg'
+								image: '/images/package 6-swatpage.jpg'
 							},
 							{ 
 								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
-								image: '/images/swat.jpg'
+								image: '/images/package 7-swatpage.jpg'
 							},
 							{ 
 								title: '7 Days – Swat to Kumrat Valley Adventure',
-								image: '/images/swat.jpg'
+								image: '/images/package 8-swatpage.jpg'
 							},
 							{ 
 								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
-								image: '/images/swat.jpg'
+								image: '/images/Package 9-swatpage.jpg'
 							},
 							{ 
 								title: '3 Days – Swat Valley Highlights Tour',
-								image: '/images/swat.jpg'
+								image: '/images/package 10-swatpage.jpg'
 							},
 						];
 						
