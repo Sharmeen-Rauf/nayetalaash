@@ -783,25 +783,25 @@ const HunzaPage = () => {
 							},
 							{ 
 								title: 'Hopper Valley (Nagar)', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Hopper Valley (Nagar).jpg',
 								description: 'Hopper Valley in Nagar offers a quieter, peaceful escape filled with lush greenery, historical villages, and the famous Hopper Glacier. The contrast of white glaciers with green fields creates a stunning landscape, perfect for nature lovers who want to experience untouched beauty.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Gulmit Village', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Gulmit Village.jpg',
 								description: 'Known locally as Gul-e-Gulmit (Flower of Gulmit), this is a very peaceful spot along the KKH. It offers tourist accommodations and is stunning during the peak Cherry Blossom and Autumn seasons. Gulmit is a quiet destination with historical importance, located just past Attabad Lake.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Ondra Poygah Gulmit', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Ondra Poygah Gulmit.jpg',
 								description: 'Ondra was the site of an old fort in Gulmit and Poygah means stairs in the local language. Local volunteers built nearly 1655 stone stairs to reach the fort ruins at the top. From the fort, you get expansive views of Attabad Lake, the Passu Cones, and the surrounding villages.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Borith Lake', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Borith Lake.jpg',
 								description: 'Borith Lake is a calm, serene freshwater lake surrounded by mountains. It\'s ideal for peaceful walks, short hikes and photography. The area offers stunning views and a refreshing environment, making it a great stop for travelers looking to relax.',
 								imageLeft: true
 							},
@@ -813,7 +813,7 @@ const HunzaPage = () => {
 							},
 							{ 
 								title: 'Rainbow Suspension Bridge', 
-								image: '/images/Hunza.jpg',
+								image: '/images/Rainbow Suspension Bridge.jpg',
 								description: 'The Rainbow Suspension Bridge is a colorful, scenic attraction perfect for light adventure and photography. Surrounded by mountains and vibrant landscapes, this bridge adds a playful and picturesque element to any Hunza trip.',
 								imageLeft: true
 							},
@@ -1052,7 +1052,7 @@ const HunzaPage = () => {
 							<div className="lg:order-2 relative group">
 								<div className="relative h-64 lg:h-80 rounded-xl overflow-hidden shadow-xl">
 									<Image 
-										src="/images/Hunza.jpg"
+										src="/images/Hunza's Must-Try Traditional Food.jpg"
 										alt="Hunza Traditional Food"
 										fill
 										className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -1130,7 +1130,7 @@ const HunzaPage = () => {
 							<div className="relative group">
 								<div className="relative h-64 lg:h-80 rounded-xl overflow-hidden shadow-xl">
 									<Image 
-										src="/images/Hunza.jpg"
+										src="/images/Best Restaurants to Visit in Hunza Valley.jpg"
 										alt="Best Restaurants in Hunza Valley"
 										fill
 										className="object-cover transition-transform duration-700 group-hover:scale-110"
