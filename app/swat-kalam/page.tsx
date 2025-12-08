@@ -738,7 +738,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Saifullah Lake', 
-								image: '/images/Saifullah Lake.jpg',
+								image: '/images/Saifullah Lake2 (1).jpg',
 								description: 'This lake is located further into Ushu Valley, about a 30 to 45-minute journey from Mahodand Lake. You can reach it either by hiking on foot or by taking a rugged 4x4 jeep for the scenic ride. It\'s another crystal-clear, stunning alpine lake waiting to be explored.',
 								imageLeft: false
 							},
