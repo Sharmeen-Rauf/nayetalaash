@@ -728,31 +728,31 @@ const SkarduPage = () => {
 						{[
 							{ 
 								title: 'Skardu City', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Skardu City-skardu.jpg',
 								description: 'Skardu City is the capital of the district and a famous tourist hub where the Shigar River meets the mighty Indus River. It has a deep history, with traces of Tibetan, Mughal, and British influence. Millions of local and international tourists visit this amazing city every year.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Skardu International Airport', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Skardu International Airport-skardu.jpg',
 								description: 'This is considered one of the most scenic airports in the world! You\'ll fall in love with Skardu the moment you land. It now offers direct international flights (like from Dubai) and domestic flights from Lahore, Karachi, and Islamabad. The airport has dramatically boosted tourism and makes the valley easy to access.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Masroor Rock Hussainabad', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Masroor Rock Hussainabad-skardu.jpg',
 								description: 'This unique rock formation recently gained fame because it looks a bit like the famous Trolltunga rock in Norway. It offers a challenging 3-4 hour climb from Hussainabad Village but rewards you with a panoramic view of the entire valley. You\'ll even pass the beautiful Hussainabad Waterfall on the way, like an oasis!',
 								imageLeft: true
 							},
 							{ 
 								title: 'Manthal Buddha Rock Carving', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Manthal Buddha Rock Carving-skardu.jpg',
 								description: 'This carving proves that Buddhism once had a strong presence in the region long ago. This huge Buddha is carved into a granite rock in Manthal Village, about 3 km from Skardu City. It is a holy site for Buddhists and a perfectly preserved historical treasure for all visitors.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Skardu Highway (JSR)', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Skardu Highway (JSR)-skardu.jpg',
 								description: 'This highway, the Jaglot-Skardu Road (S-1), is the vital 167 km link between the Karakoram Highway (KKH) and Skardu City. Although it sometimes faces landslides, it is crucial for tourism and for bringing essential goods to the local people. It\'s your main route into the heart of the Skardu region.',
 								imageLeft: true
 							},
@@ -764,13 +764,13 @@ const SkarduPage = () => {
 							},
 							{ 
 								title: 'Satpara Lake', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Satpara Lake-skardu.jpg',
 								description: 'This is a beautiful natural glacial lake located only about 7 km from Skardu City, surrounded by rocky mountains. Its size grew when the Satpara Dam was built on it in 2013 to provide water and electricity to Skardu. The lake\'s water is essential for drinking and farming in the region.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Sheosar Lake', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Sheosar Lake-skardu.jpg',
 								description: 'Located in the very heart of the Deosai Plains, this stunning alpine lake is fed by glacial meltwater. It\'s only accessible for about 5-6 months a year (May to November) due to extreme winter snow. On clear days, you can see the imposing Nanga Parbat from the lake, and the surroundings are carpeted with colorful wildflowers.',
 								imageLeft: false
 							},
@@ -782,43 +782,43 @@ const SkarduPage = () => {
 							},
 							{ 
 								title: 'Upper Kachura Lake', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Upper Kachura Lake-skardu.jpg',
 								description: 'This is a gorgeous alpine glacial lake reached by a short 15-20 minutes trek through the old Kachura Village. The walk is a bonus, allowing you to see local life, and the lake is crowned by mighty mountains and thick Deodar trees. It\'s a perfect picnic spot offering activities like boating and jet skiing.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Shigar Valley', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Shigar Valley-skardu.jpg',
 								description: 'Shigar is the gateway to the world\'s most impressive peaks, like K2, Broad Peak, and Golden Peak. Askole, the last village before the wild mountains, is located here, as are huge glaciers like Baltoro and Biafo. The valley is accessible by a metalled road from Skardu and is rich in historical importance.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Shigar Fort', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Shigar Fort-skardu.jpg',
 								description: 'An impressive 450-year-old fort from the 17th century, originally built for the Rajas of Shigar Valley. Part of the fort has been converted into the luxurious Serena Shigar Fort hotel, restoring its royal charm. It includes a museum, the beautiful Anchan Garden and a small 12 door structure called "Baradari."',
 								imageLeft: false
 							},
 							{ 
 								title: 'Katpana Desert or Sarfaranga Desert Skardu', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Katpana Desert-skardu.jpg',
 								description: 'Skardu is home to the world\'s unique \'cold deserts,\' like Katpana and Sarfaranga. Katpana Desert is right next to Skardu Airport and offers hotels, glamping, and the small Katpana Lake. Sarfaranga Desert, the highest desert in Pakistan, hosts the annual Desert Jeep Rally and activities like paramotor gliding.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Khaplu Valley', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Khaplu Valley 2-skardu.jpg',
 								description: 'Khaplu is a district capital located about 3 hours from Skardu, where the Shyok River merges with the Indus River. The Shyok River enters Pakistan from the Ladakh Valley here. Khaplu was historically important as a key trade route between Ladakh and Gilgit Baltistan.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Khaplu Fort', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/khaplu fort-skardu.jpg',
 								description: 'Also known as "Yabgo Khar," this fort was built in the mid-19th century for the Raja (Ruler) of Khaplu. The fort was magically built where a huge stone thrown from a nearby mountain landed. Part of it is now the luxurious Serena Khaplu Fort, which also houses a museum preserving royal history.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Chaqchan Mosque Khaplu', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Chaqchan Mosque Khaplu-skardu.jpg',
 								description: 'This is a nearly 700-year-old mosque built by Mir Syed Ali Hamdani, who brought Islam to the valley. The mosque\'s design beautifully combines Kashmiri, Mughal and Tibetan building styles. Its colorful and printed interior walls make it a bright and unique place of worship.',
 								imageLeft: false
 							},
