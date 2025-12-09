@@ -830,25 +830,25 @@ const SkarduPage = () => {
 							},
 							{ 
 								title: 'Organic Village', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Organic Village-skardu.jpg',
 								description: 'Nansoq Village is known as the Organic Village because its residents maintain the ancient, sustainable lifestyle of the Balti people. Everything, from farming to house building, shows how people lived long ago. It is located right next to the Kharpocho Fort, offering a beautiful glimpse into the past.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Astore Valley', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Astore Valley-skardu.jpg',
 								description: 'Astore was closed for a long time but has recently opened its gates to everyone. You can access it from the Karakoram Highway (KKH) at Jaglot or from the Deosai Plains. Astore is home to dozens of stunning locations, including Rama Meadows, Rupal Valley, and many alpine lakes.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Rama Meadows and Rama Lake', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Rama Meadows and Rama Lake-skardu.jpg',
 								description: 'A jeep track from Astore leads you to the beautiful Rama Meadows, where you can set up camp. A simple 1 to 1.5-hour trek takes you to Rama Lake, which sits shadowed by the massive Nanga Parbat. This is a very popular spot for both trekkers and adventure riders.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Rupal Valley', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Rupal Valley-skardu.jpg',
 								description: 'This valley is famous because it is home to the Rupal Face, the southern side of the mighty Nanga Parbat. A jeep track leads you through Tarshing Village and Chhungphar Glacier to a camping site near the basecamp. It\'s one of the most easily accessible basecamps of an 8,000 meter peak in the world!',
 								imageLeft: true
 							},
@@ -1117,12 +1117,12 @@ const SkarduPage = () => {
 								description: 'Enjoy peaceful boat rides and thrilling jet skiing on crystal clear lakes'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Cultural Visits-skardu.jpg',
 								title: 'Cultural Visits',
 								description: 'Discover ancient forts, mosques, and traditional villages rich in history'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Desert Safari & Quad Bikes-skardu.jpg',
 								title: 'Desert Safari & Quad Bikes',
 								description: 'Experience the unique cold desert with thrilling quad bike adventures'
 							},
