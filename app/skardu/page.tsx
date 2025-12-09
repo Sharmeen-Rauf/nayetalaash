@@ -463,39 +463,39 @@ const SkarduPage = () => {
 						const allPackages = [
 							{ 
 								title: '6 Days-Essential Skardu Valley Tour',
-								image: '/images/skardu 2.jpg'
+								image: '/images/package 1 skadu.jpg'
 							},
 							{ 
 								title: '7 Days-Deep Skardu Valley Exploration',
-								image: '/images/skardu 2.jpg'
+								image: '/images/package 2 skadu.jpg'
 							},
 							{ 
 								title: '8 Days-Best of Both: Hunza and Skardu Valley',
-								image: '/images/skardu 2.jpg'
+								image: '/images/package 3 skadu.jpg'
 							},
 							{ 
 								title: '9 Days-Comprehensive Skardu Valley Adventure',
-								image: '/images/skardu 2.jpg'
+								image: '/images/package 4 skardu.jpg'
 							},
 							{ 
 								title: '10 Days-Ultimate Skardu Valley Journey',
-								image: '/images/skardu 2.jpg'
+								image: '/images/package 5 skadu.jpg'
 							},
 							{ 
 								title: '10 Days-Long Adventure: Hunza and Skardu Combo',
-								image: '/images/skardu 2.jpg'
+								image: '/images/package 6 skadu.jpg'
 							},
 							{ 
 								title: '11 Days-Grand Skardu Valley Exploration',
-								image: '/images/skardu 2.jpg'
+								image: '/images/package 7 skadu.jpg'
 							},
 							{ 
 								title: '15 Days-Hunza and Skardu Valley Complete Experience',
-								image: '/images/skardu 2.jpg'
+								image: '/images/package 8 skadu.jpg'
 							},
 							{ 
 								title: '12 Days-Skardu, Hunza, and Fairy Meadows Explorer',
-								image: '/images/skardu 2.jpg'
+								image: '/images/package 9  skardu.jpg'
 							},
 						];
 						
@@ -580,7 +580,7 @@ const SkarduPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/skardu 2.jpg"
+									src="/images/package 10 skardu.png"
 									alt="8 Days-Skardu, Chunda Valley, Khaplu, and Deosai Family Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
