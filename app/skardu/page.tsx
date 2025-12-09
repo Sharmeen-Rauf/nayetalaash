@@ -890,6 +890,151 @@ const SkarduPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== ALL TOURS INCLUDE ====================== */}
+			<section 
+				data-section-id="all-tours-include"
+				className={`py-8 md:py-12 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden scroll-reveal-fade-up ${visibleSections.has('all-tours-include') ? 'revealed' : ''}`}
+			>
+				{/* Decorative Background Elements */}
+				<div className="absolute top-0 left-0 w-72 h-72 opacity-5" style={{ background: `radial-gradient(circle, ${primaryOrange} 0%, transparent 70%)` }}></div>
+				<div className="absolute bottom-0 right-0 w-72 h-72 opacity-5" style={{ background: `radial-gradient(circle, ${primaryOrange} 0%, transparent 70%)` }}></div>
+
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					{/* Section Header */}
+					<div className="text-center mb-10">
+						<h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: secondaryBlack }}>
+							All tours include:
+						</h2>
+					</div>
+
+					{/* Horizontal Cards Layout - Desktop shows all 5, mobile scrollable */}
+					<div className="relative">
+						{/* Mobile: Scrollable Container */}
+						<div className="lg:hidden overflow-x-auto pb-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+							<div className="flex gap-4 min-w-max px-4">
+								{[
+									'Comfortable transport',
+									'Professional guide',
+									'Luxury stays',
+									'Sightseeing & adventure spots',
+									'Photography points',
+								].map((item, idx) => (
+									<div
+										key={idx}
+										className="flex-shrink-0 w-48"
+									>
+										<div 
+											className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-t-4 h-full"
+											style={{ 
+												borderColor: primaryOrange,
+											}}
+										>
+											<div className="text-center">
+												<div 
+													className="w-14 h-14 mx-auto mb-4 rounded-full flex items-center justify-center transition-all duration-500"
+													style={{ 
+														backgroundColor: `${primaryOrange}15`,
+													}}
+												>
+													<div className="w-7 h-7 rounded-full" style={{ backgroundColor: primaryOrange }}></div>
+												</div>
+												<p 
+													className="font-semibold text-sm leading-relaxed"
+													style={{ color: secondaryBlack }}
+												>
+													{item}
+												</p>
+											</div>
+										</div>
+									</div>
+								))}
+							</div>
+						</div>
+
+						{/* Desktop: All 5 Cards in Grid */}
+						<div className="hidden lg:grid lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+							{[
+								'Comfortable transport',
+								'Professional guide',
+								'Luxury stays',
+								'Sightseeing & adventure spots',
+								'Photography points',
+							].map((item, idx) => (
+								<div
+									key={idx}
+									className="relative group"
+								>
+									<div 
+										className="bg-white rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-t-4 h-full"
+										style={{ 
+											borderColor: primaryOrange,
+											cursor: 'pointer'
+										}}
+										onMouseEnter={() => setHoveredIncludeItem(idx)}
+										onMouseLeave={() => setHoveredIncludeItem(null)}
+									>
+										<div className="text-center">
+											{/* Animated Icon Circle */}
+											<div 
+												className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center transition-all duration-500 relative overflow-hidden"
+												style={{ 
+													backgroundColor: hoveredIncludeItem === idx ? primaryOrange : `${primaryOrange}15`,
+													transform: hoveredIncludeItem === idx ? 'scale(1.15) rotate(360deg)' : 'scale(1)'
+												}}
+											>
+												<div 
+													className="absolute inset-0 rounded-full transition-all duration-500"
+													style={{ 
+														backgroundColor: hoveredIncludeItem === idx ? 'rgba(255,255,255,0.3)' : 'transparent',
+														transform: hoveredIncludeItem === idx ? 'scale(1.5)' : 'scale(1)'
+													}}
+												></div>
+												<div 
+													className="w-8 h-8 rounded-full relative z-10 transition-all duration-500"
+													style={{ 
+														backgroundColor: hoveredIncludeItem === idx ? 'white' : primaryOrange,
+														transform: hoveredIncludeItem === idx ? 'scale(1.2)' : 'scale(1)'
+													}}
+												></div>
+											</div>
+											
+											{/* Text with Animation */}
+											<p 
+												className="font-semibold text-sm md:text-base leading-relaxed transition-all duration-300"
+												style={{ 
+													color: hoveredIncludeItem === idx ? primaryOrange : secondaryBlack,
+													transform: hoveredIncludeItem === idx ? 'translateY(-2px)' : 'translateY(0)'
+												}}
+											>
+												{item}
+											</p>
+
+											{/* Hover Effect Line */}
+											<div 
+												className="h-0.5 mx-auto mt-3 transition-all duration-500"
+												style={{ 
+													width: hoveredIncludeItem === idx ? '60%' : '0%',
+													backgroundColor: primaryOrange
+												}}
+											></div>
+										</div>
+
+										{/* Glow Effect on Hover */}
+										<div 
+											className="absolute inset-0 rounded-xl opacity-0 transition-opacity duration-500 pointer-events-none"
+											style={{ 
+												opacity: hoveredIncludeItem === idx ? 0.1 : 0,
+												boxShadow: `0 0 30px ${primaryOrange}`
+											}}
+										></div>
+									</div>
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== CULTURE OF SKARDU VALLEY ====================== */}
 			<section 
 				data-section-id="culture"
@@ -1033,151 +1178,6 @@ const SkarduPage = () => {
 								</div>
 							</div>
 						))}
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== ALL TOURS INCLUDE ====================== */}
-			<section 
-				data-section-id="all-tours-include"
-				className={`py-8 md:py-12 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden scroll-reveal-fade-up ${visibleSections.has('all-tours-include') ? 'revealed' : ''}`}
-			>
-				{/* Decorative Background Elements */}
-				<div className="absolute top-0 left-0 w-72 h-72 opacity-5" style={{ background: `radial-gradient(circle, ${primaryOrange} 0%, transparent 70%)` }}></div>
-				<div className="absolute bottom-0 right-0 w-72 h-72 opacity-5" style={{ background: `radial-gradient(circle, ${primaryOrange} 0%, transparent 70%)` }}></div>
-
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					{/* Section Header */}
-					<div className="text-center mb-10">
-						<h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: secondaryBlack }}>
-							All tours include:
-						</h2>
-					</div>
-
-					{/* Horizontal Cards Layout - Desktop shows all 5, mobile scrollable */}
-					<div className="relative">
-						{/* Mobile: Scrollable Container */}
-						<div className="lg:hidden overflow-x-auto pb-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-							<div className="flex gap-4 min-w-max px-4">
-								{[
-									'Comfortable transport',
-									'Professional guide',
-									'Luxury stays',
-									'Sightseeing & adventure spots',
-									'Photography points',
-								].map((item, idx) => (
-									<div
-										key={idx}
-										className="flex-shrink-0 w-48"
-									>
-										<div 
-											className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-t-4 h-full"
-											style={{ 
-												borderColor: primaryOrange,
-											}}
-										>
-											<div className="text-center">
-												<div 
-													className="w-14 h-14 mx-auto mb-4 rounded-full flex items-center justify-center transition-all duration-500"
-													style={{ 
-														backgroundColor: `${primaryOrange}15`,
-													}}
-												>
-													<div className="w-7 h-7 rounded-full" style={{ backgroundColor: primaryOrange }}></div>
-												</div>
-												<p 
-													className="font-semibold text-sm leading-relaxed"
-													style={{ color: secondaryBlack }}
-												>
-													{item}
-												</p>
-											</div>
-										</div>
-									</div>
-								))}
-							</div>
-						</div>
-
-						{/* Desktop: All 5 Cards in Grid */}
-						<div className="hidden lg:grid lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-							{[
-								'Comfortable transport',
-								'Professional guide',
-								'Luxury stays',
-								'Sightseeing & adventure spots',
-								'Photography points',
-							].map((item, idx) => (
-								<div
-									key={idx}
-									className="relative group"
-								>
-									<div 
-										className="bg-white rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-t-4 h-full"
-										style={{ 
-											borderColor: primaryOrange,
-											cursor: 'pointer'
-										}}
-										onMouseEnter={() => setHoveredIncludeItem(idx)}
-										onMouseLeave={() => setHoveredIncludeItem(null)}
-									>
-										<div className="text-center">
-											{/* Animated Icon Circle */}
-											<div 
-												className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center transition-all duration-500 relative overflow-hidden"
-												style={{ 
-													backgroundColor: hoveredIncludeItem === idx ? primaryOrange : `${primaryOrange}15`,
-													transform: hoveredIncludeItem === idx ? 'scale(1.15) rotate(360deg)' : 'scale(1)'
-												}}
-											>
-												<div 
-													className="absolute inset-0 rounded-full transition-all duration-500"
-													style={{ 
-														backgroundColor: hoveredIncludeItem === idx ? 'rgba(255,255,255,0.3)' : 'transparent',
-														transform: hoveredIncludeItem === idx ? 'scale(1.5)' : 'scale(1)'
-													}}
-												></div>
-												<div 
-													className="w-8 h-8 rounded-full relative z-10 transition-all duration-500"
-													style={{ 
-														backgroundColor: hoveredIncludeItem === idx ? 'white' : primaryOrange,
-														transform: hoveredIncludeItem === idx ? 'scale(1.2)' : 'scale(1)'
-													}}
-												></div>
-											</div>
-											
-											{/* Text with Animation */}
-											<p 
-												className="font-semibold text-sm md:text-base leading-relaxed transition-all duration-300"
-												style={{ 
-													color: hoveredIncludeItem === idx ? primaryOrange : secondaryBlack,
-													transform: hoveredIncludeItem === idx ? 'translateY(-2px)' : 'translateY(0)'
-												}}
-											>
-												{item}
-											</p>
-
-											{/* Hover Effect Line */}
-											<div 
-												className="h-0.5 mx-auto mt-3 transition-all duration-500"
-												style={{ 
-													width: hoveredIncludeItem === idx ? '60%' : '0%',
-													backgroundColor: primaryOrange
-												}}
-											></div>
-										</div>
-
-										{/* Glow Effect on Hover */}
-										<div 
-											className="absolute inset-0 rounded-xl opacity-0 transition-opacity duration-500 pointer-events-none"
-											style={{ 
-												opacity: hoveredIncludeItem === idx ? 0.1 : 0,
-												boxShadow: `0 0 30px ${primaryOrange}`
-											}}
-										></div>
-									</div>
-								</div>
-							))}
-						</div>
 					</div>
 				</div>
 			</section>
