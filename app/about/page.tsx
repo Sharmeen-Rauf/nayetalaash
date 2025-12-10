@@ -40,18 +40,18 @@ const AboutPage = () => {
 
 	// Conveyance slider images
 	const conveyanceMainImages = [
-		'/images/conveyance 1.jpg',
-		'/images/Conveyance 2.jpg',
+		'/images/travel you ride.jpg',
+		'/images/Conveyance into Your Travel Ride pakistan.jpg',
 		'/images/Conveyance 3.webp',
-		'/images/conveyance 2.jpg',
+		'/images/Conveyance into Your Travel Ride pakistan 1.jpg',
 		'/images/conveyance 3.jpg',
 	];
 
 	const conveyanceThumbnails = [
-		'/images/conveyance 1.jpg',
-		'/images/Conveyance 2.jpg',
+		'/images/travel you ride.jpg',
+		'/images/Conveyance into Your Travel Ride pakistan.jpg',
 		'/images/Conveyance 3.webp',
-		'/images/conveyance 2.jpg',
+		'/images/Conveyance into Your Travel Ride pakistan 1.jpg',
 		'/images/conveyance 3.jpg',
 	];
 
