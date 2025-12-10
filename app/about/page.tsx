@@ -100,14 +100,14 @@ const AboutPage = () => {
 	const crewMainImages = [
 		'/images/crew.jpg',
 		'/images/crew1.jpeg',
-		'/images/crew2.jpg',
+		'/images/best crew.jpg',
 		'/images/crew3.jpeg',
 	];
 
 	const crewThumbnails = [
 		'/images/crew.jpg',
 		'/images/crew1.jpeg',
-		'/images/crew2.jpg',
+		'/images/best crew.jpg',
 		'/images/crew3.jpeg',
 	];
 
