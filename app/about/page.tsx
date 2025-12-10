@@ -1556,7 +1556,7 @@ const AboutPage = () => {
 				<div className="relative mb-4 w-full">
 					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
 						<Image 
-							src="/images/TRUST & SECURITY.jpg"
+							src="/images/trust and safety.jpg"
 							alt="Trust & Security"
 							fill
 							className="object-cover"
@@ -1708,7 +1708,7 @@ const AboutPage = () => {
 				{/* Full Width Banner with Text Overlay */}
 				<div className="relative w-full h-[500px] md:h-[600px]">
 					<Image 
-						src="/images/comprehensive tour management.jpg"
+						src="/images/Tour Management.jpg"
 						alt="Comprehensive Tour Management"
 						fill
 						className="object-cover"
