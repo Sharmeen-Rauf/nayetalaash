@@ -1,0 +1,62 @@
+==========================================
+QUICK START: Adding Your First 360° Image
+==========================================
+
+EASIEST METHOD (Recommended for beginners):
+
+1. Sign up for FREE at one of these services:
+   - Kuula.co (easiest, free tier available)
+   - Roundme.com (free tier)
+   - Momento360.com (free tier)
+
+2. Upload ONE 360 image OR use their sample images
+
+3. Get the embed/share URL (looks like):
+   https://kuula.co/share/collection/XXXXX
+
+4. Open: app/lahore-tour/page.tsx (or any tour page)
+
+5. Find a destination (like "Lahore Fort")
+
+6. Uncomment and add the iframe360 line:
+   iframe360: 'https://kuula.co/share/collection/XXXXX',
+
+7. Save and refresh - the 360° button will appear!
+
+==========================================
+
+SELF-HOSTED METHOD (If you have 360 images):
+
+1. Place your 360 image in this folder:
+   /public/images/360/
+
+2. Name it something like: lahore-fort-360.jpg
+
+3. Open: app/lahore-tour/page.tsx
+
+4. Find the destination
+
+5. Uncomment and add:
+   image360: '/images/360/lahore-fort-360.jpg',
+
+6. Save and test!
+
+==========================================
+
+NEED 360 IMAGES?
+
+Option 1: Use your phone
+- Google Street View app (free)
+- Cardboard Camera app (free)
+- Insta360 app (if you have Insta360 camera)
+
+Option 2: Hire a photographer
+- Search "360 photography Pakistan"
+- Many photographers offer 360/virtual tour services
+
+Option 3: Use 360 camera
+- Insta360, GoPro MAX, Ricoh Theta
+- Take photos at your destinations
+
+See HOW_TO_GET_360_IMAGES.md for detailed instructions!
+

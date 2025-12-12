@@ -590,14 +590,16 @@ const LahoreTourPage = () => {
 							{ 
 								title: '1. Lahore Fort (Shahi Qila)', 
 								image: '/images/lahore.jpg',
-								// Add 360 image when available: image360: '/images/360/lahore-fort-360.jpg',
+								image360: '/images/marc-markstein-if4wsNq145o-unsplash.jpg', // Your 360 image
+								// For embedded tour (Kuula/Roundme/etc): iframe360: 'https://kuula.co/share/collection/XXXXX',
 								description: 'A UNESCO World Heritage Site and the crown jewel of Mughal Lahore. Explore the stunning Sheesh Mahal, the magnificent Picture Wall, and the grand Alamgiri Gate. The fort holds centuries of history within its royal chambers and ancient walls.',
 								imageLeft: true
 							},
 							{ 
 								title: '2. Badshahi Mosque', 
 								image: '/images/lahore.jpg',
-								// Add 360 image when available: image360: '/images/360/badshahi-mosque-360.jpg',
+								// For self-hosted 360 image: image360: '/images/360/badshahi-mosque-360.jpg',
+								// For embedded tour (Kuula/Roundme/etc): iframe360: 'https://kuula.co/share/collection/XXXXX',
 								description: 'One of the largest and most architecturally beautiful mosques in the world. Its striking red sandstone exterior and pristine white marble interior are truly spectacular. The mosque reflects the immense glory and power of Emperor Aurangzeb\'s historical era.',
 								imageLeft: false
 							},
