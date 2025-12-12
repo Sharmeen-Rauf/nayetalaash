@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
+import DestinationCard360 from '@/app/components/DestinationCard360';
 
 const SkarduPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -861,14 +862,15 @@ const SkarduPage = () => {
 								<div 
 									className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'} ${idx % 2 === 0 ? 'lg:ml-8' : 'lg:mr-8'}`}
 								>
-									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
-										<Image 
-											src={destination.image}
-											alt={destination.title}
-											fill
-											className="object-cover transition-transform duration-700 hover:scale-110"
-										/>
-									</div>
+									<DestinationCard360
+										title={destination.title}
+										image={destination.image}
+										image360={destination.image360}
+										iframe360={destination.iframe360}
+										description={destination.description}
+										imageLeft={destination.imageLeft}
+										className="w-full"
+									/>
 								</div>
 								
 								{/* Text Content */}

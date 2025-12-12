@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
+import DestinationCard360 from '@/app/components/DestinationCard360';
 
 const LahoreTourPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -589,66 +590,77 @@ const LahoreTourPage = () => {
 							{ 
 								title: '1. Lahore Fort (Shahi Qila)', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/lahore-fort-360.jpg',
 								description: 'A UNESCO World Heritage Site and the crown jewel of Mughal Lahore. Explore the stunning Sheesh Mahal, the magnificent Picture Wall, and the grand Alamgiri Gate. The fort holds centuries of history within its royal chambers and ancient walls.',
 								imageLeft: true
 							},
 							{ 
 								title: '2. Badshahi Mosque', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/badshahi-mosque-360.jpg',
 								description: 'One of the largest and most architecturally beautiful mosques in the world. Its striking red sandstone exterior and pristine white marble interior are truly spectacular. The mosque reflects the immense glory and power of Emperor Aurangzeb\'s historical era.',
 								imageLeft: false
 							},
 							{ 
 								title: '3. Wazir Khan Mosque', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/wazir-khan-mosque-360.jpg',
 								description: 'This beautiful mosque was built in the 17th century by Ilm-ud-Din Ansari (known as Wazir Khan), the Governor of Lahore under Emperor Shah Jahan. Located on the Royal Route (Shahi Guzargah), it is famous for its intricate Kashi Kari (tile work) and delicate Fresco Paintings. Its entrance includes a unique market area, historically known as the Calligrapher\'s Market.',
 								imageLeft: true
 							},
 							{ 
 								title: '4. Hazuri Bagh & Baradari', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/hazuri-bagh-360.jpg',
 								description: 'Hazuri Bagh is a significant garden located between the Lahore Fort\'s Alamgiri Gate and the Badshahi Mosque. At its center stands a Bara Dari (Twelve-Door Pavilion), which was built by Maharaja Ranjit Singh using white marble from dismantled Mughal structures. The garden also holds the Tombs of Sir Allama Mohammad Iqbal (National Poet) and Sikandar Hayat Khan.',
 								imageLeft: false
 							},
 							{ 
 								title: '5. Shahi Hammam', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/shahi-hammam-360.jpg',
 								description: 'This is a Mughal era public bathhouse, inspired by Turkish designs, also commissioned by Wazir Khan near the Delhi Gate. It provided comprehensive services, including hot, warm, and cold water sections, a sauna, and separate areas for men and women. After being restored in 2013, its beautiful frescoes and hidden water channels were uncovered, making it a key historical site.',
 								imageLeft: true
 							},
 							{ 
 								title: '6. Shalimar Gardens', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/shalimar-gardens-360.jpg',
 								description: 'Referred to as Shah Jahan\'s "Heaven on Earth" for its meticulous design. The gardens feature stunning water terraces, numerous fountains, and elegant pavilions. They perfectly embody the symmetry and planning characteristic of Mughal landscape design.',
 								imageLeft: false
 							},
 							{ 
 								title: '7. Lahore Museum', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/lahore-museum-360.jpg',
 								description: 'A true treasure house preserving rare artifacts from across many eras of history. Its collection spans the Gandhara, Mughal, Sikh, and British periods. It is an essential stop for anyone interested in the cultural heritage of the region.',
 								imageLeft: true
 							},
 							{ 
 								title: '8. Gali Surjan Singh', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/gali-surjan-singh-360.jpg',
 								description: 'A meticulously restored historic street nestled deep within old Lahore. It is filled with tangible heritage, vibrant culture, and charming architecture. This alley offers a uniquely beautiful setting perfect for photography and exploration.',
 								imageLeft: false
 							},
 							{ 
 								title: '9. Minar-e-Pakistan', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/minar-e-pakistan-360.jpg',
 								description: 'The towering place where the landmark Pakistan Resolution was formally passed in 1940. This monument is an unmistakable and powerful symbol of the nation\'s identity and birth. It is a crucial site of historical and patriotic significance for the country.',
 								imageLeft: true
 							},
 							{ 
 								title: '10. Wahga Border Ceremony', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/wahga-border-360.jpg',
 								description: 'A thrilling and popular daily flag lowering military ceremony between Pakistan and India. The event is a highly energetic spectacle, generating intense national pride and patriotism. It is an unmissable cultural and theatrical experience for visitors to Lahore.',
 								imageLeft: false
 							},
 							{ 
 								title: '11. Data Darbar', 
 								image: '/images/lahore.jpg',
+								// Add 360 image when available: image360: '/images/360/data-darbar-360.jpg',
 								description: 'One of the most important and largest Sufi shrines found across all of South Asia. It is a spiritual center rich with deep historical and cultural significance. The shrine draws millions of pilgrims and followers seeking blessings and peace.',
 								imageLeft: true
 							},
@@ -673,14 +685,15 @@ const LahoreTourPage = () => {
 										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.1}s, transform 0.8s ease-out ${idx * 0.15 + 0.1}s`
 									}}
 								>
-									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
-										<Image 
-											src={destination.image}
-											alt={destination.title}
-											fill
-											className="object-cover transition-transform duration-700 hover:scale-110"
-										/>
-									</div>
+									<DestinationCard360
+										title={destination.title}
+										image={destination.image}
+										image360={destination.image360}
+										iframe360={destination.iframe360}
+										description={destination.description}
+										imageLeft={destination.imageLeft}
+										className="w-full"
+									/>
 								</div>
 								
 								<div 
