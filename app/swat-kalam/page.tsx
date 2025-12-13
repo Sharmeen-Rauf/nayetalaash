@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
-import DestinationCard360 from '@/app/components/DestinationCard360';
 
 const SwatKalamPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -837,15 +836,14 @@ const SwatKalamPage = () => {
 										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.1}s, transform 0.8s ease-out ${idx * 0.15 + 0.1}s`
 									}}
 								>
-									<DestinationCard360
-										title={destination.title}
-										image={destination.image}
-										image360={destination.image360}
-										iframe360={destination.iframe360}
-										description={destination.description}
-										imageLeft={destination.imageLeft}
-										className="w-full"
-									/>
+									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
+										<Image
+											src={destination.image}
+											alt={destination.title}
+											fill
+											className="object-cover transition-transform duration-700 hover:scale-110"
+										/>
+									</div>
 								</div>
 								
 								{/* Text Content */}
