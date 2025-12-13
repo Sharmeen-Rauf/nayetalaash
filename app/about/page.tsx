@@ -1465,7 +1465,7 @@ const AboutPage = () => {
 						<div className="relative group">
 							<div className="relative h-96 rounded-lg overflow-hidden">
 								<Image
-									src="/images/chitral.jpg"
+									src="/images/Contact Our Design Team Today.jpg"
 									alt="Contact Our Design Team"
 									fill
 									className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -1490,14 +1490,14 @@ const AboutPage = () => {
 			{/* ====================== COVID-19 PREPARED BANNER ====================== */}
 			<section className="py-6 md:py-8 bg-gray-50">
 				{/* Banner with Text Overlay - Full Width */}
-				<div className="relative mb-4 w-full">
-					<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
-						<Image 
-							src="/images/fairy meadows 2.jpg"
-							alt="Safe Travel Standards"
-							fill
-							className="object-cover"
-						/>
+					<div className="relative mb-4 w-full">
+						<div className="relative h-[500px] md:h-[600px] w-full overflow-hidden">
+							<Image 
+								src="/images/safe travel standards.jpg"
+								alt="Safe Travel Standards"
+								fill
+								className="object-cover"
+							/>
 						{/* Dark overlay for text readability */}
 						<div className="absolute inset-0 bg-black/30"></div>
 						
@@ -1648,7 +1648,7 @@ const AboutPage = () => {
 				{/* Full Width Banner with Text Overlay */}
 				<div className="relative w-full h-[500px] md:h-[600px]">
 					<Image 
-						src="/images/azad kashmir.jpg"
+						src="/images/Approved to Explore.jpg"
 						alt="Travel Visa"
 						fill
 						className="object-cover"
