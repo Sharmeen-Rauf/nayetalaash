@@ -462,39 +462,39 @@ const NathiaGaliMurreePage = () => {
 						const allPackages = [
 							{ 
 								title: '6 Days – Murree, Nathia Gali, Siri Paye, Shogran',
-								image: '/images/murree and nathia gali.jpg'
+								image: '/images/package 1 murre.jpg'
 							},
 							{ 
 								title: '5 Days – Nathia Gali, Ayubia, Murree Mall Road, Patriata, Bhurban',
-								image: '/images/murree and nathia gali.jpg'
+								image: '/images/package 2 murree.jpg'
 							},
 							{ 
 								title: '4 Days – Murree, Patriata, Nathia Gali, Ayubia',
-								image: '/images/murree and nathia gali.jpg'
+								image: '/images/package 3 murree.jpg'
 							},
 							{ 
 								title: '4 Days – Thandiani, Nathia Gali, Ayubia, Khanaspur',
-								image: '/images/murree and nathia gali.jpg'
+								image: '/images/package 4 murree.jpg'
 							},
 							{ 
 								title: '3 Days – Siri Paye, Shogran, Nathia Gali',
-								image: '/images/murree and nathia gali.jpg'
+								image: '/images/package 5 murree.jpg'
 							},
 							{ 
 								title: '3 Days – Nathia Gali, Ayubia, Mall Road, Patriata',
-								image: '/images/murree and nathia gali.jpg'
+								image: '/images/package 6 murree.jpg'
 							},
 							{ 
 								title: '2 Days – Nathia Gali & Ayubia',
-								image: '/images/murree and nathia gali.jpg'
+								image: '/images/package 7murree.jpg'
 							},
 							{ 
 								title: '2 Days – Mukshpuri Top & Ayubia',
-								image: '/images/murree and nathia gali.jpg'
+								image: '/images/package 8 murree.jpg'
 							},
 							{ 
 								title: '6 Days – Neelum Valley + Murree & Patriata',
-								image: '/images/murree and nathia gali.jpg'
+								image: '/images/package 9 murree.jpg'
 							},
 						];
 						
@@ -579,7 +579,7 @@ const NathiaGaliMurreePage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/murree and nathia gali.jpg"
+									src="/images/package 10 murree.jpg"
 									alt="3 Days: Murree, Nathia Gali & Ayubia Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -595,7 +595,7 @@ const NathiaGaliMurreePage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/murree and nathia gali.jpg"
+									src="/images/Package 11 murree.jpg"
 									alt="4 Days: Galiyat Winter Snow Family Trip"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -705,103 +705,103 @@ const NathiaGaliMurreePage = () => {
 						{[
 							{ 
 								title: 'Murree', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/murree.jpg',
 								description: 'Murree was first built in the 1850s as a retreat for the British Military troops in the Pir Panjal Mountain Range. It is blessed with dense forests, cool fresh air, beautiful mountains and a pure environment. Today, Murree is Pakistan\'s most famous and easily accessible tourist spot, popular year round for its cool climate and activities.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Murree Mall Road and GPO Chowk', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Murree Mall Road and GPO Chowk.jpg',
 								description: 'The Mall Road (also known as "Jinnah Road") is the lively main street built by the British founders of the town. It is always buzzing with tourists enjoying the shops, local restaurants, and engaging activities like horse riding and safari train rides. The GPO Chowk (General Post Office) is the busy heart of the Mall Road, always full of hustle and bustle.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Pindi Point', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Pindi Point pakistan.jpg',
 								description: 'This location is a popular spot to get a high, aerial view of the twin cities of Islamabad and Rawalpindi. It\'s just a short 15 minute walk from the Mall Road, making it easy to reach. Pindi Point is most famous for its Chairlift ride, which offers a delightful trip over the pine forest to Bansara Gali.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Kashmir Point', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/kashmir point.jpg',
 								description: 'Kashmir Point is a peaceful 15-minute walk from the Mall Road, offering a different kind of view. From here, you can see the high, panoramic mountains of Azad Kashmir and Indian occupied Kashmir, including Srinagar. Tourists love the Murree Safari Train here, which gives a guided scenic ride to the Government House at Jhika Gali.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Patriata and Patriata Chairlift (New Murree)', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Patriata and Patriata Chairlift (New Murree).jpg',
 								description: 'Also called "New Murree," Patriata is about 15 km away, known for its thick surrounding forests. Its main attraction is the famous Patriata Chairlift and Cable Car ride, which gives thrilling views high over the dense forest. This area has also developed with many modern hotels, resorts and restaurants for visitors.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Ayubia and Ayubia National Park', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Ayubia and Ayubia National Park.jpg',
 								description: 'Ayubia is a small tourist town located inside the vast Ayubia National Park, covering over 8,184 acres. The park was created in 1984 to protect the unique wildlife, lush green forests and medicinal plants of the area. Ayubia is the starting point for two famous mountain hikes the Mushkpuri and Miranjani treks.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Khanaspur', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Khanaspur.jpg',
 								description: 'This is a nearby tourist spot, about a 10-minute drive from Ayubia, offering a quieter and calmer atmosphere. Famous attractions include an old Nawab Ashiq Hussain Qureshi Cricket Ground and the historic Virgin Mary Catholic Church. It also offers budget-friendly accommodation at the old Pakistan Youth Hostel.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Nathia Gali', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Nathia Gali.jpg',
 								description: 'Nathia Gali is the main highlight of the Galiyat Region, located about 35 km from Murree. It\'s the starting point for two major hiking tracks the Miranjani and Mukshpuri Tops.You must visit the 100 year old St. Matthew\'s Church and try the world famous original Patakha Chicken at Taj Mahal Hotel.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Mukshpuri Top', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Mukshpuri Top.jpg',
 								description: 'This is the second-highest hilltop in the Galiyat region, standing at 9,200 feet, located within Ayubia National Park. There are two tracks for hikers: one starting from Dunga Gali and the other from Nathia Gali. The hike is relatively easy (1-2 hours) and on a clear day, you can even catch a glimpse of the majestic Nanga Parbat.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Miranjani Top', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Miranjani Top.png',
 								description: 'At 9,816 feet, Miranjani is the highest hilltop in the entire Galiyat region, perfect for serious adventure lovers. The main track starts just a short drive from Nathia Gali and takes about 1-3 hours to complete. Completing this 4.96 km trail rewards hikers with the best possible mountain views in the area.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Pipeline Track Ayubia', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Pipeline Track Ayubia.jpg',
 								description: 'This is an easy, scenic track that runs from Dunga Gali to Ayubia Bazaar, perfect for beginners and families. It was built during the British era to carry water supplies via a pipeline, giving the track its name. It\'s a wonderful way to walk through the peaceful forest with minimal effort.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Ayubia Moto Tunnel', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Ayubia Moto Tunnel.jpg',
 								description: 'This unique British era stone tunnel was built in 1891 for water supply, but was hidden for decades. It was recently discovered, restored, and reopened in 2021, instantly attracting huge numbers of tourists.The tunnel is 250 feet long, giving a fun, unique historical experience connecting Ayubia and Khaira Gali.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Bhurban and PC Bhurban Hotel', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Bhurban and PC Bhurban Hotel.png',
 								description: 'Bhurban is a small hill station known for its peaceful, lush green forest surroundings. Its biggest attraction is the PC Bhurban Hotel, a 5 star resort famous as a luxury holiday destination in Pakistan. This area is a perfect retreat for those seeking calm, upscale stays away from the Murree bustle.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Changla Gali', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Changla Gali.jpg',
 								description: 'Changla Gali is a beautiful, quieter hill station located in the Galiyat region. It offers stunning views and a serene environment, making it a peaceful retreat away from the crowds. It is a popular spot for visitors looking for calm stays, particularly when the area is covered in snow.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Kuza Gali', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Kuza Gali.jpg',
 								description: 'Kuza Gali is another small, charming tourist spot along the scenic route of the Galiyat. It features a pleasant, relaxed atmosphere and its own unique local flavor and views. Visitors enjoy this location for its tranquility and easy access to the surrounding forest areas.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Ghora Gali', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Ghora Gali.jpg',
 								description: 'Ghora Gali is historically significant and is a quieter town in the Murree region. It is well known for being home to some older structures and providing a peaceful environment for tourists. Many visitors choose Ghora Gali for a relaxing stay with quick access to the main attractions of Murree.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Jhika Gali', 
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Jhika Gali.png',
 								description: 'Jhika Gali is a small, bustling stop often included in Murree and Galiyat tours. It is easily accessible and acts as a central point near tourist attractions like the Government House. This area offers a variety of local shops and small eateries for travelers to stop and enjoy.',
 								imageLeft: true
 							},
@@ -932,32 +932,32 @@ const NathiaGaliMurreePage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Chairlift & cable car rides.jpg',
 								title: 'Chairlift & cable car rides',
 								description: 'Experience thrilling chairlift and cable car rides offering panoramic views of the beautiful Galiyat region'
 							},
 							{
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Hiking to lakes & waterfalls.jpg',
 								title: 'Trekking & hiking',
 								description: 'Explore scenic trails and hiking tracks leading to stunning mountain peaks and viewpoints'
 							},
 							{
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Shopping at local markets.jpg',
 								title: 'Shopping at local markets',
 								description: 'Browse through vibrant local markets and discover unique handicrafts and souvenirs'
 							},
 							{
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Bonfire & BBQ nights.jpg',
 								title: 'Bonfire & BBQ nights',
 								description: 'Enjoy cozy bonfire evenings with delicious BBQ under the starry mountain sky'
 							},
 							{
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Snowfall viewing.jpg',
 								title: 'Snowfall viewing',
 								description: 'Witness the magical transformation as snow blankets the hills during winter months'
 							},
 							{
-								image: '/images/murree and nathia gali.jpg',
+								image: '/images/Horse riding.jpg',
 								title: 'Horse riding',
 								description: 'Take a peaceful horse ride through scenic trails and enjoy the natural beauty'
 							},
