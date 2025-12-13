@@ -13,6 +13,7 @@ const SwatKalamPage = () => {
 	const [showAllPackages, setShowAllPackages] = useState(false);
 	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
 	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
+	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -241,7 +242,136 @@ const SwatKalamPage = () => {
 								</div>
 							</div>
 							<Link href="/group-tours" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>GROUP TOUR</Link>
-							<Link href="/#destination" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>DESTINATION</Link>
+							
+							{/* DESTINATION with Multi-Level Dropdown */}
+							<div className="relative group cursor-pointer">
+								<a href="/#destination" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
+									DESTINATION
+								</a>
+								
+								{/* Dropdown Menu - Responsive Width */}
+								<div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[90vw] max-w-3xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+									<div className="backdrop-blur-lg bg-white/95 border border-gray-200 shadow-2xl overflow-hidden rounded-lg">
+										<div className="flex min-h-[400px]">
+											{/* Pakistan Map - Left Side (Reduced Size) */}
+											<div className="w-2/5 p-4 sm:p-6 flex items-center justify-center bg-gradient-to-br from-[#f99621]/10 to-[#f99621]/5">
+												<Image 
+													src="/images/map-2.png"
+													alt="Pakistan Map"
+													width={250}
+													height={350}
+													className="w-full h-auto max-h-[250px] object-contain"
+												/>
+											</div>
+											
+											{/* Regions List - Middle */}
+											<div className="w-3/5 flex border-r border-gray-200">
+												<div className="w-2/5 p-4 sm:p-6 border-r border-gray-200">
+													<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-4">Pakistani Regions</h3>
+													<ul className="space-y-1">
+														<li className="group/item">
+															<a 
+																href="/#gilgit" 
+																onMouseEnter={() => setSelectedRegion('gilgit')}
+																className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+															>
+																Gilgit Baltistan
+															</a>
+														</li>
+														<li className="group/item">
+															<a 
+																href="/#kpk" 
+																onMouseEnter={() => setSelectedRegion('kpk')}
+																className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+															>
+																KPK / Galyat
+															</a>
+														</li>
+														<li className="group/item">
+															<a 
+																href="/#punjab" 
+																onMouseEnter={() => setSelectedRegion('punjab')}
+																className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+															>
+																Punjab
+															</a>
+														</li>
+														<li className="group/item">
+															<a 
+																href="/#sindh" 
+																onMouseEnter={() => setSelectedRegion('sindh')}
+																className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+															>
+																Sindh
+															</a>
+														</li>
+														<li className="group/item">
+															<a 
+																href="/#balochistan" 
+																onMouseEnter={() => setSelectedRegion('balochistan')}
+																className="block px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded"
+															>
+																Balochistan
+															</a>
+														</li>
+													</ul>
+												</div>
+												
+												{/* Sub-regions List - Right Side (Third Column) */}
+												<div className="w-3/5 p-4 sm:p-6 relative">
+													{selectedRegion === 'gilgit' && (
+														<div className="space-y-1">
+															<a href="/#hunza-valley" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Hunza Valley</a>
+															<a href="/#skardu-valley" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Skardu Valley</a>
+															<a href="/#ghizer" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Ghizer</a>
+															<a href="/#astore" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Astore</a>
+															<a href="/#nagar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Nagar</a>
+														</div>
+													)}
+													{selectedRegion === 'kpk' && (
+														<div className="space-y-1">
+															<a href="/#peshawar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Peshawar</a>
+															<a href="/#malam-jabba" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Malam Jabba</a>
+															<a href="/#swat-valley" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Swat Valley</a>
+															<a href="/#chitral" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Chitral</a>
+															<a href="/#abbottabad" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Abbottabad</a>
+														</div>
+													)}
+													{selectedRegion === 'punjab' && (
+														<div className="space-y-1">
+															<a href="/#lahore-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Lahore District</a>
+															<a href="/#multan-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Multan District</a>
+															<a href="/#rawalpindi-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Rawalpindi District</a>
+															<a href="/#islamabad-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Islamabad District</a>
+															<a href="/#bahawalpur-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Bahawalpur District</a>
+															<a href="/#chakwal-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Chakwal District</a>
+														</div>
+													)}
+													{selectedRegion === 'sindh' && (
+														<div className="space-y-1">
+															<a href="/#karachi" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Karachi</a>
+															<a href="/#hyderabad" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Hyderabad</a>
+															<a href="/#thatta" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Thatta</a>
+															<a href="/#sukkur" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Sukkur</a>
+															<a href="/#mirpur-khas" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Mirpur Khas</a>
+														</div>
+													)}
+													{selectedRegion === 'balochistan' && (
+														<div className="space-y-1">
+															<a href="/#quetta" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Quetta</a>
+															<a href="/#gwadar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Gwadar</a>
+															<a href="/#ziarat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Ziarat</a>
+															<a href="/#turbat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Turbat</a>
+															<a href="/#lasbela" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20]">Lasbela</a>
+														</div>
+													)}
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
 							<Link href="/about" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>ABOUT US</Link>
 							<Link href="/contact" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>CONTACT US</Link>
 						</nav>
