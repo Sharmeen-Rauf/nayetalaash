@@ -666,7 +666,7 @@ const AboutPage = () => {
 						{/* Card 1: Hotels & Accommodation */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/hotels and accomodation.jpg"
+								src="/images/hotel-aboutus.jpg"
 								alt="Hotels & Accommodation"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -696,7 +696,7 @@ const AboutPage = () => {
 						{/* Card 3: Curated Trip Experiences */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/Curated Trip Experiences.jpg"
+								src="/images/aboutus-thirdcardimage.jpg"
 								alt="Curated Trip Experiences"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
@@ -771,7 +771,7 @@ const AboutPage = () => {
 						{/* Card 8: Tour Management */}
 						<div className="relative h-64 rounded-lg overflow-hidden group cursor-pointer">
 							<Image 
-								src="/images/comprehensive tour management.jpg"
+								src="/images/lastaboutus-card.jpg"
 								alt="Tour Management"
 								fill
 								className="object-cover transition-transform duration-300 group-hover:scale-110"
