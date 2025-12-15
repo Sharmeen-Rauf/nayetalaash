@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft } from 'lucide-react';
 
 const AstoreDiamerPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +14,7 @@ const AstoreDiamerPage = () => {
 	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
 	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+	const [currentSlide, setCurrentSlide] = useState(0);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -507,6 +508,92 @@ const AstoreDiamerPage = () => {
 						>
 							Book Your Adventure
 						</button>
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== KALEIDOSCOPE OF CULTURES SECTION ====================== */}
+			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						{/* Left Side - Text Content */}
+						<div className="order-2 lg:order-1">
+							<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+								KALEIDOSCOPE OF CULTURES
+							</h2>
+							<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+								The Astore District is a cluster of valleys and small villages making it a kaleidoscope of cultures, cuisines and craft. Some of the most fascinating and well known views in Astore include Nanga Parbat (Rupal Face), Chilim, Kala Pani, Rama Lake, Gutumsar Pershing and many more. The Rama Valley is the most iconic one out of this cluster for tourists who live for the adrenaline kick that comes from trekking peaks.
+							</p>
+							<button
+								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+							>
+								READ MORE
+							</button>
+						</div>
+
+						{/* Right Side - Image Slider */}
+						<div className="order-1 lg:order-2 relative">
+							<div className="relative w-full aspect-video overflow-hidden rounded-lg">
+								{/* Slider Images */}
+								<div className="relative w-full h-full">
+									{[
+										'/images/gilgit.jpg',
+										'/images/Hunza.jpg',
+										'/images/skardu 2.jpg',
+										'/images/Swat.jpg'
+									].map((imageSrc, index) => (
+										<div
+											key={index}
+											className={`absolute inset-0 transition-opacity duration-500 ${
+												currentSlide === index ? 'opacity-100' : 'opacity-0'
+											}`}
+										>
+											<Image
+												src={imageSrc}
+												alt={`Slide ${index + 1}`}
+												fill
+												className="object-cover"
+											/>
+										</div>
+									))}
+								</div>
+
+								{/* Navigation Arrows */}
+								<button
+									onClick={() => setCurrentSlide((prev) => (prev === 0 ? 3 : prev - 1))}
+									className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:scale-110 z-10"
+									style={{ border: `1px solid ${secondaryBlack}40` }}
+									aria-label="Previous slide"
+								>
+									<ChevronLeft className="w-5 h-5" style={{ color: secondaryBlack }} />
+								</button>
+								<button
+									onClick={() => setCurrentSlide((prev) => (prev === 3 ? 0 : prev + 1))}
+									className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:scale-110 z-10"
+									style={{ border: `1px solid ${secondaryBlack}40` }}
+									aria-label="Next slide"
+								>
+									<ChevronRight className="w-5 h-5" style={{ color: secondaryBlack }} />
+								</button>
+
+								{/* Progress Indicator Bars - 4 bars at bottom */}
+								<div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+									{[0, 1, 2, 3].map((index) => (
+										<div
+											key={index}
+											className={`h-1 transition-all duration-300 ${
+												currentSlide === index ? 'w-8' : 'w-2'
+											}`}
+											style={{
+												backgroundColor: currentSlide === index ? primaryOrange : 'rgba(255, 255, 255, 0.5)',
+												borderRadius: '2px'
+											}}
+										/>
+									))}
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
