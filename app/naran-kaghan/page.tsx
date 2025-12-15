@@ -897,29 +897,29 @@ const NaranKaghanPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/zip line.jpg',
-								title: 'Chairlift & Zipline at Malam Jabba',
-								description: 'Experience thrilling ziplining and scenic chairlift rides at Malam Jabba Resort'
-							},
-							{
 								image: '/images/boating.jpg',
-								title: 'Boating at Mahodand Lake',
-								description: 'Enjoy peaceful boat rides on the crystal clear waters of Mahodand Lake'
-							},
-							{
-								image: '/images/camping.jpg',
-								title: 'Camping in meadows',
-								description: 'Spend nights under the stars in beautiful meadows surrounded by nature'
+								title: 'Boating at Saif-ul-Malook Lake',
+								description: 'Enjoy serene boat rides on the legendary emerald lake surrounded by snow-capped peaks and fairy-tale landscapes'
 							},
 							{
 								image: '/images/Hiking to lakes & waterfalls.jpg',
-								title: 'Hiking to lakes & waterfalls',
-								description: 'Explore scenic trails leading to stunning lakes and cascading waterfalls'
+								title: 'Jeep Safari to Babusar Top',
+								description: 'Experience an adventurous jeep ride to Babusar Top with breathtaking views of valleys, glaciers, and high mountain passes'
+							},
+							{
+								image: '/images/camping.jpg',
+								title: 'Camping by Kunhar River',
+								description: 'Relax in riverside camps, enjoy bonfires, and spend peaceful nights listening to the flowing Kunhar River'
+							},
+							{
+								image: '/images/Hiking to lakes & waterfalls.jpg',
+								title: 'Hiking to Lakes & Meadows',
+								description: 'Discover scenic hiking trails leading to Lalazar Meadows, Dudipatsar Lake, and hidden alpine gems'
 							},
 							{
 								image: '/images/picture forest.jpg',
-								title: 'Photography in forests & meadows',
-								description: 'Capture breathtaking moments in lush forests and serene meadows'
+								title: 'Photography in Valleys & Meadows',
+								description: 'Capture stunning landscapes, wildflowers, waterfalls, and panoramic mountain views in every direction'
 							},
 						].map((item, idx) => (
 							<div 
@@ -966,7 +966,7 @@ const NaranKaghanPage = () => {
 											{item.title}
 										</h3>
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<p className="text-sm md:text-base opacity-90 max-w-xs">
+										<p className="text-sm md:text-base opacity-90 max-w-xs text-center mx-auto">
 											{item.description}
 										</p>
 									</div>
