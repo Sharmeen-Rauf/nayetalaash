@@ -997,10 +997,10 @@ const HunzaPage = () => {
 									}}
 								>
 									<div className="max-w-[80%] mx-auto">
-										<h3 className="text-xl md:text-2xl font-bold mb-3 capitalize text-center" style={{ color: secondaryBlack }}>
+										<h3 className={`text-xl md:text-2xl font-bold mb-3 capitalize ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
 											{destination.title}
 										</h3>
-										<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 											{destination.description}
 										</p>
 									</div>
@@ -1148,7 +1148,7 @@ const HunzaPage = () => {
 											{item.title}
 										</h3>
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<p className="text-sm md:text-base opacity-90 max-w-xs">
+										<p className="text-sm md:text-base opacity-90 max-w-xs text-center mx-auto">
 											{item.description}
 										</p>
 									</div>
