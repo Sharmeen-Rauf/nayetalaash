@@ -528,7 +528,7 @@ const AstoreDiamerPage = () => {
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 							>
-								READ MORE
+								Read More
 							</button>
 						</div>
 
