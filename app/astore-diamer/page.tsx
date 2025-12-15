@@ -534,7 +534,7 @@ const AstoreDiamerPage = () => {
 
 						{/* Right Side - Image Slider */}
 						<div className="order-1 lg:order-2 relative">
-							<div className="relative w-full max-w-[90%] mx-auto lg:max-w-full aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
+							<div className="relative w-full max-w-[90%] mx-auto lg:max-w-full aspect-[5/3] overflow-hidden rounded-lg shadow-lg">
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
@@ -563,7 +563,7 @@ const AstoreDiamerPage = () => {
 								<button
 									onClick={() => setCurrentSlide((prev) => (prev === 0 ? 3 : prev - 1))}
 									className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:scale-110 z-10"
-									style={{ border: `1px solid ${secondaryBlack}40` }}
+									style={{ border: '1px solid rgba(255, 255, 255, 0.8)' }}
 									aria-label="Previous slide"
 								>
 									<ChevronLeft className="w-5 h-5" style={{ color: secondaryBlack }} />
@@ -571,7 +571,7 @@ const AstoreDiamerPage = () => {
 								<button
 									onClick={() => setCurrentSlide((prev) => (prev === 3 ? 0 : prev + 1))}
 									className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg hover:scale-110 z-10"
-									style={{ border: `1px solid ${secondaryBlack}40` }}
+									style={{ border: '1px solid rgba(255, 255, 255, 0.8)' }}
 									aria-label="Next slide"
 								>
 									<ChevronRight className="w-5 h-5" style={{ color: secondaryBlack }} />
