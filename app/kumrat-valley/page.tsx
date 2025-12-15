@@ -462,39 +462,39 @@ const KumratValleyPage = () => {
 						const allPackages = [
 							{ 
 								title: '3 Days-Kumrat Valley, Kumrat Waterfall, and Kala Chashma (Black Spring)',
-								image: '/images/swat.jpg'
+								image: '/images/Package 1 kumrat.jpg'
 							},
 							{ 
 								title: '4 Days-Kumrat Valley, Kumrat Waterfall, Kala Chashma, and Badgoi Top (Mountain Pass)',
-								image: '/images/swat.jpg'
+								image: '/images/Package 2 kumrat.jpg'
 							},
 							{ 
 								title: '6 Days-Kumrat Valley, Jahazbanda Meadows, Kund Banda Meadows, and the challenging Katora Lake Trekking',
-								image: '/images/swat.jpg'
+								image: '/images/Package 3 kumrat.jpg'
 							},
 							{ 
 								title: '7 Days-Kumrat Forest, Badgoi Top, Jahaz Banda, and the final ascent to Katora Lake',
-								image: '/images/swat.jpg'
+								image: '/images/Package 4 kumrat.jpg'
 							},
 							{ 
 								title: '7 Days-Malam Jabba, Kalam, Swat Valley exploration',
-								image: '/images/swat.jpg'
+								image: '/images/Package 5 kumrat.jpg'
 							},
 							{ 
 								title: '5 Days-Deep Forest Camping, Panjkora River experience, Kumrat Waterfall, and Thal Bazaar',
-								image: '/images/swat.jpg'
+								image: '/images/Package 6 kumrat.jpg'
 							},
 							{ 
 								title: '4 Days-Jahaz Banda Meadows, Snake Lake at Kund Banda, and an attempt to reach Katora Lake',
-								image: '/images/swat.jpg'
+								image: '/images/package 7 kumrat.jpg'
 							},
 							{ 
 								title: '3 Days-Thal Historical Mosque, Panjkora River Camping, Kumrat Forest Drive, Kala Chashma',
-								image: '/images/swat.jpg'
+								image: '/images/Package 8 kumrat.jpg'
 							},
 							{ 
 								title: '9 Days-Extended trip covering Swat, Kalam, Kumrat Valley, Jahaz Banda, and Badgoi Pass',
-								image: '/images/swat.jpg'
+								image: '/images/Package 9 kumrat.jpg'
 							},
 						];
 						
@@ -579,7 +579,7 @@ const KumratValleyPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
+									src="/images/package 10 kumrat.jpg"
 									alt="3 Days: Kumrat Valley Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -595,7 +595,7 @@ const KumratValleyPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/swat.jpg"
+									src="/images/package 11 kumrat.jpg"
 									alt="7 Days: Malam Jabba, Kalam, Swat to Kumrat Valley Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -682,85 +682,85 @@ const KumratValleyPage = () => {
 						{[
 							{ 
 								title: 'Kumrat Valley', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Valley.jpg',
 								description: 'Kumrat is a long, 35km valley located in the Upper Dir district. Its raw nature, thick Deodar forest, clear Panjkora River, and stunning waterfalls draw tourists seeking pristine beauty. The valley borders both Chitral and Swat, making it a key destination for nature lovers.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Kumrat Waterfall', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Waterfall.jpg',
 								description: 'This impressive waterfall is about 12-13 km from Thal town and requires a 4*4 jeep to reach the starting point. It falls dramatically down a rocky mountain, feeding the Panjkora River. A short hike is needed from the road to see this huge waterfall fully, which is surrounded by campsites and food stalls.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Jahaz Banda Meadows', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Valley.jpg',
 								description: 'Jahaz Banda is a high, beautiful meadow you reach by combining a jeep ride and a hike from Thal. You first take a 2-3 hour jeep ride to Takai Banda. From there, it\'s a relatively easy 2-3 hour trek for beginners to reach the wide, stunning Jahaz Banda Meadows.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Kund Banda Meadows and Jahaz Banda Waterfall', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Waterfall.jpg',
 								description: 'A steep track downhill from Jahaz Banda leads you to the beautiful Kund Banda Meadows, a picture postcard valley. Here you can find the unique Snake Lake and the beautiful Jahaz Banda Waterfall (also called Kund Banda Waterfall). This area is famous for its powerful views of the surrounding mighty mountains.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Katora Lake', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Valley.jpg',
 								description: 'Katora Lake (meaning Bowl Lake in local dialect) is a gem of Kumrat Valley, but requires a moderate-level trek. The 3-4 hour hike is best for those with some prior trekking experience. On the way, you will also see the smaller Chota Katora Lake (or Jahaz Banda Lake).',
 								imageLeft: true
 							},
 							{ 
 								title: 'Kala Chashma', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Valley.jpg',
 								description: 'Kala Chashma literally translates to "Black Spring" in English. It is believed to get its name from the dark color of the stones at the bottom, which makes the crystal clear water look darker. This popular spot is located about 20 km from the main Thal Bazaar.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Thal Bazar', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Valley.jpg',
 								description: 'Thal Bazaar is the main town, located about 75 km from Upper Dir, and serves as the base camp for the whole region. You can hire 4*4 jeeps and drivers here to access Kumrat, Jahaz Banda, and Badgoi Pass. It\'s a basic market that provides essential supplies, hotels, and restaurants for tourists.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Kumrat Forest', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Forest.jpeg',
 								description: 'The Kumrat Forest is a massive, thick Deodar (Cedar) forest that gives Kumrat its famous fresh air and raw natural feel. This dense forest is the biggest magnet for tourists and is the reason the valley feels so pristine. Protecting this forest from deforestation is crucial to keeping the valley a gem.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Panjkora River', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Valley.jpg',
 								description: 'The Panjkora River flows through the entire Kumrat Valley, giving the area a fresh, misty atmosphere. Many tourists choose to camp right beside the river, as it is lined with food stalls, tent hotels, and campsites. The sound of the river flowing through the dense forest is a key part of the Kumrat experience.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Dojanga Kumrat', 
-								image: '/images/swat.jpg',
+								image: '/images/Dojanga Kumrat.jpg',
 								description: 'Dojanga is a beautiful point deeper into the valley, located right after Kala Chashma. As you travel past this point, the valley reveals its most untouched natural treasures. A small wooden bridge takes you across the river and into the thickest, most secluded part of the Kumrat forest.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Badgoi Pass', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Valley.jpg',
 								description: 'Badgoi Pass is a high mountain pass that connects Upper Dir (Thal) with Kalam in Swat Valley. The road offers adventurous sights, including Hawa ka Darra and Dasht-e-Laila viewpoints. You must hire a 4*4 jeep from Thal to travel this route.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Jamia Masjid Thal Kumrat', 
-								image: '/images/swat.jpg',
+								image: '/images/Jamia Masjid Thal Kumrat.jpg',
 								description: 'This historic Mosque is located right in the heart of Thal Bazaar on the bank of the Panjkora River. It was built in the mid 18th century entirely from massive, beautifully carved wooden planks without the use of machinery. The wooden structure is painted with bright, vibrant colors, making it a historical and architectural sight.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Shahzore Lake', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Valley.jpg',
 								description: 'Shahzore Lake is a beautiful small glacial lake that can be reached by a long, scenic 5-7 hour trek from Dojanga. The track from Dojanga is rocky but offers incredible views. From the lake, you are high enough to even catch a view of the Chitral Valley.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Thalo Pass', 
-								image: '/images/swat.jpg',
+								image: '/images/Kumrat Valley.jpg',
 								description: 'Thalo Pass (or Thallo Pass) is a high mountain pass that connects Kumrat Valley with Chitral Valley. Reaching it requires a challenging, long 4-5 day trek for serious adventurers. Along this long route, trekkers will see several stunning glacial lakes, including Shahzore Lake and Bashqar Lake.',
 								imageLeft: false
 							},
