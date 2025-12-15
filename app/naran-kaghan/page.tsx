@@ -462,39 +462,39 @@ const NaranKaghanPage = () => {
 						const allPackages = [
 							{ 
 								title: '4 Days – Naran, Lalazar Meadows, and Babusar Top Climb',
-								image: '/images/naran and kaghan.jpg'
+								image: '/images/package 1 naran.jpg'
 							},
 							{ 
 								title: '4 Days – Naran, Babusar Top, and Shogran Valley Explorer',
-								image: '/images/naran and kaghan.jpg'
+								image: '/images/package 2 naran.jpg'
 							},
 							{ 
 								title: '4 Days – Sharan Forest, Manshi Top, and Shogran Kaghan Valley Trip',
-								image: '/images/naran and kaghan.jpg'
+								image: '/images/package 3 naran.jpg'
 							},
 							{ 
 								title: '3 Days – Shogran, Siri Paye Meadows, and Sharan Valley Quick Tour',
-								image: '/images/naran and kaghan.jpg'
+								image: '/images/package 4 naran.jpg'
 							},
 							{ 
 								title: '4 Days – Naran Kaghan Valley, Babusar Top, and Nathiya Gali Combo',
-								image: '/images/naran and kaghan.jpg'
+								image: '/images/package 5 naran.jpg'
 							},
 							{ 
 								title: '8 Days – Shogran, Naran, and Hunza Valley Grand Tour',
-								image: '/images/naran and kaghan.jpg'
+								image: '/images/package 6 naran.jpg'
 							},
 							{ 
 								title: '9 Days – Naran Kaghan and Neelum Valley',
-								image: '/images/naran and kaghan.jpg'
+								image: '/images/package 7 naran.jpg'
 							},
 							{ 
 								title: '4 Days – Naran, Lulusar Lake, and Jalkhad Scenic Tour',
-								image: '/images/naran and kaghan.jpg'
+								image: '/images/package 8 naran.jpg'
 							},
 							{ 
 								title: '5 Days – Naran, Kaghan, Batakundi & Babusar Top Adventure',
-								image: '/images/naran and kaghan.jpg'
+								image: '/images/package 9 naran.jpg'
 							},
 						];
 						
@@ -579,7 +579,7 @@ const NaranKaghanPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/naran and kaghan.jpg"
+									src="/images/package 10 naran.jpg"
 									alt="3 Days: Naran Kaghan, Babusar Top, and Shogran Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -595,7 +595,7 @@ const NaranKaghanPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/naran and kaghan.jpg"
+									src="/images/package 11 naran.jpg"
 									alt="2 Days: Shogran and Siri Paye Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -682,25 +682,25 @@ const NaranKaghanPage = () => {
 						{[
 							{ 
 								title: 'Naran', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/naran.jpg',
 								description: 'Naran is a beautiful small town and the main hub in Kaghan Valley. It is where most tourists stay to visit the upper parts of Kaghan and the Gilgit Baltistan road. Naran offers a wide variety of accommodations but is closed during the winter due to heavy snowfall.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Naran Bazaar', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Naran Bazaar.jpg',
 								description: 'The Naran Bazaar is always busy and crowded with tourists, offering a lively atmosphere. You can find all your necessities here, plus shops selling traditional clothes, dry fruits, and local handicrafts. It\'s famous for the tempting aroma of local foods being cooked, especially fresh Trout Fish and Chapli Kababs.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Kunhar River', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/naran kaghan.jpg',
 								description: 'The Kunhar River flows right through the Kaghan Valley, fed by glaciers, lakes and surrounding streams from Babusar Top. It is home to various fish species, most famously the Trout Fish, which supports the local fishing industry. The river eventually flows out of Kaghan and joins the Jhelum River near Muzaffarabad.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Saif-ul-Malook Lake', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Saif-ul-Malook Lake.jpg',
 								description: 'Located north of Naran, this stunning glacial lake is shadowed by the iconic Malika-e-Parbat peak. Access requires an exciting off-road jeep ride up a narrow track. It is famous for the local fairy tale about the Egyptian prince Saif-ul-Malook and the fairy Badri-ul-Jamal.',
 								imageLeft: false
 							},
@@ -724,49 +724,49 @@ const NaranKaghanPage = () => {
 							},
 							{ 
 								title: 'Lulusar Lake', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Lulusar Lake.jpg',
 								description: 'Lulusar is the largest lake in the entire Kaghan Valley, famous for its deep teal colored water. As a glacial lake, it is a significant source of water for the Kunhar River. It remains completely covered in snow during the winter and is a crucial part of the Lulusar-Dudipatsar National Park.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Babusar Pass', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Babusar Pass.jpg',
 								description: 'Babusar Pass is the highest point on the Kaghan Road, reached via a zigzag, steep drive past Gitidas. From the top, on a clear day, you can see stunning views of Nanga Parbat, Rakaposhi, and the lower Kaghan Valley. This pass is the high-altitude route that connects Kaghan to Gilgit Baltistan via Chilas and is best visited from May to September.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Ansoo Lake', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/naran kaghan.jpg',
 								description: 'Ansoo means "teardrop" in Urdu, and the lake is named for its distinctive shape. It is located north of Naran and requires a challenging one-day trek from Saif-ul-Malook Lake. Visitors can hire mules from Saif-ul-Malook to make the difficult hike easier.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Kiwai Waterfall', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Kiwai Waterfall.jpg',
 								description: 'Kiwai is a town in Kaghan Valley famous for a small, accessible waterfall reached by hiking along water streams. Kiwai is the main starting point for the jeep tracks that lead up to the popular hilltop tourist destinations of Shogran and Siri Paye. The town itself has a small market and several hotels.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Shogran', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Shogran.jpg',
 								description: 'Shogran is a beautiful hilltop tourist destination easily accessible by jeep from Kiwai. It is popular because it remains open throughout the year, even when high-altitude areas like Naran close down. Shogran offers a range of accommodations, from economical to luxury.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Siri Paye', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Siri Paye.jpg',
 								description: 'Siri Paye consists of two parts Siri (a small seasonal lake/pond) and Paye Meadows. Paye Meadows are vast grasslands at the end of the jeep track, known for attracting shepherd herds in summer. This area is a great starting point to spot or trek towards the majestic Makra Peak.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Sharan Forest', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Sharan Forest.png',
 								description: 'Sharan Forest is a beautiful neighboring hilltop destination, accessible by a steep jeep track from Paras town. It is a thick forest made up of Deodar, Cedar, and Pine trees, popular for summer camping and glamping.The forest offers government run pods for accommodation and is home to the stunning Sharan Waterfall.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Manshi Top', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/naran.jpg',
 								description: 'Manshi Top is a viewpoint at an altitude of 9,000 feet, reached by a 2-3 hour steep hike through the dense Sharan Forest. From this majestic top, you can see vast landscapes, including Makra Peak, Siri Paye, Malika-e-Parbat, and Allai Valley. It is one of the most rewarding short treks in the region.',
 								imageLeft: true
 							},
