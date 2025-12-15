@@ -515,13 +515,13 @@ const AstoreDiamerPage = () => {
 			{/* ====================== KALEIDOSCOPE OF CULTURES SECTION ====================== */}
 			<section className="py-8 md:py-12 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
-							<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
 								KALEIDOSCOPE OF CULTURES
 							</h2>
-							<p className="text-base md:text-lg leading-relaxed mb-6" style={{ color: `${secondaryBlack}90` }}>
+							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
 								The Astore District is a cluster of valleys and small villages making it a kaleidoscope of cultures, cuisines and craft. Some of the most fascinating and well known views in Astore include Nanga Parbat (Rupal Face), Chilim, Kala Pani, Rama Lake, Gutumsar Pershing and many more. The Rama Valley is the most iconic one out of this cluster for tourists who live for the adrenaline kick that comes from trekking peaks.
 							</p>
 							<button
@@ -534,7 +534,7 @@ const AstoreDiamerPage = () => {
 
 						{/* Right Side - Image Slider */}
 						<div className="order-1 lg:order-2 relative">
-							<div className="relative w-full aspect-video overflow-hidden rounded-lg">
+							<div className="relative w-full max-w-[90%] mx-auto lg:max-w-full aspect-[4/3] overflow-hidden rounded-lg shadow-lg">
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
