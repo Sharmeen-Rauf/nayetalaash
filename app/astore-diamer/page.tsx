@@ -487,7 +487,7 @@ const AstoreDiamerPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								Astore Diamer District
+								Astore Diamer Tour
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const AstoreDiamerPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Discover the Hidden Gems of Northern Pakistan
+								Gateway to Nanga Parbat and Deosai
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Explore the breathtaking beauty of Astore and Diamer districts with our expertly crafted tour packages. Experience majestic mountains, pristine valleys, and rich cultural heritage.
+							Experience the raw, magnificent beauty of the Rupal Face and trek the serene wilderness of Deosai National Park.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Book Your Adventure
+							Explore Astore Valley Tours
 						</button>
 					</div>
 				</div>
@@ -522,7 +522,7 @@ const AstoreDiamerPage = () => {
 								Kaleidoscope Of Cultures
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Astore District is a cluster of valleys and small villages making it a kaleidoscope of cultures, cuisines and craft. Some of the most fascinating and well known views in Astore include Nanga Parbat (Rupal Face), Chilim, Kala Pani, Rama Lake, Gutumsar Pershing and many more. The Rama Valley is the most iconic one out of this cluster for tourists who live for the adrenaline kick that comes from trekking peaks.
+								The Astore Diamer region is a stunning gateway to the Western Himalayas, offering a mix of towering peaks, serene alpine lakes, and ancient history. This area is a cluster of valleys, famous for its raw, magnificent mountain landscapes and being home to some of the world's most impressive sights. Some of the most iconic views and spots in this cluster include the massive Nanga Parbat (Killer Mountain), the high-altitude Deosai Plains, the tranquil Rama Lake, and the challenging Minimarg route.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const AstoreDiamerPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Astore Diamer District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Astore-Diamer District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,28 @@ const AstoreDiamerPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Mountain Trekking & Peak Climbing',
-								description: 'Experience thrilling adventures with trekking routes and peak climbing opportunities in the stunning Astore and Diamer mountains'
+								title: 'Mt. Nanga Parbat',
+								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Rama Lake Exploration',
-								description: 'Discover the iconic Rama Lake, one of the most beautiful high-altitude lakes surrounded by majestic peaks'
+								title: 'Rama Valley & Rama Lake',
+								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Nanga Parbat Views',
-								description: 'Witness breathtaking views of Nanga Parbat (Rupal Face) and other spectacular mountain vistas'
+								title: 'Deosai National Park',
+								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Valley Sightseeing',
-								description: 'Explore the diverse valleys, villages, and scenic landscapes that make Astore a kaleidoscope of natural beauty'
+								title: 'Minimarg Valley & Rainbow Lake',
+								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Cultural & Village Tours',
-								description: 'Immerse yourself in local culture, visit traditional villages, and experience the unique customs of the region'
+								title: 'Chilas Rock Inscriptions',
+								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims'
 							},
 						].map((item, idx) => (
 							<div 
@@ -702,17 +702,25 @@ const AstoreDiamerPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Astore Diamer District Tour Packages
+							Trips you can experience
 						</h2>
-						<div className="space-y-4">
-							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Discover the natural wonders and cultural treasures of Astore and Diamer districts. Our customizable tour packages are designed to provide you with an unforgettable experience in one of Pakistan's most spectacular regions.
-							</p>
-						</div>
 					</div>
 					
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto px-4 md:px-8">
-						{[1, 2, 3].map((idx) => (
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-4 md:px-8">
+						{[
+							{
+								days: '8 Days',
+								destinations: '5 Destinations',
+								title: 'Nanga Parbat Encounter Tour',
+								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.'
+							},
+							{
+								days: '9 Days',
+								destinations: '5 Destinations',
+								title: 'Pakistan High Altitude Grand Tour',
+								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.'
+							}
+						].map((packageItem, idx) => (
 							<div 
 								key={idx} 
 								className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-700"
@@ -726,14 +734,21 @@ const AstoreDiamerPage = () => {
 								<div className="relative w-full aspect-[2/1] overflow-hidden bg-gray-200">
 									<Image 
 										src="/images/gilgit.jpg"
-										alt={`Astore Diamer Tour Package ${idx}`}
+										alt={packageItem.title}
 										fill
 										className="object-cover hover:scale-110 transition-transform duration-500"
 									/>
 								</div>
-								<div className="p-3">
-									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-										{idx} Days Astore Diamer Adventure Tour
+								<div className="p-4">
+									<div className="flex gap-4 mb-2 text-sm" style={{ color: primaryOrange }}>
+										<span className="font-semibold">{packageItem.days}</span>
+										<span className="font-semibold">{packageItem.destinations}</span>
+									</div>
+									<h3 className="font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px', lineHeight: '1.4' }}>
+										{packageItem.title}
+									</h3>
+									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.5' }}>
+										{packageItem.description}
 									</p>
 								</div>
 							</div>
@@ -750,12 +765,43 @@ const AstoreDiamerPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Popular Destinations in Astore Diamer District
+							Must Experience When in Astore-Diamer District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
-						{[1, 2, 3].map((idx) => (
+						{[
+							{
+								title: 'Mt. Nanga Parbat',
+								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.',
+								image: '/images/gilgit.jpg',
+								imageLeft: true
+							},
+							{
+								title: 'Rama Valley & Rama Lake',
+								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.',
+								image: '/images/Hunza.jpg',
+								imageLeft: false
+							},
+							{
+								title: 'Deosai National Park',
+								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.',
+								image: '/images/skardu 2.jpg',
+								imageLeft: true
+							},
+							{
+								title: 'Minimarg Valley & Rainbow Lake',
+								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.',
+								image: '/images/Swat.jpg',
+								imageLeft: false
+							},
+							{
+								title: 'Chilas Rock Inscriptions',
+								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.',
+								image: '/images/gilgit.jpg',
+								imageLeft: true
+							}
+						].map((destination, idx) => (
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
@@ -764,29 +810,57 @@ const AstoreDiamerPage = () => {
 									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
 								}}
 							>
-								<div className={`${idx % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
+								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
-											src="/images/gilgit.jpg"
-											alt={`Destination ${idx}`}
+											src={destination.image}
+											alt={destination.title}
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
 									</div>
 								</div>
 								
-								<div className={`${idx % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
+								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
-										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${idx % 2 === 0 ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
-											Popular Destination {idx}
+										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
+											{destination.title}
 										</h3>
-										<p className={`leading-normal ${idx % 2 === 0 ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											Discover the natural beauty and cultural heritage of this stunning destination in the Astore Diamer District.
+										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{destination.description}
 										</p>
 									</div>
 								</div>
 							</div>
 						))}
+					</div>
+				</div>
+			</section>
+
+			{/* ====================== MORE ABOUT ASTORE DIAMER ====================== */}
+			<section 
+				data-section-id="more-about"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto">
+						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
+							More About Astore-Diamer District
+						</h2>
+						<div className="space-y-6">
+							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								You will find some of nature's finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.
+							</p>
+							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								The region is a haven for wildlife lovers, especially the Deosai Plains (meaning 'the land of giants'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.
+							</p>
+							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don't forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.
+							</p>
+							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
+								The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
