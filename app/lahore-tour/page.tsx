@@ -312,7 +312,7 @@ const LahoreTourPage = () => {
 												<div className="w-2/3 p-4 sm:p-6 relative min-w-0">
 													{selectedRegion === 'gilgit' && (
 														<div className="space-y-1">
-															<a href="/#astore-diamer" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Astore Diamer District</a>
+															<Link href="/astore-diamer" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Astore Diamer District</Link>
 															<a href="/#ghizer" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Ghizer District</a>
 															<a href="/#gilgit" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Gilgit District</a>
 															<a href="/#hunza" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Hunza District</a>
