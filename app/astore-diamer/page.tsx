@@ -712,7 +712,7 @@ const AstoreDiamerPage = () => {
 					</div>
 					
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto px-4 md:px-8">
-						{[1, 2, 3, 4, 5, 6].map((idx) => (
+						{[1, 2, 3].map((idx) => (
 							<div 
 								key={idx} 
 								className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-700"
@@ -755,7 +755,7 @@ const AstoreDiamerPage = () => {
 					</div>
 					
 					<div className="space-y-8">
-						{[1, 2, 3, 4].map((idx) => (
+						{[1, 2, 3].map((idx) => (
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
@@ -787,40 +787,6 @@ const AstoreDiamerPage = () => {
 								</div>
 							</div>
 						))}
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== CULTURE SECTION ====================== */}
-			<section 
-				data-section-id="culture"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Culture of Astore Diamer District:
-						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							The people of Astore and Diamer districts are known for their rich cultural heritage and warm hospitality. The region has a unique identity with traditional customs, local crafts, and folk traditions. The local communities have preserved their cultural values while welcoming modern tourism.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== ECONOMY SECTION ====================== */}
-			<section 
-				data-section-id="economy"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							The Economy of Astore Diamer District:
-						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-							The economy of Astore and Diamer districts is primarily based on agriculture, livestock, and tourism. The region produces local crops and benefits from growing tourism, which has become an important source of income for the local communities.
-						</p>
 					</div>
 				</div>
 			</section>
