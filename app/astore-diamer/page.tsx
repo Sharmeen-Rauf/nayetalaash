@@ -754,6 +754,74 @@ const AstoreDiamerPage = () => {
 							</div>
 						))}
 					</div>
+
+					{/* 3 Additional Cards with CTA Buttons */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8 mt-12">
+						{[
+							{
+								title: 'Astore Valley Adventure',
+								description: 'Discover hidden valleys and pristine landscapes in the heart of Astore District.',
+								image: '/images/gilgit.jpg'
+							},
+							{
+								title: 'Diamer Cultural Journey',
+								description: 'Experience rich cultural heritage and ancient traditions of the Diamer region.',
+								image: '/images/Hunza.jpg'
+							},
+							{
+								title: 'Mountain Photography Tour',
+								description: 'Capture stunning mountain vistas and wildlife in their natural habitat.',
+								image: '/images/skardu 2.jpg'
+							}
+						].map((card, idx) => (
+							<div 
+								key={idx}
+								className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
+								style={{
+									height: '450px',
+									animationDelay: `${idx * 0.15}s`,
+									opacity: visibleSections.has('customized-packages') ? 1 : 0,
+									transform: visibleSections.has('customized-packages') ? 'translateY(0)' : 'translateY(30px)',
+									transition: 'opacity 0.7s ease-out, transform 0.7s ease-out'
+								}}
+							>
+								{/* Background Image */}
+								<div className="absolute inset-0">
+									<Image
+										src={card.image}
+										alt={card.title}
+										fill
+										className="object-cover transition-transform duration-700 group-hover:scale-110"
+									/>
+								</div>
+								
+								{/* Gradient Overlay */}
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20 transition-opacity duration-500 group-hover:from-black/95 group-hover:via-black/60"></div>
+								
+								{/* Content */}
+								<div className="absolute inset-0 flex flex-col justify-end p-6">
+									<div className="transform transition-all duration-500 group-hover:-translate-y-2">
+										<h3 className="text-2xl font-bold text-white mb-3 transition-all duration-500 group-hover:text-[#f99621]">
+											{card.title}
+										</h3>
+										<p className="text-white/90 text-sm mb-5 leading-relaxed opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
+											{card.description}
+										</p>
+										<button
+											onClick={handleWhatsAppClick}
+											className="w-full px-6 py-3 font-bold rounded-lg transition-all duration-300 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 hover:scale-105 shadow-lg hover:shadow-xl"
+											style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+										>
+											Explore More
+										</button>
+									</div>
+								</div>
+
+								{/* Decorative Element */}
+								<div className="absolute top-6 right-6 w-12 h-12 border-2 border-white/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-110 transform transition-transform duration-500"></div>
+							</div>
+						))}
+					</div>
 				</div>
 			</section>
 
