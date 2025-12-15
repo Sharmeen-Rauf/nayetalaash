@@ -519,7 +519,7 @@ const AstoreDiamerPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								KALEIDOSCOPE OF CULTURES
+								Kaleidoscope Of Cultures
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
 								The Astore District is a cluster of valleys and small villages making it a kaleidoscope of cultures, cuisines and craft. Some of the most fascinating and well known views in Astore include Nanga Parbat (Rupal Face), Chilim, Kala Pani, Rama Lake, Gutumsar Pershing and many more. The Rama Valley is the most iconic one out of this cluster for tourists who live for the adrenaline kick that comes from trekking peaks.
