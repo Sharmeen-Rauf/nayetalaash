@@ -598,6 +598,102 @@ const AstoreDiamerPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== THINGS TO DO IN ASTORE DIAMER ====================== */}
+			<section 
+				data-section-id="things-to-do"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
+							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Astore Diamer District</span>
+						</h2>
+					</div>
+					
+					{/* 5 Images Vertical Collage - Attached */}
+					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
+						{[
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Mountain Trekking & Peak Climbing',
+								description: 'Experience thrilling adventures with trekking routes and peak climbing opportunities in the stunning Astore and Diamer mountains'
+							},
+							{
+								image: '/images/Hunza.jpg',
+								title: 'Rama Lake Exploration',
+								description: 'Discover the iconic Rama Lake, one of the most beautiful high-altitude lakes surrounded by majestic peaks'
+							},
+							{
+								image: '/images/skardu 2.jpg',
+								title: 'Nanga Parbat Views',
+								description: 'Witness breathtaking views of Nanga Parbat (Rupal Face) and other spectacular mountain vistas'
+							},
+							{
+								image: '/images/Swat.jpg',
+								title: 'Valley Sightseeing',
+								description: 'Explore the diverse valleys, villages, and scenic landscapes that make Astore a kaleidoscope of natural beauty'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Cultural & Village Tours',
+								description: 'Immerse yourself in local culture, visit traditional villages, and experience the unique customs of the region'
+							},
+						].map((item, idx) => (
+							<div 
+								key={idx} 
+								className={`relative h-[300px] md:h-[350px] overflow-hidden transition-all duration-700 ease-in-out scroll-reveal-fade-in cursor-pointer ${
+									hoveredImageIndex === idx 
+										? 'flex-[2.5]' 
+										: hoveredImageIndex !== null 
+											? 'flex-[0.6]' 
+											: 'flex-1'
+								} ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
+								style={{
+									transitionDelay: `${idx * 0.1}s`
+								}}
+								onMouseEnter={() => setHoveredImageIndex(idx)}
+								onMouseLeave={() => setHoveredImageIndex(null)}
+							>
+								<Image 
+									src={item.image}
+									alt={item.title}
+									fill
+									className="object-cover transition-transform duration-500"
+									style={{ transform: hoveredImageIndex === idx ? 'scale(1.1)' : 'scale(1)' }}
+								/>
+								{/* Overlay with content */}
+								<div 
+									className={`absolute inset-0 transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'bg-black/50' 
+											: 'bg-black/20'
+									}`}
+								></div>
+								{/* Content Overlay */}
+								<div 
+									className={`absolute inset-0 flex flex-col justify-center items-center text-white transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'opacity-100 translate-y-0' 
+											: 'opacity-0 translate-y-4'
+									}`}
+								>
+									<div className="text-center px-4">
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
+											{item.title}
+										</h3>
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<p className="text-sm md:text-base opacity-90 max-w-xs">
+											{item.description}
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== CUSTOMIZED TOUR PACKAGES ====================== */}
 			<section 
 				data-section-id="customized-packages"
