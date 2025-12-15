@@ -891,29 +891,29 @@ const KumratValleyPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/zip line.jpg',
-								title: 'Chairlift & Zipline at Malam Jabba',
-								description: 'Experience thrilling ziplining and scenic chairlift rides at Malam Jabba Resort'
+								image: '/images/Panjkora River.jpg',
+								title: 'Camping by Panjkora River',
+								description: 'Spend peaceful nights beside the crystal-clear Panjkora River, surrounded by tall pine trees and natural beauty'
 							},
 							{
-								image: '/images/boating.jpg',
-								title: 'Boating at Mahodand Lake',
-								description: 'Enjoy peaceful boat rides on the crystal clear waters of Mahodand Lake'
+								image: '/images/Jahaz Banda Meadows.jpg',
+								title: 'Jeep Safari to Jahaz Banda',
+								description: 'Enjoy an adventurous jeep ride followed by a scenic hike to the breathtaking Jahaz Banda meadows'
+							},
+							{
+								image: '/images/Katora Lake.jpg',
+								title: 'Hiking to Katora Lake',
+								description: 'Explore thrilling mountain trails leading to the stunning, bowl-shaped Katora Lake hidden among high peaks'
 							},
 							{
 								image: '/images/camping.jpg',
-								title: 'Camping in meadows',
-								description: 'Spend nights under the stars in beautiful meadows surrounded by nature'
-							},
-							{
-								image: '/images/Hiking to lakes & waterfalls.jpg',
-								title: 'Hiking to lakes & waterfalls',
-								description: 'Explore scenic trails leading to stunning lakes and cascading waterfalls'
+								title: 'Bonfire & Stargazing',
+								description: 'Relax around warm bonfires and experience magical stargazing in Kumrat’s clear, pollution-free skies'
 							},
 							{
 								image: '/images/picture forest.jpg',
-								title: 'Photography in forests & meadows',
-								description: 'Capture breathtaking moments in lush forests and serene meadows'
+								title: 'Photography in Pine Forests & Meadows',
+								description: 'Capture mesmerizing views of lush green meadows, dense pine forests, rivers, and waterfalls'
 							},
 						].map((item, idx) => (
 							<div 
