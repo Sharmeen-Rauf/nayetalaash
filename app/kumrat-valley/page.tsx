@@ -694,7 +694,7 @@ const KumratValleyPage = () => {
 							},
 							{ 
 								title: 'Jahaz Banda Meadows', 
-								image: '/images/Kumrat Valley.jpg',
+								image: '/images/Jahaz Banda Meadows.jpg',
 								description: 'Jahaz Banda is a high, beautiful meadow you reach by combining a jeep ride and a hike from Thal. You first take a 2-3 hour jeep ride to Takai Banda. From there, it\'s a relatively easy 2-3 hour trek for beginners to reach the wide, stunning Jahaz Banda Meadows.',
 								imageLeft: true
 							},
@@ -706,19 +706,19 @@ const KumratValleyPage = () => {
 							},
 							{ 
 								title: 'Katora Lake', 
-								image: '/images/Kumrat Valley.jpg',
+								image: '/images/Katora Lake.jpg',
 								description: 'Katora Lake (meaning Bowl Lake in local dialect) is a gem of Kumrat Valley, but requires a moderate-level trek. The 3-4 hour hike is best for those with some prior trekking experience. On the way, you will also see the smaller Chota Katora Lake (or Jahaz Banda Lake).',
 								imageLeft: true
 							},
 							{ 
 								title: 'Kala Chashma', 
-								image: '/images/Kumrat Valley.jpg',
+								image: '/images/kala chasma.jpg',
 								description: 'Kala Chashma literally translates to "Black Spring" in English. It is believed to get its name from the dark color of the stones at the bottom, which makes the crystal clear water look darker. This popular spot is located about 20 km from the main Thal Bazaar.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Thal Bazar', 
-								image: '/images/Kumrat Valley.jpg',
+								image: '/images/Thal Bazar.jpg',
 								description: 'Thal Bazaar is the main town, located about 75 km from Upper Dir, and serves as the base camp for the whole region. You can hire 4*4 jeeps and drivers here to access Kumrat, Jahaz Banda, and Badgoi Pass. It\'s a basic market that provides essential supplies, hotels, and restaurants for tourists.',
 								imageLeft: true
 							},
@@ -730,7 +730,7 @@ const KumratValleyPage = () => {
 							},
 							{ 
 								title: 'Panjkora River', 
-								image: '/images/Kumrat Valley.jpg',
+								image: '/images/Panjkora River.jpg',
 								description: 'The Panjkora River flows through the entire Kumrat Valley, giving the area a fresh, misty atmosphere. Many tourists choose to camp right beside the river, as it is lined with food stalls, tent hotels, and campsites. The sound of the river flowing through the dense forest is a key part of the Kumrat experience.',
 								imageLeft: true
 							},
@@ -742,7 +742,7 @@ const KumratValleyPage = () => {
 							},
 							{ 
 								title: 'Badgoi Pass', 
-								image: '/images/Kumrat Valley.jpg',
+								image: '/images/Badgoi Pass.jpg',
 								description: 'Badgoi Pass is a high mountain pass that connects Upper Dir (Thal) with Kalam in Swat Valley. The road offers adventurous sights, including Hawa ka Darra and Dasht-e-Laila viewpoints. You must hire a 4*4 jeep from Thal to travel this route.',
 								imageLeft: true
 							},
@@ -754,13 +754,13 @@ const KumratValleyPage = () => {
 							},
 							{ 
 								title: 'Shahzore Lake', 
-								image: '/images/Kumrat Valley.jpg',
+								image: '/images/Shahzore Lake.jpg',
 								description: 'Shahzore Lake is a beautiful small glacial lake that can be reached by a long, scenic 5-7 hour trek from Dojanga. The track from Dojanga is rocky but offers incredible views. From the lake, you are high enough to even catch a view of the Chitral Valley.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Thalo Pass', 
-								image: '/images/Kumrat Valley.jpg',
+								image: '/images/Thalo Pass.jpg',
 								description: 'Thalo Pass (or Thallo Pass) is a high mountain pass that connects Kumrat Valley with Chitral Valley. Reaching it requires a challenging, long 4-5 day trek for serious adventurers. Along this long route, trekkers will see several stunning glacial lakes, including Shahzore Lake and Bashqar Lake.',
 								imageLeft: false
 							},
