@@ -462,39 +462,39 @@ const NeelumValleyPage = () => {
 						const allPackages = [
 							{ 
 								title: '6 Days-Ratti Gali, Arangkel, and Taobat Neelum Valley Adventure',
-								image: '/images/azad kashmir.jpg'
+								image: '/images/package 1 neelum.jpg'
 							},
 							{ 
 								title: '7 Days-The Complete Neelum Valley Tour',
-								image: '/images/azad kashmir.jpg'
+								image: '/images/package 2 neelum.jpg'
 							},
 							{ 
 								title: '6 Days-Neelum Valley and Shogran (Kaghan Valley) Combo',
-								image: '/images/azad kashmir.jpg'
+								image: '/images/package 3 neelum.jpg'
 							},
 							{ 
 								title: '9 Days-Neelum Valley & Kaghan Valley Extended Trip',
-								image: '/images/azad kashmir.jpg'
+								image: '/images/package 4 neelum.jpg'
 							},
 							{ 
 								title: '4 Days-Ratti Gali Lake, Murree and Nathia Gali Highlights',
-								image: '/images/azad kashmir.jpg'
+								image: '/images/package 5 neelum.jpg'
 							},
 							{ 
 								title: '5 Days-Arangkel, Shogran and Siri Paye Short Tour',
-								image: '/images/azad kashmir.jpg'
+								image: '/images/package 6 neelum.jpg'
 							},
 							{ 
 								title: '3 Days-Rawalakot, Tolipeer and Banjosa Lake Short Tour',
-								image: '/images/azad kashmir.jpg'
+								image: '/images/package 7 neelum.jpg'
 							},
 							{ 
 								title: '6 Days-Neelum Valley, Murree and Nathia Gali Explorer',
-								image: '/images/azad kashmir.jpg'
+								image: '/images/package 8 neelum.jpg'
 							},
 							{ 
 								title: '5 Days-Ratti Gali Lake, Shogran and Siri Paye Trip',
-								image: '/images/azad kashmir.jpg'
+								image: '/images/package 9 neelum.jpg'
 							},
 						];
 						
@@ -579,7 +579,7 @@ const NeelumValleyPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/azad kashmir.jpg"
+									src="/images/package 10 neelum.jpg"
 									alt="3 Days: Arangkel Neelum Valley Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -595,7 +595,7 @@ const NeelumValleyPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
-									src="/images/azad kashmir.jpg"
+									src="/images/package 11 neelum.jpg"
 									alt="4 Days: Arangkel, Murree and Nathia Gali Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
@@ -682,97 +682,97 @@ const NeelumValleyPage = () => {
 						{[
 							{ 
 								title: 'Neelum Valley', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Neelum Valley-neelumandmureepage.jpg',
 								description: 'Neelum Valley is the northernmost part of Kashmir, a true piece of heaven on Earth that starts at Patihka Town. The journey follows the Neelum River along the road, offering heavenly views and glimpses of the Line of Control (LOC) with Indian-Occupied Kashmir. Before the partition, the valley was known as the Kishanganga Valley, and the river still has this name on the Indian side.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Keran Village', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Keran Village.jpg',
 								description: 'Keran is a unique tourist spot because the village is split by the Line of Control with the other side located in Indian-Occupied Kashmir. You can clearly see houses, people, and camps on the other bank of the Neelum River. It is highly recommended for adventure lovers to try camping beside the Neelum River in Keran.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Upper Neelum', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Upper Neelum.jpg',
 								description: 'This is another beautiful village that can be accessed by a short 25-30 minute drive or a trek from Keran. It gives you an incredible aerial view of Keran Village and the lands on the Indian side of the Line of Control. Several hotels and camping options are available here for a peaceful stay with great views.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Sharda Village', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Sharda Village.jpg',
 								description: 'Sharda holds great historical importance and is believed to be named after the Hindu goddesses Shardi and Nardi. It is home to the ancient Sharda Peeth temple, which was once a university for research important to Buddhists and Hindus. The village is a starting point for a challenging 4-5 hour jeep track that leads to the Noori Nar Pass into Kaghan Valley.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Arangkel', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Arangkel-neelumandmureepage.jpg',
 								description: 'Arangkel is a stunning hilltop meadow and village crowned by thick forests and snow-capped mountains. It is accessed by a hour trek from Kel Village or you can take an exciting Doli (cable car) ride to make the hike easier. This beautiful spot is right on the border with Indian-Occupied Kashmir and offers plenty of accommodation for tourists.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Kundal Shahi Waterfall (Kutton Waterfall)', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Kundal Shahi Waterfall (Kutton Waterfall).jpg',
 								description: 'This powerful waterfall is accessed from the Neelum Valley Road via the Kundal Shahi Bazaar. The height of the waterfall is impressive, and the sheer volume of water will give you a chill. The water forming this cascade flows as the Jagran Nala, originating from the beautiful Baboon Valley.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Kutton', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Kutton.jpg',
 								description: 'Kutton is a picturesque village further into Neelum Valley, famous for the Kutton Resort (also known as Jagran Resort). This popular resort is managed by the AJK Government, offering comfortable stays in a serene environment. It\'s a perfect spot to relax and enjoy the scenic beauty of the surrounding area.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Ratti Gali Lake', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Ratti Gali Lake.jpg',
 								description: 'This glacial lake is undoubtedly the most scenic lake in the entire region and borders the Kaghan Valley. Getting there is an adventure! You take a 2.5–3 hour jeep ride from Dowarian village to the basecamp.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Patlian Lake', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Patlian Lake.jpg',
 								description: 'Patlian is another beautiful glacial lake accessed by an adventurous off-road jeep track from Lawat Town. The jeep takes you to the basecamp, and a further hour hike leads you to the stunning lake itself. Camping is available at the basecamp for visitors who wish to stay the night under the stars.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Baboon Valley', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Baboon Valley.jpg',
 								description: 'Baboon Top is a lush green, less-explored summer destination that is quickly gaining attention from tourists. It can be reached by rough, rugged hour jeep tracks starting from both Kutton Jagran and Keran villages. The valley is crowned by rocky mountains and is a great spot for nature lovers seeking quiet beauty.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Shounter Valley', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Shounter Valley.jpg',
 								description: 'Shounter Valley is truly a hidden gem of Kashmir, located further past Kel in the Neelum Valley. It is the future site of the longest tunnel in Pakistan (12.6 km), connecting Kashmir with Astore in Gilgit Baltistan. Key attractions here include the stunning Shounter Lake (also called Spoon Lake) and the breathtaking Chitta Katha Lake.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Chitta Katha Lake', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Shounter Valley.jpg',
 								description: 'This beautiful natural glacial lake is located at a high elevation of about 13,500 feet in Shounter Valley. It sits majestically shadowed by the mighty Hari Parbat mountain. Like Sharda, this place is considered sacred by Hindus, and reaching it involves a two-day trek from Hoz Village.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Gurez Valley', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Gurez Valley.jpg',
 								description: 'Taking a right turn from the Neelum Valley road after Kel leads you into the beautiful Gurez Valley. It stretches from Kel all the way to the lovely Taobat Village, bordering Gilgit Baltistan. Don\'t miss visiting Gurez if you are exploring the upper areas of Neelum Valley.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Taobat Village', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Taobat Village.jpg',
 								description: 'Taobat is often called the most beautiful village in the entire valley, bordering the Indian-Occupied Kashmir side. It is located at the very end of the Gurez Valley and offers several comfortable hotels for travelers. You can visit the small Trout Fish Farm here, which supplies fresh fish to the local villagers and tourists.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Wazwan - The Cuisine of Kashmir', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Wazwan - The Cuisine of Kashmir.jpg',
 								description: 'The famous local cuisine is called Wazwan, where "Waz" means cook and "Wan" means shop in Kashmiri. It traditionally includes 36 to 40 dishes made mainly from organic mutton, offering an incredible feast. No visit is complete without tasting the creamy, savory Kashmiri Chaye paired with a local Kashmiri Kulcha bread.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Kashmir to Kaghan Routes', 
-								image: '/images/azad kashmir.jpg',
+								image: '/images/Kashmir to Kaghan Routes.jpg',
 								description: 'There are two main routes connecting Kashmir and Kaghan Valleys. The first is an easy, short 1-1.5 hour road from Muzaffarabad to Balakot through Garhi Habibullah. The second is a highly dangerous, 4x4 only jeep track passing over the steep Noori Nar Pass from Sharda to Jalkhad.',
 								imageLeft: false
 							},
