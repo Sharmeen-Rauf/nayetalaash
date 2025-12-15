@@ -961,7 +961,7 @@ const NeelumValleyPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Neelum Valley</span>
+							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Neelum Valley & Azad Kashmir</span>
 						</h2>
 					</div>
 					
@@ -969,29 +969,29 @@ const NeelumValleyPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/zip line.jpg',
-								title: 'Chairlift & Zipline at Malam Jabba',
-								description: 'Experience thrilling ziplining and scenic chairlift rides at Malam Jabba Resort'
+								image: '/images/boating.jpg',
+								title: 'Scenic Lake Boating',
+								description: 'Enjoy peaceful boat rides on beautiful lakes surrounded by mountains and lush greenery'
 							},
 							{
-								image: '/images/boating.jpg',
-								title: 'Boating at Mahodand Lake',
-								description: 'Enjoy peaceful boat rides on the crystal clear waters of Mahodand Lake'
+								image: '/images/Arangkel-neelumandmureepage.jpg',
+								title: 'Hilltop & Valley Sightseeing',
+								description: 'Explore breathtaking viewpoints, green valleys, and charming hilltop locations'
 							},
 							{
 								image: '/images/camping.jpg',
-								title: 'Camping in meadows',
-								description: 'Spend nights under the stars in beautiful meadows surrounded by nature'
+								title: 'Riverside & Hill Camping',
+								description: 'Spend relaxing nights camping beside rivers and in scenic hill areas under starry skies'
 							},
 							{
 								image: '/images/Hiking to lakes & waterfalls.jpg',
-								title: 'Hiking to lakes & waterfalls',
-								description: 'Explore scenic trails leading to stunning lakes and cascading waterfalls'
+								title: 'Hiking to Meadows & Waterfalls',
+								description: 'Discover scenic hiking trails leading to lush meadows, waterfalls, and panoramic views'
 							},
 							{
 								image: '/images/picture forest.jpg',
-								title: 'Photography in forests & meadows',
-								description: 'Capture breathtaking moments in lush forests and serene meadows'
+								title: 'Photography & Cultural Exploration',
+								description: 'Capture stunning landscapes while experiencing local culture, traditions, and natural beauty'
 							},
 						].map((item, idx) => (
 							<div 
