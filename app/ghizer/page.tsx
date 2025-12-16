@@ -487,7 +487,7 @@ const GhizerPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								Ghizer Tour
+								Ghizer District
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const GhizerPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Discover Ghizer District
+								Where Three Ranges Meet
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Explore the stunning landscapes and rich culture of Ghizer District.
+							Explore the stunning confluence of the Hindu Kush, Karakoram, and Hindu Raj, famed for trout fishing and high-altitude polo.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Ghizer Tours
+							Explore Ghizer Valley Tours
 						</button>
 					</div>
 				</div>
@@ -522,7 +522,7 @@ const GhizerPage = () => {
 								Kaleidoscope Of Cultures
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Ghizer region is a stunning gateway to the Western Himalayas, offering a mix of towering peaks, serene alpine lakes, and ancient history. This area is a cluster of valleys, famous for its raw, magnificent mountain landscapes and being home to some of the world's most impressive sights. Some of the most iconic views and spots in this cluster include the massive Nanga Parbat (Killer Mountain), the high-altitude Deosai Plains, the tranquil Rama Lake, and the challenging Minimarg route.
+								The Ghizer District, often called the "Fruit Basket of Gilgit-Baltistan," is a spectacular region where the Hindu Kush, Karakoram, and Hindu Raj mountain ranges meet. It is a cluster of valleys, snow-capped peaks, high mountain passes, and unreal blue-green lakes that truly reflect heaven on Earth. Ghizer serves as a crucial link between the Gilgit region and the Chitral District via the historic Shandur Pass. This area is filled with stunning water bodies like the Khalti and Phander Lakes and boasts a rich, diverse culture due to its unique geographical location.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -598,7 +598,7 @@ const GhizerPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== THINGS TO DO IN ASTORE DIAMER ====================== */}
+			{/* ====================== THINGS TO DO IN GHIZER ====================== */}
 			<section 
 				data-section-id="things-to-do"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
@@ -615,28 +615,28 @@ const GhizerPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight'
+								title: 'Shandur Pass & Polo Ground',
+								description: 'Visit the "Roof of the World," the highest polo ground globally, famous for the annual traditional polo festival between the Gilgit and Chitral teams'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography'
+								title: 'Phander Valley & Lake',
+								description: 'Known as one of the most beautiful spots in Ghizer, this valley offers a tranquil deep-blue lake, ideal for trout fishing, camping, and photography'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear'
+								title: 'Yasin Valley & Darkot',
+								description: 'Explore this historically significant valley, famous for its scenic beauty, ancient rock carvings, and the starting point for challenging trekking routes'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake'
+								title: 'Khalti Lake (Gupis Valley)',
+								description: 'A stunning, accessible lake famous for its deep blue water in summer and for hosting an Ice Hockey Festival when it freezes over in winter'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims'
+								title: 'Ishkoman Valley',
+								description: 'Known as the "Hub of Glaciers," this valley offers challenging high-altitude treks, glaciers, and picturesque camping sites for serious mountaineers'
 							},
 						].map((item, idx) => (
 							<div 
@@ -706,23 +706,22 @@ const GhizerPage = () => {
 						</h2>
 					</div>
 					
-					{/* 3 Cards with Static Content and CTA Buttons */}
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
+					{/* 2 Cards with Static Content and CTA Buttons */}
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Nanga Parbat Encounter Tour',
-								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
-								image: '/images/gilgit.jpg'
+								title: 'Pakistan Alpine Tour',
+								description: 'A comprehensive journey combining the highlights of Ghizer (Phander, Shandur) with other major alpine regions of Gilgit Baltistan.',
+								image: '/images/gilgit.jpg',
+								days: '9 Days',
+								destinations: '5 Destinations'
 							},
 							{
-								title: 'Pakistan High Altitude Grand Tour',
-								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
-								image: '/images/Hunza.jpg'
-							},
-							{
-								title: 'Ghizer Discovery Tour',
-								description: 'Explore the stunning valleys, alpine lakes, and rich cultural heritage of the Ghizer region.',
-								image: '/images/skardu 2.jpg'
+								title: 'Ghizer & Kalash Valley Tour',
+								description: 'A cultural and natural bridge trip linking Ghizer\'s unique valleys with the ancient, distinct culture of the Kalash people via Shandur.',
+								image: '/images/Hunza.jpg',
+								days: '7 Days',
+								destinations: '2 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -752,6 +751,10 @@ const GhizerPage = () => {
 								{/* Content - Always Visible */}
 								<div className="absolute inset-0 flex flex-col justify-end p-6">
 									<div>
+										<div className="flex gap-4 mb-2 text-sm" style={{ color: primaryOrange }}>
+											<span className="font-semibold">{card.days}</span>
+											<span className="font-semibold">{card.destinations}</span>
+										</div>
 										<h3 className="text-2xl font-bold text-white mb-3">
 											{card.title}
 										</h3>
@@ -788,32 +791,32 @@ const GhizerPage = () => {
 					<div className="space-y-8">
 						{[
 							{
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.',
+								title: 'Shandur Pass & Polo Ground',
+								description: 'Visit the "Roof of the World," the highest polo ground globally, famous for the annual traditional polo festival between the Gilgit and Chitral teams.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.',
+								title: 'Phander Valley & Lake',
+								description: 'Known as one of the most beautiful spots in Ghizer, this valley offers a tranquil deep-blue lake, ideal for trout fishing, camping, and photography.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.',
+								title: 'Yasin Valley & Darkot',
+								description: 'Explore this historically significant valley, famous for its scenic beauty, ancient rock carvings, and the starting point for challenging trekking routes.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.',
+								title: 'Khalti Lake (Gupis Valley)',
+								description: 'A stunning, accessible lake famous for its deep blue water in summer and for hosting an Ice Hockey Festival when it freezes over in winter.',
 								image: '/images/Swat.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.',
+								title: 'Ishkoman Valley',
+								description: 'Known as the "Hub of Glaciers," this valley offers challenging high-altitude treks, glaciers, and picturesque camping sites for serious mountaineers.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							}
@@ -853,7 +856,7 @@ const GhizerPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== MORE ABOUT ASTORE DIAMER ====================== */}
+			{/* ====================== MORE ABOUT GHIZER ====================== */}
 			<section 
 				data-section-id="more-about"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
@@ -865,16 +868,13 @@ const GhizerPage = () => {
 						</h2>
 						<div className="space-y-6">
 							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								You will find some of nature's finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.
+								The numerous lakes and rivers in Ghizer, particularly the Ghizer River (a tributary of the Gilgit River), have an abundant natural supply of trout fish. Whether you love angling or simply seek a cathartic experience, spending time fishing in the peaceful silence of Hundarap or Langar Valley while the mountain water flows nearby is unforgettable.
 							</p>
 							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The region is a haven for wildlife lovers, especially the Deosai Plains (meaning 'the land of giants'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.
+								Ghizer is often referred to as the "Land of Hospitality" due to the warm and welcoming nature of its diverse communities, who speak languages like Khowar, Shina, and Burushaski. The region is rich in history, with archaeological sites, ancient forts (like Gupis Fort), and rock inscriptions scattered throughout the Punial and Yasin valleys, whispering tales of ancient civilizations.
 							</p>
 							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don't forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).
+								Beyond tourism, Ghizer is a farmer's goldmine, known for its fruit orchards (Punial Valley is the "Fruit Basket") and the trade of mineral deposits like niobium, tantalum, and tin tungsten, making it a place of both natural and economic significance.
 							</p>
 						</div>
 					</div>
@@ -897,15 +897,15 @@ const GhizerPage = () => {
 						{[
 							{
 								question: 'Where is Ghizer District located?',
-								answer: 'Astore and Diamer are districts in Gilgit-Baltistan, Pakistan, known for their stunning mountain landscapes.'
+								answer: 'Ghizer District is located in Gilgit-Baltistan, Pakistan, where the Hindu Kush, Karakoram, and Hindu Raj mountain ranges meet. It serves as a crucial link between the Gilgit region and Chitral District via the historic Shandur Pass.'
 							},
 							{
 								question: 'What is the best time to visit?',
-								answer: 'Summer months (May to September) are ideal for visiting, with pleasant weather and accessible routes.'
+								answer: 'Summer months (May to September) are ideal for visiting, with pleasant weather and accessible routes. The Shandur Polo Festival typically takes place in July, making it a popular time to visit.'
 							},
 							{
-								question: 'Is it safe to travel?',
-								answer: 'Yes, the region is generally safe for tourists with proper planning and guidance.'
+								question: 'What activities are popular in Ghizer?',
+								answer: 'Ghizer is famous for trout fishing in its numerous lakes and rivers, high-altitude polo at Shandur Pass, trekking in valleys like Yasin and Ishkoman, and experiencing the rich cultural diversity of the region.'
 							},
 						].map((faq, idx) => (
 							<div 
