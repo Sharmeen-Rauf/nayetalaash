@@ -706,77 +706,28 @@ const AstoreDiamerPage = () => {
 						</h2>
 					</div>
 					
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-4 md:px-8">
+					{/* 3 Cards with Static Content and CTA Buttons */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								days: '8 Days',
-								destinations: '5 Destinations',
 								title: 'Nanga Parbat Encounter Tour',
-								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.'
-							},
-							{
-								days: '9 Days',
-								destinations: '5 Destinations',
-								title: 'Pakistan High Altitude Grand Tour',
-								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.'
-							}
-						].map((packageItem, idx) => (
-							<div 
-								key={idx} 
-								className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-700"
-								style={{
-									animationDelay: `${idx * 0.1}s`,
-									opacity: visibleSections.has('customized-packages') ? 1 : 0,
-									transform: visibleSections.has('customized-packages') ? 'translateY(0) scale(1)' : 'translateY(30px) scale(0.95)',
-									transition: 'opacity 0.7s ease-out, transform 0.7s ease-out'
-								}}
-							>
-								<div className="relative w-full aspect-[2/1] overflow-hidden bg-gray-200">
-									<Image 
-										src="/images/gilgit.jpg"
-										alt={packageItem.title}
-										fill
-										className="object-cover hover:scale-110 transition-transform duration-500"
-									/>
-								</div>
-								<div className="p-4">
-									<div className="flex gap-4 mb-2 text-sm" style={{ color: primaryOrange }}>
-										<span className="font-semibold">{packageItem.days}</span>
-										<span className="font-semibold">{packageItem.destinations}</span>
-									</div>
-									<h3 className="font-bold mb-2" style={{ color: secondaryBlack, fontSize: '18px', lineHeight: '1.4' }}>
-										{packageItem.title}
-									</h3>
-									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.5' }}>
-										{packageItem.description}
-									</p>
-								</div>
-							</div>
-						))}
-					</div>
-
-					{/* 3 Additional Cards with CTA Buttons */}
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8 mt-12">
-						{[
-							{
-								title: 'Astore Valley Adventure',
-								description: 'Discover hidden valleys and pristine landscapes in the heart of Astore District.',
+								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
 								image: '/images/gilgit.jpg'
 							},
 							{
-								title: 'Diamer Cultural Journey',
-								description: 'Experience rich cultural heritage and ancient traditions of the Diamer region.',
+								title: 'Pakistan High Altitude Grand Tour',
+								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
 								image: '/images/Hunza.jpg'
 							},
 							{
-								title: 'Mountain Photography Tour',
-								description: 'Capture stunning mountain vistas and wildlife in their natural habitat.',
+								title: 'Astore Diamer Discovery Tour',
+								description: 'Explore the stunning valleys, alpine lakes, and rich cultural heritage of the Astore Diamer region.',
 								image: '/images/skardu 2.jpg'
 							}
 						].map((card, idx) => (
 							<div 
 								key={idx}
-								className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
+								className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
 								style={{
 									height: '450px',
 									animationDelay: `${idx * 0.15}s`,
@@ -796,29 +747,26 @@ const AstoreDiamerPage = () => {
 								</div>
 								
 								{/* Gradient Overlay */}
-								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20 transition-opacity duration-500 group-hover:from-black/95 group-hover:via-black/60"></div>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
 								
-								{/* Content */}
+								{/* Content - Always Visible */}
 								<div className="absolute inset-0 flex flex-col justify-end p-6">
-									<div className="transform transition-all duration-500 group-hover:-translate-y-2">
-										<h3 className="text-2xl font-bold text-white mb-3 transition-all duration-500 group-hover:text-[#f99621]">
+									<div>
+										<h3 className="text-2xl font-bold text-white mb-3">
 											{card.title}
 										</h3>
-										<p className="text-white/90 text-sm mb-5 leading-relaxed opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-100">
+										<p className="text-white/90 text-sm mb-5 leading-relaxed">
 											{card.description}
 										</p>
 										<button
 											onClick={handleWhatsAppClick}
-											className="w-full px-6 py-3 font-bold rounded-lg transition-all duration-300 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 hover:scale-105 shadow-lg hover:shadow-xl"
+											className="w-full px-6 py-3 font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
 											style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 										>
 											Explore More
 										</button>
 									</div>
 								</div>
-
-								{/* Decorative Element */}
-								<div className="absolute top-6 right-6 w-12 h-12 border-2 border-white/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-110 transform transition-transform duration-500"></div>
 							</div>
 						))}
 					</div>
