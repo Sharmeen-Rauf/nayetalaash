@@ -539,7 +539,7 @@ const KarachiTourPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography" style={{ display: 'inline-block' }}>
-								Karachi City Tour
+								The City That Never Stops
 							</span>
 							<br />
 							<span className="block mt-4" 
@@ -547,11 +547,11 @@ const KarachiTourPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Discover the Heart of Pakistan
+								Karachi City Tour
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed">
-							Explore the ancient Walled City, taste the famous Food Street flavors, and feel the history of the Mughals. Your unforgettable Pakistan adventure starts here.
+							From grand colonial landmarks to vibrant bazaars and breezy beaches, dive into the pulse of the "City of Lights"
 						</p>
 						<div className="mt-8">
 							<button 
@@ -562,7 +562,7 @@ const KarachiTourPage = () => {
 									color: secondaryBlack
 								}}
 							>
-								Book Your Tour
+								Book Your Trip
 							</button>
 						</div>
 					</div>
@@ -580,121 +580,102 @@ const KarachiTourPage = () => {
 							Karachi Guided City Tours
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							These Karachi City Tours and Heritage Guided Tours are carefully designed to give you the real essence of Pakistan's largest city. You can choose from unique experiences like exploring the historic areas, a Heritage Bus Tour, or deep dives into the city's rich culture. You can also customize these packages to focus on Heritage Sites, Modern Architecture, or an intense Food Street Tour based on your interests.
+							These Karachi City Tours and Historical Guided Tours are carefully curated to give you the real essence of Pakistan's largest metropolis. You can enjoy experiences like a Beach Sunset Tour, a deep dive into Colonial Architecture, or intense market explorations. You can also customize these packages to focus on food street culture, religious sites, or a thrilling boat ride based on your interests.
 						</p>
 					</div>
 
-					{/* Tour Packages Grid - 3 columns top row, 2 columns bottom row */}
+					{/* Tour Packages Grid - 5 packages */}
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-						{/* Package 1: 1 Day Walking Tour of Mughal and Sikh Era Walled City of Lahore */}
+						{/* Package 1: 1 Day Historical Downtown Karachi and Masjid-e-Tooba Tour */}
 						<div className="relative group cursor-pointer">
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
 									src="/images/karachi.jpg"
-									alt="1 Day Walking Tour of Mughal and Sikh Era Walled City of Lahore"
+									alt="1 Day Historical Downtown Karachi and Masjid-e-Tooba Tour"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
 									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
-										1 Day Walking Tour of Mughal and Sikh Era Walled City of Lahore
+										1 Day: Historical Downtown Karachi and Masjid-e-Tooba Tour
 									</h3>
 								</div>
 							</div>
 						</div>
 
-						{/* Package 2: 1 Day Lahore Guided Walled City Tour and Wahga Border Flag Raising Ceremony */}
+						{/* Package 2: 1 Day Karachi Coastline and Clifton Beach Sunset Ceremony */}
 						<div className="relative group cursor-pointer">
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
 									src="/images/karachi.jpg"
-									alt="1 Day Lahore Guided Walled City Tour and Wahga Border Flag Raising Ceremony"
+									alt="1 Day Karachi Coastline and Clifton Beach Sunset Ceremony"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
 									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
-										1 Day Lahore Guided Walled City Tour and Wahga Border Flag Raising Ceremony
+										1 Day: Karachi Coastline and Clifton Beach Sunset Ceremony
 									</h3>
 								</div>
 							</div>
 						</div>
 
-						{/* Package 3: 1 Day Heritage Walk Through the Royal Route and Old Streets of Walled City Lahore */}
+						{/* Package 3: 1 Day Empress Market Heritage Walk and Colonial Architecture Tour */}
 						<div className="relative group cursor-pointer">
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
 									src="/images/karachi.jpg"
-									alt="1 Day Heritage Walk Through the Royal Route and Old Streets of Walled City Lahore"
+									alt="1 Day Empress Market Heritage Walk and Colonial Architecture Tour"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
 									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
-										1 Day Heritage Walk Through the Royal Route and Old Streets of Walled City Lahore
+										1 Day: Empress Market Heritage Walk and Colonial Architecture Tour
 									</h3>
 								</div>
 							</div>
 						</div>
 
-						{/* Package 4: Sufi Heritage Lahore City Tour Package */}
+						{/* Package 4: British Colonial Architecture Karachi City Tour Package */}
 						<div className="relative group cursor-pointer">
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
 									src="/images/karachi.jpg"
-									alt="Sufi Heritage Lahore City Tour Package"
+									alt="British Colonial Architecture Karachi City Tour Package"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
 									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
-										Sufi Heritage Lahore City Tour Package
+										British Colonial Architecture Karachi City Tour Package
 									</h3>
 								</div>
 							</div>
 						</div>
 
-						{/* Package 5: British Colonial Architecture Lahore City Tour Package */}
+						{/* Package 5: Modern Day Karachi City Tour & Shopping District Tour */}
 						<div className="relative group cursor-pointer">
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
 									src="/images/karachi.jpg"
-									alt="British Colonial Architecture Lahore City Tour Package"
+									alt="Modern Day Karachi City Tour & Shopping District Tour"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
 									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
-										British Colonial Architecture Lahore City Tour Package
-									</h3>
-								</div>
-							</div>
-						</div>
-
-						{/* Package 6: Modern Day Lahore City Tour Package */}
-						<div className="relative group cursor-pointer">
-							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
-								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-								<Image 
-									src="/images/karachi.jpg"
-									alt="Modern Day Lahore City Tour Package"
-									fill
-									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
-								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
-								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
-									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
-										Modern Day Lahore City Tour Package
+										Modern Day Karachi City Tour & Shopping District Tour
 									</h3>
 								</div>
 							</div>
@@ -711,7 +692,7 @@ const KarachiTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Top Places to Visit in Karachi
+							Top Attractions to Visit in Karachi City
 						</h2>
 						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							We have compiled a list of the most prominent and famous places to visit in Karachi. Our city tours are structured to ensure you see all the best sites:
@@ -721,70 +702,76 @@ const KarachiTourPage = () => {
 					<div className="space-y-6">
 						{[
 							{ 
-								title: '1. Lahore Fort (Shahi Qila)', 
+								title: 'Quaid-e-Azam\'s Mausoleum (Mazar-e-Quaid)', 
 								image: '/images/karachi.jpg',
-								description: 'A UNESCO World Heritage Site and the crown jewel of Mughal Lahore. Explore the stunning Sheesh Mahal, the magnificent Picture Wall, and the grand Alamgiri Gate. The fort holds centuries of history within its royal chambers and ancient walls.',
+								description: 'The Mazar-e-Quaid is the final resting place of Muhammad Ali Jinnah, the founder of Pakistan. This iconic white marble structure is a symbol of national identity and a key site for visitors. The mausoleum is surrounded by a large garden and serves as a place of quiet reflection and national pride.',
 								imageLeft: true
 							},
 							{ 
-								title: '2. Badshahi Mosque', 
+								title: 'Mohatta Palace', 
 								image: '/images/karachi.jpg',
-								description: 'One of the largest and most architecturally beautiful mosques in the world. Its striking red sandstone exterior and pristine white marble interior are truly spectacular. The mosque reflects the immense glory and power of Emperor Aurangzeb\'s historical era.',
+								description: 'The Mohatta Palace is a stunning red sandstone and marble building constructed in 1927 by Shivratan Chandraratan Mohatta, a Hindu businessman. It was designed in the traditional stone palace style of Rajasthan and showcases Indo Saracenic architecture. Today, it serves as an arts museum, preserving the cultural heritage of Pakistan.',
 								imageLeft: false
 							},
 							{ 
-								title: '3. Wazir Khan Mosque', 
+								title: 'Empress Market', 
 								image: '/images/karachi.jpg',
-								description: 'This beautiful mosque was built in the 17th century by Ilm-ud-Din Ansari (known as Wazir Khan), the Governor of Lahore under Emperor Shah Jahan. Located on the Royal Route (Shahi Guzargah), it is famous for its intricate Kashi Kari (tile work) and delicate Fresco Paintings. Its entrance includes a unique market area, historically known as the Calligrapher\'s Market.',
+								description: 'Empress Market is a huge, historic colonial era structure built during the British Raj in 1889. Located in the bustling Saddar Town, it is one of the busiest and oldest markets in the city. It remains a central marketplace today, selling everything from groceries and pets to textiles and household goods.',
 								imageLeft: true
 							},
 							{ 
-								title: '4. Hazuri Bagh & Baradari', 
+								title: 'Frere Hall', 
 								image: '/images/karachi.jpg',
-								description: 'Hazuri Bagh is a significant garden located between the Lahore Fort\'s Alamgiri Gate and the Badshahi Mosque. At its center stands a Bara Dari (Twelve-Door Pavilion), which was built by Maharaja Ranjit Singh using white marble from dismantled Mughal structures. The garden also holds the Tombs of Sir Allama Mohammad Iqbal (National Poet) and Sikandar Hayat Khan.',
+								description: 'Frere Hall is a beautiful Venetian Gothic style building completed in 1865 in honor of Sir Bartle Frere, a former Governor of Bombay. It is famous for its architecture and the 19th century Sadequain murals that decorate its ceiling. The building is surrounded by Jinnah Gardens (Bagh-e-Jinnah) and is a key landmark of British colonial architecture.',
 								imageLeft: false
 							},
 							{ 
-								title: '5. Shahi Hammam', 
+								title: 'Clifton Beach and Clifton Clock Tower', 
 								image: '/images/karachi.jpg',
-								description: 'This is a Mughal era public bathhouse, inspired by Turkish designs, also commissioned by Wazir Khan near the Delhi Gate. It provided comprehensive services, including hot, warm, and cold water sections, a sauna, and separate areas for men and women. After being restored in 2013, its beautiful frescoes and hidden water channels were uncovered, making it a key historical site.',
+								description: 'Clifton Beach (also known as Sea View) is the most popular beach destination, offering a wide stretch of sand along the Arabian Sea. It\'s a hub of activity where families and tourists enjoy camel and buggy rides, food stalls, and ocean breezes. The nearby Clifton Clock Tower is a recognizable modern landmark and a popular photo spot.',
 								imageLeft: true
 							},
 							{ 
-								title: '6. Shalimar Gardens', 
+								title: 'Masjid-e-Tooba (Tooba Mosque)', 
 								image: '/images/karachi.jpg',
-								description: 'Referred to as Shah Jahan\'s "Heaven on Earth" for its meticulous design. The gardens feature stunning water terraces, numerous fountains, and elegant pavilions. They perfectly embody the symmetry and planning characteristic of Mughal landscape design.',
+								description: 'Also known as the Gol Masjid (Round Mosque), this is one of Karachi\'s architectural marvels, built in 1969. It is famous for having the world\'s largest single dome mosque without any central pillars. The pure white marble structure is a beautiful, serene site for prayer and visitation.',
 								imageLeft: false
 							},
 							{ 
-								title: '7. Lahore Museum', 
+								title: 'State Bank of Pakistan Museum', 
 								image: '/images/karachi.jpg',
-								description: 'A true treasure house preserving rare artifacts from across many eras of history. Its collection spans the Gandhara, Mughal, Sikh, and British periods. It is an essential stop for anyone interested in the cultural heritage of the region.',
+								description: 'The State Bank Museum is housed in a grand colonial era building and preserves Pakistan\'s financial and monetary history. It showcases a vast collection of currencies, coins, and art, offering a fascinating look at the region\'s economic past. The museum is a great place to explore the history of money and banking in South Asia.',
 								imageLeft: true
 							},
 							{ 
-								title: '8. Gali Surjan Singh', 
+								title: 'National Museum of Pakistan', 
 								image: '/images/karachi.jpg',
-								description: 'A meticulously restored historic street nestled deep within old Lahore. It is filled with tangible heritage, vibrant culture, and charming architecture. This alley offers a uniquely beautiful setting perfect for photography and exploration.',
+								description: 'Located on Burns Garden, the museum displays diverse collections ranging from ancient artifacts to documents of Pakistan\'s independence. Key exhibits include relics from the Indus Valley Civilization, Gandhara art, and Islamic art. It provides a comprehensive historical narrative of the land and its people.',
 								imageLeft: false
 							},
 							{ 
-								title: '9. Minar-e-Pakistan', 
+								title: 'Pakistan Air Force (PAF) Museum', 
 								image: '/images/karachi.jpg',
-								description: 'The towering place where the landmark Pakistan Resolution was formally passed in 1940. This monument is an unmistakable and powerful symbol of the nation\'s identity and birth. It is a crucial site of historical and patriotic significance for the country.',
+								description: 'The PAF Museum is a popular family attraction showcasing the history of the Pakistan Air Force. It features various aircraft, including fighter jets and bombers, displayed in parks and hangars. It\'s a great place for aviation enthusiasts and for a fun outdoor visit.',
 								imageLeft: true
 							},
 							{ 
-								title: '10. Wahga Border Ceremony', 
+								title: 'Turtle Beaches (Hawkesbay and Sandspit)', 
 								image: '/images/karachi.jpg',
-								description: 'A thrilling and popular daily flag lowering military ceremony between Pakistan and India. The event is a highly energetic spectacle, generating intense national pride and patriotism. It is an unmissable cultural and theatrical experience for visitors to Lahore.',
+								description: 'The beaches west of the city, especially Hawkesbay and Sandspit, are famous for being nesting grounds for Green and Olive Ridley turtles. These quieter beaches are popular for cottages (huts) and offer a peaceful escape from the city bustle. Visiting during the nesting season is a memorable experience.',
 								imageLeft: false
 							},
 							{ 
-								title: '11. Data Darbar', 
+								title: 'Manora Island and Port', 
 								image: '/images/karachi.jpg',
-								description: 'One of the most important and largest Sufi shrines found across all of South Asia. It is a spiritual center rich with deep historical and cultural significance. The shrine draws millions of pilgrims and followers seeking blessings and peace.',
+								description: 'Manora Island is located south of the Karachi Port and offers beautiful views of the city skyline and harbor. It is home to a historic lighthouse, the 17th century fort remnants, and a naval base. Access involves crossing the long Manora bridge or taking a boat ride from the main harbor.',
 								imageLeft: true
+							},
+							{ 
+								title: 'Bohri Bazaar and Zaibunnisa Street', 
+								image: '/images/karachi.jpg',
+								description: 'These areas represent the heart of Karachi\'s vibrant, chaotic and diverse shopping culture. Bohri Bazaar is famous for traditional clothing, jewelry, and household goods. Zaibunnisa Street (Elphinstone Street) offers a mix of modern and traditional shops, reflecting the city\'s energy.',
+								imageLeft: false
 							},
 						].map((destination, idx) => (
 							<div 
@@ -852,7 +839,7 @@ const KarachiTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="w-full">
 						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some Other Historical and Heritage Sites in Lahore:
+							Some Other Historical and Heritage Sites in Karachi:
 						</h3>
 
 						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
@@ -918,14 +905,14 @@ const KarachiTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto mb-4">
 						<h2 className="text-2xl md:text-3xl font-bold mb-3 text-center" style={{ color: secondaryBlack }}>
-							More About Lahore City
+							More About Karachi City
 						</h2>
 						<div className="space-y-2">
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								With a history spanning perhaps 3,000 to 3,500 years, Lahore is much more than a city; it is a narrator of history. This resilient metropolis has survived the rise and fall of countless empires, conflicts, and natural disasters, yet it always stands tall, emerging stronger than before.
+								Karachi, established as a small fishing village centuries ago, rapidly transformed into a modern metropolitan area under the British Raj and became the first capital of Pakistan. Known today as the nation's economic powerhouse, Karachi is a resilient city built on trade, dreams, and diversity. Its history is a blend of ancient fishing communities, colonial development and the arrival of millions of settlers following Pakistan's independence.
 							</p>
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Present-day Lahore is proud of its lively streets, fantastic architecture, echoing food streets, and vibrant, loving people, known locally as "Zinda Dilan e Lahore" (Lahore with Lively Hearts). Every door and alleyway tells a story of endurance, evolution, and timeless charm.
+								This resilient port city continues to grow, maintaining a fascinating mix of historical buildings, massive markets, and a unique coastal culture.
 							</p>
 						</div>
 					</div>
@@ -939,12 +926,6 @@ const KarachiTourPage = () => {
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							History Of Lahore
-						</h3>
-						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Lahore is an ancient city, often called the "City of Gardens," with a history stretching back over a thousand years. It became truly magnificent under the Mughal emperors, who built stunning palaces and mosques like the Lahore Fort and Badshahi Mosque, making it an imperial cultural center. It also served as the capital during the Sikh era. Critically, Lahore is the symbolic birthplace of modern Pakistan, where the resolution for an independent nation was passed, blending its deep historical roots with its modern status as the country's vibrant, beating heart.
-						</p>
 					</div>
 				</div>
 			</section>
@@ -956,15 +937,6 @@ const KarachiTourPage = () => {
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							A Brief History of the Walled City of Lahore
-						</h3>
-						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							According to ancient Hindu mythology, the Walled City of Lahore was founded by Lav (Loh), one of the twin sons of the Hindu god Ram. It is said that Lav established Lavapuri (the present-day Walled City of Lahore), while his brother Kusha founded the nearby city of Kasur. However, this origin story is widely considered a myth, as concrete historical evidence only dates back to the 11th century when Mahmood Ghaznavi became victorious and established Muslim rule in the region.
-						</p>
-						<p className="leading-normal text-justify mt-2" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							The Walled City, with its ancient gates, narrow alleys, and historic structures, has been the heart of Lahore for centuries. Its fortifications, originally built for defense, now serve as a living testament to the city's rich and complex history, attracting historians, archaeologists, and tourists from around the world.
-						</p>
 					</div>
 				</div>
 			</section>
@@ -977,39 +949,27 @@ const KarachiTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Other Historical Names of Lahore City
+							Historical Names of Karachi City
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Throughout its long history, Lahore has been known by various names. Some of the historical names associated with the city include:
+							Karachi's name has evolved over time, reflecting its early identity as a fishing and trading spot:
 						</p>
 						<div className="mt-2 space-y-1">
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Mehmood Puri</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Kolachi-jo-Goth (Village of Kolachi, after a local fisherwoman)</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lohpur</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Kolachi</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lavapuri</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Karak (possibly from an old name for the port)</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lohawar</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lohkot</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lavakot</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lavapur</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Kharak Bandar</p>
 							</div>
 						</div>
 					</div>
@@ -1024,7 +984,7 @@ const KarachiTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Rulers and Dynasties That Ruled Over the Lahore City
+							Rulers and Dynasties That Ruled Over Karachi
 						</h3>
 						
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
@@ -1033,7 +993,7 @@ const KarachiTourPage = () => {
 								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
 									<Image 
 										src="/images/karachi.jpg"
-										alt="Historical Ruler of Lahore"
+										alt="Historical Ruler of Karachi"
 										fill
 										className="object-cover"
 									/>
@@ -1043,29 +1003,40 @@ const KarachiTourPage = () => {
 							{/* Content on the right */}
 							<div className="lg:col-span-2 space-y-2">
 								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Lahore has been ruled by numerous powerful dynasties and empires throughout its history. The Hindu Shahis were among the earliest known rulers, with Raja Jayapal being defeated by Mahmud Ghaznavi in 1021, marking the beginning of Muslim rule in the region.
+									Karachi's history is defined by a succession of local and foreign powers:
 								</p>
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									The city experienced a golden era under Malik Ahmed Ayyaz, but Ghazni rule was eventually overthrown by Shahabuddin Ghori. This was followed by a succession of Muslim dynasties that shaped Lahore's destiny.
-								</p>
-								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									The Sultans under Qutubuddin Albak established their presence, followed by the Turco-Afghan Dynasty under Jalaludin Firoz Khilji. The Tughlaq Dynasty, led by Ghiyasudin Tughlaq, and the Sadaat under Khizer Khan, also left their mark. The Lodhi Dynasty, with Ibrahim Lodhi at the helm, preceded the arrival of the Mughals.
-								</p>
+								<div className="space-y-1 mt-2">
+									<div className="flex items-start gap-2">
+										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+											<strong>Local Tribes:</strong> The early history involved local Sindhi tribes, primarily the Kalaris and Jokhio clans, who maintained the small fishing settlement.
+										</p>
+									</div>
+									<div className="flex items-start gap-2">
+										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+											<strong>Talpur Dynasty (Sindh):</strong> In the 18th century, the Talpur rulers built a fort in the area, recognizing its trade importance.
+										</p>
+									</div>
+									<div className="flex items-start gap-2">
+										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+											<strong>British Colonial Rule (1839):</strong> The British seized control of Karachi, recognizing its strategic harbor potential. They dramatically transformed it into a major port city, constructing the splendid Victorian style Colonial Architecture that defines the historical center today.
+										</p>
+									</div>
+									<div className="flex items-start gap-2">
+										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+											<strong>The Post Independence Era (1947):</strong> After Pakistan's creation, Karachi served as the capital and witnessed a massive influx of migrants, which propelled its growth into the diverse, bustling metropolis it is today.
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 
-						<div className="space-y-2">
+						<div className="space-y-2 mt-4">
 							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								The Mughal era, beginning with Zahirudin Babar, marked a period of unprecedented architectural and cultural development. The Mughals contributed some of the most magnificent architectural marvels, including the Lahore Fort, Badshahi Mosque, and Shalimar Gardens, which continue to attract millions of visitors today.
-							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								After the decline of the Mughal Empire, Lahore saw brief periods under Raghunath Rao of the Marathas, Nadir Shah and Ahmad Shah Abdali of the Durrani Empire. The Sikh Empire, under the legendary Maharaja Ranjit Singh, established Lahore as the capital of the Sikh Kingdom, adding another rich layer to the city's heritage.
-							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								The British took control of Lahore after the fall of the Sikh Empire, introducing Victorian-style British Colonial Architecture that stands alongside the magnificent Mughal Architecture. This architectural fusion created a unique urban landscape that reflects Lahore's complex historical journey.
-							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								After colonial rule, Lahore became part of Pakistan, and today it stands as a vibrant cultural and intellectual hub. The city continues to evolve while preserving its rich historical legacy, serving as a bridge between its glorious past and its promising future.
+								Today, Karachi is governed democratically and thrives as a central economic hub, celebrated for its lively atmosphere, industrial strength, and coastal life.
 							</p>
 						</div>
 					</div>
@@ -1080,63 +1051,23 @@ const KarachiTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							13 Gates of the Walled City of Lahore
+							Old Access Points of Karachi
 						</h3>
 						<p className="leading-normal text-justify mb-3" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							The historic Walled City was once fortified by 13 grand gates, commissioned by the Mughals, each serving as a key entry point. Many still stand today, including:
+							Unlike the walled city of Lahore, Karachi was developed more as a sprawling port town. However, key access and security points from the earlier periods included:
 						</p>
 						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Delhi Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>The Native Jetty Bridge: Though not a gate, this was a vital old access point connecting the main land to the port and old island areas.</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Bhatti Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>The Karachi Fort: Built by the Talpur Dynasty, the fort's gates controlled access to the old settlement of Kolachi.</p>
 							</div>
 							<div className="flex items-center gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Lohari Gate or Lahori Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Mori Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Sheranwala Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Taxali Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Roshnai Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Mochi Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Shah Alam Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Akbari Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Masti Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Kashmiri Gate</p>
-							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Yakki Gate</p>
+								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Old Town Entries: Access was often controlled by specific roads leading into the historic centers like Saddar Town and the original colonial port areas.</p>
 							</div>
 						</div>
 					</div>
@@ -1151,20 +1082,40 @@ const KarachiTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							The Colorful Bazaars of Lahore City
+							The Colorful Bazaars of Karachi City
 						</h3>
 						
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
 							{/* Content on the left */}
 							<div className="lg:col-span-2 space-y-2">
 								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Lahore boasts some of the most vibrant and bustling bazaars in Pakistan. Exploring these markets is the best way to witness the city's true life and culture. They feature everything from traditional jewelry and handicrafts to aromatic spices and appealing food stalls.
+									Karachi is home to some of Pakistan's largest, most chaotic, and diverse markets. Exploring these vibrant bazaars is the best way to experience the city's commercial energy and the true spirit of its people. They range from vast, traditional wholesale markets to modern shopping districts:
 								</p>
-								<div className="mt-2">
-									<p className="leading-normal mb-2" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-										Famous markets include: Anarkali Bazaar, Ichhra Bazaar, Shah Alami Market, Rang Mahal Bazaar, and Liberty Market. For a true Lahori experience, you can take a colorful Rangeela Rickshaw Tour through these busy streets!
-									</p>
+								<div className="mt-2 space-y-1">
+									<div className="flex items-start gap-2">
+										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Empress Market (Saddar): The historical heart of the city's trade.</p>
+									</div>
+									<div className="flex items-start gap-2">
+										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Bohri Bazaar: Famous for traditional textiles, jewelry, and household goods.</p>
+									</div>
+									<div className="flex items-start gap-2">
+										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Zainab Market: Popular for clothing, leather goods, and handicrafts, catering often to tourists.</p>
+									</div>
+									<div className="flex items-start gap-2">
+										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Tariq Road: A modern shopping hub known for bridal wear and latest fashion.</p>
+									</div>
+									<div className="flex items-start gap-2">
+										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Clifton/Do Darya: Features upscale shopping areas and dining experiences.</p>
+									</div>
 								</div>
+								<p className="leading-normal mt-2" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									A Karachi Walking Tour or a Rickshaw Tour through these markets is the best way to witness the sheer volume and variety of goods traded in the city.
+								</p>
 							</div>
 							
 							{/* Image on the right */}
@@ -1172,7 +1123,7 @@ const KarachiTourPage = () => {
 								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
 									<Image 
 										src="/images/karachi.jpg"
-										alt="Colorful Bazaar of Lahore"
+										alt="Colorful Bazaar of Karachi"
 										fill
 										className="object-cover"
 									/>
@@ -1191,20 +1142,20 @@ const KarachiTourPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Lahore's Food Street and Vibrant Culture
+							Karachi's Food Streets and Vibrant Culture
 						</h3>
 						<p className="leading-normal text-justify mb-3" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							No trip is complete without a Lahore Food Street Tour.
+							A trip to Karachi is incomplete without diving into its incredible street food and diverse dining scene:
 						</p>
 						<ul className="space-y-2 mb-3">
 							<li className="flex items-start gap-2">
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
 								<div>
 									<p className="leading-normal font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-										Fort Road Food Street:
+										Burns Road Food Street:
 									</p>
 									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-										Located next to the Lahore Fort, it offers delicious food with a stunning view of the Fort and Badshahi Mosque. Old Havelis here have been converted into unique restaurants for fine dining.
+										The oldest and most famous food street, offering classic Karachi dishes like Biryani, Nihari, Paaye and the famous Bun Kebab. It is the place for an authentic Androon Karachi Food Tour.
 									</p>
 								</div>
 							</li>
@@ -1212,14 +1163,28 @@ const KarachiTourPage = () => {
 								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
 								<div>
 									<p className="leading-normal font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-										Androon Lahore Food Tour:
+										Hussainabad Food Street:
 									</p>
 									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-										This is the heart of desi food. Lahoris specialize in classics like Paaye, Nihari, Karahis, and Chanay Kulchy. Our food tours will help you find the best of this rich culinary heritage.
+										Another popular hub known for barbecue, grilled meats and local snacks.
+									</p>
+								</div>
+							</li>
+							<li className="flex items-start gap-2">
+								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
+								<div>
+									<p className="leading-normal font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+										Do Darya (Clifton/Seaview):
+									</p>
+									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+										Offers a unique, upscale dining experience with restaurants built on piers extending over the Arabian Sea perfect for a Seafood and Sunset Tour.
 									</p>
 								</div>
 							</li>
 						</ul>
+						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Our Karachi Food Street Tour will guide you to the best spots to sample the city's complex, flavorful cuisine.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -1257,13 +1222,11 @@ const KarachiTourPage = () => {
 								{[
 									'Old Karachi Historical Tour',
 									'British Colonial Architecture Karachi City Tour',
-									'Heritage History Karachi City Tour',
-									'Sufi Heritage Karachi City Tour',
+									'Coastal and Beach Exploration Tour',
+									'Sufi Heritage and Shrine Tour',
 									'Karachi Street Food Tour',
-									'Androon Karachi Food Tour',
-									'Karachi Rickshaw Tour',
-									'Karachi Rangeela Rickshaw Tour',
-									'Karachi City Bus Tour',
+									'Androon Karachi Food Tour (Burns Road Special)',
+									'Karachi Bus Tour (City Highlights)',
 									'Walking Karachi City Tour',
 								].map((tour, idx) => (
 									<div 
@@ -1307,7 +1270,7 @@ const KarachiTourPage = () => {
 							Plan Your Karachi City Tour with Nayi Talaash
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Whether you want to explore the rich history, the vibrant culture, the bustling bazaars, the religious sites or the flavorful desi cuisine, Nayi Talaash is here to guide you. Contact us now to plan your unforgettable Lahore City Tour!
+							Whether you seek history, high rise buildings, quiet beaches or the best street food, Nayi Talaash is here to guide you through the City of Lights. Let us help you plan your ideal Karachi City Tour contact us now!
 						</p>
 					</div>
 				</div>
@@ -1328,40 +1291,44 @@ const KarachiTourPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: '1. What is included in the Karachi City Tour?',
-								answer: 'Our tours include guided visits to major landmarks, transportation, entry assistance and a curated experience based on the theme you choose.'
+								question: 'Where is Karachi located?',
+								answer: 'South of Pakistan, on the coast of the Arabian Sea (Sindh province).'
 							},
 							{
-								question: '2. Can I customize my Karachi tour?',
-								answer: 'Yes! You can add or remove destinations, extend the tour or create a fully custom city tour according to your preference.'
+								question: 'What is the best time to visit?',
+								answer: 'Winter (October to March) for pleasant, moderate weather.'
 							},
 							{
-								question: '3. How long is the Karachi City Tour?',
-								answer: 'It depends on the package. We offer half day, full day, and multi day Karachi tours.'
+								question: 'Is Karachi safe for tourists?',
+								answer: 'Yes, generally safe; use reliable transport and follow local advice.'
 							},
 							{
-								question: '4. Do you provide pickup and drop-off?',
-								answer: 'Yes, we provide convenient pickup and drop-off from your hotel or preferred location.'
+								question: 'How can we travel there?',
+								answer: 'Flights, train, or road (via Super Highway/M-9) are all options.'
 							},
 							{
-								question: '5. Are entry tickets included?',
-								answer: 'Some tours include tickets, while others may require on spot purchase. Full details are provided before booking.'
+								question: 'What kind of food is available?',
+								answer: 'Biryani, Seafood, street food (Bun Kebab), and international cuisine.'
 							},
 							{
-								question: '6. Is the tour suitable for families?',
-								answer: 'Absolutely! Our tours are family friendly and safe for all age groups.'
+								question: 'What are the main attractions?',
+								answer: 'Mazar-e-Quaid, Clifton Beach, Mohatta Palace, and historical markets.'
 							},
 							{
-								question: '7. What should I wear during the tour?',
-								answer: 'Comfortable clothing and shoes are recommended. For mosques or religious sites, modest dressing is appreciated.'
+								question: 'Can I use my credit card or ATM?',
+								answer: 'Yes, major cities have wide ATM and credit card availability.'
 							},
 							{
-								question: '8. Do you offer food tours?',
-								answer: 'Yes, our Karachi Food Street & Androon Karachi Food Tour lets you enjoy authentic Karachi cuisine.'
+								question: 'Is there a public transport system?',
+								answer: 'Yes, buses, rickshaws, taxis, and ride-hailing apps are common.'
 							},
 							{
-								question: '9. Are beaches and coastal areas included?',
-								answer: 'Yes, Karachi\'s beautiful beaches and coastal areas can be included in your tour. We provide guided visits to popular beach destinations.'
+								question: 'What is the local language spoken?',
+								answer: 'Urdu is the main language, followed by Sindhi and Gujrati.'
+							},
+							{
+								question: 'What is the time difference?',
+								answer: 'Pakistan Standard Time (PST) is UTC+5.'
 							},
 						].map((faq, idx) => (
 							<div 
