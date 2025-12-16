@@ -521,7 +521,7 @@ const KarachiTourPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/karachi.jpg')",
+						backgroundImage: "url('/images/karachi.avif')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -591,7 +591,7 @@ const KarachiTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/karachi.jpg"
+									src="/images/package 1 karachi.jpg"
 									alt="1 Day Historical Downtown Karachi and Masjid-e-Tooba Tour"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -610,7 +610,7 @@ const KarachiTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/karachi.jpg"
+									src="/images/package 2 karachi.jpg"
 									alt="1 Day Karachi Coastline and Clifton Beach Sunset Ceremony"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -629,7 +629,7 @@ const KarachiTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/karachi.jpg"
+									src="/images/package 3 karachi 1.jpg"
 									alt="1 Day Empress Market Heritage Walk and Colonial Architecture Tour"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -648,7 +648,7 @@ const KarachiTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/karachi.jpg"
+									src="/images/package 4 karachi.jpeg"
 									alt="British Colonial Architecture Karachi City Tour Package"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -667,7 +667,7 @@ const KarachiTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/karachi.jpg"
+									src="/images/package 5 karachi.jpg"
 									alt="Modern Day Karachi City Tour & Shopping District Tour"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -703,37 +703,37 @@ const KarachiTourPage = () => {
 						{[
 							{ 
 								title: 'Quaid-e-Azam\'s Mausoleum (Mazar-e-Quaid)', 
-								image: '/images/karachi.jpg',
+								image: '/images/Quaid-e-Azam\'s Mausoleum (Mazar-e-Quaid).jpg',
 								description: 'The Mazar-e-Quaid is the final resting place of Muhammad Ali Jinnah, the founder of Pakistan. This iconic white marble structure is a symbol of national identity and a key site for visitors. The mausoleum is surrounded by a large garden and serves as a place of quiet reflection and national pride.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Mohatta Palace', 
-								image: '/images/karachi.jpg',
+								image: '/images/Mohatta Palace.jpeg',
 								description: 'The Mohatta Palace is a stunning red sandstone and marble building constructed in 1927 by Shivratan Chandraratan Mohatta, a Hindu businessman. It was designed in the traditional stone palace style of Rajasthan and showcases Indo Saracenic architecture. Today, it serves as an arts museum, preserving the cultural heritage of Pakistan.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Empress Market', 
-								image: '/images/karachi.jpg',
+								image: '/images/Empress Market.jpg',
 								description: 'Empress Market is a huge, historic colonial era structure built during the British Raj in 1889. Located in the bustling Saddar Town, it is one of the busiest and oldest markets in the city. It remains a central marketplace today, selling everything from groceries and pets to textiles and household goods.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Frere Hall', 
-								image: '/images/karachi.jpg',
+								image: '/images/Frere Hall.jpg',
 								description: 'Frere Hall is a beautiful Venetian Gothic style building completed in 1865 in honor of Sir Bartle Frere, a former Governor of Bombay. It is famous for its architecture and the 19th century Sadequain murals that decorate its ceiling. The building is surrounded by Jinnah Gardens (Bagh-e-Jinnah) and is a key landmark of British colonial architecture.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Clifton Beach and Clifton Clock Tower', 
-								image: '/images/karachi.jpg',
+								image: '/images/Clifton Beach and Clifton Clock Tower.jpg',
 								description: 'Clifton Beach (also known as Sea View) is the most popular beach destination, offering a wide stretch of sand along the Arabian Sea. It\'s a hub of activity where families and tourists enjoy camel and buggy rides, food stalls, and ocean breezes. The nearby Clifton Clock Tower is a recognizable modern landmark and a popular photo spot.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Masjid-e-Tooba (Tooba Mosque)', 
-								image: '/images/karachi.jpg',
+								image: '/images/Masjid-e-Tooba (Tooba Mosque).jpg',
 								description: 'Also known as the Gol Masjid (Round Mosque), this is one of Karachi\'s architectural marvels, built in 1969. It is famous for having the world\'s largest single dome mosque without any central pillars. The pure white marble structure is a beautiful, serene site for prayer and visitation.',
 								imageLeft: false
 							},
@@ -992,7 +992,7 @@ const KarachiTourPage = () => {
 							<div className="lg:col-span-1">
 								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
 									<Image 
-										src="/images/karachi.jpg"
+										src="/images/hd-mazarequaid-karachi.jpg"
 										alt="Historical Ruler of Karachi"
 										fill
 										className="object-cover"
@@ -1122,7 +1122,7 @@ const KarachiTourPage = () => {
 							<div className="lg:col-span-1">
 								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
 									<Image 
-										src="/images/karachi.jpg"
+										src="/images/The Colorful Bazaars of Karachi City.jpg"
 										alt="Colorful Bazaar of Karachi"
 										fill
 										className="object-cover"
@@ -1208,8 +1208,8 @@ const KarachiTourPage = () => {
 						<div className="lg:col-span-3 hidden lg:block">
 							<div className="relative w-full h-[400px] rounded overflow-hidden">
 								<Image 
-									src="/images/karachi.jpg"
-									alt="Lahore Architecture"
+									src="/images/The Colorful Bazaars of Karachi City.jpg"
+									alt="Karachi Architecture"
 									fill
 									className="object-cover"
 								/>
@@ -1248,8 +1248,8 @@ const KarachiTourPage = () => {
 						<div className="lg:col-span-3 hidden lg:block">
 							<div className="relative w-full h-[400px] rounded overflow-hidden">
 								<Image 
-									src="/images/karachi.jpg"
-									alt="Lahore Architecture"
+									src="/images/Karachi's Food Streets and Vibrant Culture.jpg"
+									alt="Karachi Food Streets"
 									fill
 									className="object-cover"
 								/>
