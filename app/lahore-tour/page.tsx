@@ -521,7 +521,7 @@ const LahoreTourPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/lahore.jpg')",
+						backgroundImage: "url('/images/Lahore City 1.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -591,7 +591,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/package 1 lahore.jpg"
 									alt="1 Day Walking Tour of Mughal and Sikh Era Walled City of Lahore"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -610,7 +610,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/package 2 lahore.jpg"
 									alt="1 Day Lahore Guided Walled City Tour and Wahga Border Flag Raising Ceremony"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -629,7 +629,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/package 3 lahore.jpg"
 									alt="1 Day Heritage Walk Through the Royal Route and Old Streets of Walled City Lahore"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -648,7 +648,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/package 4 lahore.jpg"
 									alt="Sufi Heritage Lahore City Tour Package"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -667,7 +667,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/package 5 lahore.png"
 									alt="British Colonial Architecture Lahore City Tour Package"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -686,7 +686,7 @@ const LahoreTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/lahore.jpg"
+									src="/images/papackage 6 lahore.jpg"
 									alt="Modern Day Lahore City Tour Package"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
@@ -722,7 +722,7 @@ const LahoreTourPage = () => {
 						{[
 							{ 
 								title: '1. Lahore Fort (Shahi Qila)', 
-								image: '/images/lahore.jpg',
+								image: '/images/Lahore Fort (Shahi Qila).jpeg',
 								image360: '/images/marc-markstein-if4wsNq145o-unsplash.jpg', // Your 360 image
 								// For embedded tour (Kuula/Roundme/etc): iframe360: 'https://kuula.co/share/collection/XXXXX',
 								description: 'A UNESCO World Heritage Site and the crown jewel of Mughal Lahore. Explore the stunning Sheesh Mahal, the magnificent Picture Wall, and the grand Alamgiri Gate. The fort holds centuries of history within its royal chambers and ancient walls.',
@@ -730,7 +730,7 @@ const LahoreTourPage = () => {
 							},
 							{ 
 								title: '2. Badshahi Mosque', 
-								image: '/images/lahore.jpg',
+								image: '/images/Badshahi Mosque.jpg',
 								// For self-hosted 360 image: image360: '/images/360/badshahi-mosque-360.jpg',
 								// For embedded tour (Kuula/Roundme/etc): iframe360: 'https://kuula.co/share/collection/XXXXX',
 								description: 'One of the largest and most architecturally beautiful mosques in the world. Its striking red sandstone exterior and pristine white marble interior are truly spectacular. The mosque reflects the immense glory and power of Emperor Aurangzeb\'s historical era.',
@@ -738,63 +738,63 @@ const LahoreTourPage = () => {
 							},
 							{ 
 								title: '3. Wazir Khan Mosque', 
-								image: '/images/lahore.jpg',
+								image: '/images/Wazir Khan Mosque.jpg',
 								// Add 360 image when available: image360: '/images/360/wazir-khan-mosque-360.jpg',
 								description: 'This beautiful mosque was built in the 17th century by Ilm-ud-Din Ansari (known as Wazir Khan), the Governor of Lahore under Emperor Shah Jahan. Located on the Royal Route (Shahi Guzargah), it is famous for its intricate Kashi Kari (tile work) and delicate Fresco Paintings. Its entrance includes a unique market area, historically known as the Calligrapher\'s Market.',
 								imageLeft: true
 							},
 							{ 
 								title: '4. Hazuri Bagh & Baradari', 
-								image: '/images/lahore.jpg',
+								image: '/images/Hazuri Bagh & Baradari.jpg',
 								// Add 360 image when available: image360: '/images/360/hazuri-bagh-360.jpg',
 								description: 'Hazuri Bagh is a significant garden located between the Lahore Fort\'s Alamgiri Gate and the Badshahi Mosque. At its center stands a Bara Dari (Twelve-Door Pavilion), which was built by Maharaja Ranjit Singh using white marble from dismantled Mughal structures. The garden also holds the Tombs of Sir Allama Mohammad Iqbal (National Poet) and Sikandar Hayat Khan.',
 								imageLeft: false
 							},
 							{ 
 								title: '5. Shahi Hammam', 
-								image: '/images/lahore.jpg',
+								image: '/images/Shahi Hammam.jpg',
 								// Add 360 image when available: image360: '/images/360/shahi-hammam-360.jpg',
 								description: 'This is a Mughal era public bathhouse, inspired by Turkish designs, also commissioned by Wazir Khan near the Delhi Gate. It provided comprehensive services, including hot, warm, and cold water sections, a sauna, and separate areas for men and women. After being restored in 2013, its beautiful frescoes and hidden water channels were uncovered, making it a key historical site.',
 								imageLeft: true
 							},
 							{ 
 								title: '6. Shalimar Gardens', 
-								image: '/images/lahore.jpg',
+								image: '/images/Shalimar Gardens.jpg',
 								// Add 360 image when available: image360: '/images/360/shalimar-gardens-360.jpg',
 								description: 'Referred to as Shah Jahan\'s "Heaven on Earth" for its meticulous design. The gardens feature stunning water terraces, numerous fountains, and elegant pavilions. They perfectly embody the symmetry and planning characteristic of Mughal landscape design.',
 								imageLeft: false
 							},
 							{ 
 								title: '7. Lahore Museum', 
-								image: '/images/lahore.jpg',
+								image: '/images/Lahore Museum.jpg',
 								// Add 360 image when available: image360: '/images/360/lahore-museum-360.jpg',
 								description: 'A true treasure house preserving rare artifacts from across many eras of history. Its collection spans the Gandhara, Mughal, Sikh, and British periods. It is an essential stop for anyone interested in the cultural heritage of the region.',
 								imageLeft: true
 							},
 							{ 
 								title: '8. Gali Surjan Singh', 
-								image: '/images/lahore.jpg',
+								image: '/images/Gali Surjan Singh.jpg',
 								// Add 360 image when available: image360: '/images/360/gali-surjan-singh-360.jpg',
 								description: 'A meticulously restored historic street nestled deep within old Lahore. It is filled with tangible heritage, vibrant culture, and charming architecture. This alley offers a uniquely beautiful setting perfect for photography and exploration.',
 								imageLeft: false
 							},
 							{ 
 								title: '9. Minar-e-Pakistan', 
-								image: '/images/lahore.jpg',
+								image: '/images/Minar-e-Pakistan.jpg',
 								// Add 360 image when available: image360: '/images/360/minar-e-pakistan-360.jpg',
 								description: 'The towering place where the landmark Pakistan Resolution was formally passed in 1940. This monument is an unmistakable and powerful symbol of the nation\'s identity and birth. It is a crucial site of historical and patriotic significance for the country.',
 								imageLeft: true
 							},
 							{ 
 								title: '10. Wahga Border Ceremony', 
-								image: '/images/lahore.jpg',
+								image: '/images/Wahga Border Ceremony.jpg',
 								// Add 360 image when available: image360: '/images/360/wahga-border-360.jpg',
 								description: 'A thrilling and popular daily flag lowering military ceremony between Pakistan and India. The event is a highly energetic spectacle, generating intense national pride and patriotism. It is an unmissable cultural and theatrical experience for visitors to Lahore.',
 								imageLeft: false
 							},
 							{ 
 								title: '11. Data Darbar', 
-								image: '/images/lahore.jpg',
+								image: '/images/Data Darbar 1.jpg',
 								// Add 360 image when available: image360: '/images/360/data-darbar-360.jpg',
 								description: 'One of the most important and largest Sufi shrines found across all of South Asia. It is a spiritual center rich with deep historical and cultural significance. The shrine draws millions of pilgrims and followers seeking blessings and peace.',
 								imageLeft: true
