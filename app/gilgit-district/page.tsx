@@ -487,7 +487,7 @@ const GilgitDistrictPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								Gilgit Tour
+								Gilgit District
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const GilgitDistrictPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Discover Gilgit District
+								Crossroads of the Karakoram
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Explore the stunning landscapes and rich culture of Gilgit District.
+							Explore the historical hub of the Silk Route, witness the Kargah Buddha, and enjoy the magical scenery of the Naltar Valley.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Gilgit Tours
+							Book Your Trip
 						</button>
 					</div>
 				</div>
@@ -522,7 +522,7 @@ const GilgitDistrictPage = () => {
 								Kaleidoscope Of Cultures
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Gilgit region is a stunning gateway to the Western Himalayas, offering a mix of towering peaks, serene alpine lakes, and ancient history. This area is a cluster of valleys, famous for its raw, magnificent mountain landscapes and being home to some of the world's most impressive sights. Some of the most iconic views and spots in this cluster include the massive Nanga Parbat (Killer Mountain), the high-altitude Deosai Plains, the tranquil Rama Lake, and the challenging Minimarg route.
+								The Gilgit District is the historical and commercial heart of Gilgit-Baltistan, offering a unique blend of natural beauty, ancient history, and strategic importance along the Karakoram Highway (KKH). This valley is engraved with nature's finest features, from the surreal, multi-colored glacial lakes of Naltar Valley to towering surrounding peaks. Gilgit is not just a hub; it's a destination. It is home to the stunning Kargah Buddha (a testament to the region's Buddhist past), the famous Naltar Ski Resort, and hidden gems like the Haramosh and Bagrote Valleys, making it a perfect spot for history buffs and nature lovers alike.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const GilgitDistrictPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Gilgit District</span>
+							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Gilgit District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,28 @@ const GilgitDistrictPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight'
+								title: 'Naltar Valley & Lakes',
+								description: 'Visit this beautiful pine forest valley, famous for its seven colored lakes (Bashkiri and Blue Lake) and the thrilling Naltar Ski Resort, offering excellent skiing opportunities in winter'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography'
+								title: 'Kargah Buddha',
+								description: 'Witness history firsthand! This intricately carved 8th-century statue of Buddha etched into a mountain face in the Kargah Valley, just 10 km from Gilgit city'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear'
+								title: 'Bagrote Valley Trekking',
+								description: 'An experience for peak and trekking enthusiasts, Bagrote offers beautiful hikes amidst majestic mountains and is known for its pure, organic produce'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake'
+								title: 'Danyore Suspension Bridge',
+								description: 'Cross the unique, century-old Suspension Bridge leading to the KKH Tunnels. This engineering marvel connects Gilgit to the famous KKH route towards Hunza'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims'
+								title: 'Cherry Blossom Season',
+								description: 'Plan your trip around March or April to witness the Gilgit valley explode in the breathtaking white and pink bloom of the cherry blossom (Sakura) season'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,19 +710,25 @@ const GilgitDistrictPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Nanga Parbat Encounter Tour',
-								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
-								image: '/images/gilgit.jpg'
+								title: 'Dream Journeys of North',
+								description: 'A curated trip focusing on Gilgit\'s highlights (Naltar, Kargah) and a journey towards the Hunza Valley.',
+								image: '/images/gilgit.jpg',
+								days: '7 Days',
+								destinations: '3 Destinations'
 							},
 							{
-								title: 'Pakistan High Altitude Grand Tour',
-								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
-								image: '/images/Hunza.jpg'
+								title: 'Experience Karakoram Highway',
+								description: 'An extended tour focusing on the entire KKH, with Gilgit as the main historical and logistical hub.',
+								image: '/images/Hunza.jpg',
+								days: '10 Days',
+								destinations: '6 Destinations'
 							},
 							{
-								title: 'Gilgit Discovery Tour',
-								description: 'Explore the stunning valleys, alpine lakes, and rich cultural heritage of the Gilgit region.',
-								image: '/images/skardu 2.jpg'
+								title: 'Gilgit & Nanga Parbat Encounter',
+								description: 'A diverse package that includes Gilgit\'s main attractions and a journey to the Nanga Parbat viewpoint via the Diamer side.',
+								image: '/images/skardu 2.jpg',
+								days: '8 Days',
+								destinations: '5 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -752,6 +758,10 @@ const GilgitDistrictPage = () => {
 								{/* Content - Always Visible */}
 								<div className="absolute inset-0 flex flex-col justify-end p-6">
 									<div>
+										<div className="flex gap-4 mb-2 text-sm" style={{ color: primaryOrange }}>
+											<span className="font-semibold">{card.days}</span>
+											<span className="font-semibold">{card.destinations}</span>
+										</div>
 										<h3 className="text-2xl font-bold text-white mb-3">
 											{card.title}
 										</h3>
@@ -788,32 +798,32 @@ const GilgitDistrictPage = () => {
 					<div className="space-y-8">
 						{[
 							{
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.',
+								title: 'Naltar Valley & Lakes',
+								description: 'Visit this beautiful pine forest valley, famous for its seven colored lakes (Bashkiri and Blue Lake) and the thrilling Naltar Ski Resort, offering excellent skiing opportunities in winter.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.',
+								title: 'Kargah Buddha',
+								description: 'Witness history firsthand! This intricately carved 8th-century statue of Buddha etched into a mountain face in the Kargah Valley, just 10 km from Gilgit city.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.',
+								title: 'Bagrote Valley Trekking',
+								description: 'An experience for peak and trekking enthusiasts, Bagrote offers beautiful hikes amidst majestic mountains and is known for its pure, organic produce.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.',
+								title: 'Danyore Suspension Bridge',
+								description: 'Cross the unique, century-old Suspension Bridge leading to the KKH Tunnels. This engineering marvel connects Gilgit to the famous KKH route towards Hunza.',
 								image: '/images/Swat.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.',
+								title: 'Cherry Blossom Season',
+								description: 'Plan your trip around March or April to witness the Gilgit valley explode in the breathtaking white and pink bloom of the cherry blossom (Sakura) season.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							}
@@ -865,16 +875,13 @@ const GilgitDistrictPage = () => {
 						</h2>
 						<div className="space-y-6">
 							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								You will find some of nature's finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.
+								Gilgit District is strategically located, acting as a crossroads between Chilas and Karimabad, nestled right off the Karakoram Highway (KKH). Its location has cemented its role as a junction of civilizations and religions. Historically, the valley was a significant part of the ancient Silk Route.
 							</p>
 							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The region is a haven for wildlife lovers, especially the Deosai Plains (meaning 'the land of giants'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.
+								The Silk Route brought not only the trade of goods but also a deeply enriching blend of cultures, ideas, and skills. Centuries ago, the region was immersed in Buddhism, and travelers can still see evidence of its religious influences today, most notably at the Kargah Buddha site.
 							</p>
 							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don't forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).
+								For peak lovers, Bagrote Valley offers challenging treks and is known for its views of Diran Peak. Other beautiful valleys attracting tourists include the scenic Oshikhandass village walk, the stunning Kutwal Lake in Haramosh Valley, and the towns of Jaglot and Nomal.
 							</p>
 						</div>
 					</div>
