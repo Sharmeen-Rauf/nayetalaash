@@ -791,7 +791,7 @@ const GilgitDistrictPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Must Experience When in Gilgit District
+							More About Gilgit District
 						</h2>
 					</div>
 					
@@ -799,32 +799,20 @@ const GilgitDistrictPage = () => {
 						{[
 							{
 								title: 'Naltar Valley & Lakes',
-								description: 'Visit this beautiful pine forest valley, famous for its seven colored lakes (Bashkiri and Blue Lake) and the thrilling Naltar Ski Resort, offering excellent skiing opportunities in winter.',
+								description: 'Gilgit District is strategically located, acting as a crossroads between Chilas and Karimabad, nestled right off the Karakoram Highway (KKH). Its location has cemented its role as a junction of civilizations and religions. Historically, the valley was a significant part of the ancient Silk Route.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
 								title: 'Kargah Buddha',
-								description: 'Witness history firsthand! This intricately carved 8th-century statue of Buddha etched into a mountain face in the Kargah Valley, just 10 km from Gilgit city.',
+								description: 'The Silk Route brought not only the trade of goods but also a deeply enriching blend of cultures, ideas, and skills. Centuries ago, the region was immersed in Buddhism, and travelers can still see evidence of its religious influences today, most notably at the Kargah Buddha site.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Bagrote Valley Trekking',
-								description: 'An experience for peak and trekking enthusiasts, Bagrote offers beautiful hikes amidst majestic mountains and is known for its pure, organic produce.',
-								image: '/images/skardu 2.jpg',
-								imageLeft: true
-							},
-							{
 								title: 'Danyore Suspension Bridge',
-								description: 'Cross the unique, century-old Suspension Bridge leading to the KKH Tunnels. This engineering marvel connects Gilgit to the famous KKH route towards Hunza.',
+								description: 'For peak lovers, Bagrote Valley offers challenging treks and is known for its views of Diran Peak. Other beautiful valleys attracting tourists include the scenic Oshikhandass village walk, the stunning Kutwal Lake in Haramosh Valley, and the towns of Jaglot and Nomal.',
 								image: '/images/Swat.jpg',
-								imageLeft: false
-							},
-							{
-								title: 'Cherry Blossom Season',
-								description: 'Plan your trip around March or April to witness the Gilgit valley explode in the breathtaking white and pink bloom of the cherry blossom (Sakura) season.',
-								image: '/images/gilgit.jpg',
 								imageLeft: true
 							}
 						].map((destination, idx) => (
