@@ -783,6 +783,74 @@ const GilgitDistrictPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== DESTINATIONS ====================== */}
+			<section 
+				data-section-id="destinations"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="text-center mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
+							More About Gilgit District
+						</h2>
+					</div>
+					
+					<div className="space-y-8">
+						{[
+							{
+								title: 'Naltar Valley & Lakes',
+								description: 'Gilgit District is strategically located, acting as a crossroads between Chilas and Karimabad, nestled right off the Karakoram Highway (KKH). Its location has cemented its role as a junction of civilizations and religions. Historically, the valley was a significant part of the ancient Silk Route.',
+								image: '/images/gilgit.jpg',
+								imageLeft: true
+							},
+							{
+								title: 'Kargah Buddha',
+								description: 'The Silk Route brought not only the trade of goods but also a deeply enriching blend of cultures, ideas, and skills. Centuries ago, the region was immersed in Buddhism, and travelers can still see evidence of its religious influences today, most notably at the Kargah Buddha site.',
+								image: '/images/Hunza.jpg',
+								imageLeft: false
+							},
+							{
+								title: 'Danyore Suspension Bridge',
+								description: 'For peak lovers, Bagrote Valley offers challenging treks and is known for its views of Diran Peak. Other beautiful valleys attracting tourists include the scenic Oshikhandass village walk, the stunning Kutwal Lake in Haramosh Valley, and the towns of Jaglot and Nomal.',
+								image: '/images/Swat.jpg',
+								imageLeft: true
+							}
+						].map((destination, idx) => (
+							<div 
+								key={idx} 
+								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
+								style={{
+									opacity: visibleSections.has('destinations') ? 1 : 0,
+									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
+								}}
+							>
+								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
+										<Image 
+											src={destination.image}
+											alt={destination.title}
+											fill
+											className="object-cover transition-transform duration-700 hover:scale-110"
+										/>
+									</div>
+								</div>
+								
+								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+									<div className="max-w-[80%] mx-auto">
+										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
+											{destination.title}
+										</h3>
+										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{destination.description}
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== MORE ABOUT GILGIT DISTRICT ====================== */}
 			<section 
 				data-section-id="more-about"
