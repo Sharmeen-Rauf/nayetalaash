@@ -939,31 +939,19 @@ const KarachiTourPage = () => {
 								<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 									Karachi's history is defined by a succession of local and foreign powers:
 								</p>
-								<div className="space-y-1 mt-2">
-									<div className="flex items-start gap-2">
-										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
-										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-											<strong>Local Tribes:</strong> The early history involved local Sindhi tribes, primarily the Kalaris and Jokhio clans, who maintained the small fishing settlement.
-										</p>
-									</div>
-									<div className="flex items-start gap-2">
-										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
-										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-											<strong>Talpur Dynasty (Sindh):</strong> In the 18th century, the Talpur rulers built a fort in the area, recognizing its trade importance.
-										</p>
-									</div>
-									<div className="flex items-start gap-2">
-										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
-										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-											<strong>British Colonial Rule (1839):</strong> The British seized control of Karachi, recognizing its strategic harbor potential. They dramatically transformed it into a major port city, constructing the splendid Victorian style Colonial Architecture that defines the historical center today.
-										</p>
-									</div>
-									<div className="flex items-start gap-2">
-										<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
-										<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-											<strong>The Post Independence Era (1947):</strong> After Pakistan's creation, Karachi served as the capital and witnessed a massive influx of migrants, which propelled its growth into the diverse, bustling metropolis it is today.
-										</p>
-									</div>
+								<div className="space-y-3 mt-3">
+									<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+										<strong>Local Tribes:</strong> The early history involved local Sindhi tribes, primarily the Kalaris and Jokhio clans, who maintained the small fishing settlement.
+									</p>
+									<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+										<strong>Talpur Dynasty (Sindh):</strong> In the 18th century, the Talpur rulers built a fort in the area, recognizing its trade importance.
+									</p>
+									<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+										<strong>British Colonial Rule (1839):</strong> The British seized control of Karachi, recognizing its strategic harbor potential. They dramatically transformed it into a major port city, constructing the splendid Victorian style Colonial Architecture that defines the historical center today.
+									</p>
+									<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+										<strong>The Post Independence Era (1947):</strong> After Pakistan's creation, Karachi served as the capital and witnessed a massive influx of migrants, which propelled its growth into the diverse, bustling metropolis it is today.
+									</p>
 								</div>
 							</div>
 						</div>
