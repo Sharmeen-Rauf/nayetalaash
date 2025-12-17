@@ -616,27 +616,22 @@ const GhizerPage = () => {
 							{
 								image: '/images/gilgit.jpg',
 								title: 'Shandur Pass & Polo Ground',
-								description: 'Visit the "Roof of the World," the highest polo ground globally, famous for the annual traditional polo festival between the Gilgit and Chitral teams'
+								description: 'The numerous lakes and rivers in Ghizer, particularly the Ghizer River (a tributary of the Gilgit River), have an abundant natural supply of trout fish. Whether you love angling or simply seek a cathartic experience, spending time fishing in the peaceful silence of Hundarap or Langar Valley while the mountain water flows nearby is unforgettable.'
 							},
 							{
 								image: '/images/Hunza.jpg',
 								title: 'Phander Valley & Lake',
-								description: 'Known as one of the most beautiful spots in Ghizer, this valley offers a tranquil deep-blue lake, ideal for trout fishing, camping, and photography'
+								description: 'Ghizer is often referred to as the "Land of Hospitality" due to the warm and welcoming nature of its diverse communities, who speak languages like Khowar, Shina, and Burushaski. The region is rich in history, with archaeological sites, ancient forts (like Gupis Fort), and rock inscriptions scattered throughout the Punial and Yasin valleys, whispering tales of ancient civilizations.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
 								title: 'Yasin Valley & Darkot',
-								description: 'Explore this historically significant valley, famous for its scenic beauty, ancient rock carvings, and the starting point for challenging trekking routes'
+								description: 'Beyond tourism, Ghizer is a farmer\'s goldmine, known for its fruit orchards (Punial Valley is the "Fruit Basket") and the trade of mineral deposits like niobium, tantalum, and tin tungsten, making it a place of both natural and economic significance.'
 							},
 							{
 								image: '/images/Swat.jpg',
 								title: 'Khalti Lake (Gupis Valley)',
 								description: 'A stunning, accessible lake famous for its deep blue water in summer and for hosting an Ice Hockey Festival when it freezes over in winter'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Ishkoman Valley',
-								description: 'Known as the "Hub of Glaciers," this valley offers challenging high-altitude treks, glaciers, and picturesque camping sites for serious mountaineers'
 							},
 						].map((item, idx) => (
 							<div 
@@ -857,7 +852,7 @@ const GhizerPage = () => {
 			</section>
 
 			{/* ====================== MORE ABOUT GHIZER ====================== */}
-			<section 
+			{/* <section 
 				data-section-id="more-about"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
@@ -879,7 +874,7 @@ const GhizerPage = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 			{/* ====================== FAQ SECTION ====================== */}
 			<section 
