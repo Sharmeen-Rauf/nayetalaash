@@ -487,7 +487,7 @@ const ShigarGhanchePage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								Shigar Ghanche Tour
+								Heritage at the Foot of K2
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,11 +495,11 @@ const ShigarGhanchePage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Discover Shigar Ghanche District
+								Shigar & Ghanche District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Explore the stunning landscapes and rich culture of Shigar Ghanche District.
+							Step back in time at Khaplu and Shigar Forts, and explore the unique Balti culture thriving beneath the world's tallest mountains.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
@@ -519,10 +519,10 @@ const ShigarGhanchePage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Kaleidoscope Of Cultures
+								Places To Visit In Shigar & Ghanche Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Shigar Ghanche region is a stunning gateway to the Western Himalayas, offering a mix of towering peaks, serene alpine lakes, and ancient history. This area is a cluster of valleys, famous for its raw, magnificent mountain landscapes and being home to some of the world's most impressive sights. Some of the most iconic views and spots in this cluster include the massive Nanga Parbat (Killer Mountain), the high-altitude Deosai Plains, the tranquil Rama Lake, and the challenging Minimarg route.
+								The Shigar and Ghanche Districts form the eastern gateway to the mighty Karakoram Range, holding some of the world's most impressive peaks (K2, Gasherbrum, Masherbrum) and rich cultural heritage. This region is a unique blend of historical forts, ancient mosques, and stunning natural wonders, including high-altitude deserts and glacial valleys. Shigar is famous for its historical fort and being the entry point to the great Karakoram treks, while Ghanche (with its capital Khaplu) is known for its lush orchards and royal palace. Together, they offer a deep dive into Balti culture and high-mountain adventure.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -615,28 +615,28 @@ const ShigarGhanchePage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight'
+								title: 'Khaplu Palace (Yabgo Khar)',
+								description: 'Visit this magnificent royal residence, known as the "Palace on the Rock." Restored into a heritage hotel and museum, it showcases the unique traditional Balti architecture.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography'
+								title: 'Shigar Fort (Fong-Khar)',
+								description: 'Explore this 17th-century fort, also known as the "Palace on the Rocks." This beautifully restored site now serves as a heritage museum, steeped in the history of the Amacha Dynasty.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear'
+								title: 'Sarfaranga Cold Desert',
+								description: 'Witness the surreal sight of white, glacial sand dunes at a high altitude near Shigar. This cold desert is perfect for photography and adventure activities like jeep safaris and paragliding.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake'
+								title: 'Chaqchan & Amburiq Mosques',
+								description: 'Discover two of the oldest mosques in Baltistan. The 14th-century Chaqchan Mosque and the wooden Amburiq Mosque are beautiful examples of local and Kashmiri craftsmanship.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims'
+								title: 'Base Camp Trek Gateway (Askole)',
+								description: 'Shigar serves as the final major settlement (Askole) and gateway for the world-famous trekking routes leading to the base camps of K2, Broad Peak, and the Baltoro Glacier.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,19 +710,25 @@ const ShigarGhanchePage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Nanga Parbat Encounter Tour',
-								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
-								image: '/images/gilgit.jpg'
+								title: 'Shigar & Khaplu Heritage Tour',
+								description: 'A focused trip exploring the forts, historical mosques, and cultural life of the eastern valleys of Baltistan.',
+								image: '/images/gilgit.jpg',
+								days: '7 Days',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Pakistan High Altitude Grand Tour',
-								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
-								image: '/images/Hunza.jpg'
+								title: 'Wild Deosai and Skardu',
+								description: 'Combines the historical significance of Shigar/Ghanche with a journey to the natural wonders of Deosai National Park and Skardu\'s lakes.',
+								image: '/images/Hunza.jpg',
+								days: '9 Days',
+								destinations: '5 Destinations'
 							},
 							{
-								title: 'Shigar Ghanche Discovery Tour',
-								description: 'Explore the stunning valleys, alpine lakes, and rich cultural heritage of the Shigar Ghanche region.',
-								image: '/images/skardu 2.jpg'
+								title: 'K2 Base Camp & Concordia Trek',
+								description: 'The ultimate challenge, starting from Shigar and leading deep into the Karakoram mountains to the base of the world\'s second-highest peak.',
+								image: '/images/skardu 2.jpg',
+								days: '22 Days',
+								destinations: '1 Destination'
 							}
 						].map((card, idx) => (
 							<div 
@@ -752,7 +758,11 @@ const ShigarGhanchePage = () => {
 								{/* Content - Always Visible */}
 								<div className="absolute inset-0 flex flex-col justify-end p-6">
 									<div>
-										<h3 className="text-2xl font-bold text-white mb-3">
+										<div className="flex gap-4 mb-2 text-sm" style={{ color: primaryOrange }}>
+											<span className="font-semibold">{card.days}</span>
+											<span className="font-semibold">{card.destinations}</span>
+										</div>
+										<h3 className="text-lg font-bold text-white mb-3">
 											{card.title}
 										</h3>
 										<p className="text-white/90 text-sm mb-5 leading-relaxed">
@@ -773,110 +783,64 @@ const ShigarGhanchePage = () => {
 				</div>
 			</section>
 
-			{/* ====================== DESTINATIONS ====================== */}
+			{/* ====================== MORE ABOUT SHIGAR & GHANCHE DISTRICT ====================== */}
 			<section 
-				data-section-id="destinations"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+				data-section-id="more-about"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Must Experience When in Shigar Ghanche District
+							More About Shigar & Ghanche District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.',
+								description: 'This region is famous for its cultural depth, largely due to the influence of the Balti people, who speak the Balti language and practice the Noorbakhshi Sufi interpretation of Islam. The locals are known for their warm hospitality and rich traditions, including annual festivals like Navroz (Persian New Year).',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.',
+								description: 'The valleys are economic goldmines, often called the "Land of Orchards," famous for their high-quality, homegrown fruit produce like apricots, cherries, apples, and walnuts. Travelers often stop to taste the sweet perfection of these local fruits.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.',
+								description: 'Shigar is located on an ancient trading route, and its history is closely tied to the Buddhist era and the subsequent spread of Islam. The impressive mountainous terrain, which includes the Karakoram\'s "Eight-Thousanders," has cemented Shigar and Ghanche as a paradise for mountaineers and a top destination in international discourse.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
-							},
-							{
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.',
-								image: '/images/gilgit.jpg',
-								imageLeft: true
 							}
-						].map((destination, idx) => (
+						].map((item, idx) => (
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
 								style={{
-									opacity: visibleSections.has('destinations') ? 1 : 0,
+									opacity: visibleSections.has('more-about') ? 1 : 0,
 									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
 								}}
 							>
-								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
-											src={destination.image}
-											alt={destination.title}
+											src={item.image}
+											alt="Shigar & Ghanche District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
 									</div>
 								</div>
 								
-								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
-										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
-											{destination.title}
-										</h3>
-										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											{destination.description}
+										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
 										</p>
 									</div>
 								</div>
 							</div>
 						))}
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== MORE ABOUT ASTORE DIAMER ====================== */}
-			<section 
-				data-section-id="more-about"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
-							More About Shigar Ghanche District
-						</h2>
-						<div className="space-y-6">
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								You will find some of nature's finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The region is a haven for wildlife lovers, especially the Deosai Plains (meaning 'the land of giants'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don't forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).
-							</p>
-						</div>
 					</div>
 				</div>
 			</section>
