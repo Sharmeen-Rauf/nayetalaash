@@ -762,7 +762,7 @@ const GilgitDistrictPage = () => {
 											<span className="font-semibold">{card.days}</span>
 											<span className="font-semibold">{card.destinations}</span>
 										</div>
-										<h3 className="text-2xl font-bold text-white mb-3">
+										<h3 className="text-lg font-bold text-white mb-3">
 											{card.title}
 										</h3>
 										<p className="text-white/90 text-sm mb-5 leading-relaxed">
@@ -837,9 +837,6 @@ const GilgitDistrictPage = () => {
 								
 								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
-										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
-											{destination.title}
-										</h3>
 										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 											{destination.description}
 										</p>
