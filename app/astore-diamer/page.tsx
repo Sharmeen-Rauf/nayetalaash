@@ -610,181 +610,6 @@ const AstoreDiamerPage = () => {
 						</h2>
 					</div>
 					
-					{/* 5 Images Vertical Collage - Attached */}
-					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
-						{[
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Mt. Nanga Parbat',
-								description: 'You will find some of nature\'s finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.'
-							},
-							{
-								image: '/images/Hunza.jpg',
-								title: 'Rama Valley & Rama Lake',
-								description: 'The region is a haven for wildlife lovers, especially the Deosai Plains (meaning \'the land of giants\'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.'
-							},
-							{
-								image: '/images/skardu 2.jpg',
-								title: 'Deosai National Park',
-								description: 'Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don\'t forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.'
-							},
-							{
-								image: '/images/Swat.jpg',
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Chilas Rock Inscriptions',
-								description: 'Explore the stunning landscapes and rich cultural heritage of the Astore Diamer region, where ancient history meets breathtaking natural beauty.'
-							},
-						].map((item, idx) => (
-							<div 
-								key={idx} 
-								className={`relative h-[300px] md:h-[350px] overflow-hidden transition-all duration-700 ease-in-out scroll-reveal-fade-in cursor-pointer ${
-									hoveredImageIndex === idx 
-										? 'flex-[2.5]' 
-										: hoveredImageIndex !== null 
-											? 'flex-[0.6]' 
-											: 'flex-1'
-								} ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
-								style={{
-									transitionDelay: `${idx * 0.1}s`
-								}}
-								onMouseEnter={() => setHoveredImageIndex(idx)}
-								onMouseLeave={() => setHoveredImageIndex(null)}
-							>
-								<Image 
-									src={item.image}
-									alt={item.title}
-									fill
-									className="object-cover transition-transform duration-500"
-									style={{ transform: hoveredImageIndex === idx ? 'scale(1.1)' : 'scale(1)' }}
-								/>
-								{/* Overlay with content */}
-								<div 
-									className={`absolute inset-0 transition-all duration-500 ${
-										hoveredImageIndex === idx 
-											? 'bg-black/50' 
-											: 'bg-black/20'
-									}`}
-								></div>
-								{/* Content Overlay */}
-								<div 
-									className={`absolute inset-0 flex flex-col justify-center items-center text-white transition-all duration-500 ${
-										hoveredImageIndex === idx 
-											? 'opacity-100 translate-y-0' 
-											: 'opacity-0 translate-y-4'
-									}`}
-								>
-									<div className="text-center px-4">
-										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
-											{item.title}
-										</h3>
-										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<p className="text-sm md:text-base opacity-90 max-w-xs">
-											{item.description}
-										</p>
-									</div>
-								</div>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== CUSTOMIZED TOUR PACKAGES ====================== */}
-			<section 
-				data-section-id="customized-packages"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('customized-packages') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto mb-8">
-						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
-							Trips you can experience
-						</h2>
-					</div>
-					
-					{/* 3 Cards with Static Content and CTA Buttons */}
-					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
-						{[
-							{
-								title: 'Nanga Parbat Encounter Tour',
-								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
-								image: '/images/gilgit.jpg'
-							},
-							{
-								title: 'Pakistan High Altitude Grand Tour',
-								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
-								image: '/images/Hunza.jpg'
-							},
-							{
-								title: 'Astore Diamer Discovery Tour',
-								description: 'Explore the stunning valleys, alpine lakes, and rich cultural heritage of the Astore Diamer region.',
-								image: '/images/skardu 2.jpg'
-							}
-						].map((card, idx) => (
-							<div 
-								key={idx}
-								className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
-								style={{
-									height: '450px',
-									animationDelay: `${idx * 0.15}s`,
-									opacity: visibleSections.has('customized-packages') ? 1 : 0,
-									transform: visibleSections.has('customized-packages') ? 'translateY(0)' : 'translateY(30px)',
-									transition: 'opacity 0.7s ease-out, transform 0.7s ease-out'
-								}}
-							>
-								{/* Background Image */}
-								<div className="absolute inset-0">
-									<Image
-										src={card.image}
-										alt={card.title}
-										fill
-										className="object-cover transition-transform duration-700 group-hover:scale-110"
-									/>
-								</div>
-								
-								{/* Gradient Overlay */}
-								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
-								
-								{/* Content - Always Visible */}
-								<div className="absolute inset-0 flex flex-col justify-end p-6">
-									<div>
-										<h3 className="text-2xl font-bold text-white mb-3">
-											{card.title}
-										</h3>
-										<p className="text-white/90 text-sm mb-5 leading-relaxed">
-											{card.description}
-										</p>
-										<button
-											onClick={handleWhatsAppClick}
-											className="w-full px-6 py-3 font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-											style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
-										>
-											Explore More
-										</button>
-									</div>
-								</div>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== DESTINATIONS ====================== */}
-			<section 
-				data-section-id="destinations"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-8">
-						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Must Experience When in Astore-Diamer District
-						</h2>
-					</div>
-					
 					<div className="space-y-8">
 						{[
 							{
@@ -817,33 +642,33 @@ const AstoreDiamerPage = () => {
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							}
-						].map((destination, idx) => (
+						].map((item, idx) => (
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
 								style={{
-									opacity: visibleSections.has('destinations') ? 1 : 0,
+									opacity: visibleSections.has('things-to-do') ? 1 : 0,
 									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
 								}}
 							>
-								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
-											src={destination.image}
-											alt={destination.title}
+											src={item.image}
+											alt={item.title}
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
 									</div>
 								</div>
 								
-								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
-										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
-											{destination.title}
+										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
+											{item.title}
 										</h3>
-										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											{destination.description}
+										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
 										</p>
 									</div>
 								</div>
@@ -853,33 +678,154 @@ const AstoreDiamerPage = () => {
 				</div>
 			</section>
 
+			{/* ====================== CUSTOMIZED TOUR PACKAGES ====================== */}
+			<section 
+				data-section-id="customized-packages"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('customized-packages') ? 'revealed' : ''}`}
+			>
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+					<div className="max-w-4xl mx-auto mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4 text-center" style={{ color: secondaryBlack }}>
+							Trips you can experience
+						</h2>
+					</div>
+					
+					{/* 2 Cards with Static Content and CTA Buttons */}
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-4 md:px-8">
+						{[
+							{
+								title: 'Nanga Parbat Encounter Tour',
+								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
+								image: '/images/gilgit.jpg',
+								days: '8 Days',
+								destinations: '5 Destinations'
+							},
+							{
+								title: 'Pakistan High Altitude Grand Tour',
+								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
+								image: '/images/Hunza.jpg',
+								days: '9 Days',
+								destinations: '5 Destinations'
+							}
+						].map((card, idx) => (
+							<div 
+								key={idx}
+								className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500"
+								style={{
+									height: '450px',
+									animationDelay: `${idx * 0.15}s`,
+									opacity: visibleSections.has('customized-packages') ? 1 : 0,
+									transform: visibleSections.has('customized-packages') ? 'translateY(0)' : 'translateY(30px)',
+									transition: 'opacity 0.7s ease-out, transform 0.7s ease-out'
+								}}
+							>
+								{/* Background Image */}
+								<div className="absolute inset-0">
+									<Image
+										src={card.image}
+										alt={card.title}
+										fill
+										className="object-cover transition-transform duration-700 group-hover:scale-110"
+									/>
+								</div>
+								
+								{/* Gradient Overlay */}
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/30"></div>
+								
+								{/* Content - Always Visible */}
+								<div className="absolute inset-0 flex flex-col justify-end p-6">
+									<div>
+										<div className="flex gap-4 mb-2 text-sm" style={{ color: primaryOrange }}>
+											<span className="font-semibold">{card.days}</span>
+											<span className="font-semibold">{card.destinations}</span>
+										</div>
+										<h3 className="text-lg font-bold text-white mb-3">
+											{card.title}
+										</h3>
+										<p className="text-white/90 text-sm mb-5 leading-relaxed">
+											{card.description}
+										</p>
+										<button
+											onClick={handleWhatsAppClick}
+											className="w-full px-6 py-3 font-bold rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+											style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+										>
+											Explore More
+										</button>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+
 			{/* ====================== MORE ABOUT ASTORE DIAMER ====================== */}
-			{/* <section 
+			<section 
 				data-section-id="more-about"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
+					<div className="text-center mb-8">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							More About Astore-Diamer District
 						</h2>
-						<div className="space-y-6">
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								You will find some of nature's finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The region is a haven for wildlife lovers, especially the Deosai Plains (meaning 'the land of giants'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don't forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).
-							</p>
-						</div>
+					</div>
+					
+					<div className="space-y-8">
+						{[
+							{
+								description: 'You will find some of nature\'s finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.',
+								image: '/images/gilgit.jpg',
+								imageLeft: true
+							},
+							{
+								description: 'The region is a haven for wildlife lovers, especially the Deosai Plains (meaning \'the land of giants\'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.',
+								image: '/images/Hunza.jpg',
+								imageLeft: false
+							},
+							{
+								description: 'Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don\'t forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.',
+								image: '/images/skardu 2.jpg',
+								imageLeft: true
+							},
+							{
+								description: 'The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).',
+								image: '/images/Swat.jpg',
+								imageLeft: false
+							}
+						].map((item, idx) => (
+							<div 
+								key={idx} 
+								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
+								style={{
+									opacity: visibleSections.has('more-about') ? 1 : 0,
+									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
+								}}
+							>
+								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
+										<Image 
+											src={item.image}
+											alt="Astore-Diamer District"
+											fill
+											className="object-cover transition-transform duration-700 hover:scale-110"
+										/>
+									</div>
+								</div>
+								
+								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+									<div className="max-w-[80%] mx-auto">
+										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
-			</section> */}
+			</section>
 
 			{/* ====================== FAQ SECTION ====================== */}
 			<section 
