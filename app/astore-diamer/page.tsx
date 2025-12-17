@@ -610,64 +610,80 @@ const AstoreDiamerPage = () => {
 						</h2>
 					</div>
 					
-					<div className="space-y-8">
+					{/* 5 Images Vertical Collage - Attached */}
+					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
+								image: '/images/gilgit.jpg',
 								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.',
-								image: '/images/gilgit.jpg',
-								imageLeft: true
+								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.'
 							},
 							{
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.',
 								image: '/images/Hunza.jpg',
-								imageLeft: false
+								title: 'Rama Valley & Rama Lake',
+								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.'
 							},
 							{
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.',
 								image: '/images/skardu 2.jpg',
-								imageLeft: true
+								title: 'Deosai National Park',
+								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.'
 							},
 							{
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.',
 								image: '/images/Swat.jpg',
-								imageLeft: false
+								title: 'Minimarg Valley & Rainbow Lake',
+								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.'
 							},
 							{
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.',
 								image: '/images/gilgit.jpg',
-								imageLeft: true
-							}
+								title: 'Chilas Rock Inscriptions',
+								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.'
+							},
 						].map((item, idx) => (
 							<div 
 								key={idx} 
-								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
+								className={`relative h-[300px] md:h-[350px] overflow-hidden transition-all duration-700 ease-in-out scroll-reveal-fade-in cursor-pointer ${
+									hoveredImageIndex === idx 
+										? 'flex-[2.5]' 
+										: hoveredImageIndex !== null 
+											? 'flex-[0.6]' 
+											: 'flex-1'
+								} ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
 								style={{
-									opacity: visibleSections.has('things-to-do') ? 1 : 0,
-									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
+									transitionDelay: `${idx * 0.1}s`
 								}}
+								onMouseEnter={() => setHoveredImageIndex(idx)}
+								onMouseLeave={() => setHoveredImageIndex(null)}
 							>
-								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
-									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
-										<Image 
-											src={item.image}
-											alt={item.title}
-											fill
-											className="object-cover transition-transform duration-700 hover:scale-110"
-										/>
-									</div>
-								</div>
-								
-								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
-									<div className="max-w-[80%] mx-auto">
-										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
+								<Image 
+									src={item.image}
+									alt={item.title}
+									fill
+									className="object-cover transition-transform duration-500"
+									style={{ transform: hoveredImageIndex === idx ? 'scale(1.1)' : 'scale(1)' }}
+								/>
+								{/* Overlay with content */}
+								<div 
+									className={`absolute inset-0 transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'bg-black/50' 
+											: 'bg-black/20'
+									}`}
+								></div>
+								{/* Content Overlay */}
+								<div 
+									className={`absolute inset-0 flex flex-col justify-center items-center text-white transition-all duration-500 ${
+										hoveredImageIndex === idx 
+											? 'opacity-100 translate-y-0' 
+											: 'opacity-0 translate-y-4'
+									}`}
+								>
+									<div className="text-center px-4">
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
 											{item.title}
 										</h3>
-										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
+										<p className="text-sm md:text-base opacity-90 max-w-xs">
 											{item.description}
 										</p>
 									</div>
@@ -690,8 +706,8 @@ const AstoreDiamerPage = () => {
 						</h2>
 					</div>
 					
-					{/* 2 Cards with Static Content and CTA Buttons */}
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-4 md:px-8">
+					{/* 3 Cards with Static Content and CTA Buttons */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
 								title: 'Nanga Parbat Encounter Tour',
