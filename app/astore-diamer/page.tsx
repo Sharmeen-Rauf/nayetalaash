@@ -616,27 +616,27 @@ const AstoreDiamerPage = () => {
 							{
 								image: '/images/gilgit.jpg',
 								title: 'Mt. Nanga Parbat',
-								description: 'You will find some of nature\'s finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.'
+								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.'
 							},
 							{
 								image: '/images/Hunza.jpg',
 								title: 'Rama Valley & Rama Lake',
-								description: 'The region is a haven for wildlife lovers, especially the Deosai Plains (meaning \'the land of giants\'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.'
+								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
 								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear'
+								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.'
 							},
 							{
 								image: '/images/Swat.jpg',
 								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don\'t forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.'
+								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.'
 							},
 							{
 								image: '/images/gilgit.jpg',
 								title: 'Chilas Rock Inscriptions',
-								description: 'The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).'
+								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.'
 							},
 						].map((item, idx) => (
 							<div 
