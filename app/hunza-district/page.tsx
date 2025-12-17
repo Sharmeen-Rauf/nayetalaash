@@ -487,7 +487,7 @@ const HunzaDistrictPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								Hunza Tour
+								The Crown Jewel of Pakistan
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,11 +495,11 @@ const HunzaDistrictPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Discover Hunza District
+								Hunza District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Explore the stunning landscapes and rich culture of Hunza District.
+							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
@@ -519,10 +519,10 @@ const HunzaDistrictPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Kaleidoscope Of Cultures
+								Places To Visit In Hunza Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza region is a stunning gateway to the Western Himalayas, offering a mix of towering peaks, serene alpine lakes, and ancient history. This area is a cluster of valleys, famous for its raw, magnificent mountain landscapes and being home to some of the world's most impressive sights. Some of the most iconic views and spots in this cluster include the massive Nanga Parbat (Killer Mountain), the high-altitude Deosai Plains, the tranquil Rama Lake, and the challenging Minimarg route.
+								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -615,28 +615,28 @@ const HunzaDistrictPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight'
+								title: 'Baltit & Altit Forts',
+								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography'
+								title: 'Attabad Lake',
+								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear'
+								title: 'Passu Cones Viewpoint',
+								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake'
+								title: 'Khunjerab Pass (China Border)',
+								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims'
+								title: 'Duiker/Eagles Nest',
+								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,19 +710,25 @@ const HunzaDistrictPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Nanga Parbat Encounter Tour',
-								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
-								image: '/images/gilgit.jpg'
+								title: 'Karakoram Highway Explorer',
+								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								image: '/images/gilgit.jpg',
+								days: '8 Days',
+								destinations: '5 Destinations'
 							},
 							{
-								title: 'Pakistan High Altitude Grand Tour',
-								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
-								image: '/images/Hunza.jpg'
+								title: 'Hunza, Skardu & Deosai Grand Tour',
+								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								image: '/images/Hunza.jpg',
+								days: '10 Days',
+								destinations: '6 Destinations'
 							},
 							{
-								title: 'Hunza Discovery Tour',
-								description: 'Explore the stunning valleys, alpine lakes, and rich cultural heritage of the Hunza region.',
-								image: '/images/skardu 2.jpg'
+								title: 'Hunza & Naltar Valley Combo',
+								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								image: '/images/skardu 2.jpg',
+								days: '7 Days',
+								destinations: '3 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -752,7 +758,11 @@ const HunzaDistrictPage = () => {
 								{/* Content - Always Visible */}
 								<div className="absolute inset-0 flex flex-col justify-end p-6">
 									<div>
-										<h3 className="text-2xl font-bold text-white mb-3">
+										<div className="flex gap-4 mb-2 text-sm" style={{ color: primaryOrange }}>
+											<span className="font-semibold">{card.days}</span>
+											<span className="font-semibold">{card.destinations}</span>
+										</div>
+										<h3 className="text-lg font-bold text-white mb-3">
 											{card.title}
 										</h3>
 										<p className="text-white/90 text-sm mb-5 leading-relaxed">
@@ -773,110 +783,69 @@ const HunzaDistrictPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== DESTINATIONS ====================== */}
+			{/* ====================== MORE ABOUT HUNZA DISTRICT ====================== */}
 			<section 
-				data-section-id="destinations"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+				data-section-id="more-about"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Must Experience When in Hunza District
+							More About Hunza District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.',
+								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.',
+								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.',
+								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.',
+								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
 								image: '/images/Swat.jpg',
 								imageLeft: false
-							},
-							{
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.',
-								image: '/images/gilgit.jpg',
-								imageLeft: true
 							}
-						].map((destination, idx) => (
+						].map((item, idx) => (
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
 								style={{
-									opacity: visibleSections.has('destinations') ? 1 : 0,
+									opacity: visibleSections.has('more-about') ? 1 : 0,
 									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
 								}}
 							>
-								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
-											src={destination.image}
-											alt={destination.title}
+											src={item.image}
+											alt="Hunza District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
 									</div>
 								</div>
 								
-								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
-										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
-											{destination.title}
-										</h3>
-										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											{destination.description}
+										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
 										</p>
 									</div>
 								</div>
 							</div>
 						))}
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== MORE ABOUT ASTORE DIAMER ====================== */}
-			<section 
-				data-section-id="more-about"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
-							More About Hunza District
-						</h2>
-						<div className="space-y-6">
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								You will find some of nature's finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The region is a haven for wildlife lovers, especially the Deosai Plains (meaning 'the land of giants'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don't forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).
-							</p>
-						</div>
 					</div>
 				</div>
 			</section>

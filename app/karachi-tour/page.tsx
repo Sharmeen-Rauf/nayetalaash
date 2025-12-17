@@ -1209,7 +1209,7 @@ const KarachiTourPage = () => {
 					<div className="grid grid-cols-1 lg:grid-cols-12 gap-3 items-start max-w-7xl mx-auto mt-4">
 						{/* Left Image */}
 						<div className="lg:col-span-3 hidden lg:block">
-							<div className="relative w-full h-[400px] rounded overflow-hidden">
+							<div className="relative w-full h-[350px] rounded overflow-hidden">
 								<Image 
 									src="/images/The Colorful Bazaars of Karachi City.jpg"
 									alt="Karachi Architecture"
@@ -1249,7 +1249,7 @@ const KarachiTourPage = () => {
 
 						{/* Right Image */}
 						<div className="lg:col-span-3 hidden lg:block">
-							<div className="relative w-full h-[400px] rounded overflow-hidden">
+							<div className="relative w-full h-[350px] rounded overflow-hidden">
 								<Image 
 									src="/images/The Colorful Bazaars of Karachi City.jpg"
 									alt="Karachi Food Streets"
