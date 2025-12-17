@@ -739,37 +739,37 @@ const KarachiTourPage = () => {
 							},
 							{ 
 								title: 'State Bank of Pakistan Museum', 
-								image: '/images/karachi.jpg',
+								image: '/images/State Bank of Pakistan Museum.jpg',
 								description: 'The State Bank Museum is housed in a grand colonial era building and preserves Pakistan\'s financial and monetary history. It showcases a vast collection of currencies, coins, and art, offering a fascinating look at the region\'s economic past. The museum is a great place to explore the history of money and banking in South Asia.',
 								imageLeft: true
 							},
 							{ 
 								title: 'National Museum of Pakistan', 
-								image: '/images/karachi.jpg',
+								image: '/images/National Museum of Pakistan.jpg',
 								description: 'Located on Burns Garden, the museum displays diverse collections ranging from ancient artifacts to documents of Pakistan\'s independence. Key exhibits include relics from the Indus Valley Civilization, Gandhara art, and Islamic art. It provides a comprehensive historical narrative of the land and its people.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Pakistan Air Force (PAF) Museum', 
-								image: '/images/karachi.jpg',
+								image: '/images/Pakistan Air Force (PAF) Museum.jpg',
 								description: 'The PAF Museum is a popular family attraction showcasing the history of the Pakistan Air Force. It features various aircraft, including fighter jets and bombers, displayed in parks and hangars. It\'s a great place for aviation enthusiasts and for a fun outdoor visit.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Turtle Beaches (Hawkesbay and Sandspit)', 
-								image: '/images/karachi.jpg',
+								image: '/images/Turtle Beaches (Hawkesbay and Sandspit).jpg',
 								description: 'The beaches west of the city, especially Hawkesbay and Sandspit, are famous for being nesting grounds for Green and Olive Ridley turtles. These quieter beaches are popular for cottages (huts) and offer a peaceful escape from the city bustle. Visiting during the nesting season is a memorable experience.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Manora Island and Port', 
-								image: '/images/karachi.jpg',
+								image: '/images/Manora Island and Port.jpeg',
 								description: 'Manora Island is located south of the Karachi Port and offers beautiful views of the city skyline and harbor. It is home to a historic lighthouse, the 17th century fort remnants, and a naval base. Access involves crossing the long Manora bridge or taking a boat ride from the main harbor.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Bohri Bazaar and Zaibunnisa Street', 
-								image: '/images/karachi.jpg',
+								image: '/images/Bohri Bazaar and Zaibunnisa Street.jpg',
 								description: 'These areas represent the heart of Karachi\'s vibrant, chaotic and diverse shopping culture. Bohri Bazaar is famous for traditional clothing, jewelry, and household goods. Zaibunnisa Street (Elphinstone Street) offers a mix of modern and traditional shops, reflecting the city\'s energy.',
 								imageLeft: false
 							},
@@ -827,72 +827,6 @@ const KarachiTourPage = () => {
 								</div>
 							</div>
 						))}
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== HISTORICAL SITES IN KARACHI ====================== */}
-			<section 
-				data-section-id="historical-sites"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-sites') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="w-full">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some Other Historical and Heritage Sites in Karachi:
-						</h3>
-
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
-							{[
-								'Hazuri Bagh',
-								'Naulakha Pavilion',
-								'Lahore Fort Gates',
-								'Delhi Gate',
-								'Roshnai Gate',
-								'Bhatti Gate',
-								'Mochi Gate',
-								'Taxali Gate',
-								'Gulabi Bagh Gateway',
-								'Chauburji',
-								'Tomb of Allama Iqbal',
-								'Masjid Wazir Khan',
-							].map((item, idx) => (
-								<div 
-									key={idx} 
-									className="transition-all duration-500 cursor-pointer group rounded-lg w-full scroll-reveal-fade-up"
-									style={{ 
-										backgroundColor: 'white',
-										border: `2px solid ${primaryOrange}`,
-										height: '56px',
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-										paddingLeft: '2rem',
-										paddingRight: '2rem',
-										minWidth: '100%',
-										opacity: visibleSections.has('historical-sites') ? 1 : 0,
-										transform: visibleSections.has('historical-sites') ? 'translateY(0)' : 'translateY(20px)',
-										transitionDelay: `${idx * 0.05}s`
-									}}
-									onMouseEnter={(e) => {
-										e.currentTarget.style.backgroundColor = primaryOrange;
-										e.currentTarget.style.transform = 'translateY(-2px)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-									onMouseLeave={(e) => {
-										e.currentTarget.style.backgroundColor = 'white';
-										e.currentTarget.style.transform = 'translateY(0)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-								>
-									<p className="leading-normal transition-colors duration-300 text-center capitalize" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
-										{item}
-									</p>
-								</div>
-							))}
-						</div>
 					</div>
 				</div>
 			</section>
