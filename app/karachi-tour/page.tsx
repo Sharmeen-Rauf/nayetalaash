@@ -987,21 +987,102 @@ const KarachiTourPage = () => {
 						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Old Access Points of Karachi
 						</h3>
-						<p className="leading-normal text-justify mb-3" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-justify mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Unlike the walled city of Lahore, Karachi was developed more as a sprawling port town. However, key access and security points from the earlier periods included:
 						</p>
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>The Native Jetty Bridge: Though not a gate, this was a vital old access point connecting the main land to the port and old island areas.</p>
+						<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+							<div 
+								className="transition-all duration-500 cursor-pointer group rounded-lg p-4"
+								style={{ 
+									backgroundColor: 'white',
+									border: `2px solid ${primaryOrange}`,
+									minHeight: '120px',
+									display: 'flex',
+									alignItems: 'center',
+									opacity: visibleSections.has('gates') ? 1 : 0,
+									transform: visibleSections.has('gates') ? 'translateY(0)' : 'translateY(20px)',
+									transitionDelay: '0s'
+								}}
+								onMouseEnter={(e) => {
+									e.currentTarget.style.backgroundColor = primaryOrange;
+									e.currentTarget.style.transform = 'translateY(-4px)';
+									e.currentTarget.style.boxShadow = '0 8px 16px rgba(249, 150, 33, 0.3)';
+									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+									if (pElement) pElement.style.color = secondaryBlack;
+								}}
+								onMouseLeave={(e) => {
+									e.currentTarget.style.backgroundColor = 'white';
+									e.currentTarget.style.transform = 'translateY(0)';
+									e.currentTarget.style.boxShadow = 'none';
+									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+									if (pElement) pElement.style.color = `${secondaryBlack}90`;
+								}}
+							>
+								<p className="leading-normal transition-colors duration-300 text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									The Native Jetty Bridge: Though not a gate, this was a vital old access point connecting the main land to the port and old island areas.
+								</p>
 							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>The Karachi Fort: Built by the Talpur Dynasty, the fort's gates controlled access to the old settlement of Kolachi.</p>
+							<div 
+								className="transition-all duration-500 cursor-pointer group rounded-lg p-4"
+								style={{ 
+									backgroundColor: 'white',
+									border: `2px solid ${primaryOrange}`,
+									minHeight: '120px',
+									display: 'flex',
+									alignItems: 'center',
+									opacity: visibleSections.has('gates') ? 1 : 0,
+									transform: visibleSections.has('gates') ? 'translateY(0)' : 'translateY(20px)',
+									transitionDelay: '0.1s'
+								}}
+								onMouseEnter={(e) => {
+									e.currentTarget.style.backgroundColor = primaryOrange;
+									e.currentTarget.style.transform = 'translateY(-4px)';
+									e.currentTarget.style.boxShadow = '0 8px 16px rgba(249, 150, 33, 0.3)';
+									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+									if (pElement) pElement.style.color = secondaryBlack;
+								}}
+								onMouseLeave={(e) => {
+									e.currentTarget.style.backgroundColor = 'white';
+									e.currentTarget.style.transform = 'translateY(0)';
+									e.currentTarget.style.boxShadow = 'none';
+									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+									if (pElement) pElement.style.color = `${secondaryBlack}90`;
+								}}
+							>
+								<p className="leading-normal transition-colors duration-300 text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									The Karachi Fort: Built by the Talpur Dynasty, the fort's gates controlled access to the old settlement of Kolachi.
+								</p>
 							</div>
-							<div className="flex items-center gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: primaryOrange }}></div>
-								<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>Old Town Entries: Access was often controlled by specific roads leading into the historic centers like Saddar Town and the original colonial port areas.</p>
+							<div 
+								className="transition-all duration-500 cursor-pointer group rounded-lg p-4"
+								style={{ 
+									backgroundColor: 'white',
+									border: `2px solid ${primaryOrange}`,
+									minHeight: '120px',
+									display: 'flex',
+									alignItems: 'center',
+									opacity: visibleSections.has('gates') ? 1 : 0,
+									transform: visibleSections.has('gates') ? 'translateY(0)' : 'translateY(20px)',
+									transitionDelay: '0.2s'
+								}}
+								onMouseEnter={(e) => {
+									e.currentTarget.style.backgroundColor = primaryOrange;
+									e.currentTarget.style.transform = 'translateY(-4px)';
+									e.currentTarget.style.boxShadow = '0 8px 16px rgba(249, 150, 33, 0.3)';
+									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+									if (pElement) pElement.style.color = secondaryBlack;
+								}}
+								onMouseLeave={(e) => {
+									e.currentTarget.style.backgroundColor = 'white';
+									e.currentTarget.style.transform = 'translateY(0)';
+									e.currentTarget.style.boxShadow = 'none';
+									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
+									if (pElement) pElement.style.color = `${secondaryBlack}90`;
+								}}
+							>
+								<p className="leading-normal transition-colors duration-300 text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									Old Town Entries: Access was often controlled by specific roads leading into the historic centers like Saddar Town and the original colonial port areas.
+								</p>
 							</div>
 						</div>
 					</div>
