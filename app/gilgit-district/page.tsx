@@ -852,7 +852,7 @@ const GilgitDistrictPage = () => {
 			</section>
 
 			{/* ====================== MORE ABOUT GILGIT DISTRICT ====================== */}
-			<section 
+			{/* <section 
 				data-section-id="more-about"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
@@ -874,7 +874,7 @@ const GilgitDistrictPage = () => {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 
 			{/* ====================== FAQ SECTION ====================== */}
 			<section 
