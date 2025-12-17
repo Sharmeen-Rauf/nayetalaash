@@ -538,10 +538,10 @@ const AstoreDiamerPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1-astorediamerpage.jpg',
+										'/images/slider 2-astorediamerpage.jpg',
+										'/images/slider 3-astorediamerpage.jpg',
+										'/images/slider 4-astorediamerpage.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
