@@ -1251,7 +1251,7 @@ const KarachiTourPage = () => {
 						<div className="lg:col-span-3 hidden lg:block">
 							<div className="relative w-full h-[400px] rounded overflow-hidden">
 								<Image 
-									src="/images/Karachi's Food Streets and Vibrant Culture.jpg"
+									src="/images/The Colorful Bazaars of Karachi City.jpg"
 									alt="Karachi Food Streets"
 									fill
 									className="object-cover"
