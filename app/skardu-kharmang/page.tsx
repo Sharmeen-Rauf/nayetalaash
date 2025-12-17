@@ -487,7 +487,7 @@ const SkarduKharmangPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								Skardu Kharmang Tour
+								The Soul of Baltistan
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const SkarduKharmangPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Discover Skardu Kharmang District
+								Skardu & Kharmang District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Explore the stunning landscapes and rich culture of Skardu Kharmang District.
+							Experience the iconic serenity of Shangrila, trek the vast Deosai Plains, and explore the ancient Kharpocho Fort overlooking the Indus.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Skardu Kharmang Tours
+							Book Your Cold Desert Safari
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const SkarduKharmangPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Kaleidoscope Of Cultures
+								Places To Visit In Skardu & Kharmang Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Skardu Kharmang region is a stunning gateway to the Western Himalayas, offering a mix of towering peaks, serene alpine lakes, and ancient history. This area is a cluster of valleys, famous for its raw, magnificent mountain landscapes and being home to some of the world's most impressive sights. Some of the most iconic views and spots in this cluster include the massive Nanga Parbat (Killer Mountain), the high-altitude Deosai Plains, the tranquil Rama Lake, and the challenging Minimarg route.
+								The Skardu and Kharmang Districts are the undisputed heart of Baltistan tourism, globally famous for their iconic lakes, cold deserts, and serving as the primary gateway to the world's highest peaks, including K2. Embraced by the mighty Karakoram Range, this region is a manifest blend of glacial lakes, high-altitude plateaus, historic forts, and ancient Buddhist carvings. Skardu is the main hub, known for the iconic Shangri-La Resort and the stunning Satpara Lake. Kharmang, meaning "Abundance of Forts" (Khar=Fort, Mang=Abundant), offers hidden gems like the mesmerizing Manthoka Waterfall and unique historical sites.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -615,28 +615,28 @@ const SkarduKharmangPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight'
+								title: 'Shangri-La Resort & Kachura Lake',
+								description: 'Visit the famous "Heaven on Earth," featuring the heart-shaped Lower Kachura Lake. Enjoy boating, fishing, and photography at this iconic, tranquil spot.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography'
+								title: 'Kharpocho Fort',
+								description: 'Trek up to the "King of Forts," an imposing 16th century fortress built by Ali Sher Khan Anchan, offering breathtaking panoramic views of Skardu city and the confluence of the Indus and Shigar Rivers.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
 								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear'
+								description: 'Embark on a jeep safari to the "Land of Giants," the world\'s second highest plateau, famous for its golden marmots, rich flora, and the rare Himalayan Brown Bear.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake'
+								title: 'Katpana Cold Desert',
+								description: 'Witness the surreal sight of glacial sand dunes at high altitude, perfect for jeep safaris, paragliding, and camping under a starry, light-pollution free sky.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims'
+								title: 'Manthoka Waterfall (Kharmang)',
+								description: 'Discover this enchanting cascade in the Kharmang District, surrounded by lush green pastures, tree houses, and offering a peaceful retreat and trout fish farming.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,19 +710,25 @@ const SkarduKharmangPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Nanga Parbat Encounter Tour',
-								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
-								image: '/images/gilgit.jpg'
+								title: 'Dream Journeys of North',
+								description: 'Focused on Skardu\'s central attractions (Kachura, Satpara, Kharpocho) and the scenic drive from the KKH.',
+								image: '/images/gilgit.jpg',
+								days: '7 Days',
+								destinations: '3 Destinations'
 							},
 							{
-								title: 'Pakistan High Altitude Grand Tour',
-								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
-								image: '/images/Hunza.jpg'
+								title: 'Wild Deosai and Skardu',
+								description: 'Comprehensive package covering Skardu\'s main sites, Kharmang\'s waterfalls, and an extended trip across the Deosai Plains.',
+								image: '/images/Hunza.jpg',
+								days: '9 Days',
+								destinations: '5 Destinations'
 							},
 							{
-								title: 'Skardu Kharmang Discovery Tour',
-								description: 'Explore the stunning valleys, alpine lakes, and rich cultural heritage of the Skardu Kharmang region.',
-								image: '/images/skardu 2.jpg'
+								title: 'K2 Base Camp Trek Gateway',
+								description: 'Skardu serves as the main launch point and logistics hub for all major expeditions into the Karakoram Range.',
+								image: '/images/skardu 2.jpg',
+								days: '14 Days',
+								destinations: '4 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -752,7 +758,11 @@ const SkarduKharmangPage = () => {
 								{/* Content - Always Visible */}
 								<div className="absolute inset-0 flex flex-col justify-end p-6">
 									<div>
-										<h3 className="text-2xl font-bold text-white mb-3">
+										<div className="flex gap-4 mb-2 text-sm" style={{ color: primaryOrange }}>
+											<span className="font-semibold">{card.days}</span>
+											<span className="font-semibold">{card.destinations}</span>
+										</div>
+										<h3 className="text-lg font-bold text-white mb-3">
 											{card.title}
 										</h3>
 										<p className="text-white/90 text-sm mb-5 leading-relaxed">
@@ -773,110 +783,64 @@ const SkarduKharmangPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== DESTINATIONS ====================== */}
+			{/* ====================== MORE ABOUT SKARDU & KHARMANG DISTRICT ====================== */}
 			<section 
-				data-section-id="destinations"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+				data-section-id="more-about"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Must Experience When in Skardu Kharmang District
+							More About Skardu & Kharmang District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.',
+								description: 'The region\'s history is incredibly rich, having been part of the ancient Kushan Empire and later the Tibetan Empire, which introduced Buddhism. You can still see echoes of this past at the Manthal Buddha Rock carving near Skardu. The strategic location at the confluence of the Indus and Shigar Rivers made it a historical hub for trade and defense.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.',
+								description: 'The name Kharmang literally means "Abundance of Forts," referring to the numerous fortifications built here by the Balti Prince Ali Sher Khan Anchan, highlighting its military importance over the centuries.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.',
+								description: 'Skardu Valley is a paradise for adventure seekers, offering activities like mountaineering, rock climbing, paragliding, and trophy hunting. The lakes, especially Satpara, are not just beautiful but are also the main water source for the valley. Visiting the Nansoq Organic Village, a declared historical site behind Kharpocho Fort, provides a glimpse into the raw, traditional Balti lifestyle and organic farming.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
-							},
-							{
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.',
-								image: '/images/gilgit.jpg',
-								imageLeft: true
 							}
-						].map((destination, idx) => (
+						].map((item, idx) => (
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
 								style={{
-									opacity: visibleSections.has('destinations') ? 1 : 0,
+									opacity: visibleSections.has('more-about') ? 1 : 0,
 									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
 								}}
 							>
-								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
-											src={destination.image}
-											alt={destination.title}
+											src={item.image}
+											alt="Skardu & Kharmang District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
 									</div>
 								</div>
 								
-								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
-										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
-											{destination.title}
-										</h3>
-										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											{destination.description}
+										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
 										</p>
 									</div>
 								</div>
 							</div>
 						))}
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== MORE ABOUT ASTORE DIAMER ====================== */}
-			<section 
-				data-section-id="more-about"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
-							More About Skardu Kharmang District
-						</h2>
-						<div className="space-y-6">
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								You will find some of nature's finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The region is a haven for wildlife lovers, especially the Deosai Plains (meaning 'the land of giants'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don't forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).
-							</p>
-						</div>
 					</div>
 				</div>
 			</section>
