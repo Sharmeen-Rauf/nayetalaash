@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft } from 'lucide-react';
 
-const AstoreDiamerPage = () => {
+const MalakandPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -487,7 +487,7 @@ const AstoreDiamerPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								Astore Diamer Tour
+								The Gateway to the North
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const AstoreDiamerPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Gateway to Nanga Parbat and Deosai
+								Malakand District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Experience the raw, magnificent beauty of the Rupal Face and trek the serene wilderness of Deosai National Park.
+							Cross the legendary Malakand Pass and witness the majestic Spillway Falls as you begin your journey into the heart of Pakistan's northern beauty.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Astore Valley Tours
+							Explore Malakand Tour
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const AstoreDiamerPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Kaleidoscope Of Cultures
+								Places To Visit In Malakand Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Astore Diamer region is a stunning gateway to the Western Himalayas, offering a mix of towering peaks, serene alpine lakes, and ancient history. This area is a cluster of valleys, famous for its raw, magnificent mountain landscapes and being home to some of the world's most impressive sights. Some of the most iconic views and spots in this cluster include the massive Nanga Parbat (Killer Mountain), the high-altitude Deosai Plains, the tranquil Rama Lake, and the challenging Minimarg route.
+								The Malakand District is the strategic gateway to the North, serving as the primary entry point for travelers heading toward the world famous valleys of Swat, Dir, and Chitral. Known for its rugged hills and historical significance, the district offers a transition from the plains into the majestic Hindu Kush mountains. The region is famous for the Malakand Pass, a winding mountain road with breathtaking views, and the engineering marvel of the Malakand Hydroelectric Project. With its rich military history and the scenic Swat River flowing through it, Malakand is a place where history, technology, and nature meet.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const AstoreDiamerPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Astore-Diamer District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Malakand District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,28 @@ const AstoreDiamerPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Mt. Nanga Parbat',
-								description: 'You will find some of nature\'s finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.'
+								title: 'Malakand Pass & Viewpoint',
+								description: 'Drive through the historic mountain pass and stop at the viewpoint to witness panoramic views of the valley and the winding "Zig-Zag" road below.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Rama Valley & Rama Lake',
-								description: 'The region is a haven for wildlife lovers, especially the Deosai Plains (meaning \'the land of giants\'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.'
+								title: 'Malakand 3 Spillway Waterfall',
+								description: 'Visit the spectacular man made waterfall created by the hydroelectric project, where water cascades down a massive spillway, creating a refreshing and scenic picnic spot.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear'
+								title: 'Malakand Wildlife Safari Park',
+								description: 'Enjoy a family friendly adventure at the Safari Park, home to various wild animals and birds, set amidst the natural hilly terrain of the district.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don\'t forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.'
+								title: 'Chakdara Fort & Museum',
+								description: 'Explore the nearby historical gateway where ancient Gandhara civilization artifacts are preserved, offering a deep look into the Buddhist history of the region.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Chilas Rock Inscriptions',
-								description: 'The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).'
+								title: 'Swat Motorway Tunnels',
+								description: 'Experience the modern engineering of the Swat Expressway, which features twin tunnels that have cut travel time and provide a world class driving experience through the mountains.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,19 +710,25 @@ const AstoreDiamerPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Nanga Parbat Encounter Tour',
-								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
-								image: '/images/gilgit.jpg'
+								title: 'Swat & Malakand Gateway',
+								description: 'A quick getaway covering the Malakand Pass, the Spillway Falls, and the entrance to the lower Swat Valley.',
+								image: '/images/gilgit.jpg',
+								days: '3 Days',
+								destinations: '3 Destinations'
 							},
 							{
-								title: 'Pakistan High Altitude Grand Tour',
-								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
-								image: '/images/Hunza.jpg'
+								title: 'KPK Heritage & Nature Trail',
+								description: 'Combines the historical sites of Malakand and Chakdara with the lush green meadows of the lower Dir region.',
+								image: '/images/Hunza.jpg',
+								days: '5 Days',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Astore Diamer Discovery Tour',
-								description: 'Explore the stunning valleys, alpine lakes, and rich cultural heritage of the Astore Diamer region.',
-								image: '/images/skardu 2.jpg'
+								title: 'The Grand Northern Circuit',
+								description: 'A comprehensive tour starting through Malakand, leading up to the high-altitude wonders of Kalam, Malam Jabba, and Kumrat.',
+								image: '/images/skardu 2.jpg',
+								days: '8 Days',
+								destinations: '5 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -752,7 +758,11 @@ const AstoreDiamerPage = () => {
 								{/* Content - Always Visible */}
 								<div className="absolute inset-0 flex flex-col justify-end p-6">
 									<div>
-										<h3 className="text-2xl font-bold text-white mb-3">
+										<div className="flex gap-4 mb-2 text-sm" style={{ color: primaryOrange }}>
+											<span className="font-semibold">{card.days}</span>
+											<span className="font-semibold">{card.destinations}</span>
+										</div>
+										<h3 className="text-lg font-bold text-white mb-3">
 											{card.title}
 										</h3>
 										<p className="text-white/90 text-sm mb-5 leading-relaxed">
@@ -773,77 +783,59 @@ const AstoreDiamerPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== DESTINATIONS ====================== */}
+			{/* ====================== MORE ABOUT MALAKAND DISTRICT ====================== */}
 			<section 
-				data-section-id="destinations"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+				data-section-id="more-about"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Must Experience When in Astore-Diamer District
+							More About Malakand District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								title: 'Mt. Nanga Parbat',
-								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.',
+								description: 'Malakand District holds a strategically vital position as the hub connecting Mardan to the scenic northern districts. Historically, it was known as the "Malakand Protected Area," and it was the site of fierce battles between local tribes and the British Army in the late 19th century a history still visible in the old Churchill Picket tower overlooking the pass.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Rama Valley & Rama Lake',
-								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.',
+								description: 'The district is blessed with the Swat River, which provides a lifeline for the local agriculture, creating lush green patches in the otherwise rocky terrain. The area is rich in mineral resources, including high quality chromite and iron.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Deosai National Park',
-								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.',
+								description: 'Economically, Malakand is a powerhouse for the province due to its hydroelectric power stations at Dargai and Malakand Khas. For travelers, the local bazaars in Batkhela and Sakhakot are famous for their vibrant trade and traditional Pashtun hospitality. Whether you are stopping for a quick meal at the famous riverside fish points or heading deep into the mountains, Malakand leaves a lasting impression of strength and beauty.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								title: 'Minimarg Valley & Rainbow Lake',
-								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
-							},
-							{
-								title: 'Chilas Rock Inscriptions',
-								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.',
-								image: '/images/gilgit.jpg',
-								imageLeft: true
 							}
-						].map((destination, idx) => (
+						].map((item, idx) => (
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
 								style={{
-									opacity: visibleSections.has('destinations') ? 1 : 0,
+									opacity: visibleSections.has('more-about') ? 1 : 0,
 									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
 								}}
 							>
-								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
-											src={destination.image}
-											alt={destination.title}
+											src={item.image}
+											alt="Malakand District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
 									</div>
 								</div>
 								
-								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
-										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
-											{destination.title}
-										</h3>
-										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											{destination.description}
+										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
 										</p>
 									</div>
 								</div>
@@ -852,34 +844,6 @@ const AstoreDiamerPage = () => {
 					</div>
 				</div>
 			</section>
-
-			{/* ====================== MORE ABOUT ASTORE DIAMER ====================== */}
-			{/* <section 
-				data-section-id="more-about"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
-							More About Astore-Diamer District
-						</h2>
-						<div className="space-y-6">
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								You will find some of nature's finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The region is a haven for wildlife lovers, especially the Deosai Plains (meaning 'the land of giants'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don't forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).
-							</p>
-						</div>
-					</div>
-				</div>
-			</section> */}
 
 			{/* ====================== FAQ SECTION ====================== */}
 			<section 
@@ -1115,5 +1079,5 @@ const AstoreDiamerPage = () => {
 	);
 };
 
-export default AstoreDiamerPage;
+export default MalakandPage;
 
