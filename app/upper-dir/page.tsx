@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft } from 'lucide-react';
 
-const ChakwalPage = () => {
+const UpperDirPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -487,7 +487,7 @@ const ChakwalPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Gem of the Salt Range
+								The Wild Heart of the North
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const ChakwalPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Chakwal District
+								Upper Dir District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							From the sacred waters of Katas Raj to the thrilling cliffs of Swaik Lake, discover the perfect blend of history and adventure just off the Motorway.
+							Experience the raw beauty of Katora Lake and the ancient wooden heritage of Thal your ultimate alpine adventure starts in Upper Dir.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Plan Your Trip
+							Explore Kumrat
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const ChakwalPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Chakwal Tour
+								Places To Visit In Upper Dir Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								Chakwal District, known as the "Land of Beauty and Valor," is the heart of the Potohar Plateau. It is a region where rugged mountains meet serene blue lakes and ancient history. Famous for its martial legacy and spiritual significance, Chakwal offers a unique escape into the Salt Range, featuring everything from 1,500 year old temples to hidden waterfalls. Whether you are a history enthusiast looking for the legendary Katas Raj Temples or an adventurer seeking the crystal clear waters of Swaik Lake, Chakwal is a perfect year round destination. It is easily accessible via the M2 Motorway, making it a favorite for travelers from Islamabad and Lahore seeking a blend of heritage and nature.
+								Upper Dir is a land of untouched wilderness and hidden alpine wonders, famously known as the gateway to the breathtaking Kumrat Valley. Nestled in the Hindu Kush range, this district offers a raw, signal free escape for those looking to disconnect from the world. It is a region characterized by its dense cedar forests, crystal clear Panjkora River, and towering snow capped peaks. Beyond the popular Kumrat Forest, Upper Dir is home to high altitude meadows like Jahaz Banda and the legendary Katora Lake. Whether you are trekking through the mystical fog of the Kohistan region or crossing the scenic Lowari Pass, Upper Dir provides an authentic, rugged adventure that feels like stepping into a masterpiece of nature.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const ChakwalPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Chakwal District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Upper Dir District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,28 @@ const ChakwalPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Katas Raj Temples:',
-								description: 'Explore one of the most sacred Hindu sites in Pakistan. Visit the Holy Pond, believed to be formed by the tears of Lord Shiva, and admire the ancient Kashmiri style architecture.'
+								title: 'Kumrat Forest & Waterfall:',
+								description: 'Walk through a massive natural forest of towering deodar trees. The valley features the stunning Kumrat Waterfall and the tranquil Panjkora River, perfect for camping and trout fishing.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Kallar Kahar Lake:',
-								description: 'Known as the "Valley of Peacocks," this saltwater lake is perfect for boating and family picnics. Don\'t miss the Takht-e-Babri, a historic throne carved out of rock by the Mughal Emperor Babur.'
+								title: 'Katora Lake:',
+								description: 'Reach the "Bowl Shaped" glacial lake at 11,500 ft. Its turquoise waters, surrounded by permanent snow patches and jagged cliffs, make it one of the most beautiful lakes in Pakistan.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Swaik Lake (Khandowa):',
-								description: 'Discover this hidden gem featuring turquoise blue water and a natural waterfall. It is a top spot for cliff diving, swimming, and photography amidst high rocky cliffs.'
+								title: 'Jahaz Banda Meadows:',
+								description: 'Experience life above the clouds in this expansive alpine meadow. It serves as the base camp for Katora Lake and offers a "Million Stars" camping experience under clear night skies.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Neela Wahn (Blue Pond):',
-								description: 'Embark on a rewarding trek to reach this series of natural freshwater springs. Known as "Chashma-Aab-e-Shifa," the clear blue water is famous for its refreshing and healing properties.'
+								title: 'Lowari Pass & Tunnel:',
+								description: 'Traverse the historic mountain pass or use the 8.5 km Lowari Tunnel, a monumental engineering feat that connects Upper Dir to Chitral, cutting through the heart of the mountains.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Malot Fort:',
-								description: 'Witness the synthesis of Greek and Kashmiri architecture. Built in the 10th century, this red sandstone fort offers a glimpse into the ancient strategic defenses of the Salt Range.'
+								title: 'Thal Ancient Wooden Mosque',
+								description: 'Visit the 19th century Takht-e-Masjid in Thal village. Built entirely from massive cedar logs and intricately carved by hand, it is a stunning example of local Gandhara influenced architecture.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,24 +710,24 @@ const ChakwalPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Chakwal Highlights Day Trip',
-								description: 'A fast paced tour from Islamabad or Lahore covering Kallar Kahar, Katas Raj, and the Khewra Salt Mines gateway.',
+								title: 'Kumrat Forest Escape',
+								description: 'A quick, refreshing trip focusing on the main Kumrat Valley, the Waterfall, and the Black Spring (Kala Chashma).',
 								image: '/images/gilgit.jpg',
-								days: '1 Day',
-								destinations: '3 Destinations'
+								days: '3 Days',
+								destinations: '2 Destinations'
 							},
 							{
-								title: 'Lakes & Legends Escape',
-								description: 'An overnight stay in Kallar Kahar with trekking to Neela Wahn and a detailed visit to the Katas Raj spiritual complex.',
+								title: 'Jahaz Banda & Katora Lake Trek',
+								description: 'An adventurous trekking package including jeep safaris to Taki Top and camping at the high altitude Jahaz Banda meadows.',
 								image: '/images/Hunza.jpg',
-								days: '2 Days',
+								days: '5 Days',
 								destinations: '4 Destinations'
 							},
 							{
-								title: 'Salt Range Adventure Trail',
-								description: 'A comprehensive exploration including Swaik Lake, Chinji National Park for wildlife, and the historic Malot Fort.',
+								title: 'The Grand Dir Chitral Traverse',
+								description: 'A cross district journey starting in Kumrat, crossing into Chitral via the Lowari Tunnel for a complete cultural and mountain experience.',
 								image: '/images/skardu 2.jpg',
-								days: '3 Days',
+								days: '7 Days',
 								destinations: '5 Destinations'
 							}
 						].map((card, idx) => (
@@ -791,24 +791,24 @@ const ChakwalPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Chakwal District
+							More About Upper Dir District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Chakwal\'s identity is deeply rooted in its martial tradition. Known as the "Land of Soldiers," the district has a long history of enlisting brave men in the military, a legacy that predates the creation of Pakistan. Culturally, the region is famous for its "Dhani" breed of horses and bulls, which are celebrated in local festivals and fairs (Melas).',
+								description: 'Upper Dir has a rich political and tribal history; it was a princely state ruled by the Nawabs of Dir until it was merged with Pakistan in 1969. The district is primarily inhabited by the Yousafzai Pashtuns and Kohistani tribes, known for their fierce independence, hospitality, and deep rooted tribal codes.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The district is also an agricultural hub, primarily known for its high quality peanuts, loquats, and wheat. One of the most famous delicacies you must try is Pehlwan Rewari, a sweet, crunchy treat made from sesame seeds and jaggery that has become the hallmark of Chakwal\'s food culture.',
+								description: 'The Panjkora River is the lifeblood of the district, originating from the glaciers of the Hindu Kush and flowing through narrow, deep valleys. The district is a significant agricultural hub, producing high quality walnuts, persimmons, and potatoes, while its mountains are rich in minerals like copper and quartz.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'For history buffs, the region is a living museum. Beyond the Hindu temples, you can explore the Bagh-e-Safa, the first garden of the Mughal Empire planted by Babur. The landscape itself, with its deep gullies, canyons in Thirchak Mahal, and the orange tinted Salt Range mountains, provides a dramatic backdrop for every traveler.',
+								description: 'For the adventurous traveler, the Badgoi Pass offers a thrilling off road link between Upper Dir and the Kalam Valley in Swat. The district\'s name, derived from the Persian word Dair (meaning \'far off\'), perfectly captures its remote and mystical essence. From the ancient wooden architecture of its mosques to the signal free silence of its forests, Upper Dir is a sanctuary for the soul.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
 							}
@@ -825,7 +825,7 @@ const ChakwalPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Chakwal District"
+											alt="Upper Dir District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
@@ -1079,5 +1079,5 @@ const ChakwalPage = () => {
 	);
 };
 
-export default ChakwalPage;
+export default UpperDirPage;
 
