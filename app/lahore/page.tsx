@@ -487,7 +487,7 @@ const LahorePage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								Where Every Stone Tells a Story
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const LahorePage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Lahore District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Walk through the 1,000 year old gates of the Walled City and witness the electric energy of the Wagah Border. Your journey into the heart of Punjab starts here.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Discover Lahore
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const LahorePage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Lahore Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Lahore District is the "Heart of Pakistan" and the soul of its cultural heritage. Known as the city of gardens, saints, and a thousand stories, Lahore is where the past and present collide in a vibrant explosion of color and flavor. From the narrow, spice scented lanes of the Walled City to the wide, modern boulevards of Gulberg, Lahore offers an energy that is unmatched anywhere else in the country. Once the pinnacle of the Mughal Empire's glory, the city is a living museum of UNESCO World Heritage Sites, colonial era architecture, and modern urban life. Whether you are witnessing the patriotic fervor at the Wagah Border or enjoying a quiet evening in the historic Bagh-e-Jinnah, Lahore captures the essence of "Zinda Dilan-e-Lahore" the people whose hearts are always alive.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const LahorePage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Lahore District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const LahorePage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Badshahi Mosque:',
+								description: 'Stand in awe of this 17th century Mughal masterpiece. Built with red sandstone and white marble, its massive courtyard and iconic domes represent the peak of Islamic architecture.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Lahore Fort (Shahi Qila):',
+								description: 'Explore the royal citadel of emperors. Visit the breathtaking Sheesh Mahal (Palace of Mirrors), the ornate Alamgiri Gate, and the historic museums within its ancient walls.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Food Street (Fort Road):',
+								description: 'Dine with a view! Savor authentic Lahori Karahi and Chargha on a rooftop overlooking the illuminated Badshahi Mosque, experiencing the world\'s most scenic food street.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Wagah Border Ceremony',
+								description: 'Feel the adrenaline at the daily flag lowering ceremony. Witness the high stepping military drills and the roar of the crowd in a spectacular display of national pride.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Walled City (Delhi Gate & Wazir Khan)',
+								description: 'Step into the "Old City." Visit the Delhi Gate and the Wazir Khan Mosque, famous for its intricate tile mosaics and vibrant frescoes that have survived for centuries.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Shalimar Gardens:',
+								description: 'Walk through the Mughal Royal Gardens. Built by Emperor Shah Jahan, these three tiered terraced gardens with their flowing fountains are a masterpiece of Persian style design.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const LahorePage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'The Royal Heritage Walk',
+								description: 'A fast paced day covering the Fort, Badshahi Mosque, Minar-e-Pakistan, and a sunset dinner at Food Street.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '1 Day',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								title: 'Cultural & Culinary Explorer',
+								description: 'Deep dive into the Walled City, a trip to the Wagah Border, and shopping at Anarkali and Liberty markets.',
 								image: '/images/Hunza.jpg',
-								days: '10 Days',
+								days: '3 Days',
 								destinations: '6 Destinations'
 							},
 							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'The Grand Lahore Circuit',
+								description: 'Includes the iconic sights plus the Tomb of Jahangir, the Lahore Museum, and a relaxing day at Jallo Park or the Safari Zoo.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '5 Days',
+								destinations: '8 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const LahorePage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Lahore District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Lahore is famously described by the local proverb: "Jinne Lahore nai vekhya, o jamyai nai" (One who has not seen Lahore has not yet been born). As the ultimate educational and artistic hub of Pakistan, the district is home to prestigious institutions like the Government College University and the National College of Arts. Its rich intellectual and literary history is celebrated annually at the Lahore Literary Festival, which attracts thinkers, writers, and artists from all over the globe to share ideas in this historic setting.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The city\'s food culture is its true heartbeat, where every street corner offers a new flavor to discover. From the iconic early morning Halwa Puri breakfast at Lakshmi Chowk to the late night, slow cooked Siri Paye and Nihari in the narrow lanes of the old quarters, dining in Lahore is more than just a meal it is a grand celebration of life. Whether it is the aroma of freshly baked Naan or the sizzle of Tikkas, the culinary scene here is a testament to the city\'s vibrant and hospitable spirit.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'For those seeking a peaceful retreat, Lahore remains true to its title as the "City of Gardens." The district offers sprawling green escapes like Lawrence Garden (Bagh-e-Jinnah) and the majestic Greater Iqbal Park, where the very history of Pakistan\'s independence was written at the foot of Minar-e-Pakistan. These parks provide a serene contrast to the bustling city life, allowing visitors to walk through lush landscapes that have been preserved for generations as symbols of the city\'s natural beauty.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const LahorePage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Lahore District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
