@@ -799,22 +799,22 @@ const AstoreDiamerPage = () => {
 						{[
 							{
 								description: 'You will find some of nature\'s finest artwork in the Astore and Diamer Valleys. As you feast your eyes on the stunning mountain views, you can enjoy the traditional, hearty local cuisine. This mountainous region is a paradise for adventure seekers and is surrounded by high peaks, making it a perfect spot for photography and spending quality time in peace.',
-								image: '/images/gilgit.jpg',
+								image: '/images/Astore Diamer District 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The region is a haven for wildlife lovers, especially the Deosai Plains (meaning \'the land of giants\'), which is counted amongst the highest plateaus in the world. Deosai is home to exotic creatures such as the golden marmot, Himalayan brown bear, red fox, and many species of mountain birds.',
-								image: '/images/Hunza.jpg',
+								image: '/images/Astore Diamer District 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don\'t forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/Astore Diamer District 3.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The Astore Valley is also historically significant, lying on an ancient trading route that once connected Gilgit Baltistan with Kashmir. The local Shina speaking people are known for their warm hospitality and a rich, simple culture influenced by the high altitude life. They are renowned for their locally grown high quality potatoes and delicious traditional dishes like Chapshuro (meat filled pastry).',
-								image: '/images/Swat.jpg',
+								image: '/images/Astore Diamer District 4.jpg',
 								imageLeft: false
 							}
 						].map((item, idx) => (
