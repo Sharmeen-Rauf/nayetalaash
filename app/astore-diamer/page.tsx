@@ -712,16 +712,23 @@ const AstoreDiamerPage = () => {
 							{
 								title: 'Nanga Parbat Encounter Tour',
 								description: 'A specialized trek or jeep tour focusing on the Rupal Face and the history of the Diamer District.',
-								image: '/images/gilgit.jpg',
+								image: '/images/Nanga Parbat Encounter Tour.jpg',
 								days: '8 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'Pakistan High Altitude Grand Tour',
 								description: 'Combines Astore\'s highlights with a scenic journey over Babusar Pass and stops in the adjacent regions.',
-								image: '/images/Hunza.jpg',
+								image: '/images/Pakistan High Altitude Grand Tour.png',
 								days: '9 Days',
 								destinations: '5 Destinations'
+							},
+							{
+								title: 'Astore Diamer Discovery Tour',
+								description: 'Explore the stunning valleys, alpine lakes, and rich cultural heritage of the Astore Diamer region.',
+								image: '/images/Astore Diamer Discovery Tour.jpg',
+								days: '7 Days',
+								destinations: '4 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
