@@ -487,7 +487,7 @@ const MultanPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Spiritual Heart of Punjab
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const MultanPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Multan District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Discover the majestic blue domed tombs of the Sufi saints and lose yourself in the vibrant history of one of the world's oldest inhabited cities.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore Multan
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const MultanPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Multan Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Multan District, globally renowned as the "City of Saints," is one of the oldest continuously inhabited cities in the world. Located on the banks of the Chenab River, it serves as the spiritual and cultural gateway to Southern Punjab. Multan is an sensory explosion of vibrant blue pottery (Kashi kari), the sweet aroma of Sohan Halwa, and the majestic sight of towering domes. Whether you are exploring the ruins of the Multan Fort or walking through the bustling, centuries old bazaars, the city offers a profound spiritual and historical experience that connects the modern traveler to the ancient Silk Road.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const MultanPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Multan District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const MultanPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Shrine of Shah Rukn-e-Alam:',
+								description: 'Visit the crown jewel of Multan\'s skyline. This 14th-century tomb features one of the largest domes in Asia and is decorated with exquisite blue and white Multani tiles and terracotta.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Shrine of Bahauddin Zakariya:',
+								description: 'Pay respects at this ancient square-shaped shrine, which served as a major center of learning and Sufism in the 13th century, attracting devotees from across the Islamic world.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Multan Fort (Qilla Kohna):',
+								description: 'Explore the site of the ancient citadel. Though mostly in ruins, the fort area provides breathtaking panoramic views of the city and houses the historic Damdama and Prahladpuri Temple site.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Blue Pottery (Kashi-kari):',
+								description: 'Witness the master craftsmen at work. Multan is world-famous for its hand-painted blue pottery, a craft passed down through generations of "Kashigars" since the Mughal era.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Hafiz Sohan Halwa:',
+								description: 'Taste the legendary Multani Sohan Halwa. This rich, nutty, and traditional sweet is the city\'s most famous export and is a mandatory treat for every visitor.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Hussain Agahi Bazaar:',
+								description: 'Immerse yourself in the colors of the old city market. From traditional Multani embroidery (Khaadi) to camel skin lamps and spices, this bazaar is a treasure trove of local crafts.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const MultanPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Sufi Soul Day Tour',
+								description: 'A fast paced exploration of the major shrines, the Multan Fort, and a stop for traditional Sohan Halwa.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '1 Day',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								title: 'Ancient South Explorer',
+								description: 'Deep dive into Multan\'s history, visit the Blue Pottery workshops, and explore the nearby ruins of the ancient city of Harappa.',
 								image: '/images/Hunza.jpg',
-								days: '10 Days',
+								days: '3 Days',
 								destinations: '6 Destinations'
 							},
 							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'Grand Southern Heritage',
+								description: 'A comprehensive journey linking Multan\'s spiritual sites with the royal palaces of Bahawalpur and the shrines of Uch Sharif.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '5 Days',
+								destinations: '8 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const MultanPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Multan District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Multan is a city where history is layered like the bricks of its ancient shrines. Known for its extreme summers and spiritual warmth, it is famously associated with the Persian proverb about its four gifts: "Gard, Garma, Gada o Goristan" (Dust, Heat, Beggars, and Burial Grounds). However, modern travelers find beauty in this description, as the "burial grounds" refer to the magnificent, world class mausoleums that make the city a global center for Sufi pilgrimage and Islamic architecture.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The district is the Mango Capital of the World, producing dozens of varieties of the "King of Fruits," including the world famous Chaunsa and Anwar Ratol. This agricultural richness is matched by the city\'s artistic heritage; the iconic "Multani Blue" tile work is a signature style that has influenced architecture across South Asia. The local culture is deeply rooted in the Saraiki language, which is known for its poetic softness and reflects the gentle, hospitable nature of the Multani people.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'Economically, Multan remains a vital hub for cotton and handicrafts. For a peaceful retreat within the city, visitors often head to Cantonment Garden or take a sunset boat ride on the Chenab River. Whether you are watching the sun set behind the blue dome of Shah Rukn-e-Alam or navigating the narrow, historic alleys of the walled city, Multan offers a timeless experience that lingers in the heart long after the journey ends.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const MultanPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Multan District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>

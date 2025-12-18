@@ -487,7 +487,7 @@ const RawalpindiPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								Gateway to the Capital
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const RawalpindiPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Rawalpindi District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							From the 2,500 year old ruins of Taxila to the vibrant flavors of Kartarpura, discover the city where history and energy meet.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore Rawalpindi
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const RawalpindiPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Rawalpindi Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Rawalpindi District, affectionately known as "Pindi," is the historic soul of the twin cities and the strategic gateway to Northern Pakistan. While Islamabad is the city of order and diplomacy, Rawalpindi is the city of life, energy, and deep rooted traditions. Located on the Pothohar Plateau, it has served as a vital crossroads for empires throughout history, from the ancient Gandhara civilization to the British Raj, eventually becoming the headquarters of the Pakistan Army. Rawalpindi offers a fascinating contrast between the ancient and the modern. You can wander through the chaotic, colorful lanes of Raja Bazaar in the morning and dine in the ultra modern settings of Bahria Town by evening. With its world class museums, sprawling national parks, and the UNESCO listed ruins of Taxila, Rawalpindi provides an authentic Pakistani experience that is both gritty and grand.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const RawalpindiPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Rawalpindi District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const RawalpindiPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Taxila Museum & Ruins:',
+								description: 'Journey back 2,500 years at this UNESCO World Heritage Site. Explore the ruins of ancient Buddhist monasteries and one of the world\'s first universities, showcasing the height of Gandharan art.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Ayub National Park:',
+								description: 'Visit one of the largest parks in Asia. It features the "Jungle World" zoo, a Miracle Garden, serene boating lakes, and open air museums, making it the ultimate family recreation spot.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Kartarpura Food Street:',
+								description: 'Experience the heart of Pindi\'s food culture. Famous for its legendary breakfast of Nihari and Siri Paye, this historic street comes alive at night with the sights and smells of authentic Desi cuisine.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Pakistan Army Museum:',
+								description: 'Dive into the nation\'s military heritage. This world class museum displays everything from vintage tanks and aircraft to detailed galleries chronicling the history of the Pakistan Armed Forces.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Raja Bazaar & Lal Haveli:',
+								description: 'Navigate the vibrant "Old City." Discover centuries old architecture, including the famous Lal Haveli, while shopping for everything from traditional spices to intricate jewelry in the labyrinthine alleys.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Sangni Fort',
+								description: 'Take a scenic drive to the outskirts of the district to visit this secluded hilltop fortress. It offers a quiet escape with stunning views of the surrounding Potohar landscape and a glimpse into Gakhar history.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const RawalpindiPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Pindi Heritage & Food Walk',
+								description: 'A day exploring the Army Museum, Raja Bazaar, and a dinner feast at Kartarpura Food Street.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
+								days: '1 Day',
+								destinations: '4 Destinations'
+							},
+							{
+								title: 'Ancient Civilizations & Nature',
+								description: 'A deep dive into the Taxila ruins on day one, followed by a relaxing day at Ayub National Park and Bahria Town\'s landmarks.',
+								image: '/images/Hunza.jpg',
+								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
-								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
-							},
-							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'Potohar Circuit',
+								description: 'Use Rawalpindi as a base to visit the ancient Mankiala Stupa, the roaring Khanpur Dam, and the majestic Pharwala Fort.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '4 Days',
+								destinations: '6 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const RawalpindiPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Rawalpindi District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Rawalpindi is a city built upon layers of diverse history. Once a small settlement known as Rawal, it flourished under the Gakhars before becoming a major administrative center for the Sikh Empire and later the British Raj. Its status as a "Garrison City" was cemented in the 19th century when the British established the largest military cantonment in South Asia here. This legacy is still visible today in the colonial era architecture of Saddar and the disciplined, well maintained landscapes of the Rawalpindi Cantonment.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The cultural fabric of the district is defined by the Pothohari spirit, characterized by a unique dialect, warm hospitality, and a deep sense of pride. The city\'s markets, like Moti Bazaar and Bhabra Bazaar, are more than just shopping centers they are historic landmarks where generations of families have traded and socialized. This vibrant energy is what locals call the "Pindi Vibe" a mixture of bustling street life, communal dining, and a resilient, lively population that keeps the city awake long after midnight.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'In the modern era, Rawalpindi has expanded into a thriving economic and residential hub. The development of high end areas like Bahria Town and DHA has brought international standards of living, luxury shopping, and recreation to the district. Connected to Islamabad by the sophisticated Metro Bus system, Rawalpindi serves as the commercial backbone of the region. Whether you are exploring the spiritual silence of an ancient Stupa or the electric atmosphere of a cricket match at the Pindi Stadium, the district offers a complete journey through Pakistan\'s past, present, and future.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const RawalpindiPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Rawalpindi District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
