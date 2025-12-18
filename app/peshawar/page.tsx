@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft } from 'lucide-react';
 
-const AbbottabadPage = () => {
+const PeshawarPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -487,7 +487,7 @@ const AbbottabadPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The City of Pines
+								The Living Soul of the Frontier
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const AbbottabadPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Abbottabad District
+								Peshawar District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the colonial charm of this peaceful city and explore the surrounding green peaks of Thandiani and Ayubia National Park.
+							Walk through the 2,000 year old Qissa Khwani Bazaar and discover the architectural beauty of the Mahabat Khan Mosque in the heart of the "City of Flowers."
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Galiyat Tours
+							Explore Peshawar City
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const AbbottabadPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Abbottabad Tour
+								Places To Visit In Peshawar Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								Abbottabad District, often called the "City of Pines," is a prominent city nestled in the Hazara region of Khyber Pakhtunkhwa. Famous for its pleasant, moderate climate, green hill stations, and historical British era cantonment feel, it serves as the perfect gateway to both the Galiyat region and the higher Karakoram Highway. The district is a hub of educational institutions and military training (like PMA Kakul) but is equally known for its natural beauty, including the high peaks of Thandiani, the tranquil Harnoi River, and the forested serenity of Ayubia National Park.
+								Peshawar District, known as the "City of Flowers," is one of the oldest living cities in South Asia and the cultural heart of Khyber Pakhtunkhwa. Strategically located at the doorstep of the Khyber Pass, it has for millennia served as a melting pot for travelers, conquerors, and traders from Central Asia and the Subcontinent. The city is a fascinating mosaic of Buddhist, Mughal, Sikh, and British influences. From the bustling ancient alleys of Qissa Khwani Bazaar to the majestic Bala Hisar Fort and the world class Gandharan art in the Peshawar Museum, every corner of this district tells a story of survival and hospitality.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const AbbottabadPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Abbottabad District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Peshawar District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,28 @@ const AbbottabadPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Thandiani Top:',
-								description: 'Journey to the "Very Cold Place" (Thandiani), the highest mountain in the area, offering panoramic views of the Kaghan and Kohistan ranges and lush pine forests.'
+								title: 'Qissa Khwani Bazaar:',
+								description: 'Step into the "Street of Storytellers." Once a hub for traders to swap tales over green tea, it remains a vibrant market where you can enjoy authentic Peshawari Kahwa and visit traditional tea houses.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Ilyasi Mosque & Stream:',
-								description: 'Visit this historical and largest mosque in Abbottabad, famously built over a cold, clear water stream. It\'s a key spiritual and local attraction, renowned for its surrounding Pakora stalls.'
+								title: 'Peshawar Museum:',
+								description: 'Explore one of the world\'s finest collections of Gandharan Buddhist art. Housed in a Victorian-era hall, it features 14,000+ artifacts including ancient coins, sculptures, and Mughal weapons.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Pipeline Track & Ayubia National Park:',
-								description: 'Trek the famous 4 km Pipeline Track between Ayubia and Dunga Gali within the lush, thickly forested national park, known for its rich wildlife and scenic overlooks.'
+								title: 'Bala Hisar Fort:',
+								description: 'Marvel at the "Elevated Fort" that has guarded the city for centuries. Though it serves as a military HQ, its imposing brick walls and museum offer a glimpse into the region\'s turbulent military history.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Sajikot & Umbrella Waterfalls:',
-								description: 'Discover the beauty of the district\'s hidden cascades. Sajikot Waterfall (near Havelian) and the unique Umbrella Waterfall offer refreshing retreats and photography spots.'
+								title: 'Mahabat Khan Mosque',
+								description: 'Admire this 17th century Mughal masterpiece. With its white marble façade and intricate tile work, it stands as a testament to Shah Jahan era architecture in the heart of the Old City.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Miranjani & Mushkpuri Peaks:',
-								description: 'Embark on rewarding moderate treks to the highest peaks of the Galiyat region. These summits offer stunning views overlooking Murree, Azad Kashmir, and the surrounding forests.'
+								title: 'Namak Mandi Food Street',
+								description: 'Indulge in Peshawar\'s legendary meat culture. Savor the world famous Charsi Tikka, juicy Chapli Kebabs, and authentic Namkeen Karahi grilled over open charcoal flames.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,24 +710,24 @@ const AbbottabadPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Galiyat Hill Stations Retreat',
-								description: 'A concentrated tour covering Abbottabad (Ilyasi Mosque), Nathia Gali, and Ayubia National Park for trekking and relaxation.',
+								title: 'Peshawar Heritage Walk',
+								description: 'A quick day tour focusing on the Old City, including Mahabat Khan Mosque, Sethi House, and Qissa Khwani.',
 								image: '/images/gilgit.jpg',
-								days: '3 Days',
+								days: '1 Day',
 								destinations: '3 Destinations'
 							},
 							{
-								title: 'Thandiani & Waterfalls Explorer',
-								description: 'Focuses on the scenic drive to Thandiani, the Sajikot/Umbrella Waterfalls, and the historical center of Abbottabad.',
+								title: 'The Gateway Expedition',
+								description: 'An immersive 3 day trip covering the Khyber Pass (Bab-e-Khyber), Jamrud Fort, and the archaeological wonders of Peshawar city.',
 								image: '/images/Hunza.jpg',
-								days: '4 Days',
-								destinations: '4 Destinations'
+								days: '3 Days',
+								destinations: '5 Destinations'
 							},
 							{
-								title: 'Kaghan & Galiyat Combo',
-								description: 'A perfect week-long trip linking the accessible hill stations of Abbottabad with the high altitude lakes and passes of the Naran Kaghan Valley.',
+								title: 'KPK Cultural Hubs',
+								description: 'A deeper journey connecting Peshawar\'s history with the nearby ruins of Takht-i-Bahi (Mardan) and the scenic banks of the Kabul River.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
+								days: '5 Days',
 								destinations: '4 Destinations'
 							}
 						].map((card, idx) => (
@@ -783,7 +783,7 @@ const AbbottabadPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== MORE ABOUT ABBOTTABAD DISTRICT ====================== */}
+			{/* ====================== MORE ABOUT HUNZA DISTRICT ====================== */}
 			<section 
 				data-section-id="more-about"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
@@ -791,24 +791,24 @@ const AbbottabadPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Abbottabad District
+							More About Peshawar District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Abbottabad was founded in 1853 by Major James Abbott, the first Deputy Commissioner of the Hazara region under British Rule, and was named "Abbott\'s Town." This history is visible in its architecture, large cantonment area, and wide, tree lined roads, giving it a unique colonial charm.',
+								description: 'Peshawar is a city where ancient traditions are woven into modern life. Its history dates back to at least 539 BC, making it a witness to the rise and fall of empires like the Kushans and the Durranis. The Sethi Mohallah inside the Old City features 19th century havelis (mansions) that showcase the wealth of merchants who traded with Central Asia, featuring intricate woodwork and stained glass.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The district is the gateway to three major mountain ranges (Karakoram, Hindu Kush, and Himalayas) and acts as the crucial starting point for the Karakoram Highway (KKH) leading north. The local population primarily speaks Hindko, followed by Pashto and Urdu, reflecting the area\'s cultural mix.',
+								description: 'The district is also home to Islamia College, a stunning example of colonial-era architecture and a beacon of education featured on the 1,000-rupee note. For a peaceful escape, tourists visit Sardaryab on the Kabul River to enjoy fresh fish and boat rides, or explore the local Peshawar Zoo and Bagh e Naran.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'Abbottabad is not only a base for higher mountain travel but also a destination in its own right. Attractions like Shimla Pahari, the Harnoi Picnic Point (on the Dor River), and the historical Lady Garden Public Park provide easy, accessible recreation for families and hikers. Its bracing, pleasant climate makes it a popular tourist spot year round, even when higher valleys are snowed in.',
+								description: 'Economically and culturally, Peshawar is defined by its Pashtun hospitality. Whether you are shopping for traditional Peshawari Chappals (footwear) in the narrow lanes of Jahangirpura or exploring the vast Karkhano Market for electronics and imports, you will find the city to be a welcoming and safe hub for global travelers.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
 							}
@@ -825,7 +825,7 @@ const AbbottabadPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Abbottabad District"
+											alt="Peshawar District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
@@ -860,7 +860,7 @@ const AbbottabadPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'Where is Astore Diamer District located?',
+								question: 'Where is Hunza District located?',
 								answer: 'Astore and Diamer are districts in Gilgit-Baltistan, Pakistan, known for their stunning mountain landscapes.'
 							},
 							{
@@ -1079,5 +1079,5 @@ const AbbottabadPage = () => {
 	);
 };
 
-export default AbbottabadPage;
+export default PeshawarPage;
 
