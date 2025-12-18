@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft } from 'lucide-react';
 
-const GilgitDistrictPage = () => {
+const LahorePage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -487,7 +487,7 @@ const GilgitDistrictPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								Gilgit District
+								The Crown Jewel of Pakistan
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const GilgitDistrictPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Crossroads of the Karakoram
+								Hunza District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Explore the historical hub of the Silk Route, witness the Kargah Buddha, and enjoy the magical scenery of the Naltar Valley.
+							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Book Your Trip
+							Explore Hunza Tours
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const GilgitDistrictPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Kaleidoscope Of Cultures
+								Places To Visit In Hunza Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Gilgit District is the historical and commercial heart of Gilgit-Baltistan, offering a unique blend of natural beauty, ancient history, and strategic importance along the Karakoram Highway (KKH). This valley is engraved with nature's finest features, from the surreal, multi-colored glacial lakes of Naltar Valley to towering surrounding peaks. Gilgit is not just a hub; it's a destination. It is home to the stunning Kargah Buddha (a testament to the region's Buddhist past), the famous Naltar Ski Resort, and hidden gems like the Haramosh and Bagrote Valleys, making it a perfect spot for history buffs and nature lovers alike.
+								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const GilgitDistrictPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Things To Do In <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Gilgit District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,28 @@ const GilgitDistrictPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Naltar Valley & Lakes',
-								description: 'Visit this beautiful pine forest valley, famous for its seven colored lakes (Bashkiri and Blue Lake) and the thrilling Naltar Ski Resort, offering excellent skiing opportunities in winter'
+								title: 'Baltit & Altit Forts',
+								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Kargah Buddha',
-								description: 'Witness history firsthand! This intricately carved 8th-century statue of Buddha etched into a mountain face in the Kargah Valley, just 10 km from Gilgit city'
+								title: 'Attabad Lake',
+								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Bagrote Valley Trekking',
-								description: 'An experience for peak and trekking enthusiasts, Bagrote offers beautiful hikes amidst majestic mountains and is known for its pure, organic produce'
+								title: 'Passu Cones Viewpoint',
+								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Danyore Suspension Bridge',
-								description: 'Cross the unique, century-old Suspension Bridge leading to the KKH Tunnels. This engineering marvel connects Gilgit to the famous KKH route towards Hunza'
+								title: 'Khunjerab Pass (China Border)',
+								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Cherry Blossom Season',
-								description: 'Plan your trip around March or April to witness the Gilgit valley explode in the breathtaking white and pink bloom of the cherry blossom (Sakura) season'
+								title: 'Duiker/Eagles Nest',
+								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +710,25 @@ const GilgitDistrictPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Dream Journeys of North',
-								description: 'A curated trip focusing on Gilgit\'s highlights (Naltar, Kargah) and a journey towards the Hunza Valley.',
+								title: 'Karakoram Highway Explorer',
+								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
 								image: '/images/gilgit.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '8 Days',
+								destinations: '5 Destinations'
 							},
 							{
-								title: 'Experience Karakoram Highway',
-								description: 'An extended tour focusing on the entire KKH, with Gilgit as the main historical and logistical hub.',
+								title: 'Hunza, Skardu & Deosai Grand Tour',
+								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
 								image: '/images/Hunza.jpg',
 								days: '10 Days',
 								destinations: '6 Destinations'
 							},
 							{
-								title: 'Gilgit & Nanga Parbat Encounter',
-								description: 'A diverse package that includes Gilgit\'s main attractions and a journey to the Nanga Parbat viewpoint via the Diamer side.',
+								title: 'Hunza & Naltar Valley Combo',
+								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
 								image: '/images/skardu 2.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '7 Days',
+								destinations: '3 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -783,62 +783,64 @@ const GilgitDistrictPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== DESTINATIONS ====================== */}
+			{/* ====================== MORE ABOUT HUNZA DISTRICT ====================== */}
 			<section 
-				data-section-id="destinations"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+				data-section-id="more-about"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Gilgit District
+							More About Hunza District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								title: 'Naltar Valley & Lakes',
-								description: 'Gilgit District is strategically located, acting as a crossroads between Chilas and Karimabad, nestled right off the Karakoram Highway (KKH). Its location has cemented its role as a junction of civilizations and religions. Historically, the valley was a significant part of the ancient Silk Route.',
+								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Kargah Buddha',
-								description: 'The Silk Route brought not only the trade of goods but also a deeply enriching blend of cultures, ideas, and skills. Centuries ago, the region was immersed in Buddhism, and travelers can still see evidence of its religious influences today, most notably at the Kargah Buddha site.',
+								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Danyore Suspension Bridge',
-								description: 'For peak lovers, Bagrote Valley offers challenging treks and is known for its views of Diran Peak. Other beautiful valleys attracting tourists include the scenic Oshikhandass village walk, the stunning Kutwal Lake in Haramosh Valley, and the towns of Jaglot and Nomal.',
-								image: '/images/Swat.jpg',
+								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								image: '/images/skardu 2.jpg',
 								imageLeft: true
+							},
+							{
+								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
+								image: '/images/Swat.jpg',
+								imageLeft: false
 							}
-						].map((destination, idx) => (
+						].map((item, idx) => (
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
 								style={{
-									opacity: visibleSections.has('destinations') ? 1 : 0,
+									opacity: visibleSections.has('more-about') ? 1 : 0,
 									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
 								}}
 							>
-								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
-											src={destination.image}
-											alt={destination.title}
+											src={item.image}
+											alt="Hunza District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
 									</div>
 								</div>
 								
-								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
-										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											{destination.description}
+										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
 										</p>
 									</div>
 								</div>
@@ -847,31 +849,6 @@ const GilgitDistrictPage = () => {
 					</div>
 				</div>
 			</section>
-
-			{/* ====================== MORE ABOUT GILGIT DISTRICT ====================== */}
-			{/* <section 
-				data-section-id="more-about"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
-							More About Gilgit District
-						</h2>
-						<div className="space-y-6">
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Gilgit District is strategically located, acting as a crossroads between Chilas and Karimabad, nestled right off the Karakoram Highway (KKH). Its location has cemented its role as a junction of civilizations and religions. Historically, the valley was a significant part of the ancient Silk Route.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The Silk Route brought not only the trade of goods but also a deeply enriching blend of cultures, ideas, and skills. Centuries ago, the region was immersed in Buddhism, and travelers can still see evidence of its religious influences today, most notably at the Kargah Buddha site.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								For peak lovers, Bagrote Valley offers challenging treks and is known for its views of Diran Peak. Other beautiful valleys attracting tourists include the scenic Oshikhandass village walk, the stunning Kutwal Lake in Haramosh Valley, and the towns of Jaglot and Nomal.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section> */}
 
 			{/* ====================== FAQ SECTION ====================== */}
 			<section 
@@ -888,7 +865,7 @@ const GilgitDistrictPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'Where is Gilgit District located?',
+								question: 'Where is Hunza District located?',
 								answer: 'Astore and Diamer are districts in Gilgit-Baltistan, Pakistan, known for their stunning mountain landscapes.'
 							},
 							{
@@ -1107,5 +1084,5 @@ const GilgitDistrictPage = () => {
 	);
 };
 
-export default GilgitDistrictPage;
+export default LahorePage;
 
