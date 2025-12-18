@@ -487,7 +487,7 @@ const IslamabadPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Most Beautiful Capital
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const IslamabadPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Islamabad District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Experience the iconic spires of Faisal Mosque, the culture of Saidpur, and the thrill of water sports at Mabali Island the best of the capital awaits.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore Islamabad
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const IslamabadPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Islamabad Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Islamabad, the capital of Pakistan, is often cited as one of the most beautiful and well planned cities in the world. Nestled at the foot of the Margalla Hills, it is a city where modern infrastructure seamlessly blends with lush green forests. Unlike the bustling historic centers of Lahore or Peshawar, Islamabad offers an orderly, serene, and sophisticated atmosphere, earning it the title of the "Green City." From the iconic white marble of the Faisal Mosque to the breathtaking panoramic views from Pir Sohawa, the city is a haven for nature lovers and urban explorers alike. Whether you are trekking up its world class hiking trails or seeking a "beach vibe" adventure at Mabali Island, Islamabad provides a refreshing and world class gateway to the rest of the country.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const IslamabadPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Islamabad District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const IslamabadPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Faisal Mosque',
+								description: 'Visit the largest mosque in Pakistan, an architectural masterpiece shaped like a Bedouin tent. Its location at the foothills of the Margalla Hills offers a spiritual and scenic experience like no other.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Mabali Island (Khanpur)',
+								description: 'Escape to the "Bali of Pakistan" for a day trip. Located just 45 minutes from the city, it is the premier spot for jet skiing, kayaking, parasailing, and luxury glamping on the crystal clear waters of Khanpur Lake.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Pakistan Monument & Museum:',
+								description: 'Stand at the center of this flower petal shaped monument representing the unity of Pakistan. The adjacent museum offers a high tech walkthrough of the nation\'s history.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Margalla Hills (Trail 3 & 5):',
+								description: 'Experience the city\'s favorite outdoor activity. Hike through lush pine forests and enjoy fresh mountain air, with rewarding views of the entire capital city from the top.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Monal & Pir Sohawa:',
+								description: 'Drive up the winding mountain roads to dine at 1,173 meters. Enjoy a traditional BBQ dinner while watching the city lights twinkle thousands of feet below.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Saidpur Village:',
+								description: 'Step back in time in this centuries old restored village. It features a unique blend of a Hindu temple, a Sikh Gurdwara, and a mosque, now housing some of the city\'s finest restaurants.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const IslamabadPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Capital Heritage Tour',
+								description: 'A comprehensive day trip covering Faisal Mosque, Pakistan Monument, Lok Virsa, and a sunset at Daman-e-Koh.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '1 Day',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								title: 'Adventure & Water Sports',
+								description: 'A weekend getaway combining a hike on the Margalla Hills with a full day of water sports and dining at Mabali Island.',
 								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
+								days: '2 Days',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'Excursion Beyond the Capital',
+								description: 'A grand tour using Islamabad as a base to visit the ancient Taxila Ruins (UNESCO), Mabali Island, and the misty hills of Murree.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '4 Days',
+								destinations: '6 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const IslamabadPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Islamabad District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Islamabad is a city designed for clarity and comfort. Divided into organized sectors, it serves as the diplomatic and political heart of the country. The climate is notably pleasant, with four distinct seasons from the vibrant blooms of the Rose and Jasmine Garden in spring to the occasional winter snow on the highest peaks of the Margalla range.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'For those seeking culture, the Lok Virsa Museum is the premier destination for folk heritage, showcasing the diverse traditions of all four provinces. For a more modern vibe, the city boasts luxury shopping at The Centaurus and Giga Mall, or the upscale café culture of the F-6 and F-7 Markaz.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'Nature is never more than 10 minutes away in Islamabad. The Shakarparian National Park and Lake View Park provide expansive green spaces for families, while the Shah Allah Ditta Caves offer a glimpse into the region\'s Buddhist and Mughal past. It is a city that invites you to slow down, breathe the clean air, and enjoy the perfect balance between man made order and natural wild beauty.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const IslamabadPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Islamabad District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
