@@ -487,7 +487,7 @@ const ChakwalPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Gem of the Salt Range
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const ChakwalPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Chakwal District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							From the sacred waters of Katas Raj to the thrilling cliffs of Swaik Lake, discover the perfect blend of history and adventure just off the Motorway.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Plan Your Trip
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const ChakwalPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Chakwal Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Chakwal District, known as the "Land of Beauty and Valor," is the heart of the Potohar Plateau. It is a region where rugged mountains meet serene blue lakes and ancient history. Famous for its martial legacy and spiritual significance, Chakwal offers a unique escape into the Salt Range, featuring everything from 1,500 year old temples to hidden waterfalls. Whether you are a history enthusiast looking for the legendary Katas Raj Temples or an adventurer seeking the crystal clear waters of Swaik Lake, Chakwal is a perfect year round destination. It is easily accessible via the M2 Motorway, making it a favorite for travelers from Islamabad and Lahore seeking a blend of heritage and nature.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const ChakwalPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Chakwal District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,28 @@ const ChakwalPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Katas Raj Temples:',
+								description: 'Explore one of the most sacred Hindu sites in Pakistan. Visit the Holy Pond, believed to be formed by the tears of Lord Shiva, and admire the ancient Kashmiri style architecture.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Kallar Kahar Lake:',
+								description: 'Known as the "Valley of Peacocks," this saltwater lake is perfect for boating and family picnics. Don\'t miss the Takht-e-Babri, a historic throne carved out of rock by the Mughal Emperor Babur.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Swaik Lake (Khandowa):',
+								description: 'Discover this hidden gem featuring turquoise blue water and a natural waterfall. It is a top spot for cliff diving, swimming, and photography amidst high rocky cliffs.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Neela Wahn (Blue Pond):',
+								description: 'Embark on a rewarding trek to reach this series of natural freshwater springs. Known as "Chashma-Aab-e-Shifa," the clear blue water is famous for its refreshing and healing properties.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Malot Fort:',
+								description: 'Witness the synthesis of Greek and Kashmiri architecture. Built in the 10th century, this red sandstone fort offers a glimpse into the ancient strategic defenses of the Salt Range.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +710,25 @@ const ChakwalPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Chakwal Highlights Day Trip',
+								description: 'A fast paced tour from Islamabad or Lahore covering Kallar Kahar, Katas Raj, and the Khewra Salt Mines gateway.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
-							},
-							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
-								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
-							},
-							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
-								image: '/images/skardu 2.jpg',
-								days: '7 Days',
+								days: '1 Day',
 								destinations: '3 Destinations'
+							},
+							{
+								title: 'Lakes & Legends Escape',
+								description: 'An overnight stay in Kallar Kahar with trekking to Neela Wahn and a detailed visit to the Katas Raj spiritual complex.',
+								image: '/images/Hunza.jpg',
+								days: '2 Days',
+								destinations: '4 Destinations'
+							},
+							{
+								title: 'Salt Range Adventure Trail',
+								description: 'A comprehensive exploration including Swaik Lake, Chinji National Park for wildlife, and the historic Malot Fort.',
+								image: '/images/skardu 2.jpg',
+								days: '3 Days',
+								destinations: '5 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +791,26 @@ const ChakwalPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Chakwal District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Chakwal\'s identity is deeply rooted in its martial tradition. Known as the "Land of Soldiers," the district has a long history of enlisting brave men in the military, a legacy that predates the creation of Pakistan. Culturally, the region is famous for its "Dhani" breed of horses and bulls, which are celebrated in local festivals and fairs (Melas).',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The district is also an agricultural hub, primarily known for its high quality peanuts, loquats, and wheat. One of the most famous delicacies you must try is Pehlwan Rewari, a sweet, crunchy treat made from sesame seeds and jaggery that has become the hallmark of Chakwal\'s food culture.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'For history buffs, the region is a living museum. Beyond the Hindu temples, you can explore the Bagh-e-Safa, the first garden of the Mughal Empire planted by Babur. The landscape itself, with its deep gullies, canyons in Thirchak Mahal, and the orange tinted Salt Range mountains, provides a dramatic backdrop for every traveler.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +825,7 @@ const ChakwalPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Chakwal District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
