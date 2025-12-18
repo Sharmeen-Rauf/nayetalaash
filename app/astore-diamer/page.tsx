@@ -614,27 +614,27 @@ const AstoreDiamerPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Mt. Nanga Parbat-astorediamer.jpg',
 								title: 'Mt. Nanga Parbat',
 								description: 'Get a clear, dramatic view of the world\'s 9th highest mountain from its colossal Rupal side, a truly unforgettable sight.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Rama Valley & Rama Lake-astorediamer.jpg',
 								title: 'Rama Valley & Rama Lake',
 								description: 'Trek through dense pine forests to reach a peaceful alpine meadow and its crystal clear lake, perfect for camping and photography.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Deosai National Park-astorediamer.jpg',
 								title: 'Deosai National Park',
 								description: 'Explore the "Land of Giants," the world\'s second highest plateau, famous for its rolling meadows and sightings of the rare Himalayan Brown Bear.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Minimarg Valley & Rainbow Lake-astorediamer.jpg',
 								title: 'Minimarg Valley & Rainbow Lake',
 								description: 'Visit this hidden, lush alpine valley near the Line of Control, known for its pristine beauty and the remote Rainbow Lake.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Chilas Rock Inscriptions-astorediamer.jpg',
 								title: 'Chilas Rock Inscriptions',
 								description: 'Discover ancient carvings (petroglyphs) on rocks in Chilas, offering a fascinating glimpse into the history of the Silk Road travelers and Buddhist pilgrims.'
 							},
