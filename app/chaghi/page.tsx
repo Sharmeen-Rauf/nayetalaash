@@ -487,7 +487,7 @@ const ChaghiPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Golden Frontier of Pakistan
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const ChaghiPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Chaghi District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Step into Pakistan's largest district a land of hidden gold, ancient volcanoes, and the historic Ras Koh Hills. Experience the raw majesty of the Baloch desert.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore the Land of Gold
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const ChaghiPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Chaghi Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Chaghi District (also spelled Chagai), known as the "Land of the Golden Sparrow," is the largest district in Pakistan by area. Located in the northwestern corner of Balochistan bordering both Iran and Afghanistan, it is a vast, rugged expanse where the silence of the desert meets the thunder of history. Chaghi is famously known as the site of Pakistan's nuclear tests in 1998, earning it a permanent place in the nation's identity as a symbol of strength and scientific achievement. This district is an explorer's ultimate frontier, characterized by black mountains, volcanic peaks, and some of the world's richest mineral deposits. From the volcanic majesty of Koh-i-Sultan to the legendary mining sites of Saindak and Reko Diq, Chaghi is a land of extremes. It offers a raw, unfiltered experience of the nomadic Baloch lifestyle, where the high altitude desert air carries a sense of ancient mystery and untapped potential.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const ChaghiPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Chaghi District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const ChaghiPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Ras Koh Hills:',
+								description: 'Visit the historic site of Pakistan\'s nuclear tests (Chagai I). While the district is named after the Chagai Hills, the actual 1998 detonations took place in these granite mountains, turning the hills "bone white" for a moment in history.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Koh-i-Sultan:',
+								description: 'Explore an inactive volcano named after a legendary Sufi saint. It is a geological marvel known for its sulfur deposits and unique rock formations that resemble craters from another planet.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Saindak Copper Gold Project:',
+								description: 'Witness the industrial heart of the desert. Known as the "Black Mound," this massive mining operation produces gold, copper, and silver, standing as an oasis of modern machinery amidst the desolate wilderness.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Hamun-e-Mashkel:',
+								description: 'View the largest dry lake basin in the region. This vast, salt encrusted playa stretches across the border into Iran and becomes a shimmering inland sea during the rare, heavy rains.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Rabat Fort:',
+								description: 'Discover this remote historical fort located near the tri junction of Pakistan, Iran, and Afghanistan. It stands as a silent sentinel over ancient trade and caravan routes.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Taftan (Zero Point)',
+								description: 'Visit the Gateway to Iran. Taftan is the main border crossing and a historic transit point for the Quetta Zahedan railway, offering a unique look at the cross border cultural and commercial exchange.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const ChaghiPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Nuclear Heritage Trail',
+								description: 'A specialized trip from Quetta to Dalbandin, focusing on the Ras Koh Hills, the Youm-e-Takbir monuments, and the desert landscapes.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
+								days: '3 Days',
+								destinations: '3 Destinations'
+							},
+							{
+								title: 'Geological Expedition',
+								description: 'A deep dive into the district\'s mineral wealth, covering the Saindak mines, the volcanic peaks of Koh-i-Sultan, and the onyx rich hills.',
+								image: '/images/Hunza.jpg',
+								days: '5 Days',
 								destinations: '5 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
-								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
-							},
-							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'The Great Western Frontier',
+								description: 'An epic journey across the entire district, from the Nushki desert to the remote Taftan border and the ruins of Rabat Fort.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '10 Days',
+								destinations: '8 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const ChaghiPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Chaghi District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Chaghi is a district of staggering proportions and geological significance. Often referred to as a "Mining Paradise," it holds the world class Reko Diq and Saindak deposits, making it a cornerstone of Pakistan\'s future economy. The district is home to rare minerals like Onyx (a deep green marble), sulfur, and chromite. Its geography is dominated by the Chaghi Raskoh Magmatic Arc, a volcanic belt that has created a landscape unlike any other in South Asia, filled with jagged peaks and mineral stained soils.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The district\'s headquarters, Dalbandin, serves as the central hub for travelers heading towards the Iranian border. Despite its arid climate and sparse population, Chaghi is rich in nomadic culture. The local Baloch and Brahui tribes have mastered survival in this harsh terrain, maintaining a lifestyle centered around camel herding and a deep knowledge of the desert\'s hidden springs. The region is also home to the Zangi Nawar Game Reserve, a vital wetland for migratory birds that provides a rare splash of blue and green in the golden desert.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'A trip to Chaghi is not a standard vacation; it is an expedition into one of the most remote and strategically important regions of Pakistan. Whether you are standing at the foot of the Ras Koh mountains, reflecting on the nation\'s nuclear history, or watching the sunset over the endless dunes of the Nokkundi Desert, Chaghi offers a sense of solitude and grandeur that is truly humbling. It is a place for the bold, the curious, and those who wish to see the "unfinished" beauty of the Earth.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const ChaghiPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Chaghi District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
