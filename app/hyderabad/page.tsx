@@ -487,7 +487,7 @@ const HyderabadPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The City of Winds and Traditions
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const HyderabadPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Hyderabad District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							From the 100 year old taste of Bombay Bakery to the vibrant colors of the world's largest bangle market, experience the true hospitality of Hyderabad.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore Hyderabad
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const HyderabadPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Hyderabad Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Hyderabad District, famously known as the "City of Winds" due to its cooling summer breezes, is the cultural heart of Sindh and its former capital. Founded in 1768 by the Kalhora dynasty on the ruins of the ancient Neroon Kot, it is a city where history is etched into the limestone hills of Ganjo Takkar. It serves as a vital bridge between the modern metropolis of Karachi and the mystical, spiritual landscapes of Upper Sindh. Known for its unique architectural features like the traditional wind catchers (Manghu) and its world renowned artisanal industries, Hyderabad offers a sensory experience unlike any other. From the glittering glass bangles of Resham Gali to the majestic blue tiled tombs of former rulers, the district is a vibrant tapestry of Sindhi heritage, royal legacy, and bustling commercial life.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const HyderabadPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hyderabad District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const HyderabadPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Sindh Museum:',
+								description: 'Dive into the history of the Indus Valley Civilization. The museum houses incredible dioramas and artifacts showcasing the ethnology and heritage of the Sindhi people.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Pacco Qillo (Strong Fort):',
+								description: 'Explore the massive red-brick fort built by Mian Ghulam Shah Kalhoro. It stands as a symbol of the city\'s military past and offers a gateway to the historic old city.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Bombay Bakery:',
+								description: 'A mandatory stop for every visitor! Famous for its legendary Coffee Cake, this 100 year old bakery is a culinary landmark with a loyal following across Pakistan.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Resham Gali & Shahi Bazaar:',
+								description: 'Walk through one of Asia\'s longest bazaars. It is the global hub for glass bangles, traditional Ajrak, and intricate Sindhi embroidery.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Tombs of Talpur Mirs:',
+								description: 'Admire the stunning blue tiled mausoleums of the "Mir" rulers. These 18th century structures are a masterpiece of Islamic and Persian-influenced architecture.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Mukhi House',
+								description: 'Visit this beautifully restored 1920s Hindu mansion. Now a museum, it offers a rare glimpse into the opulent lifestyle of the merchant class of pre partition Hyderabad.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const HyderabadPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Hyderabad Highlights',
+								description: 'A focused day trip covering the Sindh Museum, Pacco Qillo, the Bangle Market, and a tea break at Bombay Bakery.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
+								days: '1 Day',
+								destinations: '4 Destinations'
+							},
+							{
+								title: 'Sufi & Craft Trail',
+								description: 'An overnight stay including a visit to the nearby pottery workshops of Hala and the spiritual shrine of Shah Abdul Latif Bhittai in Bhit Shah.',
+								image: '/images/Hunza.jpg',
+								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
-								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
-							},
-							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'The Indus Gateway Tour',
+								description: 'A comprehensive exploration of Hyderabad, the Jamshoro University museums, and a sunset dinner at the Al Manzar riverfront.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '3 Days',
+								destinations: '6 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const HyderabadPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Hyderabad District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Hyderabad is often described as a city that bridges the gap between the ancient and the modern. Historically known as the "Paris of India" for its roads that were once washed with perfume, it remains a major hub for education and literature. Home to the University of Sindh and the Mehran University, the district is an intellectual center where the Saraiki and Sindhi languages blend to create a rich poetic tradition that is celebrated in its vibrant local press and literary circles.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The city\'s culinary and artisanal identity is its most famous export. No visit to Hyderabad is complete without tasting the rich Haji Rabri or the traditional Palla Fish, a local delicacy from the Indus River prepared with secret Sindhi spices. The district is also the global capital of the bangle industry, where thousands of families have preserved the art of glasswork for generations, making the markets of Resham Gali a shimmering kaleidoscope of color and craft.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'Strategically located on the banks of the Indus River, Hyderabad also offers natural retreats like Rani Bagh, which combines a botanical garden with a zoo and recreational spaces. The district serves as the perfect base for exploring the wider wonders of Sindh, from the massive Ranikot Fort (the Great Wall of Sindh) to the serene Keenjhar Lake. Whether you are navigating the historic alleys of the old city or enjoying the modern vibes of Autobahn Road, Hyderabad offers a warm, hospitable welcome that is quintessentially Sindhi.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const HyderabadPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Hyderabad District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
