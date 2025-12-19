@@ -487,7 +487,7 @@ const JamshoroPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Gateway to Ancient Wonders
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const JamshoroPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Jamshoro District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Experience the world's largest fort, the soul stirring Dhamaal of the Sufis, and the shimmering waters of Manchar Lake the heartbeat of Sindh awaits.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore Sufi Heritage
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const JamshoroPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Jamshoro Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Jamshoro District, known as the "Education City" of Pakistan, is the intellectual and spiritual gateway to the Indus Valley. Situated on the right bank of the mighty Indus River, it is a land where ancient history, Sufi mysticism, and modern academia converge. Jamshoro is home to the largest concentration of universities in the country, yet it guards some of the world's most enigmatic archaeological wonders, including the colossal Ranikot Fort, often called the "Great Wall of Sindh." The district is a landscape of rugged hills, fertile riverbanks, and the vast, shimmering waters of Manchar Lake. From the rhythmic, hypnotic Dhamaal at the shrine of Lal Shahbaz Qalandar in Sehwan to the quiet, scholarly halls of the Institute of Sindhology, Jamshoro offers a profound journey into the soul of Sindhi culture. It is a place where the breeze of the Indus carries stories of 5,000 year old civilizations and the undying message of peace from the Sufi saints.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const JamshoroPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Jamshoro District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const JamshoroPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Ranikot Fort:',
+								description: 'Explore the largest fort in the world with a circumference of 32 km. Known as the "Great Wall of Sindh," its massive stone walls snake across the Kirthar mountains in a breathtaking display of ancient engineering.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Shrine of Lal Shahbaz Qalandar:',
+								description: 'Witness the electric energy of the daily Dhamaal (spiritual dance) at this 13th century shrine in Sehwan Sharif. It is the epicenter of Sufi devotion, attracting millions with its mensaje of universal love.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Manchar Lake:',
+								description: 'Visit the largest freshwater lake in Pakistan. Take a boat ride to see the unique floating villages of the Mohana tribe, whose lifestyle and ancient fishing techniques have remained unchanged for millennia.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Institute of Sindhology:',
+								description: 'Step into a world class museum at the University of Sindh. It features a stunning collection of Sindhi handicrafts, musical instruments, and wax dioramas that bring the province\'s history to life.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Amri Archaeological Site:',
+								description: 'Discover one of the most significant Pre Harappan settlements. Dating back to 3600 BC, this site offers a rare glimpse into the early roots of the Indus Valley Civilization before the rise of Mohenjo Daro.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Kotri Barrage & Bridge:',
+								description: 'Enjoy a sunset view over the Indus River. This colonial era engineering marvel is a vital lifeline for Sindh\'s agriculture and provides a picturesque spot for evening walks and river cruises.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const JamshoroPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Sufi & Scholars Tour',
+								description: 'A fast paced day trip from Hyderabad or Karachi covering the Institute of Sindhology, Kotri Barrage, and the Sehwan Sharif shrine.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
-							},
-							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
-								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
-							},
-							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
-								image: '/images/skardu 2.jpg',
-								days: '7 Days',
+								days: '1 Day',
 								destinations: '3 Destinations'
+							},
+							{
+								title: 'The Great Wall Expedition',
+								description: 'An adventurous weekend focusing on a full day hike at Ranikot Fort (Miri Kot & Shergarh) followed by a peaceful evening at Manchar Lake.',
+								image: '/images/Hunza.jpg',
+								days: '2 Days',
+								destinations: '4 Destinations'
+							},
+							{
+								title: 'Indus Valley Heritage Trail',
+								description: 'A comprehensive tour linking Jamshoro\'s ancient sites (Amri & Ranikot) with the ruins of Mohenjo Daro and the historical charms of Sukkur.',
+								image: '/images/skardu 2.jpg',
+								days: '4 Days',
+								destinations: '6 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const JamshoroPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Jamshoro District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Jamshoro is uniquely defined by its status as an "Academic Hub," hosting three of the province\'s most prestigious institutions: the University of Sindh, Mehran University of Engineering and Technology, and Liaquat University of Medical and Health Sciences. This concentrated presence of over 60,000 students from across Pakistan creates a vibrant, cosmopolitan atmosphere amidst a traditionally rural landscape. The city\'s identity is deeply tied to Allama I.I. Kazi, the visionary scholar whose philosophy shaped the university town as a center for intellectual and social reform.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'Economically, the district is a powerhouse for the province, housing the Nooriabad and Kotri Industrial Estates. It is also a critical energy corridor, featuring major power plants and the Lakhra Coal Mines. Despite this industrial growth, Jamshoro remains a haven for natural beauty, with the Kirthar National Park partially extending into its western boundaries. This range provides a stark, mountainous backdrop to the riverine plains, offering sanctuary to rare wildlife like the Sindh Ibex and Urial.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'The cultural essence of Jamshoro is most vibrantly felt during the annual Urs of Lal Shahbaz Qalandar, when the town of Sehwan transforms into a sea of red clad devotees. The sounds of the Naghara (drums) and the scent of rosewater fill the air, creating a transcendental experience that unites people of all faiths. Whether you are navigating the ancient ramparts of Ranikot or sharing a meal of Palla fish with locals by the Indus, Jamshoro provides a raw, authentic connection to the enduring spirit of Sindh.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const JamshoroPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Jamshoro District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
