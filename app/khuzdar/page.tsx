@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft } from 'lucide-react';
 
-const GhizerPage = () => {
+const KhuzdarPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -307,12 +307,12 @@ const GhizerPage = () => {
 													)}
 													{selectedRegion === 'balochistan' && (
 														<div className="space-y-1">
-															<Link href="/chaghi" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Chaghi District</Link>
-															<Link href="/gwadar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Gwadar District</Link>
-															<Link href="/kalat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Kalat District</Link>
-															<Link href="/khuzdar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Khuzdar District</Link>
-															<Link href="/quetta" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Quetta District</Link>
-															<Link href="/ziarat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Ziarat District</Link>
+															<a href="/#chaghi" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Chaghi District</a>
+															<a href="/#gwadar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Gwadar District</a>
+															<a href="/#kalat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Kalat District</a>
+															<a href="/#khuzdar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Khuzdar District</a>
+															<a href="/#quetta" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Quetta District</a>
+															<a href="/#ziarat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Ziarat District</a>
 														</div>
 													)}
 												</div>
@@ -487,7 +487,7 @@ const GhizerPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								Ghizer District
+								The Crown Jewel of Pakistan
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const GhizerPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Where Three Ranges Meet
+								Hunza District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Explore the stunning confluence of the Hindu Kush, Karakoram, and Hindu Raj, famed for trout fishing and high-altitude polo.
+							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Ghizer Valley Tours
+							Explore Hunza Tours
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const GhizerPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Kaleidoscope Of Cultures
+								Places To Visit In Hunza Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Ghizer District, often called the "Fruit Basket of Gilgit-Baltistan," is a spectacular region where the Hindu Kush, Karakoram, and Hindu Raj mountain ranges meet. It is a cluster of valleys, snow-capped peaks, high mountain passes, and unreal blue-green lakes that truly reflect heaven on Earth. Ghizer serves as a crucial link between the Gilgit region and the Chitral District via the historic Shandur Pass. This area is filled with stunning water bodies like the Khalti and Phander Lakes and boasts a rich, diverse culture due to its unique geographical location.
+								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -598,7 +598,7 @@ const GhizerPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== THINGS TO DO IN GHIZER ====================== */}
+			{/* ====================== THINGS TO DO IN ASTORE DIAMER ====================== */}
 			<section 
 				data-section-id="things-to-do"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('things-to-do') ? 'revealed' : ''}`}
@@ -606,7 +606,7 @@ const GhizerPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Ghizer District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
 						</h2>
 					</div>
 					
@@ -615,23 +615,28 @@ const GhizerPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Shandur Pass & Polo Ground',
-								description: 'The numerous lakes and rivers in Ghizer, particularly the Ghizer River (a tributary of the Gilgit River), have an abundant natural supply of trout fish. Whether you love angling or simply seek a cathartic experience, spending time fishing in the peaceful silence of Hundarap or Langar Valley while the mountain water flows nearby is unforgettable.'
+								title: 'Baltit & Altit Forts',
+								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Phander Valley & Lake',
-								description: 'Ghizer is often referred to as the "Land of Hospitality" due to the warm and welcoming nature of its diverse communities, who speak languages like Khowar, Shina, and Burushaski. The region is rich in history, with archaeological sites, ancient forts (like Gupis Fort), and rock inscriptions scattered throughout the Punial and Yasin valleys, whispering tales of ancient civilizations.'
+								title: 'Attabad Lake',
+								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Yasin Valley & Darkot',
-								description: 'Beyond tourism, Ghizer is a farmer\'s goldmine, known for its fruit orchards (Punial Valley is the "Fruit Basket") and the trade of mineral deposits like niobium, tantalum, and tin tungsten, making it a place of both natural and economic significance.'
+								title: 'Passu Cones Viewpoint',
+								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khalti Lake (Gupis Valley)',
-								description: 'A stunning, accessible lake famous for its deep blue water in summer and for hosting an Ice Hockey Festival when it freezes over in winter'
+								title: 'Khunjerab Pass (China Border)',
+								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Duiker/Eagles Nest',
+								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -701,22 +706,29 @@ const GhizerPage = () => {
 						</h2>
 					</div>
 					
-					{/* 2 Cards with Static Content and CTA Buttons */}
-					<div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto px-4 md:px-8">
+					{/* 3 Cards with Static Content and CTA Buttons */}
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Pakistan Alpine Tour',
-								description: 'A comprehensive journey combining the highlights of Ghizer (Phander, Shandur) with other major alpine regions of Gilgit Baltistan.',
+								title: 'Karakoram Highway Explorer',
+								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
 								image: '/images/gilgit.jpg',
-								days: '9 Days',
+								days: '8 Days',
 								destinations: '5 Destinations'
 							},
 							{
-								title: 'Ghizer & Kalash Valley Tour',
-								description: 'A cultural and natural bridge trip linking Ghizer\'s unique valleys with the ancient, distinct culture of the Kalash people via Shandur.',
+								title: 'Hunza, Skardu & Deosai Grand Tour',
+								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
 								image: '/images/Hunza.jpg',
+								days: '10 Days',
+								destinations: '6 Destinations'
+							},
+							{
+								title: 'Hunza & Naltar Valley Combo',
+								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								image: '/images/skardu 2.jpg',
 								days: '7 Days',
-								destinations: '2 Destinations'
+								destinations: '3 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -750,7 +762,7 @@ const GhizerPage = () => {
 											<span className="font-semibold">{card.days}</span>
 											<span className="font-semibold">{card.destinations}</span>
 										</div>
-										<h3 className="text-2xl font-bold text-white mb-3">
+										<h3 className="text-lg font-bold text-white mb-3">
 											{card.title}
 										</h3>
 										<p className="text-white/90 text-sm mb-5 leading-relaxed">
@@ -771,77 +783,64 @@ const GhizerPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== DESTINATIONS ====================== */}
+			{/* ====================== MORE ABOUT HUNZA DISTRICT ====================== */}
 			<section 
-				data-section-id="destinations"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('destinations') ? 'revealed' : ''}`}
+				data-section-id="more-about"
+				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							Must Experience When in Ghizer District
+							More About Hunza District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								title: 'Shandur Pass & Polo Ground',
-								description: 'Visit the "Roof of the World," the highest polo ground globally, famous for the annual traditional polo festival between the Gilgit and Chitral teams.',
+								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Phander Valley & Lake',
-								description: 'Known as one of the most beautiful spots in Ghizer, this valley offers a tranquil deep-blue lake, ideal for trout fishing, camping, and photography.',
+								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								title: 'Yasin Valley & Darkot',
-								description: 'Explore this historically significant valley, famous for its scenic beauty, ancient rock carvings, and the starting point for challenging trekking routes.',
+								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
 							},
 							{
-								title: 'Khalti Lake (Gupis Valley)',
-								description: 'A stunning, accessible lake famous for its deep blue water in summer and for hosting an Ice Hockey Festival when it freezes over in winter.',
+								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
 								image: '/images/Swat.jpg',
 								imageLeft: false
-							},
-							{
-								title: 'Ishkoman Valley',
-								description: 'Known as the "Hub of Glaciers," this valley offers challenging high-altitude treks, glaciers, and picturesque camping sites for serious mountaineers.',
-								image: '/images/gilgit.jpg',
-								imageLeft: true
 							}
-						].map((destination, idx) => (
+						].map((item, idx) => (
 							<div 
 								key={idx} 
 								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
 								style={{
-									opacity: visibleSections.has('destinations') ? 1 : 0,
+									opacity: visibleSections.has('more-about') ? 1 : 0,
 									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
 								}}
 							>
-								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
-											src={destination.image}
-											alt={destination.title}
+											src={item.image}
+											alt="Hunza District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
 									</div>
 								</div>
 								
-								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
-										<h3 className={`text-xl md:text-2xl font-bold mb-3 ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
-											{destination.title}
-										</h3>
-										<p className={`leading-normal ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											{destination.description}
+										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
 										</p>
 									</div>
 								</div>
@@ -850,31 +849,6 @@ const GhizerPage = () => {
 					</div>
 				</div>
 			</section>
-
-			{/* ====================== MORE ABOUT GHIZER ====================== */}
-			{/* <section 
-				data-section-id="more-about"
-				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
-							More About Ghizer District
-						</h2>
-						<div className="space-y-6">
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The numerous lakes and rivers in Ghizer, particularly the Ghizer River (a tributary of the Gilgit River), have an abundant natural supply of trout fish. Whether you love angling or simply seek a cathartic experience, spending time fishing in the peaceful silence of Hundarap or Langar Valley while the mountain water flows nearby is unforgettable.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Ghizer is often referred to as the "Land of Hospitality" due to the warm and welcoming nature of its diverse communities, who speak languages like Khowar, Shina, and Burushaski. The region is rich in history, with archaeological sites, ancient forts (like Gupis Fort), and rock inscriptions scattered throughout the Punial and Yasin valleys, whispering tales of ancient civilizations.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Beyond tourism, Ghizer is a farmer's goldmine, known for its fruit orchards (Punial Valley is the "Fruit Basket") and the trade of mineral deposits like niobium, tantalum, and tin tungsten, making it a place of both natural and economic significance.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section> */}
 
 			{/* ====================== FAQ SECTION ====================== */}
 			<section 
@@ -891,16 +865,16 @@ const GhizerPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: 'Where is Ghizer District located?',
-								answer: 'Ghizer District is located in Gilgit-Baltistan, Pakistan, where the Hindu Kush, Karakoram, and Hindu Raj mountain ranges meet. It serves as a crucial link between the Gilgit region and Chitral District via the historic Shandur Pass.'
+								question: 'Where is Hunza District located?',
+								answer: 'Astore and Diamer are districts in Gilgit-Baltistan, Pakistan, known for their stunning mountain landscapes.'
 							},
 							{
 								question: 'What is the best time to visit?',
-								answer: 'Summer months (May to September) are ideal for visiting, with pleasant weather and accessible routes. The Shandur Polo Festival typically takes place in July, making it a popular time to visit.'
+								answer: 'Summer months (May to September) are ideal for visiting, with pleasant weather and accessible routes.'
 							},
 							{
-								question: 'What activities are popular in Ghizer?',
-								answer: 'Ghizer is famous for trout fishing in its numerous lakes and rivers, high-altitude polo at Shandur Pass, trekking in valleys like Yasin and Ishkoman, and experiencing the rich cultural diversity of the region.'
+								question: 'Is it safe to travel?',
+								answer: 'Yes, the region is generally safe for tourists with proper planning and guidance.'
 							},
 						].map((faq, idx) => (
 							<div 
@@ -1110,5 +1084,5 @@ const GhizerPage = () => {
 	);
 };
 
-export default GhizerPage;
+export default KhuzdarPage;
 
