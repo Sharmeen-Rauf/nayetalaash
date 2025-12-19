@@ -487,7 +487,7 @@ const KhuzdarPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Emerald Oasis of the Desert
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const KhuzdarPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Khuzdar District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Escape the ordinary and venture into a land of hidden ravines, sacred springs, and ancient ruins. Experience the raw, unfiltered beauty of Balochistan's heartland.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Find Your Oasis
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const KhuzdarPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Khuzdar Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Khuzdar District, often hailed as the "Gateway to Balochistan," is a land of dramatic contrasts where barren, sun scorched mountains hide lush, emerald oases. Historically known as the capital of the Jhalawan Kingdom and a vital province under Arab rule, Khuzdar is the third largest city in the province. It serves as a strategic crossroads between Sindh, Iran, and the northern highlands, making it a melting pot of culture, trade, and history. For the modern traveler, Khuzdar is the ultimate destination for "Hidden Gem" seekers. It is home to Moola Chotok, an ethereal ravine that looks like a slice of paradise dropped into a desert. With its cascading waterfalls, deep blue freshwater pools, and ancient archaeological sites dating back over 2,000 years, Khuzdar offers a raw, adrenaline fueled adventure that challenges the stereotypical image of Balochistan as a dry wasteland.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const KhuzdarPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Khuzdar District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const KhuzdarPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Moola Chotok:',
+								description: 'Witness the "Hidden Paradise" of Balochistan. This stunning ravine features turquoise waterfalls and natural pools tucked between towering cliffs a refreshing miracle in the heart of the desert.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Pir Chattal Noorani:',
+								description: 'Visit the sacred shrine of Pir Chattal, famous for its legendary fish. The local belief is that the fish are protected and cannot be eaten; they live in crystal clear springs.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Charoo Machi Waterfall:',
+								description: 'Discover this remote, off road oasis. Similar to Moola Chotok but even more secluded, it offers a pristine camping experience and multi tiered waterfalls perfect for swimming.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Lahoot Lamakan:',
+								description: 'Explore a spiritual and mysterious cave located in the Wadh tehsil. It is a site of great mystical significance and a place of pilgrimage, accessible only through a challenging trek through the mountains.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Sohar Damb (Nal):',
+								description: 'Walk through history at this ancient archaeological site (Red Mound). It reveals the remnants of a 2,000 year old civilization, showcasing the district\'s deep roots in the prehistoric era.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'BUETK Architecture:',
+								description: 'Visit the Balochistan University of Engineering and Technology, a modern landmark that signifies Khuzdar\'s growth as the educational hub of the province.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const KhuzdarPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'The Chotok Sprint',
+								description: 'An intensive weekend trip from Karachi or Quetta focusing exclusively on Moola Chotok, including a 4x4 desert safari and overnight camping.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '2 Days',
+								destinations: '2 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								title: 'Oasis & Spirituality',
+								description: 'A comprehensive tour covering Khuzdar city, Moola Chotok, and the sacred springs of Pir Chattal, with stops at local mountain viewpoints.',
 								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
+								days: '3 Days',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'The Jhalawan Expedition',
+								description: 'A deep territory adventure covering the remote Charoo Machi waterfalls, the archaeological ruins of Nal, and the spiritual trek to Lahoot Lamakan.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '5 Days',
+								destinations: '7 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const KhuzdarPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Khuzdar District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Khuzdar is a district that defies expectations. While the terrain is rugged and the summers can be intense, the district is blessed with perennial rivers like the Moola River, which creates the lush valleys and fruit orchards (apples, apricots, and mangoes) that dot the landscape. The population is primarily Brahui speaking, and the local culture is built on the pillars of tribal honor and legendary hospitality.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The district is also a mineral powerhouse, sitting on vast deposits of Barite, Chromite, and Onyx. Historically, it was a centerpiece of the Silk Road\'s southern branch, referred to in ancient texts as Tooran. Today, it remains a vital stop on the RCD Highway (N 25), connecting Pakistan with Iran and Turkey.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'A visit to Khuzdar is not complete without experiencing its culinary traditions. The Balochi Sajji here is prepared in its most authentic form slow roasted meat with nothing but salt while the Kaak (Stone Bread) is a nomadic delicacy that every traveler must try. Whether you are stargazing in the Moola Valley or exploring the ancient ruins of Sohar Damb, Khuzdar offers a profound sense of connection to both nature and the ancient past.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 

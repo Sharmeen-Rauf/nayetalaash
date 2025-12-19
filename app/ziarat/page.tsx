@@ -487,7 +487,7 @@ const ZiaratPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Emerald Crown of the Highlands
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const ZiaratPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Ziarat District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Breathe the purest air in Pakistan in the world's second largest Juniper forest. Experience the cool mountain breeze, lush orchards, and the historic charm of Ziarat.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Book Your Escape
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const ZiaratPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Ziarat Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Ziarat District, often called the "Sanatorium of the Frontier," is a breathtaking high altitude valley famous for being one of the oldest and most beautiful hill stations in Pakistan. Nestled at an elevation of about 2,450 meters (8,000 feet), Ziarat is home to one of the world's oldest and largest Juniper Forests, with some trees estimated to be over 5,000 years old. The district is a cool, emerald green escape from the scorching heat of the surrounding plains, offering a landscape of rugged limestone cliffs and lush orchards. For every Pakistani, Ziarat holds a profound historical significance as the place where the founder of the nation, Quaid-e-Azam Muhammad Ali Jinnah, spent his final days. The district is a sensory delight, especially in autumn when the fragrance of ripening apples and cherries fills the air. Whether you are seeking a peaceful retreat in the "Living Fossils" of the juniper woods or an adventurous trek to the highest peaks of the Khalifat Hills, Ziarat is a sanctuary of tranquility and national pride.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const ZiaratPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Ziarat District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const ZiaratPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Quaid-e-Azam Residency:',
+								description: 'Visit this iconic wooden monument built in 1892. Surrounded by lush gardens, this heritage site preserves the personal belongings and the peaceful atmosphere where the Quaid-e-Azam found solace in his last month.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'UNESCO Juniper Forest:',
+								description: 'Explore one of the oldest living forests on Earth. Declared a UNESCO Biosphere Reserve, these "living fossils" grow only one inch per year, creating a mystical, gnarled landscape that is unique to this region.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Prospect Point:',
+								description: 'Trek or drive 6 km from the town to reach this panoramic viewpoint. At 2,713 meters, it offers a stunning birds eye view of the entire Ziarat valley and the towering 11,400 foot Khilafat Peak.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Sandeman Tangi:',
+								description: 'Experience the dramatic waterfalls and deep gorges. This natural formation features a cascading stream between high cliffs and is one of the most popular picnic spots in the district.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Chashma Walk:',
+								description: 'Take a peaceful stroll along the "Spring Walk." This mile long trail leads to a natural spring that provides water to the town and offers a serene path through the pine scented mountains.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Ziarat Apple & Cherry Orchards:',
+								description: 'Indulge in the "Fruit Basket" experience. In June, the district is famous for its black and red cherries, while autumn brings the harvest of the world famous Ziarat apples.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const ZiaratPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Heritage & Nature Sprint',
+								description: 'A quick getaway from Quetta covering the Quaid-e-Azam Residency, Prospect Point, the main Juniper woods, and Sandeman Tangi.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '1 Day',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								title: 'The Juniper Retreat',
+								description: 'A more relaxed stay including an overnight at a mountain hut, visits to the Fern Tangi, Chutair Valley, and sunrise photography at Prospect Point.',
 								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
+								days: '3 Days',
+								destinations: '7 Destinations'
 							},
 							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'Khalifat Peak Expedition',
+								description: 'A specialized trekking and nature tour including a summit attempt of Khalifat Peak and exploring the remote Zizri forest and nomadic settlements.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '5 Days',
+								destinations: '10 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const ZiaratPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Ziarat District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Ziarat is a district of Biological and Historical Wonders. Its name, which means "Holy Place," is derived from the shrine of the saint Kharwari Baba, whose blessings are said to have made the valley so lush. The district\'s climate is unique; it is one of the few places in Balochistan that receives heavy winter snow, transforming the gnarled juniper trees into a scene from a fairy tale. The air here is remarkably pure, enriched by the oxygen rich juniper ecosystem, making it a natural sanatorium.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The cultural fabric of Ziarat is woven with the traditions of the Pashtun tribes, mainly the Sarangzai and Panizai. Their hospitality is legendary, often expressed through a cup of hot green tea or a shared plate of Sajji. The district is also famous for its Wild Lavender (Shinshoab), which covers the hillsides in a purple hue during the twilight hours, adding a mystical fragrance to the mountain breeze.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'Economically, Ziarat is the backbone of Balochistan\'s fruit industry. The apples grown here, particularly the Kulu and Black varieties, are prized for their crispness and flavor. For the adventurer, the rugged terrain offers endless possibilities for rock climbing and high altitude trekking. Whether you are a history student reflecting at the Residency or a botanist marveling at trees that saw the dawn of human civilization, Ziarat provides a perspective on time and peace that is truly humbling.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 

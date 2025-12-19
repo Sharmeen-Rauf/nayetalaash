@@ -487,7 +487,7 @@ const QuettaPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Fruit Garden of the North
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const QuettaPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Quetta District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							From the turquoise waters of Hanna Lake to the legendary flavors of Namak Mandi, experience the heart of the frontier where every mountain tells a story.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore the Highland
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const QuettaPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Quetta Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Quetta, historically known as "Little London" for its colonial era beauty, is the high altitude capital of Balochistan. Situated at an average elevation of 1,680 meters, the city is cradled by a spectacular ring of mountains Chiltan, Takatu, and Zarghun. As the "Fruit Garden of Pakistan," Quetta is the primary gateway to the rugged highlands, offering a refreshing blend of crisp mountain air, vibrant tribal bazaars, and legendary hospitality. A tour of Quetta is a journey through a resilient city that rose from the ashes of the 1935 earthquake to become a cultural melting pot. Here, Pashtun, Baloch, and Hazara traditions converge in the aromatic food streets and colorful markets. From the turquoise tranquility of Hanna Lake to the endangered Markhors of Hazarganji Chiltan National Park, Quetta is a destination that rewards those who look beyond the surface to find the "Hidden Gems" of the frontier.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const QuettaPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Quetta District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const QuettaPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Hanna Lake:',
+								description: 'Visit the turquoise jewel of the valley. Surrounded by stark brown hills, this British era reservoir is perfect for boating, lakeside picnics, and catching a glimpse of the golden hour reflection of the mountains.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Hazarganji Chiltan National Park:',
+								description: 'Explore the "Land of a Thousand Treasures." This park is a sanctuary for the rare Chiltan Wild Goat (Markhor) and offers rugged trekking trails through ancient juniper and pistachio forests.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Archaeological Museum:',
+								description: 'Dive into history at the Balochistan Provincial Museum. It houses a world class collection of pottery, tools, and jewelry from the 9,000 year old Mehrgarh civilization, along with royal Omani artifacts.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Liaquat & Kandahari Bazaars:',
+								description: 'Immerse yourself in the vibrant trade hubs. These markets are famous for authentic Balochi mirror work, Pashtun embroidery, high quality dry fruits, and traditional Peshawari/Pahwal sandals.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Jabal-e-Noor-ul-Quran:',
+								description: 'Visit this unique mountain of holy manuscripts. It features hundreds of thousands of old, respectful copies of the Quran preserved in deep, naturally cool tunnels carved into the hillside.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Urak Valley:',
+								description: 'Drive through the "Valley of Orchards." Just 22km from the city, this lush green oasis produces the finest apples, apricots, and peaches, ending at a breathtaking natural waterfall.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const QuettaPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Quetta City Highlights',
+								description: 'A cultural immersion covering Hanna Lake, Quetta Museum, the bazaars, and a traditional Sajji dinner at Namak Mandi.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '1 Day',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								title: 'The Highland Retreat',
+								description: 'Includes the city highlights plus a full day trip to Ziarat, featuring the Quaid-e-Azam Residency and the ancient Juniper Forest.',
 								image: '/images/Hunza.jpg',
-								days: '10 Days',
+								days: '2 Days',
 								destinations: '6 Destinations'
 							},
 							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'Northern Balochistan Loop',
+								description: 'A comprehensive expedition covering Quetta, Ziarat, Pishin Valley, and a scenic drive through the historic Bolan Pass.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '4 Days',
+								destinations: '9 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const QuettaPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Quetta District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Quetta is a district defined by its High Altitude Resilience. Following the devastating earthquake of 1935, the city was meticulously rebuilt, giving it a unique character where colonial military architecture (like the Staff College) meets modern tribal urbanism. The climate is a major draw; while the rest of Pakistan swelters in summer, Quetta remains pleasantly cool, and in winter, it transforms into a Winter Wonderland, often draped in a thick blanket of snow.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The culinary landscape of Quetta is arguably the best in the province. The local Sajji (salted lamb roasted over an open fire) and Roash (slow cooked mutton in its own juices) have gained fame across the country. In the winter months, you can find Landhi a traditional sun dried meat delicacy that has been a staple of the nomadic tribes for centuries. The city is also the best place to stock up on premium dry fruits, saffron, and Afghan carpets.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'Beyond the city limits, the district is a gateway to extreme biodiversity. The Chiltan Hill Viewpoint offers a panoramic view of the entire valley, while the nearby Spin Karez demonstrates the ancient underground irrigation system that has kept this arid region fertile for generations. Whether you are drinking Sulemani tea at a roadside "dhaba" or exploring the halls of the Geological Museum, Quetta offers a sense of being at the true frontier of the world.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 

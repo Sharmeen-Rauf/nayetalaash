@@ -487,7 +487,7 @@ const KalatPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Royal Soul of the Highlands
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const KalatPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Kalat District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Journey into the historic capital of the Khans. From the high peaks of Harboi to the mysterious caves of Pandran, experience the majesty of the Brahui heartland.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore the Khanate
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const KalatPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Kalat Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Kalat District, once the powerhouse of the Khanate of Kalat, is the historic and spiritual heart of the Brahui speaking people. Perched at an elevation of over 2,000 meters (approx. 6,600 feet), it is one of the highest and coldest districts in Pakistan. Known for its "royal" lineage and rugged mountain beauty, Kalat offers a glimpse into a princely past where the Khans of Kalat ruled over a vast confederacy that stretched across much of modern day Balochistan. A tour of Kalat is an invitation to explore the "Cold Desert" highlands. From the ruins of the ancient Miri Fort to the high altitude Harboi Juniper Forest, the district is a blend of historical depth and natural preservation. It is a land of legends, from the mysterious Cave of Skulls in Pandran to the centuries old Kali Mata Temple, making it a bucket list destination for history buffs, trekkers, and those seeking the authentic tribal soul of Balochistan.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const KalatPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Kalat District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const KalatPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Miri Fort (Kalat Fort):',
+								description: 'Visit the historic seat of the Khan of Kalat. Though weathered by time and the 1935 earthquake, these massive mud and stone ruins still overlook the city, representing centuries of Brahui power.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Harboi Hills & Forest:',
+								description: 'Explore one of the largest Juniper forests in the world. Reaching heights of 9,000 feet, these hills offer a cool sanctuary with ancient trees that have survived for millennia.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Pandran Cave of Skulls:',
+								description: 'Discover a haunting archaeological site. Local folklore and historical accounts suggest these caves hold the remains of ancient warriors or martyrs, wrapped in mystery and legend.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Kali Mata Temple:',
+								description: 'Witness religious harmony at this pre Islamic Hindu temple. Located at the base of the fort, it remains a site of pilgrimage and a testament to the district\'s diverse cultural history.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Shahi Jamia Masjid:',
+								description: 'Visit the grand royal mosque located near the Khan\'s Palace. Its architecture reflects the traditional Balochi Persian influence and serves as a central hub for the local community.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Orchards of Kalat:',
+								description: 'Taste the freshest apples and apricots. Kalat is famous for its high quality deciduous fruits, which thrive in the district\'s cold, dry climate and are a staple of the local economy.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const KalatPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Royal Capital Walk',
+								description: 'A focused tour of Kalat city including the Miri Fort, Kali Temple, and the local handicraft bazaar.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
+								days: '1 Day',
+								destinations: '3 Destinations'
+							},
+							{
+								title: 'Brahui Highland Retreat',
+								description: 'Includes the city tour plus a trek into the Harboi Hills for a nature focused stay in the cold mountain air.',
+								image: '/images/Hunza.jpg',
+								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
-								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
-							},
-							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'The Heritage Expedition',
+								description: 'A deep dive covering the Pandran Caves, royal palaces, and nomadic settlements to experience the true Brahui lifestyle.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '4 Days',
+								destinations: '8 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const KalatPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Kalat District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Kalat is a district defined by its Princely Heritage. For centuries, it was the center of a sovereign state the Khanate of Kalat which unified the Baloch and Brahui tribes. The city of Kalat still carries the weight of this history you can feel it in the traditional Brahui embroidery found in the markets, characterized by its intricate, geometric needlework that is distinct from the floral patterns of Sindh or Punjab.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The climate here is a defining feature. Often called a "Cold Desert," Kalat experiences some of the lowest temperatures in the country, with snow covered peaks during the winter. This unique environment has fostered a resilient nomadic culture. The local cuisine is built for these conditions, featuring the famous Sajji (salted roast meat), Qurut (hardened dried yogurt), and Kaak (stonebaked bread) which is legendary for its durability and taste.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'Economically and culturally, Kalat remains a vital link between Quetta and the southern coast. The district hosts the Jashn-e-Kalat festival every October, a vibrant display of tribal sports, cattle shows, and folk music. Whether you are exploring the volcanic colored mountains or drinking tea with local elders who still recount the tales of the Khans, Kalat offers a sense of nobility and solitude that is rarely found elsewhere in the region.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
