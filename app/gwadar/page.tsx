@@ -487,7 +487,7 @@ const GwadarPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Golden Gate of Pakistan
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const GwadarPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Gwadar District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Witness the breathtaking sunsets of Jiwani, the architectural majesty of the world's most scenic stadium, and the turquoise waters of Astola Island.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore the Makran Coast
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const GwadarPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Gwadar Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Gwadar, the "Jewel of the Arabian Sea," is where the rugged golden mountains of Balochistan meet the deep turquoise waters of the coast. Once a quiet fishing village under Omani rule, Gwadar is now transforming into a world class port city and the crown jewel of the China Pakistan Economic Corridor (CPEC). For travelers, it offers a surreal, "lunar" landscape of dramatic rock formations, pristine beaches, and some of the most spectacular sunsets in South Asia. The district is a paradise for adventurers and photographers. From the hammerhead shaped peninsula to the mysterious mud volcanoes and the remote, crystal clear waters of Astola Island, Gwadar provides an experience that feels like stepping onto another planet. Whether you are driving along the breathtaking Makran Coastal Highway or exploring the Omani influenced bazaars of the Old Town, Gwadar is a destination where modern ambition meets ancient natural beauty.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const GwadarPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Gwadar District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const GwadarPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Koh-e-Batil & Hammerhead:',
+								description: 'Climb the 700+ steps to the top of this hammerhead shaped plateau. It offers the most iconic panoramic view of the entire Gwadar city on one side and the vast Arabian Sea on the other.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Gwadar Cricket Stadium:',
+								description: 'Visit what is often called the "Most Beautiful Stadium in the World." Tucked between towering jagged mountains, this stadium has become a global viral sensation for its stunning backdrop.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Astola Island (Jezira Haft Talar):',
+								description: 'Take a boat to Pakistan\'s first Marine Protected Area. Known as the "Island of the Seven Hills," it features turquoise waters, coral reefs, and is a prime spot for scuba diving and camping.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Jiwani Sunset Point:',
+								description: 'Travel to the edge of Pakistan near the Iran border. Jiwani is famous for its legendary sunsets; it even features a historic hut built for Queen Victoria to witness the sun dipping into the sea.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Marine Drive:',
+								description: 'Take a leisurely evening drive or walk along this stunning coastal boulevard. Lined with modern lights and the roaring sea, it is the heartbeat of Gwadar\'s nighttime social life.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Princess of Hope & The Sphinx:',
+								description: 'Marvel at these natural rock sculptures in Hingol (en route to Gwadar). Shaped by centuries of wind and rain, these formations resemble a regal woman and the Great Sphinx of Giza.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const GwadarPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Coastal Highway Sprint',
+								description: 'A fast paced trip from Karachi to Gwadar, including stops at Kund Malir, Princess of Hope, and Gwadar\'s Marine Drive.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '2 Days',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								title: 'The Deep Sea Experience',
+								description: 'Includes a full day at Gwadar Port and Koh-e-Batil, plus a boat excursion to the nearby golden beaches or mini ports.',
 								image: '/images/Hunza.jpg',
-								days: '10 Days',
+								days: '3 Days',
 								destinations: '6 Destinations'
 							},
 							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'The Ultimate Makran Trail',
+								description: 'A comprehensive expedition covering Ormara Beach, Pasni, Gwadar City, the Jiwani border, and a full day trip to Astola Island.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '5 Days',
+								destinations: '9 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const GwadarPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Gwadar District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Gwadar is a place of deep historical and cultural layers. For over 170 years, it was an overseas possession of the Sultanate of Oman, a legacy that is still visible today. You can see it in the Omani style architecture of the Old Town, the traditional Kummah caps worn by locals, and the famous Gwadar Halwa, a nutty, gelatinous treat that is a must buy for every visitor. The population is a unique blend of Baloch and Arab heritage, known for their exceptional hospitality and maritime skills.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The geography of Gwadar is dominated by its "Hammerhead" peninsula, a geological wonder created by ancient mud volcano activity. The district\'s coastline is one of the cleanest in the world, with beaches like Paddi Zirr and Demi Zirr offering calm waters for fishing and boating. For nature lovers, the region is a sanctuary for rare wildlife; the nearby Hingol National Park is home to Ibex, Leopards, and the endangered Marsh Crocodiles, while the sea is frequently visited by Dolphins and Green Sea Turtles.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'Economically, Gwadar is the future of Pakistan. The Deep Sea Port, with its massive cranes and strategic position near the Strait of Hormuz, is a symbol of the city\'s rising importance. However, despite the multi billion dollar developments, the soul of the district remains in its Fisherman\'s Wharves. Watching the colorful wooden Dhows bring in the day\'s catch of lobster, prawns, and kingfish is a reminder that while Gwadar is building the future, it has not forgotten its sea faring roots.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
