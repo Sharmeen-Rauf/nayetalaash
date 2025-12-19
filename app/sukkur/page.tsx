@@ -487,7 +487,7 @@ const SukkurPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Gateway to the Indus
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const SukkurPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Sukkur District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Experience the engineering marvel of the Sukkur Barrage and the spiritual serenity of Sadh Belo a journey into the historic heart of Upper Sindh.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore Sukkur City
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const SukkurPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Sukkur Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Sukkur District, often called the "Gateway to Sindh," is a historic city that straddles the mighty Indus River. It is a land of dramatic landscapes, where limestone hills meet the flowing blue waters of the Indus. Sukkur is world renowned for its breathtaking colonial era engineering, ancient Sufi legends, and its unique status as a bridge between the diverse cultures of Upper and Lower Sindh. The city is a visual marvel, dominated by the towering Lansdowne Bridge and the majestic Sukkur Barrage. Whether you are taking a boat to the island temple of Sadh Belo or watching the sunset from the hilltop of Satyan-jo-Astaan, Sukkur offers a blend of architectural grandeur and spiritual mystery that has fascinated travelers for centuries.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const SukkurPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Sukkur District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const SukkurPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Lansdowne & Ayub Bridges:',
+								description: 'Marvel at these two iconic bridges. The Victorian era Lansdowne Bridge and the arched Ayub Bridge are the symbols of Sukkur, offering the best views of the Indus River at sunset.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Sukkur Barrage:',
+								description: 'Visit the largest irrigation network in the world. This British era engineering masterpiece has 66 gates and controls the water flow for nearly all of Sindh\'s agriculture.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Sadh Belo Temple:',
+								description: 'Take a boat to this stunning island temple. Dedicated to Baba Bankhandi Maharaj, it is one of the most significant Hindu pilgrimage sites in Pakistan, famous for its white marble and intricate carvings.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Satyan-jo- Astaan:',
+								description: 'Explore the "Place of Seven Sisters." Perched on a hill overlooking the river, this 17th century site features beautiful blue tiled tombs and is shrouded in local legends of purity and sacrifice.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Masoom Shah Jo Minaro:',
+								description: 'Climb the tilting 84 foot tower built in 1607. It offers a 360 degree panoramic view of the old city and the Indus, known for its distinct lean and historical significance.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Aror Ruins:',
+								description: 'Discover the ancient capital of Sindh. Located just outside the city, these ruins mark the site where Mohammad Bin Qasim defeated Raja Dahir, changing the course of history in the subcontinent.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const SukkurPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Sukkur Riverfront Tour',
+								description: 'A focused day trip covering the Barrage, both Bridges, Masoom Shah Minaret, and a sunset boat ride.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '1 Day',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								title: 'The Indus Heritage Trail',
+								description: 'Includes a trip to Sadh Belo, the ancient ruins of Aror, and the nearby royal Kot Diji Fort in Khairpur.',
 								image: '/images/Hunza.jpg',
-								days: '10 Days',
+								days: '3 Days',
 								destinations: '6 Destinations'
 							},
 							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'Upper Sindh Grand Loop',
+								description: 'A comprehensive journey connecting Sukkur with the archaeological wonders of Mohenjo Daro and the havelis of Shikarpur.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '5 Days',
+								destinations: '8 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const SukkurPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Sukkur District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Sukkur\'s history is inextricably linked to the Indus River. Long before the modern city was established, the nearby site of Aror served as the capital of the Brahmin dynasty. The city\'s strategic location on the river made it a vital trade hub for the Silk Road. This legacy of trade and transit is still visible today in the city\'s bustling dry fruit markets, where the district\'s famous Dates (Khajoor) are processed and exported worldwide.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The cultural fabric of Sukkur is a beautiful blend of faiths and traditions. The presence of Sadh Belo in the middle of the river and the numerous Sufi shrines along its banks signify a history of religious coexistence. For nature enthusiasts, the river near Sukkur is one of the few places on earth where you can spot the rare Indus River Blind Dolphin (Bhulan), an endangered species that has survived in these waters for millions of years.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'Dining in Sukkur is an experience in itself, centered around the legendary Palla Fish (Indus Shad), often prepared with traditional Sindhi spices. After a meal, locals and tourists alike flock to the riverfront or the Military Road for tea and snacks. Whether you are navigating the narrow, historic streets of the old town or marveling at the scale of the British era barrage, Sukkur remains a vibrant testament to Sindh\'s enduring spirit and hospitality.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const SukkurPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Sukkur District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
