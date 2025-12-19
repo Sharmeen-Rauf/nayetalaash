@@ -487,7 +487,7 @@ const TharparkarPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Desert of Colors and Peace
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const TharparkarPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Tharparkar District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							From the mystical echoes of the Karoonjhar Mountains to the golden gates of Naukot, discover the land where peacocks dance and hospitality knows no bounds.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore Tharparkar
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const TharparkarPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Tharparkar Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								Tharparkar District, often called the "Land of the Desert" or the "Land of Peace," is a mesmerizing world of rolling sand dunes, granite mountains, and an unparalleled spirit of communal harmony. Located in the southeastern corner of Sindh bordering India, Tharparkar is one of the few places on earth where Hindus and Muslims have lived in absolute peace for centuries. It is a land where peacocks roam freely in the streets, and the arrival of the monsoon transforms the golden desert into a lush, emerald green paradise known as the "Eden of Sindh." A tour of Tharparkar is a journey into a living museum of Sindhi folklore and ancient heritage. From the strategic gateway of Naukot Fort to the spiritual silence of the Jain Temples in Nagar Parkar, every corner of the district tells a story of resilience and beauty. Whether you are witnessing the sunset from the heights of Gadi Bhit in Mithi or exploring the mythical Karoonjhar Mountains, Tharparkar offers a raw, authentic experience that captures the heart of every traveler.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const TharparkarPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Tharparkar District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const TharparkarPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Karoonjhar Mountains:',
+								description: 'Explore the granite peaks of Nagar Parkar. These ancient hills are rich in minerals and folklore, featuring perennial springs and 20+ seasonal streams that come alive during the monsoon.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Gori & Jain Temples:',
+								description: 'Marvel at the 14th century marble architecture. The Gori Temple is a masterpiece of Jain heritage, featuring 52 steeples and frescoes that are among the oldest in the region.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Marvi\'s Well (Bhalwa):',
+								description: 'Visit the site of the legendary Umar Marvi folklore. This well is a symbol of patriotism and chastity, commemorating the village girl who refused a king\'s palace to return to her desert home.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Naukot Fort:',
+								description: 'Known as the "Gateway to the Thar Desert," this 1814 Talpur era fortress features massive arched gateways and tapering walls built to consolidate power over the desert routes.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Gadi Bhit (Mithi):',
+								description: 'Climb to the highest point in Mithi. This sand hill viewpoint offers a breathtaking panoramic view of the city, especially at night when the town lights shimmer like candles in the desert.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Bhodesar Mosque & Dam',
+								description: 'Visit the beautiful white marble mosque built in 1505 by Sultan Mahmud Begada, nestled at the base of the Karoonjhar hills next to a serene reservoir.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const TharparkarPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Thar Gateway Tour',
+								description: 'A quick trip covering the Naukot Fort, the city of Mithi (Gadi Bhit), and the local handicraft markets.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
+								days: '1 Day',
+								destinations: '3 Destinations'
+							},
+							{
+								title: 'Mountain & Mystic Trail',
+								description: 'An overnight journey from Mithi to Nagar Parkar, focusing on the Karoonjhar Mountains, Marvi\'s Well, and the Jain Temples.',
+								image: '/images/Hunza.jpg',
+								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
-								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
-							},
-							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'Deep Desert Expedition',
+								description: 'A comprehensive tour including desert camping, wildlife spotting (Chinkara gazelles), and visits to the Thar Coal project and Islamkot.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '4 Days',
+								destinations: '8 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const TharparkarPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Tharparkar District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Tharparkar is a district defined by its unique socio cultural fabric. The headquarters, Mithi, is a global model of interfaith harmony it is a city where Muslims refrain from slaughtering cows out of respect for their Hindu neighbors, and Hindus join Muslims in breaking their fast during Ramadan. This culture of "living and letting live" is reflected in the local architecture traditional circular mud houses with thatched roofs called Chouras, designed to stay cool in the scorching desert heat.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'The natural beauty of the district is at its peak during the Monsoon (July to September). When the rains arrive, the parched dunes are covered in grass, and the Karoonjhar Mountains "bleed" water through dozens of waterfalls. This is the best time to see the district\'s national bird, the Peacock, in its full glory. The district also hosts the Chinkara Wildlife Sanctuary, where the graceful Indian Gazelle can be spotted leaping across the sand dunes, a sight that has inspired centuries of Thari poetry and music.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'In recent years, Tharparkar has become a focal point of Pakistan\'s energy future due to the massive Thar Coal project. While modern infrastructure and CPEC funded roads have made the desert more accessible, the heart of Thar remains in its traditional crafts. The district is famous for its Ralli (patchwork quilts), intricate mirror work embroidery, and heavy silver jewelry. Whether you are listening to a local musician play the Kamaycha under a starlit desert sky or exploring the ruins of a 2,000 year old civilization, Tharparkar is a place where time seems to stand still.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const TharparkarPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Tharparkar District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
