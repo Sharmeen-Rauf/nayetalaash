@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft } from 'lucide-react';
 
-const UpperDirPage = () => {
+const KarachiThattaPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
@@ -487,7 +487,7 @@ const UpperDirPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Wild Heart of the North
+								The Crown Jewel of Pakistan
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const UpperDirPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Upper Dir District
+								Hunza District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Experience the raw beauty of Katora Lake and the ancient wooden heritage of Thal your ultimate alpine adventure starts in Upper Dir.
+							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Kumrat
+							Explore Hunza Tours
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const UpperDirPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Upper Dir Tour
+								Places To Visit In Hunza Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								Upper Dir is a land of untouched wilderness and hidden alpine wonders, famously known as the gateway to the breathtaking Kumrat Valley. Nestled in the Hindu Kush range, this district offers a raw, signal free escape for those looking to disconnect from the world. It is a region characterized by its dense cedar forests, crystal clear Panjkora River, and towering snow capped peaks. Beyond the popular Kumrat Forest, Upper Dir is home to high altitude meadows like Jahaz Banda and the legendary Katora Lake. Whether you are trekking through the mystical fog of the Kohistan region or crossing the scenic Lowari Pass, Upper Dir provides an authentic, rugged adventure that feels like stepping into a masterpiece of nature.
+								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const UpperDirPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Upper Dir District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,28 @@ const UpperDirPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Kumrat Forest & Waterfall:',
-								description: 'Walk through a massive natural forest of towering deodar trees. The valley features the stunning Kumrat Waterfall and the tranquil Panjkora River, perfect for camping and trout fishing.'
+								title: 'Baltit & Altit Forts',
+								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Katora Lake:',
-								description: 'Reach the "Bowl Shaped" glacial lake at 11,500 ft. Its turquoise waters, surrounded by permanent snow patches and jagged cliffs, make it one of the most beautiful lakes in Pakistan.'
+								title: 'Attabad Lake',
+								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Jahaz Banda Meadows:',
-								description: 'Experience life above the clouds in this expansive alpine meadow. It serves as the base camp for Katora Lake and offers a "Million Stars" camping experience under clear night skies.'
+								title: 'Passu Cones Viewpoint',
+								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Lowari Pass & Tunnel:',
-								description: 'Traverse the historic mountain pass or use the 8.5 km Lowari Tunnel, a monumental engineering feat that connects Upper Dir to Chitral, cutting through the heart of the mountains.'
+								title: 'Khunjerab Pass (China Border)',
+								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Thal Ancient Wooden Mosque',
-								description: 'Visit the 19th century Takht-e-Masjid in Thal village. Built entirely from massive cedar logs and intricately carved by hand, it is a stunning example of local Gandhara influenced architecture.'
+								title: 'Duiker/Eagles Nest',
+								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +710,25 @@ const UpperDirPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Kumrat Forest Escape',
-								description: 'A quick, refreshing trip focusing on the main Kumrat Valley, the Waterfall, and the Black Spring (Kala Chashma).',
+								title: 'Karakoram Highway Explorer',
+								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
 								image: '/images/gilgit.jpg',
-								days: '3 Days',
-								destinations: '2 Destinations'
+								days: '8 Days',
+								destinations: '5 Destinations'
 							},
 							{
-								title: 'Jahaz Banda & Katora Lake Trek',
-								description: 'An adventurous trekking package including jeep safaris to Taki Top and camping at the high altitude Jahaz Banda meadows.',
+								title: 'Hunza, Skardu & Deosai Grand Tour',
+								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
 								image: '/images/Hunza.jpg',
-								days: '5 Days',
-								destinations: '4 Destinations'
+								days: '10 Days',
+								destinations: '6 Destinations'
 							},
 							{
-								title: 'The Grand Dir Chitral Traverse',
-								description: 'A cross district journey starting in Kumrat, crossing into Chitral via the Lowari Tunnel for a complete cultural and mountain experience.',
+								title: 'Hunza & Naltar Valley Combo',
+								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
 								image: '/images/skardu 2.jpg',
 								days: '7 Days',
-								destinations: '5 Destinations'
+								destinations: '3 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,26 +791,31 @@ const UpperDirPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Upper Dir District
+							More About Hunza District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Upper Dir has a rich political and tribal history; it was a princely state ruled by the Nawabs of Dir until it was merged with Pakistan in 1969. The district is primarily inhabited by the Yousafzai Pashtuns and Kohistani tribes, known for their fierce independence, hospitality, and deep rooted tribal codes.',
+								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The Panjkora River is the lifeblood of the district, originating from the glaciers of the Hindu Kush and flowing through narrow, deep valleys. The district is a significant agricultural hub, producing high quality walnuts, persimmons, and potatoes, while its mountains are rich in minerals like copper and quartz.',
+								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'For the adventurous traveler, the Badgoi Pass offers a thrilling off road link between Upper Dir and the Kalam Valley in Swat. The district\'s name, derived from the Persian word Dair (meaning \'far off\'), perfectly captures its remote and mystical essence. From the ancient wooden architecture of its mosques to the signal free silence of its forests, Upper Dir is a sanctuary for the soul.',
+								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
+							},
+							{
+								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
+								image: '/images/Swat.jpg',
+								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -825,7 +830,7 @@ const UpperDirPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Upper Dir District"
+											alt="Hunza District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
@@ -1079,5 +1084,5 @@ const UpperDirPage = () => {
 	);
 };
 
-export default UpperDirPage;
+export default KarachiThattaPage;
 
