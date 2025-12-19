@@ -487,7 +487,7 @@ const KarachiThattaPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								Where the Sea Meets History
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const KarachiThattaPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Karachi & Thatta District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Witness the grandeur of the Makli Necropolis and the electric energy of the City of Lights. Your journey through 2,000 years of civilization begins here.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Explore Coastal Heritage
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const KarachiThattaPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Karachi Thatta Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								The Karachi Thatta Heritage Circuit represents the ultimate journey from Pakistan's modern, high energy metropolis to the silent, majestic ruins of its ancient capitals. This route connects Karachi, the "City of Lights" and the country's economic engine, with Thatta, the medieval seat of power for the Samma, Arghun, and Tarkhan dynasties. Spanning from the shores of the Arabian Sea to the banks of the Indus Delta, this district tour offers a profound contrast between urban skyscrapers and UNESCO World Heritage monuments. Traveling along the National Highway, you transition from the bustling markets and colonial architecture of Karachi to the intricate stone carvings of Chaukhandi and the blue tiled grandeur of Thatta. This region is a treasure trove for history buffs, nature lovers, and foodies alike, offering everything from serene freshwater lakes like Keenjhar to the patriotic silence of the Mazar-e-Quaid. It is the gateway to Lower Sindh, where the salt air of the coast meets the mystical aura of ancient saints.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const KarachiThattaPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Karachi Thatta District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const KarachiThattaPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Mazar-e-Quaid (Karachi):',
+								description: 'Visit the iconic white marble mausoleum of Pakistan\'s founder, Muhammad Ali Jinnah. Set in a vast park, it is a symbol of national pride and an architectural marvel of modern Islamic design.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Makli Necropolis (Thatta):',
+								description: 'Explore one of the largest funerary sites in the world. This UNESCO site features nearly a million tombs with breathtaking stone carvings that narrate the 400 year history of Sindhi royalty.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Shah Jahan Mosque:',
+								description: 'Admire the 93 domes of this 17th century masterpiece. Built by the Mughal Emperor as a gift to the people of Thatta, it is famous for its unique acoustics and stunning blue tile work.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Keenjhar Lake (Thatta):',
+								description: 'Relax at the second largest freshwater lake in Pakistan. Enjoy a boat ride to the shrine of Noori Jam Tamachi, located in the middle of the lake, and experience the legendary folklore of Sindh.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Banbhore Ruins:',
+								description: 'Walk through the ancient port city where Mohammad Bin Qasim arrived in 711 AD. This archaeological site is believed to be the Gateway of Islam in the subcontinent and offers a glimpse into early Arab architecture.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Clifton Beach & Port Grand:',
+								description: 'Experience Karachi\'s coastal charm. Ride a camel on the sands of Sea View and end your evening at Port Grand, a vibrant food and entertainment hub built on a historic colonial bridge.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const KarachiThattaPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'UNESCO Heritage Sprint',
+								description: 'An intensive day trip from Karachi to Thatta, covering Chaukhandi Tombs, Banbhore, Makli, and the Shah Jahan Mosque.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
-								destinations: '5 Destinations'
+								days: '1 Day',
+								destinations: '4 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
+								title: 'Coastal & City Blend',
+								description: 'Explore Karachi\'s landmarks (Mohatta Palace, Mazar-e-Quaid) on day one, followed by a lakeside retreat at Keenjhar and Thatta\'s ruins on day two.',
 								image: '/images/Hunza.jpg',
-								days: '10 Days',
+								days: '2 Days',
 								destinations: '6 Destinations'
 							},
 							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'The Lower Sindh Circuit',
+								description: 'A comprehensive tour including the wildlife of Haleji Lake, the historical depths of Thatta, and a deep dive into Karachi\'s colonial and modern quarters.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '3 Days',
+								destinations: '8 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const KarachiThattaPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Karachi Thatta District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'The Karachi Thatta region is a unique blend of Pakistan\'s economic future and its medieval past. Karachi, as the "Gateway to Pakistan," is a melting pot of ethnicities, where the British colonial era structures of Saddar stand alongside modern glass towers. This city never sleeps, offering a lifestyle that ranges from the upscale cafes of DHA to the historic, spice filled alleys of Empress Market. It is a city of resilience and diversity, serving as the cultural heart for artists, entrepreneurs, and dreamers from across the country.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'Moving eastward into the Thatta district, the pace of life slows down as you enter a landscape defined by the Indus River Delta. Thatta was once a center of Islamic learning and international trade, attracting scholars from across Asia. The craftsmanship found in the Makli Hills is unparalleled, with yellow sandstone carvings so intricate they resemble fine lace. This area is not just about the dead; it is a living history of the Samma and Tarkhan dynasties, where every archway and tile tells a story of a time when this was one of the wealthiest cities in the world.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'The natural beauty of the district is centered around its vast wetlands, which serve as a vital sanctuary for migratory birds from Siberia. Haleji Lake, once the main water reservoir for Karachi, is now a paradise for birdwatchers, while Keenjhar Lake provides a refreshing escape for city dwellers seeking cooler winds and freshwater swimming. Whether you are enjoying a traditional Sindhi Palla fish dinner by the lakeside or watching the sunset over the Arabian Sea at Manora, the Karachi Thatta circuit offers a complete sensory journey through the heart of Lower Sindh.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const KarachiThattaPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Karachi Thatta District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
