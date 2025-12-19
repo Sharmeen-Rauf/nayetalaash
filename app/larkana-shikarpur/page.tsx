@@ -487,7 +487,7 @@ const LarkanaShikarpurPage = () => {
 					<div className="text-center px-4">
 						<h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-white">
 							<span className="font-autography hero-text-reveal" style={{ display: 'inline-block' }}>
-								The Crown Jewel of Pakistan
+								The Cradle of Civilization
 							</span>
 							<br />
 							<span className="block mt-4 hero-text-reveal hero-text-delay-1" 
@@ -495,18 +495,18 @@ const LarkanaShikarpurPage = () => {
 									  color: primaryOrange, 
 									  display: 'inline-block'
 								  }}>
-								Hunza District
+								Larkana & Shikarpur District
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Step back in time to explore the world's first planned city and savor the timeless flavors of Shikarpur's legendary heritage.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Hunza Tours
+							Discover the Indus Civilization
 						</button>
 					</div>
 				</div>
@@ -519,10 +519,10 @@ const LarkanaShikarpurPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Places To Visit In Hunza Tour
+								Places To Visit In Larkana Shikarpur Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Hunza District is often referred to as "Heaven on Earth," renowned globally for its spectacular mountain scenery, ancient cultural heritage, and the exceptional longevity of its people. Set against the backdrop of massive peaks like Rakaposhi, Ultar Sar, and Passu Cones, the valley is a dramatic landscape of terraced fields and turquoise rivers. Hunza is a historical treasure, featuring the iconic Baltit and Altit Forts, the stunning Attabad Lake, and the high-altitude route to the Khunjerab Pass (China border). It truly offers a perfect mix of cultural immersion and high-mountain adventure.
+								The Larkana Shikarpur Heritage Corridor is the gateway to the very dawn of human history. Larkana, known as the "Eden of Sindh" for its lush guava orchards, serves as the home to Mohenjo Daro, one of the most significant UNESCO World Heritage sites globally. This district is not just a graveyard of an ancient civilization it is a living landscape of political history and spiritual resilience. Adjacent to it lies Shikarpur, once celebrated as the "Paris of Sindh" due to its strategic importance as a financial hub and its stunning architecture. Shikarpur was once the "Central Bank of Asia," where bills of exchange could be cashed as far as Russia. Together, these districts offer a journey from the sophisticated urban planning of 2500 BC to the regal, teak wood havelis of the 18th century.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -606,7 +606,7 @@ const LarkanaShikarpurPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: secondaryBlack }}>
-							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Hunza District</span>
+							Must Experience When in <span style={{ borderBottom: `2px solid ${primaryOrange}`, display: 'inline-block', paddingBottom: '2px' }}>Larkana Shikarpur District</span>
 						</h2>
 					</div>
 					
@@ -615,28 +615,33 @@ const LarkanaShikarpurPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Baltit & Altit Forts',
-								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
+								title: 'Mohenjo Daro Ruins:',
+								description: 'Explore the Cradle of Civilization. Walk through the meticulously planned streets, the Great Bath, and the Buddhist Stupa of this 5,000 year old Bronze Age metropolis.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Attabad Lake',
-								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
+								title: 'Garhi Khuda Bakhsh:',
+								description: 'Visit the monumental Bhutto Family Mausoleum. Known for its striking white domes and intricate Sindhi tile work, it is a site of immense political and historical pilgrimage.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Passu Cones Viewpoint',
-								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
+								title: 'Dhak Bazaar (Shikarpur):',
+								description: 'Walk through the famous covered market. Built with a unique teak wood ceiling to keep the interior cool, it remains a bustling center for traditional crafts and trade.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Khunjerab Pass (China Border)',
-								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
+								title: 'Shikarpuri Achar & Sweets:',
+								description: 'Taste the world famous Shikarpuri Pickles. From mixed oil pickles to specialized murabbas, this culinary tradition is an essential souvenir for every visitor.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Duiker/Eagles Nest',
-								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
+								title: 'Tomb of Shah Baharo:',
+								description: 'Admire the 18th century Kalhora architecture. This tomb features a large dome and exquisite interior paintings, representing the peak of medieval Sindhi artistic expression.'
+							},
+							{
+								image: '/images/gilgit.jpg',
+								title: 'Shahi Bagh (Larkana):',
+								description: 'Relax in the Royal Gardens. Known for its exotic flora and a historic wooden pavilion, it offers a peaceful retreat that reflects the city\'s colonial and Mughal influences.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -710,25 +715,25 @@ const LarkanaShikarpurPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4 md:px-8">
 						{[
 							{
-								title: 'Karakoram Highway Explorer',
-								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
+								title: 'Ancient Wonders Tour',
+								description: 'A deep dive into Mohenjo Daro and its museum, followed by a visit to the Shah Baharo Tomb in Larkana city.',
 								image: '/images/gilgit.jpg',
-								days: '8 Days',
+								days: '1 Day',
+								destinations: '3 Destinations'
+							},
+							{
+								title: 'Heritage & Flavors',
+								description: 'Explore the ruins on day one, and spend day two in Shikarpur visiting the Dhak Bazaar and the historic Clock Tower while sampling local kulfi.',
+								image: '/images/Hunza.jpg',
+								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
-								title: 'Hunza, Skardu & Deosai Grand Tour',
-								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
-								image: '/images/Hunza.jpg',
-								days: '10 Days',
-								destinations: '6 Destinations'
-							},
-							{
-								title: 'Hunza & Naltar Valley Combo',
-								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
+								title: 'Upper Sindh Grand Trail',
+								description: 'A comprehensive tour linking Larkana\'s archaeology with the royal palaces of Khairpur and the shrines of Sukkur.',
 								image: '/images/skardu 2.jpg',
-								days: '7 Days',
-								destinations: '3 Destinations'
+								days: '4 Days',
+								destinations: '8 Destinations'
 							}
 						].map((card, idx) => (
 							<div 
@@ -791,31 +796,26 @@ const LarkanaShikarpurPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-8">
 						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-							More About Hunza District
+							More About Larkana Shikarpur District
 						</h2>
 					</div>
 					
 					<div className="space-y-8">
 						{[
 							{
-								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
+								description: 'Larkana is a district that carries the weight of millennia. The ruins of Mohenjo Daro reveal a society that had mastered drainage, standardized weights, and peaceful urban living long before the rise of the Roman Empire. The onsite museum houses the famous "Dancing Girl" and "Priest King" replicas, offering a cerebral journey into our collective human past. Beyond archaeology, Larkana is the agricultural heart of Sindh, famous for its Guava (Amrood) orchards that scent the air during harvest season.',
 								image: '/images/gilgit.jpg',
 								imageLeft: true
 							},
 							{
-								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
+								description: 'Shikarpur, on the other hand, tells a story of medieval globalization. Founded in the 17th century, it was a walled city with eight majestic gates (such as Lakhi Dar and Hathi Dar). Its merchants were the financiers of the Silk Road, and their wealth is still visible in the decaying but beautiful Havelis featuring intricate wood carvings and wrought iron balconies. While the city has lost some of its "Parisian" luster, the Dhak Bazaar remains an atmospheric time capsule where the scent of spices and the sound of craftsmen remind you of its glorious trading past.',
 								image: '/images/Hunza.jpg',
 								imageLeft: false
 							},
 							{
-								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
+								description: 'The cultural fabric here is deeply hospitable. Whether you are navigating the narrow alleys of Shikarpur to find the perfect Shikarpuri Kulfi or visiting the modern Shahnawaz Bhutto Public Library, you will find a population that is proud of its history. This region is a land of contrasts—where the silent mounds of the "Mound of the Dead" stand just a short drive away from the vibrant, bustling street life of modern day Sindh.',
 								image: '/images/skardu 2.jpg',
 								imageLeft: true
-							},
-							{
-								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
-								imageLeft: false
 							}
 						].map((item, idx) => (
 							<div 
@@ -830,7 +830,7 @@ const LarkanaShikarpurPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Larkana Shikarpur District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
