@@ -538,10 +538,10 @@ const GhizerPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider-1-ghizer.jpg',
+										'/images/slide 2-ghizer.jpg',
+										'/images/slide 3-ghizer.jpg',
+										'/images/slide 4-ghizer.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const GhizerPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Shandur Pass & Polo Ground.jpg',
 								title: 'Shandur Pass & Polo Ground',
 								description: 'Visit the "Roof of the World," the highest polo ground globally, famous for the annual traditional polo festival between the Gilgit and Chitral teams.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Phander Valley & Lake.jpg',
 								title: 'Phander Valley & Lake',
 								description: 'Known as one of the most beautiful spots in Ghizer, this valley offers a tranquil deep-blue lake, ideal for trout fishing, camping, and photography.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Yasin Valley & Darkot.jpg',
 								title: 'Yasin Valley & Darkot',
 								description: 'Explore this historically significant valley, famous for its scenic beauty, ancient rock carvings, and the starting point for challenging trekking routes.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Khalti Lake (Gupis Valley).jpg',
 								title: 'Khalti Lake (Gupis Valley)',
 								description: 'A stunning, accessible lake famous for its deep blue water in summer and for hosting an Ice Hockey Festival when it freezes over in winter.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Ishkoman Valley.jpg',
 								title: 'Ishkoman Valley',
 								description: 'Known as the "Hub of Glaciers," this valley offers challenging high-altitude treks, glaciers, and picturesque camping sites for serious mountaineers.'
 							},
