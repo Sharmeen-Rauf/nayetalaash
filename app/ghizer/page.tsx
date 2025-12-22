@@ -792,17 +792,17 @@ const GhizerPage = () => {
 						{[
 							{
 								description: 'The numerous lakes and rivers in Ghizer, particularly the Ghizer River (a tributary of the Gilgit River), have an abundant natural supply of trout fish. Whether you love angling or simply seek a cathartic experience, spending time fishing in the peaceful silence of Hundarap or Langar Valley while the mountain water flows nearby is unforgettable.',
-								image: '/images/gilgit.jpg',
+								image: '/images/ghizer 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'Ghizer is often referred to as the "Land of Hospitality" due to the warm and welcoming nature of its diverse communities, who speak languages like Khowar, Shina, and Burushaski. The region is rich in history, with archaeological sites, ancient forts (like Gupis Fort), and rock inscriptions scattered throughout the Punial and Yasin valleys, whispering tales of ancient civilizations.',
-								image: '/images/Hunza.jpg',
+								image: '/images/ghizer 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Beyond tourism, Ghizer is a farmer\'s goldmine, known for its fruit orchards (Punial Valley is the "Fruit Basket") and the trade of mineral deposits like niobium, tantalum, and tin tungsten, making it a place of both natural and economic significance.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/ghizer 3.jpeg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
