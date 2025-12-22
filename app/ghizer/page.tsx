@@ -519,7 +519,7 @@ const GhizerPage = () => {
 						{/* Left Side - Text Content */}
 						<div className="order-2 lg:order-1">
 							<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
-								Kaleidoscope Of Cultures
+								Places To Visit In Ghizer Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
 								The Ghizer District, often called the "Fruit Basket of Gilgit-Baltistan," is a spectacular region where the Hindu Kush, Karakoram, and Hindu Raj mountain ranges meet. It is a cluster of valleys, snow-capped peaks, high mountain passes, and unreal blue-green lakes that truly reflect heaven on Earth. Ghizer serves as a crucial link between the Gilgit region and the Chitral District via the historic Shandur Pass. This area is filled with stunning water bodies like the Khalti and Phander Lakes and boasts a rich, diverse culture due to its unique geographical location.
