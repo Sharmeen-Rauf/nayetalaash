@@ -712,14 +712,14 @@ const GhizerPage = () => {
 							{
 								title: 'Pakistan Alpine Tour',
 								description: 'A comprehensive journey combining the highlights of Ghizer (Phander, Shandur) with other major alpine regions of Gilgit Baltistan.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1-ghizer.jpg',
 								days: '9 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'Ghizer & Kalash Valley Tour',
 								description: 'A cultural and natural bridge trip linking Ghizer\'s unique valleys with the ancient, distinct culture of the Kalash people via Shandur.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2-ghizer.jpg',
 								days: '7 Days',
 								destinations: '2 Destinations'
 							}
