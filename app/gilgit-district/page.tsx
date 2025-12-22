@@ -619,22 +619,22 @@ const GilgitDistrictPage = () => {
 								description: 'Visit this beautiful pine forest valley, famous for its seven colored lakes (Bashkiri and Blue Lake) and the thrilling Naltar Ski Resort, offering excellent skiing opportunities in winter'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Kargah Buddha.jpg',
 								title: 'Kargah Buddha',
 								description: 'Witness history firsthand! This intricately carved 8th-century statue of Buddha etched into a mountain face in the Kargah Valley, just 10 km from Gilgit city'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Bagrote Valley Trekking.jpg',
 								title: 'Bagrote Valley Trekking',
 								description: 'An experience for peak and trekking enthusiasts, Bagrote offers beautiful hikes amidst majestic mountains and is known for its pure, organic produce'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Danyore Suspension Bridge.JPG',
 								title: 'Danyore Suspension Bridge',
 								description: 'Cross the unique, century-old Suspension Bridge leading to the KKH Tunnels. This engineering marvel connects Gilgit to the famous KKH route towards Hunza'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Cherry Blossom Season.jpg',
 								title: 'Cherry Blossom Season',
 								description: 'Plan your trip around March or April to witness the Gilgit valley explode in the breathtaking white and pink bloom of the cherry blossom (Sakura) season'
 							},
