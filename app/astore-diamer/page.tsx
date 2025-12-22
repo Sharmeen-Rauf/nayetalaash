@@ -809,7 +809,7 @@ const AstoreDiamerPage = () => {
 							},
 							{
 								description: 'Astore also attracts bird watchers from all over the world, as it is home to over 124 migratory and resident hunter birds, including the golden eagle and griffon vulture. Don\'t forget to capture the beauty of these animals with the mountains serving as a backdrop in Deosai National Park.',
-								image: '/images/Astore Diamer District 3.jpg',
+								image: '/images/Astore-Diamer District-againimage.jpg',
 								imageLeft: true
 							},
 							{
