@@ -800,19 +800,19 @@ const GilgitDistrictPage = () => {
 							{
 								title: 'Naltar Valley & Lakes',
 								description: 'Gilgit District is strategically located, acting as a crossroads between Chilas and Karimabad, nestled right off the Karakoram Highway (KKH). Its location has cemented its role as a junction of civilizations and religions. Historically, the valley was a significant part of the ancient Silk Route.',
-								image: '/images/gilgit.jpg',
+								image: '/images/gilgit district 1.jpg',
 								imageLeft: true
 							},
 							{
 								title: 'Kargah Buddha',
 								description: 'The Silk Route brought not only the trade of goods but also a deeply enriching blend of cultures, ideas, and skills. Centuries ago, the region was immersed in Buddhism, and travelers can still see evidence of its religious influences today, most notably at the Kargah Buddha site.',
-								image: '/images/Hunza.jpg',
+								image: '/images/gilgit district 2.jpg',
 								imageLeft: false
 							},
 							{
 								title: 'Danyore Suspension Bridge',
 								description: 'For peak lovers, Bagrote Valley offers challenging treks and is known for its views of Diran Peak. Other beautiful valleys attracting tourists include the scenic Oshikhandass village walk, the stunning Kutwal Lake in Haramosh Valley, and the towns of Jaglot and Nomal.',
-								image: '/images/Swat.jpg',
+								image: '/images/gilgit district 3.jpg',
 								imageLeft: true
 							}
 						].map((destination, idx) => (
