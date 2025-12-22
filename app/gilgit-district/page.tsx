@@ -712,21 +712,21 @@ const GilgitDistrictPage = () => {
 							{
 								title: 'Dream Journeys of North',
 								description: 'A curated trip focusing on Gilgit\'s highlights (Naltar, Kargah) and a journey towards the Hunza Valley.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1.jpg',
 								days: '7 Days',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Experience Karakoram Highway',
 								description: 'An extended tour focusing on the entire KKH, with Gilgit as the main historical and logistical hub.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2(1).jpg',
 								days: '10 Days',
 								destinations: '6 Destinations'
 							},
 							{
 								title: 'Gilgit & Nanga Parbat Encounter',
 								description: 'A diverse package that includes Gilgit\'s main attractions and a journey to the Nanga Parbat viewpoint via the Diamer side.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3.jpg',
 								days: '8 Days',
 								destinations: '5 Destinations'
 							}
