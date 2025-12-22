@@ -857,29 +857,66 @@ const GhizerPage = () => {
 			</section>
 
 			{/* ====================== MORE ABOUT GHIZER ====================== */}
-			{/* <section 
+			<section 
 				data-section-id="more-about"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h2 className="text-2xl md:text-3xl font-bold mb-6 text-center" style={{ color: secondaryBlack }}>
+					<div className="text-center mb-6">
+						<h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							More About Ghizer District
 						</h2>
-						<div className="space-y-6">
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								The numerous lakes and rivers in Ghizer, particularly the Ghizer River (a tributary of the Gilgit River), have an abundant natural supply of trout fish. Whether you love angling or simply seek a cathartic experience, spending time fishing in the peaceful silence of Hundarap or Langar Valley while the mountain water flows nearby is unforgettable.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Ghizer is often referred to as the "Land of Hospitality" due to the warm and welcoming nature of its diverse communities, who speak languages like Khowar, Shina, and Burushaski. The region is rich in history, with archaeological sites, ancient forts (like Gupis Fort), and rock inscriptions scattered throughout the Punial and Yasin valleys, whispering tales of ancient civilizations.
-							</p>
-							<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.6' }}>
-								Beyond tourism, Ghizer is a farmer's goldmine, known for its fruit orchards (Punial Valley is the "Fruit Basket") and the trade of mineral deposits like niobium, tantalum, and tin tungsten, making it a place of both natural and economic significance.
-							</p>
-						</div>
+					</div>
+					
+					<div className="space-y-8">
+						{[
+							{
+								description: 'The numerous lakes and rivers in Ghizer, particularly the Ghizer River (a tributary of the Gilgit River), have an abundant natural supply of trout fish. Whether you love angling or simply seek a cathartic experience, spending time fishing in the peaceful silence of Hundarap or Langar Valley while the mountain water flows nearby is unforgettable.',
+								image: '/images/gilgit.jpg',
+								imageLeft: true
+							},
+							{
+								description: 'Ghizer is often referred to as the "Land of Hospitality" due to the warm and welcoming nature of its diverse communities, who speak languages like Khowar, Shina, and Burushaski. The region is rich in history, with archaeological sites, ancient forts (like Gupis Fort), and rock inscriptions scattered throughout the Punial and Yasin valleys, whispering tales of ancient civilizations.',
+								image: '/images/Hunza.jpg',
+								imageLeft: false
+							},
+							{
+								description: 'Beyond tourism, Ghizer is a farmer\'s goldmine, known for its fruit orchards (Punial Valley is the "Fruit Basket") and the trade of mineral deposits like niobium, tantalum, and tin tungsten, making it a place of both natural and economic significance.',
+								image: '/images/skardu 2.jpg',
+								imageLeft: true
+							}
+						].map((item, idx) => (
+							<div 
+								key={idx} 
+								className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
+								style={{
+									opacity: visibleSections.has('more-about') ? 1 : 0,
+									transition: `opacity 0.8s ease-out ${idx * 0.15}s`
+								}}
+							>
+								<div className={`${item.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
+										<Image 
+											src={item.image}
+											alt="Ghizer District"
+											fill
+											className="object-cover transition-transform duration-700 hover:scale-110"
+										/>
+									</div>
+								</div>
+								
+								<div className={`${item.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+									<div className="max-w-[80%] mx-auto">
+										<p className={`leading-normal ${item.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+											{item.description}
+										</p>
+									</div>
+								</div>
+							</div>
+						))}
 					</div>
 				</div>
-			</section> */}
+			</section>
 
 			{/* ====================== FAQ SECTION ====================== */}
 			<section 
