@@ -800,7 +800,7 @@ const GilgitDistrictPage = () => {
 							{
 								title: 'Naltar Valley & Lakes',
 								description: 'Gilgit District is strategically located, acting as a crossroads between Chilas and Karimabad, nestled right off the Karakoram Highway (KKH). Its location has cemented its role as a junction of civilizations and religions. Historically, the valley was a significant part of the ancient Silk Route.',
-								image: '/images/gilgit district 1.jpg',
+								image: '/images/Naltar Valley & Lakes.jpg',
 								imageLeft: true
 							},
 							{
