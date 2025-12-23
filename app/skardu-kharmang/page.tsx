@@ -538,10 +538,10 @@ const SkarduKharmangPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 skardu-kharmang.jpg',
+										'/images/slider 2 skardu-kharmang.jpg',
+										'/images/slider 3 skardu-kharmang.jpg',
+										'/images/slider 4 skardu-kharmang.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const SkarduKharmangPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Shangri-La Resort & Kachura Lake.jpeg',
 								title: 'Shangri-La Resort & Kachura Lake',
 								description: 'Visit the famous "Heaven on Earth," featuring the heart-shaped Lower Kachura Lake. Enjoy boating, fishing, and photography at this iconic, tranquil spot.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Kharpocho Fort 1.jpg',
 								title: 'Kharpocho Fort',
 								description: 'Trek up to the "King of Forts," an imposing 16th century fortress built by Ali Sher Khan Anchan, offering breathtaking panoramic views of Skardu city and the confluence of the Indus and Shigar Rivers.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Deosai National Park 1.jpg',
 								title: 'Deosai National Park',
 								description: 'Embark on a jeep safari to the "Land of Giants," the world\'s second highest plateau, famous for its golden marmots, rich flora, and the rare Himalayan Brown Bear.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Katpana Cold Desert.png',
 								title: 'Katpana Cold Desert',
 								description: 'Witness the surreal sight of glacial sand dunes at high altitude, perfect for jeep safaris, paragliding, and camping under a starry, light-pollution free sky.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Manthoka Waterfall (Kharmang).png',
 								title: 'Manthoka Waterfall (Kharmang)',
 								description: 'Discover this enchanting cascade in the Kharmang District, surrounded by lush green pastures, tree houses, and offering a peaceful retreat and trout fish farming.'
 							},
