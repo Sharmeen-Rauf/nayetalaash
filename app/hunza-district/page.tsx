@@ -538,10 +538,10 @@ const HunzaDistrictPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 hunza.jpg',
+										'/images/slider 2 hunza.jpg',
+										'/images/slider 3 hunza.jpg',
+										'/images/slider 4 hunza.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
