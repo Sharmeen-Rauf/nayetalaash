@@ -614,27 +614,27 @@ const HunzaDistrictPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Baltit & Altit Forts-hunzadistrict.jpg',
 								title: 'Baltit & Altit Forts',
 								description: 'Explore these two iconic, centuries-old royal forts that stand proudly over Karimabad, offering deep insights into the region\'s history and royal lineage.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Attabad Lake hunza.jpg',
 								title: 'Attabad Lake',
 								description: 'Marvel at the mesmerizing, deep turquoise-blue waters of this massive lake, perfect for boating, jet skiing, and photography against the dramatic mountain cliffs.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Passu Cones Viewpoint.jpg',
 								title: 'Passu Cones Viewpoint',
 								description: 'Witness the breathtaking, jagged "Cathedral Peaks" of Passu, best viewed from the KKH near the suspension bridges or from the Hussaini Bridge.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Khunjerab Pass (China Border).jpg',
 								title: 'Khunjerab Pass (China Border)',
 								description: 'Journey along the high-altitude Karakoram Highway to the world\'s highest paved international border crossing at over 15,397 feet.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Duiker-Eagles Nest.jpg',
 								title: 'Duiker/Eagles Nest',
 								description: 'Visit this famous high-altitude viewpoint near Karimabad for the most spectacular sunrise and sunset views over seven peaks, including Rakaposhi and Diran.'
 							},
