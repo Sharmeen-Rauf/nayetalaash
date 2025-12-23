@@ -799,22 +799,22 @@ const HunzaDistrictPage = () => {
 						{[
 							{
 								description: 'Hunza\'s unique location, nestled among the world\'s highest mountains, has contributed to its unique culture and isolation. The valley is known for its terraced fields of apricot and cherry orchards, which transform the landscape with white and pink blossoms in the spring (March/April) and golden hues in the autumn (October).',
-								image: '/images/gilgit.jpg',
+								image: '/images/hunza 1-districtone.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The locals, primarily Ismaili Muslims, are famed for their hospitality, high literacy rate, and longevity, often attributed to their healthy diet rich in local dried fruits and spring water. The languages spoken are largely Burushaski (Central Hunza) and Wakhi (Upper Hunza).',
-								image: '/images/Hunza.jpg',
+								image: '/images/hunza 2-districttwo.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'The district is a paradise for trekkers and mountaineers, offering access points to the base camps of peaks like Diran and Rakaposhi. For a simpler adventure, the village of Ganish, one of the oldest settlements in the region, offers a fascinating walk through its stone houses and old water channels.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/hunza 3-districtthress.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'Whether you seek history in the ancient forts, thrills on the KKH, or simply peaceful reflection amidst the highest peaks, Hunza Valley truly offers a once-in-a-lifetime experience.',
-								image: '/images/Swat.jpg',
+								image: '/images/hunza 4-districtthress.jpg',
 								imageLeft: false
 							}
 						].map((item, idx) => (
