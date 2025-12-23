@@ -614,27 +614,27 @@ const ShigarGhanchePage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Khaplu Palace (Yabgo Khar).jpg',
 								title: 'Khaplu Palace (Yabgo Khar)',
 								description: 'Visit this magnificent royal residence, known as the "Palace on the Rock." Restored into a heritage hotel and museum, it showcases the unique traditional Balti architecture.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Shigar Fort (Fong-Khar).jpg',
 								title: 'Shigar Fort (Fong-Khar)',
 								description: 'Explore this 17th-century fort, also known as the "Palace on the Rocks." This beautifully restored site now serves as a heritage museum, steeped in the history of the Amacha Dynasty.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Sarfaranga Cold Desert.jpg',
 								title: 'Sarfaranga Cold Desert',
 								description: 'Witness the surreal sight of white, glacial sand dunes at a high altitude near Shigar. This cold desert is perfect for photography and adventure activities like jeep safaris and paragliding.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Chaqchan & Amburiq Mosques.jpg',
 								title: 'Chaqchan & Amburiq Mosques',
 								description: 'Discover two of the oldest mosques in Baltistan. The 14th-century Chaqchan Mosque and the wooden Amburiq Mosque are beautiful examples of local and Kashmiri craftsmanship.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Base Camp Trek Gateway (Askole).jpeg',
 								title: 'Base Camp Trek Gateway (Askole)',
 								description: 'Shigar serves as the final major settlement (Askole) and gateway for the world-famous trekking routes leading to the base camps of K2, Broad Peak, and the Baltoro Glacier.'
 							},
@@ -712,21 +712,21 @@ const ShigarGhanchePage = () => {
 							{
 								title: 'Shigar & Khaplu Heritage Tour',
 								description: 'A focused trip exploring the forts, historical mosques, and cultural life of the eastern valleys of Baltistan.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 Shigar.jpeg',
 								days: '7 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Wild Deosai and Skardu',
 								description: 'Combines the historical significance of Shigar/Ghanche with a journey to the natural wonders of Deosai National Park and Skardu\'s lakes.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 Shigar.jpg',
 								days: '9 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'K2 Base Camp & Concordia Trek',
 								description: 'The ultimate challenge, starting from Shigar and leading deep into the Karakoram mountains to the base of the world\'s second-highest peak.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 Shigar.jpg',
 								days: '22 Days',
 								destinations: '1 Destination'
 							}
