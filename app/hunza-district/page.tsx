@@ -712,21 +712,21 @@ const HunzaDistrictPage = () => {
 							{
 								title: 'Karakoram Highway Explorer',
 								description: 'A focused journey covering the KKH route from Islamabad up to Khunjerab Pass, centering on Hunza\'s landmarks.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 hunza.jpg',
 								days: '8 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'Hunza, Skardu & Deosai Grand Tour',
 								description: 'The ultimate northern Pakistan circuit, combining the cultural heart of Hunza with the wilderness of Skardu and Deosai.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 hunza.jpg',
 								days: '10 Days',
 								destinations: '6 Destinations'
 							},
 							{
 								title: 'Hunza & Naltar Valley Combo',
 								description: 'A perfect week-long trip linking the historical sites of Hunza with the glacial lakes and natural beauty of the Naltar Valley.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 hunza.jpg',
 								days: '7 Days',
 								destinations: '3 Destinations'
 							}
