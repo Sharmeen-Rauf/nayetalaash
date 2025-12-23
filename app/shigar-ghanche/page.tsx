@@ -538,10 +538,10 @@ const ShigarGhanchePage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 shigar-ghanche.jpg',
+										'/images/slider 2 shigar-ghanche.jpg',
+										'/images/slider 3 shigar-ghanche.jpg',
+										'/images/slider 4 shigar-ghanche.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -799,17 +799,17 @@ const ShigarGhanchePage = () => {
 						{[
 							{
 								description: 'This region is famous for its cultural depth, largely due to the influence of the Balti people, who speak the Balti language and practice the Noorbakhshi Sufi interpretation of Islam. The locals are known for their warm hospitality and rich traditions, including annual festivals like Navroz (Persian New Year).',
-								image: '/images/gilgit.jpg',
+								image: '/images/Shigar & Ghanche District 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The valleys are economic goldmines, often called the "Land of Orchards," famous for their high-quality, homegrown fruit produce like apricots, cherries, apples, and walnuts. Travelers often stop to taste the sweet perfection of these local fruits.',
-								image: '/images/Hunza.jpg',
+								image: '/images/Shigar & Ghanche District 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Shigar is located on an ancient trading route, and its history is closely tied to the Buddhist era and the subsequent spread of Islam. The impressive mountainous terrain, which includes the Karakoram\'s "Eight-Thousanders," has cemented Shigar and Ghanche as a paradise for mountaineers and a top destination in international discourse.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/Shigar & Ghanche District 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
