@@ -712,21 +712,21 @@ const SkarduKharmangPage = () => {
 							{
 								title: 'Dream Journeys of North',
 								description: 'Focused on Skardu\'s central attractions (Kachura, Satpara, Kharpocho) and the scenic drive from the KKH.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 skardu-karmandu.jpg',
 								days: '7 Days',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Wild Deosai and Skardu',
 								description: 'Comprehensive package covering Skardu\'s main sites, Kharmang\'s waterfalls, and an extended trip across the Deosai Plains.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 skardu-karmandu.jpg',
 								days: '9 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'K2 Base Camp Trek Gateway',
 								description: 'Skardu serves as the main launch point and logistics hub for all major expeditions into the Karakoram Range.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 skardu n-karmandu.jpg',
 								days: '14 Days',
 								destinations: '4 Destinations'
 							}
