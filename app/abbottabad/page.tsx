@@ -615,27 +615,27 @@ const AbbottabadPage = () => {
 						{[
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Thandiani Top:',
+								title: 'Thandiani Top',
 								description: 'Journey to the "Very Cold Place" (Thandiani), the highest mountain in the area, offering panoramic views of the Kaghan and Kohistan ranges and lush pine forests.'
 							},
 							{
 								image: '/images/Hunza.jpg',
-								title: 'Ilyasi Mosque & Stream:',
+								title: 'Ilyasi Mosque & Stream',
 								description: 'Visit this historical and largest mosque in Abbottabad, famously built over a cold, clear water stream. It\'s a key spiritual and local attraction, renowned for its surrounding Pakora stalls.'
 							},
 							{
 								image: '/images/skardu 2.jpg',
-								title: 'Pipeline Track & Ayubia National Park:',
+								title: 'Pipeline Track & Ayubia National Park',
 								description: 'Trek the famous 4 km Pipeline Track between Ayubia and Dunga Gali within the lush, thickly forested national park, known for its rich wildlife and scenic overlooks.'
 							},
 							{
 								image: '/images/Swat.jpg',
-								title: 'Sajikot & Umbrella Waterfalls:',
+								title: 'Sajikot & Umbrella Waterfalls',
 								description: 'Discover the beauty of the district\'s hidden cascades. Sajikot Waterfall (near Havelian) and the unique Umbrella Waterfall offer refreshing retreats and photography spots.'
 							},
 							{
 								image: '/images/gilgit.jpg',
-								title: 'Miranjani & Mushkpuri Peaks:',
+								title: 'Miranjani & Mushkpuri Peaks',
 								description: 'Embark on rewarding moderate treks to the highest peaks of the Galiyat region. These summits offer stunning views overlooking Murree, Azad Kashmir, and the surrounding forests.'
 							},
 						].map((item, idx) => (
