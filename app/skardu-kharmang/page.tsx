@@ -799,17 +799,17 @@ const SkarduKharmangPage = () => {
 						{[
 							{
 								description: 'The region\'s history is incredibly rich, having been part of the ancient Kushan Empire and later the Tibetan Empire, which introduced Buddhism. You can still see echoes of this past at the Manthal Buddha Rock carving near Skardu. The strategic location at the confluence of the Indus and Shigar Rivers made it a historical hub for trade and defense.',
-								image: '/images/gilgit.jpg',
+								image: '/images/skardu kharmang 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The name Kharmang literally means "Abundance of Forts," referring to the numerous fortifications built here by the Balti Prince Ali Sher Khan Anchan, highlighting its military importance over the centuries.',
-								image: '/images/Hunza.jpg',
+								image: '/images/skardu-kharmang 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Skardu Valley is a paradise for adventure seekers, offering activities like mountaineering, rock climbing, paragliding, and trophy hunting. The lakes, especially Satpara, are not just beautiful but are also the main water source for the valley. Visiting the Nansoq Organic Village, a declared historical site behind Kharpocho Fort, provides a glimpse into the raw, traditional Balti lifestyle and organic farming.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/skardu-kharmang 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
