@@ -538,10 +538,10 @@ const MansehraPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 mansehra.jpg',
+										'/images/slider 2 mansehra.jpg',
+										'/images/slider 3 mansehra.jpg',
+										'/images/slider 4 mansehra.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const MansehraPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Ashoka Rock Edicts.jpeg',
 								title: 'Ashoka Rock Edicts',
 								description: 'Discover world history! View the three massive granite boulders inscribed with 14 edicts by the Mauryan Emperor Ashoka in the 3rd century BC, written in the ancient Kharosthi script.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Sharan Forest & Manshi Top.jpg',
 								title: 'Sharan Forest & Manshi Top',
 								description: 'Escape to a verdant wilderness. This dense pine forest offers a peaceful camping experience, with a rewarding trek up to Manshi Top for panoramic views of the surrounding peaks.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Siran Valley & River.jpg',
 								title: 'Siran Valley & River',
 								description: 'Explore the "Hidden Gem" of Mansehra. Follow the crystal clear Siran River through lush meadows and apple orchards, leading to the remote and beautiful village of Manda Gucha.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Musa Ka Musalla Peak.jpg',
 								title: 'Musa Ka Musalla Peak',
 								description: 'For the brave trekkers! Aim for the summit of the "Prayer Mat of Moses," a majestic peak standing at over 13,000 feet, offering 360 degree views of Kashmir and the Himalayas.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Kunhar River (Balakot).jpg',
 								title: 'Kunhar River (Balakot)',
 								description: 'Stop at the gateway town of Balakot to enjoy the roaring Kunhar River. It\'s the perfect spot for a riverside lunch of freshly caught Trout before heading further into the Kaghan Valley.'
 							},
@@ -712,21 +712,21 @@ const MansehraPage = () => {
 							{
 								title: 'Siran Valley Quick Retreat',
 								description: 'A peaceful escape focusing on the meadows of Mundi and the serene banks of the Siran River.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 mansehra.jpg',
 								days: '3 Days',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Mansehra Heritage & Forest Explorer',
 								description: 'Covers the Ashoka Rocks, Sharan Forest camping, and the historical landmarks of Mansehra city.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 Mansehra.jpg',
 								days: '5 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'The Full Hazara Circuit',
 								description: 'A grand tour starting from Abbottabad, through Mansehra\'s historical sites, and deep into the Naran Kaghan Valley.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 Mansehra\'.jpg',
 								days: '8 Days',
 								destinations: '6 Destinations'
 							}
@@ -799,17 +799,17 @@ const MansehraPage = () => {
 						{[
 							{
 								description: 'Mansehra is steeped in a "Melange of Civilizations." Named after Man Singh, a prominent Sikh administrator, the district has seen the rise and fall of Greeks, Mauryans, Turks, and the British. This heritage is still alive in the city\'s old Kashmir Bazaar and the ancient Hindu temples and Sikh Gurudwaras that dot the landscape.',
-								image: '/images/gilgit.jpg',
+								image: '/images/mansehra 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district is a land of seasonal wonders. In the spring, the orchards of Baffa and Siran Valley are filled with white blossoms, while the autumn turns the entire region into a golden paradise. The local culture is a warm blend of Hindko and Pashto traditions, known for its hearty cuisine don\'t miss the famous local Chapli Kababs and Baffa\'s special sweets.',
-								image: '/images/Hunza.jpg',
+								image: '/images/mansehra 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Economically, Mansehra is the backbone of the region\'s fruit trade, producing some of the finest apples and walnuts in Pakistan. Strategically located on the CPEC route, it remains a bustling hub of trade and a welcoming stop for every traveler seeking the "True North."',
-								image: '/images/skardu 2.jpg',
+								image: '/images/mansehra 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
