@@ -538,10 +538,10 @@ const PeshawarPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 peshawar.jpg',
+										'/images/slider 2 peshawar.jpg',
+										'/images/slider 3 peshawar.jpg',
+										'/images/slider 4 peshawar.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const PeshawarPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Qissa Khwani Bazaar (1).jpg',
 								title: 'Qissa Khwani Bazaar:',
 								description: 'Step into the "Street of Storytellers." Once a hub for traders to swap tales over green tea, it remains a vibrant market where you can enjoy authentic Peshawari Kahwa and visit traditional tea houses.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Peshawar Museum (1).jpg',
 								title: 'Peshawar Museum:',
 								description: 'Explore one of the world\'s finest collections of Gandharan Buddhist art. Housed in a Victorian-era hall, it features 14,000+ artifacts including ancient coins, sculptures, and Mughal weapons.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Bala Hisar Fort (1).jpg',
 								title: 'Bala Hisar Fort:',
 								description: 'Marvel at the "Elevated Fort" that has guarded the city for centuries. Though it serves as a military HQ, its imposing brick walls and museum offer a glimpse into the region\'s turbulent military history.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Mahabat Khan Mosque (1).jpg',
 								title: 'Mahabat Khan Mosque',
 								description: 'Admire this 17th century Mughal masterpiece. With its white marble façade and intricate tile work, it stands as a testament to Shah Jahan era architecture in the heart of the Old City.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Namak Mandi Food Street (1).jpg',
 								title: 'Namak Mandi Food Street',
 								description: 'Indulge in Peshawar\'s legendary meat culture. Savor the world famous Charsi Tikka, juicy Chapli Kebabs, and authentic Namkeen Karahi grilled over open charcoal flames.'
 							},
@@ -712,21 +712,21 @@ const PeshawarPage = () => {
 							{
 								title: 'Peshawar Heritage Walk',
 								description: 'A quick day tour focusing on the Old City, including Mahabat Khan Mosque, Sethi House, and Qissa Khwani.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 peshawar (1).jpg',
 								days: '1 Day',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'The Gateway Expedition',
 								description: 'An immersive 3 day trip covering the Khyber Pass (Bab-e-Khyber), Jamrud Fort, and the archaeological wonders of Peshawar city.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 peshawar (1).jpg',
 								days: '3 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'KPK Cultural Hubs',
 								description: 'A deeper journey connecting Peshawar\'s history with the nearby ruins of Takht-i-Bahi (Mardan) and the scenic banks of the Kabul River.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 peshawar (1).jpg',
 								days: '5 Days',
 								destinations: '4 Destinations'
 							}
@@ -799,17 +799,17 @@ const PeshawarPage = () => {
 						{[
 							{
 								description: 'Peshawar is a city where ancient traditions are woven into modern life. Its history dates back to at least 539 BC, making it a witness to the rise and fall of empires like the Kushans and the Durranis. The Sethi Mohallah inside the Old City features 19th century havelis (mansions) that showcase the wealth of merchants who traded with Central Asia, featuring intricate woodwork and stained glass.',
-								image: '/images/gilgit.jpg',
+								image: '/images/peshawar 1 (1).jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district is also home to Islamia College, a stunning example of colonial-era architecture and a beacon of education featured on the 1,000-rupee note. For a peaceful escape, tourists visit Sardaryab on the Kabul River to enjoy fresh fish and boat rides, or explore the local Peshawar Zoo and Bagh e Naran.',
-								image: '/images/Hunza.jpg',
+								image: '/images/peshawar 2 (1).jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Economically and culturally, Peshawar is defined by its Pashtun hospitality. Whether you are shopping for traditional Peshawari Chappals (footwear) in the narrow lanes of Jahangirpura or exploring the vast Karkhano Market for electronics and imports, you will find the city to be a welcoming and safe hub for global travelers.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/peshawar 3 (1).jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
