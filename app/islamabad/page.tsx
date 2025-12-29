@@ -538,10 +538,10 @@ const IslamabadPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/Islamabad slider 1.jpg',
+										'/images/Islamabad slider 2.jpg',
+										'/images/Islamabad slider 3.jpg',
+										'/images/Islamabad slider 4.JPG'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,32 +614,32 @@ const IslamabadPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Faisal Mosque.jpg',
 								title: 'Faisal Mosque',
 								description: 'Visit the largest mosque in Pakistan, an architectural masterpiece shaped like a Bedouin tent. Its location at the foothills of the Margalla Hills offers a spiritual and scenic experience like no other.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Mabali Island (Khanpur).jpg',
 								title: 'Mabali Island (Khanpur)',
 								description: 'Escape to the "Bali of Pakistan" for a day trip. Located just 45 minutes from the city, it is the premier spot for jet skiing, kayaking, parasailing, and luxury glamping on the crystal clear waters of Khanpur Lake.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Pakistan Monument & Museum.jpg',
 								title: 'Pakistan Monument & Museum:',
 								description: 'Stand at the center of this flower petal shaped monument representing the unity of Pakistan. The adjacent museum offers a high tech walkthrough of the nation\'s history.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Margalla Hills (Trail 3 & 5) 1.jpg',
 								title: 'Margalla Hills (Trail 3 & 5):',
 								description: 'Experience the city\'s favorite outdoor activity. Hike through lush pine forests and enjoy fresh mountain air, with rewarding views of the entire capital city from the top.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Monal & Pir Sohawa.jpg',
 								title: 'Monal & Pir Sohawa:',
 								description: 'Drive up the winding mountain roads to dine at 1,173 meters. Enjoy a traditional BBQ dinner while watching the city lights twinkle thousands of feet below.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Saidpur Village 1.jpg',
 								title: 'Saidpur Village:',
 								description: 'Step back in time in this centuries old restored village. It features a unique blend of a Hindu temple, a Sikh Gurdwara, and a mosque, now housing some of the city\'s finest restaurants.'
 							},
@@ -717,21 +717,21 @@ const IslamabadPage = () => {
 							{
 								title: 'Capital Heritage Tour',
 								description: 'A comprehensive day trip covering Faisal Mosque, Pakistan Monument, Lok Virsa, and a sunset at Daman-e-Koh.',
-								image: '/images/gilgit.jpg',
+								image: '/images/islamabad card 1.jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Adventure & Water Sports',
 								description: 'A weekend getaway combining a hike on the Margalla Hills with a full day of water sports and dining at Mabali Island.',
-								image: '/images/Hunza.jpg',
+								image: '/images/islamabad card 2.jpg',
 								days: '2 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Excursion Beyond the Capital',
 								description: 'A grand tour using Islamabad as a base to visit the ancient Taxila Ruins (UNESCO), Mabali Island, and the misty hills of Murree.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/islamabad card 3.jpg',
 								days: '4 Days',
 								destinations: '6 Destinations'
 							}
@@ -804,17 +804,17 @@ const IslamabadPage = () => {
 						{[
 							{
 								description: 'Islamabad is a city designed for clarity and comfort. Divided into organized sectors, it serves as the diplomatic and political heart of the country. The climate is notably pleasant, with four distinct seasons from the vibrant blooms of the Rose and Jasmine Garden in spring to the occasional winter snow on the highest peaks of the Margalla range.',
-								image: '/images/gilgit.jpg',
+								image: '/images/Islamabad 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'For those seeking culture, the Lok Virsa Museum is the premier destination for folk heritage, showcasing the diverse traditions of all four provinces. For a more modern vibe, the city boasts luxury shopping at The Centaurus and Giga Mall, or the upscale café culture of the F-6 and F-7 Markaz.',
-								image: '/images/Hunza.jpg',
+								image: '/images/islamabad 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Nature is never more than 10 minutes away in Islamabad. The Shakarparian National Park and Lake View Park provide expansive green spaces for families, while the Shah Allah Ditta Caves offer a glimpse into the region\'s Buddhist and Mughal past. It is a city that invites you to slow down, breathe the clean air, and enjoy the perfect balance between man made order and natural wild beauty.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/islamabad 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
