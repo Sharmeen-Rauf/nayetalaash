@@ -538,10 +538,10 @@ const ChitralPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 Chitral District.jpg',
+										'/images/slider 2 Chitral District.jpg',
+										'/images/slider 3 Chitral District.jpg',
+										'/images/slider 4 Chitral District.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const ChitralPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Kalash Valleys (Bumburet, Rumbur, Birir).jpg',
 								title: 'Kalash Valleys (Bumburet, Rumbur, Birir)',
 								description: 'Immerse yourself in the unique, ancient culture and vibrant festivals (like Chilam Joshi) of the indigenous Kalash people, known for their distinct traditions and clothing.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Shandur Pass & Polo Festival.jpg',
 								title: 'Shandur Pass & Polo Festival',
 								description: 'Witness the adrenaline pumping, annual Freestyle Polo Festival (July 7th -9th) between the teams of Chitral and Gilgit Baltistan on the world\'s highest polo ground.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Chitral Fort & Shahi Mosque.png',
 								title: 'Chitral Fort & Shahi Mosque',
 								description: 'Explore the historic 14th century fort, once the seat of the Mehtar (ruler) of Chitral, and the adjacent Shahi Mosque, showcasing beautiful Mughal inspired architecture.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Tirich Mir Viewpoint.jpg',
 								title: 'Tirich Mir Viewpoint',
 								description: 'Marvel at the dominant presence of Tirich Mir (7,708m), the highest peak in the Hindu Kush. Views from Chitral town or nearby Birmoghlasht are truly breathtaking.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Garam Chashma (Hot Springs).jpg',
 								title: 'Garam Chashma (Hot Springs)',
 								description: 'Relax and heal in the natural thermal hot springs, renowned for their therapeutic properties and surrounded by tranquil meadows and mountains.'
 							},
@@ -712,21 +712,21 @@ const ChitralPage = () => {
 							{
 								title: 'Kalash Valley Cultural Retreat',
 								description: 'A focused tour to the three main Kalash Valleys (Bumburet, Rumbur, Birir) to experience the culture and local life.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 chitral.jpg',
 								days: '4 Days',
 								destinations: '2 Destinations'
 							},
 							{
 								title: 'Chitral & Galiyat Combo Tour',
 								description: 'A comprehensive trip combining the cultural sites and high passes of Chitral with the accessible hill stations of the Galiyat region (via Lowari Tunnel).',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 chitral.jpg',
 								days: '7 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Shandur Polo Festival Special',
 								description: 'A specialized package timed for the annual July festival, including camping at Shandur Pass and a visit to the Kalash Valleys.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 chitral.jpg',
 								days: '10 Days',
 								destinations: '5 Destinations'
 							}
@@ -799,17 +799,17 @@ const ChitralPage = () => {
 						{[
 							{
 								description: 'Chitral\'s location in the far north-west, bordering Afghanistan, has given it a unique cultural profile, bearing influences from Greek, Iranian, and Central Asian traditions. The dominant local language is Khowar, and the people, known for their extreme hospitality, practice a centuries old tradition of freestyle polo that is integral to their identity.',
-								image: '/images/gilgit.jpg',
+								image: '/images/chitral 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district is towered over by the Hindu Kush range, which means "Hindu Slayer" in Persian, a reflection of the challenges of traversing its high peaks. For nature lovers, the Chitral Gol National Park is a must visit, established to protect the endangered Markhor (Pakistan\'s national animal), along with snow leopards and various bird species.',
-								image: '/images/Hunza.jpg',
+								image: '/images/chitral 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Access to Chitral has been dramatically improved by the Lowari Tunnel, which keeps the route open for most of the year, connecting it to the rest of Khyber Pakhtunkhwa. Whether you seek ancient traditions in the Kalash Valleys, the thrill of mountain polo, or simply spectacular views of the Hindu Kush, Chitral offers a truly off the beaten path experience.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/chitral.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
