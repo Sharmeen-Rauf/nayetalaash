@@ -538,10 +538,10 @@ const BahawalpurPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 bahawalpur.jpg',
+										'/images/slider 2 bahawalpur.jpg',
+										'/images/slider 3 bahawalpur.jpg',
+										'/images/slider 2 bahawalpur.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const BahawalpurPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Noor Mahal.jpg',
 								title: 'Noor Mahal:',
 								description: 'Marvel at this 19th century Italian style palace built by Nawab Sadiq Muhammad Khan IV. Its grand ballroom, imported furniture, and lush gardens are a masterpiece of Indo-European architecture.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Derawar Fort.jpg',
 								title: 'Derawar Fort:',
 								description: 'Standing tall in the Cholistan Desert, this 9th-century fortress features 40 massive bastions that rise 100 feet above the sand. It is the iconic symbol of the ancient Silk Road defense.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Uch Sharif (Tomb of Bibi Jawindi).jpg',
 								title: 'Uch Sharif (Tomb of Bibi Jawindi):',
 								description: 'Visit the "City of Saints" to see the breathtaking 15th century blue-tiled shrines. The Tomb of Bibi Jawindi is a UNESCO recognized site known for its intricate Islamic tile-work.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Lal Suhanra National Park.jpg',
 								title: 'Lal Suhanra National Park:',
 								description: 'Explore one of Pakistan\'s largest biospheres. It is famous for its Blackbuck conservation, lion safaris, and the scenic intersection of desert, forest, and wetlands.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Bahawalpur Central Library.jpg',
 								title: 'Bahawalpur Central Library:',
 								description: 'Visit the second largest library in Punjab, a stunning British era building in Victorian style that houses thousands of rare manuscripts and historic royal documents.'
 							},
@@ -712,21 +712,21 @@ const BahawalpurPage = () => {
 							{
 								title: 'Nawabi Heritage Walk',
 								description: 'A focused weekend trip covering Noor Mahal, the Old City Bazaars, and the Bahawalpur Museum.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 Bahawalpur.png',
 								days: '2 Days',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Cholistan Desert Safari',
 								description: 'An adventurous journey to Derawar Fort, camping under the desert stars, and visiting the spiritual shrines of Uch Sharif.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 bahawalpur.jpg',
 								days: '4 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'Southern Punjab Heritage Trail',
 								description: 'A grand cultural loop connecting the palaces of Bahawalpur with the mystic Sufi shrines of Multan and Harappa.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 bahawalpu.jpg',
 								days: '6 Days',
 								destinations: '4 Destinations'
 							}
@@ -799,17 +799,17 @@ const BahawalpurPage = () => {
 						{[
 							{
 								description: 'Bahawalpur\'s history is defined by the Abbasi Nawabs, who turned this desert region into a prosperous state with a high focus on education and arts. This legacy is still visible today at the Sadiq Public School and Islamia University, which were once the centers of learning for the entire region. The local language is primarily Saraiki, known for its sweetness and poetic depth.',
-								image: '/images/gilgit.jpg',
+								image: '/images/bahawalpur 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district is also the gateway to the Rohi (Cholistan Desert). Every February, the silence of the desert is broken by the roar of engines during the Cholistan Jeep Rally, Pakistan\'s biggest off road motorsport event. Culturally, the region is famous for its clay pottery, hand embroidered Ajraks, and Khussa (traditional footwear).',
-								image: '/images/Hunza.jpg',
+								image: '/images/bahawalpur 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'For foodies, no visit is complete without tasting Bahawalpuri Sohan Halwa and the traditional Musallam (roasted meat). Whether you are exploring the hidden hallways of Darbar Mahal or watching the sunset over the desert dunes, Bahawalpur offers a royal experience unlike any other in Pakistan.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/bahawalpur 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
