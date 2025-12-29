@@ -538,10 +538,10 @@ const MalakandPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 2 Malakand.jpg',
+										'/images/slider 3 malakand.jpg',
+										'/images/slider 4 malakand.jpg',
+										'/images/slider 2 Malakand.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const MalakandPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Malakand Pass & Viewpoint.jpg',
 								title: 'Malakand Pass & Viewpoint',
 								description: 'Drive through the historic mountain pass and stop at the viewpoint to witness panoramic views of the valley and the winding "Zig-Zag" road below.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Malakand 3 Spillway Waterfall.jpg',
 								title: 'Malakand 3 Spillway Waterfall',
 								description: 'Visit the spectacular man made waterfall created by the hydroelectric project, where water cascades down a massive spillway, creating a refreshing and scenic picnic spot.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Malakand Wildlife Safari Park.jpg',
 								title: 'Malakand Wildlife Safari Park',
 								description: 'Enjoy a family friendly adventure at the Safari Park, home to various wild animals and birds, set amidst the natural hilly terrain of the district.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Chakdara Fort & Museum.jpg',
 								title: 'Chakdara Fort & Museum',
 								description: 'Explore the nearby historical gateway where ancient Gandhara civilization artifacts are preserved, offering a deep look into the Buddhist history of the region.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Swat Motorway Tunnels.jpg',
 								title: 'Swat Motorway Tunnels',
 								description: 'Experience the modern engineering of the Swat Expressway, which features twin tunnels that have cut travel time and provide a world class driving experience through the mountains.'
 							},
@@ -712,21 +712,21 @@ const MalakandPage = () => {
 							{
 								title: 'Swat & Malakand Gateway',
 								description: 'A quick getaway covering the Malakand Pass, the Spillway Falls, and the entrance to the lower Swat Valley.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card malakand.jpg',
 								days: '3 Days',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'KPK Heritage & Nature Trail',
 								description: 'Combines the historical sites of Malakand and Chakdara with the lush green meadows of the lower Dir region.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 malakand.jpg',
 								days: '5 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'The Grand Northern Circuit',
 								description: 'A comprehensive tour starting through Malakand, leading up to the high-altitude wonders of Kalam, Malam Jabba, and Kumrat.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 malakand.png',
 								days: '8 Days',
 								destinations: '5 Destinations'
 							}
@@ -799,17 +799,17 @@ const MalakandPage = () => {
 						{[
 							{
 								description: 'Malakand District holds a strategically vital position as the hub connecting Mardan to the scenic northern districts. Historically, it was known as the "Malakand Protected Area," and it was the site of fierce battles between local tribes and the British Army in the late 19th century a history still visible in the old Churchill Picket tower overlooking the pass.',
-								image: '/images/gilgit.jpg',
+								image: '/images/malakand 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district is blessed with the Swat River, which provides a lifeline for the local agriculture, creating lush green patches in the otherwise rocky terrain. The area is rich in mineral resources, including high quality chromite and iron.',
-								image: '/images/Hunza.jpg',
+								image: '/images/malakand 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Economically, Malakand is a powerhouse for the province due to its hydroelectric power stations at Dargai and Malakand Khas. For travelers, the local bazaars in Batkhela and Sakhakot are famous for their vibrant trade and traditional Pashtun hospitality. Whether you are stopping for a quick meal at the famous riverside fish points or heading deep into the mountains, Malakand leaves a lasting impression of strength and beauty.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/malakand 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
