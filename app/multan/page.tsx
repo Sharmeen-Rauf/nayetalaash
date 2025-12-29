@@ -538,10 +538,10 @@ const MultanPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/multan slider 1.jpg',
+										'/images/multan slider 2.jpeg',
+										'/images/multan slider 3.jpeg',
+										'/images/multan slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,32 +614,27 @@ const MultanPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Shrine of Shah Rukn-e-Alam 1.jpg',
 								title: 'Shrine of Shah Rukn-e-Alam:',
 								description: 'Visit the crown jewel of Multan\'s skyline. This 14th-century tomb features one of the largest domes in Asia and is decorated with exquisite blue and white Multani tiles and terracotta.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Shrine of Bahauddin Zakariya.jpg',
 								title: 'Shrine of Bahauddin Zakariya:',
 								description: 'Pay respects at this ancient square-shaped shrine, which served as a major center of learning and Sufism in the 13th century, attracting devotees from across the Islamic world.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Multan Fort (Qilla Kohna).jpg',
 								title: 'Multan Fort (Qilla Kohna):',
 								description: 'Explore the site of the ancient citadel. Though mostly in ruins, the fort area provides breathtaking panoramic views of the city and houses the historic Damdama and Prahladpuri Temple site.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Blue Pottery (Kashi-kari).jpg',
 								title: 'Blue Pottery (Kashi-kari):',
 								description: 'Witness the master craftsmen at work. Multan is world-famous for its hand-painted blue pottery, a craft passed down through generations of "Kashigars" since the Mughal era.'
 							},
 							{
-								image: '/images/gilgit.jpg',
-								title: 'Hafiz Sohan Halwa:',
-								description: 'Taste the legendary Multani Sohan Halwa. This rich, nutty, and traditional sweet is the city\'s most famous export and is a mandatory treat for every visitor.'
-							},
-							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Hussain Agahi Bazaar.jpg',
 								title: 'Hussain Agahi Bazaar:',
 								description: 'Immerse yourself in the colors of the old city market. From traditional Multani embroidery (Khaadi) to camel skin lamps and spices, this bazaar is a treasure trove of local crafts.'
 							},
@@ -717,21 +712,21 @@ const MultanPage = () => {
 							{
 								title: 'Sufi Soul Day Tour',
 								description: 'A fast paced exploration of the major shrines, the Multan Fort, and a stop for traditional Sohan Halwa.',
-								image: '/images/gilgit.jpg',
+								image: '/images/multan card 1.jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Ancient South Explorer',
 								description: 'Deep dive into Multan\'s history, visit the Blue Pottery workshops, and explore the nearby ruins of the ancient city of Harappa.',
-								image: '/images/Hunza.jpg',
+								image: '/images/multan card 2.jpg',
 								days: '3 Days',
 								destinations: '6 Destinations'
 							},
 							{
 								title: 'Grand Southern Heritage',
 								description: 'A comprehensive journey linking Multan\'s spiritual sites with the royal palaces of Bahawalpur and the shrines of Uch Sharif.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/Multan card 3.jpg',
 								days: '5 Days',
 								destinations: '8 Destinations'
 							}
@@ -804,17 +799,17 @@ const MultanPage = () => {
 						{[
 							{
 								description: 'Multan is a city where history is layered like the bricks of its ancient shrines. Known for its extreme summers and spiritual warmth, it is famously associated with the Persian proverb about its four gifts: "Gard, Garma, Gada o Goristan" (Dust, Heat, Beggars, and Burial Grounds). However, modern travelers find beauty in this description, as the "burial grounds" refer to the magnificent, world class mausoleums that make the city a global center for Sufi pilgrimage and Islamic architecture.',
-								image: '/images/gilgit.jpg',
+								image: '/images/Multan 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district is the Mango Capital of the World, producing dozens of varieties of the "King of Fruits," including the world famous Chaunsa and Anwar Ratol. This agricultural richness is matched by the city\'s artistic heritage; the iconic "Multani Blue" tile work is a signature style that has influenced architecture across South Asia. The local culture is deeply rooted in the Saraiki language, which is known for its poetic softness and reflects the gentle, hospitable nature of the Multani people.',
-								image: '/images/Hunza.jpg',
+								image: '/images/multan 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Economically, Multan remains a vital hub for cotton and handicrafts. For a peaceful retreat within the city, visitors often head to Cantonment Garden or take a sunset boat ride on the Chenab River. Whether you are watching the sun set behind the blue dome of Shah Rukn-e-Alam or navigating the narrow, historic alleys of the walled city, Multan offers a timeless experience that lingers in the heart long after the journey ends.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/Multan 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
