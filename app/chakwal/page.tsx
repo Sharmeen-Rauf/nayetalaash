@@ -538,10 +538,10 @@ const ChakwalPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 chakwal.jpg',
+										'/images/slider 2chakwal.jpg',
+										'/images/slider 3 chakwal.jpg',
+										'/images/slider 4 chakwal.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const ChakwalPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Katas Raj Temples.jpg',
 								title: 'Katas Raj Temples:',
 								description: 'Explore one of the most sacred Hindu sites in Pakistan. Visit the Holy Pond, believed to be formed by the tears of Lord Shiva, and admire the ancient Kashmiri style architecture.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Kallar Kahar Lake.jpg',
 								title: 'Kallar Kahar Lake:',
 								description: 'Known as the "Valley of Peacocks," this saltwater lake is perfect for boating and family picnics. Don\'t miss the Takht-e-Babri, a historic throne carved out of rock by the Mughal Emperor Babur.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Swaik Lake (Khandowa).jpg',
 								title: 'Swaik Lake (Khandowa):',
 								description: 'Discover this hidden gem featuring turquoise blue water and a natural waterfall. It is a top spot for cliff diving, swimming, and photography amidst high rocky cliffs.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Neela Wahn (Blue Pond).png',
 								title: 'Neela Wahn (Blue Pond):',
 								description: 'Embark on a rewarding trek to reach this series of natural freshwater springs. Known as "Chashma-Aab-e-Shifa," the clear blue water is famous for its refreshing and healing properties.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Katas Raj Temples.jpg',
 								title: 'Malot Fort:',
 								description: 'Witness the synthesis of Greek and Kashmiri architecture. Built in the 10th century, this red sandstone fort offers a glimpse into the ancient strategic defenses of the Salt Range.'
 							},
@@ -712,21 +712,21 @@ const ChakwalPage = () => {
 							{
 								title: 'Chakwal Highlights Day Trip',
 								description: 'A fast paced tour from Islamabad or Lahore covering Kallar Kahar, Katas Raj, and the Khewra Salt Mines gateway.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 chakwal.jpg',
 								days: '1 Day',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Lakes & Legends Escape',
 								description: 'An overnight stay in Kallar Kahar with trekking to Neela Wahn and a detailed visit to the Katas Raj spiritual complex.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 chakwal.jpg',
 								days: '2 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Salt Range Adventure Trail',
 								description: 'A comprehensive exploration including Swaik Lake, Chinji National Park for wildlife, and the historic Malot Fort.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 chakwal.jpg',
 								days: '3 Days',
 								destinations: '5 Destinations'
 							}
@@ -799,17 +799,17 @@ const ChakwalPage = () => {
 						{[
 							{
 								description: 'Chakwal\'s identity is deeply rooted in its martial tradition. Known as the "Land of Soldiers," the district has a long history of enlisting brave men in the military, a legacy that predates the creation of Pakistan. Culturally, the region is famous for its "Dhani" breed of horses and bulls, which are celebrated in local festivals and fairs (Melas).',
-								image: '/images/gilgit.jpg',
+								image: '/images/Chakwal 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district is also an agricultural hub, primarily known for its high quality peanuts, loquats, and wheat. One of the most famous delicacies you must try is Pehlwan Rewari, a sweet, crunchy treat made from sesame seeds and jaggery that has become the hallmark of Chakwal\'s food culture.',
-								image: '/images/Hunza.jpg',
+								image: '/images/Chakwal 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'For history buffs, the region is a living museum. Beyond the Hindu temples, you can explore the Bagh-e-Safa, the first garden of the Mughal Empire planted by Babur. The landscape itself, with its deep gullies, canyons in Thirchak Mahal, and the orange tinted Salt Range mountains, provides a dramatic backdrop for every traveler.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/Chakwal 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
