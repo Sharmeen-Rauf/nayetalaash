@@ -538,10 +538,10 @@ const LahorePage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/lahore slider 1-district.jpg',
+										'/images/lahore slider 2-district.jpg',
+										'/images/lahore slider 3-district.jpg',
+										'/images/lahore slider 4-district.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,32 +614,27 @@ const LahorePage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Badshahi Mosque 1-district.jpg',
 								title: 'Badshahi Mosque:',
 								description: 'Stand in awe of this 17th century Mughal masterpiece. Built with red sandstone and white marble, its massive courtyard and iconic domes represent the peak of Islamic architecture.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Lahore Fort (Shahi Qila) 1-district.jpg',
 								title: 'Lahore Fort (Shahi Qila):',
 								description: 'Explore the royal citadel of emperors. Visit the breathtaking Sheesh Mahal (Palace of Mirrors), the ornate Alamgiri Gate, and the historic museums within its ancient walls.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Food Street (Fort Road)-district.jpg',
 								title: 'Food Street (Fort Road):',
 								description: 'Dine with a view! Savor authentic Lahori Karahi and Chargha on a rooftop overlooking the illuminated Badshahi Mosque, experiencing the world\'s most scenic food street.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Wagah Border Ceremony-district.jpg',
 								title: 'Wagah Border Ceremony',
 								description: 'Feel the adrenaline at the daily flag lowering ceremony. Witness the high stepping military drills and the roar of the crowd in a spectacular display of national pride.'
 							},
 							{
-								image: '/images/gilgit.jpg',
-								title: 'Walled City (Delhi Gate & Wazir Khan)',
-								description: 'Step into the "Old City." Visit the Delhi Gate and the Wazir Khan Mosque, famous for its intricate tile mosaics and vibrant frescoes that have survived for centuries.'
-							},
-							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Shalimar Gardens 1-district.jpg',
 								title: 'Shalimar Gardens:',
 								description: 'Walk through the Mughal Royal Gardens. Built by Emperor Shah Jahan, these three tiered terraced gardens with their flowing fountains are a masterpiece of Persian style design.'
 							},
@@ -717,21 +712,21 @@ const LahorePage = () => {
 							{
 								title: 'The Royal Heritage Walk',
 								description: 'A fast paced day covering the Fort, Badshahi Mosque, Minar-e-Pakistan, and a sunset dinner at Food Street.',
-								image: '/images/gilgit.jpg',
+								image: '/images/lahore card 1-district.jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Cultural & Culinary Explorer',
 								description: 'Deep dive into the Walled City, a trip to the Wagah Border, and shopping at Anarkali and Liberty markets.',
-								image: '/images/Hunza.jpg',
+								image: '/images/lahore card 2-district.jpg',
 								days: '3 Days',
 								destinations: '6 Destinations'
 							},
 							{
 								title: 'The Grand Lahore Circuit',
 								description: 'Includes the iconic sights plus the Tomb of Jahangir, the Lahore Museum, and a relaxing day at Jallo Park or the Safari Zoo.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/lahore card 3-district.jpg',
 								days: '5 Days',
 								destinations: '8 Destinations'
 							}
@@ -804,17 +799,17 @@ const LahorePage = () => {
 						{[
 							{
 								description: 'Lahore is famously described by the local proverb: "Jinne Lahore nai vekhya, o jamyai nai" (One who has not seen Lahore has not yet been born). As the ultimate educational and artistic hub of Pakistan, the district is home to prestigious institutions like the Government College University and the National College of Arts. Its rich intellectual and literary history is celebrated annually at the Lahore Literary Festival, which attracts thinkers, writers, and artists from all over the globe to share ideas in this historic setting.',
-								image: '/images/gilgit.jpg',
+								image: '/images/Lahore 1-district.jpeg',
 								imageLeft: true
 							},
 							{
 								description: 'The city\'s food culture is its true heartbeat, where every street corner offers a new flavor to discover. From the iconic early morning Halwa Puri breakfast at Lakshmi Chowk to the late night, slow cooked Siri Paye and Nihari in the narrow lanes of the old quarters, dining in Lahore is more than just a meal it is a grand celebration of life. Whether it is the aroma of freshly baked Naan or the sizzle of Tikkas, the culinary scene here is a testament to the city\'s vibrant and hospitable spirit.',
-								image: '/images/Hunza.jpg',
+								image: '/images/Lahore 2-district.jpeg',
 								imageLeft: false
 							},
 							{
 								description: 'For those seeking a peaceful retreat, Lahore remains true to its title as the "City of Gardens." The district offers sprawling green escapes like Lawrence Garden (Bagh-e-Jinnah) and the majestic Greater Iqbal Park, where the very history of Pakistan\'s independence was written at the foot of Minar-e-Pakistan. These parks provide a serene contrast to the bustling city life, allowing visitors to walk through lush landscapes that have been preserved for generations as symbols of the city\'s natural beauty.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/Lahore 3-district.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
