@@ -538,10 +538,10 @@ const AbbottabadPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 abbottabad.jpg',
+										'/images/slider 2 abbottabad.jpg',
+										'/images/slider 3 abbottabad.jpg',
+										'/images/slider 4 abbottabad.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const AbbottabadPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Thandiani Top.jpg',
 								title: 'Thandiani Top',
 								description: 'Journey to the "Very Cold Place" (Thandiani), the highest mountain in the area, offering panoramic views of the Kaghan and Kohistan ranges and lush pine forests.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Ilyasi Mosque & Stream.jpg',
 								title: 'Ilyasi Mosque & Stream',
 								description: 'Visit this historical and largest mosque in Abbottabad, famously built over a cold, clear water stream. It\'s a key spiritual and local attraction, renowned for its surrounding Pakora stalls.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Pipeline Track & Ayubia National Park.jpg',
 								title: 'Pipeline Track & Ayubia National Park',
 								description: 'Trek the famous 4 km Pipeline Track between Ayubia and Dunga Gali within the lush, thickly forested national park, known for its rich wildlife and scenic overlooks.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Sajikot & Umbrella Waterfalls.jpg',
 								title: 'Sajikot & Umbrella Waterfalls',
 								description: 'Discover the beauty of the district\'s hidden cascades. Sajikot Waterfall (near Havelian) and the unique Umbrella Waterfall offer refreshing retreats and photography spots.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Miranjani & Mushkpuri Peaks.jpg',
 								title: 'Miranjani & Mushkpuri Peaks',
 								description: 'Embark on rewarding moderate treks to the highest peaks of the Galiyat region. These summits offer stunning views overlooking Murree, Azad Kashmir, and the surrounding forests.'
 							},
@@ -712,21 +712,21 @@ const AbbottabadPage = () => {
 							{
 								title: 'Galiyat Hill Stations Retreat',
 								description: 'A concentrated tour covering Abbottabad (Ilyasi Mosque), Nathia Gali, and Ayubia National Park for trekking and relaxation.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 abbottabad.jpg',
 								days: '3 Days',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Thandiani & Waterfalls Explorer',
 								description: 'Focuses on the scenic drive to Thandiani, the Sajikot/Umbrella Waterfalls, and the historical center of Abbottabad.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 abbottabad.jpg',
 								days: '4 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Kaghan & Galiyat Combo',
 								description: 'A perfect week-long trip linking the accessible hill stations of Abbottabad with the high altitude lakes and passes of the Naran Kaghan Valley.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 abbottabad.jpg',
 								days: '7 Days',
 								destinations: '4 Destinations'
 							}
@@ -799,17 +799,17 @@ const AbbottabadPage = () => {
 						{[
 							{
 								description: 'Abbottabad was founded in 1853 by Major James Abbott, the first Deputy Commissioner of the Hazara region under British Rule, and was named "Abbott\'s Town." This history is visible in its architecture, large cantonment area, and wide, tree lined roads, giving it a unique colonial charm.',
-								image: '/images/gilgit.jpg',
+								image: '/images/Abbottabad 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district is the gateway to three major mountain ranges (Karakoram, Hindu Kush, and Himalayas) and acts as the crucial starting point for the Karakoram Highway (KKH) leading north. The local population primarily speaks Hindko, followed by Pashto and Urdu, reflecting the area\'s cultural mix.',
-								image: '/images/Hunza.jpg',
+								image: '/images/abbotabad 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Abbottabad is not only a base for higher mountain travel but also a destination in its own right. Attractions like Shimla Pahari, the Harnoi Picnic Point (on the Dor River), and the historical Lady Garden Public Park provide easy, accessible recreation for families and hikers. Its bracing, pleasant climate makes it a popular tourist spot year round, even when higher valleys are snowed in.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/abbottabad 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
