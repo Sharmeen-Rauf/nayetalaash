@@ -538,10 +538,10 @@ const UpperDirPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/slider 1 upper dir.jpg',
+										'/images/slider 2 upper dir.jpg',
+										'/images/slider 3 upper dir.jpg',
+										'/images/slider 4 upper dir.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,27 +614,27 @@ const UpperDirPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Kumrat Forest & Waterfall.jpg',
 								title: 'Kumrat Forest & Waterfall:',
 								description: 'Walk through a massive natural forest of towering deodar trees. The valley features the stunning Kumrat Waterfall and the tranquil Panjkora River, perfect for camping and trout fishing.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Katora Lake 1.jpg',
 								title: 'Katora Lake:',
 								description: 'Reach the "Bowl Shaped" glacial lake at 11,500 ft. Its turquoise waters, surrounded by permanent snow patches and jagged cliffs, make it one of the most beautiful lakes in Pakistan.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Jahaz Banda Meadows 1.jpg',
 								title: 'Jahaz Banda Meadows:',
 								description: 'Experience life above the clouds in this expansive alpine meadow. It serves as the base camp for Katora Lake and offers a "Million Stars" camping experience under clear night skies.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Lowari Pass & Tunnel.jpg',
 								title: 'Lowari Pass & Tunnel:',
 								description: 'Traverse the historic mountain pass or use the 8.5 km Lowari Tunnel, a monumental engineering feat that connects Upper Dir to Chitral, cutting through the heart of the mountains.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Thal Ancient Wooden Mosque.jpg',
 								title: 'Thal Ancient Wooden Mosque',
 								description: 'Visit the 19th century Takht-e-Masjid in Thal village. Built entirely from massive cedar logs and intricately carved by hand, it is a stunning example of local Gandhara influenced architecture.'
 							},
@@ -712,21 +712,21 @@ const UpperDirPage = () => {
 							{
 								title: 'Kumrat Forest Escape',
 								description: 'A quick, refreshing trip focusing on the main Kumrat Valley, the Waterfall, and the Black Spring (Kala Chashma).',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 upper dir.jpg',
 								days: '3 Days',
 								destinations: '2 Destinations'
 							},
 							{
 								title: 'Jahaz Banda & Katora Lake Trek',
 								description: 'An adventurous trekking package including jeep safaris to Taki Top and camping at the high altitude Jahaz Banda meadows.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 upper dir.jpeg',
 								days: '5 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'The Grand Dir Chitral Traverse',
 								description: 'A cross district journey starting in Kumrat, crossing into Chitral via the Lowari Tunnel for a complete cultural and mountain experience.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 upper dir.jpg',
 								days: '7 Days',
 								destinations: '5 Destinations'
 							}
@@ -799,17 +799,17 @@ const UpperDirPage = () => {
 						{[
 							{
 								description: 'Upper Dir has a rich political and tribal history; it was a princely state ruled by the Nawabs of Dir until it was merged with Pakistan in 1969. The district is primarily inhabited by the Yousafzai Pashtuns and Kohistani tribes, known for their fierce independence, hospitality, and deep rooted tribal codes.',
-								image: '/images/gilgit.jpg',
+								image: '/images/upper dir 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The Panjkora River is the lifeblood of the district, originating from the glaciers of the Hindu Kush and flowing through narrow, deep valleys. The district is a significant agricultural hub, producing high quality walnuts, persimmons, and potatoes, while its mountains are rich in minerals like copper and quartz.',
-								image: '/images/Hunza.jpg',
+								image: '/images/upper dir 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'For the adventurous traveler, the Badgoi Pass offers a thrilling off road link between Upper Dir and the Kalam Valley in Swat. The district\'s name, derived from the Persian word Dair (meaning \'far off\'), perfectly captures its remote and mystical essence. From the ancient wooden architecture of its mosques to the signal free silence of its forests, Upper Dir is a sanctuary for the soul.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/upper dir 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
