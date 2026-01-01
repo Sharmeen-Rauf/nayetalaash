@@ -538,10 +538,10 @@ const LarkanaShikarpurPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/larkana-shikarpur slider 1.jpg',
+										'/images/larkana-shikarpur slider 2.jpeg',
+										'/images/larkana-shikarpur slider 3.jpg',
+										'/images/larkana-shikarpur slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,34 +614,29 @@ const LarkanaShikarpurPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Mohenjo Daro Ruins.jpg',
 								title: 'Mohenjo Daro Ruins:',
 								description: 'Explore the Cradle of Civilization. Walk through the meticulously planned streets, the Great Bath, and the Buddhist Stupa of this 5,000 year old Bronze Age metropolis.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Garhi Khuda Bakhsh.jpg',
 								title: 'Garhi Khuda Bakhsh:',
 								description: 'Visit the monumental Bhutto Family Mausoleum. Known for its striking white domes and intricate Sindhi tile work, it is a site of immense political and historical pilgrimage.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Dhak Bazaar (Shikarpur.jpg',
 								title: 'Dhak Bazaar (Shikarpur):',
 								description: 'Walk through the famous covered market. Built with a unique teak wood ceiling to keep the interior cool, it remains a bustling center for traditional crafts and trade.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Shikarpuri Achar & Sweets.jpg',
 								title: 'Shikarpuri Achar & Sweets:',
 								description: 'Taste the world famous Shikarpuri Pickles. From mixed oil pickles to specialized murabbas, this culinary tradition is an essential souvenir for every visitor.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Tomb of Shah Baharo.jpg',
 								title: 'Tomb of Shah Baharo:',
 								description: 'Admire the 18th century Kalhora architecture. This tomb features a large dome and exquisite interior paintings, representing the peak of medieval Sindhi artistic expression.'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Shahi Bagh (Larkana):',
-								description: 'Relax in the Royal Gardens. Known for its exotic flora and a historic wooden pavilion, it offers a peaceful retreat that reflects the city\'s colonial and Mughal influences.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -717,21 +712,21 @@ const LarkanaShikarpurPage = () => {
 							{
 								title: 'Ancient Wonders Tour',
 								description: 'A deep dive into Mohenjo Daro and its museum, followed by a visit to the Shah Baharo Tomb in Larkana city.',
-								image: '/images/gilgit.jpg',
+								image: '/images/larkana shikarpur card 1.jpg',
 								days: '1 Day',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Heritage & Flavors',
 								description: 'Explore the ruins on day one, and spend day two in Shikarpur visiting the Dhak Bazaar and the historic Clock Tower while sampling local kulfi.',
-								image: '/images/Hunza.jpg',
+								image: '/images/larkana shikarpur card 2.jpg',
 								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'Upper Sindh Grand Trail',
 								description: 'A comprehensive tour linking Larkana\'s archaeology with the royal palaces of Khairpur and the shrines of Sukkur.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/larkana shikarpur card 3.jpg',
 								days: '4 Days',
 								destinations: '8 Destinations'
 							}
@@ -804,17 +799,17 @@ const LarkanaShikarpurPage = () => {
 						{[
 							{
 								description: 'Larkana is a district that carries the weight of millennia. The ruins of Mohenjo Daro reveal a society that had mastered drainage, standardized weights, and peaceful urban living long before the rise of the Roman Empire. The onsite museum houses the famous "Dancing Girl" and "Priest King" replicas, offering a cerebral journey into our collective human past. Beyond archaeology, Larkana is the agricultural heart of Sindh, famous for its Guava (Amrood) orchards that scent the air during harvest season.',
-								image: '/images/gilgit.jpg',
+								image: '/images/larkana-shikarpur 1.jpeg',
 								imageLeft: true
 							},
 							{
 								description: 'Shikarpur, on the other hand, tells a story of medieval globalization. Founded in the 17th century, it was a walled city with eight majestic gates (such as Lakhi Dar and Hathi Dar). Its merchants were the financiers of the Silk Road, and their wealth is still visible in the decaying but beautiful Havelis featuring intricate wood carvings and wrought iron balconies. While the city has lost some of its "Parisian" luster, the Dhak Bazaar remains an atmospheric time capsule where the scent of spices and the sound of craftsmen remind you of its glorious trading past.',
-								image: '/images/Hunza.jpg',
+								image: '/images/larkana-shikarpur 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'The cultural fabric here is deeply hospitable. Whether you are navigating the narrow alleys of Shikarpur to find the perfect Shikarpuri Kulfi or visiting the modern Shahnawaz Bhutto Public Library, you will find a population that is proud of its history. This region is a land of contrasts—where the silent mounds of the "Mound of the Dead" stand just a short drive away from the vibrant, bustling street life of modern day Sindh.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/larkana-shikarpur 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
