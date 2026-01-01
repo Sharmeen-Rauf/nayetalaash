@@ -538,10 +538,10 @@ const KarachiThattaPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/karachi-thatta slider 1.jpg',
+										'/images/karachi-thatta slider 2.jpg',
+										'/images/karachi-thatta slider 3.jpg',
+										'/images/karachi-thatta slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,32 +614,32 @@ const KarachiThattaPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Mazar-e-Quaid (Karachi).jpg',
 								title: 'Mazar-e-Quaid (Karachi):',
 								description: 'Visit the iconic white marble mausoleum of Pakistan\'s founder, Muhammad Ali Jinnah. Set in a vast park, it is a symbol of national pride and an architectural marvel of modern Islamic design.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/hd-mazarequaid-karachi.jpg',
 								title: 'Makli Necropolis (Thatta):',
 								description: 'Explore one of the largest funerary sites in the world. This UNESCO site features nearly a million tombs with breathtaking stone carvings that narrate the 400 year history of Sindhi royalty.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Shah Jahan Mosque.jpg',
 								title: 'Shah Jahan Mosque:',
 								description: 'Admire the 93 domes of this 17th century masterpiece. Built by the Mughal Emperor as a gift to the people of Thatta, it is famous for its unique acoustics and stunning blue tile work.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Keenjhar Lake (Thatta.jpg',
 								title: 'Keenjhar Lake (Thatta):',
 								description: 'Relax at the second largest freshwater lake in Pakistan. Enjoy a boat ride to the shrine of Noori Jam Tamachi, located in the middle of the lake, and experience the legendary folklore of Sindh.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Banbhore Ruins.jpg',
 								title: 'Banbhore Ruins:',
 								description: 'Walk through the ancient port city where Mohammad Bin Qasim arrived in 711 AD. This archaeological site is believed to be the Gateway of Islam in the subcontinent and offers a glimpse into early Arab architecture.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Clifton Beach & Port Grand.png',
 								title: 'Clifton Beach & Port Grand:',
 								description: 'Experience Karachi\'s coastal charm. Ride a camel on the sands of Sea View and end your evening at Port Grand, a vibrant food and entertainment hub built on a historic colonial bridge.'
 							},
@@ -717,21 +717,21 @@ const KarachiThattaPage = () => {
 							{
 								title: 'UNESCO Heritage Sprint',
 								description: 'An intensive day trip from Karachi to Thatta, covering Chaukhandi Tombs, Banbhore, Makli, and the Shah Jahan Mosque.',
-								image: '/images/gilgit.jpg',
+								image: '/images/karachi thatta card 1.jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Coastal & City Blend',
 								description: 'Explore Karachi\'s landmarks (Mohatta Palace, Mazar-e-Quaid) on day one, followed by a lakeside retreat at Keenjhar and Thatta\'s ruins on day two.',
-								image: '/images/Hunza.jpg',
+								image: '/images/karachi thatta card 2.jpg',
 								days: '2 Days',
 								destinations: '6 Destinations'
 							},
 							{
 								title: 'The Lower Sindh Circuit',
 								description: 'A comprehensive tour including the wildlife of Haleji Lake, the historical depths of Thatta, and a deep dive into Karachi\'s colonial and modern quarters.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/karachi thatta card 3.jpg',
 								days: '3 Days',
 								destinations: '8 Destinations'
 							}
@@ -804,17 +804,17 @@ const KarachiThattaPage = () => {
 						{[
 							{
 								description: 'The Karachi Thatta region is a unique blend of Pakistan\'s economic future and its medieval past. Karachi, as the "Gateway to Pakistan," is a melting pot of ethnicities, where the British colonial era structures of Saddar stand alongside modern glass towers. This city never sleeps, offering a lifestyle that ranges from the upscale cafes of DHA to the historic, spice filled alleys of Empress Market. It is a city of resilience and diversity, serving as the cultural heart for artists, entrepreneurs, and dreamers from across the country.',
-								image: '/images/gilgit.jpg',
+								image: '/images/karachi-thatta 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'Moving eastward into the Thatta district, the pace of life slows down as you enter a landscape defined by the Indus River Delta. Thatta was once a center of Islamic learning and international trade, attracting scholars from across Asia. The craftsmanship found in the Makli Hills is unparalleled, with yellow sandstone carvings so intricate they resemble fine lace. This area is not just about the dead; it is a living history of the Samma and Tarkhan dynasties, where every archway and tile tells a story of a time when this was one of the wealthiest cities in the world.',
-								image: '/images/Hunza.jpg',
+								image: '/images/karachi-thatta 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'The natural beauty of the district is centered around its vast wetlands, which serve as a vital sanctuary for migratory birds from Siberia. Haleji Lake, once the main water reservoir for Karachi, is now a paradise for birdwatchers, while Keenjhar Lake provides a refreshing escape for city dwellers seeking cooler winds and freshwater swimming. Whether you are enjoying a traditional Sindhi Palla fish dinner by the lakeside or watching the sunset over the Arabian Sea at Manora, the Karachi Thatta circuit offers a complete sensory journey through the heart of Lower Sindh.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/karachi-thatta 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
