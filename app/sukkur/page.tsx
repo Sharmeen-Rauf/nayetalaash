@@ -538,10 +538,10 @@ const SukkurPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/sukkur slider 1.jpg',
+										'/images/sukkur slider 2.jpg',
+										'/images/sukkur slider 3.jpg',
+										'/images/sukkur slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,34 +614,29 @@ const SukkurPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Lansdowne & Ayub Bridges.jpg',
 								title: 'Lansdowne & Ayub Bridges:',
 								description: 'Marvel at these two iconic bridges. The Victorian era Lansdowne Bridge and the arched Ayub Bridge are the symbols of Sukkur, offering the best views of the Indus River at sunset.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Sukkur Barrage.jpg',
 								title: 'Sukkur Barrage:',
 								description: 'Visit the largest irrigation network in the world. This British era engineering masterpiece has 66 gates and controls the water flow for nearly all of Sindh\'s agriculture.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Sadh Belo Temple.jpg',
 								title: 'Sadh Belo Temple:',
 								description: 'Take a boat to this stunning island temple. Dedicated to Baba Bankhandi Maharaj, it is one of the most significant Hindu pilgrimage sites in Pakistan, famous for its white marble and intricate carvings.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Satyan-jo- Astaan 1.jpg',
 								title: 'Satyan-jo- Astaan:',
 								description: 'Explore the "Place of Seven Sisters." Perched on a hill overlooking the river, this 17th century site features beautiful blue tiled tombs and is shrouded in local legends of purity and sacrifice.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Masoom Shah Jo Minaro.jpg',
 								title: 'Masoom Shah Jo Minaro:',
 								description: 'Climb the tilting 84 foot tower built in 1607. It offers a 360 degree panoramic view of the old city and the Indus, known for its distinct lean and historical significance.'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Aror Ruins:',
-								description: 'Discover the ancient capital of Sindh. Located just outside the city, these ruins mark the site where Mohammad Bin Qasim defeated Raja Dahir, changing the course of history in the subcontinent.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -717,21 +712,21 @@ const SukkurPage = () => {
 							{
 								title: 'Sukkur Riverfront Tour',
 								description: 'A focused day trip covering the Barrage, both Bridges, Masoom Shah Minaret, and a sunset boat ride.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 sukkur.jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'The Indus Heritage Trail',
 								description: 'Includes a trip to Sadh Belo, the ancient ruins of Aror, and the nearby royal Kot Diji Fort in Khairpur.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 sukkur.jpg',
 								days: '3 Days',
 								destinations: '6 Destinations'
 							},
 							{
 								title: 'Upper Sindh Grand Loop',
 								description: 'A comprehensive journey connecting Sukkur with the archaeological wonders of Mohenjo Daro and the havelis of Shikarpur.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 sukkur.jpg',
 								days: '5 Days',
 								destinations: '8 Destinations'
 							}
@@ -804,17 +799,17 @@ const SukkurPage = () => {
 						{[
 							{
 								description: 'Sukkur\'s history is inextricably linked to the Indus River. Long before the modern city was established, the nearby site of Aror served as the capital of the Brahmin dynasty. The city\'s strategic location on the river made it a vital trade hub for the Silk Road. This legacy of trade and transit is still visible today in the city\'s bustling dry fruit markets, where the district\'s famous Dates (Khajoor) are processed and exported worldwide.',
-								image: '/images/gilgit.jpg',
+								image: '/images/sukkur 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The cultural fabric of Sukkur is a beautiful blend of faiths and traditions. The presence of Sadh Belo in the middle of the river and the numerous Sufi shrines along its banks signify a history of religious coexistence. For nature enthusiasts, the river near Sukkur is one of the few places on earth where you can spot the rare Indus River Blind Dolphin (Bhulan), an endangered species that has survived in these waters for millions of years.',
-								image: '/images/Hunza.jpg',
+								image: '/images/sukkur 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Dining in Sukkur is an experience in itself, centered around the legendary Palla Fish (Indus Shad), often prepared with traditional Sindhi spices. After a meal, locals and tourists alike flock to the riverfront or the Military Road for tea and snacks. Whether you are navigating the narrow, historic streets of the old town or marveling at the scale of the British era barrage, Sukkur remains a vibrant testament to Sindh\'s enduring spirit and hospitality.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/sukkur 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
