@@ -538,10 +538,10 @@ const RawalpindiPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/rawalpindi slider 1.png',
+										'/images/rawalpindi slider 2.jpg',
+										'/images/rawalpindi slider 3.jpg',
+										'/images/rawalpindi slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,34 +614,29 @@ const RawalpindiPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Taxila Museum & Ruins.jpg',
 								title: 'Taxila Museum & Ruins:',
 								description: 'Journey back 2,500 years at this UNESCO World Heritage Site. Explore the ruins of ancient Buddhist monasteries and one of the world\'s first universities, showcasing the height of Gandharan art.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Ayub National Park.jpg',
 								title: 'Ayub National Park:',
 								description: 'Visit one of the largest parks in Asia. It features the "Jungle World" zoo, a Miracle Garden, serene boating lakes, and open air museums, making it the ultimate family recreation spot.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Kartarpura Food Street.jpg',
 								title: 'Kartarpura Food Street:',
 								description: 'Experience the heart of Pindi\'s food culture. Famous for its legendary breakfast of Nihari and Siri Paye, this historic street comes alive at night with the sights and smells of authentic Desi cuisine.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Pakistan Army Museum.jpg',
 								title: 'Pakistan Army Museum:',
 								description: 'Dive into the nation\'s military heritage. This world class museum displays everything from vintage tanks and aircraft to detailed galleries chronicling the history of the Pakistan Armed Forces.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Raja Bazaar & Lal Haveli.png',
 								title: 'Raja Bazaar & Lal Haveli:',
 								description: 'Navigate the vibrant "Old City." Discover centuries old architecture, including the famous Lal Haveli, while shopping for everything from traditional spices to intricate jewelry in the labyrinthine alleys.'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Sangni Fort',
-								description: 'Take a scenic drive to the outskirts of the district to visit this secluded hilltop fortress. It offers a quiet escape with stunning views of the surrounding Potohar landscape and a glimpse into Gakhar history.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -717,21 +712,21 @@ const RawalpindiPage = () => {
 							{
 								title: 'Pindi Heritage & Food Walk',
 								description: 'A day exploring the Army Museum, Raja Bazaar, and a dinner feast at Kartarpura Food Street.',
-								image: '/images/gilgit.jpg',
+								image: '/images/card 1 rawalpindi.jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Ancient Civilizations & Nature',
 								description: 'A deep dive into the Taxila ruins on day one, followed by a relaxing day at Ayub National Park and Bahria Town\'s landmarks.',
-								image: '/images/Hunza.jpg',
+								image: '/images/card 2 rawalpindi.jpg',
 								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'Potohar Circuit',
 								description: 'Use Rawalpindi as a base to visit the ancient Mankiala Stupa, the roaring Khanpur Dam, and the majestic Pharwala Fort.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 rawalpindi.jpg',
 								days: '4 Days',
 								destinations: '6 Destinations'
 							}
@@ -804,17 +799,17 @@ const RawalpindiPage = () => {
 						{[
 							{
 								description: 'Rawalpindi is a city built upon layers of diverse history. Once a small settlement known as Rawal, it flourished under the Gakhars before becoming a major administrative center for the Sikh Empire and later the British Raj. Its status as a "Garrison City" was cemented in the 19th century when the British established the largest military cantonment in South Asia here. This legacy is still visible today in the colonial era architecture of Saddar and the disciplined, well maintained landscapes of the Rawalpindi Cantonment.',
-								image: '/images/gilgit.jpg',
+								image: '/images/rawalpindi 1.JPG',
 								imageLeft: true
 							},
 							{
 								description: 'The cultural fabric of the district is defined by the Pothohari spirit, characterized by a unique dialect, warm hospitality, and a deep sense of pride. The city\'s markets, like Moti Bazaar and Bhabra Bazaar, are more than just shopping centers they are historic landmarks where generations of families have traded and socialized. This vibrant energy is what locals call the "Pindi Vibe" a mixture of bustling street life, communal dining, and a resilient, lively population that keeps the city awake long after midnight.',
-								image: '/images/Hunza.jpg',
+								image: '/images/rawalpindi 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'In the modern era, Rawalpindi has expanded into a thriving economic and residential hub. The development of high end areas like Bahria Town and DHA has brought international standards of living, luxury shopping, and recreation to the district. Connected to Islamabad by the sophisticated Metro Bus system, Rawalpindi serves as the commercial backbone of the region. Whether you are exploring the spiritual silence of an ancient Stupa or the electric atmosphere of a cricket match at the Pindi Stadium, the district offers a complete journey through Pakistan\'s past, present, and future.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/rawalpindi 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
