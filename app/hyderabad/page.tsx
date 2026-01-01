@@ -538,10 +538,10 @@ const HyderabadPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/hyderabad slider 1 (1).jpg',
+										'/images/hyderabad slider 2.jpg',
+										'/images/hyderabad slider 3.jpg',
+										'/images/hyderabad slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,32 +614,32 @@ const HyderabadPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Sindh Museum.jpg',
 								title: 'Sindh Museum:',
 								description: 'Dive into the history of the Indus Valley Civilization. The museum houses incredible dioramas and artifacts showcasing the ethnology and heritage of the Sindhi people.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Pacco Qillo (Strong Fort).jpg',
 								title: 'Pacco Qillo (Strong Fort):',
 								description: 'Explore the massive red-brick fort built by Mian Ghulam Shah Kalhoro. It stands as a symbol of the city\'s military past and offers a gateway to the historic old city.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Bombay Bakery.jpg',
 								title: 'Bombay Bakery:',
 								description: 'A mandatory stop for every visitor! Famous for its legendary Coffee Cake, this 100 year old bakery is a culinary landmark with a loyal following across Pakistan.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Resham Gali & Shahi Bazaar.jpg',
 								title: 'Resham Gali & Shahi Bazaar:',
 								description: 'Walk through one of Asia\'s longest bazaars. It is the global hub for glass bangles, traditional Ajrak, and intricate Sindhi embroidery.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Tombs of Talpur Mirs.jpg',
 								title: 'Tombs of Talpur Mirs:',
 								description: 'Admire the stunning blue tiled mausoleums of the "Mir" rulers. These 18th century structures are a masterpiece of Islamic and Persian-influenced architecture.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Mukhi House.jpg',
 								title: 'Mukhi House',
 								description: 'Visit this beautifully restored 1920s Hindu mansion. Now a museum, it offers a rare glimpse into the opulent lifestyle of the merchant class of pre partition Hyderabad.'
 							},
@@ -717,21 +717,21 @@ const HyderabadPage = () => {
 							{
 								title: 'Hyderabad Highlights',
 								description: 'A focused day trip covering the Sindh Museum, Pacco Qillo, the Bangle Market, and a tea break at Bombay Bakery.',
-								image: '/images/gilgit.jpg',
+								image: '/images/hyderabad card 1.jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'Sufi & Craft Trail',
 								description: 'An overnight stay including a visit to the nearby pottery workshops of Hala and the spiritual shrine of Shah Abdul Latif Bhittai in Bhit Shah.',
-								image: '/images/Hunza.jpg',
+								image: '/images/hyderabad card 2.jpg',
 								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'The Indus Gateway Tour',
 								description: 'A comprehensive exploration of Hyderabad, the Jamshoro University museums, and a sunset dinner at the Al Manzar riverfront.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/card 3 hyderabad.jpg',
 								days: '3 Days',
 								destinations: '6 Destinations'
 							}
@@ -804,17 +804,17 @@ const HyderabadPage = () => {
 						{[
 							{
 								description: 'Hyderabad is often described as a city that bridges the gap between the ancient and the modern. Historically known as the "Paris of India" for its roads that were once washed with perfume, it remains a major hub for education and literature. Home to the University of Sindh and the Mehran University, the district is an intellectual center where the Saraiki and Sindhi languages blend to create a rich poetic tradition that is celebrated in its vibrant local press and literary circles.',
-								image: '/images/gilgit.jpg',
+								image: '/images/hyderabad 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The city\'s culinary and artisanal identity is its most famous export. No visit to Hyderabad is complete without tasting the rich Haji Rabri or the traditional Palla Fish, a local delicacy from the Indus River prepared with secret Sindhi spices. The district is also the global capital of the bangle industry, where thousands of families have preserved the art of glasswork for generations, making the markets of Resham Gali a shimmering kaleidoscope of color and craft.',
-								image: '/images/Hunza.jpg',
+								image: '/images/hyderabad 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Strategically located on the banks of the Indus River, Hyderabad also offers natural retreats like Rani Bagh, which combines a botanical garden with a zoo and recreational spaces. The district serves as the perfect base for exploring the wider wonders of Sindh, from the massive Ranikot Fort (the Great Wall of Sindh) to the serene Keenjhar Lake. Whether you are navigating the historic alleys of the old city or enjoying the modern vibes of Autobahn Road, Hyderabad offers a warm, hospitable welcome that is quintessentially Sindhi.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/hyderabad 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
