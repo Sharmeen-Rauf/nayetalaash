@@ -538,10 +538,10 @@ const ChaghiPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/chaghi slider 1.jpg',
+										'/images/chaghi slider 2.jpg',
+										'/images/chaghi slider 3.jpg',
+										'/images/chaghi slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,34 +614,29 @@ const ChaghiPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Ras Koh Hills.jpg',
 								title: 'Ras Koh Hills:',
 								description: 'Visit the historic site of Pakistan\'s nuclear tests (Chagai I). While the district is named after the Chagai Hills, the actual 1998 detonations took place in these granite mountains, turning the hills "bone white" for a moment in history.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Koh-i-Sultan.jpg',
 								title: 'Koh-i-Sultan:',
 								description: 'Explore an inactive volcano named after a legendary Sufi saint. It is a geological marvel known for its sulfur deposits and unique rock formations that resemble craters from another planet.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Saindak Copper Gold Project.jpg',
 								title: 'Saindak Copper Gold Project:',
 								description: 'Witness the industrial heart of the desert. Known as the "Black Mound," this massive mining operation produces gold, copper, and silver, standing as an oasis of modern machinery amidst the desolate wilderness.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Hamun-e-Mashkel.jpg',
 								title: 'Hamun-e-Mashkel:',
 								description: 'View the largest dry lake basin in the region. This vast, salt encrusted playa stretches across the border into Iran and becomes a shimmering inland sea during the rare, heavy rains.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Rabat Fort.jpg',
 								title: 'Rabat Fort:',
 								description: 'Discover this remote historical fort located near the tri junction of Pakistan, Iran, and Afghanistan. It stands as a silent sentinel over ancient trade and caravan routes.'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Taftan (Zero Point)',
-								description: 'Visit the Gateway to Iran. Taftan is the main border crossing and a historic transit point for the Quetta Zahedan railway, offering a unique look at the cross border cultural and commercial exchange.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -717,21 +712,21 @@ const ChaghiPage = () => {
 							{
 								title: 'Nuclear Heritage Trail',
 								description: 'A specialized trip from Quetta to Dalbandin, focusing on the Ras Koh Hills, the Youm-e-Takbir monuments, and the desert landscapes.',
-								image: '/images/gilgit.jpg',
+								image: '/images/chaghi card 1.jpg',
 								days: '3 Days',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Geological Expedition',
 								description: 'A deep dive into the district\'s mineral wealth, covering the Saindak mines, the volcanic peaks of Koh-i-Sultan, and the onyx rich hills.',
-								image: '/images/Hunza.jpg',
+								image: '/images/chaghi card 2.jpeg',
 								days: '5 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'The Great Western Frontier',
 								description: 'An epic journey across the entire district, from the Nushki desert to the remote Taftan border and the ruins of Rabat Fort.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/chaghi card 3.jpg',
 								days: '10 Days',
 								destinations: '8 Destinations'
 							}
@@ -804,17 +799,17 @@ const ChaghiPage = () => {
 						{[
 							{
 								description: 'Chaghi is a district of staggering proportions and geological significance. Often referred to as a "Mining Paradise," it holds the world class Reko Diq and Saindak deposits, making it a cornerstone of Pakistan\'s future economy. The district is home to rare minerals like Onyx (a deep green marble), sulfur, and chromite. Its geography is dominated by the Chaghi Raskoh Magmatic Arc, a volcanic belt that has created a landscape unlike any other in South Asia, filled with jagged peaks and mineral stained soils.',
-								image: '/images/gilgit.jpg',
+								image: '/images/chaghi 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district\'s headquarters, Dalbandin, serves as the central hub for travelers heading towards the Iranian border. Despite its arid climate and sparse population, Chaghi is rich in nomadic culture. The local Baloch and Brahui tribes have mastered survival in this harsh terrain, maintaining a lifestyle centered around camel herding and a deep knowledge of the desert\'s hidden springs. The region is also home to the Zangi Nawar Game Reserve, a vital wetland for migratory birds that provides a rare splash of blue and green in the golden desert.',
-								image: '/images/Hunza.jpg',
+								image: '/images/chaghi 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'A trip to Chaghi is not a standard vacation; it is an expedition into one of the most remote and strategically important regions of Pakistan. Whether you are standing at the foot of the Ras Koh mountains, reflecting on the nation\'s nuclear history, or watching the sunset over the endless dunes of the Nokkundi Desert, Chaghi offers a sense of solitude and grandeur that is truly humbling. It is a place for the bold, the curious, and those who wish to see the "unfinished" beauty of the Earth.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/chaghi 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
