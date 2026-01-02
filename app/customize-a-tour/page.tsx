@@ -42,10 +42,99 @@ const CustomizeTourPage = () => {
 	// Handle form submission
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
-		// Here you would typically send the form data to your backend
-		console.log('Form submitted:', formData);
-		// Optionally redirect or show success message
-		alert('Thank you for your inquiry! We will contact you soon.');
+		
+		// Validate required fields
+		if (!formData.destination || !formData.totalDays || !formData.fullName || !formData.phone) {
+			alert('Please fill in all required fields.');
+			return;
+		}
+
+		// Format the message for WhatsApp
+		let message = '🌟 *CUSTOMIZE TOUR REQUEST*\n\n';
+		
+		// Trip Details
+		message += '*TRIP DETAILS:*\n';
+		message += `📍 Destination: ${formData.destination}\n`;
+		message += `📅 Total Days: ${formData.totalDays}\n`;
+		if (formData.startingDate) {
+			message += `📆 Starting Date: ${formData.startingDate}\n`;
+		}
+		if (formData.travelMode) {
+			message += `✈️ Travel Mode: ${formData.travelMode === 'air' ? 'By Air' : 'By Road'}\n`;
+		}
+		if (formData.vehiclePreference) {
+			const vehicleMap: { [key: string]: string } = {
+				'coaster-saloon': 'Coaster Saloon',
+				'hiace': 'Hiace',
+				'corolla': 'Corolla',
+				'other': 'Other'
+			};
+			message += `🚗 Vehicle Preference: ${vehicleMap[formData.vehiclePreference] || formData.vehiclePreference}\n`;
+		}
+		if (formData.totalPersons) {
+			message += `👥 Total Persons: ${formData.totalPersons}\n`;
+		}
+		if (formData.adults) {
+			message += `👤 Adults (12+): ${formData.adults}\n`;
+		}
+		if (formData.children) {
+			message += `👶 Children (0-12): ${formData.children}\n`;
+		}
+		if (formData.totalRooms) {
+			message += `🏨 Total Rooms: ${formData.totalRooms}\n`;
+		}
+		if (formData.departureLocation) {
+			message += `🚩 Departure Location: ${formData.departureLocation}\n`;
+		}
+		if (formData.tourGuide) {
+			message += `🎯 Tour Guide: ${formData.tourGuide === 'yes' ? 'Yes' : 'No'}\n`;
+		}
+		
+		message += '\n';
+		
+		// Group Category
+		if (formData.groupCategory) {
+			const categoryMap: { [key: string]: string } = {
+				'couple': 'Couple',
+				'family': 'Family',
+				'corporate': 'Corporate',
+				'students': 'Students/Friends'
+			};
+			message += `*Group Category:* ${categoryMap[formData.groupCategory] || formData.groupCategory}\n\n`;
+		}
+		
+		// Service Type
+		if (formData.serviceType) {
+			const serviceMap: { [key: string]: string } = {
+				'standard': 'Standard',
+				'deluxe': 'Deluxe',
+				'executive': 'Executive'
+			};
+			message += `*Service Type (Budget):* ${serviceMap[formData.serviceType] || formData.serviceType}\n\n`;
+		}
+		
+		// Specific Requirements
+		if (formData.specificRequirements) {
+			message += `*Specific Requirements:*\n${formData.specificRequirements}\n\n`;
+		}
+		
+		// Contact Details
+		message += '*CONTACT DETAILS:*\n';
+		message += `👤 Name: ${formData.fullName}\n`;
+		if (formData.email) {
+			message += `📧 Email: ${formData.email}\n`;
+		}
+		message += `📱 Phone/WhatsApp: ${formData.phone}\n`;
+		
+		// Encode message for URL
+		const encodedMessage = encodeURIComponent(message);
+		
+		// WhatsApp number: +92 331 1438251
+		const whatsappNumber = '923311438251';
+		const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+		
+		// Open WhatsApp
+		window.open(whatsappUrl, '_blank');
 	};
 
 	// Handle input changes
@@ -66,9 +155,9 @@ const CustomizeTourPage = () => {
 					<div className="flex items-center justify-between py-1 sm:py-1.5">
 						{/* Left: Contact Info */}
 						<div className="flex items-center gap-2 sm:gap-4 text-white text-[10px] sm:text-xs">
-							<a href="tel:+92331438251" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
+							<a href="tel:+923311438251" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
 								<Phone className="w-3 h-3" style={{ color: '#f99621' }} />
-								<span className="hidden sm:inline">+92 331 438251</span>
+								<span className="hidden sm:inline">+92 331 1438251</span>
 								<span className="sm:hidden">+92 331...</span>
 							</a>
 							<a href="mailto:info@nayitalaash.com" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
