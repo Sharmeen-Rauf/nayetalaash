@@ -483,10 +483,10 @@ const CustomizeTourPage = () => {
 			</div>
 
 			{/* Main Content */}
-			<main className="pt-[100px] sm:pt-[110px] pb-12">
+			<main className="pt-[120px] sm:pt-[130px] md:pt-[140px] pb-12">
 				<div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 					{/* Page Title */}
-					<div className="text-center mb-8">
+					<div className="text-center mb-8 mt-4">
 						<h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 uppercase tracking-tight" style={{ color: secondaryBlack }}>
 							CUSTOMIZE YOUR OWN TOUR WITH US!
 						</h1>
@@ -769,7 +769,7 @@ const CustomizeTourPage = () => {
 							<label className="block text-sm font-medium mb-4" style={{ color: secondaryBlack }}>
 								What kind of services do you need? (Trip Budget)
 							</label>
-							<div className="flex gap-4">
+							<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
 								<label className="flex items-center">
 									<input
 										type="radio"
