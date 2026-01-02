@@ -539,9 +539,9 @@ const TharparkarPage = () => {
 								<div className="relative w-full h-full">
 									{[
 										'/images/tharparkar slider 1.gif',
-										'/images/tharparkar slider 2.jpg',
-										'/images/tharparkar slider 3.jpg',
-										'/images/tharparkar slider 4.jpg'
+										'/images/tharparkar slider 2.jpeg',
+										'/images/tharparker slider 3.jpg',
+										'/images/Tharparkar slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -799,17 +799,17 @@ const TharparkarPage = () => {
 						{[
 							{
 								description: 'Tharparkar is a district defined by its unique socio cultural fabric. The headquarters, Mithi, is a global model of interfaith harmony it is a city where Muslims refrain from slaughtering cows out of respect for their Hindu neighbors, and Hindus join Muslims in breaking their fast during Ramadan. This culture of "living and letting live" is reflected in the local architecture traditional circular mud houses with thatched roofs called Chouras, designed to stay cool in the scorching desert heat.',
-								image: '/images/tharparkar 1.jpg',
+								image: '/images/tharparker 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The natural beauty of the district is at its peak during the Monsoon (July to September). When the rains arrive, the parched dunes are covered in grass, and the Karoonjhar Mountains "bleed" water through dozens of waterfalls. This is the best time to see the district\'s national bird, the Peacock, in its full glory. The district also hosts the Chinkara Wildlife Sanctuary, where the graceful Indian Gazelle can be spotted leaping across the sand dunes, a sight that has inspired centuries of Thari poetry and music.',
-								image: '/images/tharparkar 2.jpg',
+								image: '/images/tharparker 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'In recent years, Tharparkar has become a focal point of Pakistan\'s energy future due to the massive Thar Coal project. While modern infrastructure and CPEC funded roads have made the desert more accessible, the heart of Thar remains in its traditional crafts. The district is famous for its Ralli (patchwork quilts), intricate mirror work embroidery, and heavy silver jewelry. Whether you are listening to a local musician play the Kamaycha under a starlit desert sky or exploring the ruins of a 2,000 year old civilization, Tharparkar is a place where time seems to stand still.',
-								image: '/images/tharparkar 3.jpg',
+								image: '/images/tharparker 3.png',
 								imageLeft: true
 							}
 						].map((item, idx) => (
