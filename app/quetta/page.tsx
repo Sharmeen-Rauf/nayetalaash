@@ -538,10 +538,10 @@ const QuettaPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/quetta slider 1.jpg',
+										'/images/quetta slider 2.jpg',
+										'/images/quetta slider 3.jpg',
+										'/images/quetta SLIDER 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,34 +614,29 @@ const QuettaPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Hanna Lake.jpg',
 								title: 'Hanna Lake:',
 								description: 'Visit the turquoise jewel of the valley. Surrounded by stark brown hills, this British era reservoir is perfect for boating, lakeside picnics, and catching a glimpse of the golden hour reflection of the mountains.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Hazarganji Chiltan National Park.jpg',
 								title: 'Hazarganji Chiltan National Park:',
 								description: 'Explore the "Land of a Thousand Treasures." This park is a sanctuary for the rare Chiltan Wild Goat (Markhor) and offers rugged trekking trails through ancient juniper and pistachio forests.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Archaeological Museum.jpg',
 								title: 'Archaeological Museum:',
 								description: 'Dive into history at the Balochistan Provincial Museum. It houses a world class collection of pottery, tools, and jewelry from the 9,000 year old Mehrgarh civilization, along with royal Omani artifacts.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Liaquat & Kandahari Bazaars.jpg',
 								title: 'Liaquat & Kandahari Bazaars:',
 								description: 'Immerse yourself in the vibrant trade hubs. These markets are famous for authentic Balochi mirror work, Pashtun embroidery, high quality dry fruits, and traditional Peshawari/Pahwal sandals.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Jabal-e-Noor-ul-Quran.jpg',
 								title: 'Jabal-e-Noor-ul-Quran:',
 								description: 'Visit this unique mountain of holy manuscripts. It features hundreds of thousands of old, respectful copies of the Quran preserved in deep, naturally cool tunnels carved into the hillside.'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Urak Valley:',
-								description: 'Drive through the "Valley of Orchards." Just 22km from the city, this lush green oasis produces the finest apples, apricots, and peaches, ending at a breathtaking natural waterfall.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -717,21 +712,21 @@ const QuettaPage = () => {
 							{
 								title: 'Quetta City Highlights',
 								description: 'A cultural immersion covering Hanna Lake, Quetta Museum, the bazaars, and a traditional Sajji dinner at Namak Mandi.',
-								image: '/images/gilgit.jpg',
+								image: '/images/Quetta card 1.jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'The Highland Retreat',
 								description: 'Includes the city highlights plus a full day trip to Ziarat, featuring the Quaid-e-Azam Residency and the ancient Juniper Forest.',
-								image: '/images/Hunza.jpg',
+								image: '/images/quetta card 2.jpg',
 								days: '2 Days',
 								destinations: '6 Destinations'
 							},
 							{
 								title: 'Northern Balochistan Loop',
 								description: 'A comprehensive expedition covering Quetta, Ziarat, Pishin Valley, and a scenic drive through the historic Bolan Pass.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/quetta card 3.jpg',
 								days: '4 Days',
 								destinations: '9 Destinations'
 							}
@@ -804,17 +799,17 @@ const QuettaPage = () => {
 						{[
 							{
 								description: 'Quetta is a district defined by its High Altitude Resilience. Following the devastating earthquake of 1935, the city was meticulously rebuilt, giving it a unique character where colonial military architecture (like the Staff College) meets modern tribal urbanism. The climate is a major draw; while the rest of Pakistan swelters in summer, Quetta remains pleasantly cool, and in winter, it transforms into a Winter Wonderland, often draped in a thick blanket of snow.',
-								image: '/images/gilgit.jpg',
+								image: '/images/quetta 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The culinary landscape of Quetta is arguably the best in the province. The local Sajji (salted lamb roasted over an open fire) and Roash (slow cooked mutton in its own juices) have gained fame across the country. In the winter months, you can find Landhi a traditional sun dried meat delicacy that has been a staple of the nomadic tribes for centuries. The city is also the best place to stock up on premium dry fruits, saffron, and Afghan carpets.',
-								image: '/images/Hunza.jpg',
+								image: '/images/quetta 2.png',
 								imageLeft: false
 							},
 							{
 								description: 'Beyond the city limits, the district is a gateway to extreme biodiversity. The Chiltan Hill Viewpoint offers a panoramic view of the entire valley, while the nearby Spin Karez demonstrates the ancient underground irrigation system that has kept this arid region fertile for generations. Whether you are drinking Sulemani tea at a roadside "dhaba" or exploring the halls of the Geological Museum, Quetta offers a sense of being at the true frontier of the world.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/quetta 3.jpeg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
@@ -830,7 +825,7 @@ const QuettaPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Quetta District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
