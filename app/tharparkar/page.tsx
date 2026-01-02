@@ -538,10 +538,10 @@ const TharparkarPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/tharparkar slider 1.gif',
+										'/images/tharparkar slider 2.jpg',
+										'/images/tharparkar slider 3.jpg',
+										'/images/tharparkar slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,34 +614,29 @@ const TharparkarPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Karoonjhar Mountains.jpg',
 								title: 'Karoonjhar Mountains:',
 								description: 'Explore the granite peaks of Nagar Parkar. These ancient hills are rich in minerals and folklore, featuring perennial springs and 20+ seasonal streams that come alive during the monsoon.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Gori & Jain Temples.jpg',
 								title: 'Gori & Jain Temples:',
 								description: 'Marvel at the 14th century marble architecture. The Gori Temple is a masterpiece of Jain heritage, featuring 52 steeples and frescoes that are among the oldest in the region.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Marvi\'s Well (Bhalwa).jpg',
 								title: 'Marvi\'s Well (Bhalwa):',
 								description: 'Visit the site of the legendary Umar Marvi folklore. This well is a symbol of patriotism and chastity, commemorating the village girl who refused a king\'s palace to return to her desert home.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Naukot Fort.jpg',
 								title: 'Naukot Fort:',
 								description: 'Known as the "Gateway to the Thar Desert," this 1814 Talpur era fortress features massive arched gateways and tapering walls built to consolidate power over the desert routes.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Gadi Bhit (Mithi).jpg',
 								title: 'Gadi Bhit (Mithi):',
 								description: 'Climb to the highest point in Mithi. This sand hill viewpoint offers a breathtaking panoramic view of the city, especially at night when the town lights shimmer like candles in the desert.'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Bhodesar Mosque & Dam',
-								description: 'Visit the beautiful white marble mosque built in 1505 by Sultan Mahmud Begada, nestled at the base of the Karoonjhar hills next to a serene reservoir.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -717,21 +712,21 @@ const TharparkarPage = () => {
 							{
 								title: 'Thar Gateway Tour',
 								description: 'A quick trip covering the Naukot Fort, the city of Mithi (Gadi Bhit), and the local handicraft markets.',
-								image: '/images/gilgit.jpg',
+								image: '/images/tharparker card 1.jpg',
 								days: '1 Day',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Mountain & Mystic Trail',
 								description: 'An overnight journey from Mithi to Nagar Parkar, focusing on the Karoonjhar Mountains, Marvi\'s Well, and the Jain Temples.',
-								image: '/images/Hunza.jpg',
+								image: '/images/tharparker card 2.jpg',
 								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'Deep Desert Expedition',
 								description: 'A comprehensive tour including desert camping, wildlife spotting (Chinkara gazelles), and visits to the Thar Coal project and Islamkot.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/tharparker card 3.jpeg',
 								days: '4 Days',
 								destinations: '8 Destinations'
 							}
@@ -804,17 +799,17 @@ const TharparkarPage = () => {
 						{[
 							{
 								description: 'Tharparkar is a district defined by its unique socio cultural fabric. The headquarters, Mithi, is a global model of interfaith harmony it is a city where Muslims refrain from slaughtering cows out of respect for their Hindu neighbors, and Hindus join Muslims in breaking their fast during Ramadan. This culture of "living and letting live" is reflected in the local architecture traditional circular mud houses with thatched roofs called Chouras, designed to stay cool in the scorching desert heat.',
-								image: '/images/gilgit.jpg',
+								image: '/images/tharparkar 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The natural beauty of the district is at its peak during the Monsoon (July to September). When the rains arrive, the parched dunes are covered in grass, and the Karoonjhar Mountains "bleed" water through dozens of waterfalls. This is the best time to see the district\'s national bird, the Peacock, in its full glory. The district also hosts the Chinkara Wildlife Sanctuary, where the graceful Indian Gazelle can be spotted leaping across the sand dunes, a sight that has inspired centuries of Thari poetry and music.',
-								image: '/images/Hunza.jpg',
+								image: '/images/tharparkar 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'In recent years, Tharparkar has become a focal point of Pakistan\'s energy future due to the massive Thar Coal project. While modern infrastructure and CPEC funded roads have made the desert more accessible, the heart of Thar remains in its traditional crafts. The district is famous for its Ralli (patchwork quilts), intricate mirror work embroidery, and heavy silver jewelry. Whether you are listening to a local musician play the Kamaycha under a starlit desert sky or exploring the ruins of a 2,000 year old civilization, Tharparkar is a place where time seems to stand still.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/tharparkar 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
