@@ -538,10 +538,10 @@ const KhuzdarPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/khuzdar slider 1.jpg',
+										'/images/khuzdar slider 2.jpg',
+										'/images/khuzdar slider 3.jpg',
+										'/images/khuzdar slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,32 +614,32 @@ const KhuzdarPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Moola Chotok 1.jpg',
 								title: 'Moola Chotok:',
 								description: 'Witness the "Hidden Paradise" of Balochistan. This stunning ravine features turquoise waterfalls and natural pools tucked between towering cliffs a refreshing miracle in the heart of the desert.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Pir Chattal Noorani.jpg',
 								title: 'Pir Chattal Noorani:',
 								description: 'Visit the sacred shrine of Pir Chattal, famous for its legendary fish. The local belief is that the fish are protected and cannot be eaten; they live in crystal clear springs.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Charoo Machi Waterfall.jpg',
 								title: 'Charoo Machi Waterfall:',
 								description: 'Discover this remote, off road oasis. Similar to Moola Chotok but even more secluded, it offers a pristine camping experience and multi tiered waterfalls perfect for swimming.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Lahoot Lamakan.jpeg',
 								title: 'Lahoot Lamakan:',
 								description: 'Explore a spiritual and mysterious cave located in the Wadh tehsil. It is a site of great mystical significance and a place of pilgrimage, accessible only through a challenging trek through the mountains.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Sohar Damb (Nal.jpg',
 								title: 'Sohar Damb (Nal):',
 								description: 'Walk through history at this ancient archaeological site (Red Mound). It reveals the remnants of a 2,000 year old civilization, showcasing the district\'s deep roots in the prehistoric era.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/BUETK Architecture.jpg',
 								title: 'BUETK Architecture:',
 								description: 'Visit the Balochistan University of Engineering and Technology, a modern landmark that signifies Khuzdar\'s growth as the educational hub of the province.'
 							},
@@ -717,21 +717,21 @@ const KhuzdarPage = () => {
 							{
 								title: 'The Chotok Sprint',
 								description: 'An intensive weekend trip from Karachi or Quetta focusing exclusively on Moola Chotok, including a 4x4 desert safari and overnight camping.',
-								image: '/images/gilgit.jpg',
+								image: '/images/khuzdar card 1.jpg',
 								days: '2 Days',
 								destinations: '2 Destinations'
 							},
 							{
 								title: 'Oasis & Spirituality',
 								description: 'A comprehensive tour covering Khuzdar city, Moola Chotok, and the sacred springs of Pir Chattal, with stops at local mountain viewpoints.',
-								image: '/images/Hunza.jpg',
+								image: '/images/khuzdar card 2.jpg',
 								days: '3 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'The Jhalawan Expedition',
 								description: 'A deep territory adventure covering the remote Charoo Machi waterfalls, the archaeological ruins of Nal, and the spiritual trek to Lahoot Lamakan.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/khuzdar card 3.jpg',
 								days: '5 Days',
 								destinations: '7 Destinations'
 							}
@@ -804,17 +804,17 @@ const KhuzdarPage = () => {
 						{[
 							{
 								description: 'Khuzdar is a district that defies expectations. While the terrain is rugged and the summers can be intense, the district is blessed with perennial rivers like the Moola River, which creates the lush valleys and fruit orchards (apples, apricots, and mangoes) that dot the landscape. The population is primarily Brahui speaking, and the local culture is built on the pillars of tribal honor and legendary hospitality.',
-								image: '/images/gilgit.jpg',
+								image: '/images/khuzdar 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The district is also a mineral powerhouse, sitting on vast deposits of Barite, Chromite, and Onyx. Historically, it was a centerpiece of the Silk Road\'s southern branch, referred to in ancient texts as Tooran. Today, it remains a vital stop on the RCD Highway (N 25), connecting Pakistan with Iran and Turkey.',
-								image: '/images/Hunza.jpg',
+								image: '/images/khuzdar 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'A visit to Khuzdar is not complete without experiencing its culinary traditions. The Balochi Sajji here is prepared in its most authentic form slow roasted meat with nothing but salt while the Kaak (Stone Bread) is a nomadic delicacy that every traveler must try. Whether you are stargazing in the Moola Valley or exploring the ancient ruins of Sohar Damb, Khuzdar offers a profound sense of connection to both nature and the ancient past.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/khuzdar 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
@@ -830,7 +830,7 @@ const KhuzdarPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Khuzdar District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
