@@ -538,10 +538,10 @@ const ZiaratPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/ziarat slider 1.jpg',
+										'/images/ziarat slider 2.jpg',
+										'/images/ziarat slider 3.jpg',
+										'/images/ziarat slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,34 +614,29 @@ const ZiaratPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Quaid-e-Azam Residency.jpg',
 								title: 'Quaid-e-Azam Residency:',
 								description: 'Visit this iconic wooden monument built in 1892. Surrounded by lush gardens, this heritage site preserves the personal belongings and the peaceful atmosphere where the Quaid-e-Azam found solace in his last month.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/UNESCO Juniper Forest.jpg',
 								title: 'UNESCO Juniper Forest:',
 								description: 'Explore one of the oldest living forests on Earth. Declared a UNESCO Biosphere Reserve, these "living fossils" grow only one inch per year, creating a mystical, gnarled landscape that is unique to this region.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Prospect Point.jpg',
 								title: 'Prospect Point:',
 								description: 'Trek or drive 6 km from the town to reach this panoramic viewpoint. At 2,713 meters, it offers a stunning birds eye view of the entire Ziarat valley and the towering 11,400 foot Khilafat Peak.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Sandeman Tangi.jpg',
 								title: 'Sandeman Tangi:',
 								description: 'Experience the dramatic waterfalls and deep gorges. This natural formation features a cascading stream between high cliffs and is one of the most popular picnic spots in the district.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Chashma Walk.jpg',
 								title: 'Chashma Walk:',
 								description: 'Take a peaceful stroll along the "Spring Walk." This mile long trail leads to a natural spring that provides water to the town and offers a serene path through the pine scented mountains.'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Ziarat Apple & Cherry Orchards:',
-								description: 'Indulge in the "Fruit Basket" experience. In June, the district is famous for its black and red cherries, while autumn brings the harvest of the world famous Ziarat apples.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -717,21 +712,21 @@ const ZiaratPage = () => {
 							{
 								title: 'Heritage & Nature Sprint',
 								description: 'A quick getaway from Quetta covering the Quaid-e-Azam Residency, Prospect Point, the main Juniper woods, and Sandeman Tangi.',
-								image: '/images/gilgit.jpg',
+								image: '/images/ziarat card 1.jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'The Juniper Retreat',
 								description: 'A more relaxed stay including an overnight at a mountain hut, visits to the Fern Tangi, Chutair Valley, and sunrise photography at Prospect Point.',
-								image: '/images/Hunza.jpg',
+								image: '/images/ziarat card 2.jpg',
 								days: '3 Days',
 								destinations: '7 Destinations'
 							},
 							{
 								title: 'Khalifat Peak Expedition',
 								description: 'A specialized trekking and nature tour including a summit attempt of Khalifat Peak and exploring the remote Zizri forest and nomadic settlements.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/ziarat card 3.jpg',
 								days: '5 Days',
 								destinations: '10 Destinations'
 							}
@@ -804,17 +799,17 @@ const ZiaratPage = () => {
 						{[
 							{
 								description: 'Ziarat is a district of Biological and Historical Wonders. Its name, which means "Holy Place," is derived from the shrine of the saint Kharwari Baba, whose blessings are said to have made the valley so lush. The district\'s climate is unique; it is one of the few places in Balochistan that receives heavy winter snow, transforming the gnarled juniper trees into a scene from a fairy tale. The air here is remarkably pure, enriched by the oxygen rich juniper ecosystem, making it a natural sanatorium.',
-								image: '/images/gilgit.jpg',
+								image: '/images/ziarat 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The cultural fabric of Ziarat is woven with the traditions of the Pashtun tribes, mainly the Sarangzai and Panizai. Their hospitality is legendary, often expressed through a cup of hot green tea or a shared plate of Sajji. The district is also famous for its Wild Lavender (Shinshoab), which covers the hillsides in a purple hue during the twilight hours, adding a mystical fragrance to the mountain breeze.',
-								image: '/images/Hunza.jpg',
+								image: '/images/ziarat 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Economically, Ziarat is the backbone of Balochistan\'s fruit industry. The apples grown here, particularly the Kulu and Black varieties, are prized for their crispness and flavor. For the adventurer, the rugged terrain offers endless possibilities for rock climbing and high altitude trekking. Whether you are a history student reflecting at the Residency or a botanist marveling at trees that saw the dawn of human civilization, Ziarat provides a perspective on time and peace that is truly humbling.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/ziarat 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
@@ -830,7 +825,7 @@ const ZiaratPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Ziarat District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
