@@ -538,10 +538,10 @@ const KalatPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/kalat slider 1.jpg',
+										'/images/kalat slider 2.jpg',
+										'/images/kalat slider 3.jpg',
+										'/images/kalat slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,34 +614,29 @@ const KalatPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Miri Fort (Kalat Fort).jpg',
 								title: 'Miri Fort (Kalat Fort):',
 								description: 'Visit the historic seat of the Khan of Kalat. Though weathered by time and the 1935 earthquake, these massive mud and stone ruins still overlook the city, representing centuries of Brahui power.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Harboi Hills & Forest.jpg',
 								title: 'Harboi Hills & Forest:',
 								description: 'Explore one of the largest Juniper forests in the world. Reaching heights of 9,000 feet, these hills offer a cool sanctuary with ancient trees that have survived for millennia.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Pandran Cave of Skulls 1.jpg',
 								title: 'Pandran Cave of Skulls:',
 								description: 'Discover a haunting archaeological site. Local folklore and historical accounts suggest these caves hold the remains of ancient warriors or martyrs, wrapped in mystery and legend.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Kali Mata Temple.jpg',
 								title: 'Kali Mata Temple:',
 								description: 'Witness religious harmony at this pre Islamic Hindu temple. Located at the base of the fort, it remains a site of pilgrimage and a testament to the district\'s diverse cultural history.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Shahi Jamia Masjid.jpg',
 								title: 'Shahi Jamia Masjid:',
 								description: 'Visit the grand royal mosque located near the Khan\'s Palace. Its architecture reflects the traditional Balochi Persian influence and serves as a central hub for the local community.'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Orchards of Kalat:',
-								description: 'Taste the freshest apples and apricots. Kalat is famous for its high quality deciduous fruits, which thrive in the district\'s cold, dry climate and are a staple of the local economy.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -717,21 +712,21 @@ const KalatPage = () => {
 							{
 								title: 'Royal Capital Walk',
 								description: 'A focused tour of Kalat city including the Miri Fort, Kali Temple, and the local handicraft bazaar.',
-								image: '/images/gilgit.jpg',
+								image: '/images/Kalat card 1.jpg',
 								days: '1 Day',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'Brahui Highland Retreat',
 								description: 'Includes the city tour plus a trek into the Harboi Hills for a nature focused stay in the cold mountain air.',
-								image: '/images/Hunza.jpg',
+								image: '/images/kalat card 2.jpg',
 								days: '2 Days',
 								destinations: '5 Destinations'
 							},
 							{
 								title: 'The Heritage Expedition',
 								description: 'A deep dive covering the Pandran Caves, royal palaces, and nomadic settlements to experience the true Brahui lifestyle.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/kalat card 3.jpg',
 								days: '4 Days',
 								destinations: '8 Destinations'
 							}
@@ -804,17 +799,17 @@ const KalatPage = () => {
 						{[
 							{
 								description: 'Kalat is a district defined by its Princely Heritage. For centuries, it was the center of a sovereign state the Khanate of Kalat which unified the Baloch and Brahui tribes. The city of Kalat still carries the weight of this history you can feel it in the traditional Brahui embroidery found in the markets, characterized by its intricate, geometric needlework that is distinct from the floral patterns of Sindh or Punjab.',
-								image: '/images/gilgit.jpg',
+								image: '/images/kalat 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The climate here is a defining feature. Often called a "Cold Desert," Kalat experiences some of the lowest temperatures in the country, with snow covered peaks during the winter. This unique environment has fostered a resilient nomadic culture. The local cuisine is built for these conditions, featuring the famous Sajji (salted roast meat), Qurut (hardened dried yogurt), and Kaak (stonebaked bread) which is legendary for its durability and taste.',
-								image: '/images/Hunza.jpg',
+								image: '/images/kalat 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Economically and culturally, Kalat remains a vital link between Quetta and the southern coast. The district hosts the Jashn-e-Kalat festival every October, a vibrant display of tribal sports, cattle shows, and folk music. Whether you are exploring the volcanic colored mountains or drinking tea with local elders who still recount the tales of the Khans, Kalat offers a sense of nobility and solitude that is rarely found elsewhere in the region.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/kalat 3.jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (
@@ -830,7 +825,7 @@ const KalatPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Kalat District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
