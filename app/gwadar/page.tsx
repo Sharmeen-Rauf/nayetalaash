@@ -538,10 +538,10 @@ const GwadarPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/gilgit.jpg',
-										'/images/Hunza.jpg',
-										'/images/skardu 2.jpg',
-										'/images/Swat.jpg'
+										'/images/gwadar slider 1.jpeg',
+										'/images/gwadar slider 2.jpg',
+										'/images/gwadar slider 3.jpg',
+										'/images/Gwadar slider 4.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -614,34 +614,29 @@ const GwadarPage = () => {
 					<div className="flex flex-row max-w-7xl mx-auto overflow-hidden rounded-lg">
 						{[
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Koh-e-Batil & Hammerhead 1.jpg',
 								title: 'Koh-e-Batil & Hammerhead:',
 								description: 'Climb the 700+ steps to the top of this hammerhead shaped plateau. It offers the most iconic panoramic view of the entire Gwadar city on one side and the vast Arabian Sea on the other.'
 							},
 							{
-								image: '/images/Hunza.jpg',
+								image: '/images/Gwadar Cricket Stadium.jpg',
 								title: 'Gwadar Cricket Stadium:',
 								description: 'Visit what is often called the "Most Beautiful Stadium in the World." Tucked between towering jagged mountains, this stadium has become a global viral sensation for its stunning backdrop.'
 							},
 							{
-								image: '/images/skardu 2.jpg',
+								image: '/images/Astola Island (Jezira Haft Talar).jpg',
 								title: 'Astola Island (Jezira Haft Talar):',
 								description: 'Take a boat to Pakistan\'s first Marine Protected Area. Known as the "Island of the Seven Hills," it features turquoise waters, coral reefs, and is a prime spot for scuba diving and camping.'
 							},
 							{
-								image: '/images/Swat.jpg',
+								image: '/images/Jiwani Sunset Point.jpg',
 								title: 'Jiwani Sunset Point:',
 								description: 'Travel to the edge of Pakistan near the Iran border. Jiwani is famous for its legendary sunsets; it even features a historic hut built for Queen Victoria to witness the sun dipping into the sea.'
 							},
 							{
-								image: '/images/gilgit.jpg',
+								image: '/images/Marine Drive.jpg',
 								title: 'Marine Drive:',
 								description: 'Take a leisurely evening drive or walk along this stunning coastal boulevard. Lined with modern lights and the roaring sea, it is the heartbeat of Gwadar\'s nighttime social life.'
-							},
-							{
-								image: '/images/gilgit.jpg',
-								title: 'Princess of Hope & The Sphinx:',
-								description: 'Marvel at these natural rock sculptures in Hingol (en route to Gwadar). Shaped by centuries of wind and rain, these formations resemble a regal woman and the Great Sphinx of Giza.'
 							},
 						].map((item, idx) => (
 							<div 
@@ -717,21 +712,21 @@ const GwadarPage = () => {
 							{
 								title: 'Coastal Highway Sprint',
 								description: 'A fast paced trip from Karachi to Gwadar, including stops at Kund Malir, Princess of Hope, and Gwadar\'s Marine Drive.',
-								image: '/images/gilgit.jpg',
+								image: '/images/gwadar card 1.jpg',
 								days: '2 Days',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'The Deep Sea Experience',
 								description: 'Includes a full day at Gwadar Port and Koh-e-Batil, plus a boat excursion to the nearby golden beaches or mini ports.',
-								image: '/images/Hunza.jpg',
+								image: '/images/gwadar card 2.png',
 								days: '3 Days',
 								destinations: '6 Destinations'
 							},
 							{
 								title: 'The Ultimate Makran Trail',
 								description: 'A comprehensive expedition covering Ormara Beach, Pasni, Gwadar City, the Jiwani border, and a full day trip to Astola Island.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/gwadar card 3.jpg',
 								days: '5 Days',
 								destinations: '9 Destinations'
 							}
@@ -804,17 +799,17 @@ const GwadarPage = () => {
 						{[
 							{
 								description: 'Gwadar is a place of deep historical and cultural layers. For over 170 years, it was an overseas possession of the Sultanate of Oman, a legacy that is still visible today. You can see it in the Omani style architecture of the Old Town, the traditional Kummah caps worn by locals, and the famous Gwadar Halwa, a nutty, gelatinous treat that is a must buy for every visitor. The population is a unique blend of Baloch and Arab heritage, known for their exceptional hospitality and maritime skills.',
-								image: '/images/gilgit.jpg',
+								image: '/images/gwadar 1.jpg',
 								imageLeft: true
 							},
 							{
 								description: 'The geography of Gwadar is dominated by its "Hammerhead" peninsula, a geological wonder created by ancient mud volcano activity. The district\'s coastline is one of the cleanest in the world, with beaches like Paddi Zirr and Demi Zirr offering calm waters for fishing and boating. For nature lovers, the region is a sanctuary for rare wildlife; the nearby Hingol National Park is home to Ibex, Leopards, and the endangered Marsh Crocodiles, while the sea is frequently visited by Dolphins and Green Sea Turtles.',
-								image: '/images/Hunza.jpg',
+								image: '/images/gwadar 2.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Economically, Gwadar is the future of Pakistan. The Deep Sea Port, with its massive cranes and strategic position near the Strait of Hormuz, is a symbol of the city\'s rising importance. However, despite the multi billion dollar developments, the soul of the district remains in its Fisherman\'s Wharves. Watching the colorful wooden Dhows bring in the day\'s catch of lobster, prawns, and kingfish is a reminder that while Gwadar is building the future, it has not forgotten its sea faring roots.',
-								image: '/images/skardu 2.jpg',
+								image: '/images/Gwadar 3.png',
 								imageLeft: true
 							}
 						].map((item, idx) => (
@@ -830,7 +825,7 @@ const GwadarPage = () => {
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={item.image}
-											alt="Hunza District"
+											alt="Gwadar District"
 											fill
 											className="object-cover transition-transform duration-700 hover:scale-110"
 										/>
