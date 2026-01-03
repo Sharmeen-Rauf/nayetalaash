@@ -125,14 +125,14 @@ const LahoreTourPage = () => {
 									<Youtube className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 								</a>
 							</div>
-							<button
-								onClick={handleWhatsAppClick}
+							<Link
+								href="/customize-a-tour"
 								className="px-2 py-1 sm:px-3 sm:py-1 text-[9px] sm:text-[10px] font-bold text-[#211f20] hover:bg-[#e8851a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#f99621]/50 ml-0.5"
 								style={{ backgroundColor: '#f99621' }}
 							>
 								<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
 								<span className="sm:hidden">CUSTOMIZE</span>
-							</button>
+							</Link>
 						</div>
 					</div>
 				</div>
