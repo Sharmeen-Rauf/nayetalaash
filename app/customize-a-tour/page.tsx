@@ -628,17 +628,14 @@ const CustomizeTourPage = () => {
 									<label className="block text-sm font-medium mb-2" style={{ color: secondaryBlack }}>
 										Starting Date of Trip:
 									</label>
-									<div className="relative">
-										<input
-											type="date"
-											name="startingDate"
-											value={formData.startingDate}
-											onChange={handleChange}
-											className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621] pr-10"
-											style={{ color: secondaryBlack }}
-										/>
-										<Calendar className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
-									</div>
+									<input
+										type="date"
+										name="startingDate"
+										value={formData.startingDate}
+										onChange={handleChange}
+										className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621]"
+										style={{ color: secondaryBlack }}
+									/>
 								</div>
 
 								<div>
