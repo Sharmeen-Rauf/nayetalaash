@@ -1989,7 +1989,7 @@ const Page = () => {
 							<div className="flex-shrink-0">
 								<div className="w-20 h-20 rounded-full overflow-hidden">
 								<Image 
-									src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200"
+									src="/images/portrait-good-looking-smiling-arabic-man-suit-attractive-young-businessman-with-beard-moustache-looking-camera-portrait-international-beauty-concept.jpg"
 									alt="Muhammad Nauraiz Mushtaq"
 										width={80}
 										height={80}
@@ -2015,7 +2015,7 @@ const Page = () => {
 							<div className="flex-shrink-0">
 								<div className="w-20 h-20 rounded-full overflow-hidden">
 								<Image 
-										src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200"
+										src="/images/medium-shot-smiley-man-posing.jpg"
 									alt="Ali Rehman"
 										width={80}
 										height={80}
