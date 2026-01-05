@@ -3,11 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft, MessageCircle } from 'lucide-react';
 
 const LahorePage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
+	const [showFloatingWidget, setShowFloatingWidget] = useState(true);
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
 	const [hoveredImageIndex, setHoveredImageIndex] = useState<number | null>(null);
 	const [showAllPackages, setShowAllPackages] = useState(false);
@@ -1126,6 +1127,60 @@ const LahorePage = () => {
 					</div>
 				</div>
 			</footer>
+
+			{/* Floating Contact Widget - Left Side */}
+			{showFloatingWidget && (
+				<div className="fixed bottom-6 left-6 z-[90] flex flex-col items-center gap-3">
+					{/* Phone Button */}
+					<a
+						href="tel:+923311438251"
+						className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/50 group"
+						aria-label="Call us"
+						style={{
+							boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+						}}
+					>
+						<Phone className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+					</a>
+					
+					{/* WhatsApp Button */}
+					<a
+						href="https://wa.me/923311438251"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/50 group"
+						aria-label="Contact us on WhatsApp"
+						style={{
+							boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+						}}
+					>
+						<MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+					</a>
+					
+					{/* Close/Hide Button */}
+					<button
+						onClick={() => setShowFloatingWidget(false)}
+						className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-600 hover:bg-gray-700 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+						aria-label="Hide contact widget"
+					>
+						<X className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+					</button>
+				</div>
+			)}
+			
+			{/* Show Widget Button (when hidden) */}
+			{!showFloatingWidget && (
+				<button
+					onClick={() => setShowFloatingWidget(true)}
+					className="fixed bottom-6 left-6 z-[90] w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+					aria-label="Show contact widget"
+					style={{
+						boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+					}}
+				>
+					<MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+				</button>
+			)}
 		</div>
 	);
 };
