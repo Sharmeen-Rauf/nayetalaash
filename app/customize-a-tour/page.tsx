@@ -66,9 +66,10 @@ const CustomizeTourPage = () => {
 		if (formData.vehiclePreference) {
 			const vehicleMap: { [key: string]: string } = {
 				'coaster-saloon': 'Coaster Saloon',
-				'hiace': 'Hiace',
-				'corolla': 'Corolla',
-				'other': 'Other'
+				'van': 'Van (Grand Cabin / Hiace / Hi-Roof)',
+				'minivan': 'MiniVan (APV, Every, Kaarvan)',
+				'4x4': '4x4 (Toyota Vigo/ Revo, Land Cruiser Prado/ V8)',
+				'car': 'Car (GLI, Altis, Yaris, BRV, Sportage)'
 			};
 			message += `🚗 Vehicle Preference: ${vehicleMap[formData.vehiclePreference] || formData.vehiclePreference}\n`;
 		}
@@ -612,11 +613,12 @@ const CustomizeTourPage = () => {
 										Total Number of Days: <span className="text-red-500">*</span>
 									</label>
 									<input
-										type="text"
+										type="number"
 										name="totalDays"
 										value={formData.totalDays}
 										onChange={handleChange}
 										required
+										min="1"
 										className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621]"
 										style={{ color: secondaryBlack }}
 									/>
@@ -628,15 +630,14 @@ const CustomizeTourPage = () => {
 									</label>
 									<div className="relative">
 										<input
-											type="text"
+											type="date"
 											name="startingDate"
 											value={formData.startingDate}
 											onChange={handleChange}
-											placeholder="dd/mm/yyyy"
 											className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621] pr-10"
 											style={{ color: secondaryBlack }}
 										/>
-										<Calendar className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+										<Calendar className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
 									</div>
 								</div>
 
@@ -686,9 +687,10 @@ const CustomizeTourPage = () => {
 									>
 										<option value="">Select Vehicle</option>
 										<option value="coaster-saloon">Coaster Saloon</option>
-										<option value="hiace">Hiace</option>
-										<option value="corolla">Corolla</option>
-										<option value="other">Other</option>
+										<option value="van">Van (Grand Cabin / Hiace / Hi-Roof)</option>
+										<option value="minivan">MiniVan (APV, Every, Kaarvan)</option>
+										<option value="4x4">4x4 (Toyota Vigo/ Revo, Land Cruiser Prado/ V8)</option>
+										<option value="car">Car (GLI, Altis, Yaris, BRV, Sportage)</option>
 									</select>
 								</div>
 
@@ -697,11 +699,12 @@ const CustomizeTourPage = () => {
 										Total Number of Persons: <span className="text-red-500">*</span>
 									</label>
 									<input
-										type="text"
+										type="number"
 										name="totalPersons"
 										value={formData.totalPersons}
 										onChange={handleChange}
 										required
+										min="1"
 										className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621]"
 										style={{ color: secondaryBlack }}
 									/>
@@ -712,10 +715,11 @@ const CustomizeTourPage = () => {
 										Adults (12+ years):
 									</label>
 									<input
-										type="text"
+										type="number"
 										name="adults"
 										value={formData.adults}
 										onChange={handleChange}
+										min="0"
 										className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621]"
 										style={{ color: secondaryBlack }}
 									/>
@@ -726,10 +730,11 @@ const CustomizeTourPage = () => {
 										Children (0-12 years):
 									</label>
 									<input
-										type="text"
+										type="number"
 										name="children"
 										value={formData.children}
 										onChange={handleChange}
+										min="0"
 										className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621]"
 										style={{ color: secondaryBlack }}
 									/>
@@ -740,11 +745,12 @@ const CustomizeTourPage = () => {
 										Total Number of Rooms required: <span className="text-red-500">*</span>
 									</label>
 									<input
-										type="text"
+										type="number"
 										name="totalRooms"
 										value={formData.totalRooms}
 										onChange={handleChange}
 										required
+										min="1"
 										className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621]"
 										style={{ color: secondaryBlack }}
 									/>
