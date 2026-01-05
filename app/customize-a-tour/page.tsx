@@ -772,7 +772,7 @@ const CustomizeTourPage = () => {
 										name="adults"
 										value={formData.adults}
 										onChange={handleChange}
-										min="0"
+										min="12"
 										className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621]"
 										style={{ color: secondaryBlack }}
 									/>
@@ -788,6 +788,7 @@ const CustomizeTourPage = () => {
 										value={formData.children}
 										onChange={handleChange}
 										min="0"
+										max="12"
 										className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-[#f99621]"
 										style={{ color: secondaryBlack }}
 									/>
