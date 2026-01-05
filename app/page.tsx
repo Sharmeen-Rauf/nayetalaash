@@ -1061,8 +1061,7 @@ const Page = () => {
 
 		{/* --- 2. Mobile Side Navigation Menu --- */}
 		<div
-			className={`fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
-			style={{ backgroundColor: '#f8f9fa' }}
+			className={`fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out bg-white ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
 			>
 				{/* Clickable Overlay to close menu */}
 				{isMenuOpen && (
