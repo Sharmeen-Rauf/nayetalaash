@@ -43,23 +43,6 @@ const Page = () => {
 	// Get visible packages based on state
 	const visibleTourPackages = showAllPackages ? allTourPackages : allTourPackages.slice(0, 6);
 
-	// Destinations data
-	const allDestinations = [
-		{ name: 'Hunza', image: '/images/Hunza.jpg' },
-		{ name: 'Skardu', image: '/images/skardu 2.jpg' },
-		{ name: 'Gilgit', image: '/images/gilgit.jpg' },
-		{ name: 'Lahore', image: '/images/lahore.jpg' },
-		{ name: 'Islamabad', image: '/images/islamabad.jpg' },
-		{ name: 'Karachi', image: '/images/karachi.jpg' },
-		{ name: 'Swat', image: '/images/Swat.jpg' },
-		{ name: 'Naran Kaghan', image: '/images/naran and kaghan.jpg' },
-		{ name: 'Gwadar', image: '/images/Kund Malir.jpg' },
-		{ name: 'Neelum Valley', image: '/images/azad kashmir.jpg' },
-	];
-
-	// Get visible destinations based on state
-	const visibleDestinations = showAllDestinations ? allDestinations : allDestinations.slice(0, 10);
-
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
 		window.open('https://wa.me/923311438251', '_blank');
@@ -153,7 +136,7 @@ const Page = () => {
 		{ name: 'Lahore', image: '/images/lahore.jpg' },
 		{ name: 'Islamabad', image: '/images/islamabad.jpg' },
 		{ name: 'Karachi', image: '/images/karachi.avif' },
-		{ name: 'Swat', image: '/images/swat.jpg' },
+		{ name: 'Swat', image: '/images/Swat.jpg' },
 		{ name: 'Naran Kaghan', image: '/images/naran and kaghan.jpg' },
 		{ name: 'Gwadar', image: '/images/gwadar.jpg' },
 		{ name: 'Neelum Valley', image: '/images/neelum valley.jpg' },
