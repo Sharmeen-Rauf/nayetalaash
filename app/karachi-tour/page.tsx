@@ -1082,10 +1082,10 @@ const KarachiTourPage = () => {
 						</h2>
 					</div>
 
-					{/* Three Column Layout: Image - List - Image */}
-					<div className="grid grid-cols-1 lg:grid-cols-12 gap-3 items-start max-w-7xl mx-auto mt-4">
+					{/* Two Column Layout: Image - List */}
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start max-w-7xl mx-auto">
 						{/* Left Image */}
-						<div className="lg:col-span-3 hidden lg:block">
+						<div className="order-2 lg:order-1">
 							<div className="relative w-full h-[350px] rounded overflow-hidden">
 								<Image 
 									src="/images/The Colorful Bazaars of Karachi City.jpg"
@@ -1096,8 +1096,8 @@ const KarachiTourPage = () => {
 							</div>
 						</div>
 
-						{/* Center Content */}
-						<div className="lg:col-span-6">
+						{/* Content List */}
+						<div className="order-1 lg:order-2">
 							<div className="bg-white rounded">
 								{[
 									'Old Karachi Historical Tour',
@@ -1121,18 +1121,6 @@ const KarachiTourPage = () => {
 										</p>
 									</div>
 								))}
-							</div>
-						</div>
-
-						{/* Right Image */}
-						<div className="lg:col-span-3 hidden lg:block">
-							<div className="relative w-full h-[350px] rounded overflow-hidden">
-								<Image 
-									src="/images/The Colorful Bazaars of Karachi City.jpg"
-									alt="Karachi Food Streets"
-									fill
-									className="object-cover"
-								/>
 							</div>
 						</div>
 					</div>
