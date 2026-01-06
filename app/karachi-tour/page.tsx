@@ -838,47 +838,15 @@ const KarachiTourPage = () => {
 				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('more-about-lahore') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto mb-4">
+					<div className="max-w-4xl mx-auto">
 						<h2 className="text-2xl md:text-3xl font-bold mb-3 text-center" style={{ color: secondaryBlack }}>
 							More About Karachi City
 						</h2>
-						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-justify mb-0" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 							Karachi, established as a small fishing village centuries ago, rapidly transformed into a modern metropolitan area under the British Raj and became the first capital of Pakistan. Known today as the nation's economic powerhouse, Karachi is a resilient city built on trade, dreams, and diversity. Its history is a blend of ancient fishing communities, colonial development and the arrival of millions of settlers following Pakistan's independence. This resilient port city continues to grow, maintaining a fascinating mix of historical buildings, massive markets, and a unique coastal culture.
 						</p>
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== HISTORY OF KARACHI ====================== */}
-			<section 
-				data-section-id="history-lahore"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('history-lahore') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== A BRIEF HISTORY OF THE WALLED CITY OF KARACHI ====================== */}
-			<section 
-				data-section-id="walled-city-history"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('walled-city-history') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== OTHER HISTORICAL NAMES OF KARACHI CITY ====================== */}
-			<section 
-				data-section-id="historical-names"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-names') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						
+						<h3 className="text-xl md:text-2xl font-bold mt-0 mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Historical Names of Karachi City
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
