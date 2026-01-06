@@ -704,7 +704,7 @@ const KarachiTourPage = () => {
 						{[
 							{ 
 								title: 'Quaid-e-Azam\'s Mausoleum (Mazar-e-Quaid)', 
-								image: '/images/Quaid-e-Azam\'s Mausoleum (Mazar-e-Quaid).jpg',
+								image: '/images/Mazar-e-Quaid image.jpg',
 								description: 'The Mazar-e-Quaid is the final resting place of Muhammad Ali Jinnah, the founder of Pakistan. This iconic white marble structure is a symbol of national identity and a key site for visitors. The mausoleum is surrounded by a large garden and serves as a place of quiet reflection and national pride.',
 								imageLeft: true
 							},
