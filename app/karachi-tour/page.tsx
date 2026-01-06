@@ -841,14 +841,9 @@ const KarachiTourPage = () => {
 						<h2 className="text-2xl md:text-3xl font-bold mb-3 text-center" style={{ color: secondaryBlack }}>
 							More About Karachi City
 						</h2>
-						<div className="space-y-2">
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Karachi, established as a small fishing village centuries ago, rapidly transformed into a modern metropolitan area under the British Raj and became the first capital of Pakistan. Known today as the nation's economic powerhouse, Karachi is a resilient city built on trade, dreams, and diversity. Its history is a blend of ancient fishing communities, colonial development and the arrival of millions of settlers following Pakistan's independence.
-							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								This resilient port city continues to grow, maintaining a fascinating mix of historical buildings, massive markets, and a unique coastal culture.
-							</p>
-						</div>
+						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+							Karachi, established as a small fishing village centuries ago, rapidly transformed into a modern metropolitan area under the British Raj and became the first capital of Pakistan. Known today as the nation's economic powerhouse, Karachi is a resilient city built on trade, dreams, and diversity. Its history is a blend of ancient fishing communities, colonial development and the arrival of millions of settlers following Pakistan's independence. This resilient port city continues to grow, maintaining a fascinating mix of historical buildings, massive markets, and a unique coastal culture.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -953,124 +948,6 @@ const KarachiTourPage = () => {
 										<strong>The Post Independence Era (1947):</strong> After Pakistan's creation, Karachi served as the capital and witnessed a massive influx of migrants, which propelled its growth into the diverse, bustling metropolis it is today.
 									</p>
 								</div>
-							</div>
-						</div>
-
-						<div className="space-y-2 mt-4">
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Today, Karachi is governed democratically and thrives as a central economic hub, celebrated for its lively atmosphere, industrial strength, and coastal life.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== 13 GATES OF THE WALLED CITY OF KARACHI ====================== */}
-			<section 
-				data-section-id="gates"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('gates') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Old Access Points of Karachi
-						</h3>
-						<p className="leading-normal text-justify mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Unlike the walled city of Lahore, Karachi was developed more as a sprawling port town. However, key access and security points from the earlier periods included:
-						</p>
-						<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-							<div 
-								className="transition-all duration-500 cursor-pointer group rounded-lg p-4"
-								style={{ 
-									backgroundColor: 'white',
-									border: `2px solid ${primaryOrange}`,
-									minHeight: '120px',
-									display: 'flex',
-									alignItems: 'center',
-									opacity: visibleSections.has('gates') ? 1 : 0,
-									transform: visibleSections.has('gates') ? 'translateY(0)' : 'translateY(20px)',
-									transitionDelay: '0s'
-								}}
-								onMouseEnter={(e) => {
-									e.currentTarget.style.backgroundColor = primaryOrange;
-									e.currentTarget.style.transform = 'translateY(-4px)';
-									e.currentTarget.style.boxShadow = '0 8px 16px rgba(249, 150, 33, 0.3)';
-									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-									if (pElement) pElement.style.color = secondaryBlack;
-								}}
-								onMouseLeave={(e) => {
-									e.currentTarget.style.backgroundColor = 'white';
-									e.currentTarget.style.transform = 'translateY(0)';
-									e.currentTarget.style.boxShadow = 'none';
-									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-									if (pElement) pElement.style.color = `${secondaryBlack}90`;
-								}}
-							>
-								<p className="leading-normal transition-colors duration-300 text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									The Native Jetty Bridge: Though not a gate, this was a vital old access point connecting the main land to the port and old island areas.
-								</p>
-							</div>
-							<div 
-								className="transition-all duration-500 cursor-pointer group rounded-lg p-4"
-								style={{ 
-									backgroundColor: 'white',
-									border: `2px solid ${primaryOrange}`,
-									minHeight: '120px',
-									display: 'flex',
-									alignItems: 'center',
-									opacity: visibleSections.has('gates') ? 1 : 0,
-									transform: visibleSections.has('gates') ? 'translateY(0)' : 'translateY(20px)',
-									transitionDelay: '0.1s'
-								}}
-								onMouseEnter={(e) => {
-									e.currentTarget.style.backgroundColor = primaryOrange;
-									e.currentTarget.style.transform = 'translateY(-4px)';
-									e.currentTarget.style.boxShadow = '0 8px 16px rgba(249, 150, 33, 0.3)';
-									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-									if (pElement) pElement.style.color = secondaryBlack;
-								}}
-								onMouseLeave={(e) => {
-									e.currentTarget.style.backgroundColor = 'white';
-									e.currentTarget.style.transform = 'translateY(0)';
-									e.currentTarget.style.boxShadow = 'none';
-									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-									if (pElement) pElement.style.color = `${secondaryBlack}90`;
-								}}
-							>
-								<p className="leading-normal transition-colors duration-300 text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									The Karachi Fort: Built by the Talpur Dynasty, the fort's gates controlled access to the old settlement of Kolachi.
-								</p>
-							</div>
-							<div 
-								className="transition-all duration-500 cursor-pointer group rounded-lg p-4"
-								style={{ 
-									backgroundColor: 'white',
-									border: `2px solid ${primaryOrange}`,
-									minHeight: '120px',
-									display: 'flex',
-									alignItems: 'center',
-									opacity: visibleSections.has('gates') ? 1 : 0,
-									transform: visibleSections.has('gates') ? 'translateY(0)' : 'translateY(20px)',
-									transitionDelay: '0.2s'
-								}}
-								onMouseEnter={(e) => {
-									e.currentTarget.style.backgroundColor = primaryOrange;
-									e.currentTarget.style.transform = 'translateY(-4px)';
-									e.currentTarget.style.boxShadow = '0 8px 16px rgba(249, 150, 33, 0.3)';
-									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-									if (pElement) pElement.style.color = secondaryBlack;
-								}}
-								onMouseLeave={(e) => {
-									e.currentTarget.style.backgroundColor = 'white';
-									e.currentTarget.style.transform = 'translateY(0)';
-									e.currentTarget.style.boxShadow = 'none';
-									const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-									if (pElement) pElement.style.color = `${secondaryBlack}90`;
-								}}
-							>
-								<p className="leading-normal transition-colors duration-300 text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-									Old Town Entries: Access was often controlled by specific roads leading into the historic centers like Saddar Town and the original colonial port areas.
-								</p>
 							</div>
 						</div>
 					</div>
@@ -1258,23 +1135,6 @@ const KarachiTourPage = () => {
 								/>
 							</div>
 						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== PLAN YOUR KARACHI CITY TOUR ====================== */}
-			<section 
-				data-section-id="plan-tour"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('plan-tour') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Plan Your Karachi City Tour with Nayi Talaash
-						</h3>
-						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Whether you seek history, high rise buildings, quiet beaches or the best street food, Nayi Talaash is here to guide you through the City of Lights. Let us help you plan your ideal Karachi City Tour contact us now!
-						</p>
 					</div>
 				</div>
 			</section>
