@@ -580,10 +580,10 @@ const GroupToursPage = () => {
 			</section>
 
 			{/* ====================== WEEKLY GROUP TOURS SECTION ====================== */}
-			<section className="bg-white relative overflow-x-hidden pt-24 pb-12 md:pb-16 md:pt-28" style={{ zIndex: 1 }}>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4" style={{ position: 'relative', zIndex: 10 }}>
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#211f20', zIndex: 10, position: 'relative', opacity: 1 }}>
+			<section className="bg-white relative overflow-x-hidden pt-24 pb-12 md:pb-16 md:pt-28">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="text-center mb-12 px-2 sm:px-4">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							All Pakistan Group Tour Packages
 						</h2>
 						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed mt-4" style={{ color: `${secondaryBlack}90` }}>
@@ -886,10 +886,10 @@ const GroupToursPage = () => {
 			</section>
 
 			{/* ====================== HOW IT WORKS SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden" style={{ zIndex: 1 }}>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4" style={{ position: 'relative', zIndex: 10 }}>
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#211f20', zIndex: 10, position: 'relative', opacity: 1 }}>
+			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="text-center mb-16 px-2 sm:px-4">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							How it works?
 						</h2>
 					</div>
@@ -951,10 +951,10 @@ const GroupToursPage = () => {
 			</section>
 
 			{/* ====================== OUR JOURNEYS SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden" style={{ zIndex: 1 }}>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4" style={{ position: 'relative', zIndex: 10 }}>
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#211f20', zIndex: 10, position: 'relative', opacity: 1 }}>
+			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
+				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+					<div className="text-center mb-16 px-2 sm:px-4">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							Our Journeys
 						</h2>
 					</div>
