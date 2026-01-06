@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, MessageCircle } from 'lucide-react';
 
 const LahoreTourPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +14,7 @@ const LahoreTourPage = () => {
 	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
 	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+	const [showFloatingWidget, setShowFloatingWidget] = useState(true);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -1043,7 +1044,7 @@ const LahoreTourPage = () => {
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
 							{/* Image on the left */}
 							<div className="lg:col-span-1">
-								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
+								<div className="relative h-40 lg:h-auto rounded-lg overflow-hidden">
 									<Image 
 										src="/images/lahore.jpg"
 										alt="Historical Ruler of Lahore"
@@ -1067,20 +1068,6 @@ const LahoreTourPage = () => {
 							</div>
 						</div>
 
-						<div className="space-y-2">
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								The Mughal era, beginning with Zahirudin Babar, marked a period of unprecedented architectural and cultural development. The Mughals contributed some of the most magnificent architectural marvels, including the Lahore Fort, Badshahi Mosque, and Shalimar Gardens, which continue to attract millions of visitors today.
-							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								After the decline of the Mughal Empire, Lahore saw brief periods under Raghunath Rao of the Marathas, Nadir Shah and Ahmad Shah Abdali of the Durrani Empire. The Sikh Empire, under the legendary Maharaja Ranjit Singh, established Lahore as the capital of the Sikh Kingdom, adding another rich layer to the city's heritage.
-							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								The British took control of Lahore after the fall of the Sikh Empire, introducing Victorian-style British Colonial Architecture that stands alongside the magnificent Mughal Architecture. This architectural fusion created a unique urban landscape that reflects Lahore's complex historical journey.
-							</p>
-							<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								After colonial rule, Lahore became part of Pakistan, and today it stands as a vibrant cultural and intellectual hub. The city continues to evolve while preserving its rich historical legacy, serving as a bridge between its glorious past and its promising future.
-							</p>
-						</div>
 					</div>
 				</div>
 			</section>
@@ -1182,7 +1169,7 @@ const LahoreTourPage = () => {
 							
 							{/* Image on the right */}
 							<div className="lg:col-span-1">
-								<div className="relative h-64 lg:h-full min-h-[300px] rounded-lg overflow-hidden">
+								<div className="relative h-40 lg:h-auto rounded-lg overflow-hidden">
 									<Image 
 										src="/images/lahore.jpg"
 										alt="Colorful Bazaar of Lahore"
@@ -1196,132 +1183,64 @@ const LahoreTourPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== LAHORE'S FOOD STREET AND VIBRANT CULTURE ====================== */}
-			<section 
-				data-section-id="food-street"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('food-street') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Lahore's Food Street and Vibrant Culture
-						</h3>
-						<p className="leading-normal text-justify mb-3" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							No trip is complete without a Lahore Food Street Tour.
-						</p>
-						<ul className="space-y-2 mb-3">
-							<li className="flex items-start gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
-								<div>
-									<p className="leading-normal font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-										Fort Road Food Street:
-									</p>
-									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-										Located next to the Lahore Fort, it offers delicious food with a stunning view of the Fort and Badshahi Mosque. Old Havelis here have been converted into unique restaurants for fine dining.
-									</p>
-								</div>
-							</li>
-							<li className="flex items-start gap-2">
-								<div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-2" style={{ backgroundColor: primaryOrange }}></div>
-								<div>
-									<p className="leading-normal font-semibold" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-										Androon Lahore Food Tour:
-									</p>
-									<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-										This is the heart of desi food. Lahoris specialize in classics like Paaye, Nihari, Karahis, and Chanay Kulchy. Our food tours will help you find the best of this rich culinary heritage.
-									</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
 			{/* ====================== GUIDED LAHORE TOUR PACKAGES / LAHORE CITY TOUR ====================== */}
 			<section 
 				data-section-id="guided-lahore-tour-packages"
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('guided-lahore-tour-packages') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					{/* Main Title */}
-					<div className="text-center mb-6">
-						<h2 className="text-1xl md:text-3xl font-bold" style={{ color: secondaryBlack }}>
-							Guided Lahore Tour Packages / Lahore City Tour
-						</h2>
-					</div>
-
-					{/* Three Column Layout: Image - List - Image */}
-					<div className="grid grid-cols-1 lg:grid-cols-12 gap-3 items-start max-w-7xl mx-auto mt-4">
-						{/* Left Image */}
-						<div className="lg:col-span-3 hidden lg:block">
-							<div className="relative w-full h-[400px] rounded overflow-hidden">
-								<Image 
-									src="/images/lahore.jpg"
-									alt="Lahore Architecture"
-									fill
-									className="object-cover"
-								/>
-							</div>
-						</div>
-
-						{/* Center Content */}
-						<div className="lg:col-span-6">
-							<div className="bg-white rounded">
-								{[
-									'Old Lahore Historical Tour',
-									'British Colonial Architecture Lahore City Tour',
-									'Mughal History Lahore City Tour',
-									'Sufi Heritage Lahore City Tour',
-									'Lahore Street Food Tour',
-									'Androon Lahore Food Tour',
-									'Lahore Rickshaw Tour',
-									'Lahore Rangeela Rickshaw Tour',
-									'Lahore City Bus Tour',
-									'Walking Lahore City Tour',
-								].map((tour, idx) => (
-									<div 
-										key={idx}
-										className="py-2 px-3"
-										style={{ 
-											backgroundColor: idx % 2 === 0 ? '#fff4e6' : 'white',
-										}}
-									>
-										<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
-											{tour} | Lahore City Tour
-										</p>
-									</div>
-								))}
-							</div>
-						</div>
-
-						{/* Right Image */}
-						<div className="lg:col-span-3 hidden lg:block">
-							<div className="relative w-full h-[400px] rounded overflow-hidden">
-								<Image 
-									src="/images/lahore.jpg"
-									alt="Lahore Architecture"
-									fill
-									className="object-cover"
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* ====================== PLAN YOUR LAHORE CITY TOUR ====================== */}
-			<section 
-				data-section-id="plan-tour"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('plan-tour') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Plan Your Lahore City Tour with Nayi Talaash
-						</h3>
-						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Whether you want to explore the rich history, the vibrant culture, the bustling bazaars, the religious sites or the flavorful desi cuisine, Nayi Talaash is here to guide you. Contact us now to plan your unforgettable Lahore City Tour!
-						</p>
+						{/* Main Title */}
+						<div className="text-center mb-6">
+							<h2 className="text-1xl md:text-3xl font-bold" style={{ color: secondaryBlack }}>
+								Guided Lahore Tour Packages / Lahore City Tour
+							</h2>
+						</div>
+
+						{/* Two Column Layout: Image - List */}
+						<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+							{/* Left Image */}
+							<div className="order-2 lg:order-1">
+								<div className="relative w-full h-[350px] rounded overflow-hidden">
+									<Image 
+										src="/images/lahore.jpg"
+										alt="Lahore Architecture"
+										fill
+										className="object-cover"
+									/>
+								</div>
+							</div>
+
+							{/* Content List */}
+							<div className="order-1 lg:order-2">
+								<div className="bg-white rounded">
+									{[
+										'Old Lahore Historical Tour',
+										'British Colonial Architecture Lahore City Tour',
+										'Mughal History Lahore City Tour',
+										'Sufi Heritage Lahore City Tour',
+										'Lahore Street Food Tour',
+										'Androon Lahore Food Tour',
+										'Lahore Rickshaw Tour',
+										'Lahore Rangeela Rickshaw Tour',
+										'Lahore City Bus Tour',
+										'Walking Lahore City Tour',
+									].map((tour, idx) => (
+										<div 
+											key={idx}
+											className="py-2 px-3"
+											style={{ 
+												backgroundColor: idx % 2 === 0 ? '#fff4e6' : 'white',
+											}}
+										>
+											<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+												{tour} | Lahore City Tour
+											</p>
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -1582,6 +1501,60 @@ const LahoreTourPage = () => {
 					</div>
 				</div>
 			</footer>
+
+			{/* Floating Contact Widget - Left Side */}
+			{showFloatingWidget && (
+				<div className="fixed bottom-6 left-6 z-[90] flex flex-col items-center gap-3">
+					{/* Phone Button */}
+					<a
+						href="tel:+923311438251"
+						className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/50 group"
+						aria-label="Call us"
+						style={{
+							boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+						}}
+					>
+						<Phone className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+					</a>
+					
+					{/* WhatsApp Button */}
+					<a
+						href="https://wa.me/923311438251"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/50 group"
+						aria-label="Contact us on WhatsApp"
+						style={{
+							boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+						}}
+					>
+						<MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+					</a>
+					
+					{/* Close/Hide Button */}
+					<button
+						onClick={() => setShowFloatingWidget(false)}
+						className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-600 hover:bg-gray-700 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+						aria-label="Hide contact widget"
+					>
+						<X className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+					</button>
+				</div>
+			)}
+			
+			{/* Show Widget Button (when hidden) */}
+			{!showFloatingWidget && (
+				<button
+					onClick={() => setShowFloatingWidget(true)}
+					className="fixed bottom-6 left-6 z-[90] w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+					aria-label="Show contact widget"
+					style={{
+						boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+					}}
+				>
+					<MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+				</button>
+			)}
 		</div>
 	);
 };
