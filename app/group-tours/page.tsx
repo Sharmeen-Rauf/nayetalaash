@@ -393,10 +393,10 @@ const GroupToursPage = () => {
 			</section>
 
 			{/* ====================== WEEKLY GROUP TOURS SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden pt-[140px] sm:pt-[150px] md:pt-[160px]">
+			<section className="bg-white relative overflow-x-hidden pt-16 pb-12 md:pb-16 md:pt-20">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4 mt-8">
-						<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 uppercase tracking-wide" style={{ color: primaryOrange }}>
+					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4">
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack, fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
 							All Pakistan Group Tour Packages
 						</h2>
 						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed mt-4" style={{ color: `${secondaryBlack}90` }}>
@@ -702,13 +702,8 @@ const GroupToursPage = () => {
 			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 				<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
-					<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: secondaryBlack }}>
-						<span className="block" style={{ color: primaryOrange }}>
-							Here is a guide on
-						</span>
-						<span className="block mt-2" style={{ color: secondaryBlack }}>
-							How it works?
-						</span>
+					<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack, fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+						How it works?
 					</h2>
 				</div>
 
@@ -771,11 +766,11 @@ const GroupToursPage = () => {
 			{/* ====================== OUR JOURNEYS SECTION ====================== */}
 			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
-						<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 uppercase tracking-wide" style={{ color: primaryOrange }}>
-							Our Journeys
-						</h2>
-					</div>
+				<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
+					<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack, fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+						Our Journeys
+					</h2>
+				</div>
 
 					<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
 						{/* Journey Image 1 */}
