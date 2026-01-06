@@ -580,9 +580,9 @@ const GroupToursPage = () => {
 			</section>
 
 			{/* ====================== WEEKLY GROUP TOURS SECTION ====================== */}
-			<section className="bg-white relative overflow-x-hidden pt-24 pb-12 md:pb-16 md:pt-28">
+			<section className="bg-white relative overflow-x-hidden pt-20 pb-8 md:pt-24 md:pb-10">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="text-center mb-12 px-2 sm:px-4">
+					<div className="text-center mb-8 px-2 sm:px-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							All Pakistan Group Tour Packages
 						</h2>
@@ -591,7 +591,7 @@ const GroupToursPage = () => {
 						</p>
 					</div>
 
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 						{/* Tour Package 1 */}
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
@@ -886,15 +886,15 @@ const GroupToursPage = () => {
 			</section>
 
 			{/* ====================== HOW IT WORKS SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
+			<section className="py-8 md:py-10 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="text-center mb-16 px-2 sm:px-4">
+					<div className="text-center mb-8 px-2 sm:px-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							How it works?
 						</h2>
 					</div>
 
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 						{/* Step 1 */}
 						<div className="text-center">
 							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
@@ -951,15 +951,15 @@ const GroupToursPage = () => {
 			</section>
 
 			{/* ====================== OUR JOURNEYS SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
+			<section className="py-8 md:py-10 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-					<div className="text-center mb-16 px-2 sm:px-4">
+					<div className="text-center mb-8 px-2 sm:px-4">
 						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							Our Journeys
 						</h2>
 					</div>
 
-					<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+					<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
 						{/* Journey Image 1 */}
 						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
 							<Image 
