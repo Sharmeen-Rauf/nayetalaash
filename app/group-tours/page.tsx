@@ -3,12 +3,14 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, Users, CalendarDays, MapPin, ShieldCheck, CheckCircle2, Search, FileText, Mountain } from 'lucide-react';
+import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, Users, CalendarDays, MapPin, ShieldCheck, CheckCircle2, Search, FileText, Mountain, MessageCircle } from 'lucide-react';
 
 const GroupToursPage = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
+	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+	const [showFloatingWidget, setShowFloatingWidget] = useState(true);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
@@ -201,7 +203,135 @@ const GroupToursPage = () => {
 								</div>
 							</div>
 							<Link href="/group-tours" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>GROUP TOUR</Link>
-							<Link href="/#destination" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>DESTINATION</Link>
+							
+							{/* DESTINATION with Multi-Level Dropdown */}
+							<div className="relative group cursor-pointer">
+								<a href="#destination" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
+									DESTINATION
+								</a>
+								
+								{/* Dropdown Menu - Responsive Width */}
+								<div className="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[95vw] max-w-4xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
+									<div className="backdrop-blur-lg bg-white/95 border border-gray-200 shadow-2xl overflow-hidden rounded-lg">
+										<div className="flex min-h-[400px]">
+											{/* Pakistan Map - Left Side */}
+											<div className="w-1/4 p-4 sm:p-6 flex items-center justify-center bg-gradient-to-br from-[#f99621]/10 to-[#f99621]/5 flex-shrink-0">
+												<Image 
+													src="/images/map-2.png"
+													alt="Pakistan Map"
+													width={250}
+													height={350}
+													className="w-full h-auto max-h-[250px] object-contain"
+												/>
+											</div>
+											
+											{/* Regions List - Middle */}
+											<div className="w-3/4 flex border-r border-gray-200">
+												<div className="w-1/3 p-4 sm:p-6 border-r border-gray-200 flex-shrink-0">
+													<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-4 whitespace-nowrap">Pakistani Regions</h3>
+													<ul className="space-y-1">
+														<li>
+															<button
+																onMouseEnter={() => setSelectedRegion('gilgit')}
+																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
+															>
+																Gilgit Baltistan
+															</button>
+														</li>
+														<li>
+															<button
+																onMouseEnter={() => setSelectedRegion('kpk')}
+																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
+															>
+																KPK / Galyat
+															</button>
+														</li>
+														<li>
+															<button
+																onMouseEnter={() => setSelectedRegion('punjab')}
+																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
+															>
+																Punjab
+															</button>
+														</li>
+														<li>
+															<button
+																onMouseEnter={() => setSelectedRegion('sindh')}
+																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
+															>
+																Sindh
+															</button>
+														</li>
+														<li>
+															<button
+																onMouseEnter={() => setSelectedRegion('balochistan')}
+																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
+															>
+																Balochistan
+															</button>
+														</li>
+													</ul>
+												</div>
+												
+												{/* Districts List - Right Side */}
+												<div className="w-2/3 p-4 sm:p-6 relative min-w-0">
+													{selectedRegion === 'gilgit' && (
+														<div className="space-y-1">
+															<Link href="/astore-diamer" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Astore Diamer District</Link>
+															<Link href="/ghizer" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Ghizer District</Link>
+															<Link href="/gilgit-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Gilgit District</Link>
+															<Link href="/hunza-district" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Hunza District</Link>
+															<Link href="/shigar-ghanche" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Shigar Ghanche District</Link>
+															<Link href="/skardu-kharmang" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Skardu Kharmang District</Link>
+														</div>
+													)}
+													{selectedRegion === 'kpk' && (
+														<div className="space-y-1">
+															<Link href="/abbottabad" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Abbottabad District</Link>
+															<Link href="/chitral" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Chitral District</Link>
+															<Link href="/malakand" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Malakand District</Link>
+															<Link href="/mansehra" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Mansehra District</Link>
+															<Link href="/peshawar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Peshawar District</Link>
+															<Link href="/upper-dir" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Upper Dir District</Link>
+														</div>
+													)}
+													{selectedRegion === 'punjab' && (
+														<div className="space-y-1">
+															<Link href="/bahawalpur" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Bahawalpur District</Link>
+															<Link href="/chakwal" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Chakwal District</Link>
+															<Link href="/islamabad" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Islamabad District</Link>
+															<Link href="/lahore" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Lahore District</Link>
+															<Link href="/multan" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Multan District</Link>
+															<Link href="/rawalpindi" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Rawalpindi District</Link>
+														</div>
+													)}
+													{selectedRegion === 'sindh' && (
+														<div className="space-y-1">
+															<Link href="/hyderabad" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Hyderabad District</Link>
+															<Link href="/jamshoro" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Jamshoro District</Link>
+															<Link href="/karachi-thatta" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Karachi Thatta District</Link>
+															<Link href="/larkana-shikarpur" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Larkana Shikarpur District</Link>
+															<Link href="/sukkur" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Sukkur District</Link>
+															<Link href="/tharparkar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Tharparkar District</Link>
+														</div>
+													)}
+													{selectedRegion === 'balochistan' && (
+														<div className="space-y-1">
+															<Link href="/chaghi" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Chaghi District</Link>
+															<Link href="/gwadar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Gwadar District</Link>
+															<Link href="/kalat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Kalat District</Link>
+															<Link href="/khuzdar" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Khuzdar District</Link>
+															<Link href="/quetta" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Quetta District</Link>
+															<Link href="/ziarat" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Ziarat District</Link>
+														</div>
+													)}
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
 							<Link href="/about" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>ABOUT US</Link>
 							<Link href="/contact" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>CONTACT US</Link>
 						</nav>
@@ -308,9 +438,66 @@ const GroupToursPage = () => {
 						<Link href="/group-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 							GROUP TOUR
 						</Link>
-						<Link href="/#destination" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-							DESTINATION
-						</Link>
+						
+						{/* DESTINATION with Simple Dropdown */}
+						<div>
+							<button
+								onClick={() => setMobileDropdownOpen(mobileDropdownOpen === 'destination' ? null : 'destination')}
+								className="w-full flex items-center justify-between px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg"
+							>
+								<span>DESTINATION</span>
+								<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'destination' ? 'rotate-180' : ''}`} />
+							</button>
+							{mobileDropdownOpen === 'destination' && (
+								<div className="pl-4 pr-2 py-2 space-y-1 max-h-[60vh] overflow-y-auto">
+									{/* Gilgit Baltistan */}
+									<p className="px-4 py-2 text-sm font-bold text-[#f99621] uppercase">Gilgit Baltistan</p>
+									<Link href="/astore-diamer" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Astore Diamer District</Link>
+									<Link href="/ghizer" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Ghizer District</Link>
+									<Link href="/gilgit-district" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Gilgit District</Link>
+									<Link href="/hunza-district" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Hunza District</Link>
+									<Link href="/shigar-ghanche" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Shigar Ghanche District</Link>
+									<Link href="/skardu-kharmang" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Skardu Kharmang District</Link>
+									
+									{/* KPK / Galyat */}
+									<p className="px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase">KPK / Galyat</p>
+									<Link href="/abbottabad" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Abbottabad District</Link>
+									<Link href="/chitral" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Chitral District</Link>
+									<Link href="/malakand" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Malakand District</Link>
+									<Link href="/mansehra" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Mansehra District</Link>
+									<Link href="/peshawar" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Peshawar District</Link>
+									<Link href="/upper-dir" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Upper Dir District</Link>
+									
+									{/* Punjab */}
+									<p className="px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase">Punjab</p>
+									<Link href="/bahawalpur" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Bahawalpur District</Link>
+									<Link href="/chakwal" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Chakwal District</Link>
+									<Link href="/islamabad" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Islamabad District</Link>
+									<Link href="/lahore" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Lahore District</Link>
+									<Link href="/multan" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Multan District</Link>
+									<Link href="/rawalpindi" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Rawalpindi District</Link>
+									
+									{/* Sindh */}
+									<p className="px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase">Sindh</p>
+									<Link href="/hyderabad" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Hyderabad District</Link>
+									<Link href="/jamshoro" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Jamshoro District</Link>
+									<Link href="/karachi-thatta" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Karachi Thatta District</Link>
+									<Link href="/larkana-shikarpur" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Larkana Shikarpur District</Link>
+									<Link href="/sukkur" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Sukkur District</Link>
+									<Link href="/tharparkar" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Tharparkar District</Link>
+									
+									{/* Balochistan */}
+									<p className="px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase">Balochistan</p>
+									<Link href="/chaghi" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Chaghi District</Link>
+									<Link href="/gwadar" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Gwadar District</Link>
+									<Link href="/kalat" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Kalat District</Link>
+									<Link href="/khuzdar" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Khuzdar District</Link>
+									<Link href="/quetta" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Quetta District</Link>
+									<Link href="/ziarat" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Ziarat District</Link>
+								</div>
+							)}
+						</div>
+						
 						<Link href="/about" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
 							ABOUT US
 						</Link>
@@ -393,10 +580,10 @@ const GroupToursPage = () => {
 			</section>
 
 			{/* ====================== WEEKLY GROUP TOURS SECTION ====================== */}
-			<section className="bg-white relative overflow-x-hidden pt-16 pb-12 md:pb-16 md:pt-20">
+			<section className="bg-white relative overflow-x-hidden pt-24 pb-12 md:pb-16 md:pt-28">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack, fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}>
+						<h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: secondaryBlack }}>
 							All Pakistan Group Tour Packages
 						</h2>
 						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed mt-4" style={{ color: `${secondaryBlack}90` }}>
@@ -995,6 +1182,60 @@ const GroupToursPage = () => {
 					</div>
 				</div>
 			</footer>
+
+			{/* Floating Contact Widget - Left Side */}
+			{showFloatingWidget && (
+				<div className="fixed bottom-6 left-6 z-[90] flex flex-col items-center gap-3">
+					{/* Phone Button */}
+					<a
+						href="tel:+923311438251"
+						className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/50 group"
+						aria-label="Call us"
+						style={{
+							boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+						}}
+					>
+						<Phone className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+					</a>
+					
+					{/* WhatsApp Button */}
+					<a
+						href="https://wa.me/923311438251"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/50 group"
+						aria-label="Contact us on WhatsApp"
+						style={{
+							boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+						}}
+					>
+						<MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+					</a>
+					
+					{/* Close/Hide Button */}
+					<button
+						onClick={() => setShowFloatingWidget(false)}
+						className="w-14 h-14 sm:w-16 sm:h-16 bg-gray-600 hover:bg-gray-700 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+						aria-label="Hide contact widget"
+					>
+						<X className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+					</button>
+				</div>
+			)}
+			
+			{/* Show Widget Button (when hidden) */}
+			{!showFloatingWidget && (
+				<button
+					onClick={() => setShowFloatingWidget(true)}
+					className="fixed bottom-6 left-6 z-[90] w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+					aria-label="Show contact widget"
+					style={{
+						boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+					}}
+				>
+					<MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+				</button>
+			)}
 		</div>
 	);
 };
