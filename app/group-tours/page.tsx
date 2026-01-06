@@ -393,20 +393,13 @@ const GroupToursPage = () => {
 			</section>
 
 			{/* ====================== WEEKLY GROUP TOURS SECTION ====================== */}
-			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
+			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden pt-[140px] sm:pt-[150px] md:pt-[160px]">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: primaryOrange,
-								paddingLeft: '8px',
-								paddingRight: '8px',
-								display: 'inline-block'
-							}}>
-								All Pakistan Group Tour Packages
-							</span>
+					<div className="text-center mb-12 scroll-reveal-fade-up px-2 sm:px-4 mt-8">
+						<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 uppercase tracking-wide" style={{ color: primaryOrange }}>
+							All Pakistan Group Tour Packages
 						</h2>
-						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed" style={{ color: `${secondaryBlack}90` }}>
+						<p className="text-base md:text-lg max-w-4xl mx-auto leading-relaxed mt-4" style={{ color: `${secondaryBlack}90` }}>
 							Explore Pakistan's diverse history, culture, and nature with our comprehensive group packages that cover the North, South, and Central regions.
 						</p>
 					</div>
@@ -708,23 +701,16 @@ const GroupToursPage = () => {
 			{/* ====================== HOW IT WORKS SECTION ====================== */}
 			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: '#000000',
-								paddingLeft: '8px',
-								paddingRight: '8px',
-								display: 'inline-block'
-							}}>
-								Here is a guide on
-							</span>
-							<span className="block mt-2 font-bold" style={{ 
-								color: '#000000'
-							}}>
-								How it works?
-							</span>
-						</h2>
-					</div>
+				<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
+					<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: secondaryBlack }}>
+						<span className="block" style={{ color: primaryOrange }}>
+							Here is a guide on
+						</span>
+						<span className="block mt-2" style={{ color: secondaryBlack }}>
+							How it works?
+						</span>
+					</h2>
+				</div>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 						{/* Step 1 */}
@@ -786,15 +772,8 @@ const GroupToursPage = () => {
 			<section className="py-12 md:py-16 bg-white relative overflow-x-hidden">
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="text-center mb-16 scroll-reveal-fade-up px-2 sm:px-4">
-						<h2 className="text-3xl md:text-4xl font-bold mb-4">
-							<span className="font-autography text-2xl sm:text-3xl md:text-4xl block" style={{ 
-								color: primaryOrange,
-								paddingLeft: '8px',
-								paddingRight: '8px',
-								display: 'inline-block'
-							}}>
-								Our Journeys
-							</span>
+						<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 uppercase tracking-wide" style={{ color: primaryOrange }}>
+							Our Journeys
 						</h2>
 					</div>
 
