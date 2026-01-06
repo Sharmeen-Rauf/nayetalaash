@@ -596,7 +596,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/murree and nathia gali.jpg"
+									src="/images/group tour package 1.jpg"
 									alt="3 Days – Murree, Patriata & Nathia Gali Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -620,7 +620,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/Swat.jpg"
+									src="/images/Group tour package 2.jpg"
 									alt="4 Days – Swat, Malam Jabba, Kalam & Mahodand Lake Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -644,7 +644,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/Swat.jpg"
+									src="/images/Group tour package 3.jpg"
 									alt="5 Days – Kalam, Mahodand, Gabral & Shahi Bagh Adventure Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -668,7 +668,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/Hunza.jpg"
+									src="/images/Group tour package 4.jpg"
 									alt="5 Days – Hunza, Attabad Lake & Khunjerab Pass Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -692,7 +692,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/skardu 2.jpg"
+									src="/images/Group tour package 5.jpg"
 									alt="7 Days – Hunza & Skardu Multi-Valley Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -716,7 +716,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/fairy meadows 2.jpg"
+									src="/images/Group tour package 6.jpg"
 									alt="8 Days – Fairy Meadows, Hunza & Naltar Valley Group Expedition"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -740,7 +740,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/azad kashmir.jpg"
+									src="/images/Group tour package 7.jpg"
 									alt="4 Days – Neelum Valley, Taobat & Arang Kel Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -764,7 +764,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/azad kashmir.jpg"
+									src="/images/Group tour package 8.png"
 									alt="5 Days – Azad Kashmir (Keran, Sharda, Arang Kel, Ratti Gali) Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -788,7 +788,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/skardu 2.jpg"
+									src="/images/Group tour package 9.jpg"
 									alt="5 Days – Skardu, Deosai Plains, Cold Desert & Khaplu Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -812,7 +812,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/Kund Malir.jpg"
+									src="/images/Group tour package 10.jpg"
 									alt="3 Days – Balochistan Coastal Belt (Ormara, Kund Malir, Hingol) Group Trip"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -836,7 +836,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/fairy meadows 2.jpg"
+									src="/images/Group Tour package 11.png"
 									alt="5 Days – Fairy Meadows & Nanga Parbat Base Camp Trek Group Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
@@ -860,7 +860,7 @@ const GroupToursPage = () => {
 						<div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
 							<div className="relative h-48 overflow-hidden">
 								<Image 
-									src="/images/gilgit.jpg"
+									src="/images/Group Tour package 12.jpg"
 									alt="7 Days – Gilgit, Hunza, Naltar & Khunjerab Group Explorer"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-300"
