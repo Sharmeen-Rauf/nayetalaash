@@ -1076,15 +1076,16 @@ const KarachiTourPage = () => {
 				className={`py-6 md:py-8 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('guided-lahore-tour-packages') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					{/* Main Title */}
-					<div className="text-center mb-6">
-						<h2 className="text-1xl md:text-3xl font-bold" style={{ color: secondaryBlack }}>
-							Guided Karachi Tour Packages / Karachi City Tour
-						</h2>
-					</div>
+					<div className="max-w-4xl mx-auto">
+						{/* Main Title */}
+						<div className="text-center mb-6">
+							<h2 className="text-1xl md:text-3xl font-bold" style={{ color: secondaryBlack }}>
+								Guided Karachi Tour Packages / Karachi City Tour
+							</h2>
+						</div>
 
-					{/* Two Column Layout: Image - List */}
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start max-w-7xl mx-auto">
+						{/* Two Column Layout: Image - List */}
+						<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
 						{/* Left Image */}
 						<div className="order-2 lg:order-1">
 							<div className="relative w-full h-[350px] rounded overflow-hidden">
@@ -1124,6 +1125,7 @@ const KarachiTourPage = () => {
 								))}
 							</div>
 						</div>
+					</div>
 					</div>
 				</div>
 			</section>
