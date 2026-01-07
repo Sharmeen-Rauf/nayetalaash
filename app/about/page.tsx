@@ -1662,39 +1662,6 @@ const AboutPage = () => {
 							Travel with confidence, comfort and complete freedom.
 						</p>
 					</div>
-
-					{/* Organization Logos */}
-					<div className="max-w-4xl mx-auto">
-						<div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-							{/* SECP Logo */}
-							<div className="flex flex-col items-center">
-								<div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-2">
-									<span className="text-xs font-bold text-gray-600">SECP</span>
-								</div>
-							</div>
-
-							{/* FBR Logo */}
-							<div className="flex flex-col items-center">
-								<div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-2">
-									<span className="text-xs font-bold text-gray-600">FBR</span>
-								</div>
-							</div>
-
-							{/* PTDC Logo */}
-							<div className="flex flex-col items-center">
-								<div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-2">
-									<span className="text-xs font-bold text-gray-600">PTDC</span>
-								</div>
-							</div>
-
-							{/* EFU Logo */}
-							<div className="flex flex-col items-center">
-								<div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-2">
-									<span className="text-xs font-bold text-gray-600">EFU</span>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</section>
 
