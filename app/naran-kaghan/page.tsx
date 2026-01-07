@@ -707,19 +707,19 @@ const NaranKaghanPage = () => {
 							},
 							{ 
 								title: 'Batakundi', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Batakundi.jpg',
 								description: 'Batakundi is the first town you reach after Naran when heading towards Babusar, offering a beautiful, peaceful place to stay. It is the starting point for the one hour jeep track that leads up to the scenic Lalazar Meadows. The town offers several hotels, rest houses, camping sites, and a small market.',
 								imageLeft: true
 							},
 							{ 
 								title: 'Jalkhad', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Jalkhad.jpg',
 								description: 'Jalkhad is a scenic small town further up the Naran-Babusar road, popular for camping. It is a hub for high altitude attractions like Tiger Peak, the bowl-shaped Pyala Lake, and the route to Saral Lake. It is also where the jeepable mountain pass, Noori Top, begins its climb towards Neelum Valley in Kashmir.',
 								imageLeft: false
 							},
 							{ 
 								title: 'Besal', 
-								image: '/images/naran and kaghan.jpg',
+								image: '/images/Besal.jpg',
 								description: 'The scenery changes completely at Besal (or Besar), where the valley broadens out amidst huge surrounding mountains. It is the official starting point for the challenging two-day moderate level trek to the beautiful Dudipatsar Lake. Besal is also home to the famous Moon Restaurant and falls under the Lulusar-Dudipatsar National Park area.',
 								imageLeft: true
 							},

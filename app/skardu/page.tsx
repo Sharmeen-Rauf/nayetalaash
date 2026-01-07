@@ -893,7 +893,7 @@ const SkarduPage = () => {
 							},
 							{ 
 								title: 'Deosai Plains', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Deosai Plains-skardu.png',
 								description: 'Referred to as the "Roof of The World," this massive plateau sits at 4,114 meters and is the second highest plateau globally. It means "The Land of Giants" and is protected as a National Park, famous for the rare Himalayan Brown Bears. It\'s closed from November to May due to heavy snow and features stunning lakes like Sheosar and Talkhumbo.',
 								imageLeft: false
 							},
@@ -911,7 +911,7 @@ const SkarduPage = () => {
 							},
 							{ 
 								title: 'Shangrila Resort and Lower Kachura Lake', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Shangrila Resort and Lower Kachura Lake-skardu.jpeg',
 								description: 'Often called "Heaven on Earth," this was the first resort of its kind in Northern Pakistan. Beautiful cottages sit around the artificial, heart-shaped Lower Kachura Lake (Shangrila Lake). It offers a magical, serene experience with fish swimming in the lake and rocky mountains towering above.',
 								imageLeft: true
 							},
@@ -959,7 +959,7 @@ const SkarduPage = () => {
 							},
 							{ 
 								title: 'Kharpocho Fort (Skardu Fort)', 
-								image: '/images/skardu 2.jpg',
+								image: '/images/Kharpocho Fort (Skardu Fort).jpg',
 								description: 'Also called "The King of Forts," this was built by Baltistani King Ali Sher Khan Anchan in 1840. The ruins of this fort sit behind the main market in Skardu City, reached by a narrow, steep track. From the fort, you get a stunning aerial view of Skardu City and the surrounding area.',
 								imageLeft: true
 							},
