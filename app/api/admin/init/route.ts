@@ -9,7 +9,7 @@ import Admin from '@/models/Admin';
 export async function POST(request: NextRequest) {
   try {
     // Optional: Add a secret key check for security
-    const { secretKey } = await request.json();
+    const { secretKey, force } = await request.json();
     
     // You can set this in Vercel environment variables
     const INIT_SECRET = process.env.INIT_SECRET || 'change-this-secret-in-production';
@@ -29,11 +29,18 @@ export async function POST(request: NextRequest) {
     // Check if admin already exists
     const existingAdmin = await Admin.findOne({ username });
     
-    if (existingAdmin) {
+    if (existingAdmin && !force) {
       return NextResponse.json({
         message: 'Admin user already exists',
         exists: true,
+        note: 'Use { "secretKey": "...", "force": true } to recreate admin user',
       });
+    }
+
+    // Delete existing admin if force is true
+    if (existingAdmin && force) {
+      await Admin.deleteOne({ username });
+      console.log('Deleted existing admin user');
     }
 
     // Create admin user
@@ -43,6 +50,7 @@ export async function POST(request: NextRequest) {
     });
 
     await admin.save();
+    console.log('Admin user created successfully');
     
     return NextResponse.json({
       message: 'Admin user created successfully!',
@@ -53,6 +61,8 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Error initializing admin:', error);
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    const errorStack = error instanceof Error ? error.stack : undefined;
+    console.error('Init error details:', { errorMessage, errorStack });
     return NextResponse.json(
       { error: 'Failed to initialize admin', details: errorMessage },
       { status: 500 }
