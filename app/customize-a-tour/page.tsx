@@ -32,6 +32,9 @@ const CustomizeTourPage = () => {
 		phone: ''
 	});
 
+	const [isSubmitting, setIsSubmitting] = useState(false);
+	const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null);
+
 	// Theme colors
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
@@ -41,102 +44,154 @@ const CustomizeTourPage = () => {
 
 
 	// Handle form submission
-	const handleSubmit = (e: React.FormEvent) => {
+	const handleSubmit = async (e: React.FormEvent) => {
 		e.preventDefault();
+		setSubmitMessage(null);
 		
 		// Validate required fields
 		if (!formData.destination || !formData.totalDays || !formData.fullName || !formData.phone) {
-			alert('Please fill in all required fields.');
+			setSubmitMessage({ type: 'error', text: 'Please fill in all required fields.' });
 			return;
 		}
 
-		// Format the message for WhatsApp
-		let message = '🌟 *CUSTOMIZE TOUR REQUEST*\n\n';
-		
-		// Trip Details
-		message += '*TRIP DETAILS:*\n';
-		message += `📍 Destination: ${formData.destination}\n`;
-		message += `📅 Total Days: ${formData.totalDays}\n`;
-		if (formData.startingDate) {
-			message += `📆 Starting Date: ${formData.startingDate}\n`;
+		setIsSubmitting(true);
+
+		try {
+			// Submit to backend API
+			const response = await fetch('/api/tour-requests', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(formData),
+			});
+
+			const data = await response.json();
+
+			if (response.ok) {
+				setSubmitMessage({ type: 'success', text: 'Tour request submitted successfully! We will contact you soon.' });
+				
+				// Format the message for WhatsApp
+				let message = '🌟 *CUSTOMIZE TOUR REQUEST*\n\n';
+				
+				// Trip Details
+				message += '*TRIP DETAILS:*\n';
+				message += `📍 Destination: ${formData.destination}\n`;
+				message += `📅 Total Days: ${formData.totalDays}\n`;
+				if (formData.startingDate) {
+					message += `📆 Starting Date: ${formData.startingDate}\n`;
+				}
+				if (formData.travelMode) {
+					message += `✈️ Travel Mode: ${formData.travelMode === 'air' ? 'By Air' : 'By Road'}\n`;
+				}
+				if (formData.vehiclePreference) {
+					const vehicleMap: { [key: string]: string } = {
+						'coaster-saloon': 'Coaster Saloon',
+						'van': 'Van (Grand Cabin / Hiace / Hi-Roof)',
+						'minivan': 'MiniVan (APV, Every, Kaarvan)',
+						'4x4': '4x4 (Toyota Vigo/ Revo, Land Cruiser Prado/ V8)',
+						'car': 'Car (GLI, Altis, Yaris, BRV, Sportage)'
+					};
+					message += `🚗 Vehicle Preference: ${vehicleMap[formData.vehiclePreference] || formData.vehiclePreference}\n`;
+				}
+				if (formData.totalPersons) {
+					message += `👥 Total Persons: ${formData.totalPersons}\n`;
+				}
+				if (formData.adults) {
+					message += `👤 Adults (12+): ${formData.adults}\n`;
+				}
+				if (formData.children) {
+					message += `👶 Children (0-12): ${formData.children}\n`;
+				}
+				if (formData.totalRooms) {
+					message += `🏨 Total Rooms: ${formData.totalRooms}\n`;
+				}
+				if (formData.departureLocation) {
+					message += `🚩 Departure Location: ${formData.departureLocation}\n`;
+				}
+				if (formData.tourGuide) {
+					message += `🎯 Tour Guide: ${formData.tourGuide === 'yes' ? 'Yes' : 'No'}\n`;
+				}
+				
+				message += '\n';
+				
+				// Group Category
+				if (formData.groupCategory) {
+					const categoryMap: { [key: string]: string } = {
+						'couple': 'Couple',
+						'family': 'Family',
+						'corporate': 'Corporate',
+						'students': 'Students/Friends'
+					};
+					message += `*Group Category:* ${categoryMap[formData.groupCategory] || formData.groupCategory}\n\n`;
+				}
+				
+				// Service Type
+				if (formData.serviceType) {
+					const serviceMap: { [key: string]: string } = {
+						'standard': 'Standard',
+						'deluxe': 'Deluxe',
+						'executive': 'Executive'
+					};
+					message += `*Service Type (Budget):* ${serviceMap[formData.serviceType] || formData.serviceType}\n\n`;
+				}
+				
+				// Specific Requirements
+				if (formData.specificRequirements) {
+					message += `*Specific Requirements:*\n${formData.specificRequirements}\n\n`;
+				}
+				
+				// Contact Details
+				message += '*CONTACT DETAILS:*\n';
+				message += `👤 Name: ${formData.fullName}\n`;
+				if (formData.email) {
+					message += `📧 Email: ${formData.email}\n`;
+				}
+				message += `📱 Phone/WhatsApp: ${formData.phone}\n`;
+				
+				// Encode message for URL
+				const encodedMessage = encodeURIComponent(message);
+				
+				// WhatsApp number: +92 331 1438251
+				const whatsappNumber = '923311438251';
+				const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+				
+				// Open WhatsApp after a short delay
+				setTimeout(() => {
+					window.open(whatsappUrl, '_blank');
+				}, 500);
+
+				// Reset form after successful submission
+				setTimeout(() => {
+					setFormData({
+						destination: '',
+						totalDays: '',
+						startingDate: '',
+						travelMode: '',
+						vehiclePreference: '',
+						totalPersons: '',
+						adults: '',
+						children: '',
+						totalRooms: '',
+						departureLocation: '',
+						tourGuide: '',
+						groupCategory: '',
+						serviceType: '',
+						specificRequirements: '',
+						fullName: '',
+						email: '',
+						phone: ''
+					});
+					setSubmitMessage(null);
+				}, 3000);
+			} else {
+				setSubmitMessage({ type: 'error', text: data.error || 'Failed to submit tour request. Please try again.' });
+			}
+		} catch (error) {
+			setSubmitMessage({ type: 'error', text: 'An error occurred. Please try again later.' });
+		} finally {
+			setIsSubmitting(false);
 		}
-		if (formData.travelMode) {
-			message += `✈️ Travel Mode: ${formData.travelMode === 'air' ? 'By Air' : 'By Road'}\n`;
-		}
-		if (formData.vehiclePreference) {
-			const vehicleMap: { [key: string]: string } = {
-				'coaster-saloon': 'Coaster Saloon',
-				'van': 'Van (Grand Cabin / Hiace / Hi-Roof)',
-				'minivan': 'MiniVan (APV, Every, Kaarvan)',
-				'4x4': '4x4 (Toyota Vigo/ Revo, Land Cruiser Prado/ V8)',
-				'car': 'Car (GLI, Altis, Yaris, BRV, Sportage)'
-			};
-			message += `🚗 Vehicle Preference: ${vehicleMap[formData.vehiclePreference] || formData.vehiclePreference}\n`;
-		}
-		if (formData.totalPersons) {
-			message += `👥 Total Persons: ${formData.totalPersons}\n`;
-		}
-		if (formData.adults) {
-			message += `👤 Adults (12+): ${formData.adults}\n`;
-		}
-		if (formData.children) {
-			message += `👶 Children (0-12): ${formData.children}\n`;
-		}
-		if (formData.totalRooms) {
-			message += `🏨 Total Rooms: ${formData.totalRooms}\n`;
-		}
-		if (formData.departureLocation) {
-			message += `🚩 Departure Location: ${formData.departureLocation}\n`;
-		}
-		if (formData.tourGuide) {
-			message += `🎯 Tour Guide: ${formData.tourGuide === 'yes' ? 'Yes' : 'No'}\n`;
-		}
-		
-		message += '\n';
-		
-		// Group Category
-		if (formData.groupCategory) {
-			const categoryMap: { [key: string]: string } = {
-				'couple': 'Couple',
-				'family': 'Family',
-				'corporate': 'Corporate',
-				'students': 'Students/Friends'
-			};
-			message += `*Group Category:* ${categoryMap[formData.groupCategory] || formData.groupCategory}\n\n`;
-		}
-		
-		// Service Type
-		if (formData.serviceType) {
-			const serviceMap: { [key: string]: string } = {
-				'standard': 'Standard',
-				'deluxe': 'Deluxe',
-				'executive': 'Executive'
-			};
-			message += `*Service Type (Budget):* ${serviceMap[formData.serviceType] || formData.serviceType}\n\n`;
-		}
-		
-		// Specific Requirements
-		if (formData.specificRequirements) {
-			message += `*Specific Requirements:*\n${formData.specificRequirements}\n\n`;
-		}
-		
-		// Contact Details
-		message += '*CONTACT DETAILS:*\n';
-		message += `👤 Name: ${formData.fullName}\n`;
-		if (formData.email) {
-			message += `📧 Email: ${formData.email}\n`;
-		}
-		message += `📱 Phone/WhatsApp: ${formData.phone}\n`;
-		
-		// Encode message for URL
-		const encodedMessage = encodeURIComponent(message);
-		
-		// WhatsApp number: +92 331 1438251
-		const whatsappNumber = '923311438251';
-		const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-		
-		// Open WhatsApp
-		window.open(whatsappUrl, '_blank');
 	};
 
 	// Handle input changes
@@ -644,6 +699,16 @@ const CustomizeTourPage = () => {
 
 					{/* Form */}
 					<form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-lg p-6 md:p-8 space-y-6">
+						{/* Submit Message */}
+						{submitMessage && (
+							<div className={`p-4 rounded-lg ${
+								submitMessage.type === 'success' 
+									? 'bg-green-100 border border-green-400 text-green-700' 
+									: 'bg-red-100 border border-red-400 text-red-700'
+							}`}>
+								{submitMessage.text}
+							</div>
+						)}
 						{/* Trip Details Section */}
 						<div className="space-y-4">
 							<h2 className="text-xl font-bold mb-4" style={{ color: secondaryBlack }}>Trip Details</h2>
@@ -1025,10 +1090,11 @@ const CustomizeTourPage = () => {
 						<div className="border-t pt-6 text-center">
 							<button
 								type="submit"
-								className="px-8 py-3 font-bold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+								disabled={isSubmitting}
+								className="px-8 py-3 font-bold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
 								style={{ backgroundColor: primaryOrange, color: 'white' }}
 							>
-								MAKE MY TRIP
+								{isSubmitting ? 'SUBMITTING...' : 'MAKE MY TRIP'}
 							</button>
 						</div>
 					</form>
