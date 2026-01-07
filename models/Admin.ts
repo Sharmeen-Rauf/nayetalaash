@@ -18,15 +18,17 @@ const AdminSchema: Schema = new Schema(
 );
 
 // Hash password before saving
-AdminSchema.pre('save', async function (next) {
-  if (!this.isModified('password')) return next();
+AdminSchema.pre('save', async function (next: mongoose.CallbackWithoutResult) {
+  if (!this.isModified('password')) {
+    return next();
+  }
   
   try {
     const salt = await bcrypt.genSalt(10);
     this.password = await bcrypt.hash(this.password, salt);
-    next();
-  } catch (error: any) {
-    next(error);
+    return next();
+  } catch (error: unknown) {
+    return next(error as Error);
   }
 });
 
