@@ -7,7 +7,16 @@ const JWT_SECRET = process.env.JWT_SECRET || 'nayetalaash2026project_secret_key_
 
 export async function POST(request: NextRequest) {
   try {
-    await connectDB();
+    // Connect to database
+    try {
+      await connectDB();
+    } catch (dbError) {
+      console.error('Database connection error:', dbError);
+      return NextResponse.json(
+        { error: 'Database connection failed', details: dbError instanceof Error ? dbError.message : 'Unknown error' },
+        { status: 500 }
+      );
+    }
 
     const { username, password } = await request.json();
 
@@ -49,7 +58,7 @@ export async function POST(request: NextRequest) {
 
     // Generate JWT token
     const token = jwt.sign(
-      { id: admin._id, username: admin.username },
+      { id: admin._id.toString(), username: admin.username },
       JWT_SECRET,
       { expiresIn: '7d' }
     );
@@ -76,9 +85,19 @@ export async function POST(request: NextRequest) {
     console.error('Error during login:', error);
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     const errorStack = error instanceof Error ? error.stack : undefined;
-    console.error('Login error details:', { errorMessage, errorStack });
+    console.error('Login error details:', { 
+      errorMessage, 
+      errorStack,
+      errorName: error instanceof Error ? error.name : undefined
+    });
+    
+    // Don't expose internal error details in production
+    const isDevelopment = process.env.NODE_ENV === 'development';
     return NextResponse.json(
-      { error: 'Login failed', details: errorMessage },
+      { 
+        error: 'Login failed',
+        ...(isDevelopment && { details: errorMessage })
+      },
       { status: 500 }
     );
   }
