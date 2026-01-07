@@ -8,7 +8,7 @@ import { Globe } from 'lucide-react';
 interface DestinationCard360Props {
 	title: string;
 	image: string;
-	description: string;
+	description?: string; // Optional description
 	image360?: string; // Optional 360 image URL
 	iframe360?: string; // Optional iframe URL for 360 tour (Kuula, Roundme, etc.)
 	imageLeft?: boolean;

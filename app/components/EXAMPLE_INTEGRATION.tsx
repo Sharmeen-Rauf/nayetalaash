@@ -45,7 +45,7 @@ export const ExampleAfter = ({ destination }: { destination: Destination }) => {
 			title={destination.title}
 			image={destination.image}
 			image360={destination.image360} // Add this property to your destination data
-			description={destination.description}
+			description={destination.description || ''}
 			imageLeft={destination.imageLeft}
 		/>
 	);
@@ -126,7 +126,7 @@ export const ExampleCompleteSection = ({ destinations, visibleSections }: Exampl
 							image={destination.image}
 							image360={destination.image360}
 							iframe360={destination.iframe360}
-							description={destination.description}
+							description={destination.description || ''}
 							imageLeft={destination.imageLeft}
 							className="w-full"
 						/>
