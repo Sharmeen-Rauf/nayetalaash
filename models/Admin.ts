@@ -18,7 +18,8 @@ const AdminSchema: Schema = new Schema(
 );
 
 // Hash password before saving
-AdminSchema.pre('save', async function (next: mongoose.CallbackWithoutResult) {
+// @ts-expect-error - Mongoose pre hook typing issue with TypeScript strict mode
+AdminSchema.pre('save', async function (next) {
   if (!this.isModified('password')) {
     return next();
   }
