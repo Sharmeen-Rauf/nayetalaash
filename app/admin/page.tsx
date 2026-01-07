@@ -1,7 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-// import { useRouter } from 'next/navigation';
+import React, { useState, useEffect, useCallback } from 'react';
 import { LogOut, Search, Filter, CheckCircle, XCircle, Clock, Phone, Mail, Calendar, MapPin, Users, Car, Hotel, User } from 'lucide-react';
 
 interface TourRequest {
@@ -29,7 +28,6 @@ interface TourRequest {
 }
 
 const AdminDashboard = () => {
-  // const router = useRouter();
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [username, setUsername] = useState('');
   const [loginUsername, setLoginUsername] = useState('');
@@ -52,12 +50,37 @@ const AdminDashboard = () => {
     checkAuth();
   }, []);
 
+  const fetchTourRequests = useCallback(async () => {
+    setLoadingRequests(true);
+    try {
+      const url = statusFilter !== 'all' 
+        ? `/api/admin/tour-requests?status=${statusFilter}`
+        : '/api/admin/tour-requests';
+      
+      const response = await fetch(url);
+      const data = await response.json();
+
+      if (response.ok) {
+        setTourRequests(data.tourRequests || []);
+      } else {
+        if (response.status === 401) {
+          setIsAuthenticated(false);
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching tour requests:', error);
+      // Error already logged
+    } finally {
+      setLoadingRequests(false);
+    }
+  }, [statusFilter, setIsAuthenticated]);
+
   // Fetch tour requests when authenticated
   useEffect(() => {
     if (isAuthenticated) {
       fetchTourRequests();
     }
-  }, [isAuthenticated, statusFilter]);
+  }, [isAuthenticated, fetchTourRequests]);
 
   // Filter and search tour requests
   useEffect(() => {
@@ -93,7 +116,7 @@ const AdminDashboard = () => {
       } else {
         setIsAuthenticated(false);
       }
-    } catch (error) {
+    } catch {
       setIsAuthenticated(false);
     }
   };
@@ -144,30 +167,6 @@ const AdminDashboard = () => {
     }
   };
 
-  const fetchTourRequests = async () => {
-    setLoadingRequests(true);
-    try {
-      const url = statusFilter !== 'all' 
-        ? `/api/admin/tour-requests?status=${statusFilter}`
-        : '/api/admin/tour-requests';
-      
-      const response = await fetch(url);
-      const data = await response.json();
-
-      if (response.ok) {
-        setTourRequests(data.tourRequests || []);
-      } else {
-        if (response.status === 401) {
-          setIsAuthenticated(false);
-        }
-      }
-    } catch (error) {
-      console.error('Error fetching tour requests:', error);
-      // Error already logged
-    } finally {
-      setLoadingRequests(false);
-    }
-  };
 
   const updateStatus = async (id: string, newStatus: string) => {
     try {

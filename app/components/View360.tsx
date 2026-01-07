@@ -56,14 +56,30 @@ const View360: React.FC<View360Props> = ({
 	useEffect(() => {
 		if (!isOpen || !imageUrl || !pannellumLoaded || !viewerRef.current) return;
 
+		interface PannellumWindow extends Window {
+			pannellum?: {
+				viewer: (element: HTMLElement, config: Record<string, unknown>) => {
+					destroy: () => void;
+				};
+			};
+		}
+		interface ViewerElement extends HTMLDivElement {
+			viewer?: {
+				destroy: () => void;
+			};
+		}
+
 		// Clear any existing viewer
 		if (viewerRef.current) {
 			viewerRef.current.innerHTML = '';
 		}
 
 		// Initialize Pannellum
-		if ((window as any).pannellum) {
-			(viewerRef.current as any).viewer = (window as any).pannellum.viewer(viewerRef.current, {
+		const pannellumWindow = window as PannellumWindow;
+		const currentViewerRef = viewerRef.current;
+		if (pannellumWindow.pannellum && currentViewerRef) {
+			const viewerElement = currentViewerRef as ViewerElement;
+			viewerElement.viewer = pannellumWindow.pannellum.viewer(currentViewerRef, {
 				type: 'equirectangular',
 				panorama: imageUrl,
 				autoLoad: true,
@@ -77,11 +93,14 @@ const View360: React.FC<View360Props> = ({
 		}
 
 		return () => {
-			if (viewerRef.current && (viewerRef.current as any).viewer) {
-				try {
-					(viewerRef.current as any).viewer.destroy();
-				} catch (e) {
-					console.log('Viewer cleanup');
+			if (currentViewerRef) {
+				const viewerElement = currentViewerRef as ViewerElement;
+				if (viewerElement.viewer) {
+					try {
+						viewerElement.viewer.destroy();
+					} catch {
+						console.log('Viewer cleanup');
+					}
 				}
 			}
 		};

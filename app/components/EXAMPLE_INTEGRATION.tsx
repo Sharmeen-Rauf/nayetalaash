@@ -15,7 +15,16 @@ import Image from 'next/image';
 // EXAMPLE 1: Replace existing Image component with DestinationCard360
 // ========================================
 
-export const ExampleBefore = ({ destination }: { destination: any }) => {
+interface Destination {
+	title: string;
+	image: string;
+	image360?: string;
+	iframe360?: string;
+	description?: string;
+	imageLeft?: boolean;
+}
+
+export const ExampleBefore = ({ destination }: { destination: Destination }) => {
 	// BEFORE: Your current implementation
 	return (
 		<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
@@ -29,7 +38,7 @@ export const ExampleBefore = ({ destination }: { destination: any }) => {
 	);
 };
 
-export const ExampleAfter = ({ destination }: { destination: any }) => {
+export const ExampleAfter = ({ destination }: { destination: Destination }) => {
 	// AFTER: With 360° view support
 	return (
 		<DestinationCard360
@@ -79,10 +88,15 @@ export const ExampleDestinationData = [
 // EXAMPLE 3: Complete destination section integration
 // ========================================
 
-export const ExampleCompleteSection = ({ destinations, visibleSections }: any) => {
+interface ExampleCompleteSectionProps {
+	destinations: Destination[];
+	visibleSections: Set<string>;
+}
+
+export const ExampleCompleteSection = ({ destinations, visibleSections }: ExampleCompleteSectionProps) => {
 	return (
 		<div className="space-y-8">
-			{destinations.map((destination: any, idx: number) => (
+			{destinations.map((destination: Destination, idx: number) => (
 				<div
 					key={idx}
 					className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center"
