@@ -29,7 +29,16 @@ export async function POST(request: NextRequest) {
     }
 
     // Check password
-    const isPasswordValid = await admin.comparePassword(password);
+    let isPasswordValid = false;
+    try {
+      isPasswordValid = await admin.comparePassword(password);
+    } catch (compareError) {
+      console.error('Password comparison error:', compareError);
+      return NextResponse.json(
+        { error: 'Error validating password' },
+        { status: 500 }
+      );
+    }
 
     if (!isPasswordValid) {
       return NextResponse.json(
@@ -56,15 +65,18 @@ export async function POST(request: NextRequest) {
 
     response.cookies.set('adminToken', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
+      secure: process.env.NODE_ENV === 'production' || process.env.VERCEL === '1',
       sameSite: 'lax',
       maxAge: 60 * 60 * 24 * 7, // 7 days
+      path: '/',
     });
 
     return response;
   } catch (error) {
     console.error('Error during login:', error);
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    const errorStack = error instanceof Error ? error.stack : undefined;
+    console.error('Login error details:', { errorMessage, errorStack });
     return NextResponse.json(
       { error: 'Login failed', details: errorMessage },
       { status: 500 }
