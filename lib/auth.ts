@@ -18,7 +18,7 @@ export function verifyToken(request: NextRequest): AuthUser | null {
 
     const decoded = jwt.verify(token, JWT_SECRET) as AuthUser;
     return decoded;
-  } catch (error) {
+  } catch {
     return null;
   }
 }

@@ -18,7 +18,7 @@ export async function GET(request: NextRequest) {
     const skip = (page - 1) * limit;
 
     // Build query
-    const query: any = {};
+    const query: { status?: string } = {};
     if (status) {
       query.status = status;
     }
@@ -42,8 +42,8 @@ export async function GET(request: NextRequest) {
         totalPages: Math.ceil(total / limit),
       },
     });
-  } catch (error: any) {
-    if (error.message === 'Unauthorized') {
+  } catch (error) {
+    if (error instanceof Error && error.message === 'Unauthorized') {
       return NextResponse.json(
         { error: 'Unauthorized' },
         { status: 401 }
@@ -51,8 +51,9 @@ export async function GET(request: NextRequest) {
     }
 
     console.error('Error fetching tour requests:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Failed to fetch tour requests', details: error.message },
+      { error: 'Failed to fetch tour requests', details: errorMessage },
       { status: 500 }
     );
   }
@@ -91,8 +92,8 @@ export async function PATCH(request: NextRequest) {
       message: 'Status updated successfully',
       tourRequest,
     });
-  } catch (error: any) {
-    if (error.message === 'Unauthorized') {
+  } catch (error) {
+    if (error instanceof Error && error.message === 'Unauthorized') {
       return NextResponse.json(
         { error: 'Unauthorized' },
         { status: 401 }
@@ -100,8 +101,9 @@ export async function PATCH(request: NextRequest) {
     }
 
     console.error('Error updating tour request:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Failed to update tour request', details: error.message },
+      { error: 'Failed to update tour request', details: errorMessage },
       { status: 500 }
     );
   }

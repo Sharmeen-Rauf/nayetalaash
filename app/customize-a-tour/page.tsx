@@ -184,12 +184,12 @@ const CustomizeTourPage = () => {
 					});
 					setSubmitMessage(null);
 				}, 3000);
-			} else {
-				setSubmitMessage({ type: 'error', text: data.error || 'Failed to submit tour request. Please try again.' });
-			}
-		} catch (error) {
-			setSubmitMessage({ type: 'error', text: 'An error occurred. Please try again later.' });
-		} finally {
+      } else {
+        setSubmitMessage({ type: 'error', text: data.error || 'Failed to submit tour request. Please try again.' });
+      }
+    } catch {
+      setSubmitMessage({ type: 'error', text: 'An error occurred. Please try again later.' });
+    } finally {
 			setIsSubmitting(false);
 		}
 	};

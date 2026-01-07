@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
       authenticated: true,
       username: user.username,
     });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { authenticated: false },
       { status: 401 }

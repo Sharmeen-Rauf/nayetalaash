@@ -50,10 +50,11 @@ export async function POST(request: NextRequest) {
       password: 'nayetalaash2026project',
       note: 'Please delete this API route after initialization for security',
     });
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error initializing admin:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Failed to initialize admin', details: error.message },
+      { error: 'Failed to initialize admin', details: errorMessage },
       { status: 500 }
     );
   }

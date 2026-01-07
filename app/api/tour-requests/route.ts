@@ -47,10 +47,11 @@ export async function POST(request: NextRequest) {
       },
       { status: 201 }
     );
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error submitting tour request:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Failed to submit tour request', details: error.message },
+      { error: 'Failed to submit tour request', details: errorMessage },
       { status: 500 }
     );
   }

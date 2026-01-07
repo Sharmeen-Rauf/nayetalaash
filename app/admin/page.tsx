@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import { LogOut, Search, Filter, Eye, CheckCircle, XCircle, Clock, Phone, Mail, Calendar, MapPin, Users, Car, Hotel, User } from 'lucide-react';
+// import { useRouter } from 'next/navigation';
+import { LogOut, Search, Filter, CheckCircle, XCircle, Clock, Phone, Mail, Calendar, MapPin, Users, Car, Hotel, User } from 'lucide-react';
 
 interface TourRequest {
   _id: string;
@@ -29,7 +29,7 @@ interface TourRequest {
 }
 
 const AdminDashboard = () => {
-  const router = useRouter();
+  // const router = useRouter();
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [username, setUsername] = useState('');
   const [loginUsername, setLoginUsername] = useState('');
@@ -125,7 +125,7 @@ const AdminDashboard = () => {
       } else {
         setError(data.error || 'Login failed');
       }
-    } catch (error) {
+    } catch {
       setError('An error occurred during login');
     } finally {
       setLoading(false);
@@ -139,8 +139,8 @@ const AdminDashboard = () => {
       setUsername('');
       setTourRequests([]);
       setSelectedRequest(null);
-    } catch (error) {
-      console.error('Logout error:', error);
+    } catch {
+      // Logout error - ignore
     }
   };
 
@@ -163,6 +163,7 @@ const AdminDashboard = () => {
       }
     } catch (error) {
       console.error('Error fetching tour requests:', error);
+      // Error already logged
     } finally {
       setLoadingRequests(false);
     }
@@ -181,11 +182,12 @@ const AdminDashboard = () => {
       if (response.ok) {
         fetchTourRequests();
         if (selectedRequest && selectedRequest._id === id) {
-          setSelectedRequest({ ...selectedRequest, status: newStatus as any });
+          setSelectedRequest({ ...selectedRequest, status: newStatus as 'pending' | 'contacted' | 'confirmed' | 'cancelled' });
         }
       }
     } catch (error) {
       console.error('Error updating status:', error);
+      // Error already logged
     }
   };
 
