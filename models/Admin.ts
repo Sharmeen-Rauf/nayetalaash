@@ -18,7 +18,7 @@ const AdminSchema: Schema = new Schema(
 );
 
 // Hash password before saving
-AdminSchema.pre<IAdmin>('save', async function (next: (err?: Error) => void) {
+(AdminSchema as any).pre('save', async function (this: IAdmin, next: (err?: Error) => void) {
   if (!this.isModified('password')) {
     return next();
   }
