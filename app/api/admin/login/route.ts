@@ -31,16 +31,20 @@ export async function POST(request: NextRequest) {
     const admin = await Admin.findOne({ username });
 
     if (!admin) {
+      console.error('Admin user not found:', username);
       return NextResponse.json(
         { error: 'Invalid credentials' },
         { status: 401 }
       );
     }
 
+    console.log('Admin user found, checking password...');
+
     // Check password
     let isPasswordValid = false;
     try {
       isPasswordValid = await admin.comparePassword(password);
+      console.log('Password comparison result:', isPasswordValid);
     } catch (compareError) {
       console.error('Password comparison error:', compareError);
       return NextResponse.json(
@@ -50,6 +54,7 @@ export async function POST(request: NextRequest) {
     }
 
     if (!isPasswordValid) {
+      console.error('Password validation failed for user:', username);
       return NextResponse.json(
         { error: 'Invalid credentials' },
         { status: 401 }
