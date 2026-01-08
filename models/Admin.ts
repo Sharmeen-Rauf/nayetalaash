@@ -18,7 +18,7 @@ const AdminSchema: Schema = new Schema(
 );
 
 // Hash password before saving (only if not already hashed)
-AdminSchema.pre('save', async function (next) {
+AdminSchema.pre('save', async function (next: (err?: Error) => void) {
   // Only hash if password is modified
   if (!this.isModified('password')) {
     return next();
