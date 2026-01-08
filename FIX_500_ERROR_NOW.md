@@ -22,7 +22,7 @@ You're getting a 500 Internal Server Error when clicking "Create Admin User". Th
 2. Click **"Add New"**
 3. Add this variable:
    - **Key:** `MONGODB_URI`
-   - **Value:** `mongodb+srv://nayitalaash_db_user:twelveseptember2025@cluster0.yeyguxy.mongodb.net/?appName=Cluster0`
+   - **Value:** `mongodb+srv://nayitalaash_db_user:backendnayetalaash@cluster0.yeyguxy.mongodb.net/?appName=Cluster0`
    - **Environments:** Select **All** (Production, Preview, Development)
 4. Click **"Save"**
 

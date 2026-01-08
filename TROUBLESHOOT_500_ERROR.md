@@ -14,7 +14,7 @@
 
 **Fix:**
 1. Go to Vercel Dashboard → Your Project → Settings → Environment Variables
-2. Add: `MONGODB_URI` = `mongodb+srv://nayitalaash_db_user:twelveseptember2025@cluster0.yeyguxy.mongodb.net/?appName=Cluster0`
+2. Add: `MONGODB_URI` = `mongodb+srv://nayitalaash_db_user:backendnayetalaash@cluster0.yeyguxy.mongodb.net/?appName=Cluster0`
 3. Redeploy the application
 
 ### 2. MongoDB Atlas Network Access Restrictions
@@ -40,7 +40,7 @@
 **Fix:**
 - Verify the connection string in Vercel matches exactly:
   ```
-  mongodb+srv://nayitalaash_db_user:twelveseptember2025@cluster0.yeyguxy.mongodb.net/?appName=Cluster0
+  mongodb+srv://nayitalaash_db_user:backendnayetalaash@cluster0.yeyguxy.mongodb.net/?appName=Cluster0
   ```
 
 ## Diagnostic Steps

@@ -12,7 +12,7 @@ You're seeing "Database connection failed" when trying to log in. This means Mon
 2. Select your project → **Settings** → **Environment Variables**
 3. Make sure `MONGODB_URI` is set with this value:
    ```
-   mongodb+srv://nayitalaash_db_user:twelveseptember2025@cluster0.yeyguxy.mongodb.net/?appName=Cluster0
+   mongodb+srv://nayitalaash_db_user:backendnayetalaash@cluster0.yeyguxy.mongodb.net/?appName=Cluster0
    ```
 
 **Fix:**

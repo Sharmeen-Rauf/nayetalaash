@@ -6,7 +6,7 @@ Add these environment variables in your Vercel project settings:
 
 ### 1. MONGODB_URI
 **Key:** `MONGODB_URI`  
-**Value:** `mongodb+srv://nayitalaash_db_user:twelveseptember2025@cluster0.yeyguxy.mongodb.net/?appName=Cluster0`  
+**Value:** `mongodb+srv://nayitalaash_db_user:backendnayetalaash@cluster0.yeyguxy.mongodb.net/?appName=Cluster0`  
 **Environments:** ✅ Production, ✅ Preview, ✅ Development  
 **Note:** MongoDB connection string for database access
 
@@ -47,7 +47,7 @@ Add these environment variables in your Vercel project settings:
 ## Quick Copy-Paste Values
 
 ```
-MONGODB_URI=mongodb+srv://nayitalaash_db_user:twelveseptember2025@cluster0.yeyguxy.mongodb.net/?appName=Cluster0
+MONGODB_URI=mongodb+srv://nayitalaash_db_user:backendnayetalaash@cluster0.yeyguxy.mongodb.net/?appName=Cluster0
 
 JWT_SECRET=nayetalaash2026project_secret_key_change_in_production
 

@@ -12,7 +12,7 @@ Make sure these are set in your Vercel project settings:
 1. Go to your Vercel project dashboard
 2. Navigate to **Settings** → **Environment Variables**
 3. Add these variables:
-   - `MONGODB_URI`: `mongodb+srv://nayitalaash_db_user:twelveseptember2025@cluster0.yeyguxy.mongodb.net/?appName=Cluster0`
+   - `MONGODB_URI`: `mongodb+srv://nayitalaash_db_user:backendnayetalaash@cluster0.yeyguxy.mongodb.net/?appName=Cluster0`
    - `JWT_SECRET`: `nayetalaash2026project_secret_key_change_in_production`
    - `INIT_SECRET`: `change-this-secret-in-production` (or any secret you want)
    - `NODE_ENV`: `production`

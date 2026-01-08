@@ -22,7 +22,7 @@ Create a `.env.local` file in the root directory with the following content:
 
 ```env
 # MongoDB Connection String
-MONGODB_URI=mongodb+srv://nayitalaash_db_user:twelveseptember2025@cluster0.yeyguxy.mongodb.net/?appName=Cluster0
+MONGODB_URI=mongodb+srv://nayitalaash_db_user:backendnayetalaash@cluster0.yeyguxy.mongodb.net/?appName=Cluster0
 
 # JWT Secret for admin authentication
 JWT_SECRET=nayetalaash2026project_secret_key_change_in_production
