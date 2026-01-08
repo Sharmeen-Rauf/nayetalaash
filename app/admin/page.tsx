@@ -34,6 +34,8 @@ const AdminDashboard = () => {
   const [loginPassword, setLoginPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [creatingAdmin, setCreatingAdmin] = useState(false);
+  const [adminMessage, setAdminMessage] = useState('');
   
   const [tourRequests, setTourRequests] = useState<TourRequest[]>([]);
   const [filteredRequests, setFilteredRequests] = useState<TourRequest[]>([]);
@@ -167,6 +169,38 @@ const AdminDashboard = () => {
     }
   };
 
+  const handleCreateAdmin = async () => {
+    setCreatingAdmin(true);
+    setAdminMessage('');
+    setError('');
+
+    try {
+      const response = await fetch('/api/admin/init', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          secretKey: 'change-this-secret-in-production',
+          force: true, // Force recreate to fix any password issues
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setAdminMessage('✅ Admin user created successfully! You can now login with username: admin and password: nayetalaash2026project');
+        setLoginUsername('admin');
+      } else {
+        setAdminMessage(data.error || 'Failed to create admin user');
+      }
+    } catch (err) {
+      setAdminMessage('Error: ' + (err instanceof Error ? err.message : 'Unknown error'));
+    } finally {
+      setCreatingAdmin(false);
+    }
+  };
+
 
   const updateStatus = async (id: string, newStatus: string) => {
     try {
@@ -273,6 +307,30 @@ const AdminDashboard = () => {
               {loading ? 'Logging in...' : 'Login'}
             </button>
           </form>
+
+          <div className="mt-6 pt-6 border-t border-gray-200">
+            <p className="text-sm text-gray-600 text-center mb-3">
+              Admin user doesn't exist?
+            </p>
+            <button
+              type="button"
+              onClick={handleCreateAdmin}
+              disabled={creatingAdmin}
+              className="w-full py-2 px-4 text-sm font-medium text-white rounded-lg transition-all duration-300 hover:opacity-90 disabled:opacity-50"
+              style={{ backgroundColor: '#10b981' }}
+            >
+              {creatingAdmin ? 'Creating Admin...' : 'Create Admin User'}
+            </button>
+            {adminMessage && (
+              <div className={`mt-3 px-4 py-2 rounded text-sm ${
+                adminMessage.includes('✅') 
+                  ? 'bg-green-50 text-green-700 border border-green-200' 
+                  : 'bg-red-50 text-red-700 border border-red-200'
+              }`}>
+                {adminMessage}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     );
