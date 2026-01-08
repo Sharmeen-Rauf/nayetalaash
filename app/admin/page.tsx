@@ -186,12 +186,21 @@ const AdminDashboard = () => {
         }),
       });
 
-      let data;
+      let data: Record<string, unknown> | null = null;
       try {
-        data = await response.json();
+        const text = await response.text();
+        if (text) {
+          try {
+            data = JSON.parse(text) as Record<string, unknown>;
+          } catch (parseError) {
+            console.error('Error parsing JSON:', parseError);
+            setAdminMessage(`Server error (${response.status}): Invalid JSON response. Raw: ${text.substring(0, 200)}`);
+            return;
+          }
+        }
       } catch (jsonError) {
-        console.error('Error parsing response JSON:', jsonError);
-        setAdminMessage(`Server error (${response.status}): Could not parse response. Check Vercel logs for details.`);
+        console.error('Error reading response:', jsonError);
+        setAdminMessage(`Server error (${response.status}): Could not read response. Check Vercel logs for details.`);
         return;
       }
 
@@ -200,27 +209,44 @@ const AdminDashboard = () => {
         setLoginUsername('admin');
       } else {
         // Show detailed error message - ensure all values are strings
-        let errorMsg = String(data?.error || `Failed to create admin user (Status: ${response.status})`);
+        let errorMsg = 'Failed to create admin user';
         
-        if (data?.details) {
-          const details = String(data.details);
-          if (details && details !== 'undefined' && details !== 'null') {
-            errorMsg += `\n\nDetails: ${details}`;
+        try {
+          if (data && typeof data === 'object') {
+            const errorValue = data.error;
+            if (errorValue !== undefined && errorValue !== null) {
+              errorMsg = String(errorValue);
+            } else {
+              errorMsg = `Failed to create admin user (Status: ${response.status})`;
+            }
+            
+            // Safely add details
+            if (data.details !== undefined && data.details !== null) {
+              const details = String(data.details);
+              if (details && details !== 'undefined' && details !== 'null' && details.trim()) {
+                errorMsg += `\n\nDetails: ${details}`;
+              }
+            }
+            
+            // Safely add hint
+            if (data.hint !== undefined && data.hint !== null) {
+              const hint = String(data.hint);
+              if (hint && hint !== 'undefined' && hint !== 'null' && hint.trim()) {
+                errorMsg += `\n\nHint: ${hint}`;
+              }
+            }
+            
+            // Safely add type
+            if (data.type !== undefined && data.type !== null) {
+              const type = String(data.type);
+              if (type && type !== 'undefined' && type !== 'null' && type.trim()) {
+                errorMsg += `\n\nError Type: ${type}`;
+              }
+            }
           }
-        }
-        
-        if (data?.hint) {
-          const hint = String(data.hint);
-          if (hint && hint !== 'undefined' && hint !== 'null') {
-            errorMsg += `\n\nHint: ${hint}`;
-          }
-        }
-        
-        if (data?.type) {
-          const type = String(data.type);
-          if (type && type !== 'undefined' && type !== 'null') {
-            errorMsg += `\n\nError Type: ${type}`;
-          }
+        } catch (msgError) {
+          console.error('Error building error message:', msgError);
+          errorMsg = `Failed to create admin user (Status: ${response.status})`;
         }
         
         setAdminMessage(errorMsg);

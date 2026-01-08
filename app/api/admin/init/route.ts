@@ -121,35 +121,73 @@ export async function POST(request: NextRequest) {
 
     // Create admin user
     try {
-      const admin = new Admin({
-        username,
-        password,
-      });
-
-      await admin.save();
-      console.log('Admin user created successfully');
-      
-      return NextResponse.json({
-        message: 'Admin user created successfully!',
-        username: 'admin',
-        password: 'nayetalaash2026project',
-        note: 'Please delete this API route after initialization for security',
-      });
-    } catch (saveError) {
-      console.error('Error saving admin user:', saveError);
-      
-      // Safely extract error message
-      let saveErrorMessage = 'Unknown error';
-      if (saveError instanceof Error) {
-        saveErrorMessage = saveError.message || 'Unknown error';
-      } else if (typeof saveError === 'string') {
-        saveErrorMessage = saveError;
-      } else if (saveError && typeof saveError === 'object' && 'message' in saveError) {
-        saveErrorMessage = String(saveError.message);
+      // Validate inputs before creating
+      if (typeof username !== 'string' || !username) {
+        return NextResponse.json(
+          { error: 'Invalid username', details: 'Username must be a non-empty string' },
+          { status: 400 }
+        );
       }
       
+      if (typeof password !== 'string' || !password) {
+        return NextResponse.json(
+          { error: 'Invalid password', details: 'Password must be a non-empty string' },
+          { status: 400 }
+        );
+      }
+
+      const admin = new Admin({
+        username: String(username),
+        password: String(password),
+      });
+
+      // Save with explicit error handling
+      try {
+        await admin.save();
+        console.log('Admin user created successfully');
+        
+        return NextResponse.json({
+          message: 'Admin user created successfully!',
+          username: 'admin',
+          password: 'nayetalaash2026project',
+          note: 'Please delete this API route after initialization for security',
+        });
+      } catch (saveError: unknown) {
+        console.error('Error during admin.save():', saveError);
+        throw saveError; // Re-throw to be caught by outer catch
+      }
+    } catch (saveError: unknown) {
+      console.error('Error saving admin user:', saveError);
+      
+      // Safely extract error message with multiple fallbacks
+      let saveErrorMessage = 'Unknown error occurred while saving admin user';
+      
+      try {
+        if (saveError instanceof Error) {
+          saveErrorMessage = saveError.message || saveError.toString() || 'Unknown error';
+        } else if (typeof saveError === 'string') {
+          saveErrorMessage = saveError;
+        } else if (saveError && typeof saveError === 'object') {
+          if ('message' in saveError) {
+            saveErrorMessage = String(saveError.message);
+          } else if ('error' in saveError) {
+            saveErrorMessage = String(saveError.error);
+          } else {
+            saveErrorMessage = JSON.stringify(saveError);
+          }
+        } else {
+          saveErrorMessage = String(saveError);
+        }
+      } catch (extractError) {
+        console.error('Error extracting error message:', extractError);
+        saveErrorMessage = 'Failed to extract error details';
+      }
+      
+      // Ensure it's a string
+      const finalErrorMessage = String(saveErrorMessage || 'Unknown error');
+      
       // Check for duplicate key error
-      if (saveErrorMessage.includes('duplicate key') || saveErrorMessage.includes('E11000')) {
+      if (finalErrorMessage.includes('duplicate key') || finalErrorMessage.includes('E11000')) {
         return NextResponse.json(
           { 
             error: 'Admin user already exists (duplicate key error)', 
@@ -163,7 +201,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { 
           error: 'Failed to save admin user', 
-          details: String(saveErrorMessage)
+          details: finalErrorMessage
         },
         { status: 500 }
       );
