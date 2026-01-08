@@ -199,17 +199,30 @@ const AdminDashboard = () => {
         setAdminMessage('✅ Admin user created successfully! You can now login with username: admin and password: nayetalaash2026project');
         setLoginUsername('admin');
       } else {
-        // Show detailed error message
-        let errorMsg = data.error || `Failed to create admin user (Status: ${response.status})`;
-        if (data.details) {
-          errorMsg += `\n\nDetails: ${data.details}`;
+        // Show detailed error message - ensure all values are strings
+        let errorMsg = String(data?.error || `Failed to create admin user (Status: ${response.status})`);
+        
+        if (data?.details) {
+          const details = String(data.details);
+          if (details && details !== 'undefined' && details !== 'null') {
+            errorMsg += `\n\nDetails: ${details}`;
+          }
         }
-        if (data.hint) {
-          errorMsg += `\n\nHint: ${data.hint}`;
+        
+        if (data?.hint) {
+          const hint = String(data.hint);
+          if (hint && hint !== 'undefined' && hint !== 'null') {
+            errorMsg += `\n\nHint: ${hint}`;
+          }
         }
-        if (data.type) {
-          errorMsg += `\n\nError Type: ${data.type}`;
+        
+        if (data?.type) {
+          const type = String(data.type);
+          if (type && type !== 'undefined' && type !== 'null') {
+            errorMsg += `\n\nError Type: ${type}`;
+          }
         }
+        
         setAdminMessage(errorMsg);
         console.error('Admin creation error:', { status: response.status, data });
       }

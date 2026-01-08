@@ -24,11 +24,24 @@ const AdminSchema: Schema = new Schema(
   }
   
   try {
+    // Ensure password is a string
+    if (typeof this.password !== 'string') {
+      return next(new Error('Password must be a string'));
+    }
+    
     const salt = await bcrypt.genSalt(10);
-    this.password = await bcrypt.hash(this.password, salt);
+    const hashedPassword = await bcrypt.hash(this.password, salt);
+    
+    // Ensure hashed password is a string
+    if (typeof hashedPassword !== 'string') {
+      return next(new Error('Password hashing failed'));
+    }
+    
+    this.password = hashedPassword;
     return next();
   } catch (error: unknown) {
-    return next(error as Error);
+    const err = error instanceof Error ? error : new Error(String(error));
+    return next(err);
   }
 });
 

@@ -14,8 +14,14 @@ export async function POST(request: NextRequest) {
       body = await request.json();
     } catch (parseError) {
       console.error('Error parsing request body:', parseError);
+      let parseErrorMessage = 'Unknown error';
+      if (parseError instanceof Error) {
+        parseErrorMessage = parseError.message || 'Unknown error';
+      } else if (typeof parseError === 'string') {
+        parseErrorMessage = parseError;
+      }
       return NextResponse.json(
-        { error: 'Invalid request body', details: parseError instanceof Error ? parseError.message : 'Unknown error' },
+        { error: 'Invalid request body', details: String(parseErrorMessage) },
         { status: 400 }
       );
     }
@@ -39,11 +45,18 @@ export async function POST(request: NextRequest) {
       console.log('Database connected successfully for admin init');
     } catch (dbError) {
       console.error('Database connection error in init:', dbError);
-      const dbErrorMessage = dbError instanceof Error ? dbError.message : 'Unknown database error';
+      let dbErrorMessage = 'Unknown database error';
+      if (dbError instanceof Error) {
+        dbErrorMessage = dbError.message || 'Unknown database error';
+      } else if (typeof dbError === 'string') {
+        dbErrorMessage = dbError;
+      } else if (dbError && typeof dbError === 'object' && 'message' in dbError) {
+        dbErrorMessage = String(dbError.message);
+      }
       return NextResponse.json(
         { 
           error: 'Database connection failed', 
-          details: dbErrorMessage,
+          details: String(dbErrorMessage),
           hint: 'Please check: 1) MONGODB_URI is set in Vercel, 2) MongoDB Atlas network access allows all IPs (0.0.0.0/0), 3) MongoDB cluster is running'
         },
         { status: 500 }
@@ -60,10 +73,16 @@ export async function POST(request: NextRequest) {
       console.log(`Admin lookup result: ${existingAdmin ? 'found' : 'not found'}`);
     } catch (findError) {
       console.error('Error finding admin:', findError);
+      let findErrorMessage = 'Unknown error';
+      if (findError instanceof Error) {
+        findErrorMessage = findError.message || 'Unknown error';
+      } else if (typeof findError === 'string') {
+        findErrorMessage = findError;
+      }
       return NextResponse.json(
         { 
           error: 'Error checking for existing admin', 
-          details: findError instanceof Error ? findError.message : 'Unknown error'
+          details: String(findErrorMessage)
         },
         { status: 500 }
       );
@@ -84,10 +103,16 @@ export async function POST(request: NextRequest) {
         console.log('Deleted existing admin user');
       } catch (deleteError) {
         console.error('Error deleting existing admin:', deleteError);
+        let deleteErrorMessage = 'Unknown error';
+        if (deleteError instanceof Error) {
+          deleteErrorMessage = deleteError.message || 'Unknown error';
+        } else if (typeof deleteError === 'string') {
+          deleteErrorMessage = deleteError;
+        }
         return NextResponse.json(
           { 
             error: 'Error deleting existing admin', 
-            details: deleteError instanceof Error ? deleteError.message : 'Unknown error'
+            details: String(deleteErrorMessage)
           },
           { status: 500 }
         );
@@ -112,7 +137,16 @@ export async function POST(request: NextRequest) {
       });
     } catch (saveError) {
       console.error('Error saving admin user:', saveError);
-      const saveErrorMessage = saveError instanceof Error ? saveError.message : 'Unknown error';
+      
+      // Safely extract error message
+      let saveErrorMessage = 'Unknown error';
+      if (saveError instanceof Error) {
+        saveErrorMessage = saveError.message || 'Unknown error';
+      } else if (typeof saveError === 'string') {
+        saveErrorMessage = saveError;
+      } else if (saveError && typeof saveError === 'object' && 'message' in saveError) {
+        saveErrorMessage = String(saveError.message);
+      }
       
       // Check for duplicate key error
       if (saveErrorMessage.includes('duplicate key') || saveErrorMessage.includes('E11000')) {
@@ -129,22 +163,38 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { 
           error: 'Failed to save admin user', 
-          details: saveErrorMessage
+          details: String(saveErrorMessage)
         },
         { status: 500 }
       );
     }
   } catch (error) {
     console.error('Unexpected error in admin init:', error);
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    
+    // Safely extract error information
+    let errorMessage = 'Unknown error';
+    let errorName: string | undefined;
+    
+    if (error instanceof Error) {
+      errorMessage = error.message || 'Unknown error';
+      errorName = error.name;
+    } else if (typeof error === 'string') {
+      errorMessage = error;
+    } else if (error && typeof error === 'object' && 'message' in error) {
+      errorMessage = String(error.message);
+      if ('name' in error) {
+        errorName = String(error.name);
+      }
+    }
+    
     const errorStack = error instanceof Error ? error.stack : undefined;
-    const errorName = error instanceof Error ? error.name : undefined;
     console.error('Init error details:', { errorMessage, errorStack, errorName });
+    
     return NextResponse.json(
       { 
         error: 'Failed to initialize admin', 
-        details: errorMessage,
-        type: errorName
+        details: String(errorMessage),
+        ...(errorName && { type: String(errorName) })
       },
       { status: 500 }
     );
