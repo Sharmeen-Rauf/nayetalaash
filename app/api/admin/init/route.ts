@@ -156,17 +156,28 @@ export async function POST(request: NextRequest) {
         );
       }
 
-      // Create admin with already-hashed password
-      const admin = new Admin({
-        username: String(username),
-        password: hashedPassword, // Use pre-hashed password
-      });
-
-      // Save with explicit error handling
+      // Use direct MongoDB collection insert to completely bypass Mongoose hooks
       try {
-        console.log('Attempting to save admin user...');
-        await admin.save();
-        console.log('Admin user created successfully');
+        console.log('Creating admin user using direct MongoDB insert...');
+        
+        // Import mongoose to access connection
+        const mongoose = await import('mongoose');
+        const connection = mongoose.default.connection;
+        
+        if (!connection || !connection.db) {
+          throw new Error('Database connection not available');
+        }
+        
+        // Use insertOne to completely bypass Mongoose hooks and validation
+        const result = await connection.db.collection('admins').insertOne({
+          username: String(username),
+          password: hashedPassword,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        });
+        
+        console.log('Admin user created successfully using direct insert');
+        console.log('Inserted ID:', result.insertedId);
         
         return NextResponse.json({
           message: 'Admin user created successfully!',
@@ -175,7 +186,7 @@ export async function POST(request: NextRequest) {
           note: 'Please delete this API route after initialization for security',
         });
       } catch (saveError: unknown) {
-        console.error('Error during admin.save():', saveError);
+        console.error('Error creating admin user:', saveError);
         console.error('Save error type:', typeof saveError);
         console.error('Save error constructor:', saveError?.constructor?.name);
         
@@ -187,6 +198,9 @@ export async function POST(request: NextRequest) {
           }
           if (errorObj.message) {
             console.error('Mongoose error message:', errorObj.message);
+          }
+          if (errorObj.code) {
+            console.error('MongoDB error code:', errorObj.code);
           }
         }
         
