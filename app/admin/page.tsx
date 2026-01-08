@@ -192,10 +192,21 @@ const AdminDashboard = () => {
         setAdminMessage('✅ Admin user created successfully! You can now login with username: admin and password: nayetalaash2026project');
         setLoginUsername('admin');
       } else {
-        setAdminMessage(data.error || 'Failed to create admin user');
+        // Show detailed error message
+        let errorMsg = data.error || 'Failed to create admin user';
+        if (data.details) {
+          errorMsg += `\n\nDetails: ${data.details}`;
+        }
+        if (data.hint) {
+          errorMsg += `\n\nHint: ${data.hint}`;
+        }
+        setAdminMessage(errorMsg);
+        console.error('Admin creation error:', data);
       }
     } catch (err) {
-      setAdminMessage('Error: ' + (err instanceof Error ? err.message : 'Unknown error'));
+      const errorMsg = 'Network error: ' + (err instanceof Error ? err.message : 'Unknown error');
+      setAdminMessage(errorMsg);
+      console.error('Admin creation network error:', err);
     } finally {
       setCreatingAdmin(false);
     }
@@ -322,7 +333,7 @@ const AdminDashboard = () => {
               {creatingAdmin ? 'Creating Admin...' : 'Create Admin User'}
             </button>
             {adminMessage && (
-              <div className={`mt-3 px-4 py-2 rounded text-sm ${
+              <div className={`mt-3 px-4 py-2 rounded text-sm whitespace-pre-line ${
                 adminMessage.includes('✅') 
                   ? 'bg-green-50 text-green-700 border border-green-200' 
                   : 'bg-red-50 text-red-700 border border-red-200'
