@@ -186,22 +186,32 @@ const AdminDashboard = () => {
         }),
       });
 
-      const data = await response.json();
+      let data;
+      try {
+        data = await response.json();
+      } catch (jsonError) {
+        console.error('Error parsing response JSON:', jsonError);
+        setAdminMessage(`Server error (${response.status}): Could not parse response. Check Vercel logs for details.`);
+        return;
+      }
 
       if (response.ok) {
         setAdminMessage('✅ Admin user created successfully! You can now login with username: admin and password: nayetalaash2026project');
         setLoginUsername('admin');
       } else {
         // Show detailed error message
-        let errorMsg = data.error || 'Failed to create admin user';
+        let errorMsg = data.error || `Failed to create admin user (Status: ${response.status})`;
         if (data.details) {
           errorMsg += `\n\nDetails: ${data.details}`;
         }
         if (data.hint) {
           errorMsg += `\n\nHint: ${data.hint}`;
         }
+        if (data.type) {
+          errorMsg += `\n\nError Type: ${data.type}`;
+        }
         setAdminMessage(errorMsg);
-        console.error('Admin creation error:', data);
+        console.error('Admin creation error:', { status: response.status, data });
       }
     } catch (err) {
       const errorMsg = 'Network error: ' + (err instanceof Error ? err.message : 'Unknown error');
