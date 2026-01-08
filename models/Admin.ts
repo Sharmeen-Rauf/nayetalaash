@@ -17,30 +17,55 @@ const AdminSchema: Schema = new Schema(
   }
 );
 
-// Hash password before saving
-(AdminSchema as any).pre('save', async function (this: IAdmin, next: (err?: Error) => void) {
+// Hash password before saving (only if not already hashed)
+AdminSchema.pre('save', async function (next) {
+  // Only hash if password is modified
   if (!this.isModified('password')) {
     return next();
   }
   
   try {
+    // Get password value
+    const passwordValue = (this as any).password;
+    
     // Ensure password is a string
-    if (typeof this.password !== 'string') {
-      return next(new Error('Password must be a string'));
+    if (typeof passwordValue !== 'string' || !passwordValue) {
+      return next(new Error('Password must be a non-empty string'));
     }
     
+    // Check if password is already hashed (bcrypt hashes start with $2a$, $2b$, or $2y$)
+    if (passwordValue.startsWith('$2a$') || passwordValue.startsWith('$2b$') || passwordValue.startsWith('$2y$')) {
+      // Password is already hashed, skip hashing
+      return next();
+    }
+    
+    // Verify bcrypt is available
+    if (!bcrypt || typeof bcrypt.genSalt !== 'function' || typeof bcrypt.hash !== 'function') {
+      return next(new Error('bcrypt is not properly imported or initialized'));
+    }
+    
+    // Hash the password
     const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash(this.password, salt);
+    const hashedPassword = await bcrypt.hash(passwordValue, salt);
     
     // Ensure hashed password is a string
-    if (typeof hashedPassword !== 'string') {
-      return next(new Error('Password hashing failed'));
+    if (typeof hashedPassword !== 'string' || !hashedPassword) {
+      return next(new Error('Password hashing failed - result is not a string'));
     }
     
-    this.password = hashedPassword;
+    // Set the hashed password
+    (this as any).password = hashedPassword;
     return next();
   } catch (error: unknown) {
-    const err = error instanceof Error ? error : new Error(String(error));
+    // Safely convert error to Error object
+    let err: Error;
+    if (error instanceof Error) {
+      err = error;
+    } else if (typeof error === 'string') {
+      err = new Error(error);
+    } else {
+      err = new Error(String(error));
+    }
     return next(err);
   }
 });

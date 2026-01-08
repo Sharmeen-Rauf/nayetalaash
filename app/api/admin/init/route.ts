@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import connectDB from '@/lib/mongodb';
 import Admin from '@/models/Admin';
+import bcrypt from 'bcryptjs';
 
 // This is a one-time initialization endpoint
 // Call this once after deployment to create the admin user
@@ -136,13 +137,34 @@ export async function POST(request: NextRequest) {
         );
       }
 
+      // Hash password directly here instead of relying on pre-save hook
+      let hashedPassword: string;
+      try {
+        console.log('Hashing password...');
+        const salt = await bcrypt.genSalt(10);
+        hashedPassword = await bcrypt.hash(String(password), salt);
+        console.log('Password hashed successfully');
+      } catch (hashError) {
+        console.error('Error hashing password:', hashError);
+        const hashErrorMessage = hashError instanceof Error ? hashError.message : String(hashError);
+        return NextResponse.json(
+          { 
+            error: 'Failed to hash password', 
+            details: String(hashErrorMessage)
+          },
+          { status: 500 }
+        );
+      }
+
+      // Create admin with already-hashed password
       const admin = new Admin({
         username: String(username),
-        password: String(password),
+        password: hashedPassword, // Use pre-hashed password
       });
 
       // Save with explicit error handling
       try {
+        console.log('Attempting to save admin user...');
         await admin.save();
         console.log('Admin user created successfully');
         
@@ -154,6 +176,20 @@ export async function POST(request: NextRequest) {
         });
       } catch (saveError: unknown) {
         console.error('Error during admin.save():', saveError);
+        console.error('Save error type:', typeof saveError);
+        console.error('Save error constructor:', saveError?.constructor?.name);
+        
+        // If it's a validation error or mongoose error, extract more details
+        if (saveError && typeof saveError === 'object') {
+          const errorObj = saveError as Record<string, unknown>;
+          if (errorObj.errors) {
+            console.error('Mongoose validation errors:', errorObj.errors);
+          }
+          if (errorObj.message) {
+            console.error('Mongoose error message:', errorObj.message);
+          }
+        }
+        
         throw saveError; // Re-throw to be caught by outer catch
       }
     } catch (saveError: unknown) {
