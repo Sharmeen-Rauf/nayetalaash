@@ -2,8 +2,27 @@ import { NextRequest, NextResponse } from 'next/server';
 import connectDB from '@/lib/mongodb';
 import Admin from '@/models/Admin';
 
+interface Diagnostics {
+  timestamp: string;
+  environment: {
+    nodeEnv: string | undefined;
+    vercel: boolean;
+    hasMongoUri: boolean;
+    mongoUriLength: number;
+  };
+  database: {
+    connected: boolean;
+    error: string | null;
+  };
+  admin: {
+    exists: boolean;
+    count: number;
+    error: string | null;
+  };
+}
+
 export async function GET(request: NextRequest) {
-  const diagnostics: Record<string, unknown> = {
+  const diagnostics: Diagnostics = {
     timestamp: new Date().toISOString(),
     environment: {
       nodeEnv: process.env.NODE_ENV,
@@ -13,12 +32,12 @@ export async function GET(request: NextRequest) {
     },
     database: {
       connected: false,
-      error: null as string | null,
+      error: null,
     },
     admin: {
       exists: false,
       count: 0,
-      error: null as string | null,
+      error: null,
     },
   };
 
