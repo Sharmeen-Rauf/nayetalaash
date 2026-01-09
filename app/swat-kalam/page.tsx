@@ -1207,11 +1207,11 @@ const SwatKalamPage = () => {
 								>
 									<div className="text-center px-4">
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
+										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide text-center">
 											{item.title}
 										</h3>
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<p className="text-sm md:text-base opacity-90 max-w-xs">
+										<p className="text-sm md:text-base opacity-90 max-w-xs text-center mx-auto">
 											{item.description}
 										</p>
 									</div>
