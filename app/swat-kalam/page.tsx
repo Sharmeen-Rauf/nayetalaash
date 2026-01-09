@@ -596,39 +596,39 @@ const SwatKalamPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '2 Days – Malam Jabba Tour (Short Escape)',
+								title: '2 Days: Malam Jabba Tour (Short Escape)',
 								image: '/images/package 1-swatpage.jpg'
 							},
 							{ 
-								title: '3 Days – Kalam, Mahodand Lake & Malam Jabba',
+								title: '3 Days: Kalam, Mahodand Lake & Malam Jabba',
 								image: '/images/pacakges2.jpeg'
 							},
 							{ 
-								title: '4 Days – Kalam, Mahodand Lake, Malam Jabba & Green Top',
+								title: '4 Days: Kalam, Mahodand Lake, Malam Jabba & Green Top',
 								image: '/images/package 3-swatpage.jpg'
 							},
 							{ 
-								title: '5 Days – Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
+								title: '5 Days: Relaxed Kalam, Mahodand, Green Top & Blue Water Point',
 								image: '/images/package 4-swatpage.jpg'
 							},
 							{ 
-								title: '5 Days – Kalam, Mahodand Lake, Malam Jabba & Desan Top',
+								title: '5 Days: Kalam, Mahodand Lake, Malam Jabba & Desan Top',
 								image: '/images/package 5-swatpage.jpg'
 							},
 							{ 
-								title: '7 Days – Malam Jabba, Kalam & Nathia Gali',
+								title: '7 Days: Malam Jabba, Kalam & Nathia Gali',
 								image: '/images/package 6-swatpage.jpg'
 							},
 							{ 
-								title: '7 Days – Swat to Kumrat Valley Adventure',
+								title: '7 Days: Swat to Kumrat Valley Adventure',
 								image: '/images/package 7-swatpage.jpg'
 							},
 							{ 
-								title: '10 Days – Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
+								title: '10 Days: Malam Jabba, Kalam & Hunza (Multi Valley Experience)',
 								image: '/images/package 8-swatpage.jpg'
 							},
 							{ 
-								title: '3 Days – Swat Valley Highlights Tour',
+								title: '3 Days: Swat Valley Highlights Tour',
 								image: '/images/Package 9-swatpage.jpg'
 							},
 						];
@@ -1288,21 +1288,21 @@ const SwatKalamPage = () => {
 							>
 								<button
 									onClick={() => setOpenFAQIndex(openFAQIndex === idx ? null : idx)}
-									className="w-full flex items-center justify-between py-3 text-left transition-all duration-300 hover:opacity-80"
+									className="w-full flex items-center justify-center py-3 text-center transition-all duration-300 hover:opacity-80"
 								>
-									<span className="flex items-center gap-3 flex-1">
+									<span className="flex items-center gap-3 justify-center">
 										<ChevronDown 
 											className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${openFAQIndex === idx ? 'rotate-180' : ''}`}
 											style={{ color: secondaryBlack }}
 										/>
-										<span className="font-medium leading-normal text-left" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+										<span className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 											{faq.question}
 										</span>
 									</span>
 								</button>
 								{openFAQIndex === idx && (
-									<div className="pb-3 pl-7 animate-fadeIn text-left" style={{ animation: 'fadeIn 0.3s ease-in' }}>
-										<p className="leading-normal whitespace-pre-line text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									<div className="pb-3 animate-fadeIn text-center" style={{ animation: 'fadeIn 0.3s ease-in' }}>
+										<p className="leading-normal whitespace-pre-line text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 											{faq.answer}
 										</p>
 									</div>
@@ -1327,7 +1327,7 @@ const SwatKalamPage = () => {
 								className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 							>
-								Get Your Free Quote Now!
+								Customize a Tour!
 							</button>
 						</div>
 					</div>
