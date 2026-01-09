@@ -559,7 +559,7 @@ const HunzaPage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Explore the Gem of the North with Nayi Talaash
+								Explore the Gem of the North
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
@@ -587,7 +587,7 @@ const HunzaPage = () => {
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Hunza Valley is one of Pakistan's most stunning travel destinations famous for its mighty mountains, crystal blue lakes, ancient forts, warm hearted people and vibrant culture. All tours are customizable, ensuring comfort, flexibility and an unforgettable travel experience. Choose from our ready-made tours or build a trip exactly the way you want:
+							Explore the majestic peaks and ancient forts of Hunza Valley with Nayi Talaash’s fully customizable and flexible tour packages.
 							</p>
 						</div>
 					</div>
@@ -596,39 +596,39 @@ const HunzaPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '4 Days – Hunza, Gilgit & Khunjerab Pass',
+								title: '4 Days: Hunza, Gilgit & Khunjerab Pass',
 								image: '/images/package 1-hunzatourpage.jpg'
 							},
 							{ 
-								title: '5 Days – Hunza & Khunjerab Pass Tour',
+								title: '5 Days: Hunza & Khunjerab Pass Tour',
 								image: '/images/package 2-hunzatourpage.jpg'
 							},
 							{ 
-								title: '6 Days – Minapin, Gojal & Naltar Valley',
+								title: '6 Days: Minapin, Gojal & Naltar Valley',
 								image: '/images/package 3-hunzatourpage.jpg'
 							},
 							{ 
-								title: '6 Days – Hunza, Naltar & Khunjerab Tour',
+								title: '6 Days: Hunza, Naltar & Khunjerab Tour',
 								image: '/images/package 4-hunzatourpage.jpg'
 							},
 							{ 
-								title: '7 Days – Hunza, Nagar & Minapin Tour',
+								title: '7 Days: Hunza, Nagar & Minapin Tour',
 								image: '/images/package 5-hunzatourpage.jpg'
 							},
 							{ 
-								title: '8 Days – Naran, Shogran & Hunza Tour',
+								title: '8 Days: Naran, Shogran & Hunza Tour',
 								image: '/images/package 6-hunzatourpage.jpg'
 							},
 							{ 
-								title: '8 Days – Hunza & Skardu Valley Tour',
+								title: '8 Days: Hunza & Skardu Valley Tour',
 								image: '/images/package 7-hunzatourpage.jpg'
 							},
 							{ 
-								title: '10 Days – Hunza, Skardu Premium Journey',
+								title: '10 Days: Hunza, Skardu Premium Journey',
 								image: '/images/package 8-hunzatourpage.jpg'
 							},
 							{ 
-								title: '15 Days – Fairy Meadows, Hunza & Skardu Expedition',
+								title: '15 Days: Fairy Meadows, Hunza & Skardu Expedition',
 								image: '/images/package 9-hunzatourpage.jpg'
 							},
 						];
@@ -659,7 +659,7 @@ const HunzaPage = () => {
 									/>
 								</div>
 								<div className="p-3">
-									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 										{item.title}
 									</p>
 								</div>
@@ -721,7 +721,7 @@ const HunzaPage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 									5 Days Hunza Group Tour
 								</p>
 							</div>
@@ -737,7 +737,7 @@ const HunzaPage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 									8 Days Hunza & Skardu Group Tour
 								</p>
 							</div>
@@ -746,7 +746,7 @@ const HunzaPage = () => {
 
 					{/* Who Are These Tours For Section */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Who Are These Tours For?
 						</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -787,7 +787,7 @@ const HunzaPage = () => {
 
 					{/* Swat Tour Packages From Major Cities Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Hunza Tour Packages From Major Cities
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -1016,14 +1016,14 @@ const HunzaPage = () => {
 			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="culture"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Culture of Hunza Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The people of Hunza Valley are known for their rich culture and longevity. Both men and women take part in traditional crafts, including hand-woven fabrics, embroidery, and unique jewelry making. The Hunza people are famous for their hospitality, traditional music, and unique architectural style.
 						</p>
 					</div>
@@ -1033,14 +1033,14 @@ const HunzaPage = () => {
 			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="economy"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Economy of Hunza Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The economy of Hunza Valley is primarily based on agriculture, tourism, and small-scale industries. The valley produces delicious apricots, apples, and other fruits.
 						</p>
 					</div>
@@ -1050,14 +1050,14 @@ const HunzaPage = () => {
 			{/* ====================== EDUCATIONAL IN KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="educational"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Educational in Hunza Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Several educational institutions in Hunza Valley include primary and secondary schools, colleges, and universities. The region has a strong focus on education and literacy.
 						</p>
 					</div>
