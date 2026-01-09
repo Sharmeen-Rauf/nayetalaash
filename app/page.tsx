@@ -8,15 +8,15 @@ import Lottie from 'lottie-react';
 
 // Tour Packages Data - moved outside component to avoid recreation
 const allTourPackages = [
-	{ name: 'Hunza – 5 Days Tour Package', image: '/images/Hunza.jpg', description: 'Majestic valleys and ancient culture' },
-	{ name: 'Skardu – 6 Days Tour Package', image: '/images/skardu 2.jpg', description: 'Gateway to K2 and Baltoro Glacier' },
-	{ name: 'Swat & Kalam – 4 Days Tour Package', image: '/images/Swat.jpg', description: 'Switzerland of Pakistan' },
-	{ name: 'Murree & Nathia Gali – 2 Days Tour Package', image: '/images/murree and nathia gali.jpg', description: 'Colonial hill station charm' },
-	{ name: 'Naran Kaghan – 3 Days Tour Package', image: '/images/naran and kaghan.jpg', description: 'Alpine lakes and meadows' },
-	{ name: 'Azad Kashmir – 4 Days Tour Package', image: '/images/azad kashmir.jpg', description: 'Paradise on earth' },
-	{ name: 'Fairy Meadows – 3 Days Trek Package', image: '/images/fairy meadows 2.jpg', description: 'Base camp to Nanga Parbat' },
-	{ name: 'Chitral & Kalash – 5 Days Tour Package', image: '/images/chitral.jpg', description: 'Ancient culture and traditions' },
-	{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: '/images/Kund Malir.jpg', description: 'Coastal beauty and beaches' },
+	{ name: 'Hunza – 5 Days Tour Package', image: '/images/Hunza.jpg', description: 'Majestic valleys and ancient culture', link: '/hunza' },
+	{ name: 'Skardu – 6 Days Tour Package', image: '/images/skardu 2.jpg', description: 'Gateway to K2 and Baltoro Glacier', link: '/skardu' },
+	{ name: 'Swat & Kalam – 4 Days Tour Package', image: '/images/Swat.jpg', description: 'Switzerland of Pakistan', link: '/swat-kalam' },
+	{ name: 'Murree & Nathia Gali – 2 Days Tour Package', image: '/images/murree and nathia gali.jpg', description: 'Colonial hill station charm', link: '/nathia-gali-murree' },
+	{ name: 'Naran Kaghan – 3 Days Tour Package', image: '/images/naran and kaghan.jpg', description: 'Alpine lakes and meadows', link: '/naran-kaghan' },
+	{ name: 'Azad Kashmir – 4 Days Tour Package', image: '/images/azad kashmir.jpg', description: 'Paradise on earth', link: '/neelum-valley' },
+	{ name: 'Fairy Meadows – 3 Days Trek Package', image: '/images/fairy meadows 2.jpg', description: 'Base camp to Nanga Parbat', link: '/hunza' },
+	{ name: 'Chitral & Kalash – 5 Days Tour Package', image: '/images/chitral.jpg', description: 'Ancient culture and traditions', link: '/chitral' },
+	{ name: 'Gwadar & Kund Malir – 2 Days Tour Package', image: '/images/Kund Malir.jpg', description: 'Coastal beauty and beaches', link: '/gwadar' },
 ];
 
 const Page = () => {
@@ -1712,7 +1712,11 @@ const Page = () => {
 				{/* Enhanced Tour Packages Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
 					{visibleTourPackages.map((tour, idx) => (
-							<div key={`tour-${tour.name}-${idx}`} className="relative group cursor-pointer">
+							<Link 
+								key={`tour-${tour.name}-${idx}`} 
+								href={tour.link || '#'}
+								className="relative group cursor-pointer block"
+							>
 								<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								{/* 3D Card Background */}
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
@@ -1741,8 +1745,16 @@ const Page = () => {
 										{tour.description}
 									</p>
 									<div className="mt-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
-										<button className="px-4 py-2 rounded-lg text-sm font-semibold transition-colors transform hover:scale-105"
-												style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
+										<button 
+											onClick={(e) => {
+												e.preventDefault();
+												if (tour.link) {
+													window.location.href = tour.link;
+												}
+											}}
+											className="px-4 py-2 rounded-lg text-sm font-semibold transition-colors transform hover:scale-105"
+											style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
+										>
 											Explore Now
 										</button>
 									</div>
@@ -1751,8 +1763,8 @@ const Page = () => {
 								{/* 3D Border Effect */}
 								<div className="absolute inset-0 rounded-2xl border-2 border-transparent transition-all duration-500" 
 									 style={{ borderColor: `${primaryOrange}30` }}></div>
-						</div>
-						</div>
+								</div>
+							</Link>
 					))}
 				</div>
 				
