@@ -1288,21 +1288,21 @@ const SwatKalamPage = () => {
 							>
 								<button
 									onClick={() => setOpenFAQIndex(openFAQIndex === idx ? null : idx)}
-									className="w-full flex items-center justify-center py-3 text-center transition-all duration-300 hover:opacity-80"
+									className="w-full flex items-center justify-between py-3 text-left transition-all duration-300 hover:opacity-80"
 								>
-									<span className="flex items-center gap-3 justify-center">
+									<span className="flex items-center gap-3 flex-1">
 										<ChevronDown 
 											className={`w-4 h-4 flex-shrink-0 transition-transform duration-300 ${openFAQIndex === idx ? 'rotate-180' : ''}`}
 											style={{ color: secondaryBlack }}
 										/>
-										<span className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+										<span className="font-medium leading-normal text-left" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 											{faq.question}
 										</span>
 									</span>
 								</button>
 								{openFAQIndex === idx && (
-									<div className="pb-3 animate-fadeIn text-center" style={{ animation: 'fadeIn 0.3s ease-in' }}>
-										<p className="leading-normal whitespace-pre-line text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
+									<div className="pb-3 pl-7 animate-fadeIn text-left" style={{ animation: 'fadeIn 0.3s ease-in' }}>
+										<p className="leading-normal whitespace-pre-line text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
 											{faq.answer}
 										</p>
 									</div>
