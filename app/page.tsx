@@ -1568,8 +1568,8 @@ const Page = () => {
 								</div>
 							</div>
 							{/* Connecting lines between cities */}
-							<svg className="absolute inset-0 w-full h-full pointer-events-none">
-								<path d="M 33% 25%, 50% 50%, 50% 75%, 25% 33%, 66% 66%" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none" strokeDasharray="5,5" className="animate-pulse" />
+							<svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
+								<path d="M 33 25 L 50 50 L 50 75 L 25 33 L 66 66" stroke="rgba(255,255,255,0.3)" strokeWidth="2" fill="none" strokeDasharray="5,5" className="animate-pulse" />
 							</svg>
 						</div>
 						</div>
