@@ -1078,14 +1078,14 @@ const SwatKalamPage = () => {
 			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="culture"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Culture of Swat Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The people of Kalam Swat Valley are known for their rich culture. Both men and women take part in the making of their hand-woven fabrics, embroidery, and carpets. These people are also blessed with wood carving talent; their furniture and strong wood are famous worldwide. They also specialize in producing uniquely designed ornamental jewelry.
 						</p>
 					</div>
@@ -1095,14 +1095,14 @@ const SwatKalamPage = () => {
 			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="economy"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Economy of Kalam Swat Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The economy of Kalam Swat Valley is primarily based on agriculture, tourism, and small-scale industries. The valley produces yummy apples, apricots, and potatoes.
 						</p>
 					</div>
@@ -1112,14 +1112,14 @@ const SwatKalamPage = () => {
 			{/* ====================== EDUCATIONAL IN KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="educational"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Educational in Kalam Swat Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Several educational institutions in Kalam Swat Valley include primary and secondary schools, colleges, and universities. The University of Swat, located in the nearby city of Mingora, also serves the students of Kalam Swat Valley.
 						</p>
 					</div>
