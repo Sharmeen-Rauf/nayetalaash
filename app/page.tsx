@@ -130,21 +130,21 @@ const Page = () => {
 	};
 
 	const destinationData = [
-		{ name: 'Hunza', image: '/images/Hunza.jpg' },
-		{ name: 'Skardu', image: '/images/skardu 2.jpg' },
-		{ name: 'Gilgit', image: '/images/gilgit.jpg' },
-		{ name: 'Lahore', image: '/images/lahore.jpg' },
-		{ name: 'Islamabad', image: '/images/islamabad.jpg' },
-		{ name: 'Karachi', image: '/images/karachi.avif' },
-		{ name: 'Swat', image: '/images/swatagainhome page.jpg' },
-		{ name: 'Naran Kaghan', image: '/images/naran and kaghan.jpg' },
-		{ name: 'Gwadar', image: '/images/gwadar.jpg' },
-		{ name: 'Neelum Valley', image: '/images/neelum valley.jpg' },
-		{ name: 'Fairy Meadows', image: '/images/fairy meadows 2.jpg' },
-		{ name: 'Chitral', image: '/images/chitral.jpg' },
-		{ name: 'Bahawalpur', image: '/images/Bahawalpur.jpg' },
-		{ name: 'Murree', image: '/images/murree.jpg' },
-		{ name: 'Khaplu', image: '/images/Khaplu.jpg' },
+		{ name: 'Hunza', image: '/images/Hunza.jpg', link: '/hunza' },
+		{ name: 'Skardu', image: '/images/skardu 2.jpg', link: '/skardu' },
+		{ name: 'Gilgit', image: '/images/gilgit.jpg', link: '/gilgit-district' },
+		{ name: 'Lahore', image: '/images/lahore.jpg', link: '/lahore-tour' },
+		{ name: 'Islamabad', image: '/images/islamabad.jpg', link: '/islamabad' },
+		{ name: 'Karachi', image: '/images/karachi.avif', link: '/karachi-tour' },
+		{ name: 'Swat', image: '/images/swatagainhome page.jpg', link: '/swat-kalam' },
+		{ name: 'Naran Kaghan', image: '/images/naran and kaghan.jpg', link: '/naran-kaghan' },
+		{ name: 'Gwadar', image: '/images/gwadar.jpg', link: '/gwadar' },
+		{ name: 'Neelum Valley', image: '/images/neelum valley.jpg', link: '/neelum-valley' },
+		{ name: 'Fairy Meadows', image: '/images/fairy meadows 2.jpg', link: '/hunza' },
+		{ name: 'Chitral', image: '/images/chitral.jpg', link: '/chitral' },
+		{ name: 'Bahawalpur', image: '/images/Bahawalpur.jpg', link: '/bahawalpur' },
+		{ name: 'Murree', image: '/images/murree.jpg', link: '/nathia-gali-murree' },
+		{ name: 'Khaplu', image: '/images/Khaplu.jpg', link: '/shigar-ghanche' },
 	];
 
 	const visibleDestinations = showAllDestinations ? destinationData : destinationData.slice(0, 10);
@@ -1631,7 +1631,12 @@ const Page = () => {
 				{/* Destination Cards Grid */}
 				<div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 mb-8">
 					{visibleDestinations.map((dest, idx) => (
-						<div key={idx} className="relative group cursor-pointer" data-aos-delay={idx * 50}>
+						<Link 
+							key={idx} 
+							href={dest.link || '#'} 
+							className="relative group cursor-pointer block" 
+							data-aos-delay={idx * 50}
+						>
 							<div className="relative h-40 rounded-xl overflow-hidden transform hover:scale-105 hover:rotate-1 transition-all duration-500 shadow-lg hover:shadow-2xl border-2 border-transparent hover:border-orange-200" 
 								 style={{ borderColor: `${primaryOrange}20` }}>
 								<Image 
@@ -1646,7 +1651,7 @@ const Page = () => {
 									{dest.name}
 								</div>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
 				
