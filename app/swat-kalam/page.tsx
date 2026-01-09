@@ -587,7 +587,7 @@ const SwatKalamPage = () => {
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								We offer carefully planned and customizable tour packages where you can change the destinations, trip days, stay options, and activities based on what you like. Swat Valley often called the Switzerland of Pakistan is known for its snow covered mountains, blue lakes, green forests and calm meadows, making it a perfect place for every traveler. Whether you are traveling with family, friends, a partner, or a corporate group, we design tours that fit your style and needs.
+							Explore the "Switzerland of Pakistan" with Nayi Talaash’s fully customizable Swat Valley tours tailored to your unique preferences and schedule.
 							</p>
 						</div>
 					</div>
@@ -746,7 +746,7 @@ const SwatKalamPage = () => {
 
 					{/* Who Are These Tours For Section */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Who Are These Tours For?
 						</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -787,7 +787,7 @@ const SwatKalamPage = () => {
 
 					{/* Swat Tour Packages From Major Cities Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Swat Tour Packages From Major Cities
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
