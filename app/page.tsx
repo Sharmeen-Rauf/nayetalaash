@@ -1596,12 +1596,32 @@ const Page = () => {
 						<p className="text-sm md:text-base leading-snug mb-4 text-white opacity-90">
 							Whether you dream of standing before snow capped peaks, exploring historic landmarks, or immersing yourself in the warmth of local communities Nayi Talaash is here to make your journey smooth, affordable, and memorable.
 						</p>
-						<button className="px-6 py-2.5 font-bold rounded-full border-2 transition-all transform hover:scale-105 text-sm" 
-								style={{ backgroundColor: primaryOrange, color: secondaryBlack, borderColor: primaryOrange }}
-								onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = primaryOrange; }}
-								onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = primaryOrange; e.currentTarget.style.color = secondaryBlack; }}
->
-							Explore More
+						<button 
+							onClick={handleWhatsAppClick}
+							className="group relative px-8 py-3.5 font-bold rounded-full border-2 transition-all transform hover:scale-110 hover:shadow-2xl text-sm overflow-hidden"
+							style={{ 
+								backgroundColor: primaryOrange, 
+								color: secondaryBlack, 
+								borderColor: primaryOrange,
+								boxShadow: '0 4px 15px rgba(249, 150, 33, 0.3)'
+							}}
+							onMouseEnter={(e) => { 
+								e.currentTarget.style.backgroundColor = 'transparent'; 
+								e.currentTarget.style.color = primaryOrange;
+								e.currentTarget.style.boxShadow = '0 6px 20px rgba(249, 150, 33, 0.5)';
+							}}
+							onMouseLeave={(e) => { 
+								e.currentTarget.style.backgroundColor = primaryOrange; 
+								e.currentTarget.style.color = secondaryBlack;
+								e.currentTarget.style.boxShadow = '0 4px 15px rgba(249, 150, 33, 0.3)';
+							}}
+						>
+							<span className="relative z-10 flex items-center gap-2">
+								<MessageCircle className="w-4 h-4" />
+								Start Your Journey
+								<ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+							</span>
+							<div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
 						</button>
 					</div>
 					</div>
