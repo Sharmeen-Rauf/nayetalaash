@@ -1977,13 +1977,13 @@ const Page = () => {
 										<p className="text-[#f99621] font-bold text-base transform group-hover:scale-110 transition-transform duration-300">
 											{tour.price}
 										</p>
-										<div className="opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-4 group-hover:translate-x-0">
+										<div className="transition-all duration-500 transform translate-x-0">
 											<button 
 												onClick={(e) => {
 													e.stopPropagation();
 													handleWhatsAppClick();
 												}}
-												className="px-4 py-2 bg-[#f99621] text-white rounded-lg text-sm font-semibold hover:bg-[#e8851a] transition-colors transform hover:scale-105"
+												className="px-4 py-2 bg-[#f99621] text-white rounded-lg text-sm font-semibold hover:bg-[#e8851a] transition-colors transform hover:scale-105 shadow-lg"
 											>
 												Book Now
 											</button>
