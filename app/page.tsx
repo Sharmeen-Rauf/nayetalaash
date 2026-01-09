@@ -1942,7 +1942,7 @@ const Page = () => {
 						{ title: '3 DAYS KALAM AND MALAM JABBA SWAT GROUP TOUR', price: 'From Rs 16,000', image: '/images/malam jabba.jpg', duration: '3 Days' },
 						{ title: '3 DAYS ARANGKEL NEELUM VALLEY KASHMIR GROUP TOUR', price: 'From Rs. 16,000', image: '/images/Arangkel.jpg', duration: '3 Days' },
 					].map((tour, idx) => (
-						<div key={idx} className="relative group cursor-pointer perspective-1000" data-aos-delay={idx * 150}>
+						<div key={idx} className="relative group perspective-1000" data-aos-delay={idx * 150}>
 							<div className="relative h-64 rounded-[32px] overflow-hidden transform-gpu transition-all duration-700 hover:scale-110 hover:rotate-y-8 hover:rotate-x-3 shadow-2xl hover:shadow-3xl group-hover:shadow-[#f99621]/25">
 								{/* 3D Floating Badge */}
 								<div className="absolute top-4 left-4 z-20 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500">
@@ -1966,10 +1966,10 @@ const Page = () => {
 								/>
 								
 								{/* Enhanced Gradient Overlay */}
-								<div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent group-hover:from-black/98 transition-all duration-500"></div>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent group-hover:from-black/98 transition-all duration-500 pointer-events-none"></div>
 								
 								{/* Content */}
-								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-16px] transition-all duration-500">
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-16px] transition-all duration-500 z-30 pointer-events-auto">
 									<h3 className="text-white font-bold text-base mb-2 leading-tight transform group-hover:translate-x-2 transition-transform duration-300">
 										{tour.title}
 						</h3>
@@ -1977,13 +1977,18 @@ const Page = () => {
 										<p className="text-[#f99621] font-bold text-base transform group-hover:scale-110 transition-transform duration-300">
 											{tour.price}
 										</p>
-										<div className="transition-all duration-500 transform translate-x-0">
+										<div className="transition-all duration-500 transform translate-x-0 relative z-30">
 											<button 
 												onClick={(e) => {
+													e.preventDefault();
 													e.stopPropagation();
 													handleWhatsAppClick();
 												}}
-												className="px-4 py-2 bg-[#f99621] text-white rounded-lg text-sm font-semibold hover:bg-[#e8851a] transition-colors transform hover:scale-105 shadow-lg"
+												onMouseDown={(e) => {
+													e.stopPropagation();
+												}}
+												className="px-4 py-2 bg-[#f99621] text-white rounded-lg text-sm font-semibold hover:bg-[#e8851a] transition-colors transform hover:scale-105 shadow-lg relative z-30 cursor-pointer"
+												style={{ pointerEvents: 'auto' }}
 											>
 												Book Now
 											</button>
@@ -1992,10 +1997,10 @@ const Page = () => {
 					</div>
 
 								{/* 3D Border Effect */}
-								<div className="absolute inset-0 rounded-[32px] border-2 border-transparent group-hover:border-[#f99621]/40 transition-all duration-500"></div>
+								<div className="absolute inset-0 rounded-[32px] border-2 border-transparent group-hover:border-[#f99621]/40 transition-all duration-500 pointer-events-none"></div>
 								
 								{/* Shine Effect */}
-								<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+								<div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
 									<div className="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform group-hover:translate-x-[200%] transition-transform duration-1000"></div>
 								</div>
 							</div>
