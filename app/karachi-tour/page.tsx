@@ -581,11 +581,11 @@ const KarachiTourPage = () => {
 							Karachi Guided City Tours
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							These Karachi City Tours and Historical Guided Tours are carefully curated to give you the real essence of Pakistan's largest metropolis. You can enjoy experiences like a Beach Sunset Tour, a deep dive into Colonial Architecture, or intense market explorations. You can also customize these packages to focus on food street culture, religious sites, or a thrilling boat ride based on your interests.
+							Our Karachi City & Historical Tours are thoughtfully curated to showcase the true spirit of Pakistan's largest metropolis, from beach sunsets to colonial architecture and vibrant markets.
 						</p>
 					</div>
 
-					{/* Tour Packages Grid - 5 packages */}
+					{/* Tour Packages Grid - 6 packages */}
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
 						{/* Package 1: 1 Day Historical Downtown Karachi and Masjid-e-Tooba Tour */}
 						<div className="relative group cursor-pointer">
@@ -599,7 +599,7 @@ const KarachiTourPage = () => {
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
-									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+									<h3 className="text-white font-bold text-base mb-1 text-center transform group-hover:translate-x-2 transition-transform duration-300">
 										1 Day: Historical Downtown Karachi and Masjid-e-Tooba Tour
 									</h3>
 								</div>
@@ -618,7 +618,7 @@ const KarachiTourPage = () => {
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
-									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+									<h3 className="text-white font-bold text-base mb-1 text-center transform group-hover:translate-x-2 transition-transform duration-300">
 										1 Day: Karachi Coastline and Clifton Beach Sunset Ceremony
 									</h3>
 								</div>
@@ -637,7 +637,7 @@ const KarachiTourPage = () => {
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
-									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+									<h3 className="text-white font-bold text-base mb-1 text-center transform group-hover:translate-x-2 transition-transform duration-300">
 										1 Day: Empress Market Heritage Walk and Colonial Architecture Tour
 									</h3>
 								</div>
@@ -656,7 +656,7 @@ const KarachiTourPage = () => {
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
-									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+									<h3 className="text-white font-bold text-base mb-1 text-center transform group-hover:translate-x-2 transition-transform duration-300">
 										British Colonial Architecture Karachi City Tour Package
 									</h3>
 								</div>
@@ -675,8 +675,27 @@ const KarachiTourPage = () => {
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
 								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
-									<h3 className="text-white font-bold text-base mb-1 transform group-hover:translate-x-2 transition-transform duration-300">
+									<h3 className="text-white font-bold text-base mb-1 text-center transform group-hover:translate-x-2 transition-transform duration-300">
 										Modern Day Karachi City Tour & Shopping District Tour
+									</h3>
+								</div>
+							</div>
+						</div>
+
+						{/* Package 6: 1 Day Bahria Adventure Land & DanZoo Wildlife Experience */}
+						<div className="relative group cursor-pointer">
+							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
+								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+								<Image 
+									src="/images/package 6 karachi.jpg"
+									alt="1 Day: Bahria Adventure Land & DanZoo Wildlife Experience"
+									fill
+									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
+								/>
+								<div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent group-hover:from-black/95 transition-all duration-500"></div>
+								<div className="absolute bottom-0 left-0 right-0 p-4 transform group-hover:translate-y-[-12px] transition-all duration-500">
+									<h3 className="text-white font-bold text-base mb-1 text-center transform group-hover:translate-x-2 transition-transform duration-300">
+										1 Day: Bahria Adventure Land & DanZoo Wildlife Experience
 									</h3>
 								</div>
 							</div>
@@ -846,7 +865,7 @@ const KarachiTourPage = () => {
 							Karachi, established as a small fishing village centuries ago, rapidly transformed into a modern metropolitan area under the British Raj and became the first capital of Pakistan. Known today as the nation's economic powerhouse, Karachi is a resilient city built on trade, dreams, and diversity. Its history is a blend of ancient fishing communities, colonial development and the arrival of millions of settlers following Pakistan's independence. This resilient port city continues to grow, maintaining a fascinating mix of historical buildings, massive markets, and a unique coastal culture.
 						</p>
 						
-						<h3 className="text-xl md:text-2xl font-bold mt-0 mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mt-0 mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Historical Names of Karachi City
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -881,7 +900,7 @@ const KarachiTourPage = () => {
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-3 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Rulers and Dynasties That Ruled Over Karachi
 						</h3>
 						
@@ -930,7 +949,7 @@ const KarachiTourPage = () => {
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Colorful Bazaars of Karachi City
 						</h3>
 						
@@ -990,7 +1009,7 @@ const KarachiTourPage = () => {
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Karachi's Food Streets and Vibrant Culture
 						</h3>
 						<p className="leading-normal text-justify mb-3" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
