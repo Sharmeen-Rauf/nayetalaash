@@ -13,7 +13,6 @@ const SkarduPage = () => {
 	const [showAllPackages, setShowAllPackages] = useState(false);
 	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
 	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
-	const [hoveredIncludeItem, setHoveredIncludeItem] = useState<number | null>(null);
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 	const [showFloatingWidget, setShowFloatingWidget] = useState(true);
 
@@ -597,39 +596,39 @@ const SkarduPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '6 Days-Essential Skardu Valley Tour',
+								title: '6 Days: Essential Skardu Valley Tour',
 								image: '/images/package 1 skadu.jpg'
 							},
 							{ 
-								title: '7 Days-Deep Skardu Valley Exploration',
+								title: '7 Days: Deep Skardu Valley Exploration',
 								image: '/images/package 2 skadu.jpg'
 							},
 							{ 
-								title: '8 Days-Best of Both: Hunza and Skardu Valley',
+								title: '8 Days: Hunza and Skardu Valley',
 								image: '/images/package 3 skadu.jpg'
 							},
 							{ 
-								title: '9 Days-Comprehensive Skardu Valley Adventure',
+								title: '9 Days: Skardu Valley Adventure',
 								image: '/images/package 4 skardu.jpg'
 							},
 							{ 
-								title: '10 Days-Ultimate Skardu Valley Journey',
+								title: '10 Days: Ultimate Skardu Valley Journey',
 								image: '/images/package 5 skadu.jpg'
 							},
 							{ 
-								title: '10 Days-Long Adventure: Hunza and Skardu Combo',
+								title: '10 Days: Hunza and Skardu Combo',
 								image: '/images/package 6 skadu.jpg'
 							},
 							{ 
-								title: '11 Days-Grand Skardu Valley Exploration',
+								title: '11 Days: Grand Skardu Valley Exploration',
 								image: '/images/package 7 skadu.jpg'
 							},
 							{ 
-								title: '15 Days-Hunza and Skardu Valley Complete Experience',
+								title: '15 Days: Hunza and Skardu Valley Co',
 								image: '/images/package 8 skadu.jpg'
 							},
 							{ 
-								title: '12 Days-Skardu, Hunza, and Fairy Meadows Explorer',
+								title: '12 Days: Skardu, Hunza, and Fairy Meadows Explorer',
 								image: '/images/package 9  skardu.jpg'
 							},
 						];
@@ -660,7 +659,7 @@ const SkarduPage = () => {
 									/>
 								</div>
 								<div className="p-3">
-									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 										{item.title}
 									</p>
 								</div>
@@ -716,14 +715,14 @@ const SkarduPage = () => {
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/package 10 skardu.png"
-									alt="8 Days-Skardu, Chunda Valley, Khaplu, and Deosai Family Tour"
+									alt="8 Days: Skardu, Chunda Valley, Khaplu, and Deosai Family Tour"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									8 Days-Skardu, Chunda Valley, Khaplu, and Deosai Family Tour
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									8 Days: Skardu, Chunda Valley, Khaplu, and Deosai Family Tour
 								</p>
 							</div>
 						</div>
@@ -738,7 +737,7 @@ const SkarduPage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 									8 Days: Hunza and Skardu Valley Group Tour
 								</p>
 							</div>
@@ -747,15 +746,12 @@ const SkarduPage = () => {
 
 					{/* Our Skardu Tour Categories */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Our Skardu Tour Categories
 						</h3>
-						<h4 className="text-lg md:text-xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '20px' }}>
+						<h4 className="text-lg md:text-xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '20px' }}>
 							Customized Skardu Trips: Who Are You Traveling With?
 						</h4>
-						<p className="leading-normal text-left mb-6" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We design your trip around you and your loved ones:
-						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
@@ -794,7 +790,7 @@ const SkarduPage = () => {
 
 					{/* Starting Point Flexibility */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Starting Point Flexibility
 						</h3>
 						<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -804,7 +800,7 @@ const SkarduPage = () => {
 
 					{/* Swat Tour Packages From Major Cities Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Skardu Tour Packages From Major Cities
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -851,10 +847,7 @@ const SkarduPage = () => {
 							Top Places to Visit in Skardu
 						</h2>
 						<p className="leading-normal max-w-4xl mx-auto" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							A perfect mix of nature, history & adventure:
-						</p>
-						<p className="leading-normal max-w-4xl mx-auto mt-2" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							Most Popular Destinations and Attractions in Skardu
+							A perfect mix of nature, history & adventure: Most Popular Destinations and Attractions in Skardu
 						</p>
 					</div>
 					
@@ -1025,162 +1018,17 @@ const SkarduPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== ALL TOURS INCLUDE ====================== */}
-			<section 
-				data-section-id="all-tours-include"
-				className={`py-8 md:py-12 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden scroll-reveal-fade-up ${visibleSections.has('all-tours-include') ? 'revealed' : ''}`}
-			>
-				{/* Decorative Background Elements */}
-				<div className="absolute top-0 left-0 w-72 h-72 opacity-5" style={{ background: `radial-gradient(circle, ${primaryOrange} 0%, transparent 70%)` }}></div>
-				<div className="absolute bottom-0 right-0 w-72 h-72 opacity-5" style={{ background: `radial-gradient(circle, ${primaryOrange} 0%, transparent 70%)` }}></div>
-
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					{/* Section Header */}
-					<div className="text-center mb-10">
-						<h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: secondaryBlack }}>
-							All tours include:
-						</h2>
-					</div>
-
-					{/* Horizontal Cards Layout - Desktop shows all 5, mobile scrollable */}
-					<div className="relative">
-						{/* Mobile: Scrollable Container */}
-						<div className="lg:hidden overflow-x-auto pb-4 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-							<div className="flex gap-4 min-w-max px-4">
-								{[
-									'Comfortable transport',
-									'Professional guide',
-									'Luxury stays',
-									'Sightseeing & adventure spots',
-									'Photography points',
-								].map((item, idx) => (
-									<div
-										key={idx}
-										className="flex-shrink-0 w-48"
-									>
-										<div 
-											className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-t-4 h-full"
-											style={{ 
-												borderColor: primaryOrange,
-											}}
-										>
-											<div className="text-center">
-												<div 
-													className="w-14 h-14 mx-auto mb-4 rounded-full flex items-center justify-center transition-all duration-500"
-													style={{ 
-														backgroundColor: `${primaryOrange}15`,
-													}}
-												>
-													<div className="w-7 h-7 rounded-full" style={{ backgroundColor: primaryOrange }}></div>
-												</div>
-												<p 
-													className="font-semibold text-sm leading-relaxed"
-													style={{ color: secondaryBlack }}
-												>
-													{item}
-												</p>
-											</div>
-										</div>
-									</div>
-								))}
-							</div>
-						</div>
-
-						{/* Desktop: All 5 Cards in Grid */}
-						<div className="hidden lg:grid lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-							{[
-								'Comfortable transport',
-								'Professional guide',
-								'Luxury stays',
-								'Sightseeing & adventure spots',
-								'Photography points',
-							].map((item, idx) => (
-								<div
-									key={idx}
-									className="relative group"
-								>
-									<div 
-										className="bg-white rounded-xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-t-4 h-full"
-										style={{ 
-											borderColor: primaryOrange,
-											cursor: 'pointer'
-										}}
-										onMouseEnter={() => setHoveredIncludeItem(idx)}
-										onMouseLeave={() => setHoveredIncludeItem(null)}
-									>
-										<div className="text-center">
-											{/* Animated Icon Circle */}
-											<div 
-												className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center transition-all duration-500 relative overflow-hidden"
-												style={{ 
-													backgroundColor: hoveredIncludeItem === idx ? primaryOrange : `${primaryOrange}15`,
-													transform: hoveredIncludeItem === idx ? 'scale(1.15) rotate(360deg)' : 'scale(1)'
-												}}
-											>
-												<div 
-													className="absolute inset-0 rounded-full transition-all duration-500"
-													style={{ 
-														backgroundColor: hoveredIncludeItem === idx ? 'rgba(255,255,255,0.3)' : 'transparent',
-														transform: hoveredIncludeItem === idx ? 'scale(1.5)' : 'scale(1)'
-													}}
-												></div>
-												<div 
-													className="w-8 h-8 rounded-full relative z-10 transition-all duration-500"
-													style={{ 
-														backgroundColor: hoveredIncludeItem === idx ? 'white' : primaryOrange,
-														transform: hoveredIncludeItem === idx ? 'scale(1.2)' : 'scale(1)'
-													}}
-												></div>
-											</div>
-											
-											{/* Text with Animation */}
-											<p 
-												className="font-semibold text-sm md:text-base leading-relaxed transition-all duration-300"
-												style={{ 
-													color: hoveredIncludeItem === idx ? primaryOrange : secondaryBlack,
-													transform: hoveredIncludeItem === idx ? 'translateY(-2px)' : 'translateY(0)'
-												}}
-											>
-												{item}
-											</p>
-
-											{/* Hover Effect Line */}
-											<div 
-												className="h-0.5 mx-auto mt-3 transition-all duration-500"
-												style={{ 
-													width: hoveredIncludeItem === idx ? '60%' : '0%',
-													backgroundColor: primaryOrange
-												}}
-											></div>
-										</div>
-
-										{/* Glow Effect on Hover */}
-										<div 
-											className="absolute inset-0 rounded-xl opacity-0 transition-opacity duration-500 pointer-events-none"
-											style={{ 
-												opacity: hoveredIncludeItem === idx ? 0.1 : 0,
-												boxShadow: `0 0 30px ${primaryOrange}`
-											}}
-										></div>
-									</div>
-								</div>
-							))}
-						</div>
-					</div>
-				</div>
-			</section>
-
 			{/* ====================== CULTURE OF SKARDU VALLEY ====================== */}
 			<section 
 				data-section-id="culture"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Culture of Skardu Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The people of Skardu are known for their rich Balti culture and traditions. Both men and women are skilled in traditional crafts including hand-woven textiles, embroidery, and unique Balti cuisine. The region has a strong cultural heritage with traditional music, dance, and festivals that reflect the unique identity of the Balti people.
 						</p>
 					</div>
@@ -1190,14 +1038,14 @@ const SkarduPage = () => {
 			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="economy"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Economy of Skardu Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The economy of Skardu is primarily based on agriculture, tourism, and mountaineering expeditions. The region produces delicious apricots, apples, and other fruits, and is a major hub for trekkers and mountaineers heading to K2 and other peaks.
 						</p>
 					</div>
@@ -1207,14 +1055,14 @@ const SkarduPage = () => {
 			{/* ====================== EDUCATIONAL IN SKARDU VALLEY ====================== */}
 			<section 
 				data-section-id="educational"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Educational in Skardu Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Several educational institutions in Skardu include primary and secondary schools, colleges, and universities. The region has a strong focus on education and literacy, with institutions serving both local communities and remote areas.
 						</p>
 					</div>
