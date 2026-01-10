@@ -587,7 +587,7 @@ const NeelumValleyPage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 									3 Days: Arangkel Neelum Valley Group Tour
 								</p>
 							</div>
@@ -603,7 +603,7 @@ const NeelumValleyPage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 									4 Days: Arangkel, Murree and Nathia Gali Group Tour
 								</p>
 							</div>
@@ -612,12 +612,9 @@ const NeelumValleyPage = () => {
 
 					{/* Customized Neelum Valley Trips: Who Are You Traveling With? Section */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Customized Neelum Valley Trips: Who Are You Traveling With?
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Who Are You Traveling With?
 						</h3>
-						<p className="leading-normal text-left mb-6" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We design your experience around your travel partners:
-						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
@@ -656,7 +653,7 @@ const NeelumValleyPage = () => {
 
 					{/* Starting Point Flexibility Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Starting Point Flexibility
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -837,83 +834,17 @@ const NeelumValleyPage = () => {
 				</div>
 			</section>
 
-			{/* ====================== HISTORICAL SITES IN SWAT VALLEY ====================== */}
-			<section 
-				data-section-id="historical-sites"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-sites') ? 'revealed' : ''}`}
-			>
-				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="w-full">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Some Other Historical and Attraction Sites in Neelum Valley are as Follows:
-						</h3>
-
-						<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
-							{[
-								'Mahmood Ghaznavi Masjid',
-								'Oba Ghar and Khazana Ghar Rock Carving',
-								'Dune of Darkot',
-								'Ram Takht at Mount Ilum',
-								'Panr Jambil Khwar Archaeology',
-								'Jehanabad Buddha Statue',
-								'Tokar Dara Najigram Stupa and Monastery',
-								'Amluk Dara Stupa',
-								'Shingardar Stupa',
-								'Gumbatona Stupa',
-								'Ghaligay Buddha Statue and Archaeological Remains',
-								'Shahkot Pass Elephant Paw and Queen\'s Throne',
-							].map((item, idx) => (
-								<div 
-									key={idx} 
-									className="transition-all duration-500 cursor-pointer group rounded-lg w-full scroll-reveal-fade-up"
-									style={{ 
-										backgroundColor: 'white',
-										border: `2px solid ${primaryOrange}`,
-										height: '56px',
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-										paddingLeft: '2rem',
-										paddingRight: '2rem',
-										minWidth: '100%',
-										opacity: visibleSections.has('historical-sites') ? 1 : 0,
-										transform: visibleSections.has('historical-sites') ? 'translateY(0)' : 'translateY(20px)',
-										transitionDelay: `${idx * 0.05}s`
-									}}
-									onMouseEnter={(e) => {
-										e.currentTarget.style.backgroundColor = primaryOrange;
-										e.currentTarget.style.transform = 'translateY(-2px)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-									onMouseLeave={(e) => {
-										e.currentTarget.style.backgroundColor = 'white';
-										e.currentTarget.style.transform = 'translateY(0)';
-										const pElement = e.currentTarget.querySelector('p') as HTMLParagraphElement;
-										if (pElement) pElement.style.color = secondaryBlack;
-									}}
-								>
-									<p className="leading-normal transition-colors duration-300 text-center capitalize" style={{ color: secondaryBlack, fontSize: '14px', lineHeight: '1.5' }}>
-										{item}
-									</p>
-								</div>
-							))}
-						</div>
-					</div>
-				</div>
-			</section>
-
 			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="culture"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Culture of Neelum Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The people of Neelum Valley are known for their rich Kashmiri culture and warm hospitality. The region has a unique cultural heritage with traditional crafts, local cuisine, and folk music. The local communities have preserved their cultural traditions while embracing modern tourism.
 						</p>
 					</div>
@@ -923,14 +854,14 @@ const NeelumValleyPage = () => {
 			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="economy"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Economy of Neelum Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The economy of Neelum Valley is primarily based on agriculture, tourism, and forestry. The region produces delicious fruits, vegetables, and local handicrafts. Tourism has become a major source of income for the local communities.
 						</p>
 					</div>
@@ -940,14 +871,14 @@ const NeelumValleyPage = () => {
 			{/* ====================== EDUCATIONAL IN KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="educational"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Educational in Neelum Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Several educational institutions in Neelum Valley include primary and secondary schools, colleges, and universities. The region has a strong focus on education with institutions serving both local communities and remote areas.
 						</p>
 					</div>
@@ -1035,11 +966,11 @@ const NeelumValleyPage = () => {
 								>
 									<div className="text-center px-4">
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
+										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide text-center">
 											{item.title}
 										</h3>
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<p className="text-sm md:text-base opacity-90 max-w-xs">
+										<p className="text-sm md:text-base opacity-90 max-w-xs text-center mx-auto">
 											{item.description}
 										</p>
 									</div>
