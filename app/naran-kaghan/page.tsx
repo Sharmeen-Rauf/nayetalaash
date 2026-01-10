@@ -429,7 +429,7 @@ const NaranKaghanPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Relive cherished memories or make new ones with our custom tours. Journey from the lively Naran Bazaar to high passes like Babusar and the magical Saif-ul-Malook Lake.						</p>
+						Relive old memories or create new ones with our custom tours, from vibrant Naran Bazaar to Babusar Pass and the magical Saif-ul-Malook Lake.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
@@ -462,39 +462,39 @@ const NaranKaghanPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '4 Days – Naran, Lalazar Meadows, and Babusar Top Climb',
+								title: '4 Days: Naran, Lalazar Meadows, and Babusar Top Climb',
 								image: '/images/package 1 naran.jpg'
 							},
 							{ 
-								title: '4 Days – Naran, Babusar Top, and Shogran Valley Explorer',
+								title: '4 Days: Naran, Babusar Top, and Shogran Valley Explorer',
 								image: '/images/package 2 naran.jpg'
 							},
 							{ 
-								title: '4 Days – Sharan Forest, Manshi Top, and Shogran Kaghan Valley Trip',
+								title: '4 Days: Sharan Forest, Manshi Top, and Shogran Kaghan Valley Trip',
 								image: '/images/package 3 naran.jpg'
 							},
 							{ 
-								title: '3 Days – Shogran, Siri Paye Meadows, and Sharan Valley Quick Tour',
+								title: '3 Days: Shogran, Siri Paye Meadows, and Sharan Valley Quick Tour',
 								image: '/images/package 4 naran.jpg'
 							},
 							{ 
-								title: '4 Days – Naran Kaghan Valley, Babusar Top, and Nathiya Gali Combo',
+								title: '4 Days: Naran Kaghan Valley, Babusar Top, and Nathiya Gali Combo',
 								image: '/images/package 5 naran.jpg'
 							},
 							{ 
-								title: '8 Days – Shogran, Naran, and Hunza Valley Grand Tour',
+								title: '8 Days: Shogran, Naran, and Hunza Valley Grand Tour',
 								image: '/images/package 6 naran.jpg'
 							},
 							{ 
-								title: '9 Days – Naran Kaghan and Neelum Valley',
+								title: '9 Days: Naran Kaghan and Neelum Valley',
 								image: '/images/package 7 naran.jpg'
 							},
 							{ 
-								title: '4 Days – Naran, Lulusar Lake, and Jalkhad Scenic Tour',
+								title: '4 Days: Naran, Lulusar Lake, and Jalkhad Scenic Tour',
 								image: '/images/package 8 naran.jpg'
 							},
 							{ 
-								title: '5 Days – Naran, Kaghan, Batakundi & Babusar Top Adventure',
+								title: '5 Days: Naran, Kaghan, Batakundi & Babusar Top Adventure',
 								image: '/images/package 9 naran.jpg'
 							},
 						];
@@ -525,7 +525,7 @@ const NaranKaghanPage = () => {
 									/>
 								</div>
 								<div className="p-3">
-									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 										{item.title}
 									</p>
 								</div>
@@ -587,8 +587,8 @@ const NaranKaghanPage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days: Naran Kaghan, Babusar Top, and Shogran Group Tour
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									3 Days: Naran Kaghan, Babusar Top, and Shogran
 								</p>
 							</div>
 						</div>
@@ -597,14 +597,14 @@ const NaranKaghanPage = () => {
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/package 11 naran.jpg"
-									alt="2 Days: Shogran and Siri Paye Group Tour"
+									alt="2 Days: Shogran and Siri Paye"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									2 Days: Shogran and Siri Paye Group Tour
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									2 Days: Shogran and Siri Paye
 								</p>
 							</div>
 						</div>
@@ -612,12 +612,9 @@ const NaranKaghanPage = () => {
 
 					{/* Customized Naran Kaghan Tours: Who Are You Traveling With? Section */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Customized Naran Kaghan Tours: Who Are You Traveling With?
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Who Are You Traveling With?
 						</h3>
-						<p className="leading-normal text-left mb-6" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We design your package to suit your companions:
-						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
@@ -656,7 +653,7 @@ const NaranKaghanPage = () => {
 
 					{/* Starting Point Flexibility Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Starting Point Flexibility
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -834,14 +831,14 @@ const NaranKaghanPage = () => {
 			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="culture"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Culture of Naran Kaghan:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The people of Naran and Kaghan are known for their rich cultural heritage and warm hospitality. The region has a unique identity with traditional customs, local crafts, and folk traditions. The local communities have preserved their cultural values while welcoming modern tourism.
 						</p>
 					</div>
@@ -851,14 +848,14 @@ const NaranKaghanPage = () => {
 			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="economy"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Economy of Naran Kaghan:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The economy of Naran and Kaghan is primarily based on agriculture, tourism, and hospitality. The region benefits significantly from tourism, which has become the main source of income for local communities. Fishing and agriculture also contribute to the local economy.
 						</p>
 					</div>
@@ -868,14 +865,14 @@ const NaranKaghanPage = () => {
 			{/* ====================== EDUCATIONAL IN KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="educational"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Educational in Naran Kaghan:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Several educational institutions in Naran and Kaghan include primary and secondary schools, colleges, and universities. The region has a strong focus on education with institutions serving both local communities and surrounding areas.
 						</p>
 					</div>
@@ -963,7 +960,7 @@ const NaranKaghanPage = () => {
 								>
 									<div className="text-center px-4">
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
+										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide text-center">
 											{item.title}
 										</h3>
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
@@ -1090,13 +1087,13 @@ const NaranKaghanPage = () => {
 							<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 						</div>
 						<div className="px-4 md:px-6">
-							<button
-								onClick={handleWhatsAppClick}
-								className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
+							<Link
+								href="/customize-a-tour"
+								className="inline-block px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl text-center"
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 							>
-								Get Your Free Quote Now!
-							</button>
+								Customize a Tour!
+							</Link>
 						</div>
 					</div>
 				</div>

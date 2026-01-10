@@ -429,7 +429,7 @@ const NeelumValleyPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Explore clear rivers, lush green meadows, and high mountain lakes. Our custom built, stress free packages let you experience the true luxury and adventure of this breathtaking paradise.						</p>
+						Explore crystal clear rivers, green meadows, and stunning mountain lakes with our custom, stress free travel packages designed for comfort and adventure.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
