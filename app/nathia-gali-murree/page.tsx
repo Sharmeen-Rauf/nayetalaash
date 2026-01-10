@@ -559,7 +559,7 @@ const NathiaGaliMurreePage = () => {
 									  display: 'inline-block',
 									  fontSize: '48px'
 								  }}>
-								Your Perfect Mountain Getaway Starts Here
+								Your Perfect Mountain Getaway
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
@@ -587,7 +587,7 @@ const NathiaGaliMurreePage = () => {
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Murree is Pakistan's most loved hill station cool weather, pine forests, scenic peaks, and peaceful surroundings. Whether you want a relaxing family holiday, a romantic couples getaway, or an adventurous student trip, Nayi Talaash offers the best Murree & Galiyat Tour Packages with complete comfort and customization. We plan everything for you travel, hotel stay, sightseeing, activities and local experiences so you can enjoy your trip without stress. We offer a wide range of tours, from short weekend trips to long multi-city vacations.
+							Explore the scenic pine forests and peaks of Murree with Nayi Talaash’s fully customizable and all-inclusive tour packages.
 							</p>
 						</div>
 					</div>
@@ -596,39 +596,39 @@ const NathiaGaliMurreePage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '6 Days – Murree, Nathia Gali, Siri Paye, Shogran',
+								title: '6 Days: Murree, Nathia Gali, Siri Paye, Shogran',
 								image: '/images/package 1 murre.jpg'
 							},
 							{ 
-								title: '5 Days – Nathia Gali, Ayubia, Murree Mall Road, Patriata, Bhurban',
+								title: '5 Days: Nathia Gali, Ayubia, Murree Mall Road, Patriata, Bhurban',
 								image: '/images/package 2 murree.jpg'
 							},
 							{ 
-								title: '4 Days – Murree, Patriata, Nathia Gali, Ayubia',
+								title: '4 Days: Murree, Patriata, Nathia Gali, Ayubia',
 								image: '/images/package 3 murree.jpg'
 							},
 							{ 
-								title: '4 Days – Thandiani, Nathia Gali, Ayubia, Khanaspur',
+								title: '4 Days: Thandiani, Nathia Gali, Ayubia, Khanaspur',
 								image: '/images/package 4 murree.jpg'
 							},
 							{ 
-								title: '3 Days – Siri Paye, Shogran, Nathia Gali',
+								title: '3 Days: Siri Paye, Shogran, Nathia Gali',
 								image: '/images/package 5 murree.jpg'
 							},
 							{ 
-								title: '3 Days – Nathia Gali, Ayubia, Mall Road, Patriata',
+								title: '3 Days: Nathia Gali, Ayubia, Mall Road, Patriata',
 								image: '/images/package 6 murree.jpg'
 							},
 							{ 
-								title: '2 Days – Nathia Gali & Ayubia',
+								title: '2 Days: Nathia Gali & Ayubia',
 								image: '/images/package 7murree.jpg'
 							},
 							{ 
-								title: '2 Days – Mukshpuri Top & Ayubia',
+								title: '2 Days: Mukshpuri Top & Ayubia',
 								image: '/images/package 8 murree.jpg'
 							},
 							{ 
-								title: '6 Days – Neelum Valley + Murree & Patriata',
+								title: '6 Days: Neelum Valley + Murree & Patriata',
 								image: '/images/package 9 murree.jpg'
 							},
 						];
@@ -659,7 +659,7 @@ const NathiaGaliMurreePage = () => {
 									/>
 								</div>
 								<div className="p-3">
-									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 										{item.title}
 									</p>
 								</div>
@@ -721,7 +721,7 @@ const NathiaGaliMurreePage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 									3 Days: Murree, Nathia Gali & Ayubia Group Tour
 								</p>
 							</div>
@@ -737,7 +737,7 @@ const NathiaGaliMurreePage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 									4 Days: Galiyat Winter Snow Family Trip
 								</p>
 							</div>
@@ -746,7 +746,7 @@ const NathiaGaliMurreePage = () => {
 
 					{/* Who Are These Tours Perfect For Section */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Who Are These Tours Perfect For?
 						</h3>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -787,7 +787,7 @@ const NathiaGaliMurreePage = () => {
 
 					{/* Departure Cities Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Departure Cities
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -1003,14 +1003,14 @@ const NathiaGaliMurreePage = () => {
 			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="culture"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Culture of Nathia Gali And Murree:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The region of Nathia Gali and Murree has a rich cultural heritage with influences from both British colonial era and local traditions. The area is known for its warm hospitality, traditional crafts, and unique cuisine. The local communities have preserved their cultural traditions while embracing modern tourism.
 						</p>
 					</div>
@@ -1020,14 +1020,14 @@ const NathiaGaliMurreePage = () => {
 			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="economy"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Economy of Nathia Gali And Murree:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The economy of Nathia Gali and Murree is primarily based on tourism, hospitality, and small-scale businesses. The region benefits from year-round tourism due to its pleasant climate and proximity to major cities.
 						</p>
 					</div>
@@ -1037,14 +1037,14 @@ const NathiaGaliMurreePage = () => {
 			{/* ====================== EDUCATIONAL IN KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="educational"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Educational in Nathia Gali And Murree:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Several educational institutions in Nathia Gali and Murree include primary and secondary schools, colleges, and universities. The region has a strong focus on education with institutions serving both local communities and tourists.
 						</p>
 					</div>
@@ -1256,13 +1256,13 @@ const NathiaGaliMurreePage = () => {
 							<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 						</div>
 						<div className="px-4 md:px-6">
-							<button
-								onClick={handleWhatsAppClick}
-								className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
+							<Link
+								href="/customize-a-tour"
+								className="inline-block px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl text-center"
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 							>
-								Get Your Free Quote Now!
-							</button>
+								Customize a Tour!
+							</Link>
 						</div>
 					</div>
 				</div>
