@@ -429,7 +429,7 @@ const KumratValleyPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Our safe, custom Kumrat packages are a perfect escape for nature lovers and trekkers. Explore thick Deodar forests, pristine Katora Lake, and stunning mountain passes with us.						</p>
+						Our safe, custom Kumrat packages are perfect for nature lovers and trekkers, offering Deodar forests, Katora Lake, and breathtaking mountain views.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
@@ -462,39 +462,39 @@ const KumratValleyPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '3 Days-Kumrat Valley, Kumrat Waterfall, and Kala Chashma (Black Spring)',
+								title: '3 Days: Kumrat, Waterfall & Kala Chashma',
 								image: '/images/Package 1 kumrat.jpg'
 							},
 							{ 
-								title: '4 Days-Kumrat Valley, Kumrat Waterfall, Kala Chashma, and Badgoi Top (Mountain Pass)',
+								title: '4 Days: Kumrat, Waterfall & Badgoi Top',
 								image: '/images/Package 2 kumrat.jpg'
 							},
 							{ 
-								title: '6 Days-Kumrat Valley, Jahazbanda Meadows, Kund Banda Meadows, and the challenging Katora Lake Trekking',
+								title: '6 Days: Jahazbanda & Katora Lake Trek',
 								image: '/images/Package 3 kumrat.jpg'
 							},
 							{ 
-								title: '7 Days-Kumrat Forest, Badgoi Top, Jahaz Banda, and the final ascent to Katora Lake',
+								title: '7 Days: The Ultimate Kumrat & Katora',
 								image: '/images/Package 4 kumrat.jpg'
 							},
 							{ 
-								title: '7 Days-Malam Jabba, Kalam, Swat Valley exploration',
+								title: '7 Days: Swat, Kalam & Malam Jabba',
 								image: '/images/Package 5 kumrat.jpg'
 							},
 							{ 
-								title: '5 Days-Deep Forest Camping, Panjkora River experience, Kumrat Waterfall, and Thal Bazaar',
+								title: '5 Days: Deep Forest & Panjkora River',
 								image: '/images/Package 6 kumrat.jpg'
 							},
 							{ 
-								title: '4 Days-Jahaz Banda Meadows, Snake Lake at Kund Banda, and an attempt to reach Katora Lake',
+								title: '4 Days: Jahaz Banda & Snake Lake Trek',
 								image: '/images/package 7 kumrat.jpg'
 							},
 							{ 
-								title: '3 Days-Thal Historical Mosque, Panjkora River Camping, Kumrat Forest Drive, Kala Chashma',
+								title: '3 Days: Thal Mosque & River Camping',
 								image: '/images/Package 8 kumrat.jpg'
 							},
 							{ 
-								title: '9 Days-Extended trip covering Swat, Kalam, Kumrat Valley, Jahaz Banda, and Badgoi Pass',
+								title: '9 Days: The Grand Northern Pakistan Loop',
 								image: '/images/Package 9 kumrat.jpg'
 							},
 						];
@@ -525,7 +525,7 @@ const KumratValleyPage = () => {
 									/>
 								</div>
 								<div className="p-3">
-									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 										{item.title}
 									</p>
 								</div>
@@ -587,8 +587,8 @@ const KumratValleyPage = () => {
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									3 Days: Kumrat Valley Group Tour
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									3 Days: Kumrat Valley
 								</p>
 							</div>
 						</div>
@@ -597,14 +597,14 @@ const KumratValleyPage = () => {
 							<div className="relative w-full aspect-[16/9] overflow-hidden">
 								<Image 
 									src="/images/package 11 kumrat.jpg"
-									alt="7 Days: Malam Jabba, Kalam, Swat to Kumrat Valley Group Tour"
+									alt="7 Days: Malam Jabba, Kalam, Swat to Kumrat Valley"
 									fill
 									className="object-cover hover:scale-110 transition-transform duration-500"
 								/>
 							</div>
 							<div className="p-4">
-								<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
-									7 Days: Malam Jabba, Kalam, Swat to Kumrat Valley Group Tour
+								<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									7 Days: Malam Jabba, Kalam, Swat to Kumrat Valley
 								</p>
 							</div>
 						</div>
@@ -612,12 +612,9 @@ const KumratValleyPage = () => {
 
 					{/* Customized Kumrat Valley Trips: Who Are You Traveling With? Section */}
 					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-6 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Customized Kumrat Valley Trips: Who Are You Traveling With?
+						<h3 className="text-xl md:text-2xl font-bold mb-6 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
+							Who Are You Traveling With?
 						</h3>
-						<p className="leading-normal text-left mb-6" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We design every trip to suit your companions:
-						</p>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							<div>
 								<h4 className="text-lg font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '18px' }}>
@@ -656,7 +653,7 @@ const KumratValleyPage = () => {
 
 					{/* Starting Point Flexibility Section */}
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Starting Point Flexibility
 						</h3>
 						<p className="text-left mb-4" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -828,14 +825,14 @@ const KumratValleyPage = () => {
 			{/* ====================== CULTURE OF SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="culture"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('culture') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Culture of Kumrat Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The people of Kumrat Valley are known for their rich cultural heritage and warm hospitality. The region has a unique identity with traditional customs, local crafts, and folk traditions. The local communities have preserved their cultural values while welcoming modern tourism.
 						</p>
 					</div>
@@ -845,14 +842,14 @@ const KumratValleyPage = () => {
 			{/* ====================== THE ECONOMY OF KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="economy"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('economy') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							The Economy of Kumrat Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							The economy of Kumrat Valley is primarily based on agriculture, forestry, and tourism. The region produces local crops and benefits from growing tourism, which has become an important source of income for the local communities.
 						</p>
 					</div>
@@ -862,14 +859,14 @@ const KumratValleyPage = () => {
 			{/* ====================== EDUCATIONAL IN KALAM SWAT VALLEY ====================== */}
 			<section 
 				data-section-id="educational"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('educational') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-					<div className="max-w-4xl ml-0 md:ml-8 lg:ml-12">
-						<h3 className="text-xl md:text-2xl font-bold mb-2" style={{ color: secondaryBlack, fontSize: '24px' }}>
+					<div className="max-w-4xl mx-auto">
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Educational in Kumrat Valley:
 						</h3>
-						<p className="leading-normal" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
+						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '14px', lineHeight: '1.4' }}>
 							Several educational institutions in Kumrat Valley include primary and secondary schools, colleges, and universities. The region has a strong focus on education with institutions serving both local communities and surrounding areas.
 						</p>
 					</div>
@@ -957,11 +954,11 @@ const KumratValleyPage = () => {
 								>
 									<div className="text-center px-4">
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide">
+										<h3 className="text-xl md:text-2xl font-bold mb-2 uppercase tracking-wide text-center">
 											{item.title}
 										</h3>
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<p className="text-sm md:text-base opacity-90 max-w-xs">
+										<p className="text-sm md:text-base opacity-90 max-w-xs text-center mx-auto">
 											{item.description}
 										</p>
 									</div>
