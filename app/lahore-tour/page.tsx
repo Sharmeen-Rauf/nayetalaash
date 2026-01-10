@@ -581,7 +581,7 @@ const LahoreTourPage = () => {
 							Lahore Guided City Tours
 						</h2>
 						<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							These Lahore City Tours and Walled City Guided Tours are carefully designed to give you the real heart of the old city. You can choose from unique experiences like a fun Rangeela Rickshaw Ride, a Heritage Bus Tour, or deep dives into history. You can also customize these packages to focus on Sufi Heritage, Sikh History, or an intense Food Street Tour based on your interests.
+							Our Lahore City & Walled City Guided Tours are thoughtfully designed to reveal the true soul of the old city through immersive cultural and historical experiences.
 						</p>
 					</div>
 
@@ -949,11 +949,11 @@ const LahoreTourPage = () => {
 			{/* ====================== HISTORY OF LAHORE ====================== */}
 			<section 
 				data-section-id="history-lahore"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('history-lahore') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('history-lahore') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							History Of Lahore
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -966,11 +966,11 @@ const LahoreTourPage = () => {
 			{/* ====================== A BRIEF HISTORY OF THE WALLED CITY OF LAHORE ====================== */}
 			<section 
 				data-section-id="walled-city-history"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('walled-city-history') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('walled-city-history') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							A Brief History of the Walled City of Lahore
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -986,11 +986,11 @@ const LahoreTourPage = () => {
 			{/* ====================== OTHER HISTORICAL NAMES OF LAHORE CITY ====================== */}
 			<section 
 				data-section-id="historical-names"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-names') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('historical-names') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-2 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-2 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Other Historical Names of Lahore City
 						</h3>
 						<p className="leading-normal text-justify" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
@@ -1033,11 +1033,11 @@ const LahoreTourPage = () => {
 			{/* ====================== RULERS AND DYNASTIES THAT RULED OVER LAHORE ====================== */}
 			<section 
 				data-section-id="rulers-dynasties"
-				className={`py-4 md:py-5 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('rulers-dynasties') ? 'revealed' : ''}`}
+				className={`py-2 md:py-3 bg-white relative overflow-x-hidden scroll-reveal-fade-up ${visibleSections.has('rulers-dynasties') ? 'revealed' : ''}`}
 			>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
 					<div className="max-w-4xl mx-auto">
-						<h3 className="text-xl md:text-2xl font-bold mb-3 text-left" style={{ color: secondaryBlack, fontSize: '24px' }}>
+						<h3 className="text-xl md:text-2xl font-bold mb-3 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
 							Rulers and Dynasties That Ruled Over the Lahore City
 						</h3>
 						
