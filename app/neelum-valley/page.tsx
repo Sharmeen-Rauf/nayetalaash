@@ -462,39 +462,39 @@ const NeelumValleyPage = () => {
 					{(() => {
 						const allPackages = [
 							{ 
-								title: '6 Days-Ratti Gali, Arangkel, and Taobat Neelum Valley Adventure',
+								title: '6 Days: Ratti Gali, Arangkel, and Taobat Neelum Valley Adventure',
 								image: '/images/package 1 neelum.jpg'
 							},
 							{ 
-								title: '7 Days-The Complete Neelum Valley Tour',
+								title: '7 Days: The Complete Neelum Valley Tour',
 								image: '/images/package 2 neelum.jpg'
 							},
 							{ 
-								title: '6 Days-Neelum Valley and Shogran (Kaghan Valley) Combo',
+								title: '6 Days: Neelum Valley and Shogran (Kaghan Valley) Combo',
 								image: '/images/package 3 neelum.jpg'
 							},
 							{ 
-								title: '9 Days-Neelum Valley & Kaghan Valley Extended Trip',
+								title: '9 Days: Neelum Valley & Kaghan Valley Extended Trip',
 								image: '/images/package 4 neelum.jpg'
 							},
 							{ 
-								title: '4 Days-Ratti Gali Lake, Murree and Nathia Gali Highlights',
+								title: '4 Days: Ratti Gali Lake, Murree and Nathia Gali Highlights',
 								image: '/images/package 5 neelum.jpg'
 							},
 							{ 
-								title: '5 Days-Arangkel, Shogran and Siri Paye Short Tour',
+								title: '5 Days: Arangkel, Shogran and Siri Paye Short Tour',
 								image: '/images/package 6 neelum.jpg'
 							},
 							{ 
-								title: '3 Days-Rawalakot, Tolipeer and Banjosa Lake Short Tour',
+								title: '3 Days: Rawalakot, Tolipeer and Banjosa Lake Short Tour',
 								image: '/images/package 7 neelum.jpg'
 							},
 							{ 
-								title: '6 Days-Neelum Valley, Murree and Nathia Gali Explorer',
+								title: '6 Days: Neelum Valley, Murree and Nathia Gali Explorer',
 								image: '/images/package 8 neelum.jpg'
 							},
 							{ 
-								title: '5 Days-Ratti Gali Lake, Shogran and Siri Paye Trip',
+								title: '5 Days: Ratti Gali Lake, Shogran and Siri Paye Trip',
 								image: '/images/package 9 neelum.jpg'
 							},
 						];
@@ -525,7 +525,7 @@ const NeelumValleyPage = () => {
 									/>
 								</div>
 								<div className="p-3">
-									<p className="font-medium leading-normal" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
+									<p className="font-medium leading-normal text-center" style={{ color: secondaryBlack, fontSize: '16px', lineHeight: '1.4' }}>
 										{item.title}
 									</p>
 								</div>
@@ -1162,13 +1162,13 @@ const NeelumValleyPage = () => {
 							<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 						</div>
 						<div className="px-4 md:px-6">
-							<button
-								onClick={handleWhatsAppClick}
-								className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
+							<Link
+								href="/customize-a-tour"
+								className="inline-block px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl text-center"
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 							>
-								Get Your Free Quote Now!
-							</button>
+								Customize a Tour!
+							</Link>
 						</div>
 					</div>
 				</div>
