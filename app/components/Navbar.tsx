@@ -60,11 +60,13 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 		return false;
 	});
 
-	// Update mobile state on resize
+	// Update mobile state on resize and initial mount
 	useEffect(() => {
 		const checkMobile = () => {
 			setIsMobile(window.innerWidth < 1024);
 		};
+		// Check immediately on mount
+		checkMobile();
 		window.addEventListener('resize', checkMobile);
 		return () => window.removeEventListener('resize', checkMobile);
 	}, []);
@@ -72,10 +74,10 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 	// Determine navbar background color - solid white on mobile, dynamic on desktop
 	const getNavbarBg = () => {
 		if (forceLight) {
-			return 'bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
+			return '!bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
 		}
 		if (isMobile) {
-			return 'bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
+			return '!bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
 		}
 		return isLight 
 			? 'bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]' 
