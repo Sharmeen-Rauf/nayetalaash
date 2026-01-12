@@ -71,8 +71,11 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 
 	// Determine navbar background color - solid white on mobile, dynamic on desktop
 	const getNavbarBg = () => {
-		if (forceLight || isMobile) {
-			return '!bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
+		if (forceLight) {
+			return 'bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
+		}
+		if (isMobile) {
+			return 'bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
 		}
 		return isLight 
 			? 'bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]' 
@@ -80,7 +83,10 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 	};
 
 	const getTextColor = () => {
-		if (forceLight || isMobile) {
+		if (forceLight) {
+			return 'text-[#211f20]';
+		}
+		if (isMobile) {
 			return 'text-[#211f20]';
 		}
 		return isLight ? 'text-[#211f20]' : 'text-white';
@@ -408,7 +414,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 
 			{/* Mobile Side Navigation Menu - White Background */}
 			<div
-				className={`fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out !bg-white ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+				className={`fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out bg-white ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
 				style={{ backgroundColor: '#ffffff' }}
 			>
 				{/* Clickable Overlay to close menu */}
