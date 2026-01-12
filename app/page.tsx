@@ -707,7 +707,7 @@ const Page = () => {
 
 	return (
 		<div className="relative min-h-screen font-sans overflow-x-hidden">
-			<Navbar isLight={isLight} />
+			<Navbar isLight={isLight} forceLight={true} />
 			
 		{/* Splash Screen */}
 		{(splashVisible && (
