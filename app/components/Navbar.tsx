@@ -74,10 +74,10 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 	// Determine navbar background color - solid white on mobile, dynamic on desktop
 	const getNavbarBg = () => {
 		if (forceLight) {
-			return '!bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
+			return 'bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
 		}
 		if (isMobile) {
-			return '!bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
+			return 'bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
 		}
 		return isLight 
 			? 'bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]' 
@@ -165,7 +165,12 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 			{/* Main Navigation Bar */}
 			<header 
 				className={`fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] ${isMobile ? '' : 'backdrop-blur-sm'} transition-all duration-300 ${getNavbarBg()}`}
-				style={(forceLight || isMobile) ? { backgroundColor: '#ffffff' } : undefined}
+				style={(forceLight || isMobile) ? { 
+					backgroundColor: '#ffffff', 
+					opacity: '1',
+					backdropFilter: 'none',
+					WebkitBackdropFilter: 'none'
+				} : undefined}
 			>
 				<div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
 					<div className="flex items-center justify-between py-2 sm:py-2.5 gap-2">
