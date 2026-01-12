@@ -102,10 +102,9 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 					<div className="flex items-center justify-between py-1 sm:py-1.5">
 						{/* Left: Contact Info */}
 						<div className="flex items-center gap-2 sm:gap-4 text-white text-[10px] sm:text-xs">
-							<a href="tel:+92331438251" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
+							<a href="tel:+92331438251" className="hidden sm:flex items-center gap-1 hover:text-[#f99621] transition-colors">
 								<Phone className="w-3 h-3" style={{ color: '#f99621' }} />
-								<span className="hidden sm:inline">+92 331 438251</span>
-								<span className="sm:hidden">+92 331...</span>
+								<span>+92 331 438251</span>
 							</a>
 							<a href="mailto:info@nayitalaash.com" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
 								<Mail className="w-3 h-3" style={{ color: '#f99621' }} />
