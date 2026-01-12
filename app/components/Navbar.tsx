@@ -21,11 +21,17 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
 
-	// Scroll detection for navbar transparency (only if propIsLight is not provided)
+	// Scroll detection for navbar transparency (only if propIsLight is not provided and not on mobile)
 	useEffect(() => {
 		if (propIsLight !== undefined) {
 			// If propIsLight is provided, use it directly
 			setIsLight(propIsLight);
+			return;
+		}
+
+		// On mobile, always keep navbar white (not transparent)
+		if (isMobile) {
+			setIsLight(true);
 			return;
 		}
 
@@ -38,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 		handleScroll();
 		window.addEventListener('scroll', handleScroll, { passive: true });
 		return () => window.removeEventListener('scroll', handleScroll);
-	}, [propIsLight]);
+	}, [propIsLight, isMobile]);
 
 	// Close mobile menu when clicking outside
 	useEffect(() => {
