@@ -21,6 +21,25 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
 
+	// Check if mobile - use window check immediately for SSR safety
+	const [isMobile, setIsMobile] = useState(() => {
+		if (typeof window !== 'undefined') {
+			return window.innerWidth < 1024;
+		}
+		return false;
+	});
+
+	// Update mobile state on resize and initial mount
+	useEffect(() => {
+		const checkMobile = () => {
+			setIsMobile(window.innerWidth < 1024);
+		};
+		// Check immediately on mount
+		checkMobile();
+		window.addEventListener('resize', checkMobile);
+		return () => window.removeEventListener('resize', checkMobile);
+	}, []);
+
 	// Scroll detection for navbar transparency (only if propIsLight is not provided and not on mobile)
 	useEffect(() => {
 		if (propIsLight !== undefined) {
@@ -57,25 +76,6 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 			document.body.style.overflow = '';
 		};
 	}, [isMenuOpen]);
-
-	// Check if mobile - use window check immediately for SSR safety
-	const [isMobile, setIsMobile] = useState(() => {
-		if (typeof window !== 'undefined') {
-			return window.innerWidth < 1024;
-		}
-		return false;
-	});
-
-	// Update mobile state on resize and initial mount
-	useEffect(() => {
-		const checkMobile = () => {
-			setIsMobile(window.innerWidth < 1024);
-		};
-		// Check immediately on mount
-		checkMobile();
-		window.addEventListener('resize', checkMobile);
-		return () => window.removeEventListener('resize', checkMobile);
-	}, []);
 
 	// Determine navbar background color - solid white on mobile, dynamic on desktop
 	const getNavbarBg = () => {
