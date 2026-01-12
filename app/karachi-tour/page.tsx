@@ -687,7 +687,7 @@ const KarachiTourPage = () => {
 							<div className="relative h-64 rounded-2xl overflow-hidden transform-gpu transition-all duration-500 hover:scale-[1.03] shadow-2xl hover:shadow-2xl group-hover:shadow-[#f99621]/30 card-hover">
 								<div className="absolute inset-0 bg-gradient-to-br from-[#f99621]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
 								<Image 
-									src="/images/package 6 karachi.jpg"
+									src="/images/bharia town adventure land.jpg"
 									alt="1 Day: Bahria Adventure Land & DanZoo Wildlife Experience"
 									fill
 									className="object-cover group-hover:scale-110 transition-transform duration-500 filter group-hover:brightness-110"
