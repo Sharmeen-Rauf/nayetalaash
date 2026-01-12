@@ -21,10 +21,8 @@ export const metadata: Metadata = {
   creator: "Naye Talaash",
   publisher: "Naye Talaash",
   icons: {
-    icon: [
-      { url: "/images/ICON.jpg", type: "image/jpeg" },
-      { url: "/favicon.ico", type: "image/x-icon" },
-    ],
+    icon: "/images/ICON.jpg",
+    shortcut: "/images/ICON.jpg",
     apple: "/images/ICON.jpg",
   },
   openGraph: {
