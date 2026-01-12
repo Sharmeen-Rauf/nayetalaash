@@ -52,22 +52,27 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 		};
 	}, [isMenuOpen]);
 
-	const [isMobile, setIsMobile] = useState(false);
+	// Check if mobile - use window check immediately for SSR safety
+	const [isMobile, setIsMobile] = useState(() => {
+		if (typeof window !== 'undefined') {
+			return window.innerWidth < 1024;
+		}
+		return false;
+	});
 
-	// Check if mobile on mount
+	// Update mobile state on resize
 	useEffect(() => {
 		const checkMobile = () => {
 			setIsMobile(window.innerWidth < 1024);
 		};
-		checkMobile();
 		window.addEventListener('resize', checkMobile);
 		return () => window.removeEventListener('resize', checkMobile);
 	}, []);
 
-	// Determine navbar background color - white on mobile, dynamic on desktop
+	// Determine navbar background color - solid white on mobile, dynamic on desktop
 	const getNavbarBg = () => {
 		if (forceLight || isMobile) {
-			return 'bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
+			return 'bg-white border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]';
 		}
 		return isLight 
 			? 'bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]' 
@@ -85,7 +90,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 		<>
 			{/* Top Bar - Dark Background with Contact & Social */}
 			<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20]">
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
 					<div className="flex items-center justify-between py-1 sm:py-1.5">
 						{/* Left: Contact Info */}
 						<div className="flex items-center gap-2 sm:gap-4 text-white text-[10px] sm:text-xs">
@@ -151,17 +156,17 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 			</div>
 
 			{/* Main Navigation Bar */}
-			<header className={`fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] backdrop-blur-sm transition-all duration-300 ${getNavbarBg()}`}>
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<div className="flex items-center justify-between py-2 sm:py-2.5">
+			<header className={`fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] ${isMobile ? '' : 'backdrop-blur-sm'} transition-all duration-300 ${getNavbarBg()}`}>
+				<div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+					<div className="flex items-center justify-between py-2 sm:py-2.5 gap-2">
 						{/* Logo */}
-						<Link href="/" className="flex items-center">
+						<Link href="/" className="flex items-center flex-shrink-0">
 							<Image 
 								src={forceLight || isMobile ? '/images/Final....png' : logoImage}
 								alt="Nayi Talaash Logo"
 								width={160}
 								height={50}
-								className="h-10 sm:h-12 w-auto object-contain"
+								className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
 							/>
 						</Link>
 
