@@ -339,7 +339,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 														{selectedRegion === 'balochistan' && 'Balochistan Districts'}
 														{!selectedRegion && 'Select a Region'}
 													</h3>
-													<div className="grid grid-cols-2 gap-2 max-h-[350px] overflow-y-auto">
+													<div className="flex flex-col gap-2 max-h-[350px] overflow-y-auto">
 														{selectedRegion === 'gilgit' && (
 															<>
 																<Link href="/astore-diamer" className="block px-3 py-2 rounded hover:bg-[#f99621]/10 text-sm text-[#211f20] whitespace-normal break-words">Astore Diamer District</Link>
