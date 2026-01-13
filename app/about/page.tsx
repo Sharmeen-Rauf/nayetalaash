@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRight, ChevronLeft, ChevronDown, ArrowRight, Search, Building2, Car, Sparkles, Users, ShieldCheck, FileText, Briefcase, CheckCircle2, MapPin, Globe, Award, Clock, Download, MessageSquare, Map, Plane, ImagePlus, Gem, Luggage } from 'lucide-react';
+import { ChevronRight, ChevronLeft, ChevronDown, ArrowRight, Search, Building2, Car, Sparkles, Users, ShieldCheck, FileText, Briefcase, CheckCircle2, MapPin, Globe, Award, Clock, Download, MessageSquare, Map, Plane, ImagePlus, Gem, Luggage, Mail, Facebook, Instagram, Youtube } from 'lucide-react';
 import Navbar from '../components/Navbar';
 
 const AboutPage = () => {
