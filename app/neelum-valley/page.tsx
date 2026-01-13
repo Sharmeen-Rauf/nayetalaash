@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageCircle, ChevronDown } from 'lucide-react';
 import Navbar from '@/app/components/Navbar';
 
 const NeelumValleyPage = () => {
