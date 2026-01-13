@@ -199,7 +199,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 						{/* Logo */}
 						<Link href="/" className="flex items-center flex-shrink-0">
 							<Image 
-								src={logoImage}
+								src={(forceLight || isMobile) ? '/images/Final....png' : logoImage}
 								alt="Nayi Talaash Logo"
 								width={160}
 								height={50}

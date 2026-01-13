@@ -293,6 +293,28 @@ html {
 		-webkit-backdrop-filter: none !important;
 	}
 	
+	/* Force black logo and hamburger icon on mobile */
+	header[class*="fixed"] a[href="/"] img,
+	header[class*="fixed"] img[alt*="Logo"],
+	header[class*="fixed"] img[alt*="Nayi Talaash"] {
+		/* Logo is already black via src attribute, but ensure no filters */
+		filter: none !important;
+		opacity: 1 !important;
+	}
+	
+	/* Force black hamburger icon on mobile */
+	header[class*="fixed"] button[aria-label*="Toggle"] svg,
+	header[class*="fixed"] button[aria-label*="Toggle navigation menu"] svg {
+		color: #211f20 !important;
+		stroke: #211f20 !important;
+		fill: #211f20 !important;
+	}
+	
+	header[class*="fixed"] button[aria-label*="Toggle"],
+	header[class*="fixed"] button[aria-label*="Toggle navigation menu"] {
+		color: #211f20 !important;
+	}
+	
 	/* Force white background for mobile menu */
 	.mobile-nav-menu,
 	div[class*="fixed"][class*="z-[115]"] {
