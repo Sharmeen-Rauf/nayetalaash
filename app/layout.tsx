@@ -6,6 +6,8 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  preload: true,
 });
 
 // Autography font via @font-face in globals.css
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
     url: "https://nayetalaash.com",
     images: ["/images/ICON.jpg"],
   },
+  metadataBase: new URL("https://nayetalaash.com"),
 };
 
 export default function RootLayout({
@@ -40,6 +43,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/images/Home Banner - Idea.jpg" as="image" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+      </head>
       <body
         className={`${poppins.variable} antialiased`}
       >

@@ -4,8 +4,14 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Search, Home, Map, Users, DollarSign, Globe, Mountain, Sun, Sailboat, CalendarDays, Newspaper, ArrowRight, ShieldCheck, Headset, Star, Clock, Tag, Briefcase, Smile, Moon, ChevronLeft, ChevronRight, ChevronDown, MessageCircle, Heart, Award, Building2, Landmark, Music, Ship, Route, Droplets, Play, CheckCircle2, Phone, Mail, Facebook, Instagram, Youtube, X } from 'lucide-react';
-import Lottie from 'lottie-react';
+import dynamic from 'next/dynamic';
 import Navbar from '@/app/components/Navbar';
+
+// Lazy load Lottie component for better performance
+const Lottie = dynamic(() => import('lottie-react'), { 
+	ssr: false,
+	loading: () => <div className="w-full h-full" />
+});
 
 // Tour Packages Data - moved outside component to avoid recreation
 const allTourPackages = [
@@ -726,7 +732,7 @@ const Page = () => {
 					<div className="absolute inset-0 flex items-center justify-center">
 						<div className="flex flex-col items-center">
 							<div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full shadow-2xl flex items-center justify-center logo-float" style={{ backgroundColor: primaryOrange }}>
-								<Image src={logoImage} alt="Nayi Talaash Logo" width={144} height={144} className="w-full h-full object-cover rounded-full" />
+								<Image src={logoImage} alt="Nayi Talaash Logo" width={144} height={144} className="w-full h-full object-cover rounded-full" priority />
 							</div>
 							<div className="mt-5 text-xs tracking-[0.35em] uppercase" style={{ color: isLight ? secondaryBlack : '#ffffff' }}>Nayi Talaash</div>
 						</div>
@@ -1021,6 +1027,7 @@ const Page = () => {
 								alt="Pakistan Map"
 									width={250}
 									height={330}
+									loading="lazy"
 									className="absolute top-0 left-0 w-full h-full object-contain transform group-hover:scale-110 transition-all duration-700 filter group-hover:brightness-110"
 								/>
 								{/* Enhanced Glowing dots on map with travel destinations - Properly positioned inside map boundaries */}
