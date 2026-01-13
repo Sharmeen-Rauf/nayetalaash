@@ -16,8 +16,6 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 
-	// Dynamic logo based on scroll position
-	const logoImage = isLight ? '/images/Final....png' : '/images/logo landscape(white).png';
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
 
@@ -29,6 +27,10 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 		// Default to true on SSR to ensure white background
 		return true;
 	});
+
+	// Dynamic logo based on scroll position and mobile state
+	// On mobile, always use black logo. On desktop, use black when isLight is true, white otherwise
+	const logoImage = (isMobile || isLight) ? '/images/Final....png' : '/images/logo landscape(white).png';
 
 	// Update mobile state on resize and initial mount
 	useEffect(() => {
@@ -48,18 +50,19 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 
 	// Scroll detection for navbar transparency (only if propIsLight is not provided and not on mobile)
 	useEffect(() => {
-		// If propIsLight is provided, sync with it
-		if (propIsLight !== undefined) {
-			setIsLight(propIsLight);
-			return;
-		}
-
-		// On mobile, always keep navbar white (not transparent)
+		// On mobile, always keep navbar white (not transparent) - this takes priority
 		if (isMobile) {
 			setIsLight(true);
 			return;
 		}
 
+		// If propIsLight is provided, sync with it (only on desktop)
+		if (propIsLight !== undefined) {
+			setIsLight(propIsLight);
+			return;
+		}
+
+		// Desktop scroll detection
 		const handleScroll = () => {
 			const scrollY = window.scrollY || window.pageYOffset;
 			const heroHeight = window.innerHeight;
@@ -196,7 +199,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 						{/* Logo */}
 						<Link href="/" className="flex items-center flex-shrink-0">
 							<Image 
-								src={forceLight || isMobile ? '/images/Final....png' : logoImage}
+								src={logoImage}
 								alt="Nayi Talaash Logo"
 								width={160}
 								height={50}
@@ -428,10 +431,10 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 						<button
 							onClick={() => setIsMenuOpen(!isMenuOpen)}
 							className="lg:hidden p-2 rounded-lg transition-colors"
-							style={{ color: forceLight || isMobile ? secondaryBlack : (isLight ? secondaryBlack : 'white') }}
+							style={{ color: (forceLight || isMobile) ? secondaryBlack : (isLight ? secondaryBlack : 'white') }}
 							aria-label="Toggle navigation menu"
 						>
-							{isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+							{isMenuOpen ? <X className="w-6 h-6" style={{ color: (forceLight || isMobile) ? secondaryBlack : (isLight ? secondaryBlack : 'white') }} /> : <Menu className="w-6 h-6" style={{ color: (forceLight || isMobile) ? secondaryBlack : (isLight ? secondaryBlack : 'white') }} />}
 						</button>
 					</div>
 				</div>
