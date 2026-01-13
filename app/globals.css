@@ -303,4 +303,10 @@ html {
 		-webkit-backdrop-filter: none !important;
 		background-image: none !important;
 	}
+	
+	/* Ensure inner container is also white */
+	.mobile-nav-menu > div:first-child {
+		background-color: #ffffff !important;
+		background: #ffffff !important;
+	}
 }

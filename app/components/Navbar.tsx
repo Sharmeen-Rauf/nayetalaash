@@ -432,27 +432,31 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 				</div>
 			</header>
 
+			{/* Clickable Overlay to close menu - Outside menu div */}
+			{isMenuOpen && (
+				<div 
+					className="fixed inset-0 bg-black/50 z-[114] backdrop-blur-sm" 
+					onClick={() => setIsMenuOpen(false)}
+					aria-hidden="true"
+					style={{ zIndex: 114 }}
+				/>
+			)}
+			
 			{/* Mobile Side Navigation Menu - White Background */}
 			<div
-				className={`mobile-nav-menu fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+				className={`mobile-nav-menu fixed top-0 right-0 h-full w-full max-w-sm z-[115] transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
 				style={{ 
 					backgroundColor: '#ffffff',
 					background: '#ffffff',
 					opacity: 1,
 					backdropFilter: 'none',
 					WebkitBackdropFilter: 'none',
-					backgroundImage: 'none'
+					backgroundImage: 'none',
+					boxShadow: '-4px 0 24px rgba(0, 0, 0, 0.15)',
+					zIndex: 115
 				}}
 			>
-				{/* Clickable Overlay to close menu */}
-				{isMenuOpen && (
-					<div 
-						className="fixed inset-0 bg-black/50 z-[-1] backdrop-blur-sm" 
-						onClick={() => setIsMenuOpen(false)}
-						aria-hidden="true"
-					/>
-				)}
-				<div className="p-6 sm:p-8 flex flex-col h-full">
+				<div className="p-6 sm:p-8 flex flex-col h-full" style={{ backgroundColor: '#ffffff' }}>
 					{/* Close Button */}
 					<button
 						onClick={() => setIsMenuOpen(false)}
