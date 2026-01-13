@@ -48,8 +48,8 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 
 	// Scroll detection for navbar transparency (only if propIsLight is not provided and not on mobile)
 	useEffect(() => {
+		// If propIsLight is provided, sync with it
 		if (propIsLight !== undefined) {
-			// If propIsLight is provided, use it directly
 			setIsLight(propIsLight);
 			return;
 		}
@@ -176,7 +176,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 
 			{/* Main Navigation Bar */}
 			<header 
-				className={`fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] ${isMobile ? '' : 'backdrop-blur-sm'} transition-all duration-300 ${getNavbarBg()}`}
+				className={`fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] transition-all duration-300 ${getNavbarBg()}`}
 				style={(forceLight || isMobile) ? { 
 					backgroundColor: '#ffffff',
 					opacity: 1,
@@ -184,6 +184,11 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 					WebkitBackdropFilter: 'none',
 					background: '#ffffff',
 					backgroundImage: 'none'
+				} : (!isMobile && !isLight) ? {
+					backgroundColor: 'transparent',
+					background: 'transparent',
+					backdropFilter: 'none',
+					WebkitBackdropFilter: 'none'
 				} : undefined}
 			>
 				<div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">

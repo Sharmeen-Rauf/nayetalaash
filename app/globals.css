@@ -310,3 +310,11 @@ html {
 		background: #ffffff !important;
 	}
 }
+
+/* Ensure desktop navbar can be transparent */
+@media (min-width: 1024px) {
+	header[class*="fixed"][class*="bg-transparent"] {
+		background-color: transparent !important;
+		background: transparent !important;
+	}
+}
