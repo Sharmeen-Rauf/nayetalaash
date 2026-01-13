@@ -282,3 +282,14 @@ html {
 .animate-scroll:hover {
 	animation-play-state: paused;
 }
+
+/* Force white navbar background on mobile */
+@media (max-width: 1023px) {
+	header[class*="fixed"] {
+		background-color: #ffffff !important;
+		background: #ffffff !important;
+		opacity: 1 !important;
+		backdrop-filter: none !important;
+		-webkit-backdrop-filter: none !important;
+	}
+}
