@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ChevronLeft } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight, ChevronDown, Mail, Facebook, Instagram, Youtube } from 'lucide-react';
 import Navbar from '@/app/components/Navbar';
 
 const AstoreDiamerPage = () => {
