@@ -292,4 +292,15 @@ html {
 		backdrop-filter: none !important;
 		-webkit-backdrop-filter: none !important;
 	}
+	
+	/* Force white background for mobile menu */
+	.mobile-nav-menu,
+	div[class*="fixed"][class*="z-[115]"] {
+		background-color: #ffffff !important;
+		background: #ffffff !important;
+		opacity: 1 !important;
+		backdrop-filter: none !important;
+		-webkit-backdrop-filter: none !important;
+		background-image: none !important;
+	}
 }

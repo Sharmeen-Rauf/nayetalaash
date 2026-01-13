@@ -434,8 +434,15 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 
 			{/* Mobile Side Navigation Menu - White Background */}
 			<div
-				className={`fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out bg-white ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
-				style={{ backgroundColor: '#ffffff' }}
+				className={`mobile-nav-menu fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+				style={{ 
+					backgroundColor: '#ffffff',
+					background: '#ffffff',
+					opacity: 1,
+					backdropFilter: 'none',
+					WebkitBackdropFilter: 'none',
+					backgroundImage: 'none'
+				}}
 			>
 				{/* Clickable Overlay to close menu */}
 				{isMenuOpen && (
