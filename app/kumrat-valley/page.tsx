@@ -3,31 +3,27 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, MessageCircle } from 'lucide-react';
+import Navbar from '../components/Navbar';
+import { X, Phone, Mail, Facebook, Instagram, Youtube, ChevronDown, ArrowRight, MessageCircle } from 'lucide-react';
 
 const KumratValleyPage = () => {
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
+	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle, still needed for hero section logic
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
 	const [hoveredImageIndex, setHoveredImageIndex] = useState<number | null>(null);
 	const [showAllPackages, setShowAllPackages] = useState(false);
 	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
-	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 	const [showFloatingWidget, setShowFloatingWidget] = useState(true);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
 	
-	// Dynamic logo based on scroll position
-	const logoImage = isLight ? '/images/Final....png' : '/images/logo landscape(white).png';
-	
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
 		window.open('https://wa.me/923311438251', '_blank');
 	};
 
-	// Scroll detection for navbar transparency
+	// Scroll detection for navbar transparency (still needed for hero section logic)
 	useEffect(() => {
 		const handleScroll = () => {
 			const scrollY = window.scrollY || window.pageYOffset;
@@ -71,331 +67,8 @@ const KumratValleyPage = () => {
 
 	return (
 		<div className="relative min-h-screen font-sans overflow-x-hidden">
-			{/* --- 1. Two-Tier Navbar --- */}
-			{/* Top Bar - Dark Background with Contact & Social */}
-			<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20]">
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<div className="flex items-center justify-between py-1 sm:py-1.5">
-						{/* Left: Contact Info */}
-						<div className="flex items-center gap-2 sm:gap-4 text-white text-[10px] sm:text-xs">
-							<a href="tel:+92331438251" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
-								<Phone className="w-3 h-3" style={{ color: '#f99621' }} />
-								<span className="hidden sm:inline">+92 331 438251</span>
-								<span className="sm:hidden">+92 331...</span>
-							</a>
-							<a href="mailto:info@nayitalaash.com" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
-								<Mail className="w-3 h-3" style={{ color: '#f99621' }} />
-								<span className="hidden md:inline">info@nayitalaash.com</span>
-								<span className="md:hidden text-[9px]">info@...</span>
-							</a>
-						</div>
-
-						{/* Right: Social Media Icons & Customize Button */}
-						<div className="flex items-center gap-1.5">
-							{/* Social Media Icons - Round with Hover Effects */}
-							<div className="flex items-center gap-0.5">
-								{/* Facebook */}
-								<a 
-									href="https://www.facebook.com/nayetalash" 
-									target="_blank" 
-									rel="noopener noreferrer" 
-									className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
-									aria-label="Facebook"
-								>
-									<Facebook className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
-								</a>
-								
-								{/* Instagram */}
-								<a 
-									href="https://www.instagram.com/nayetalash" 
-									target="_blank" 
-									rel="noopener noreferrer" 
-									className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
-									aria-label="Instagram"
-								>
-									<Instagram className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
-								</a>
-								
-								{/* YouTube */}
-								<a 
-									href="https://www.youtube.com/@nayetalash" 
-									target="_blank" 
-									rel="noopener noreferrer" 
-									className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
-									aria-label="YouTube"
-								>
-									<Youtube className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
-								</a>
-							</div>
-
-							{/* Customize A Tour Button */}
-							<Link
-								href="/customize-a-tour"
-								className="px-2 py-1 sm:px-3 sm:py-1 text-[9px] sm:text-[10px] font-bold text-[#211f20] hover:bg-[#e8851a] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#f99621]/50 ml-0.5"
-								style={{ backgroundColor: '#f99621' }}
-							>
-								<span className="hidden sm:inline">CUSTOMIZE A TOUR</span>
-								<span className="sm:hidden">CUSTOMIZE</span>
-							</Link>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			{/* Main Navigation Bar - Reduced Height */}
-			<header className={`fixed top-[32px] sm:top-[36px] left-0 right-0 z-[100] backdrop-blur-sm transition-all duration-300 ${
-				isLight 
-					? 'bg-white/95 border-b border-gray-200 shadow-[0_6px_12px_rgba(0,0,0,0.06)]' 
-					: 'bg-transparent border-b border-transparent shadow-none'
-			}`}>
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<div className="flex items-center justify-between py-2 sm:py-2.5">
-						{/* Logo */}
-						<div className="flex items-center">
-							<Link href="/">
-								<Image 
-									src={logoImage}
-									alt="Nayi Talaash Logo"
-									width={160}
-									height={50}
-									className="h-10 sm:h-12 w-auto object-contain"
-								/>
-							</Link>
-						</div>
-
-						{/* Desktop Navigation Links */}
-						<nav className="hidden lg:flex items-center gap-1">
-							<Link href="/" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>HOME</Link>
-							{/* PAKISTAN TOURS with Dropdown */}
-							<div className="relative group">
-								<Link href="/#tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
-									PAKISTAN TOURS
-									<ChevronRight className="w-4 h-4 rotate-90" />
-								</Link>
-								
-								{/* Dropdown Menu */}
-								<div className="absolute top-full left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
-									<div className="bg-white border border-gray-200 shadow-xl rounded-md overflow-hidden">
-										<ul className="py-1">
-											<li>
-												<Link href="/swat-kalam" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
-													Swat Kalam Tour Packages
-												</Link>
-											</li>
-											<li>
-												<Link href="/hunza" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
-													Hunza Tour Packages
-												</Link>
-											</li>
-											<li>
-												<Link href="/skardu" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
-													Skardu Tour Packages
-												</Link>
-											</li>
-											<li>
-												<Link href="/nathia-gali-murree" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
-													Nathia Gali And Murree Tour Packages
-												</Link>
-											</li>
-											<li>
-												<Link href="/neelum-valley" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
-													Neelum Valley Azad Kashmir Tour Packages
-												</Link>
-											</li>
-											<li>
-												<Link href="/kumrat-valley" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
-													Kumrat Valley Tour Packages
-												</Link>
-											</li>
-											<li>
-												<Link href="/naran-kaghan" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
-													Naran Kaghan Tour Packages
-												</Link>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							{/* CITY TOURS with Dropdown */}
-							<div className="relative group">
-								<Link href="/#city-tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>
-									CITY TOURS
-									<ChevronRight className="w-4 h-4 rotate-90" />
-								</Link>
-								
-								{/* Dropdown Menu */}
-								<div className="absolute top-full left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
-									<div className="bg-white border border-gray-200 shadow-xl rounded-md overflow-hidden">
-										<ul className="py-1">
-											<li>
-												<Link href="/karachi-tour" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
-													Karachi Tour
-												</Link>
-											</li>
-											<li>
-												<Link href="/lahore-tour" className="block px-4 py-2.5 text-sm font-medium text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors">
-													Lahore Tour
-												</Link>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<Link href="/group-tours" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>GROUP TOUR</Link>
-							<Link href="/#destination" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>DESTINATION</Link>
-							<Link href="/about" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>ABOUT US</Link>
-							<Link href="/contact" className={`px-3 py-2 text-sm font-semibold transition-colors ${isLight ? 'text-[#211f20] hover:text-[#f99621]' : 'text-white hover:text-[#f99621]'}`}>CONTACT US</Link>
-						</nav>
-
-						{/* Mobile Menu Button */}
-						<button
-							onClick={() => setIsMenuOpen(!isMenuOpen)}
-							className="lg:hidden p-2 rounded-lg transition-colors"
-							style={{ color: isLight ? secondaryBlack : 'white' }}
-							aria-label="Toggle navigation menu"
-						>
-							{isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-						</button>
-					</div>
-				</div>
-			</header>
-
-			{/* Mobile Side Navigation Menu */}
-			<div
-				className={`fixed top-0 right-0 h-full w-full max-w-sm z-[115] shadow-2xl transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
-				style={{ backgroundColor: '#f8f9fa' }}
-			>
-				{/* Clickable Overlay to close menu */}
-				{isMenuOpen && (
-					<div 
-						className="fixed inset-0 bg-black/50 z-[-1] backdrop-blur-sm" 
-						onClick={() => setIsMenuOpen(false)}
-						aria-hidden="true"
-					/>
-				)}
-				<div className="p-6 sm:p-8 flex flex-col h-full">
-					{/* Close Button */}
-					<button
-						onClick={() => setIsMenuOpen(false)}
-						className="absolute top-6 right-6 p-2 rounded-full text-white transition-colors hover:bg-[#e8851a]"
-						style={{ backgroundColor: '#f99621' }}
-						aria-label="Close navigation menu"
-					>
-						<X className="w-6 h-6" />
-					</button>
-
-					{/* Logo */}
-					<div className="mt-12 mb-8">
-						<Link href="/">
-							<Image 
-								src={logoImage}
-								alt="Nayi Talaash Logo"
-								width={150}
-								height={50}
-								className="h-12 w-auto object-contain"
-							/>
-						</Link>
-					</div>
-
-					{/* Nav Links */}
-					<nav className="flex flex-col space-y-2 flex-grow">
-						<Link href="/" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-							HOME
-						</Link>
-						
-						{/* PAKISTAN TOURS with Dropdown */}
-						<div>
-							<button
-								onClick={() => setMobileDropdownOpen(mobileDropdownOpen === 'pakistan-tours' ? null : 'pakistan-tours')}
-								className="w-full flex items-center justify-between px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg"
-							>
-								<span>PAKISTAN TOURS</span>
-								<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'pakistan-tours' ? 'rotate-180' : ''}`} />
-							</button>
-							{mobileDropdownOpen === 'pakistan-tours' && (
-								<div className="pl-4 pr-2 py-2 space-y-1">
-									<Link href="/swat-kalam" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										Swat Kalam Tour Packages
-									</Link>
-									<Link href="/hunza" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										Hunza Tour Packages
-									</Link>
-									<Link href="/skardu" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										Skardu Tour Packages
-									</Link>
-									<Link href="/nathia-gali-murree" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										Nathia Gali And Murree Tour Packages
-									</Link>
-									<Link href="/neelum-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										Neelum Valley Azad Kashmir Tour Packages
-									</Link>
-									<Link href="/kumrat-valley" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										Kumrat Valley Tour Packages
-									</Link>
-									<Link href="/naran-kaghan" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										Naran Kaghan Tour Packages
-									</Link>
-								</div>
-							)}
-						</div>
-
-						{/* CITY TOURS with Dropdown */}
-						<div>
-							<button
-								onClick={() => setMobileDropdownOpen(mobileDropdownOpen === 'city-tours' ? null : 'city-tours')}
-								className="w-full flex items-center justify-between px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg"
-							>
-								<span>CITY TOURS</span>
-								<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'city-tours' ? 'rotate-180' : ''}`} />
-							</button>
-							{mobileDropdownOpen === 'city-tours' && (
-								<div className="pl-4 pr-2 py-2 space-y-1">
-									<Link href="/karachi-tour" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										Karachi Tour
-									</Link>
-									<Link href="/lahore-tour" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-										Lahore Tour
-									</Link>
-								</div>
-							)}
-						</div>
-
-						<Link href="/group-tours" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-							GROUP TOUR
-						</Link>
-						<Link href="/#destination" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-							DESTINATION
-						</Link>
-						<Link href="/about" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-							ABOUT US
-						</Link>
-						<Link href="/contact" className="flex items-center px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
-							CONTACT US
-						</Link>
-					</nav>
-
-					{/* Footer Info in Menu */}
-					<div className="mt-auto pt-6 border-t border-gray-300">
-						<div className="flex items-center gap-3 mb-3">
-							<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-								<Facebook className="w-5 h-5 text-white stroke-[white]" />
-							</a>
-							<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-								<Instagram className="w-5 h-5 text-white stroke-[white]" />
-							</a>
-							<a href="https://www.youtube.com/@nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
-								<Youtube className="w-5 h-5 text-white stroke-[white]" />
-							</a>
-						</div>
-						<p className="text-gray-600 text-sm">
-							Explore the unknown with us.
-						</p>
-						<p className="text-gray-500 text-xs mt-2">
-							© 2024 Nayi Talaash. All rights reserved.
-						</p>
-					</div>
-				</div>
-			</div>
+			{/* Navbar Component */}
+			<Navbar isLight={isLight} />
 
 			{/* ====================== HERO SECTION ====================== */}
 			<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[100px] sm:pt-[104px]" style={{ backgroundColor: secondaryBlack }}>

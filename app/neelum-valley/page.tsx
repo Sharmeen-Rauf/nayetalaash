@@ -3,24 +3,20 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
+import Navbar from '@/app/components/Navbar';
 
 const NeelumValleyPage = () => {
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
 	const [hoveredImageIndex, setHoveredImageIndex] = useState<number | null>(null);
 	const [showAllPackages, setShowAllPackages] = useState(false);
 	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
-	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 	const [showFloatingWidget, setShowFloatingWidget] = useState(true);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
-	
-	// Dynamic logo based on scroll position
-	const logoImage = isLight ? '/images/Final....png' : '/images/logo landscape(white).png';
 	
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
@@ -71,15 +67,34 @@ const NeelumValleyPage = () => {
 
 	return (
 		<div className="relative min-h-screen font-sans overflow-x-hidden">
-			{/* --- 1. Two-Tier Navbar --- */}
-			{/* Top Bar - Dark Background with Contact & Social */}
-			<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20]">
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<div className="flex items-center justify-between py-1 sm:py-1.5">
-						{/* Left: Contact Info */}
-						<div className="flex items-center gap-2 sm:gap-4 text-white text-[10px] sm:text-xs">
-							<a href="tel:+92331438251" className="flex items-center gap-1 hover:text-[#f99621] transition-colors">
-								<Phone className="w-3 h-3" style={{ color: '#f99621' }} />
+			{/* Navbar Component */}
+			<Navbar isLight={isLight} />
+
+			{/* ====================== HERO SECTION ====================== */}
+			<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[100px] sm:pt-[104px]" style={{ backgroundColor: secondaryBlack }}>
+				{/* Background Image */}
+				<div 
+					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+					style={{ 
+						backgroundImage: "url('/images/azad kashmir.jpg')",
+						filter: "brightness(0.3)",
+					}}
+				></div>
+
+				{/* Theme Color Overlay */}
+				<div className="absolute inset-0 z-[2]" style={{ background: `linear-gradient(135deg, ${secondaryBlack}90 0%, transparent 50%, ${primaryOrange}30 100%)` }}></div>
+
+				{/* Main Content */}
+				<div className="relative z-10 h-full flex items-center justify-center">
+					<div className="text-center px-4">
+						<h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 text-white">
+							<span className="font-autography hero-text-reveal block mb-2 text-white" style={{ display: 'inline-block', fontSize: '48px', color: 'white' }}>
+								Neelum Valley and Kashmir Tour Packages
+							</span>
+							<br />
+							<span className="block hero-text-reveal hero-text-delay-1"
+								  style={{
+									  color: primaryOrange,
 								<span className="hidden sm:inline">+92 331 438251</span>
 								<span className="sm:hidden">+92 331...</span>
 							</a>
@@ -393,24 +408,6 @@ const NeelumValleyPage = () => {
 						<p className="text-gray-500 text-xs mt-2">
 							© 2024 Nayi Talaash. All rights reserved.
 						</p>
-					</div>
-				</div>
-			</div>
-
-			{/* ====================== HERO SECTION ====================== */}
-			<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[100px] sm:pt-[104px]" style={{ backgroundColor: secondaryBlack }}>
-				{/* Background Image */}
-				<div 
-					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-					style={{ 
-						backgroundImage: "url('/images/azad kashmir.jpg')",
-						filter: "brightness(0.3)",
-					}}
-				></div>
-
-				{/* Theme Color Overlay */}
-				<div className="absolute inset-0 z-[2]" style={{ background: `linear-gradient(135deg, ${secondaryBlack}90 0%, transparent 50%, ${primaryOrange}30 100%)` }}></div>
-
 				{/* Main Content */}
 				<div className="relative z-10 h-full flex items-center justify-center">
 					<div className="text-center px-4">
