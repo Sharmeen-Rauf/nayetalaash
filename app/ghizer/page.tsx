@@ -3,25 +3,20 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu, X, Phone, Mail, Facebook, Instagram, Youtube, ChevronRight, ChevronDown, ArrowRight, ChevronLeft } from 'lucide-react';
+import { ArrowRight, ChevronLeft } from 'lucide-react';
+import Navbar from '@/app/components/Navbar';
 
 const GhizerPage = () => {
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isLight, setIsLight] = useState(false);
 	const [openFAQIndex, setOpenFAQIndex] = useState<number | null>(null);
 	const [hoveredImageIndex, setHoveredImageIndex] = useState<number | null>(null);
 	const [showAllPackages, setShowAllPackages] = useState(false);
 	const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set());
-	const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
-	const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	// Theme Colors
 	const primaryOrange = '#f99621';
 	const secondaryBlack = '#211f20';
-	
-	// Dynamic logo based on scroll position
-	const logoImage = isLight ? '/images/Final....png' : '/images/logo landscape(white).png';
 	
 	// WhatsApp click handler
 	const handleWhatsAppClick = () => {
@@ -69,9 +64,8 @@ const GhizerPage = () => {
 
 	return (
 		<div className="relative min-h-screen font-sans overflow-x-hidden">
-			{/* --- 1. Two-Tier Navbar --- */}
-			{/* Top Bar - Dark Background with Contact & Social */}
-			<div className="fixed top-0 left-0 right-0 z-[110] bg-[#211f20]">
+			{/* Navbar Component */}
+			<Navbar isLight={isLight} />
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="flex items-center justify-between py-1 sm:py-1.5">
 						{/* Left: Contact Info */}
@@ -465,9 +459,6 @@ const GhizerPage = () => {
 							© 2024 Nayi Talaash. All rights reserved.
 						</p>
 					</div>
-				</div>
-			</div>
-
 			{/* ====================== HERO SECTION ====================== */}
 			<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[100px] sm:pt-[104px]" style={{ backgroundColor: secondaryBlack }}>
 				{/* Background Image */}
