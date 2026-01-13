@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, MapPin, MessageCircle, Check, ChevronDown, Mail } from 'lucide-react';
+import { ArrowRight, MapPin, MessageCircle, Check, ChevronDown, Mail, Facebook, Instagram, Youtube } from 'lucide-react';
 import Navbar from '../components/Navbar';
 
 const ContactPage = () => {
