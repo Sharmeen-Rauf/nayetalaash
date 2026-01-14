@@ -603,7 +603,7 @@ const LahoreTourPage = () => {
 							<div className="lg:col-span-1">
 								<div className="relative h-40 lg:h-auto rounded-lg overflow-hidden">
 									<Image 
-										src="/images/Lahore City.jpeg"
+										src="/images/lahore.jpg"
 										alt="Historical Ruler of Lahore"
 										fill
 										className="object-cover"

@@ -566,7 +566,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 								<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'destination' ? 'rotate-180' : ''}`} />
 							</button>
 							{mobileDropdownOpen === 'destination' && (
-								<div className="pl-4 pr-2 py-2 space-y-1 max-h-[60vh] overflow-y-auto">
+								<div className="pl-4 pr-2 py-2 pb-6 space-y-1 max-h-[70vh] overflow-y-auto overscroll-contain" style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin' }}>
 									{/* Gilgit Baltistan */}
 									<p className="px-4 py-2 text-sm font-bold text-[#f99621] uppercase">Gilgit Baltistan</p>
 									<Link href="/astore-diamer" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Astore Diamer District</Link>
@@ -611,6 +611,8 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 									<Link href="/khuzdar" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Khuzdar District</Link>
 									<Link href="/quetta" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Quetta District</Link>
 									<Link href="/ziarat" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Ziarat District</Link>
+									{/* Extra padding at bottom to ensure last items are visible */}
+									<div className="h-4"></div>
 								</div>
 							)}
 						</div>

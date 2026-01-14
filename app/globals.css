@@ -331,6 +331,31 @@ html {
 		background-color: #ffffff !important;
 		background: #ffffff !important;
 	}
+	
+	/* Improve scrolling for destination dropdown on mobile */
+	.mobile-nav-menu [class*="overflow-y-auto"] {
+		-webkit-overflow-scrolling: touch !important;
+		scroll-behavior: smooth !important;
+	}
+	
+	/* Ensure scrollbar is visible on mobile */
+	.mobile-nav-menu [class*="overflow-y-auto"]::-webkit-scrollbar {
+		width: 6px;
+	}
+	
+	.mobile-nav-menu [class*="overflow-y-auto"]::-webkit-scrollbar-track {
+		background: #f1f1f1;
+		border-radius: 10px;
+	}
+	
+	.mobile-nav-menu [class*="overflow-y-auto"]::-webkit-scrollbar-thumb {
+		background: #f99621;
+		border-radius: 10px;
+	}
+	
+	.mobile-nav-menu [class*="overflow-y-auto"]::-webkit-scrollbar-thumb:hover {
+		background: #e8851a;
+	}
 }
 
 /* Ensure desktop navbar can be transparent */
