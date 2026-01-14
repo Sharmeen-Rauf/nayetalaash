@@ -279,7 +279,7 @@ const LahoreTourPage = () => {
 					<div className="space-y-6">
 						{[
 							{ 
-								title: '1. Lahore Fort (Shahi Qila)', 
+								title: 'Lahore Fort (Shahi Qila)', 
 								image: '/images/Lahore Fort (Shahi Qila).jpeg',
 								image360: '/images/marc-markstein-if4wsNq145o-unsplash.jpg', // Your 360 image
 								// For embedded tour (Kuula/Roundme/etc): iframe360: 'https://kuula.co/share/collection/XXXXX',
@@ -287,7 +287,7 @@ const LahoreTourPage = () => {
 								imageLeft: true
 							},
 							{ 
-								title: '2. Badshahi Mosque', 
+								title: 'Badshahi Mosque', 
 								image: '/images/Badshahi Mosque.jpg',
 								// For self-hosted 360 image: image360: '/images/360/badshahi-mosque-360.jpg',
 								// For embedded tour (Kuula/Roundme/etc): iframe360: 'https://kuula.co/share/collection/XXXXX',
@@ -295,63 +295,63 @@ const LahoreTourPage = () => {
 								imageLeft: false
 							},
 							{ 
-								title: '3. Wazir Khan Mosque', 
+								title: 'Wazir Khan Mosque', 
 								image: '/images/Wazir Khan Mosque.jpg',
 								// Add 360 image when available: image360: '/images/360/wazir-khan-mosque-360.jpg',
 								description: 'This beautiful mosque was built in the 17th century by Ilm-ud-Din Ansari (known as Wazir Khan), the Governor of Lahore under Emperor Shah Jahan. Located on the Royal Route (Shahi Guzargah), it is famous for its intricate Kashi Kari (tile work) and delicate Fresco Paintings. Its entrance includes a unique market area, historically known as the Calligrapher\'s Market.',
 								imageLeft: true
 							},
 							{ 
-								title: '4. Hazuri Bagh & Baradari', 
+								title: 'Hazuri Bagh & Baradari', 
 								image: '/images/Hazuri Bagh & Baradari.jpg',
 								// Add 360 image when available: image360: '/images/360/hazuri-bagh-360.jpg',
 								description: 'Hazuri Bagh is a significant garden located between the Lahore Fort\'s Alamgiri Gate and the Badshahi Mosque. At its center stands a Bara Dari (Twelve-Door Pavilion), which was built by Maharaja Ranjit Singh using white marble from dismantled Mughal structures. The garden also holds the Tombs of Sir Allama Mohammad Iqbal (National Poet) and Sikandar Hayat Khan.',
 								imageLeft: false
 							},
 							{ 
-								title: '5. Shahi Hammam', 
+								title: 'Shahi Hammam', 
 								image: '/images/Shahi Hammam.jpg',
 								// Add 360 image when available: image360: '/images/360/shahi-hammam-360.jpg',
 								description: 'This is a Mughal era public bathhouse, inspired by Turkish designs, also commissioned by Wazir Khan near the Delhi Gate. It provided comprehensive services, including hot, warm, and cold water sections, a sauna, and separate areas for men and women. After being restored in 2013, its beautiful frescoes and hidden water channels were uncovered, making it a key historical site.',
 								imageLeft: true
 							},
 							{ 
-								title: '6. Shalimar Gardens', 
+								title: 'Shalimar Gardens', 
 								image: '/images/Shalimar Gardens.jpg',
 								// Add 360 image when available: image360: '/images/360/shalimar-gardens-360.jpg',
 								description: 'Referred to as Shah Jahan\'s "Heaven on Earth" for its meticulous design. The gardens feature stunning water terraces, numerous fountains, and elegant pavilions. They perfectly embody the symmetry and planning characteristic of Mughal landscape design.',
 								imageLeft: false
 							},
 							{ 
-								title: '7. Lahore Museum', 
+								title: 'Lahore Museum', 
 								image: '/images/Lahore Museum.jpg',
 								// Add 360 image when available: image360: '/images/360/lahore-museum-360.jpg',
 								description: 'A true treasure house preserving rare artifacts from across many eras of history. Its collection spans the Gandhara, Mughal, Sikh, and British periods. It is an essential stop for anyone interested in the cultural heritage of the region.',
 								imageLeft: true
 							},
 							{ 
-								title: '8. Gali Surjan Singh', 
+								title: 'Gali Surjan Singh', 
 								image: '/images/Gali Surjan Singh.jpg',
 								// Add 360 image when available: image360: '/images/360/gali-surjan-singh-360.jpg',
 								description: 'A meticulously restored historic street nestled deep within old Lahore. It is filled with tangible heritage, vibrant culture, and charming architecture. This alley offers a uniquely beautiful setting perfect for photography and exploration.',
 								imageLeft: false
 							},
 							{ 
-								title: '9. Minar-e-Pakistan', 
+								title: 'Minar-e-Pakistan', 
 								image: '/images/Minar-e-Pakistan.jpg',
 								// Add 360 image when available: image360: '/images/360/minar-e-pakistan-360.jpg',
 								description: 'The towering place where the landmark Pakistan Resolution was formally passed in 1940. This monument is an unmistakable and powerful symbol of the nation\'s identity and birth. It is a crucial site of historical and patriotic significance for the country.',
 								imageLeft: true
 							},
 							{ 
-								title: '10. Wahga Border Ceremony', 
+								title: 'Wahga Border Ceremony', 
 								image: '/images/Wahga Border Ceremony.jpg',
 								// Add 360 image when available: image360: '/images/360/wahga-border-360.jpg',
 								description: 'A thrilling and popular daily flag lowering military ceremony between Pakistan and India. The event is a highly energetic spectacle, generating intense national pride and patriotism. It is an unmissable cultural and theatrical experience for visitors to Lahore.',
 								imageLeft: false
 							},
 							{ 
-								title: '11. Data Darbar', 
+								title: 'Data Darbar', 
 								image: '/images/Data Darbar 1.jpg',
 								// Add 360 image when available: image360: '/images/360/data-darbar-360.jpg',
 								description: 'One of the most important and largest Sufi shrines found across all of South Asia. It is a spiritual center rich with deep historical and cultural significance. The shrine draws millions of pilgrims and followers seeking blessings and peace.',
@@ -603,7 +603,7 @@ const LahoreTourPage = () => {
 							<div className="lg:col-span-1">
 								<div className="relative h-40 lg:h-auto rounded-lg overflow-hidden">
 									<Image 
-										src="/images/lahore.jpg"
+										src="/images/Lahore Fort (Shahi Qila) 1-district.jpg"
 										alt="Historical Ruler of Lahore"
 										fill
 										className="object-cover"
@@ -817,39 +817,39 @@ const LahoreTourPage = () => {
 					<div className="space-y-0">
 						{[
 							{
-								question: '1. What is included in the Lahore City Tour?',
+								question: 'What is included in the Lahore City Tour?',
 								answer: 'Our tours include guided visits to major landmarks, transportation, entry assistance and a curated experience based on the theme you choose.'
 							},
 							{
-								question: '2. Can I customize my Lahore tour?',
+								question: 'Can I customize my Lahore tour?',
 								answer: 'Yes! You can add or remove destinations, extend the tour or create a fully custom city tour according to your preference.'
 							},
 							{
-								question: '3. How long is the Lahore City Tour?',
+								question: 'How long is the Lahore City Tour?',
 								answer: 'It depends on the package. We offer half day, full day, and multi day Lahore tours.'
 							},
 							{
-								question: '4. Do you provide pickup and drop-off?',
+								question: 'Do you provide pickup and drop-off?',
 								answer: 'Yes, we provide convenient pickup and drop-off from your hotel or preferred location.'
 							},
 							{
-								question: '5. Are entry tickets included?',
+								question: 'Are entry tickets included?',
 								answer: 'Some tours include tickets, while others may require on spot purchase. Full details are provided before booking.'
 							},
 							{
-								question: '6. Is the tour suitable for families?',
+								question: 'Is the tour suitable for families?',
 								answer: 'Absolutely! Our tours are family friendly and safe for all age groups.'
 							},
 							{
-								question: '7. What should I wear during the tour?',
+								question: 'What should I wear during the tour?',
 								answer: 'Comfortable clothing and shoes are recommended. For mosques or religious sites, modest dressing is appreciated.'
 							},
 							{
-								question: '8. Do you offer food tours?',
+								question: 'Do you offer food tours?',
 								answer: 'Yes, our Lahore Food Street & Androon Lahore Food Tour lets you enjoy authentic Lahori cuisine.'
 							},
 							{
-								question: '9. Is the Wahga Border Parade included?',
+								question: 'Is the Wahga Border Parade included?',
 								answer: 'Yes, it can be added as part of your tour. We provide guided assistance for the ceremony.'
 							},
 						].map((faq, idx) => (
@@ -1006,7 +1006,7 @@ const LahoreTourPage = () => {
 							<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>Connect</h3>
 							<div className="flex gap-3 mb-6">
 								<a 
-									href="https://www.facebook.com/nayetalash" 
+									href="https://www.facebook.com/share/1KDWBkecr5/" 
 									target="_blank" 
 									rel="noopener noreferrer"
 									className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
@@ -1014,7 +1014,7 @@ const LahoreTourPage = () => {
 									<Facebook className="w-5 h-5 text-white" />
 								</a>
 								<a 
-									href="https://www.instagram.com/nayetalash" 
+									href="https://www.instagram.com/nayi.talaash?igsh=OGd4dXViMDBxd3B2" 
 									target="_blank" 
 									rel="noopener noreferrer"
 									className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"

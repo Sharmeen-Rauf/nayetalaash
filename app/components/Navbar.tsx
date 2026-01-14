@@ -133,7 +133,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 							{/* Social Media Icons */}
 							<div className="flex items-center gap-0.5">
 								<a 
-									href="https://www.facebook.com/nayetalash" 
+									href="https://www.facebook.com/share/1KDWBkecr5/" 
 									target="_blank" 
 									rel="noopener noreferrer" 
 									className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
@@ -143,7 +143,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 								</a>
 								
 								<a 
-									href="https://www.instagram.com/nayetalash" 
+									href="https://www.instagram.com/nayi.talaash?igsh=OGd4dXViMDBxd3B2" 
 									target="_blank" 
 									rel="noopener noreferrer" 
 									className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"

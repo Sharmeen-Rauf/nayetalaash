@@ -92,7 +92,7 @@ const IslamabadPage = () => {
 						<div className="flex items-center gap-1.5">
 							<div className="flex items-center gap-0.5">
 								<a 
-									href="https://www.facebook.com/nayetalash" 
+									href="https://www.facebook.com/share/1KDWBkecr5/" 
 									target="_blank" 
 									rel="noopener noreferrer" 
 									className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
@@ -101,7 +101,7 @@ const IslamabadPage = () => {
 									<Facebook className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-[#211f20] group-hover:scale-110 transition-transform stroke-[#211f20]" />
 								</a>
 								<a 
-									href="https://www.instagram.com/nayetalash" 
+									href="https://www.instagram.com/nayi.talaash?igsh=OGd4dXViMDBxd3B2" 
 									target="_blank" 
 									rel="noopener noreferrer" 
 									className="group w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#f99621]/50"
@@ -448,10 +448,10 @@ const IslamabadPage = () => {
 
 					<div className="mt-auto pt-6 border-t border-gray-300">
 						<div className="flex items-center gap-3 mb-3">
-							<a href="https://www.facebook.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+							<a href="https://www.facebook.com/share/1KDWBkecr5/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
 								<Facebook className="w-5 h-5 text-white stroke-[white]" />
 							</a>
-							<a href="https://www.instagram.com/nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
+							<a href="https://www.instagram.com/nayi.talaash?igsh=OGd4dXViMDBxd3B2" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
 								<Instagram className="w-5 h-5 text-white stroke-[white]" />
 							</a>
 							<a href="https://www.youtube.com/@nayetalash" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-[#f99621] to-[#e8851a] flex items-center justify-center hover:scale-110 hover:rotate-3 transition-all duration-300 shadow-lg">
@@ -1028,7 +1028,7 @@ const IslamabadPage = () => {
 							<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>Connect</h3>
 							<div className="flex gap-3 mb-6">
 								<a 
-									href="https://www.facebook.com/nayetalash" 
+									href="https://www.facebook.com/share/1KDWBkecr5/" 
 									target="_blank" 
 									rel="noopener noreferrer"
 									className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
@@ -1036,7 +1036,7 @@ const IslamabadPage = () => {
 									<Facebook className="w-5 h-5 text-white" />
 								</a>
 								<a 
-									href="https://www.instagram.com/nayetalash" 
+									href="https://www.instagram.com/nayi.talaash?igsh=OGd4dXViMDBxd3B2" 
 									target="_blank" 
 									rel="noopener noreferrer"
 									className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"

@@ -1532,7 +1532,7 @@ const AboutPage = () => {
 							<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>Connect</h3>
 							<div className="flex gap-3 mb-4">
 								<a 
-									href="https://www.facebook.com/nayetalash" 
+									href="https://www.facebook.com/share/1KDWBkecr5/" 
 									target="_blank" 
 									rel="noopener noreferrer"
 									className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
@@ -1540,7 +1540,7 @@ const AboutPage = () => {
 									<Facebook className="w-5 h-5 text-white" />
 								</a>
 								<a 
-									href="https://www.instagram.com/nayetalash" 
+									href="https://www.instagram.com/nayi.talaash?igsh=OGd4dXViMDBxd3B2" 
 									target="_blank" 
 									rel="noopener noreferrer"
 									className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-[#f99621] transition-colors"
