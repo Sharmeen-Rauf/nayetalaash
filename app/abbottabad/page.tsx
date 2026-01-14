@@ -74,7 +74,7 @@ const AbbottabadPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/gilgit.jpg')",
+						backgroundImage: "url('/images/Abbottabad District -banner.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
