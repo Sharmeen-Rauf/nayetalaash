@@ -23,15 +23,15 @@ export const metadata: Metadata = {
   creator: "Naye Talaash",
   publisher: "Naye Talaash",
   icons: {
-    icon: "/images/ICON.jpg",
-    shortcut: "/images/ICON.jpg",
-    apple: "/images/ICON.jpg",
+    icon: "/images/icon copy.jpg",
+    shortcut: "/images/icon copy.jpg",
+    apple: "/images/icon copy.jpg",
   },
   openGraph: {
     title: "Naye Talaash",
     description: "Naye Talaash Travel Agency",
     url: "https://nayetalaash.com",
-    images: ["/images/ICON.jpg"],
+    images: ["/images/icon copy.jpg"],
   },
   metadataBase: new URL("https://nayetalaash.com"),
 };
