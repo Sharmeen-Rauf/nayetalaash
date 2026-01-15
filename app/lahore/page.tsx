@@ -1137,19 +1137,30 @@ const LahorePage = () => {
 						<Phone className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
 					</a>
 					
-					{/* WhatsApp Button */}
-					<a
-						href="https://wa.me/923311438251"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/50 group"
-						aria-label="Contact us on WhatsApp"
-						style={{
-							boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
-						}}
-					>
-						<MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
-					</a>
+					{/* WhatsApp Button with Text Bubble */}
+					<div className="relative group">
+						<a
+							href="https://wa.me/923311438251"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] hover:bg-[#128C7E] rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/50"
+							aria-label="Contact us on WhatsApp"
+							style={{
+								boxShadow: '0 4px 20px rgba(37, 211, 102, 0.4)'
+							}}
+						>
+							<MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+						</a>
+						{/* Text Bubble - Always visible, changes text on hover */}
+						<div className="absolute left-full ml-3 top-1/2 -translate-y-1/2 whitespace-nowrap">
+							<div className="bg-white rounded-lg px-4 py-2 shadow-lg relative">
+								<span className="text-sm font-medium text-gray-800 block group-hover:hidden">Contact us</span>
+								<span className="text-sm font-medium text-gray-800 hidden group-hover:block">WhatsApp</span>
+								{/* Arrow pointing to button */}
+								<div className="absolute right-full top-1/2 -translate-y-1/2 w-0 h-0 border-t-8 border-t-transparent border-r-8 border-r-white border-b-8 border-b-transparent"></div>
+							</div>
+						</div>
+					</div>
 					
 					{/* Close/Hide Button */}
 					<button
