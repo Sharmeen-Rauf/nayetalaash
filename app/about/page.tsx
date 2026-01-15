@@ -137,7 +137,7 @@ const AboutPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/Home Banner - Idea.jpg')",
+						backgroundImage: "url('/images/About Us-banner.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -1377,7 +1377,7 @@ const AboutPage = () => {
 					{/* Call-to-Action Button */}
 					<div className="text-center">
 						<Link 
-							href="/#tours"
+							href="/swat-kalam"
 							className="inline-block px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-white"
 							style={{ backgroundColor: primaryOrange }}
 						>
@@ -1482,13 +1482,13 @@ const AboutPage = () => {
 									<Link href="/#home" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Home</Link>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<Link href="/#tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Pakistan Tours</Link>
+									<Link href="/swat-kalam" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Pakistan Tours</Link>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<Link href="/#city-tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>City Tours</Link>
+									<Link href="/lahore-tour" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>City Tours</Link>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<Link href="/#destination" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Destination</Link>
+									<Link href="/astore-diamer" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Destination</Link>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
 									<Link href="/about" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>About Us</Link>
@@ -1583,3 +1583,4 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+

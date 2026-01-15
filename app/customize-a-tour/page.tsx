@@ -289,7 +289,7 @@ const CustomizeTourPage = () => {
 							<Link href="/" className={`px-3 py-2 text-sm font-semibold transition-colors text-[#211f20] hover:text-[#f99621]`}>HOME</Link>
 							{/* PAKISTAN TOURS with Dropdown */}
 							<div className="relative group">
-								<a href="/#tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 text-[#211f20] hover:text-[#f99621]`}>
+								<a href="/swat-kalam" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 text-[#211f20] hover:text-[#f99621]`}>
 									PAKISTAN TOURS
 									<ChevronRight className="w-4 h-4 rotate-90" />
 								</a>
@@ -339,7 +339,7 @@ const CustomizeTourPage = () => {
 							</div>
 							{/* CITY TOURS with Dropdown */}
 							<div className="relative group">
-								<a href="/#city-tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 text-[#211f20] hover:text-[#f99621]`}>
+								<a href="/lahore-tour" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 text-[#211f20] hover:text-[#f99621]`}>
 									CITY TOURS
 									<ChevronRight className="w-4 h-4 rotate-90" />
 								</a>
@@ -366,7 +366,7 @@ const CustomizeTourPage = () => {
 							
 							{/* DESTINATION with Multi-Level Dropdown */}
 							<div className="relative group cursor-pointer">
-								<a href="/#destination" className={`px-3 py-2 text-sm font-semibold transition-colors text-[#211f20] hover:text-[#f99621]`}>
+								<a href="/astore-diamer" className={`px-3 py-2 text-sm font-semibold transition-colors text-[#211f20] hover:text-[#f99621]`}>
 									DESTINATION
 								</a>
 								
@@ -1145,13 +1145,13 @@ const CustomizeTourPage = () => {
 									<Link href="/" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Home</Link>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<a href="/#tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Pakistan Tours</a>
+									<a href="/swat-kalam" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Pakistan Tours</a>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<a href="/#city-tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>City Tours</a>
+									<a href="/lahore-tour" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>City Tours</a>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<a href="/#destination" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Destination</a>
+									<a href="/astore-diamer" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Destination</a>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
 									<Link href="/about" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>About Us</Link>
@@ -1300,4 +1300,5 @@ const CustomizeTourPage = () => {
 };
 
 export default CustomizeTourPage;
+
 
