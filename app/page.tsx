@@ -718,25 +718,67 @@ const Page = () => {
 		{/* Splash Screen */}
 		{(splashVisible && (
 			<div className="fixed inset-0 z-[120]" style={{ backgroundColor: '#2a2a2a', backgroundImage: 'repeating-linear-gradient(45deg, #2a2a2a, #2a2a2a 6px, #333333 6px, #333333 12px)' }}>
-					{/* Decorative wavy lines on left */}
-					<div className="absolute left-0 top-0 w-1/4 h-full opacity-30">
+					{/* Decorative animated wavy lines on left */}
+					<div className="absolute left-0 top-0 w-1/4 h-full opacity-30 overflow-hidden">
 						<svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-							<path d="M0,20 Q25,10 50,20 T100,20" stroke="#888888" strokeWidth="0.5" fill="none" />
-							<path d="M0,40 Q25,30 50,40 T100,40" stroke="#888888" strokeWidth="0.5" fill="none" />
-							<path d="M0,60 Q25,50 50,60 T100,60" stroke="#888888" strokeWidth="0.5" fill="none" />
+							<path className="wavy-line-1" d="M0,20 Q25,10 50,20 T100,20" stroke="#888888" strokeWidth="0.5" fill="none" />
+							<path className="wavy-line-2" d="M0,40 Q25,30 50,40 T100,40" stroke="#888888" strokeWidth="0.5" fill="none" />
+							<path className="wavy-line-3" d="M0,60 Q25,50 50,60 T100,60" stroke="#888888" strokeWidth="0.5" fill="none" />
 						</svg>
 					</div>
 					{/* Center logo */}
 					<div className="absolute inset-0 flex items-center justify-center">
 						<div className="flex flex-col items-center">
-							{/* Orange circle with TALAASH text */}
-							<div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-2xl flex items-center justify-center" style={{ backgroundColor: primaryOrange }}>
-								<span className="text-white font-bold text-2xl sm:text-3xl" style={{ fontFamily: 'Arial, sans-serif' }}>TALAASH</span>
+							{/* Logo image */}
+							<div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-2xl overflow-hidden flex items-center justify-center" style={{ backgroundColor: primaryOrange }}>
+								<Image 
+									src="/images/icon copy.jpg" 
+									alt="Nayi Talaash Logo" 
+									width={160} 
+									height={160} 
+									className="w-full h-full object-cover rounded-full" 
+									priority 
+								/>
 							</div>
 							{/* NAYI TALAASH text below */}
 							<div className="mt-6 text-sm sm:text-base tracking-wider uppercase font-normal" style={{ color: '#ffffff', fontFamily: 'Arial, sans-serif' }}>NAYI TALAASH</div>
 						</div>
 					</div>
+					{/* Animated wavy lines styles */}
+					<style>{`
+						@keyframes waveMotion {
+							0% { transform: translateX(0) translateY(0); }
+							25% { transform: translateX(2px) translateY(-1px); }
+							50% { transform: translateX(0) translateY(-2px); }
+							75% { transform: translateX(-2px) translateY(-1px); }
+							100% { transform: translateX(0) translateY(0); }
+						}
+						@keyframes waveMotion2 {
+							0% { transform: translateX(0) translateY(0); }
+							25% { transform: translateX(-2px) translateY(1px); }
+							50% { transform: translateX(0) translateY(2px); }
+							75% { transform: translateX(2px) translateY(1px); }
+							100% { transform: translateX(0) translateY(0); }
+						}
+						@keyframes waveMotion3 {
+							0% { transform: translateX(0) translateY(0); }
+							25% { transform: translateX(1px) translateY(-2px); }
+							50% { transform: translateX(0) translateY(0); }
+							75% { transform: translateX(-1px) translateY(2px); }
+							100% { transform: translateX(0) translateY(0); }
+						}
+						.wavy-line-1 {
+							animation: waveMotion 3s ease-in-out infinite;
+						}
+						.wavy-line-2 {
+							animation: waveMotion2 3.5s ease-in-out infinite;
+							animation-delay: 0.3s;
+						}
+						.wavy-line-3 {
+							animation: waveMotion3 4s ease-in-out infinite;
+							animation-delay: 0.6s;
+						}
+					`}</style>
 				</div>
 			))}
 
