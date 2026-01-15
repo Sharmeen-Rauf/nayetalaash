@@ -76,7 +76,7 @@ const NeelumValleyPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/azad kashmir.jpg')",
+						backgroundImage: "url('/images/Neelum Valley and Kashmir-banner.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
