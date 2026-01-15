@@ -371,7 +371,7 @@ const KumratValleyPage = () => {
 							},
 							{ 
 								title: 'Kund Banda Meadows and Jahaz Banda Waterfall', 
-								image: '/images/Kumrat Waterfall.jpg',
+								image: '/images/Kund Banda Meadows and Jahaz Banda Waterfall.jpg',
 								description: 'A steep track downhill from Jahaz Banda leads you to the beautiful Kund Banda Meadows, a picture postcard valley. Here you can find the unique Snake Lake and the beautiful Jahaz Banda Waterfall (also called Kund Banda Waterfall). This area is famous for its powerful views of the surrounding mighty mountains.',
 								imageLeft: false
 							},
@@ -411,12 +411,7 @@ const KumratValleyPage = () => {
 								description: 'Dojanga is a beautiful point deeper into the valley, located right after Kala Chashma. As you travel past this point, the valley reveals its most untouched natural treasures. A small wooden bridge takes you across the river and into the thickest, most secluded part of the Kumrat forest.',
 								imageLeft: false
 							},
-							{ 
-								title: 'Badgoi Pass', 
-								image: '/images/Badgoi Pass.jpg',
-								description: 'Badgoi Pass is a high mountain pass that connects Upper Dir (Thal) with Kalam in Swat Valley. The road offers adventurous sights, including Hawa ka Darra and Dasht-e-Laila viewpoints. You must hire a 4*4 jeep from Thal to travel this route.',
-								imageLeft: true
-							},
+
 							{ 
 								title: 'Jamia Masjid Thal Kumrat', 
 								image: '/images/Jamia Masjid Thal Kumrat.jpg',
@@ -804,15 +799,12 @@ const KumratValleyPage = () => {
 									<a href="/#city-tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>City Tours</a>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<a href="/#group-tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Group Tour</a>
-								</li>
-								<li className="border-b border-gray-200 pb-2">
 									<a href="/#destination" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Destination</a>
 								</li>
-								<li className="pb-2">
+								<li className="border-b border-gray-200 pb-2">
 									<a href="/about" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>About Us</a>
 								</li>
-								<li className="pb-2">
+								<li className="border-b border-gray-200 pb-2">
 									<a href="/contact" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Contact Us</a>
 								</li>
 							</ul>
@@ -823,22 +815,19 @@ const KumratValleyPage = () => {
 							<h3 className="font-bold mb-4 text-base" style={{ color: secondaryBlack }}>What We Do</h3>
 							<ul className="space-y-2">
 								<li className="border-b border-gray-200 pb-2">
-									<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Custom Tour Packages</a>
+									<Link href="/customize-a-tour" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Custom Tour Packages</Link>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Family Tour Packages</a>
+									<Link href="/group-tours" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Family Tour Packages</Link>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Honeymoon Trips</a>
+									<Link href="/customize-a-tour" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Honeymoon Trips</Link>
 								</li>
 								<li className="border-b border-gray-200 pb-2">
-									<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Group Tours</a>
-								</li>
-								<li className="border-b border-gray-200 pb-2">
-									<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Adventure Tours</a>
+									<Link href="/skardu" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Adventure Tours</Link>
 								</li>
 								<li className="pb-2">
-									<a href="#" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Cultural Experiences</a>
+									<Link href="/lahore-tour" className="text-sm transition-colors block" style={{ color: `${secondaryBlack}70` }} onMouseEnter={(e) => e.currentTarget.style.color = primaryOrange} onMouseLeave={(e) => e.currentTarget.style.color = `${secondaryBlack}70`}>Cultural Experiences</Link>
 								</li>
 							</ul>
 						</div>
