@@ -282,7 +282,7 @@ const GhizerPage = () => {
 											{item.title}
 										</h3>
 										<div className="w-12 h-0.5 bg-white mx-auto mb-3"></div>
-										<p className="text-sm md:text-base opacity-90 max-w-xs">
+										<p className="text-sm md:text-base opacity-90 max-w-xs mx-auto text-center">
 											{item.description}
 										</p>
 									</div>
