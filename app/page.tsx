@@ -717,33 +717,26 @@ const Page = () => {
 			
 		{/* Splash Screen */}
 		{(splashVisible && (
-			<div className="fixed inset-0 z-[120]" style={{ backgroundColor: isLight ? 'white' : secondaryBlack }}>
-					{/* Heritage pattern background */}
-					<div className="absolute inset-0 opacity-20" style={{ backgroundImage: `repeating-linear-gradient(45deg, ${isLight ? '#e5e7eb' : '#0b0b0b'}, ${isLight ? '#e5e7eb' : '#0b0b0b'} 6px, transparent 6px, transparent 14px), radial-gradient(circle at 20% 30%, ${primaryOrange}22, transparent 40%), radial-gradient(circle at 80% 70%, ${primaryOrange}22, transparent 40%)` }} />
-					{/* Ornamental stroke drawing */}
-					<svg className="absolute inset-0 w-full h-full" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-						<g fill="none" stroke={isLight ? '#0f172a' : '#ffffff'} strokeWidth="1.5" opacity="0.25">
-							<path className="heritage-stroke" d="M100,450 C220,320 380,320 500,450 C620,580 780,580 900,450 C1020,320 1180,320 1300,450" />
-							<path className="heritage-stroke" d="M140,520 C260,390 360,390 520,520 C680,650 840,650 1000,520 C1160,390 1260,390 1320,520" />
-							<path className="heritage-stroke" d="M120,380 C260,260 420,260 560,380 C700,500 860,500 1000,380 C1140,260 1300,260 1380,380" />
-						</g>
-					</svg>
+			<div className="fixed inset-0 z-[120]" style={{ backgroundColor: '#2a2a2a', backgroundImage: 'repeating-linear-gradient(45deg, #2a2a2a, #2a2a2a 6px, #333333 6px, #333333 12px)' }}>
+					{/* Decorative wavy lines on left */}
+					<div className="absolute left-0 top-0 w-1/4 h-full opacity-30">
+						<svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+							<path d="M0,20 Q25,10 50,20 T100,20" stroke="#888888" strokeWidth="0.5" fill="none" />
+							<path d="M0,40 Q25,30 50,40 T100,40" stroke="#888888" strokeWidth="0.5" fill="none" />
+							<path d="M0,60 Q25,50 50,60 T100,60" stroke="#888888" strokeWidth="0.5" fill="none" />
+						</svg>
+					</div>
 					{/* Center logo */}
 					<div className="absolute inset-0 flex items-center justify-center">
 						<div className="flex flex-col items-center">
-							<div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full shadow-2xl flex items-center justify-center logo-float" style={{ backgroundColor: primaryOrange }}>
-								<Image src={logoImage} alt="Nayi Talaash Logo" width={144} height={144} className="w-full h-full object-cover rounded-full" priority />
+							{/* Orange circle with TALAASH text */}
+							<div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full shadow-2xl flex items-center justify-center" style={{ backgroundColor: primaryOrange }}>
+								<span className="text-white font-bold text-2xl sm:text-3xl" style={{ fontFamily: 'Arial, sans-serif' }}>TALAASH</span>
 							</div>
-							<div className="mt-5 text-xs tracking-[0.35em] uppercase" style={{ color: isLight ? secondaryBlack : '#ffffff' }}>Nayi Talaash</div>
+							{/* NAYI TALAASH text below */}
+							<div className="mt-6 text-sm sm:text-base tracking-wider uppercase font-normal" style={{ color: '#ffffff', fontFamily: 'Arial, sans-serif' }}>NAYI TALAASH</div>
 						</div>
 					</div>
-					{/* Local styles for stroke animation */}
-					<style>{`
-						.heritage-stroke { stroke-dasharray: 900; stroke-dashoffset: 900; animation: heritageDash 1.4s ease-out forwards; }
-						.heritage-stroke:nth-child(2) { animation-delay: .15s; }
-						.heritage-stroke:nth-child(3) { animation-delay: .3s; }
-						@keyframes heritageDash { to { stroke-dashoffset: 0; } }
-					`}</style>
 				</div>
 			))}
 
@@ -1106,7 +1099,6 @@ const Page = () => {
 							}}
 						>
 							<span className="relative z-10 flex items-center gap-2">
-								<MessageCircle className="w-4 h-4" />
 								Start Your Journey
 								<ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
 							</span>

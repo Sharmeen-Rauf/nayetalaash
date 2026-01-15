@@ -326,16 +326,6 @@ const SkarduPage = () => {
 						</div>
 					</div>
 
-					{/* Starting Point Flexibility */}
-					<div className="max-w-4xl mx-auto mb-8">
-						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
-							Starting Point Flexibility
-						</h3>
-						<p className="leading-normal text-left" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-							We offer tours starting from: Lahore, Karachi, and Islamabad. We can also customize your tour to start from any other city in Pakistan
-						</p>
-					</div>
-
 					{/* Swat Tour Packages From Major Cities Section */}
 					<div className="max-w-4xl mx-auto">
 						<h3 className="text-xl md:text-2xl font-bold mb-4 text-center" style={{ color: secondaryBlack, fontSize: '24px' }}>
