@@ -213,10 +213,10 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 							
 							{/* PAKISTAN TOURS with Dropdown */}
 							<div className="relative group">
-								<a href="#tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 ${getTextColor()} hover:text-[#f99621]`}>
+								<Link href="/swat-kalam" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 ${getTextColor()} hover:text-[#f99621]`}>
 									PAKISTAN TOURS
 									<ChevronRight className="w-4 h-4 rotate-90" />
-								</a>
+								</Link>
 								
 								<div className="absolute top-full left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
 									<div className="bg-white border border-gray-200 shadow-xl rounded-md overflow-hidden">
@@ -263,10 +263,10 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 
 							{/* CITY TOURS with Dropdown */}
 							<div className="relative group">
-								<a href="#city-tours" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 ${getTextColor()} hover:text-[#f99621]`}>
+								<Link href="/lahore-tour" className={`px-3 py-2 text-sm font-semibold transition-colors relative flex items-center gap-1 ${getTextColor()} hover:text-[#f99621]`}>
 									CITY TOURS
 									<ChevronRight className="w-4 h-4 rotate-90" />
-								</a>
+								</Link>
 								
 								<div className="absolute top-full left-0 mt-1 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 pointer-events-none group-hover:pointer-events-auto z-50">
 									<div className="bg-white border border-gray-200 shadow-xl rounded-md overflow-hidden">
@@ -315,44 +315,49 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 													<h3 className="text-xs font-bold text-[#211f20] uppercase tracking-wider mb-4 whitespace-nowrap">Pakistani Regions</h3>
 													<ul className="space-y-1">
 														<li className="group/item">
-															<button
+															<Link
+																href="/astore-diamer"
 																onMouseEnter={() => setSelectedRegion('gilgit')}
 																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
 															>
 																Gilgit Baltistan
-															</button>
+															</Link>
 														</li>
 														<li className="group/item">
-															<button
+															<Link
+																href="/abbottabad"
 																onMouseEnter={() => setSelectedRegion('kpk')}
 																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
 															>
 																KPK / Galyat
-															</button>
+															</Link>
 														</li>
 														<li className="group/item">
-															<button
+															<Link
+																href="/bahawalpur"
 																onMouseEnter={() => setSelectedRegion('punjab')}
 																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
 															>
 																Punjab
-															</button>
+															</Link>
 														</li>
 														<li className="group/item">
-															<button
+															<Link
+																href="/hyderabad"
 																onMouseEnter={() => setSelectedRegion('sindh')}
 																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
 															>
 																Sindh
-															</button>
+															</Link>
 														</li>
 														<li className="group/item">
-															<button
+															<Link
+																href="/chaghi"
 																onMouseEnter={() => setSelectedRegion('balochistan')}
 																className="block w-full text-left px-3 py-2 text-sm font-semibold text-[#211f20] hover:bg-[#f99621] hover:text-white transition-colors rounded whitespace-nowrap"
 															>
 																Balochistan
-															</button>
+															</Link>
 														</li>
 													</ul>
 												</div>
@@ -497,13 +502,15 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 						
 						{/* PAKISTAN TOURS with Dropdown */}
 						<div>
-							<button
-								onClick={() => setMobileDropdownOpen(mobileDropdownOpen === 'pakistan-tours' ? null : 'pakistan-tours')}
-								className="w-full flex items-center justify-between px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg"
-							>
-								<span>PAKISTAN TOURS</span>
-								<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'pakistan-tours' ? 'rotate-180' : ''}`} />
-							</button>
+							<div className="w-full flex items-center justify-between px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg">
+								<Link href="/swat-kalam" className="flex-1" onClick={() => setIsMenuOpen(false)}>PAKISTAN TOURS</Link>
+								<button
+									onClick={() => setMobileDropdownOpen(mobileDropdownOpen === 'pakistan-tours' ? null : 'pakistan-tours')}
+									className="p-1"
+								>
+									<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'pakistan-tours' ? 'rotate-180' : ''}`} />
+								</button>
+							</div>
 							{mobileDropdownOpen === 'pakistan-tours' && (
 								<div className="pl-4 pr-2 py-2 space-y-1">
 									<Link href="/swat-kalam" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
@@ -533,13 +540,15 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 
 						{/* CITY TOURS with Dropdown */}
 						<div>
-							<button
-								onClick={() => setMobileDropdownOpen(mobileDropdownOpen === 'city-tours' ? null : 'city-tours')}
-								className="w-full flex items-center justify-between px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg"
-							>
-								<span>CITY TOURS</span>
-								<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'city-tours' ? 'rotate-180' : ''}`} />
-							</button>
+							<div className="w-full flex items-center justify-between px-4 py-3 text-lg font-semibold text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg">
+								<Link href="/lahore-tour" className="flex-1" onClick={() => setIsMenuOpen(false)}>CITY TOURS</Link>
+								<button
+									onClick={() => setMobileDropdownOpen(mobileDropdownOpen === 'city-tours' ? null : 'city-tours')}
+									className="p-1"
+								>
+									<ChevronDown className={`w-5 h-5 transition-transform duration-300 ${mobileDropdownOpen === 'city-tours' ? 'rotate-180' : ''}`} />
+								</button>
+							</div>
 							{mobileDropdownOpen === 'city-tours' && (
 								<div className="pl-4 pr-2 py-2 space-y-1">
 									<Link href="/karachi-tour" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>
@@ -568,7 +577,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 							{mobileDropdownOpen === 'destination' && (
 								<div className="pl-4 pr-2 py-2 pb-6 space-y-1 max-h-[70vh] overflow-y-auto overscroll-contain" style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'thin' }}>
 									{/* Gilgit Baltistan */}
-									<p className="px-4 py-2 text-sm font-bold text-[#f99621] uppercase">Gilgit Baltistan</p>
+									<Link href="/astore-diamer" className="block px-4 py-2 text-sm font-bold text-[#f99621] uppercase hover:text-[#e8851a] transition-colors" onClick={() => setIsMenuOpen(false)}>Gilgit Baltistan</Link>
 									<Link href="/astore-diamer" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Astore Diamer District</Link>
 									<Link href="/ghizer" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Ghizer District</Link>
 									<Link href="/gilgit-district" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Gilgit District</Link>
@@ -577,7 +586,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 									<Link href="/skardu-kharmang" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Skardu Kharmang District</Link>
 									
 									{/* KPK / Galyat */}
-									<p className="px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase">KPK / Galyat</p>
+									<Link href="/abbottabad" className="block px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase hover:text-[#e8851a] transition-colors" onClick={() => setIsMenuOpen(false)}>KPK / Galyat</Link>
 									<Link href="/abbottabad" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Abbottabad District</Link>
 									<Link href="/chitral" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Chitral District</Link>
 									<Link href="/malakand" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Malakand District</Link>
@@ -586,7 +595,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 									<Link href="/upper-dir" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Upper Dir District</Link>
 									
 									{/* Punjab */}
-									<p className="px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase">Punjab</p>
+									<Link href="/bahawalpur" className="block px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase hover:text-[#e8851a] transition-colors" onClick={() => setIsMenuOpen(false)}>Punjab</Link>
 									<Link href="/bahawalpur" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Bahawalpur District</Link>
 									<Link href="/chakwal" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Chakwal District</Link>
 									<Link href="/islamabad" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Islamabad District</Link>
@@ -595,7 +604,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 									<Link href="/rawalpindi" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Rawalpindi District</Link>
 									
 									{/* Sindh */}
-									<p className="px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase">Sindh</p>
+									<Link href="/hyderabad" className="block px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase hover:text-[#e8851a] transition-colors" onClick={() => setIsMenuOpen(false)}>Sindh</Link>
 									<Link href="/hyderabad" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Hyderabad District</Link>
 									<Link href="/jamshoro" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Jamshoro District</Link>
 									<Link href="/karachi-thatta" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Karachi Thatta District</Link>
@@ -604,7 +613,7 @@ const Navbar: React.FC<NavbarProps> = ({ isLight: propIsLight, forceLight = fals
 									<Link href="/tharparkar" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Tharparkar District</Link>
 									
 									{/* Balochistan */}
-									<p className="px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase">Balochistan</p>
+									<Link href="/chaghi" className="block px-4 py-2 mt-4 text-sm font-bold text-[#f99621] uppercase hover:text-[#e8851a] transition-colors" onClick={() => setIsMenuOpen(false)}>Balochistan</Link>
 									<Link href="/chaghi" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Chaghi District</Link>
 									<Link href="/gwadar" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Gwadar District</Link>
 									<Link href="/kalat" className="block px-4 py-2.5 text-base font-medium text-[#211f20] hover:text-[#f99621] hover:bg-[#f99621]/5 transition-all rounded-lg" onClick={() => setIsMenuOpen(false)}>Kalat District</Link>
