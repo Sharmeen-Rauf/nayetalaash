@@ -73,7 +73,7 @@ const GhizerPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/Ghizer-pk-again-banner.jpg')",
+						backgroundImage: "url('/images/Ghizer-banner-again-notpixel.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
@@ -509,13 +509,13 @@ const GhizerPage = () => {
 							<h2 className="text-3xl md:text-4xl font-bold" style={{ color: primaryOrange }}>Plan your trips with us</h2>
 						</div>
 						<div className="px-4 md:px-6">
-							<button
-								onClick={handleWhatsAppClick}
-								className="px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
+							<Link
+								href="/customize-a-tour"
+								className="inline-block px-8 py-4 font-bold rounded-lg transition-all transform hover:scale-110 shadow-lg hover:shadow-xl"
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 							>
-								Get Your Free Quote Now!
-							</button>
+								Customize A Tour
+							</Link>
 						</div>
 					</div>
 				</div>
