@@ -474,7 +474,7 @@ const ChaghiPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/Chaghi-banner.jpg')",
+						backgroundImage: "url('/images/Chaghi-landscape-banner-notpixel.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>

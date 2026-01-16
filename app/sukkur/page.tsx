@@ -474,7 +474,7 @@ const SukkurPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/Sukkur-banner.jpg')",
+						backgroundImage: "url('/images/Sukkur-landscape-banner-notpixel.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>

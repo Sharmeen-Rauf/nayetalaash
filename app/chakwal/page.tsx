@@ -474,7 +474,7 @@ const ChakwalPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/Chakwal-banner.jpg')",
+						backgroundImage: "url('/images/Chakwal-landscape-banner-notpixel.jpg')",
 						filter: "brightness(0.3)",
 					}}
 				></div>
