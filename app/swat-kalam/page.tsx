@@ -447,7 +447,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Badgoi Pass', 
-								image: '/images/Badgoi Pass-swatpage.jpg',
+								image: '/images/Badgoi Pass.jpg',
 								description: 'Badgoi is a high mountain pass that links Kalam with the Upper Dir District. It leads directly to Thal in Upper Dir, and you\'ll pass through "heavenly places" like Hawa ka Darra. This scenic jeep journey from Kalam or Kumrat takes about 4–5 hours.',
 								imageLeft: false
 							},
