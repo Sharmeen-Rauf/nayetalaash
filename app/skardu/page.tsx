@@ -486,7 +486,7 @@ const SkarduPage = () => {
 							},
 							{ 
 								title: 'Organic Village', 
-								image: '/images/Organic Village-skardu.jpg',
+								image: '/images/organic village new.jpg',
 								description: 'Nansoq Village is known as the Organic Village because its residents maintain the ancient, sustainable lifestyle of the Balti people. Everything, from farming to house building, shows how people lived long ago. It is located right next to the Kharpocho Fort, offering a beautiful glimpse into the past.',
 								imageLeft: false
 							},
