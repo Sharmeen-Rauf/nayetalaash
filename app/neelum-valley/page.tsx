@@ -404,7 +404,7 @@ const NeelumValleyPage = () => {
 							},
 							{ 
 								title: 'Chitta Katha Lake', 
-								image: '/images/Shounter Valley.jpg',
+								image: '/images/Chitta Katha Lake.jpg',
 								description: 'This beautiful natural glacial lake is located at a high elevation of about 13,500 feet in Shounter Valley. It sits majestically shadowed by the mighty Hari Parbat mountain. Like Sharda, this place is considered sacred by Hindus, and reaching it involves a two-day trek from Hoz Village.',
 								imageLeft: false
 							},
