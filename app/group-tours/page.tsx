@@ -65,8 +65,7 @@ const GroupToursPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed">
-							Explore Pakistan's diverse history, culture, and nature with our comprehensive group packages that cover the North, South, and Central regions.
-						</p>
+						Explore Pakistan’s rich history, culture and landscapes with our group packages covering the North, South, and Central regions.						</p>
 					</div>
 				</div>
 			</section>
