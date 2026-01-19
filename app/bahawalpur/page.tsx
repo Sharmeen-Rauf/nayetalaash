@@ -726,7 +726,7 @@ const BahawalpurPage = () => {
 							{
 								title: 'Southern Punjab Heritage Trail',
 								description: 'A grand cultural loop connecting the palaces of Bahawalpur with the mystic Sufi shrines of Multan and Harappa.',
-								image: '/images/card 3 bahawalpu.jpg',
+								image: '/images/Southern Punjab Heritage.jpg',
 								days: '6 Days',
 								destinations: '4 Destinations'
 							}
@@ -804,7 +804,7 @@ const BahawalpurPage = () => {
 							},
 							{
 								description: 'The district is also the gateway to the Rohi (Cholistan Desert). Every February, the silence of the desert is broken by the roar of engines during the Cholistan Jeep Rally, Pakistan\'s biggest off road motorsport event. Culturally, the region is famous for its clay pottery, hand embroidered Ajraks, and Khussa (traditional footwear).',
-								image: '/images/bahawalpur 2.jpg',
+								image: '/images/bahawalpur gateway to the Rohi (Cholistan Desert).jpg',
 								imageLeft: false
 							},
 							{

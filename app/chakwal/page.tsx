@@ -712,7 +712,7 @@ const ChakwalPage = () => {
 							{
 								title: 'Chakwal Highlights Day Trip',
 								description: 'A fast paced tour from Islamabad or Lahore covering Kallar Kahar, Katas Raj, and the Khewra Salt Mines gateway.',
-								image: '/images/card 1 chakwal.jpg',
+								image: '/images/Katas Raj Temples new.jpg',
 								days: '1 Day',
 								destinations: '3 Destinations'
 							},
@@ -726,7 +726,7 @@ const ChakwalPage = () => {
 							{
 								title: 'Salt Range Adventure Trail',
 								description: 'A comprehensive exploration including Swaik Lake, Chinji National Park for wildlife, and the historic Malot Fort.',
-								image: '/images/card 3 chakwal.jpg',
+								image: '/images/salt range new card.jpg',
 								days: '3 Days',
 								destinations: '5 Destinations'
 							}

@@ -726,7 +726,7 @@ const UpperDirPage = () => {
 							{
 								title: 'The Grand Dir Chitral Traverse',
 								description: 'A cross district journey starting in Kumrat, crossing into Chitral via the Lowari Tunnel for a complete cultural and mountain experience.',
-								image: '/images/card 3 upper dir.jpg',
+								image: '/images/dir chitral new.jpg',
 								days: '7 Days',
 								destinations: '5 Destinations'
 							}
