@@ -137,7 +137,7 @@ const GhizerPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/slider-1-ghizer.jpg',
+										'/images/ghizer district new image.jpg',
 										'/images/slide 2-ghizer.jpg',
 										'/images/slide 3-ghizer.jpg',
 										'/images/slide 4-ghizer.jpg'
