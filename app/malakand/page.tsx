@@ -712,14 +712,14 @@ const MalakandPage = () => {
 							{
 								title: 'Swat & Malakand Gateway',
 								description: 'A quick getaway covering the Malakand Pass, the Spillway Falls, and the entrance to the lower Swat Valley.',
-								image: '/images/card malakand.jpg',
+								image: '/images/Malakand Pass & Viewpoint new 2 (1).jpg',
 								days: '3 Days',
 								destinations: '3 Destinations'
 							},
 							{
 								title: 'KPK Heritage & Nature Trail',
 								description: 'Combines the historical sites of Malakand and Chakdara with the lush green meadows of the lower Dir region.',
-								image: '/images/card 2 malakand.jpg',
+								image: '/images/Malakand 3 Spillway Waterfall new.jpg',
 								days: '5 Days',
 								destinations: '4 Destinations'
 							},

@@ -804,12 +804,12 @@ const ChitralPage = () => {
 							},
 							{
 								description: 'The district is towered over by the Hindu Kush range, which means "Hindu Slayer" in Persian, a reflection of the challenges of traversing its high peaks. For nature lovers, the Chitral Gol National Park is a must visit, established to protect the endangered Markhor (Pakistan\'s national animal), along with snow leopards and various bird species.',
-								image: '/images/chitral 2.jpg',
+								image: '/images/hindu kash new.jpg',
 								imageLeft: false
 							},
 							{
 								description: 'Access to Chitral has been dramatically improved by the Lowari Tunnel, which keeps the route open for most of the year, connecting it to the rest of Khyber Pakhtunkhwa. Whether you seek ancient traditions in the Kalash Valleys, the thrill of mountain polo, or simply spectacular views of the Hindu Kush, Chitral offers a truly off the beaten path experience.',
-								image: '/images/chitral.jpg',
+								image: '/images/chitral-Access to Chitral has been dramatically .jpg',
 								imageLeft: true
 							}
 						].map((item, idx) => (

@@ -538,7 +538,7 @@ const MansehraPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/slider 1 mansehra.jpg',
+										'/images/mansehra new (1).jpg',
 										'/images/slider 2 mansehra.jpg',
 										'/images/slider 3 mansehra.jpg',
 										'/images/slider 4 mansehra.jpg'
@@ -712,7 +712,7 @@ const MansehraPage = () => {
 							{
 								title: 'Siran Valley Quick Retreat',
 								description: 'A peaceful escape focusing on the meadows of Mundi and the serene banks of the Siran River.',
-								image: '/images/card 1 mansehra.jpg',
+								image: '/images/siran valley new.jpg',
 								days: '3 Days',
 								destinations: '3 Destinations'
 							},

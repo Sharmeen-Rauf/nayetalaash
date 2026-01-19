@@ -499,8 +499,7 @@ const PeshawarPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Walk through the 2,000 year old Qissa Khwani Bazaar and discover the architectural beauty of the Mahabat Khan Mosque in the heart of the "City of Flowers."
-						</p>
+						Walk through the 2,000 year old Qissa Khwani Bazaar and admire the architectural beauty of the Mahabat Khan Mosque in the heart of the City of Flowers						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
