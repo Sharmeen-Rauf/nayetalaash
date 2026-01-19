@@ -135,7 +135,7 @@ const NaranKaghanPage = () => {
 						const allPackages = [
 							{ 
 								title: '4 Days: Naran, Lalazar Meadows, and Babusar Top Climb',
-								image: '/images/package 1 naran.jpg'
+								image: '/images/card new-naran tour page.jpg'
 							},
 							{ 
 								title: '4 Days: Naran, Babusar Top, and Shogran Valley Explorer',

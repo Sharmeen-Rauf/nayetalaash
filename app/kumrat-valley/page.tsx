@@ -417,7 +417,7 @@ const KumratValleyPage = () => {
 							},
 							{ 
 								title: 'Thalo Pass', 
-								image: '/images/Thalo Pass.jpg',
+								image: '/images/thalo pass new-image.jpg',
 								description: 'Thalo Pass (or Thallo Pass) is a high mountain pass that connects Kumrat Valley with Chitral Valley. Reaching it requires a challenging, long 4-5 day trek for serious adventurers. Along this long route, trekkers will see several stunning glacial lakes, including Shahzore Lake and Bashqar Lake.',
 								imageLeft: false
 							},

@@ -629,7 +629,7 @@ const JamshoroPage = () => {
 								description: 'Visit the largest freshwater lake in Pakistan. Take a boat ride to see the unique floating villages of the Mohana tribe, whose lifestyle and ancient fishing techniques have remained unchanged for millennia.'
 							},
 							{
-								image: '/images/Institute of Sindhology.jpeg',
+								image: '/images/Institute of Sindhology (1).jpeg',
 								title: 'Institute of Sindhology:',
 								description: 'Step into a world class museum at the University of Sindh. It features a stunning collection of Sindhi handicrafts, musical instruments, and wax dioramas that bring the province\'s history to life.'
 							},
@@ -804,7 +804,7 @@ const JamshoroPage = () => {
 							},
 							{
 								description: 'Economically, the district is a powerhouse for the province, housing the Nooriabad and Kotri Industrial Estates. It is also a critical energy corridor, featuring major power plants and the Lakhra Coal Mines. Despite this industrial growth, Jamshoro remains a haven for natural beauty, with the Kirthar National Park partially extending into its western boundaries. This range provides a stark, mountainous backdrop to the riverine plains, offering sanctuary to rare wildlife like the Sindh Ibex and Urial.',
-								image: '/images/jamshoro 2.jpg',
+								image: '/images/Kotri Barrage & Bridge (1).jpg',
 								imageLeft: false
 							},
 							{
