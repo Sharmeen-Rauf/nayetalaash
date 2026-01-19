@@ -431,18 +431,7 @@ const KumratValleyPage = () => {
 								}}
 							>
 								{/* Image */}
-								<div 
-									className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}
-									style={{
-										opacity: visibleSections.has('destinations') ? 1 : 0,
-										transform: visibleSections.has('destinations') 
-											? 'translateX(0)' 
-											: destination.imageLeft 
-												? 'translateX(-60px)' 
-												: 'translateX(60px)',
-										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.1}s, transform 0.8s ease-out ${idx * 0.15 + 0.1}s`
-									}}
-								>
+								<div className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
 									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
 										<Image 
 											src={destination.image}
@@ -454,18 +443,7 @@ const KumratValleyPage = () => {
 								</div>
 								
 								{/* Text Content */}
-								<div 
-									className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}
-									style={{
-										opacity: visibleSections.has('destinations') ? 1 : 0,
-										transform: visibleSections.has('destinations') 
-											? 'translateX(0)' 
-											: destination.imageLeft 
-												? 'translateX(60px)' 
-												: 'translateX(-60px)',
-										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.2}s, transform 0.8s ease-out ${idx * 0.15 + 0.2}s`
-									}}
-								>
+								<div className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
 									<div className="max-w-[80%] mx-auto">
 										<h3 className={`text-xl md:text-2xl font-bold mb-3 capitalize ${destination.imageLeft ? 'text-left' : 'text-right'}`} style={{ color: secondaryBlack }}>
 											{destination.title}
