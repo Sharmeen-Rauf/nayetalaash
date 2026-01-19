@@ -712,21 +712,21 @@ const SukkurPage = () => {
 							{
 								title: 'Sukkur Riverfront Tour',
 								description: 'A focused day trip covering the Barrage, both Bridges, Masoom Shah Minaret, and a sunset boat ride.',
-								image: '/images/card 1 sukkur.jpg',
+								image: '/images/sukkar card 1 (1).jpg',
 								days: '1 Day',
 								destinations: '4 Destinations'
 							},
 							{
 								title: 'The Indus Heritage Trail',
 								description: 'Includes a trip to Sadh Belo, the ancient ruins of Aror, and the nearby royal Kot Diji Fort in Khairpur.',
-								image: '/images/card 2 sukkur.jpg',
+								image: '/images/sukkar card 2 (1).jpg',
 								days: '3 Days',
 								destinations: '6 Destinations'
 							},
 							{
 								title: 'Upper Sindh Grand Loop',
 								description: 'A comprehensive journey connecting Sukkur with the archaeological wonders of Mohenjo Daro and the havelis of Shikarpur.',
-								image: '/images/card 3 sukkur.jpg',
+								image: '/images/sukkar card 3 (1).jpg',
 								days: '5 Days',
 								destinations: '8 Destinations'
 							}
