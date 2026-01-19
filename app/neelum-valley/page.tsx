@@ -362,7 +362,7 @@ const NeelumValleyPage = () => {
 							},
 							{ 
 								title: 'Arangkel', 
-								image: '/images/Arangkel-neelumandmureepage.jpg',
+								image: '/images/arangkel new-image.jpg',
 								description: 'Arangkel is a stunning hilltop meadow and village crowned by thick forests and snow-capped mountains. It is accessed by a hour trek from Kel Village or you can take an exciting Doli (cable car) ride to make the hike easier. This beautiful spot is right on the border with Indian-Occupied Kashmir and offers plenty of accommodation for tourists.',
 								imageLeft: true
 							},
@@ -564,7 +564,7 @@ const NeelumValleyPage = () => {
 								description: 'Enjoy peaceful boat rides on beautiful lakes surrounded by mountains and lush greenery'
 							},
 							{
-								image: '/images/Arangkel-neelumandmureepage.jpg',
+								image: '/images/arangkel new-image.jpg',
 								title: 'Hilltop & Valley Sightseeing',
 								description: 'Explore breathtaking viewpoints, green valleys, and charming hilltop locations'
 							},
