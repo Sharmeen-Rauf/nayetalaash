@@ -499,7 +499,7 @@ const HunzaDistrictPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history and hospitality.
+							Discover the majestic beauty of Attabad Lake and the legendary Rakaposhi, trekking through valleys known for their history.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
