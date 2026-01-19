@@ -141,7 +141,7 @@ const AbbottabadPage = () => {
 										'/images/slider 1 abbottabad.jpg',
 										'/images/slider 2 abbottabad.jpg',
 										'/images/slider 3 abbottabad.jpg',
-										'/images/slider 4 abbottabad.jpg'
+										'/images/abbotabad-slider 4rthnew.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -326,7 +326,7 @@ const AbbottabadPage = () => {
 							{
 								title: 'Kaghan & Galiyat Combo',
 								description: 'A perfect week-long trip linking the accessible hill stations of Abbottabad with the high altitude lakes and passes of the Naran Kaghan Valley.',
-								image: '/images/card 3 abbottabad.jpg',
+								image: '/images/kaghan card new-image.jpg',
 								days: '7 Days',
 								destinations: '4 Destinations'
 							}
