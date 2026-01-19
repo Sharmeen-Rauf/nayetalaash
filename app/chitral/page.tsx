@@ -541,7 +541,7 @@ const ChitralPage = () => {
 										'/images/slider 1 Chitral District.jpg',
 										'/images/slider 2 Chitral District.jpg',
 										'/images/slider 3 Chitral District.jpg',
-										'/images/slider 4 Chitral District.jpg'
+										'/images/chitral slider new.jpg'
 									].map((imageSrc, index) => (
 										<div
 											key={index}
@@ -719,7 +719,7 @@ const ChitralPage = () => {
 							{
 								title: 'Chitral & Galiyat Combo Tour',
 								description: 'A comprehensive trip combining the cultural sites and high passes of Chitral with the accessible hill stations of the Galiyat region (via Lowari Tunnel).',
-								image: '/images/card 2 chitral.jpg',
+								image: '/images/chitral and galiyat new.jpg',
 								days: '7 Days',
 								destinations: '4 Destinations'
 							},
