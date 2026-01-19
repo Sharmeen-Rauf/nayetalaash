@@ -453,7 +453,7 @@ const SwatKalamPage = () => {
 							},
 							{ 
 								title: 'Shangla Top', 
-								image: '/images/Shangla Top.jpg',
+								image: '/images/Shangla Top-new-image.jpg',
 								description: 'This is a breathtaking hilltop destination located on the N90 Highway, about 20 km from Khwazakhela. It connects the region of Kohistan with Swat Valley, offering amazing mountain scenery. The best time to visit and enjoy the views is usually during spring and summer.',
 								imageLeft: true
 							},

@@ -109,8 +109,7 @@ const LahoreTourPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed">
-							Explore the ancient Walled City, taste the famous Food Street flavors, and feel the history of the Mughals. Your unforgettable Pakistan adventure starts here.
-						</p>
+						Explore the historic Walled City, savor iconic Food Street flavors, and relive the Mughal legacy your unforgettable Pakistan journey starts here.						</p>
 						<div className="mt-8">
 							<button 
 								onClick={handleWhatsAppClick}
