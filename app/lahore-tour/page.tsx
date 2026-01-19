@@ -377,7 +377,7 @@ const LahoreTourPage = () => {
 										transition: `opacity 0.8s ease-out ${idx * 0.15 + 0.1}s, transform 0.8s ease-out ${idx * 0.15 + 0.1}s`
 									}}
 								>
-									<div className="relative h-40 lg:h-56 max-w-[80%] mx-auto overflow-hidden rounded-lg">
+									<div className="relative h-40 lg:h-80 w-full max-w-full lg:max-w-full mx-auto overflow-hidden rounded-lg">
 										<Image
 											src={destination.image}
 											alt={destination.title}
@@ -600,7 +600,7 @@ const LahoreTourPage = () => {
 						<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
 							{/* Image on the left */}
 							<div className="lg:col-span-1">
-								<div className="relative h-40 lg:h-auto rounded-lg overflow-hidden">
+								<div className="relative h-40 lg:h-96 w-full rounded-lg overflow-hidden">
 									<Image 
 										src="/images/Lahore Fort (Shahi Qila) 1-district.jpg"
 										alt="Historical Ruler of Lahore"
@@ -725,7 +725,7 @@ const LahoreTourPage = () => {
 							
 							{/* Image on the right */}
 							<div className="lg:col-span-1">
-								<div className="relative h-40 lg:h-auto rounded-lg overflow-hidden">
+								<div className="relative h-40 lg:h-96 w-full rounded-lg overflow-hidden">
 									<Image 
 										src="/images/The Colorful Bazaars of Lahore City.jpg"
 										alt="Colorful Bazaar of Lahore"
