@@ -712,7 +712,7 @@ const SkarduKharmangPage = () => {
 							{
 								title: 'Dream Journeys of North',
 								description: 'Focused on Skardu\'s central attractions (Kachura, Satpara, Kharpocho) and the scenic drive from the KKH.',
-								image: '/images/card 1 skardu-karmandu.jpg',
+								image: '/images/skardu card new.png',
 								days: '7 Days',
 								destinations: '3 Destinations'
 							},
@@ -726,7 +726,7 @@ const SkarduKharmangPage = () => {
 							{
 								title: 'K2 Base Camp Trek Gateway',
 								description: 'Skardu serves as the main launch point and logistics hub for all major expeditions into the Karakoram Range.',
-								image: '/images/card 3 skardu n-karmandu.jpg',
+								image: '/images/skardu card new 2.jpg',
 								days: '14 Days',
 								destinations: '4 Destinations'
 							}
