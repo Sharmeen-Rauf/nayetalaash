@@ -318,7 +318,7 @@ const GhizerPage = () => {
 							{
 								title: 'Ghizer & Kalash Valley Tour',
 								description: 'A cultural and natural bridge trip linking Ghizer\'s unique valleys with the ancient, distinct culture of the Kalash people via Shandur.',
-								image: '/images/card 2-ghizer.jpg',
+								image: '/images/ghizer and kalash valley card new-image.jpg',
 								days: '7 Days',
 								destinations: '2 Destinations'
 							}

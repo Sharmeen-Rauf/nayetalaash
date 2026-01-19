@@ -538,7 +538,7 @@ const HunzaDistrictPage = () => {
 								{/* Slider Images */}
 								<div className="relative w-full h-full">
 									{[
-										'/images/slider 1 hunza.jpg',
+										'/images/hunza slider new-image.jpg',
 										'/images/slider 2 hunza.jpg',
 										'/images/slider 3 hunza.jpg',
 										'/images/slider 4 hunza.jpg'
