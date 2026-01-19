@@ -374,7 +374,7 @@ const KumratValleyPage = () => {
 							},
 							{ 
 								title: 'Kala Chashma', 
-								image: '/images/kala chasma.jpg',
+								image: '/images/kala chasma new-image.jpg',
 								description: 'Kala Chashma literally translates to "Black Spring" in English. It is believed to get its name from the dark color of the stones at the bottom, which makes the crystal clear water look darker. This popular spot is located about 20 km from the main Thal Bazaar.',
 								imageLeft: false
 							},
