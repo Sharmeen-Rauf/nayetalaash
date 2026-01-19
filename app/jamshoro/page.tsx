@@ -474,7 +474,7 @@ const JamshoroPage = () => {
 				<div 
 					className="absolute inset-0 bg-cover bg-center bg-no-repeat"
 					style={{ 
-						backgroundImage: "url('/images/Jamshoro-banner.jpg')",
+						backgroundImage: "url('/images/Jamshoro-landscape (1).png')",
 						filter: "brightness(0.3)",
 					}}
 				></div>

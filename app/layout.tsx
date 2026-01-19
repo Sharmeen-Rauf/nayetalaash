@@ -44,6 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/jpeg" href="/images/icon copy.jpg" />
+        <link rel="shortcut icon" type="image/jpeg" href="/images/icon copy.jpg" />
+        <link rel="apple-touch-icon" href="/images/icon copy.jpg" />
         <link rel="preload" href="/images/Home Banner - Idea.jpg" as="image" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
