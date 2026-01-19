@@ -432,7 +432,7 @@ const KumratValleyPage = () => {
 							>
 								{/* Image */}
 								<div 
-									className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'} ${idx % 2 === 0 ? 'lg:ml-8' : 'lg:mr-8'}`}
+									className={`${destination.imageLeft ? 'lg:order-1' : 'lg:order-2'}`}
 									style={{
 										opacity: visibleSections.has('destinations') ? 1 : 0,
 										transform: visibleSections.has('destinations') 
@@ -455,7 +455,7 @@ const KumratValleyPage = () => {
 								
 								{/* Text Content */}
 								<div 
-									className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'} ${idx % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}`}
+									className={`${destination.imageLeft ? 'lg:order-2' : 'lg:order-1'}`}
 									style={{
 										opacity: visibleSections.has('destinations') ? 1 : 0,
 										transform: visibleSections.has('destinations') 
