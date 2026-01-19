@@ -100,7 +100,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -124,7 +127,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -148,7 +154,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -172,7 +181,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -196,7 +208,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -220,7 +235,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -244,7 +262,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -268,7 +289,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -292,7 +316,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -316,7 +343,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -340,7 +370,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -364,7 +397,10 @@ const GroupToursPage = () => {
 								</h3>
 								<a 
 									href="#" 
-									className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
+									className="font-medium transition-colors"
+									style={{ color: primaryOrange }}
+									onMouseEnter={(e) => { e.currentTarget.style.color = '#e8851a'; }}
+									onMouseLeave={(e) => { e.currentTarget.style.color = primaryOrange; }}
 									onClick={(e) => { e.preventDefault(); handleWhatsAppClick(); }}
 								>
 									Read More
@@ -389,7 +425,7 @@ const GroupToursPage = () => {
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 						{/* Step 1 */}
 						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: primaryOrange }}>
 								<Search className="w-10 h-10 text-white" />
 							</div>
 							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
@@ -402,7 +438,7 @@ const GroupToursPage = () => {
 
 						{/* Step 2 */}
 						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: primaryOrange }}>
 								<FileText className="w-10 h-10 text-white" />
 							</div>
 							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
@@ -415,7 +451,7 @@ const GroupToursPage = () => {
 
 						{/* Step 3 */}
 						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: primaryOrange }}>
 								<Phone className="w-10 h-10 text-white" />
 							</div>
 							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
@@ -428,7 +464,7 @@ const GroupToursPage = () => {
 
 						{/* Step 4 */}
 						<div className="text-center">
-							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: '#fbbf24' }}>
+							<div className="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: primaryOrange }}>
 								<Mountain className="w-10 h-10 text-white" />
 							</div>
 							<h3 className="text-lg font-bold mb-2" style={{ color: secondaryBlack }}>
