@@ -24,17 +24,17 @@ export const metadata: Metadata = {
   publisher: "Naye Talaash",
   icons: {
     icon: [
-      { url: "/images/Icon... black.png", media: "(prefers-color-scheme: light)" },
-      { url: "/images/Icon... white.png", media: "(prefers-color-scheme: dark)" },
+      { url: "/favicon.png", media: "(prefers-color-scheme: light)" },
+      { url: "/favicon-dark.png", media: "(prefers-color-scheme: dark)" },
     ],
-    shortcut: "/images/Icon... black.png",
-    apple: "/images/Icon... black.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "Naye Talaash",
     description: "Naye Talaash Travel Agency",
     url: "https://nayetalaash.com",
-    images: ["/images/Icon... black.png"],
+    images: ["/favicon.png"],
   },
   metadataBase: new URL("https://nayetalaash.com"),
 };
@@ -48,12 +48,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Theme-based favicons */}
-        <link rel="icon" type="image/png" href="/images/Icon... black.png" media="(prefers-color-scheme: light)" />
-        <link rel="icon" type="image/png" href="/images/Icon... white.png" media="(prefers-color-scheme: dark)" />
+        <link rel="icon" type="image/png" href="/favicon.png" media="(prefers-color-scheme: light)" />
+        <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: dark)" />
         {/* Fallback favicon */}
-        <link rel="icon" type="image/png" href="/images/Icon... black.png" />
-        <link rel="shortcut icon" type="image/png" href="/images/Icon... black.png" />
-        <link rel="apple-touch-icon" href="/images/Icon... black.png" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="preload" href="/images/Home Banner - Idea.jpg" as="image" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
