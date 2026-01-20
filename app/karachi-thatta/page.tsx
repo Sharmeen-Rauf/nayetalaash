@@ -522,8 +522,7 @@ const KarachiThattaPage = () => {
 								Places To Visit In Karachi Thatta Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								The Karachi Thatta Heritage Circuit represents the ultimate journey from Pakistan's modern, high energy metropolis to the silent, majestic ruins of its ancient capitals. This route connects Karachi, the "City of Lights" and the country's economic engine, with Thatta, the medieval seat of power for the Samma, Arghun, and Tarkhan dynasties. Spanning from the shores of the Arabian Sea to the banks of the Indus Delta, this district tour offers a profound contrast between urban skyscrapers and UNESCO World Heritage monuments. Traveling along the National Highway, you transition from the bustling markets and colonial architecture of Karachi to the intricate stone carvings of Chaukhandi and the blue tiled grandeur of Thatta. This region is a treasure trove for history buffs, nature lovers, and foodies alike, offering everything from serene freshwater lakes like Keenjhar to the patriotic silence of the Mazar-e-Quaid. It is the gateway to Lower Sindh, where the salt air of the coast meets the mystical aura of ancient saints.
-							</p>
+							Witness the grandeur of the Makli Necropolis and the electric energy of the City of Lights. Your journey through 2,000 years of civilization begins here.							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}

@@ -109,8 +109,7 @@ const LahoreTourPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed">
-						Explore the historic Walled City, savor iconic Food Street flavors, and relive the Mughal legacy your unforgettable Pakistan journey starts here.						</p>
-						<div className="mt-8">
+						Walk through the 1,000 year old gates of the Walled City and feel the electric energy of Wagah Border your journey into the heart of Punjab begins here. </p>						<div className="mt-8">
 							<button 
 								onClick={handleWhatsAppClick}
 								className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-2xl"

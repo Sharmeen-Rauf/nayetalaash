@@ -499,8 +499,7 @@ const TharparkarPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							From the mystical echoes of the Karoonjhar Mountains to the golden gates of Naukot, discover the land where peacocks dance and hospitality knows no bounds.
-						</p>
+						From the mystical echoes of the Karoonjhar Mountains to the golden gates of Naukot, discover the land where peacocks dance and hospitality knows no bounds.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
