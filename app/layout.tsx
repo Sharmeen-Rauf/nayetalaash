@@ -23,15 +23,18 @@ export const metadata: Metadata = {
   creator: "Naye Talaash",
   publisher: "Naye Talaash",
   icons: {
-    icon: "/images/icon copy.jpg",
-    shortcut: "/images/icon copy.jpg",
-    apple: "/images/icon copy.jpg",
+    icon: [
+      { url: "/images/Icon... black.png", media: "(prefers-color-scheme: light)" },
+      { url: "/images/Icon... white.png", media: "(prefers-color-scheme: dark)" },
+    ],
+    shortcut: "/images/Icon... black.png",
+    apple: "/images/Icon... black.png",
   },
   openGraph: {
     title: "Naye Talaash",
     description: "Naye Talaash Travel Agency",
     url: "https://nayetalaash.com",
-    images: ["/images/icon copy.jpg"],
+    images: ["/images/Icon... black.png"],
   },
   metadataBase: new URL("https://nayetalaash.com"),
 };
@@ -44,9 +47,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/jpeg" href="/images/icon copy.jpg" />
-        <link rel="shortcut icon" type="image/jpeg" href="/images/icon copy.jpg" />
-        <link rel="apple-touch-icon" href="/images/icon copy.jpg" />
+        {/* Theme-based favicons */}
+        <link rel="icon" type="image/png" href="/images/Icon... black.png" media="(prefers-color-scheme: light)" />
+        <link rel="icon" type="image/png" href="/images/Icon... white.png" media="(prefers-color-scheme: dark)" />
+        {/* Fallback favicon */}
+        <link rel="icon" type="image/png" href="/images/Icon... black.png" />
+        <link rel="shortcut icon" type="image/png" href="/images/Icon... black.png" />
+        <link rel="apple-touch-icon" href="/images/Icon... black.png" />
         <link rel="preload" href="/images/Home Banner - Idea.jpg" as="image" />
         <link rel="dns-prefetch" href="https://images.unsplash.com" />
       </head>
