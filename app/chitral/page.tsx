@@ -506,7 +506,7 @@ const ChitralPage = () => {
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
 							style={{ backgroundColor: primaryOrange, color: secondaryBlack }}
 						>
-							Explore Kalash
+							Explore Chitral
 						</button>
 					</div>
 				</div>
