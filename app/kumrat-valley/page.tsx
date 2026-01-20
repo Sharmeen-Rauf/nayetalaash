@@ -402,13 +402,6 @@ const KumratValleyPage = () => {
 								description: 'Dojanga is a beautiful point deeper into the valley, located right after Kala Chashma. As you travel past this point, the valley reveals its most untouched natural treasures. A small wooden bridge takes you across the river and into the thickest, most secluded part of the Kumrat forest.',
 								imageLeft: false
 							},
-
-							{ 
-								title: 'Jamia Masjid Thal Kumrat', 
-								image: '/images/Jamia Masjid Thal Kumrat.jpg',
-								description: 'This historic Mosque is located right in the heart of Thal Bazaar on the bank of the Panjkora River. It was built in the mid 18th century entirely from massive, beautifully carved wooden planks without the use of machinery. The wooden structure is painted with bright, vibrant colors, making it a historical and architectural sight.',
-								imageLeft: false
-							},
 							{ 
 								title: 'Shahzore Lake', 
 								image: '/images/Shahzore Lake.jpg',
