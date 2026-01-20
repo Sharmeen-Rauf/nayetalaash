@@ -47,6 +47,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="google525e1abaed848a5e" />
         {/* Theme-based favicons */}
         <link rel="icon" type="image/png" href="/favicon.png" media="(prefers-color-scheme: light)" />
         <link rel="icon" type="image/png" href="/favicon-dark.png" media="(prefers-color-scheme: dark)" />
