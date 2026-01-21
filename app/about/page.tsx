@@ -629,16 +629,16 @@ const AboutPage = () => {
 									className="object-cover transition-transform duration-300 group-hover:scale-110"
 								/>
 							</div>
-							{/* Orange Footer with Title, Description, and Button */}
-							<div className="absolute bottom-0 left-0 right-0 p-4" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
+							{/* White Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-white p-4" style={{ color: secondaryBlack }}>
 								<h3 className="text-lg md:text-xl font-bold mb-2" style={{ color: secondaryBlack }}>Makran Coastal Highway</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90" style={{ color: secondaryBlack }}>Drive 1300KM Through Sea And Desert</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
-									style={{ color: secondaryBlack }}
+									style={{ color: primaryOrange }}
 								>
-									<span style={{ color: secondaryBlack }}>→</span>
+									<span style={{ color: primaryOrange }}>→</span>
 									<span>BOOK NOW</span>
 								</button>
 							</div>
@@ -654,16 +654,16 @@ const AboutPage = () => {
 									className="object-cover transition-transform duration-300 group-hover:scale-110"
 								/>
 							</div>
-							{/* Orange Footer with Title, Description, and Button */}
-							<div className="absolute bottom-0 left-0 right-0 p-4" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
+							{/* White Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-white p-4" style={{ color: secondaryBlack }}>
 								<h3 className="text-lg md:text-xl font-bold mb-2" style={{ color: secondaryBlack }}>Kalash Valley</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90" style={{ color: secondaryBlack }}>Helicopter Journey To The Hidden Valley</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
-									style={{ color: secondaryBlack }}
+									style={{ color: primaryOrange }}
 								>
-									<span style={{ color: secondaryBlack }}>→</span>
+									<span style={{ color: primaryOrange }}>→</span>
 									<span>BOOK NOW</span>
 								</button>
 							</div>
@@ -679,16 +679,16 @@ const AboutPage = () => {
 									className="object-cover transition-transform duration-300 group-hover:scale-110"
 								/>
 							</div>
-							{/* Orange Footer with Title, Description, and Button */}
-							<div className="absolute bottom-0 left-0 right-0 p-4" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
+							{/* White Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-white p-4" style={{ color: secondaryBlack }}>
 								<h3 className="text-lg md:text-xl font-bold mb-2" style={{ color: secondaryBlack }}>Conquer The Wild Sindh</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90" style={{ color: secondaryBlack }}>Reach your destination through thrilling dune bashing</p>
+								<p className="text-sm md:text-base mb-4 opacity-90" style={{ color: secondaryBlack }}>Destination through thrilling dune bashing</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
-									style={{ color: secondaryBlack }}
+									style={{ color: primaryOrange }}
 								>
-									<span style={{ color: secondaryBlack }}>→</span>
+									<span style={{ color: primaryOrange }}>→</span>
 									<span>BOOK NOW</span>
 								</button>
 							</div>
@@ -819,16 +819,16 @@ const AboutPage = () => {
 									className="object-cover transition-transform duration-300 group-hover:scale-110"
 								/>
 							</div>
-							{/* Orange Footer with Title, Description, and Button */}
-							<div className="absolute bottom-0 left-0 right-0 p-6" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
+							{/* White Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-white p-6" style={{ color: secondaryBlack }}>
 								<h3 className="text-lg md:text-xl font-bold mb-2 capitalize" style={{ color: secondaryBlack }}>Punjab: The Land Of 5 Rivers</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90 capitalize" style={{ color: secondaryBlack }}>Experience The True Essence Of The Punjab</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity capitalize"
-									style={{ color: secondaryBlack }}
+									style={{ color: primaryOrange }}
 								>
-									<span style={{ color: secondaryBlack }}>→</span>
+									<span style={{ color: primaryOrange }}>→</span>
 									<span>Book Now</span>
 								</button>
 							</div>
@@ -844,16 +844,16 @@ const AboutPage = () => {
 									className="object-cover transition-transform duration-300 group-hover:scale-110"
 								/>
 							</div>
-							{/* Orange Footer with Title, Description, and Button */}
-							<div className="absolute bottom-0 left-0 right-0 p-6" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
+							{/* White Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-white p-6" style={{ color: secondaryBlack }}>
 								<h3 className="text-lg md:text-xl font-bold mb-2 capitalize" style={{ color: secondaryBlack }}>Balochistan Hospitality & Horseback</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90 capitalize" style={{ color: secondaryBlack }}>Discover The Authentic Baloch Heritage</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity capitalize"
-									style={{ color: secondaryBlack }}
+									style={{ color: primaryOrange }}
 								>
-									<span style={{ color: secondaryBlack }}>→</span>
+									<span style={{ color: primaryOrange }}>→</span>
 									<span>Book Now</span>
 								</button>
 							</div>
@@ -983,15 +983,15 @@ const AboutPage = () => {
 									className="object-cover transition-transform duration-300 group-hover:scale-105"
 								/>
 							</div>
-							<div className="absolute bottom-0 left-0 right-0 p-6" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
+							<div className="absolute bottom-0 left-0 right-0 bg-white p-6" style={{ color: secondaryBlack }}>
 								<h3 className="text-lg md:text-xl font-bold mb-2 capitalize" style={{ color: secondaryBlack }}>Kirthar Trophy Hunting</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90 capitalize" style={{ color: secondaryBlack }}>Hunt With A Professional And Trained Crew</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity capitalize"
-									style={{ color: secondaryBlack }}
+									style={{ color: primaryOrange }}
 								>
-									<span style={{ color: secondaryBlack }}>→</span>
+									<span style={{ color: primaryOrange }}>→</span>
 									<span>Book Now</span>
 								</button>
 							</div>
@@ -1007,15 +1007,15 @@ const AboutPage = () => {
 									className="object-cover transition-transform duration-300 group-hover:scale-105"
 								/>
 							</div>
-							<div className="absolute bottom-0 left-0 right-0 p-6" style={{ backgroundColor: primaryOrange, color: secondaryBlack }}>
+							<div className="absolute bottom-0 left-0 right-0 bg-white p-6" style={{ color: secondaryBlack }}>
 								<h3 className="text-lg md:text-xl font-bold mb-2 capitalize" style={{ color: secondaryBlack }}>Contact Our Design Team Today</h3>
 								<p className="text-sm md:text-base mb-4 opacity-90 capitalize" style={{ color: secondaryBlack }}>Share Your Details For A Custom Itinerary</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity capitalize"
-									style={{ color: secondaryBlack }}
+									style={{ color: primaryOrange }}
 								>
-									<span style={{ color: secondaryBlack }}>→</span>
+									<span style={{ color: primaryOrange }}>→</span>
 									<span>Enquire Now</span>
 								</button>
 							</div>
