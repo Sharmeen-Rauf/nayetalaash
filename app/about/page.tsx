@@ -629,13 +629,14 @@ const AboutPage = () => {
 									className="object-cover transition-transform duration-300 group-hover:scale-110"
 								/>
 							</div>
-							{/* Black Footer with Title, Description, and Button */}
-							<div className="absolute bottom-0 left-0 right-0 bg-black p-4 text-white">
-								<h3 className="text-lg md:text-xl font-bold mb-2">Makran Coastal Highway</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90">Drive 1300KM Through Sea And Desert</p>
+							{/* White Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-white p-4" style={{ color: secondaryBlack }}>
+								<h3 className="text-lg md:text-xl font-bold mb-2" style={{ color: secondaryBlack }}>Makran Coastal Highway</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90" style={{ color: secondaryBlack }}>Drive 1300KM Through Sea And Desert</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+									style={{ color: primaryOrange }}
 								>
 									<span>→</span>
 									<span>BOOK NOW</span>
@@ -653,13 +654,14 @@ const AboutPage = () => {
 									className="object-cover transition-transform duration-300 group-hover:scale-110"
 								/>
 							</div>
-							{/* Black Footer with Title, Description, and Button */}
-							<div className="absolute bottom-0 left-0 right-0 bg-black p-4 text-white">
-								<h3 className="text-lg md:text-xl font-bold mb-2">Kalash Valley</h3>
-								<p className="text-sm md:text-base mb-4 opacity-90">Helicopter Journey To The Hidden Valley</p>
+							{/* White Footer with Title, Description, and Button */}
+							<div className="absolute bottom-0 left-0 right-0 bg-white p-4" style={{ color: secondaryBlack }}>
+								<h3 className="text-lg md:text-xl font-bold mb-2" style={{ color: secondaryBlack }}>Kalash Valley</h3>
+								<p className="text-sm md:text-base mb-4 opacity-90" style={{ color: secondaryBlack }}>Helicopter Journey To The Hidden Valley</p>
 								<button
 									onClick={handleWhatsAppClick}
 									className="flex items-center gap-2 text-sm md:text-base font-semibold hover:opacity-80 transition-opacity"
+									style={{ color: primaryOrange }}
 								>
 									<span>→</span>
 									<span>BOOK NOW</span>
