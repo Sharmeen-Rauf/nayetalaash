@@ -101,7 +101,7 @@ const NaranKaghanPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Relive old memories or create new ones with our custom tours, from vibrant Naran Bazaar to Babusar Pass and the magical Saif-ul-Malook Lake.						</p>
+						Create new memories on custom tours from Naran Bazaar to Babusar Pass and Saif-ul-Malook Lake.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
@@ -125,8 +125,7 @@ const NaranKaghanPage = () => {
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Your journey should be unique! These tour packages to Naran Kaghan can be custom built for you by our professional tour operators. Feel free to choose from the popular list below or customize your itinerary to meet your exact requirements:
-							</p>
+							Make your Naran Kaghan journey unique! Choose a popular tour or let our experts customize your perfect itinerary.							</p>
 						</div>
 					</div>
 					

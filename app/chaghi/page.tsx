@@ -499,8 +499,7 @@ const ChaghiPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Step into Pakistan's largest district a land of hidden gold, ancient volcanoes, and the historic Ras Koh Hills. Experience the raw majesty of the Baloch desert.
-						</p>
+						Explore Pakistan’s largest district home to ancient volcanoes, Ras Koh Hills, and the wild beauty of the Baloch desert.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"

@@ -499,8 +499,8 @@ const ZiaratPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Breathe the purest air in Pakistan in the world's second largest Juniper forest. Experience the cool mountain breeze, lush orchards, and the historic charm of Ziarat.
-						</p>
+						Breathe Pakistan’s purest air in the world’s second-largest juniper forest, and experience the cool breeze, lush orchards, and charm of Ziarat.		
+										</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"

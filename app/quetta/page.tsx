@@ -499,8 +499,7 @@ const QuettaPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							From the turquoise waters of Hanna Lake to the legendary flavors of Namak Mandi, experience the heart of the frontier where every mountain tells a story.
-						</p>
+						From Hanna Lake’s turquoise waters to Namak Mandi’s legendary flavors, experience the storytelling mountains of the frontier.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"

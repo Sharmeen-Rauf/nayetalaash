@@ -120,8 +120,7 @@ const NeelumValleyPage = () => {
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Your trip should be perfect! Our packages can be custom built by our professional tour operators to match exactly what you want to see and do. You can select from our popular itineraries below or contact us to customize your perfect Kashmir adventure:
-							</p>
+							Your trip should be perfect! Choose from our popular itineraries or let our expert tour operators customize the ideal Kashmir adventure just for you.							</p>
 						</div>
 					</div>
 					

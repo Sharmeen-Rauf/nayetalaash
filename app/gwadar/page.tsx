@@ -499,8 +499,7 @@ const GwadarPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Witness the breathtaking sunsets of Jiwani, the architectural majesty of the world's most scenic stadium, and the turquoise waters of Astola Island.
-						</p>
+						Witness Jiwani’s stunning sunsets, the world’s most scenic stadium, and the turquoise waters of Astola Island.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"

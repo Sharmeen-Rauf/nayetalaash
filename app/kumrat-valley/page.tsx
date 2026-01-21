@@ -102,7 +102,7 @@ const KumratValleyPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Our safe, custom Kumrat packages are perfect for nature lovers and trekkers, offering Deodar forests, Katora Lake, and breathtaking mountain views.						</p>
+						Our safe, custom Kumrat packages are ideal for nature lovers and trekkers, featuring Deodar forests, Katora Lake, and stunning mountain views.				</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
@@ -126,8 +126,7 @@ const KumratValleyPage = () => {
 						</h2>
 						<div className="space-y-4">
 							<p className="leading-normal text-center" style={{ color: `${secondaryBlack}90`, fontSize: '16px', lineHeight: '1.4' }}>
-								Your adventure should be tailored just for you! These Kumrat Valley packages can be custom built by our professional team to give you the exact experience you want. You can choose from our popular itineraries below or tell us your specific travel needs:
-							</p>
+							Your adventure should be personal! Choose from our popular Kumrat Valley itineraries or let our team customize the perfect experience for you.							</p>
 						</div>
 					</div>
 					

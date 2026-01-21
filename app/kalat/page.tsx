@@ -499,8 +499,7 @@ const KalatPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Journey into the historic capital of the Khans. From the high peaks of Harboi to the mysterious caves of Pandran, experience the majesty of the Brahui heartland.
-						</p>
+						Journey to the historic capital of the Khans from Harboi’s high peaks to the mysterious Pandran caves in the Brahui heartland.						</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"
