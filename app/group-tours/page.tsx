@@ -502,57 +502,69 @@ const GroupToursPage = () => {
 						</h2>
 					</div>
 
-					<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-						{/* Journey Image 1 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/Group Tour photo1.jpg.jpeg"
-								alt="Group tour journey 1"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
-						</div>
-
-						{/* Journey Image 2 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/Group Tour photo2 (2).png"
-								alt="Group tour journey 2"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
-						</div>
-
-						{/* Journey Image 3 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/Group Tour photo3 (2).png"
-								alt="Group tour journey 3"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
-						</div>
-
-						{/* Journey Image 4 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/Group Tour photo4 (2).jpeg"
-								alt="Group tour journey 4"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
-						</div>
-
-						{/* Journey Image 5 */}
-						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-							<Image 
-								src="/images/group photo.jpeg"
-								alt="Group tour journey 5"
-								fill
-								className="object-cover hover:scale-110 transition-transform duration-300"
-							/>
+					{/* Auto-scrolling Slider */}
+					<div className="relative w-full overflow-hidden">
+						<div className="flex gap-4 animate-scroll-slow">
+							{/* First set of images */}
+							{[
+								'/images/Group Tour photo1.jpg.jpeg',
+								'/images/Group Tour photo2 (2).png',
+								'/images/Group Tour photo3 (2).png',
+								'/images/Group Tour photo4 (2).jpeg',
+								'/images/group photo.jpeg',
+								'/images/WhatsApp Image 2026-01-21 at 8.37.43 PM.jpeg',
+								'/images/WhatsApp Image 2026-01-21 at 8.37.01 PM.jpeg',
+								'/images/WhatsApp Image 2026-01-21 at 8.36.41 PM.jpeg',
+							].map((src, idx) => (
+								<div key={`journey-${idx}`} className="relative h-64 w-80 flex-shrink-0 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+									<Image 
+										src={src}
+										alt={`Group tour journey ${idx + 1}`}
+										fill
+										className="object-cover hover:scale-110 transition-transform duration-300"
+									/>
+								</div>
+							))}
+							{/* Duplicate set for seamless loop */}
+							{[
+								'/images/Group Tour photo1.jpg.jpeg',
+								'/images/Group Tour photo2 (2).png',
+								'/images/Group Tour photo3 (2).png',
+								'/images/Group Tour photo4 (2).jpeg',
+								'/images/group photo.jpeg',
+								'/images/WhatsApp Image 2026-01-21 at 8.37.43 PM.jpeg',
+								'/images/WhatsApp Image 2026-01-21 at 8.37.01 PM.jpeg',
+								'/images/WhatsApp Image 2026-01-21 at 8.36.41 PM.jpeg',
+							].map((src, idx) => (
+								<div key={`journey-dup-${idx}`} className="relative h-64 w-80 flex-shrink-0 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+									<Image 
+										src={src}
+										alt={`Group tour journey ${idx + 1}`}
+										fill
+										className="object-cover hover:scale-110 transition-transform duration-300"
+									/>
+								</div>
+							))}
 						</div>
 					</div>
+
+					{/* CSS for auto-scrolling animation */}
+					<style>{`
+						@keyframes scroll-slow {
+							0% {
+								transform: translateX(0);
+							}
+							100% {
+								transform: translateX(-50%);
+							}
+						}
+						.animate-scroll-slow {
+							animation: scroll-slow 40s linear infinite;
+						}
+						.animate-scroll-slow:hover {
+							animation-play-state: paused;
+						}
+					`}</style>
 				</div>
 			</section>
 
