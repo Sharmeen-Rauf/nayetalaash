@@ -648,7 +648,7 @@ const AboutPage = () => {
 						<div className="relative group">
 							<div className="relative h-80 rounded-lg overflow-hidden">
 								<Image 
-									src="/images/chitral.jpg"
+									src="/images/Kalash Valley about us.jpg.jpeg"
 									alt="Kalash Valley"
 									fill
 									className="object-cover transition-transform duration-300 group-hover:scale-110"
