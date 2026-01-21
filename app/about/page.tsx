@@ -182,12 +182,12 @@ const AboutPage = () => {
 							Get in Touch
 						</button>
 						<div className="flex items-center justify-center gap-2 mb-4">
-							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-							<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+							<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+							<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+							<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
 						</div>
 						<h2 className="text-3xl font-bold" style={{ color: secondaryBlack, fontSize: '34px' }}>
-							Do you want to know what makes us your perfect travel companion?
+							What makes us your perfect travel companion?
 						</h2>
 					</div>
 
@@ -396,10 +396,10 @@ const AboutPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
 					</div>
 
 					{/* Text Content */}
@@ -593,9 +593,9 @@ const AboutPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Three Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
 					</div>
 
 					{/* Text Content */}
@@ -774,10 +774,10 @@ const AboutPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
 					</div>
 
 					{/* Text Content */}
@@ -937,10 +937,10 @@ const AboutPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
 					</div>
 
 					{/* Text Content */}
@@ -1052,10 +1052,10 @@ const AboutPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Four Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
 					</div>
 
 					{/* Text Content */}
@@ -1115,9 +1115,9 @@ const AboutPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Three Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
 					</div>
 
 					{/* Text Content */}
@@ -1173,9 +1173,9 @@ const AboutPage = () => {
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
 					{/* Three Red Stars */}
 					<div className="flex items-center justify-center gap-2 mb-4">
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
-						<span className="text-2xl" style={{ color: '#dc2626' }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
+						<span className="text-2xl" style={{ color: primaryOrange }}>★</span>
 					</div>
 
 					{/* Text Content */}

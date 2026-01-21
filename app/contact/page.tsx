@@ -1,13 +1,13 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, MapPin, MessageCircle, Check, ChevronDown, Mail, Facebook, Instagram, Youtube } from 'lucide-react';
 import Navbar from '../components/Navbar';
 
 const ContactPage = () => {
-	const [isLight, setIsLight] = useState(false); // For hero section if needed
+	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle - starts transparent
 	const [formData, setFormData] = useState({
 		fullName: '',
 		email: '',
@@ -26,6 +26,22 @@ const ContactPage = () => {
 	const handleWhatsAppClick = () => {
 		window.open('https://wa.me/923311438251', '_blank');
 	};
+
+	// Scroll detection for navbar transparency
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollY = window.scrollY || window.pageYOffset;
+			const heroHeight = window.innerHeight;
+			// Set isLight to true when scrolled past hero section
+			setIsLight(scrollY > heroHeight * 0.8);
+		};
+
+		// Set initial state
+		handleScroll();
+		
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
 
 	const handleFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
 		const { name, value } = e.target;
