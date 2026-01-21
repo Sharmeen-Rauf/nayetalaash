@@ -440,13 +440,13 @@ const AboutPage = () => {
 							<div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
 								<div className="relative flex items-center justify-center">
 									{/* Decorative green swirl - left */}
-									<svg className="absolute -left-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+									<svg className="absolute -left-6 w-12 h-12" style={{ color: primaryOrange }} viewBox="0 0 40 40" fill="currentColor">
 										<path d="M20 5C12 5 5 12 5 20s7 15 15 15c3 0 6-1 8-3" stroke="none" fill="currentColor" opacity="0.8"/>
 										<path d="M25 10C30 12 32 18 30 23c-2 5-8 7-13 5" stroke="none" fill="currentColor" opacity="0.6"/>
 									</svg>
 									<h3 className="text-lg md:text-xl font-autography relative z-10 px-4">Coastal Retreat</h3>
 									{/* Decorative green swirl - right */}
-									<svg className="absolute -right-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+									<svg className="absolute -right-6 w-12 h-12" style={{ color: primaryOrange }} viewBox="0 0 40 40" fill="currentColor">
 										<path d="M20 35C28 35 35 28 35 20s-7-15-15-15c-3 0-6 1-8 3" stroke="none" fill="currentColor" opacity="0.8"/>
 										<path d="M15 30C10 28 8 22 10 17c2-5 8-7 13-5" stroke="none" fill="currentColor" opacity="0.6"/>
 									</svg>
@@ -468,13 +468,13 @@ const AboutPage = () => {
 							<div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
 								<div className="relative flex items-center justify-center">
 									{/* Decorative green swirl - left */}
-									<svg className="absolute -left-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+									<svg className="absolute -left-6 w-12 h-12" style={{ color: primaryOrange }} viewBox="0 0 40 40" fill="currentColor">
 										<path d="M20 5C12 5 5 12 5 20s7 15 15 15c3 0 6-1 8-3" stroke="none" fill="currentColor" opacity="0.8"/>
 										<path d="M25 10C30 12 32 18 30 23c-2 5-8 7-13 5" stroke="none" fill="currentColor" opacity="0.6"/>
 									</svg>
 									<h3 className="text-lg md:text-xl font-autography relative z-10 px-4">Dream Journeys of North</h3>
 									{/* Decorative green swirl - right */}
-									<svg className="absolute -right-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+									<svg className="absolute -right-6 w-12 h-12" style={{ color: primaryOrange }} viewBox="0 0 40 40" fill="currentColor">
 										<path d="M20 35C28 35 35 28 35 20s-7-15-15-15c-3 0-6 1-8 3" stroke="none" fill="currentColor" opacity="0.8"/>
 										<path d="M15 30C10 28 8 22 10 17c2-5 8-7 13-5" stroke="none" fill="currentColor" opacity="0.6"/>
 									</svg>
@@ -496,13 +496,13 @@ const AboutPage = () => {
 							<div className="absolute bottom-0 left-0 right-0 p-6 text-white text-center">
 								<div className="relative flex items-center justify-center">
 									{/* Decorative green swirl - left */}
-									<svg className="absolute -left-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+									<svg className="absolute -left-6 w-12 h-12" style={{ color: primaryOrange }} viewBox="0 0 40 40" fill="currentColor">
 										<path d="M20 5C12 5 5 12 5 20s7 15 15 15c3 0 6-1 8-3" stroke="none" fill="currentColor" opacity="0.8"/>
 										<path d="M25 10C30 12 32 18 30 23c-2 5-8 7-13 5" stroke="none" fill="currentColor" opacity="0.6"/>
 									</svg>
 									<h3 className="text-lg md:text-xl font-autography relative z-10 px-4">Baloch Richness</h3>
 									{/* Decorative green swirl - right */}
-									<svg className="absolute -right-6 w-12 h-12" style={{ color: '#22c55e' }} viewBox="0 0 40 40" fill="currentColor">
+									<svg className="absolute -right-6 w-12 h-12" style={{ color: primaryOrange }} viewBox="0 0 40 40" fill="currentColor">
 										<path d="M20 35C28 35 35 28 35 20s-7-15-15-15c-3 0-6 1-8 3" stroke="none" fill="currentColor" opacity="0.8"/>
 										<path d="M15 30C10 28 8 22 10 17c2-5 8-7 13-5" stroke="none" fill="currentColor" opacity="0.6"/>
 									</svg>
