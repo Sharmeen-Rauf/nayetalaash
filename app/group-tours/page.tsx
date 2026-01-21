@@ -7,7 +7,7 @@ import { ArrowRight, Users, CalendarDays, MapPin, ShieldCheck, CheckCircle2, Sea
 import Navbar from '@/app/components/Navbar';
 
 const GroupToursPage = () => {
-	const [isLight, setIsLight] = useState(true); // Always light for group tours page
+	const [isLight, setIsLight] = useState(false); // Navbar B/W toggle - starts transparent
 	const [showFloatingWidget, setShowFloatingWidget] = useState(true);
 
 	// Theme Colors
@@ -19,6 +19,22 @@ const GroupToursPage = () => {
 		window.open('https://wa.me/923311438251', '_blank');
 	};
 
+	// Scroll detection for navbar transparency
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollY = window.scrollY || window.pageYOffset;
+			const heroHeight = window.innerHeight;
+			// Set isLight to true when scrolled past hero section
+			setIsLight(scrollY > heroHeight * 0.8);
+		};
+
+		// Set initial state
+		handleScroll();
+		
+		window.addEventListener('scroll', handleScroll, { passive: true });
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
 
 	// Animated Background Component
 	const AnimatedBackground = ({ variant = 'default' }: { variant?: 'default' | 'orange' | 'dark' | 'light' }) => {
@@ -27,7 +43,7 @@ const GroupToursPage = () => {
 
 	return (
 		<div className="relative min-h-screen font-sans overflow-x-hidden">
-			<Navbar isLight={isLight} forceLight={true} />
+			<Navbar isLight={isLight} />
 
 			{/* ====================== HERO SECTION ====================== */}
 			<section className="relative w-full h-screen min-h-[600px] overflow-hidden pt-[100px] sm:pt-[104px]" style={{ backgroundColor: secondaryBlack }}>
