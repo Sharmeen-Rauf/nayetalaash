@@ -506,7 +506,7 @@ const GroupToursPage = () => {
 						{/* Journey Image 1 */}
 						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
 							<Image 
-								src="/images/skardu 2.jpg"
+								src="/images/Group Tour photo1.jpg.jpeg"
 								alt="Group tour journey 1"
 								fill
 								className="object-cover hover:scale-110 transition-transform duration-300"
@@ -516,7 +516,7 @@ const GroupToursPage = () => {
 						{/* Journey Image 2 */}
 						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
 							<Image 
-								src="/images/Hunza.jpg"
+								src="/images/Group Tour photo2 (2).png"
 								alt="Group tour journey 2"
 								fill
 								className="object-cover hover:scale-110 transition-transform duration-300"
@@ -526,7 +526,7 @@ const GroupToursPage = () => {
 						{/* Journey Image 3 */}
 						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
 							<Image 
-								src="/images/fairy meadows 2.jpg"
+								src="/images/Group Tour photo3 (2).png"
 								alt="Group tour journey 3"
 								fill
 								className="object-cover hover:scale-110 transition-transform duration-300"
@@ -536,7 +536,7 @@ const GroupToursPage = () => {
 						{/* Journey Image 4 */}
 						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
 							<Image 
-								src="/images/naran and kaghan.jpg"
+								src="/images/Group Tour photo4 (2).jpeg"
 								alt="Group tour journey 4"
 								fill
 								className="object-cover hover:scale-110 transition-transform duration-300"
@@ -546,7 +546,7 @@ const GroupToursPage = () => {
 						{/* Journey Image 5 */}
 						<div className="relative h-64 overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
 							<Image 
-								src="/images/azad kashmir.jpg"
+								src="/images/group photo.jpeg"
 								alt="Group tour journey 5"
 								fill
 								className="object-cover hover:scale-110 transition-transform duration-300"
