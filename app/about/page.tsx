@@ -1384,11 +1384,11 @@ const AboutPage = () => {
 					{/* Call-to-Action Button */}
 					<div className="text-center">
 						<Link 
-							href="/swat-kalam"
+							href="/customize-a-tour"
 							className="inline-block px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg text-white"
 							style={{ backgroundColor: primaryOrange }}
 						>
-							Discover Our Destinations
+							Discover Your Destinations
 						</Link>
 					</div>
 				</div>
