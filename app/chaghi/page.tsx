@@ -628,7 +628,7 @@ const ChaghiPage = () => {
 								description: 'Witness the industrial heart of the desert. Known as the "Black Mound," this massive mining operation produces gold, copper, and silver, standing as an oasis of modern machinery amidst the desolate wilderness.'
 							},
 							{
-								image: '/images/Hamun-e-Mashkel.jpg',
+								image: '/images/Hamun-e-Mashkel new.jpg.jpeg',
 								title: 'Hamun-e-Mashkel:',
 								description: 'View the largest dry lake basin in the region. This vast, salt encrusted playa stretches across the border into Iran and becomes a shimmering inland sea during the rare, heavy rains.'
 							},
