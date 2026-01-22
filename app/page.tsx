@@ -1330,13 +1330,28 @@ const Page = () => {
 										className="w-full h-auto object-cover"
 									/>
 									{/* Phone booking bubble overlay - Middle left, half in half out */}
-									<div className="absolute top-1/2 left-2 sm:left-0 bg-white px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg shadow-xl flex items-center gap-1.5 sm:gap-2 z-10 border-2 max-w-[85%] sm:max-w-none" style={{ transform: 'translateY(-50%) rotate(2deg)', borderColor: primaryOrange }}>
+									<div 
+										className="absolute top-1/2 bg-white px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg shadow-xl flex items-center gap-1.5 sm:gap-2 z-10 border-2 phone-bubble-mobile sm:phone-bubble-desktop" 
+										style={{ borderColor: primaryOrange }}
+									>
 										<Phone className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" style={{ color: primaryOrange }} />
-										<div className="flex flex-col gap-0.5 min-w-0">
-											<span className="text-[8px] sm:text-[10px] font-semibold leading-tight whitespace-nowrap" style={{ color: secondaryBlack }}>BOOK YOUR TOURS NOW</span>
-											<a href="tel:+92331438251" className="text-xs sm:text-sm font-bold leading-tight whitespace-nowrap hover:opacity-80 transition-opacity" style={{ color: secondaryBlack }}>+92 331 438251</a>
+										<div className="flex flex-col gap-0.5">
+											<span className="text-[8px] sm:text-[10px] font-semibold leading-tight" style={{ color: secondaryBlack }}>BOOK YOUR TOURS NOW</span>
+											<a href="tel:+92331438251" className="text-[10px] sm:text-sm font-bold leading-tight hover:opacity-80 transition-opacity whitespace-nowrap" style={{ color: secondaryBlack }}>+92 331 438251</a>
 										</div>
 									</div>
+									<style dangerouslySetInnerHTML={{__html: `
+										.phone-bubble-mobile {
+											left: 8px;
+											transform: translate(-40%, -50%) rotate(2deg);
+										}
+										@media (min-width: 640px) {
+											.phone-bubble-desktop {
+												left: 0;
+												transform: translate(-50%, -50%) rotate(2deg);
+											}
+										}
+									`}} />
 								</div>
 								{/* "Honeymoon Trip" text inside polaroid frame - white area */}
 								<div className="bg-white px-3 py-4 text-center">
