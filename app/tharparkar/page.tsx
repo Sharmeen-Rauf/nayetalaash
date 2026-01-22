@@ -521,7 +521,7 @@ const TharparkarPage = () => {
 								Places To Visit In Tharparkar Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-								Tharparkar District, often called the "Land of the Desert" or the "Land of Peace," is a mesmerizing world of rolling sand dunes, granite mountains, and an unparalleled spirit of communal harmony. Located in the southeastern corner of Sindh bordering India, Tharparkar is one of the few places on earth where Hindus and Muslims have lived in absolute peace for centuries. It is a land where peacocks roam freely in the streets, and the arrival of the monsoon transforms the golden desert into a lush, emerald green paradise known as the "Eden of Sindh." A tour of Tharparkar is a journey into a living museum of Sindhi folklore and ancient heritage. From the strategic gateway of Naukot Fort to the spiritual silence of the Jain Temples in Nagar Parkar, every corner of the district tells a story of resilience and beauty. Whether you are witnessing the sunset from the heights of Gadi Bhit in Mithi or exploring the mythical Karoonjhar Mountains, Tharparkar offers a raw, authentic experience that captures the heart of every traveler.
+								Tharparkar District, known as the "Land of the Desert" and the "Land of Peace," is a captivating region of rolling sand dunes, granite mountains, and remarkable communal harmony. Located in southeastern Sindh along the Indian border, it is one of the rare places where Hindus and Muslims have lived peacefully for centuries. Peacocks roam freely, and during the monsoon, the golden desert transforms into a lush green landscape often called the "Eden of Sindh." A journey through Tharparkar feels like stepping into a living museum of Sindhi folklore and ancient heritage. From the historic Naukot Fort to the serene Jain Temples of Nagar Parkar, each site reflects resilience and timeless beauty. Whether watching sunsets from Gadi Bhit in Mithi or exploring the legendary Karoonjhar Mountains, Tharparkar offers an authentic and unforgettable travel experience.
 							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -623,7 +623,7 @@ const TharparkarPage = () => {
 								description: 'Marvel at the 14th century marble architecture. The Gori Temple is a masterpiece of Jain heritage, featuring 52 steeples and frescoes that are among the oldest in the region.'
 							},
 							{
-								image: '/images/Marvi\'s Well (Bhalwa).jpg',
+								image: '/images/Marvi\'s Well (Bhalwa) new 1.jpg.jpeg',
 								title: 'Marvi\'s Well (Bhalwa):',
 								description: 'Visit the site of the legendary Umar Marvi folklore. This well is a symbol of patriotism and chastity, commemorating the village girl who refused a king\'s palace to return to her desert home.'
 							},
@@ -633,7 +633,7 @@ const TharparkarPage = () => {
 								description: 'Known as the "Gateway to the Thar Desert," this 1814 Talpur era fortress features massive arched gateways and tapering walls built to consolidate power over the desert routes.'
 							},
 							{
-								image: '/images/Gadi Bhit (Mithi).jpg',
+								image: '/images/Gadi Bhit (Mithi) new.jpg.jpeg',
 								title: 'Gadi Bhit (Mithi):',
 								description: 'Climb to the highest point in Mithi. This sand hill viewpoint offers a breathtaking panoramic view of the city, especially at night when the town lights shimmer like candles in the desert.'
 							},
