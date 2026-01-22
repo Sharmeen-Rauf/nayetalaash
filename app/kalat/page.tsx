@@ -538,7 +538,7 @@ const KalatPage = () => {
 								<div className="relative w-full h-full">
 									{[
 										'/images/kalat slider 1.jpg',
-										'/images/kalat slider 2.jpg',
+										'/images/Kalat new.jpg.jpeg',
 										'/images/kalat slider 3.jpg',
 										'/images/kalat slider 4.jpg'
 									].map((imageSrc, index) => (
