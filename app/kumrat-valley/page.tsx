@@ -102,7 +102,7 @@ const KumratValleyPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-normal hero-text-reveal hero-text-delay-2 mb-6">
-						Our safe, custom Kumrat packages are ideal for nature lovers and trekkers, featuring Deodar forests, Katora Lake, and stunning mountain views.				</p>
+						Our safe, custom Kumrat packages are ideal for nature lovers and trekkers, featuring Deodar forests, Katora Lake, and mountain views.				</p>
 						<button
 							onClick={handleWhatsAppClick}
 							className="px-8 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-2xl hero-text-reveal hero-text-delay-3"

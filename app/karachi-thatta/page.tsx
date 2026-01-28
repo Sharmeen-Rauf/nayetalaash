@@ -522,7 +522,7 @@ const KarachiThattaPage = () => {
 								Places To Visit In Karachi Thatta Tour
 							</h2>
 							<p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: `${secondaryBlack}90`, lineHeight: '1.6' }}>
-							Witness the grandeur of the Makli Necropolis and the electric energy of the City of Lights. Your journey through 2,000 years of civilization begins here.							</p>
+							Witness the grandeur of the Makli Necropolis and the electric energy of the City of Lights. Your journey through 2,000 years of civilization begins.							</p>
 							<button
 								className="px-6 py-3 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
 								style={{ backgroundColor: primaryOrange, color: secondaryBlack }}

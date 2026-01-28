@@ -499,7 +499,7 @@ const JamshoroPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Experience the world's largest fort, the soul stirring Dhamaal of the Sufis, and the shimmering waters of Manchar Lake the heartbeat of Sindh awaits.
+							Experience the world's largest fort, the soul stirring Dhamaal of the Sufis, and the shimmering waters of Manchar Lake the heartbeat of Sindh.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}

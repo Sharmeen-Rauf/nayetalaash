@@ -499,7 +499,7 @@ const ChitralPage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Discover the unique heritage of the Kalash people and witness the world famous Shandur Polo Festival under the gaze of the Hindu Kush's highest peak.
+							Discover the unique heritage of the Kalash people and witness the famous Shandur Polo Festival under the gaze of the Hindu Kush's highest peak.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}

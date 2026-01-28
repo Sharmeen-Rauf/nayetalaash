@@ -551,7 +551,7 @@ const LahorePage = () => {
 							</span>
 						</h1>
 						<p className="text-base sm:text-sm md:text-lg text-white font-medium max-w-2xl mx-auto leading-relaxed hero-text-reveal hero-text-delay-2 mb-6">
-							Walk through the 1,000 year old gates of the Walled City and witness the electric energy of the Wagah Border. Your journey into the heart of Punjab starts here.
+							Walk through the 1,000 year old gates of the Walled City and witness the electric energy of the Wagah Border. Your journey into the heart of Punjab.
 						</p>
 						<button
 							onClick={handleWhatsAppClick}
